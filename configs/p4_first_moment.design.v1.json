@@ -1,0 +1,114 @@
+{
+  "schema": "p4-first-moment-design-v1",
+  "status": "DESIGN_FIXED_NOT_EXECUTED",
+  "snapshots": [
+    {
+      "snapshot_id": "R1_u1000",
+      "branch": "R1",
+      "additional_updates": 1000,
+      "checkpoint_path": "runs/p4-relative-loss-20261014-01/arms/R1/checkpoints/update-1000",
+      "checkpoint_hash": "c49d48b18ab82686df8ecc1b3995022664c138b2f628a944f924b909427d5eb7",
+      "trained_objective": "Lone+0.1*Lroll+0.2*(Lrelative_teacher+0.1*Lrelative_free)",
+      "model_tree_hash": "fd038b5a42ec72c78575a8b696dd3c7bf205fcb9f402a640a10e14ad72b402a3",
+      "checkpoint_json_sha256": "931198cb2198b7c3af8eedac5c4ab89e2b9dd372dc9f654f466fe95a9abf8ad6",
+      "files_sha256": {
+        "weights.pt": "fc5d062ebafab7dc8f5f76242fc6cddd3c0a5d3c05fd6f1fb33190096dede70b",
+        "training_state.pt": "de7a50f921cfd0820316bec9366497c2449048b2d1d6fc3756dc69425c4367f1"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "snapshot_id": "R1_u1000",
+      "source_probe_name": "D11_noncontact",
+      "target_probe_name": "D11_zero5",
+      "source_mode": "KEEP",
+      "source_direction_index": 3,
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u1000/D11_noncontact/directions.npz",
+      "source_direction_summary": "runs/p4-adam-probe-20261015-01/probes/R1_u1000/D11_noncontact/summary.json",
+      "target_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u1000/D11_zero5/summary.json",
+      "target_gradient_npz": "runs/p4-gradient-probe-20261015-01/probes/R1_u1000/D11_zero5/gradients.npz",
+      "prevcross_summary": "runs/p4-cross-batch-20261015-01/cases/R1_u1000/D11_noncontact/summary.json",
+      "prevcross_parameters": "runs/p4-cross-batch-20261015-01/cases/R1_u1000/D11_noncontact/parameter_displacements.npz",
+      "prevcross_predictions": "runs/p4-cross-batch-20261015-01/cases/R1_u1000/D11_noncontact/predictions.npz",
+      "source_direction_npz_sha256": "7df5f16f9aaedfd20266fc40e27e0dda81d4791a51340dd0f64819470681e181",
+      "source_direction_summary_sha256": "63cb3dd8003688f25dfe58847462a6262c4be16059955e05b3245fc3181478b2",
+      "target_gradient_summary_sha256": "b0491de00d869959265f6e1a4e72fb40f629a44ccfcfa699728c7306f2d6df59",
+      "target_gradient_npz_sha256": "2166996b779a6c130926e8ddc4b36709cfaa464e4129c71e7ec42691c615f906",
+      "prevcross_summary_sha256": "cb67ea1e6c9f83bd5dbe490c4b71ac288e114b8d11d5f50fa082e0937944cae1",
+      "prevcross_parameters_sha256": "35f0eff850890bd5c2090ff030e2681d30ef7061800ec281b32cc175155909e8",
+      "prevcross_predictions_sha256": "244cc0b582b7a3c0fccc45a00719b3f9521dbb9071ae9cc7188da209220788af"
+    },
+    {
+      "snapshot_id": "R1_u1000",
+      "source_probe_name": "D11_noncontact",
+      "target_probe_name": "D11_zero5",
+      "source_mode": "ZERO_M",
+      "source_direction_index": 4,
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u1000/D11_noncontact/directions.npz",
+      "source_direction_summary": "runs/p4-adam-probe-20261015-01/probes/R1_u1000/D11_noncontact/summary.json",
+      "target_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u1000/D11_zero5/summary.json",
+      "target_gradient_npz": "runs/p4-gradient-probe-20261015-01/probes/R1_u1000/D11_zero5/gradients.npz",
+      "prevcross_summary": "runs/p4-cross-batch-20261015-01/cases/R1_u1000/D11_noncontact/summary.json",
+      "prevcross_parameters": "runs/p4-cross-batch-20261015-01/cases/R1_u1000/D11_noncontact/parameter_displacements.npz",
+      "prevcross_predictions": "runs/p4-cross-batch-20261015-01/cases/R1_u1000/D11_noncontact/predictions.npz",
+      "source_direction_npz_sha256": "7df5f16f9aaedfd20266fc40e27e0dda81d4791a51340dd0f64819470681e181",
+      "source_direction_summary_sha256": "63cb3dd8003688f25dfe58847462a6262c4be16059955e05b3245fc3181478b2",
+      "target_gradient_summary_sha256": "b0491de00d869959265f6e1a4e72fb40f629a44ccfcfa699728c7306f2d6df59",
+      "target_gradient_npz_sha256": "2166996b779a6c130926e8ddc4b36709cfaa464e4129c71e7ec42691c615f906",
+      "prevcross_summary_sha256": "cb67ea1e6c9f83bd5dbe490c4b71ac288e114b8d11d5f50fa082e0937944cae1",
+      "prevcross_parameters_sha256": "35f0eff850890bd5c2090ff030e2681d30ef7061800ec281b32cc175155909e8",
+      "prevcross_predictions_sha256": "244cc0b582b7a3c0fccc45a00719b3f9521dbb9071ae9cc7188da209220788af"
+    }
+  ],
+  "snapshot_id": "R1_u1000",
+  "source_probe_name": "D11_noncontact",
+  "target_probe_name": "D11_zero5",
+  "source_modes": [
+    "KEEP",
+    "ZERO_M"
+  ],
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "expected_if_complete": {
+    "snapshots": 1,
+    "cases": 2,
+    "attempted_evaluations": 8,
+    "completed_evaluations": 8,
+    "forward_calls": 48,
+    "forward_rows": 1920
+  },
+  "question": "Does the fixed stop loss still increase when only saved past first moment is removed from the same noncontact total-gradient virtual Adam addend?",
+  "intervention": {
+    "KEEP": "saved m,v,t",
+    "ZERO_M": "saved past m replaced by zero BEFORE current clipped gradient contribution; saved v,t unchanged",
+    "current_source_gradient": "Saved total raw gradient and identical global clip coefficient; no recomputation.",
+    "saved_step": 2300,
+    "next_step": 2301,
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "amsgrad": false,
+    "m_next": "0.9*m_or_zero + 0.1*gclip; ZERO_M retains current-gradient contribution",
+    "v_next": "0.999*v + 0.001*gclip^2 in both modes",
+    "direction_norm": "Native, not normalized; removing m changes both angle and magnitude."
+  },
+  "controls": [
+    "KEEP four parameter maps, predictions, all loss values and statuses exactly reproduce previous cross KEEP.",
+    "Both alpha0 stop predictions and losses exactly reproduce previous cross alpha0 and one another."
+  ],
+  "primary": "Per-positive-alpha measured common stop loss change under existing helper neutral band; ZERO_M increase persists iff eligible endpoint relation is INCREASE.",
+  "failure_policy": "Global control failure holds ALL primary counts as null; any case numerical/reference failure retains all three slots as NOT_INTERPRETED and persistence null. Never drop failed endpoints.",
+  "scope": "One frozen final-R1 training stop target; no full training trajectory, generalization, physical task effect or optimizer-change adoption.",
+  "alignment_improvement": "NOT_EVALUATED",
+  "personal_understanding": "NOT_ASSESSED",
+  "P5_01": "HOLD"
+}

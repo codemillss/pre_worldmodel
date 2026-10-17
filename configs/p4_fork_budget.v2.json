@@ -1,0 +1,60 @@
+{
+  "training_id": "p4-matched-window-budget-v2",
+  "seeds": [
+    11,
+    23,
+    47
+  ],
+  "common_checkpoints": [
+    {
+      "seed": 11,
+      "path": "runs/p3-04-20261009-01/seeds/seed-11/checkpoints/epoch-100",
+      "checkpoint_hash": "f772698aa04753098f320fb86505519e8b12db075389c3111ef0d32e2182ba98",
+      "initial_updates": 1300
+    },
+    {
+      "seed": 23,
+      "path": "runs/p3-04-20261009-01/seeds/seed-23/checkpoints/epoch-097",
+      "checkpoint_hash": "5fa619ea33790f0d071c5e37622b7b69c23a8f7c22c85e09263a5db6858cf872",
+      "initial_updates": 1261
+    },
+    {
+      "seed": 47,
+      "path": "runs/p3-04-20261009-01/seeds/seed-47/checkpoints/epoch-098",
+      "checkpoint_hash": "85be516381baa8952f686b3ade94656db12bc5370f784b4105c6898505f40693",
+      "initial_updates": 1274
+    }
+  ],
+  "common_start": "same seed-specific selected weights, Adam moments/step, Torch/shuffle RNG, normalizer; no timing-probe weights",
+  "additional_updates_per_branch": 1000,
+  "batch_windows": 64,
+  "K": 5,
+  "drop_last": false,
+  "window_count_train": 2960,
+  "window_count_validation": 1480,
+  "window_sampler": "epoch randperm of 2960 original train K5 windows using restored common shuffle generator; 46x64+16 per epoch; same order and partial final batch in every branch",
+  "update_budget_arithmetic": "21 complete window epochs x47 +13 updates =1000; 62992 window occurrences, 314960 transition occurrences per branch; overlapping windows not independent samples",
+  "lambda_candidates": [
+    0.1,
+    1.0
+  ],
+  "branches_per_seed": [
+    "S1",
+    "SK-lambda0.1",
+    "SK-lambda1.0"
+  ],
+  "total_branches": 9,
+  "total_additional_updates": 9000,
+  "one_step_term": "all five real transitions in same window; original physical-delta angular-aware loss/train delta scale; identical labels/mask/weights in S1 and SK",
+  "rollout_term": "SK only; predicted complete state recurrently fed to next step; k=1..5, exclude k=0; state yaw error wrap2pi; stored train_delta_scale; mean over valid window/time/state dimensions",
+  "optimizer": "resume Adam; lr0.001/weight_decay0/gradient_clip_norm1; finite loss/grad/parameter guards",
+  "final_comparison": "same final additional update1000; intermediate best epochs never replace final weights",
+  "lambda_selection": "one global lambda from mean of all three seed final-update validation K5 equal-regime scores; any invalid seed makes lambda ineligible; exact tie smaller lambda; no best-seed selection",
+  "checkpoint_every_updates": 100,
+  "checkpoint_count_candidate": 90,
+  "mid_epoch_sampler_checkpoint": "save actual current window permutation, epoch, cursor, restored shuffle RNG and their hashes; checkpoint100/1000 can be mid-epoch; verify exact next batch/update on independent reload",
+  "all_lambda_ineligible": "P4-02 FAIL; preserve all branches and diagnostic final weights, never label fallback as selected SK",
+  "evaluation": "final each branch K1/K5/K10 and selected lambda all seeds; diagnostics at checkpoint100 multiples; test never used",
+  "P4_01_formal_loss_gradient_mask_tests": "NOT_RUN",
+  "formal_branches": "NOT_RUN"
+}

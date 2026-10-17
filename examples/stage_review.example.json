@@ -1,0 +1,33 @@
+{
+  "record_kind": "example_not_executed",
+  "stage_id": "P1",
+  "task_ids": ["P1-01", "P1-02", "P1-03", "P1-04", "P1-05", "P1-06"],
+  "design_version": "v0.1",
+  "config_id": "pilot-v0",
+  "acceptance_profile_id": "acceptance-v0",
+  "reviewed_at": null,
+  "reviewer_or_checker": null,
+  "task_status": "TODO",
+  "stage_verdict": "NOT_RUN",
+  "alignment_outcome_by_method": {},
+  "learner_understanding": "NOT_ASSESSED",
+  "criteria": [
+    {
+      "criterion_id": "P1-05.replay",
+      "required": true,
+      "spec_reference": "docs/06_단계별_완료판정.md",
+      "threshold_source": "configs/acceptance.v0.toml",
+      "threshold_value": null,
+      "observed_value": null,
+      "unit": "per_quantity_SI",
+      "sample_count": 0,
+      "verdict": "NOT_RUN",
+      "run_id": null,
+      "evidence": [],
+      "unresolved_issues": [],
+      "return_to_task_if_failed": "P1-05"
+    }
+  ],
+  "criteria_list_complete": false,
+  "notes": "Example only. Actual reviews must contain every required criterion and its evidence; this example cannot pass a stage."
+}

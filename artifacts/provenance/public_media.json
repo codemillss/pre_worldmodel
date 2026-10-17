@@ -1,0 +1,31 @@
+{
+  "schema": "public-media-provenance-v1",
+  "selection": "Original prespecified minimum-family-ID per stratum, all 8 methods; not selected for success",
+  "interpretation": "Actual action-boundary pose schematic, ZOH display; terminal frozen panels and display tail do not prove additional holding",
+  "records": [
+    {
+      "source_path": "runs/p5-final-20261017-02/visuals-v2/clip_translation.gif",
+      "public_path": "assets/media/clip_translation.gif",
+      "bytes": 6468064,
+      "source_sha256": "34f1a450ae18c9c3a45e249affdce0e8d928ac3fadb0ad0b266f52203c23861c",
+      "public_sha256": "34f1a450ae18c9c3a45e249affdce0e8d928ac3fadb0ad0b266f52203c23861c",
+      "transformation": "byte_identical"
+    },
+    {
+      "source_path": "runs/p5-final-20261017-02/visuals-v2/clip_rotation.gif",
+      "public_path": "assets/media/clip_rotation.gif",
+      "bytes": 6580272,
+      "source_sha256": "640c7dd9d59f2e29f04811a481fb3d1311c4b4492f5b595e647c6fabe430787d",
+      "public_sha256": "640c7dd9d59f2e29f04811a481fb3d1311c4b4492f5b595e647c6fabe430787d",
+      "transformation": "byte_identical"
+    },
+    {
+      "source_path": "runs/p5-final-20261017-02/visuals-v2/clip_offset.gif",
+      "public_path": "assets/media/clip_offset.gif",
+      "bytes": 6511730,
+      "source_sha256": "411ad1f672301099ac81ab53a857fb45a7d5b10d25592156c0072a3a5f3eec87",
+      "public_sha256": "411ad1f672301099ac81ab53a857fb45a7d5b10d25592156c0072a3a5f3eec87",
+      "transformation": "byte_identical"
+    }
+  ]
+}

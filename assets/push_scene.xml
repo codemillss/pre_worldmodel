@@ -1,0 +1,18 @@
+<mujoco model="push_align_pilot">
+  <compiler angle="radian" coordinate="local"/>
+  <option timestep="0.002" integrator="implicitfast" solver="Newton" iterations="50" tolerance="1e-8" gravity="0 0 -9.81"/>
+  <default>
+    <geom condim="3" margin="0" gap="0" solref="0.02 1" solimp="0.9 0.95 0.001 0.5 2"/>
+    <joint damping="0" frictionloss="0"/>
+  </default>
+  <worldbody>
+    <geom name="floor" type="plane" size="0.5 0.5 0.1" friction="0.3 0.3 0"/>
+    <body name="object"><freejoint name="object_free"/><geom name="object_geom" type="box" size="0.04 0.03 0.01" mass="0.1" friction="0.3 0.3 0"/></body>
+    <body name="pusher" pos="0 0 0.012"><joint name="pusher_x" type="slide" axis="1 0 0" range="-0.25 0.25" limited="true"/><joint name="pusher_y" type="slide" axis="0 1 0" range="-0.25 0.25" limited="true"/><geom name="pusher_geom" type="cylinder" size="0.008 0.008" mass="0.1" friction="0.5 0.5 0"/></body>
+  </worldbody>
+  <contact>
+    <pair geom1="floor" geom2="object_geom" condim="3" friction="0.3 0.3 0 0 0" solref="0.02 1" solimp="0.9 0.95 0.001 0.5 2"/>
+    <pair geom1="pusher_geom" geom2="object_geom" condim="3" friction="0.5 0.5 0 0 0" solref="0.02 1" solimp="0.9 0.95 0.001 0.5 2"/>
+  </contact>
+  <actuator><velocity name="pusher_vx" joint="pusher_x" kv="20" gear="1" forcelimited="true" forcerange="-2 2"/><velocity name="pusher_vy" joint="pusher_y" kv="20" gear="1" forcelimited="true" forcerange="-2 2"/></actuator>
+</mujoco>

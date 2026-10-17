@@ -1,0 +1,24 @@
+{
+  "schema": "public-report-export-v1",
+  "source": "docs/business_report.ko.md",
+  "output": "reports/Business_Report.ko.pdf",
+  "sha256": "03c0a8010145ca7b822f8137e4b3db79caa6037f9ec210dfbfa60c4b129e218a",
+  "pages": 5,
+  "input_sha256": {
+    "docs/business_report.ko.md": "29222b8bb3acdcb3ea3c5304522b639965ea14d954a5b4bb2919fc77d7955701",
+    "docs/technical_report.ko.md": "84b4d63387ad04833a286767a1553bcf9a01449c577f99f39ce7baedb3940d6f",
+    "artifacts/index.md": "b065cd124e1019f1c81d4d63449d5da49db1c17e70859ee00321b3283cfddb20"
+  },
+  "links": {
+    "internal": 18,
+    "web": 4
+  },
+  "visual_review": "REQUIRED_SEPARATE_RECORD",
+  "body_characters_per_page": [
+    352,
+    1346,
+    1080,
+    1439,
+    943
+  ]
+}

@@ -1,0 +1,3597 @@
+{
+  "schema": "p5-final-E1-family-statistics-v1",
+  "status": "COMPLETE_EXPECTED_E1_DENOMINATORS",
+  "model_set_count": 84,
+  "snapshot_count": 12,
+  "independent_family_count": 6,
+  "model_count": 7,
+  "shared_physical_repeat_attempts": 576,
+  "physical_repeats_are_not_resampling_units": true,
+  "original_model_set_populations": {
+    "model_all_invalid": {
+      "numerator": 0,
+      "denominator": 84
+    },
+    "no_selection": {
+      "numerator": 0,
+      "denominator": 84
+    },
+    "selected_actual_invalid": {
+      "numerator": 0,
+      "denominator": 84
+    },
+    "selected_actual_validity_changed": {
+      "numerator": 0,
+      "denominator": 84
+    },
+    "actual_all_invalid": {
+      "numerator": 0,
+      "denominator": 84
+    },
+    "no_stable_actual_valid": {
+      "numerator": 0,
+      "denominator": 84
+    },
+    "any_validity_changed": {
+      "numerator": 0,
+      "denominator": 84
+    },
+    "common_valid_empty": {
+      "numerator": 0,
+      "denominator": 84
+    }
+  },
+  "shared_actual_snapshot_populations": {
+    "actual_all_invalid": {
+      "numerator": 0,
+      "denominator": 12
+    },
+    "no_stable_actual_valid": {
+      "numerator": 0,
+      "denominator": 12
+    },
+    "any_validity_changed": {
+      "numerator": 0,
+      "denominator": 12
+    }
+  },
+  "models": {
+    "R": {
+      "members": [
+        "R"
+      ],
+      "model_set_count": 12,
+      "snapshot_count": 12,
+      "independent_family_count": 6,
+      "conditions_on_original_model_set_population": {
+        "model_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_selection": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "actual_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_stable_actual_valid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "any_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "common_valid_empty": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        }
+      },
+      "selection_status_counts": {
+        "selected_actual_valid": 12
+      },
+      "selection_loss_ordering_counts": {
+        "INCONCLUSIVE": 6,
+        "SELECTED_WORSE": 6
+      },
+      "selection_loss": {
+        "defined_model_sets": 12,
+        "undefined_model_sets": 0,
+        "defined_model_set_mean_descriptive": 10.486563030887632,
+        "complete_family_denominator": 6,
+        "complete_family_mean": 10.486563030887632,
+        "family_values": [
+          16.39123462737325,
+          0.0,
+          18.245958528117967,
+          0.0,
+          0.11776060807056865,
+          28.16442442176401
+        ],
+        "eligibility": "all two ticks and all member training seeds require defined selection loss before family averaging"
+      },
+      "pairwise_actual_inconclusive_count": 679,
+      "pairwise_original_candidate_pairs_per_model_set": 120,
+      "descriptive_cost_and_rank": {
+        "cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 31.960471156810257,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/R": 16,
+            "p5-final-translation-00/G/tick-029/R": 14,
+            "p5-final-translation-01/G/tick-000/R": 15,
+            "p5-final-translation-01/G/tick-029/R": 15,
+            "p5-final-rotation-00/G/tick-000/R": 16,
+            "p5-final-rotation-00/G/tick-029/R": 15,
+            "p5-final-rotation-01/G/tick-000/R": 16,
+            "p5-final-rotation-01/G/tick-029/R": 16,
+            "p5-final-offset-00/G/tick-000/R": 15,
+            "p5-final-offset-00/G/tick-029/R": 13,
+            "p5-final-offset-01/G/tick-000/R": 16,
+            "p5-final-offset-01/G/tick-029/R": 15
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "cost_RMSE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 39.46163011067289,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/R": 16,
+            "p5-final-translation-00/G/tick-029/R": 14,
+            "p5-final-translation-01/G/tick-000/R": 15,
+            "p5-final-translation-01/G/tick-029/R": 15,
+            "p5-final-rotation-00/G/tick-000/R": 16,
+            "p5-final-rotation-00/G/tick-029/R": 15,
+            "p5-final-rotation-01/G/tick-000/R": 16,
+            "p5-final-rotation-01/G/tick-029/R": 16,
+            "p5-final-offset-00/G/tick-000/R": 15,
+            "p5-final-offset-00/G/tick-029/R": 13,
+            "p5-final-offset-01/G/tick-000/R": 16,
+            "p5-final-offset-01/G/tick-029/R": 15
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "rank_rho": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 0.8133667226873007,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/R": 16,
+            "p5-final-translation-00/G/tick-029/R": 14,
+            "p5-final-translation-01/G/tick-000/R": 15,
+            "p5-final-translation-01/G/tick-029/R": 15,
+            "p5-final-rotation-00/G/tick-000/R": 16,
+            "p5-final-rotation-00/G/tick-029/R": 15,
+            "p5-final-rotation-01/G/tick-000/R": 16,
+            "p5-final-rotation-01/G/tick-029/R": 16,
+            "p5-final-offset-00/G/tick-000/R": 15,
+            "p5-final-offset-00/G/tick-029/R": 13,
+            "p5-final-offset-01/G/tick-000/R": 16,
+            "p5-final-offset-01/G/tick-029/R": 15
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "all7_common_cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 32.26849258219677,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/R": 16,
+            "p5-final-translation-00/G/tick-029/R": 13,
+            "p5-final-translation-01/G/tick-000/R": 15,
+            "p5-final-translation-01/G/tick-029/R": 15,
+            "p5-final-rotation-00/G/tick-000/R": 16,
+            "p5-final-rotation-00/G/tick-029/R": 15,
+            "p5-final-rotation-01/G/tick-000/R": 16,
+            "p5-final-rotation-01/G/tick-029/R": 16,
+            "p5-final-offset-00/G/tick-000/R": 15,
+            "p5-final-offset-00/G/tick-029/R": 12,
+            "p5-final-offset-01/G/tick-000/R": 16,
+            "p5-final-offset-01/G/tick-029/R": 15
+          },
+          "scope": "same all-seven predicted-valid AND all-three-actual-valid mask within each snapshot; snapshot sizes can differ",
+          "not_a_common_population_superiority_test": true
+        }
+      },
+      "rank_undefined_is_not_model_or_physics_failure": true
+    },
+    "S1-11": {
+      "members": [
+        "S1-11"
+      ],
+      "model_set_count": 12,
+      "snapshot_count": 12,
+      "independent_family_count": 6,
+      "conditions_on_original_model_set_population": {
+        "model_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_selection": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "actual_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_stable_actual_valid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "any_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "common_valid_empty": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        }
+      },
+      "selection_status_counts": {
+        "selected_actual_valid": 12
+      },
+      "selection_loss_ordering_counts": {
+        "INCONCLUSIVE": 6,
+        "SELECTED_WORSE": 6
+      },
+      "selection_loss": {
+        "defined_model_sets": 12,
+        "undefined_model_sets": 0,
+        "defined_model_set_mean_descriptive": 7.435078897662142,
+        "complete_family_denominator": 6,
+        "complete_family_mean": 7.435078897662142,
+        "family_values": [
+          16.641916342282798,
+          13.218277959886166,
+          1.0565594562145861,
+          13.693719627589303,
+          0.0,
+          0.0
+        ],
+        "eligibility": "all two ticks and all member training seeds require defined selection loss before family averaging"
+      },
+      "pairwise_actual_inconclusive_count": 679,
+      "pairwise_original_candidate_pairs_per_model_set": 120,
+      "descriptive_cost_and_rank": {
+        "cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 12.596758428486982,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-11": 16,
+            "p5-final-translation-00/G/tick-029/S1-11": 15,
+            "p5-final-translation-01/G/tick-000/S1-11": 16,
+            "p5-final-translation-01/G/tick-029/S1-11": 16,
+            "p5-final-rotation-00/G/tick-000/S1-11": 16,
+            "p5-final-rotation-00/G/tick-029/S1-11": 16,
+            "p5-final-rotation-01/G/tick-000/S1-11": 16,
+            "p5-final-rotation-01/G/tick-029/S1-11": 16,
+            "p5-final-offset-00/G/tick-000/S1-11": 16,
+            "p5-final-offset-00/G/tick-029/S1-11": 15,
+            "p5-final-offset-01/G/tick-000/S1-11": 16,
+            "p5-final-offset-01/G/tick-029/S1-11": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "cost_RMSE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 21.828659891829968,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-11": 16,
+            "p5-final-translation-00/G/tick-029/S1-11": 15,
+            "p5-final-translation-01/G/tick-000/S1-11": 16,
+            "p5-final-translation-01/G/tick-029/S1-11": 16,
+            "p5-final-rotation-00/G/tick-000/S1-11": 16,
+            "p5-final-rotation-00/G/tick-029/S1-11": 16,
+            "p5-final-rotation-01/G/tick-000/S1-11": 16,
+            "p5-final-rotation-01/G/tick-029/S1-11": 16,
+            "p5-final-offset-00/G/tick-000/S1-11": 16,
+            "p5-final-offset-00/G/tick-029/S1-11": 15,
+            "p5-final-offset-01/G/tick-000/S1-11": 16,
+            "p5-final-offset-01/G/tick-029/S1-11": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "rank_rho": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 0.42893296947731213,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-11": 16,
+            "p5-final-translation-00/G/tick-029/S1-11": 15,
+            "p5-final-translation-01/G/tick-000/S1-11": 16,
+            "p5-final-translation-01/G/tick-029/S1-11": 16,
+            "p5-final-rotation-00/G/tick-000/S1-11": 16,
+            "p5-final-rotation-00/G/tick-029/S1-11": 16,
+            "p5-final-rotation-01/G/tick-000/S1-11": 16,
+            "p5-final-rotation-01/G/tick-029/S1-11": 16,
+            "p5-final-offset-00/G/tick-000/S1-11": 16,
+            "p5-final-offset-00/G/tick-029/S1-11": 15,
+            "p5-final-offset-01/G/tick-000/S1-11": 16,
+            "p5-final-offset-01/G/tick-029/S1-11": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "all7_common_cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 13.10903246663454,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-11": 16,
+            "p5-final-translation-00/G/tick-029/S1-11": 13,
+            "p5-final-translation-01/G/tick-000/S1-11": 15,
+            "p5-final-translation-01/G/tick-029/S1-11": 15,
+            "p5-final-rotation-00/G/tick-000/S1-11": 16,
+            "p5-final-rotation-00/G/tick-029/S1-11": 15,
+            "p5-final-rotation-01/G/tick-000/S1-11": 16,
+            "p5-final-rotation-01/G/tick-029/S1-11": 16,
+            "p5-final-offset-00/G/tick-000/S1-11": 15,
+            "p5-final-offset-00/G/tick-029/S1-11": 12,
+            "p5-final-offset-01/G/tick-000/S1-11": 16,
+            "p5-final-offset-01/G/tick-029/S1-11": 15
+          },
+          "scope": "same all-seven predicted-valid AND all-three-actual-valid mask within each snapshot; snapshot sizes can differ",
+          "not_a_common_population_superiority_test": true
+        }
+      },
+      "rank_undefined_is_not_model_or_physics_failure": true
+    },
+    "S1-23": {
+      "members": [
+        "S1-23"
+      ],
+      "model_set_count": 12,
+      "snapshot_count": 12,
+      "independent_family_count": 6,
+      "conditions_on_original_model_set_population": {
+        "model_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_selection": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "actual_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_stable_actual_valid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "any_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "common_valid_empty": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        }
+      },
+      "selection_status_counts": {
+        "selected_actual_valid": 12
+      },
+      "selection_loss_ordering_counts": {
+        "INCONCLUSIVE": 7,
+        "SELECTED_WORSE": 5
+      },
+      "selection_loss": {
+        "defined_model_sets": 12,
+        "undefined_model_sets": 0,
+        "defined_model_set_mean_descriptive": 7.254047531241961,
+        "complete_family_denominator": 6,
+        "complete_family_mean": 7.254047531241961,
+        "family_values": [
+          15.369346759239875,
+          13.218277959886166,
+          1.2439084436026633,
+          13.692752024723063,
+          0.0,
+          0.0
+        ],
+        "eligibility": "all two ticks and all member training seeds require defined selection loss before family averaging"
+      },
+      "pairwise_actual_inconclusive_count": 679,
+      "pairwise_original_candidate_pairs_per_model_set": 120,
+      "descriptive_cost_and_rank": {
+        "cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 9.322301970976673,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-23": 16,
+            "p5-final-translation-00/G/tick-029/S1-23": 16,
+            "p5-final-translation-01/G/tick-000/S1-23": 16,
+            "p5-final-translation-01/G/tick-029/S1-23": 16,
+            "p5-final-rotation-00/G/tick-000/S1-23": 16,
+            "p5-final-rotation-00/G/tick-029/S1-23": 16,
+            "p5-final-rotation-01/G/tick-000/S1-23": 16,
+            "p5-final-rotation-01/G/tick-029/S1-23": 16,
+            "p5-final-offset-00/G/tick-000/S1-23": 16,
+            "p5-final-offset-00/G/tick-029/S1-23": 16,
+            "p5-final-offset-01/G/tick-000/S1-23": 16,
+            "p5-final-offset-01/G/tick-029/S1-23": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "cost_RMSE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 15.394869945532362,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-23": 16,
+            "p5-final-translation-00/G/tick-029/S1-23": 16,
+            "p5-final-translation-01/G/tick-000/S1-23": 16,
+            "p5-final-translation-01/G/tick-029/S1-23": 16,
+            "p5-final-rotation-00/G/tick-000/S1-23": 16,
+            "p5-final-rotation-00/G/tick-029/S1-23": 16,
+            "p5-final-rotation-01/G/tick-000/S1-23": 16,
+            "p5-final-rotation-01/G/tick-029/S1-23": 16,
+            "p5-final-offset-00/G/tick-000/S1-23": 16,
+            "p5-final-offset-00/G/tick-029/S1-23": 16,
+            "p5-final-offset-01/G/tick-000/S1-23": 16,
+            "p5-final-offset-01/G/tick-029/S1-23": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "rank_rho": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 0.7469238756727281,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-23": 16,
+            "p5-final-translation-00/G/tick-029/S1-23": 16,
+            "p5-final-translation-01/G/tick-000/S1-23": 16,
+            "p5-final-translation-01/G/tick-029/S1-23": 16,
+            "p5-final-rotation-00/G/tick-000/S1-23": 16,
+            "p5-final-rotation-00/G/tick-029/S1-23": 16,
+            "p5-final-rotation-01/G/tick-000/S1-23": 16,
+            "p5-final-rotation-01/G/tick-029/S1-23": 16,
+            "p5-final-offset-00/G/tick-000/S1-23": 16,
+            "p5-final-offset-00/G/tick-029/S1-23": 16,
+            "p5-final-offset-01/G/tick-000/S1-23": 16,
+            "p5-final-offset-01/G/tick-029/S1-23": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "all7_common_cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 9.20486111882411,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-23": 16,
+            "p5-final-translation-00/G/tick-029/S1-23": 13,
+            "p5-final-translation-01/G/tick-000/S1-23": 15,
+            "p5-final-translation-01/G/tick-029/S1-23": 15,
+            "p5-final-rotation-00/G/tick-000/S1-23": 16,
+            "p5-final-rotation-00/G/tick-029/S1-23": 15,
+            "p5-final-rotation-01/G/tick-000/S1-23": 16,
+            "p5-final-rotation-01/G/tick-029/S1-23": 16,
+            "p5-final-offset-00/G/tick-000/S1-23": 15,
+            "p5-final-offset-00/G/tick-029/S1-23": 12,
+            "p5-final-offset-01/G/tick-000/S1-23": 16,
+            "p5-final-offset-01/G/tick-029/S1-23": 15
+          },
+          "scope": "same all-seven predicted-valid AND all-three-actual-valid mask within each snapshot; snapshot sizes can differ",
+          "not_a_common_population_superiority_test": true
+        }
+      },
+      "rank_undefined_is_not_model_or_physics_failure": true
+    },
+    "S1-47": {
+      "members": [
+        "S1-47"
+      ],
+      "model_set_count": 12,
+      "snapshot_count": 12,
+      "independent_family_count": 6,
+      "conditions_on_original_model_set_population": {
+        "model_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_selection": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "actual_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_stable_actual_valid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "any_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "common_valid_empty": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        }
+      },
+      "selection_status_counts": {
+        "selected_actual_valid": 12
+      },
+      "selection_loss_ordering_counts": {
+        "INCONCLUSIVE": 8,
+        "SELECTED_WORSE": 4
+      },
+      "selection_loss": {
+        "defined_model_sets": 12,
+        "undefined_model_sets": 0,
+        "defined_model_set_mean_descriptive": 5.147356139594999,
+        "complete_family_denominator": 6,
+        "complete_family_mean": 5.147356139594999,
+        "family_values": [
+          15.369346759239875,
+          13.218277959886166,
+          1.0565594562145861,
+          1.2399526622293706,
+          0.0,
+          0.0
+        ],
+        "eligibility": "all two ticks and all member training seeds require defined selection loss before family averaging"
+      },
+      "pairwise_actual_inconclusive_count": 679,
+      "pairwise_original_candidate_pairs_per_model_set": 120,
+      "descriptive_cost_and_rank": {
+        "cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 13.971441981986187,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-47": 16,
+            "p5-final-translation-00/G/tick-029/S1-47": 16,
+            "p5-final-translation-01/G/tick-000/S1-47": 16,
+            "p5-final-translation-01/G/tick-029/S1-47": 16,
+            "p5-final-rotation-00/G/tick-000/S1-47": 16,
+            "p5-final-rotation-00/G/tick-029/S1-47": 16,
+            "p5-final-rotation-01/G/tick-000/S1-47": 16,
+            "p5-final-rotation-01/G/tick-029/S1-47": 16,
+            "p5-final-offset-00/G/tick-000/S1-47": 16,
+            "p5-final-offset-00/G/tick-029/S1-47": 16,
+            "p5-final-offset-01/G/tick-000/S1-47": 16,
+            "p5-final-offset-01/G/tick-029/S1-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "cost_RMSE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 23.69168929213878,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-47": 16,
+            "p5-final-translation-00/G/tick-029/S1-47": 16,
+            "p5-final-translation-01/G/tick-000/S1-47": 16,
+            "p5-final-translation-01/G/tick-029/S1-47": 16,
+            "p5-final-rotation-00/G/tick-000/S1-47": 16,
+            "p5-final-rotation-00/G/tick-029/S1-47": 16,
+            "p5-final-rotation-01/G/tick-000/S1-47": 16,
+            "p5-final-rotation-01/G/tick-029/S1-47": 16,
+            "p5-final-offset-00/G/tick-000/S1-47": 16,
+            "p5-final-offset-00/G/tick-029/S1-47": 16,
+            "p5-final-offset-01/G/tick-000/S1-47": 16,
+            "p5-final-offset-01/G/tick-029/S1-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "rank_rho": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 0.5177845007582275,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-47": 16,
+            "p5-final-translation-00/G/tick-029/S1-47": 16,
+            "p5-final-translation-01/G/tick-000/S1-47": 16,
+            "p5-final-translation-01/G/tick-029/S1-47": 16,
+            "p5-final-rotation-00/G/tick-000/S1-47": 16,
+            "p5-final-rotation-00/G/tick-029/S1-47": 16,
+            "p5-final-rotation-01/G/tick-000/S1-47": 16,
+            "p5-final-rotation-01/G/tick-029/S1-47": 16,
+            "p5-final-offset-00/G/tick-000/S1-47": 16,
+            "p5-final-offset-00/G/tick-029/S1-47": 16,
+            "p5-final-offset-01/G/tick-000/S1-47": 16,
+            "p5-final-offset-01/G/tick-029/S1-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "all7_common_cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 14.373006683779995,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-47": 16,
+            "p5-final-translation-00/G/tick-029/S1-47": 13,
+            "p5-final-translation-01/G/tick-000/S1-47": 15,
+            "p5-final-translation-01/G/tick-029/S1-47": 15,
+            "p5-final-rotation-00/G/tick-000/S1-47": 16,
+            "p5-final-rotation-00/G/tick-029/S1-47": 15,
+            "p5-final-rotation-01/G/tick-000/S1-47": 16,
+            "p5-final-rotation-01/G/tick-029/S1-47": 16,
+            "p5-final-offset-00/G/tick-000/S1-47": 15,
+            "p5-final-offset-00/G/tick-029/S1-47": 12,
+            "p5-final-offset-01/G/tick-000/S1-47": 16,
+            "p5-final-offset-01/G/tick-029/S1-47": 15
+          },
+          "scope": "same all-seven predicted-valid AND all-three-actual-valid mask within each snapshot; snapshot sizes can differ",
+          "not_a_common_population_superiority_test": true
+        }
+      },
+      "rank_undefined_is_not_model_or_physics_failure": true
+    },
+    "SK-11": {
+      "members": [
+        "SK-11"
+      ],
+      "model_set_count": 12,
+      "snapshot_count": 12,
+      "independent_family_count": 6,
+      "conditions_on_original_model_set_population": {
+        "model_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_selection": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "actual_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_stable_actual_valid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "any_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "common_valid_empty": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        }
+      },
+      "selection_status_counts": {
+        "selected_actual_valid": 12
+      },
+      "selection_loss_ordering_counts": {
+        "INCONCLUSIVE": 6,
+        "SELECTED_WORSE": 6
+      },
+      "selection_loss": {
+        "defined_model_sets": 12,
+        "undefined_model_sets": 0,
+        "defined_model_set_mean_descriptive": 7.435078897662142,
+        "complete_family_denominator": 6,
+        "complete_family_mean": 7.435078897662142,
+        "family_values": [
+          16.641916342282798,
+          13.218277959886166,
+          1.0565594562145861,
+          13.693719627589303,
+          0.0,
+          0.0
+        ],
+        "eligibility": "all two ticks and all member training seeds require defined selection loss before family averaging"
+      },
+      "pairwise_actual_inconclusive_count": 679,
+      "pairwise_original_candidate_pairs_per_model_set": 120,
+      "descriptive_cost_and_rank": {
+        "cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 11.664290057442402,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-11": 16,
+            "p5-final-translation-00/G/tick-029/SK-11": 16,
+            "p5-final-translation-01/G/tick-000/SK-11": 16,
+            "p5-final-translation-01/G/tick-029/SK-11": 16,
+            "p5-final-rotation-00/G/tick-000/SK-11": 16,
+            "p5-final-rotation-00/G/tick-029/SK-11": 16,
+            "p5-final-rotation-01/G/tick-000/SK-11": 16,
+            "p5-final-rotation-01/G/tick-029/SK-11": 16,
+            "p5-final-offset-00/G/tick-000/SK-11": 16,
+            "p5-final-offset-00/G/tick-029/SK-11": 15,
+            "p5-final-offset-01/G/tick-000/SK-11": 16,
+            "p5-final-offset-01/G/tick-029/SK-11": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "cost_RMSE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 20.537385734365895,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-11": 16,
+            "p5-final-translation-00/G/tick-029/SK-11": 16,
+            "p5-final-translation-01/G/tick-000/SK-11": 16,
+            "p5-final-translation-01/G/tick-029/SK-11": 16,
+            "p5-final-rotation-00/G/tick-000/SK-11": 16,
+            "p5-final-rotation-00/G/tick-029/SK-11": 16,
+            "p5-final-rotation-01/G/tick-000/SK-11": 16,
+            "p5-final-rotation-01/G/tick-029/SK-11": 16,
+            "p5-final-offset-00/G/tick-000/SK-11": 16,
+            "p5-final-offset-00/G/tick-029/SK-11": 15,
+            "p5-final-offset-01/G/tick-000/SK-11": 16,
+            "p5-final-offset-01/G/tick-029/SK-11": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "rank_rho": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 0.42123375420646403,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-11": 16,
+            "p5-final-translation-00/G/tick-029/SK-11": 16,
+            "p5-final-translation-01/G/tick-000/SK-11": 16,
+            "p5-final-translation-01/G/tick-029/SK-11": 16,
+            "p5-final-rotation-00/G/tick-000/SK-11": 16,
+            "p5-final-rotation-00/G/tick-029/SK-11": 16,
+            "p5-final-rotation-01/G/tick-000/SK-11": 16,
+            "p5-final-rotation-01/G/tick-029/SK-11": 16,
+            "p5-final-offset-00/G/tick-000/SK-11": 16,
+            "p5-final-offset-00/G/tick-029/SK-11": 15,
+            "p5-final-offset-01/G/tick-000/SK-11": 16,
+            "p5-final-offset-01/G/tick-029/SK-11": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "all7_common_cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 11.831001188984551,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-11": 16,
+            "p5-final-translation-00/G/tick-029/SK-11": 13,
+            "p5-final-translation-01/G/tick-000/SK-11": 15,
+            "p5-final-translation-01/G/tick-029/SK-11": 15,
+            "p5-final-rotation-00/G/tick-000/SK-11": 16,
+            "p5-final-rotation-00/G/tick-029/SK-11": 15,
+            "p5-final-rotation-01/G/tick-000/SK-11": 16,
+            "p5-final-rotation-01/G/tick-029/SK-11": 16,
+            "p5-final-offset-00/G/tick-000/SK-11": 15,
+            "p5-final-offset-00/G/tick-029/SK-11": 12,
+            "p5-final-offset-01/G/tick-000/SK-11": 16,
+            "p5-final-offset-01/G/tick-029/SK-11": 15
+          },
+          "scope": "same all-seven predicted-valid AND all-three-actual-valid mask within each snapshot; snapshot sizes can differ",
+          "not_a_common_population_superiority_test": true
+        }
+      },
+      "rank_undefined_is_not_model_or_physics_failure": true
+    },
+    "SK-23": {
+      "members": [
+        "SK-23"
+      ],
+      "model_set_count": 12,
+      "snapshot_count": 12,
+      "independent_family_count": 6,
+      "conditions_on_original_model_set_population": {
+        "model_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_selection": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "actual_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_stable_actual_valid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "any_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "common_valid_empty": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        }
+      },
+      "selection_status_counts": {
+        "selected_actual_valid": 12
+      },
+      "selection_loss_ordering_counts": {
+        "INCONCLUSIVE": 7,
+        "SELECTED_WORSE": 5
+      },
+      "selection_loss": {
+        "defined_model_sets": 12,
+        "undefined_model_sets": 0,
+        "defined_model_set_mean_descriptive": 7.254047531241961,
+        "complete_family_denominator": 6,
+        "complete_family_mean": 7.254047531241961,
+        "family_values": [
+          15.369346759239875,
+          13.218277959886166,
+          1.2439084436026633,
+          13.692752024723063,
+          0.0,
+          0.0
+        ],
+        "eligibility": "all two ticks and all member training seeds require defined selection loss before family averaging"
+      },
+      "pairwise_actual_inconclusive_count": 679,
+      "pairwise_original_candidate_pairs_per_model_set": 120,
+      "descriptive_cost_and_rank": {
+        "cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 7.909495168008149,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-23": 16,
+            "p5-final-translation-00/G/tick-029/SK-23": 16,
+            "p5-final-translation-01/G/tick-000/SK-23": 16,
+            "p5-final-translation-01/G/tick-029/SK-23": 16,
+            "p5-final-rotation-00/G/tick-000/SK-23": 16,
+            "p5-final-rotation-00/G/tick-029/SK-23": 16,
+            "p5-final-rotation-01/G/tick-000/SK-23": 16,
+            "p5-final-rotation-01/G/tick-029/SK-23": 16,
+            "p5-final-offset-00/G/tick-000/SK-23": 16,
+            "p5-final-offset-00/G/tick-029/SK-23": 16,
+            "p5-final-offset-01/G/tick-000/SK-23": 16,
+            "p5-final-offset-01/G/tick-029/SK-23": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "cost_RMSE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 13.830164486655475,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-23": 16,
+            "p5-final-translation-00/G/tick-029/SK-23": 16,
+            "p5-final-translation-01/G/tick-000/SK-23": 16,
+            "p5-final-translation-01/G/tick-029/SK-23": 16,
+            "p5-final-rotation-00/G/tick-000/SK-23": 16,
+            "p5-final-rotation-00/G/tick-029/SK-23": 16,
+            "p5-final-rotation-01/G/tick-000/SK-23": 16,
+            "p5-final-rotation-01/G/tick-029/SK-23": 16,
+            "p5-final-offset-00/G/tick-000/SK-23": 16,
+            "p5-final-offset-00/G/tick-029/SK-23": 16,
+            "p5-final-offset-01/G/tick-000/SK-23": 16,
+            "p5-final-offset-01/G/tick-029/SK-23": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "rank_rho": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 0.7108099700801248,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-23": 16,
+            "p5-final-translation-00/G/tick-029/SK-23": 16,
+            "p5-final-translation-01/G/tick-000/SK-23": 16,
+            "p5-final-translation-01/G/tick-029/SK-23": 16,
+            "p5-final-rotation-00/G/tick-000/SK-23": 16,
+            "p5-final-rotation-00/G/tick-029/SK-23": 16,
+            "p5-final-rotation-01/G/tick-000/SK-23": 16,
+            "p5-final-rotation-01/G/tick-029/SK-23": 16,
+            "p5-final-offset-00/G/tick-000/SK-23": 16,
+            "p5-final-offset-00/G/tick-029/SK-23": 16,
+            "p5-final-offset-01/G/tick-000/SK-23": 16,
+            "p5-final-offset-01/G/tick-029/SK-23": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "all7_common_cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 7.761444325380585,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-23": 16,
+            "p5-final-translation-00/G/tick-029/SK-23": 13,
+            "p5-final-translation-01/G/tick-000/SK-23": 15,
+            "p5-final-translation-01/G/tick-029/SK-23": 15,
+            "p5-final-rotation-00/G/tick-000/SK-23": 16,
+            "p5-final-rotation-00/G/tick-029/SK-23": 15,
+            "p5-final-rotation-01/G/tick-000/SK-23": 16,
+            "p5-final-rotation-01/G/tick-029/SK-23": 16,
+            "p5-final-offset-00/G/tick-000/SK-23": 15,
+            "p5-final-offset-00/G/tick-029/SK-23": 12,
+            "p5-final-offset-01/G/tick-000/SK-23": 16,
+            "p5-final-offset-01/G/tick-029/SK-23": 15
+          },
+          "scope": "same all-seven predicted-valid AND all-three-actual-valid mask within each snapshot; snapshot sizes can differ",
+          "not_a_common_population_superiority_test": true
+        }
+      },
+      "rank_undefined_is_not_model_or_physics_failure": true
+    },
+    "SK-47": {
+      "members": [
+        "SK-47"
+      ],
+      "model_set_count": 12,
+      "snapshot_count": 12,
+      "independent_family_count": 6,
+      "conditions_on_original_model_set_population": {
+        "model_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_selection": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "actual_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_stable_actual_valid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "any_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "common_valid_empty": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        }
+      },
+      "selection_status_counts": {
+        "selected_actual_valid": 12
+      },
+      "selection_loss_ordering_counts": {
+        "INCONCLUSIVE": 7,
+        "SELECTED_WORSE": 5
+      },
+      "selection_loss": {
+        "defined_model_sets": 12,
+        "undefined_model_sets": 0,
+        "defined_model_set_mean_descriptive": 5.166982907606761,
+        "complete_family_denominator": 6,
+        "complete_family_mean": 5.166982907606761,
+        "family_values": [
+          15.369346759239875,
+          13.218277959886166,
+          1.0565594562145861,
+          1.2399526622293706,
+          0.11776060807056865,
+          0.0
+        ],
+        "eligibility": "all two ticks and all member training seeds require defined selection loss before family averaging"
+      },
+      "pairwise_actual_inconclusive_count": 679,
+      "pairwise_original_candidate_pairs_per_model_set": 120,
+      "descriptive_cost_and_rank": {
+        "cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 13.357080549690197,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-47": 16,
+            "p5-final-translation-00/G/tick-029/SK-47": 16,
+            "p5-final-translation-01/G/tick-000/SK-47": 16,
+            "p5-final-translation-01/G/tick-029/SK-47": 16,
+            "p5-final-rotation-00/G/tick-000/SK-47": 16,
+            "p5-final-rotation-00/G/tick-029/SK-47": 16,
+            "p5-final-rotation-01/G/tick-000/SK-47": 16,
+            "p5-final-rotation-01/G/tick-029/SK-47": 16,
+            "p5-final-offset-00/G/tick-000/SK-47": 16,
+            "p5-final-offset-00/G/tick-029/SK-47": 16,
+            "p5-final-offset-01/G/tick-000/SK-47": 16,
+            "p5-final-offset-01/G/tick-029/SK-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "cost_RMSE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 23.129648364870405,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-47": 16,
+            "p5-final-translation-00/G/tick-029/SK-47": 16,
+            "p5-final-translation-01/G/tick-000/SK-47": 16,
+            "p5-final-translation-01/G/tick-029/SK-47": 16,
+            "p5-final-rotation-00/G/tick-000/SK-47": 16,
+            "p5-final-rotation-00/G/tick-029/SK-47": 16,
+            "p5-final-rotation-01/G/tick-000/SK-47": 16,
+            "p5-final-rotation-01/G/tick-029/SK-47": 16,
+            "p5-final-offset-00/G/tick-000/SK-47": 16,
+            "p5-final-offset-00/G/tick-029/SK-47": 16,
+            "p5-final-offset-01/G/tick-000/SK-47": 16,
+            "p5-final-offset-01/G/tick-029/SK-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "rank_rho": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 0.46649155504668893,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-47": 16,
+            "p5-final-translation-00/G/tick-029/SK-47": 16,
+            "p5-final-translation-01/G/tick-000/SK-47": 16,
+            "p5-final-translation-01/G/tick-029/SK-47": 16,
+            "p5-final-rotation-00/G/tick-000/SK-47": 16,
+            "p5-final-rotation-00/G/tick-029/SK-47": 16,
+            "p5-final-rotation-01/G/tick-000/SK-47": 16,
+            "p5-final-rotation-01/G/tick-029/SK-47": 16,
+            "p5-final-offset-00/G/tick-000/SK-47": 16,
+            "p5-final-offset-00/G/tick-029/SK-47": 16,
+            "p5-final-offset-01/G/tick-000/SK-47": 16,
+            "p5-final-offset-01/G/tick-029/SK-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "all7_common_cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 13.73442663334884,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-47": 16,
+            "p5-final-translation-00/G/tick-029/SK-47": 13,
+            "p5-final-translation-01/G/tick-000/SK-47": 15,
+            "p5-final-translation-01/G/tick-029/SK-47": 15,
+            "p5-final-rotation-00/G/tick-000/SK-47": 16,
+            "p5-final-rotation-00/G/tick-029/SK-47": 15,
+            "p5-final-rotation-01/G/tick-000/SK-47": 16,
+            "p5-final-rotation-01/G/tick-029/SK-47": 16,
+            "p5-final-offset-00/G/tick-000/SK-47": 15,
+            "p5-final-offset-00/G/tick-029/SK-47": 12,
+            "p5-final-offset-01/G/tick-000/SK-47": 16,
+            "p5-final-offset-01/G/tick-029/SK-47": 15
+          },
+          "scope": "same all-seven predicted-valid AND all-three-actual-valid mask within each snapshot; snapshot sizes can differ",
+          "not_a_common_population_superiority_test": true
+        }
+      },
+      "rank_undefined_is_not_model_or_physics_failure": true
+    }
+  },
+  "seed_groups": {
+    "R": {
+      "members": [
+        "R"
+      ],
+      "model_set_count": 12,
+      "snapshot_count": 12,
+      "independent_family_count": 6,
+      "conditions_on_original_model_set_population": {
+        "model_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_selection": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "selected_actual_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "actual_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "no_stable_actual_valid": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "any_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        },
+        "common_valid_empty": {
+          "numerator": 0,
+          "model_set_denominator": 12
+        }
+      },
+      "selection_status_counts": {
+        "selected_actual_valid": 12
+      },
+      "selection_loss_ordering_counts": {
+        "INCONCLUSIVE": 6,
+        "SELECTED_WORSE": 6
+      },
+      "selection_loss": {
+        "defined_model_sets": 12,
+        "undefined_model_sets": 0,
+        "defined_model_set_mean_descriptive": 10.486563030887632,
+        "complete_family_denominator": 6,
+        "complete_family_mean": 10.486563030887632,
+        "family_values": [
+          16.39123462737325,
+          0.0,
+          18.245958528117967,
+          0.0,
+          0.11776060807056865,
+          28.16442442176401
+        ],
+        "eligibility": "all two ticks and all member training seeds require defined selection loss before family averaging"
+      },
+      "pairwise_actual_inconclusive_count": 679,
+      "pairwise_original_candidate_pairs_per_model_set": 120,
+      "descriptive_cost_and_rank": {
+        "cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 31.960471156810257,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/R": 16,
+            "p5-final-translation-00/G/tick-029/R": 14,
+            "p5-final-translation-01/G/tick-000/R": 15,
+            "p5-final-translation-01/G/tick-029/R": 15,
+            "p5-final-rotation-00/G/tick-000/R": 16,
+            "p5-final-rotation-00/G/tick-029/R": 15,
+            "p5-final-rotation-01/G/tick-000/R": 16,
+            "p5-final-rotation-01/G/tick-029/R": 16,
+            "p5-final-offset-00/G/tick-000/R": 15,
+            "p5-final-offset-00/G/tick-029/R": 13,
+            "p5-final-offset-01/G/tick-000/R": 16,
+            "p5-final-offset-01/G/tick-029/R": 15
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "cost_RMSE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 39.46163011067289,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/R": 16,
+            "p5-final-translation-00/G/tick-029/R": 14,
+            "p5-final-translation-01/G/tick-000/R": 15,
+            "p5-final-translation-01/G/tick-029/R": 15,
+            "p5-final-rotation-00/G/tick-000/R": 16,
+            "p5-final-rotation-00/G/tick-029/R": 15,
+            "p5-final-rotation-01/G/tick-000/R": 16,
+            "p5-final-rotation-01/G/tick-029/R": 16,
+            "p5-final-offset-00/G/tick-000/R": 15,
+            "p5-final-offset-00/G/tick-029/R": 13,
+            "p5-final-offset-01/G/tick-000/R": 16,
+            "p5-final-offset-01/G/tick-029/R": 15
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "rank_rho": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 0.8133667226873007,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/R": 16,
+            "p5-final-translation-00/G/tick-029/R": 14,
+            "p5-final-translation-01/G/tick-000/R": 15,
+            "p5-final-translation-01/G/tick-029/R": 15,
+            "p5-final-rotation-00/G/tick-000/R": 16,
+            "p5-final-rotation-00/G/tick-029/R": 15,
+            "p5-final-rotation-01/G/tick-000/R": 16,
+            "p5-final-rotation-01/G/tick-029/R": 16,
+            "p5-final-offset-00/G/tick-000/R": 15,
+            "p5-final-offset-00/G/tick-029/R": 13,
+            "p5-final-offset-01/G/tick-000/R": 16,
+            "p5-final-offset-01/G/tick-029/R": 15
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "all7_common_cost_MAE": {
+          "defined_model_sets": 12,
+          "model_set_denominator": 12,
+          "mean_of_defined_model_set_values": 32.26849258219677,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/R": 16,
+            "p5-final-translation-00/G/tick-029/R": 13,
+            "p5-final-translation-01/G/tick-000/R": 15,
+            "p5-final-translation-01/G/tick-029/R": 15,
+            "p5-final-rotation-00/G/tick-000/R": 16,
+            "p5-final-rotation-00/G/tick-029/R": 15,
+            "p5-final-rotation-01/G/tick-000/R": 16,
+            "p5-final-rotation-01/G/tick-029/R": 16,
+            "p5-final-offset-00/G/tick-000/R": 15,
+            "p5-final-offset-00/G/tick-029/R": 12,
+            "p5-final-offset-01/G/tick-000/R": 16,
+            "p5-final-offset-01/G/tick-029/R": 15
+          },
+          "scope": "same all-seven predicted-valid AND all-three-actual-valid mask within each snapshot; snapshot sizes can differ",
+          "not_a_common_population_superiority_test": true
+        }
+      },
+      "rank_undefined_is_not_model_or_physics_failure": true
+    },
+    "S1": {
+      "members": [
+        "S1-11",
+        "S1-23",
+        "S1-47"
+      ],
+      "model_set_count": 36,
+      "snapshot_count": 12,
+      "independent_family_count": 6,
+      "conditions_on_original_model_set_population": {
+        "model_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "no_selection": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "selected_actual_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "selected_actual_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "actual_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "no_stable_actual_valid": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "any_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "common_valid_empty": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        }
+      },
+      "selection_status_counts": {
+        "selected_actual_valid": 36
+      },
+      "selection_loss_ordering_counts": {
+        "INCONCLUSIVE": 21,
+        "SELECTED_WORSE": 15
+      },
+      "selection_loss": {
+        "defined_model_sets": 36,
+        "undefined_model_sets": 0,
+        "defined_model_set_mean_descriptive": 6.612160856166367,
+        "complete_family_denominator": 6,
+        "complete_family_mean": 6.612160856166368,
+        "family_values": [
+          15.793536620254182,
+          13.218277959886166,
+          1.1190091186772786,
+          9.542141438180579,
+          0.0,
+          0.0
+        ],
+        "eligibility": "all two ticks and all member training seeds require defined selection loss before family averaging"
+      },
+      "pairwise_actual_inconclusive_count": 2037,
+      "pairwise_original_candidate_pairs_per_model_set": 120,
+      "descriptive_cost_and_rank": {
+        "cost_MAE": {
+          "defined_model_sets": 36,
+          "model_set_denominator": 36,
+          "mean_of_defined_model_set_values": 11.963500793816614,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-11": 16,
+            "p5-final-translation-00/G/tick-000/S1-23": 16,
+            "p5-final-translation-00/G/tick-000/S1-47": 16,
+            "p5-final-translation-00/G/tick-029/S1-11": 15,
+            "p5-final-translation-00/G/tick-029/S1-23": 16,
+            "p5-final-translation-00/G/tick-029/S1-47": 16,
+            "p5-final-translation-01/G/tick-000/S1-11": 16,
+            "p5-final-translation-01/G/tick-000/S1-23": 16,
+            "p5-final-translation-01/G/tick-000/S1-47": 16,
+            "p5-final-translation-01/G/tick-029/S1-11": 16,
+            "p5-final-translation-01/G/tick-029/S1-23": 16,
+            "p5-final-translation-01/G/tick-029/S1-47": 16,
+            "p5-final-rotation-00/G/tick-000/S1-11": 16,
+            "p5-final-rotation-00/G/tick-000/S1-23": 16,
+            "p5-final-rotation-00/G/tick-000/S1-47": 16,
+            "p5-final-rotation-00/G/tick-029/S1-11": 16,
+            "p5-final-rotation-00/G/tick-029/S1-23": 16,
+            "p5-final-rotation-00/G/tick-029/S1-47": 16,
+            "p5-final-rotation-01/G/tick-000/S1-11": 16,
+            "p5-final-rotation-01/G/tick-000/S1-23": 16,
+            "p5-final-rotation-01/G/tick-000/S1-47": 16,
+            "p5-final-rotation-01/G/tick-029/S1-11": 16,
+            "p5-final-rotation-01/G/tick-029/S1-23": 16,
+            "p5-final-rotation-01/G/tick-029/S1-47": 16,
+            "p5-final-offset-00/G/tick-000/S1-11": 16,
+            "p5-final-offset-00/G/tick-000/S1-23": 16,
+            "p5-final-offset-00/G/tick-000/S1-47": 16,
+            "p5-final-offset-00/G/tick-029/S1-11": 15,
+            "p5-final-offset-00/G/tick-029/S1-23": 16,
+            "p5-final-offset-00/G/tick-029/S1-47": 16,
+            "p5-final-offset-01/G/tick-000/S1-11": 16,
+            "p5-final-offset-01/G/tick-000/S1-23": 16,
+            "p5-final-offset-01/G/tick-000/S1-47": 16,
+            "p5-final-offset-01/G/tick-029/S1-11": 16,
+            "p5-final-offset-01/G/tick-029/S1-23": 16,
+            "p5-final-offset-01/G/tick-029/S1-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "cost_RMSE": {
+          "defined_model_sets": 36,
+          "model_set_denominator": 36,
+          "mean_of_defined_model_set_values": 20.305073043167035,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-11": 16,
+            "p5-final-translation-00/G/tick-000/S1-23": 16,
+            "p5-final-translation-00/G/tick-000/S1-47": 16,
+            "p5-final-translation-00/G/tick-029/S1-11": 15,
+            "p5-final-translation-00/G/tick-029/S1-23": 16,
+            "p5-final-translation-00/G/tick-029/S1-47": 16,
+            "p5-final-translation-01/G/tick-000/S1-11": 16,
+            "p5-final-translation-01/G/tick-000/S1-23": 16,
+            "p5-final-translation-01/G/tick-000/S1-47": 16,
+            "p5-final-translation-01/G/tick-029/S1-11": 16,
+            "p5-final-translation-01/G/tick-029/S1-23": 16,
+            "p5-final-translation-01/G/tick-029/S1-47": 16,
+            "p5-final-rotation-00/G/tick-000/S1-11": 16,
+            "p5-final-rotation-00/G/tick-000/S1-23": 16,
+            "p5-final-rotation-00/G/tick-000/S1-47": 16,
+            "p5-final-rotation-00/G/tick-029/S1-11": 16,
+            "p5-final-rotation-00/G/tick-029/S1-23": 16,
+            "p5-final-rotation-00/G/tick-029/S1-47": 16,
+            "p5-final-rotation-01/G/tick-000/S1-11": 16,
+            "p5-final-rotation-01/G/tick-000/S1-23": 16,
+            "p5-final-rotation-01/G/tick-000/S1-47": 16,
+            "p5-final-rotation-01/G/tick-029/S1-11": 16,
+            "p5-final-rotation-01/G/tick-029/S1-23": 16,
+            "p5-final-rotation-01/G/tick-029/S1-47": 16,
+            "p5-final-offset-00/G/tick-000/S1-11": 16,
+            "p5-final-offset-00/G/tick-000/S1-23": 16,
+            "p5-final-offset-00/G/tick-000/S1-47": 16,
+            "p5-final-offset-00/G/tick-029/S1-11": 15,
+            "p5-final-offset-00/G/tick-029/S1-23": 16,
+            "p5-final-offset-00/G/tick-029/S1-47": 16,
+            "p5-final-offset-01/G/tick-000/S1-11": 16,
+            "p5-final-offset-01/G/tick-000/S1-23": 16,
+            "p5-final-offset-01/G/tick-000/S1-47": 16,
+            "p5-final-offset-01/G/tick-029/S1-11": 16,
+            "p5-final-offset-01/G/tick-029/S1-23": 16,
+            "p5-final-offset-01/G/tick-029/S1-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "rank_rho": {
+          "defined_model_sets": 36,
+          "model_set_denominator": 36,
+          "mean_of_defined_model_set_values": 0.564547115302756,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-11": 16,
+            "p5-final-translation-00/G/tick-000/S1-23": 16,
+            "p5-final-translation-00/G/tick-000/S1-47": 16,
+            "p5-final-translation-00/G/tick-029/S1-11": 15,
+            "p5-final-translation-00/G/tick-029/S1-23": 16,
+            "p5-final-translation-00/G/tick-029/S1-47": 16,
+            "p5-final-translation-01/G/tick-000/S1-11": 16,
+            "p5-final-translation-01/G/tick-000/S1-23": 16,
+            "p5-final-translation-01/G/tick-000/S1-47": 16,
+            "p5-final-translation-01/G/tick-029/S1-11": 16,
+            "p5-final-translation-01/G/tick-029/S1-23": 16,
+            "p5-final-translation-01/G/tick-029/S1-47": 16,
+            "p5-final-rotation-00/G/tick-000/S1-11": 16,
+            "p5-final-rotation-00/G/tick-000/S1-23": 16,
+            "p5-final-rotation-00/G/tick-000/S1-47": 16,
+            "p5-final-rotation-00/G/tick-029/S1-11": 16,
+            "p5-final-rotation-00/G/tick-029/S1-23": 16,
+            "p5-final-rotation-00/G/tick-029/S1-47": 16,
+            "p5-final-rotation-01/G/tick-000/S1-11": 16,
+            "p5-final-rotation-01/G/tick-000/S1-23": 16,
+            "p5-final-rotation-01/G/tick-000/S1-47": 16,
+            "p5-final-rotation-01/G/tick-029/S1-11": 16,
+            "p5-final-rotation-01/G/tick-029/S1-23": 16,
+            "p5-final-rotation-01/G/tick-029/S1-47": 16,
+            "p5-final-offset-00/G/tick-000/S1-11": 16,
+            "p5-final-offset-00/G/tick-000/S1-23": 16,
+            "p5-final-offset-00/G/tick-000/S1-47": 16,
+            "p5-final-offset-00/G/tick-029/S1-11": 15,
+            "p5-final-offset-00/G/tick-029/S1-23": 16,
+            "p5-final-offset-00/G/tick-029/S1-47": 16,
+            "p5-final-offset-01/G/tick-000/S1-11": 16,
+            "p5-final-offset-01/G/tick-000/S1-23": 16,
+            "p5-final-offset-01/G/tick-000/S1-47": 16,
+            "p5-final-offset-01/G/tick-029/S1-11": 16,
+            "p5-final-offset-01/G/tick-029/S1-23": 16,
+            "p5-final-offset-01/G/tick-029/S1-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "all7_common_cost_MAE": {
+          "defined_model_sets": 36,
+          "model_set_denominator": 36,
+          "mean_of_defined_model_set_values": 12.228966756412882,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/S1-11": 16,
+            "p5-final-translation-00/G/tick-000/S1-23": 16,
+            "p5-final-translation-00/G/tick-000/S1-47": 16,
+            "p5-final-translation-00/G/tick-029/S1-11": 13,
+            "p5-final-translation-00/G/tick-029/S1-23": 13,
+            "p5-final-translation-00/G/tick-029/S1-47": 13,
+            "p5-final-translation-01/G/tick-000/S1-11": 15,
+            "p5-final-translation-01/G/tick-000/S1-23": 15,
+            "p5-final-translation-01/G/tick-000/S1-47": 15,
+            "p5-final-translation-01/G/tick-029/S1-11": 15,
+            "p5-final-translation-01/G/tick-029/S1-23": 15,
+            "p5-final-translation-01/G/tick-029/S1-47": 15,
+            "p5-final-rotation-00/G/tick-000/S1-11": 16,
+            "p5-final-rotation-00/G/tick-000/S1-23": 16,
+            "p5-final-rotation-00/G/tick-000/S1-47": 16,
+            "p5-final-rotation-00/G/tick-029/S1-11": 15,
+            "p5-final-rotation-00/G/tick-029/S1-23": 15,
+            "p5-final-rotation-00/G/tick-029/S1-47": 15,
+            "p5-final-rotation-01/G/tick-000/S1-11": 16,
+            "p5-final-rotation-01/G/tick-000/S1-23": 16,
+            "p5-final-rotation-01/G/tick-000/S1-47": 16,
+            "p5-final-rotation-01/G/tick-029/S1-11": 16,
+            "p5-final-rotation-01/G/tick-029/S1-23": 16,
+            "p5-final-rotation-01/G/tick-029/S1-47": 16,
+            "p5-final-offset-00/G/tick-000/S1-11": 15,
+            "p5-final-offset-00/G/tick-000/S1-23": 15,
+            "p5-final-offset-00/G/tick-000/S1-47": 15,
+            "p5-final-offset-00/G/tick-029/S1-11": 12,
+            "p5-final-offset-00/G/tick-029/S1-23": 12,
+            "p5-final-offset-00/G/tick-029/S1-47": 12,
+            "p5-final-offset-01/G/tick-000/S1-11": 16,
+            "p5-final-offset-01/G/tick-000/S1-23": 16,
+            "p5-final-offset-01/G/tick-000/S1-47": 16,
+            "p5-final-offset-01/G/tick-029/S1-11": 15,
+            "p5-final-offset-01/G/tick-029/S1-23": 15,
+            "p5-final-offset-01/G/tick-029/S1-47": 15
+          },
+          "scope": "same all-seven predicted-valid AND all-three-actual-valid mask within each snapshot; snapshot sizes can differ",
+          "not_a_common_population_superiority_test": true
+        }
+      },
+      "rank_undefined_is_not_model_or_physics_failure": true
+    },
+    "SK": {
+      "members": [
+        "SK-11",
+        "SK-23",
+        "SK-47"
+      ],
+      "model_set_count": 36,
+      "snapshot_count": 12,
+      "independent_family_count": 6,
+      "conditions_on_original_model_set_population": {
+        "model_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "no_selection": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "selected_actual_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "selected_actual_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "actual_all_invalid": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "no_stable_actual_valid": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "any_validity_changed": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        },
+        "common_valid_empty": {
+          "numerator": 0,
+          "model_set_denominator": 36
+        }
+      },
+      "selection_status_counts": {
+        "selected_actual_valid": 36
+      },
+      "selection_loss_ordering_counts": {
+        "INCONCLUSIVE": 20,
+        "SELECTED_WORSE": 16
+      },
+      "selection_loss": {
+        "defined_model_sets": 36,
+        "undefined_model_sets": 0,
+        "defined_model_set_mean_descriptive": 6.618703112170288,
+        "complete_family_denominator": 6,
+        "complete_family_mean": 6.618703112170288,
+        "family_values": [
+          15.793536620254182,
+          13.218277959886166,
+          1.1190091186772786,
+          9.542141438180579,
+          0.039253536023522884,
+          0.0
+        ],
+        "eligibility": "all two ticks and all member training seeds require defined selection loss before family averaging"
+      },
+      "pairwise_actual_inconclusive_count": 2037,
+      "pairwise_original_candidate_pairs_per_model_set": 120,
+      "descriptive_cost_and_rank": {
+        "cost_MAE": {
+          "defined_model_sets": 36,
+          "model_set_denominator": 36,
+          "mean_of_defined_model_set_values": 10.97695525838025,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-11": 16,
+            "p5-final-translation-00/G/tick-000/SK-23": 16,
+            "p5-final-translation-00/G/tick-000/SK-47": 16,
+            "p5-final-translation-00/G/tick-029/SK-11": 16,
+            "p5-final-translation-00/G/tick-029/SK-23": 16,
+            "p5-final-translation-00/G/tick-029/SK-47": 16,
+            "p5-final-translation-01/G/tick-000/SK-11": 16,
+            "p5-final-translation-01/G/tick-000/SK-23": 16,
+            "p5-final-translation-01/G/tick-000/SK-47": 16,
+            "p5-final-translation-01/G/tick-029/SK-11": 16,
+            "p5-final-translation-01/G/tick-029/SK-23": 16,
+            "p5-final-translation-01/G/tick-029/SK-47": 16,
+            "p5-final-rotation-00/G/tick-000/SK-11": 16,
+            "p5-final-rotation-00/G/tick-000/SK-23": 16,
+            "p5-final-rotation-00/G/tick-000/SK-47": 16,
+            "p5-final-rotation-00/G/tick-029/SK-11": 16,
+            "p5-final-rotation-00/G/tick-029/SK-23": 16,
+            "p5-final-rotation-00/G/tick-029/SK-47": 16,
+            "p5-final-rotation-01/G/tick-000/SK-11": 16,
+            "p5-final-rotation-01/G/tick-000/SK-23": 16,
+            "p5-final-rotation-01/G/tick-000/SK-47": 16,
+            "p5-final-rotation-01/G/tick-029/SK-11": 16,
+            "p5-final-rotation-01/G/tick-029/SK-23": 16,
+            "p5-final-rotation-01/G/tick-029/SK-47": 16,
+            "p5-final-offset-00/G/tick-000/SK-11": 16,
+            "p5-final-offset-00/G/tick-000/SK-23": 16,
+            "p5-final-offset-00/G/tick-000/SK-47": 16,
+            "p5-final-offset-00/G/tick-029/SK-11": 15,
+            "p5-final-offset-00/G/tick-029/SK-23": 16,
+            "p5-final-offset-00/G/tick-029/SK-47": 16,
+            "p5-final-offset-01/G/tick-000/SK-11": 16,
+            "p5-final-offset-01/G/tick-000/SK-23": 16,
+            "p5-final-offset-01/G/tick-000/SK-47": 16,
+            "p5-final-offset-01/G/tick-029/SK-11": 16,
+            "p5-final-offset-01/G/tick-029/SK-23": 16,
+            "p5-final-offset-01/G/tick-029/SK-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "cost_RMSE": {
+          "defined_model_sets": 36,
+          "model_set_denominator": 36,
+          "mean_of_defined_model_set_values": 19.165732861963928,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-11": 16,
+            "p5-final-translation-00/G/tick-000/SK-23": 16,
+            "p5-final-translation-00/G/tick-000/SK-47": 16,
+            "p5-final-translation-00/G/tick-029/SK-11": 16,
+            "p5-final-translation-00/G/tick-029/SK-23": 16,
+            "p5-final-translation-00/G/tick-029/SK-47": 16,
+            "p5-final-translation-01/G/tick-000/SK-11": 16,
+            "p5-final-translation-01/G/tick-000/SK-23": 16,
+            "p5-final-translation-01/G/tick-000/SK-47": 16,
+            "p5-final-translation-01/G/tick-029/SK-11": 16,
+            "p5-final-translation-01/G/tick-029/SK-23": 16,
+            "p5-final-translation-01/G/tick-029/SK-47": 16,
+            "p5-final-rotation-00/G/tick-000/SK-11": 16,
+            "p5-final-rotation-00/G/tick-000/SK-23": 16,
+            "p5-final-rotation-00/G/tick-000/SK-47": 16,
+            "p5-final-rotation-00/G/tick-029/SK-11": 16,
+            "p5-final-rotation-00/G/tick-029/SK-23": 16,
+            "p5-final-rotation-00/G/tick-029/SK-47": 16,
+            "p5-final-rotation-01/G/tick-000/SK-11": 16,
+            "p5-final-rotation-01/G/tick-000/SK-23": 16,
+            "p5-final-rotation-01/G/tick-000/SK-47": 16,
+            "p5-final-rotation-01/G/tick-029/SK-11": 16,
+            "p5-final-rotation-01/G/tick-029/SK-23": 16,
+            "p5-final-rotation-01/G/tick-029/SK-47": 16,
+            "p5-final-offset-00/G/tick-000/SK-11": 16,
+            "p5-final-offset-00/G/tick-000/SK-23": 16,
+            "p5-final-offset-00/G/tick-000/SK-47": 16,
+            "p5-final-offset-00/G/tick-029/SK-11": 15,
+            "p5-final-offset-00/G/tick-029/SK-23": 16,
+            "p5-final-offset-00/G/tick-029/SK-47": 16,
+            "p5-final-offset-01/G/tick-000/SK-11": 16,
+            "p5-final-offset-01/G/tick-000/SK-23": 16,
+            "p5-final-offset-01/G/tick-000/SK-47": 16,
+            "p5-final-offset-01/G/tick-029/SK-11": 16,
+            "p5-final-offset-01/G/tick-029/SK-23": 16,
+            "p5-final-offset-01/G/tick-029/SK-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "rank_rho": {
+          "defined_model_sets": 36,
+          "model_set_denominator": 36,
+          "mean_of_defined_model_set_values": 0.5328450931110926,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-11": 16,
+            "p5-final-translation-00/G/tick-000/SK-23": 16,
+            "p5-final-translation-00/G/tick-000/SK-47": 16,
+            "p5-final-translation-00/G/tick-029/SK-11": 16,
+            "p5-final-translation-00/G/tick-029/SK-23": 16,
+            "p5-final-translation-00/G/tick-029/SK-47": 16,
+            "p5-final-translation-01/G/tick-000/SK-11": 16,
+            "p5-final-translation-01/G/tick-000/SK-23": 16,
+            "p5-final-translation-01/G/tick-000/SK-47": 16,
+            "p5-final-translation-01/G/tick-029/SK-11": 16,
+            "p5-final-translation-01/G/tick-029/SK-23": 16,
+            "p5-final-translation-01/G/tick-029/SK-47": 16,
+            "p5-final-rotation-00/G/tick-000/SK-11": 16,
+            "p5-final-rotation-00/G/tick-000/SK-23": 16,
+            "p5-final-rotation-00/G/tick-000/SK-47": 16,
+            "p5-final-rotation-00/G/tick-029/SK-11": 16,
+            "p5-final-rotation-00/G/tick-029/SK-23": 16,
+            "p5-final-rotation-00/G/tick-029/SK-47": 16,
+            "p5-final-rotation-01/G/tick-000/SK-11": 16,
+            "p5-final-rotation-01/G/tick-000/SK-23": 16,
+            "p5-final-rotation-01/G/tick-000/SK-47": 16,
+            "p5-final-rotation-01/G/tick-029/SK-11": 16,
+            "p5-final-rotation-01/G/tick-029/SK-23": 16,
+            "p5-final-rotation-01/G/tick-029/SK-47": 16,
+            "p5-final-offset-00/G/tick-000/SK-11": 16,
+            "p5-final-offset-00/G/tick-000/SK-23": 16,
+            "p5-final-offset-00/G/tick-000/SK-47": 16,
+            "p5-final-offset-00/G/tick-029/SK-11": 15,
+            "p5-final-offset-00/G/tick-029/SK-23": 16,
+            "p5-final-offset-00/G/tick-029/SK-47": 16,
+            "p5-final-offset-01/G/tick-000/SK-11": 16,
+            "p5-final-offset-01/G/tick-000/SK-23": 16,
+            "p5-final-offset-01/G/tick-000/SK-47": 16,
+            "p5-final-offset-01/G/tick-029/SK-11": 16,
+            "p5-final-offset-01/G/tick-029/SK-23": 16,
+            "p5-final-offset-01/G/tick-029/SK-47": 16
+          },
+          "scope": "each model uses its own predicted-valid AND all-three-actual-valid candidates; masks may differ across models/snapshots; descriptive only",
+          "not_a_common_population_superiority_test": true
+        },
+        "all7_common_cost_MAE": {
+          "defined_model_sets": 36,
+          "model_set_denominator": 36,
+          "mean_of_defined_model_set_values": 11.108957382571326,
+          "candidate_denominator_by_model_set": {
+            "p5-final-translation-00/G/tick-000/SK-11": 16,
+            "p5-final-translation-00/G/tick-000/SK-23": 16,
+            "p5-final-translation-00/G/tick-000/SK-47": 16,
+            "p5-final-translation-00/G/tick-029/SK-11": 13,
+            "p5-final-translation-00/G/tick-029/SK-23": 13,
+            "p5-final-translation-00/G/tick-029/SK-47": 13,
+            "p5-final-translation-01/G/tick-000/SK-11": 15,
+            "p5-final-translation-01/G/tick-000/SK-23": 15,
+            "p5-final-translation-01/G/tick-000/SK-47": 15,
+            "p5-final-translation-01/G/tick-029/SK-11": 15,
+            "p5-final-translation-01/G/tick-029/SK-23": 15,
+            "p5-final-translation-01/G/tick-029/SK-47": 15,
+            "p5-final-rotation-00/G/tick-000/SK-11": 16,
+            "p5-final-rotation-00/G/tick-000/SK-23": 16,
+            "p5-final-rotation-00/G/tick-000/SK-47": 16,
+            "p5-final-rotation-00/G/tick-029/SK-11": 15,
+            "p5-final-rotation-00/G/tick-029/SK-23": 15,
+            "p5-final-rotation-00/G/tick-029/SK-47": 15,
+            "p5-final-rotation-01/G/tick-000/SK-11": 16,
+            "p5-final-rotation-01/G/tick-000/SK-23": 16,
+            "p5-final-rotation-01/G/tick-000/SK-47": 16,
+            "p5-final-rotation-01/G/tick-029/SK-11": 16,
+            "p5-final-rotation-01/G/tick-029/SK-23": 16,
+            "p5-final-rotation-01/G/tick-029/SK-47": 16,
+            "p5-final-offset-00/G/tick-000/SK-11": 15,
+            "p5-final-offset-00/G/tick-000/SK-23": 15,
+            "p5-final-offset-00/G/tick-000/SK-47": 15,
+            "p5-final-offset-00/G/tick-029/SK-11": 12,
+            "p5-final-offset-00/G/tick-029/SK-23": 12,
+            "p5-final-offset-00/G/tick-029/SK-47": 12,
+            "p5-final-offset-01/G/tick-000/SK-11": 16,
+            "p5-final-offset-01/G/tick-000/SK-23": 16,
+            "p5-final-offset-01/G/tick-000/SK-47": 16,
+            "p5-final-offset-01/G/tick-029/SK-11": 15,
+            "p5-final-offset-01/G/tick-029/SK-23": 15,
+            "p5-final-offset-01/G/tick-029/SK-47": 15
+          },
+          "scope": "same all-seven predicted-valid AND all-three-actual-valid mask within each snapshot; snapshot sizes can differ",
+          "not_a_common_population_superiority_test": true
+        }
+      },
+      "rank_undefined_is_not_model_or_physics_failure": true
+    }
+  },
+  "comparisons": [
+    {
+      "left": "S1",
+      "right": "R",
+      "metrics": {
+        "selection_loss": {
+          "difference_mean": -3.8744021747212654,
+          "family_differences": [
+            -0.5976980071190692,
+            13.218277959886166,
+            -17.126949409440687,
+            9.542141438180579,
+            -0.11776060807056865,
+            -28.16442442176401
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            -12.993694618273718,
+            5.2448902688311865
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "conditional family mean loss difference: every tick and member seed on both sides must have defined loss",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "model_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_selection": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "actual_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_stable_actual_valid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "any_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "common_valid_empty": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK",
+      "right": "R",
+      "metrics": {
+        "selection_loss": {
+          "difference_mean": -3.8678599187173446,
+          "family_differences": [
+            -0.5976980071190692,
+            13.218277959886166,
+            -17.126949409440687,
+            9.542141438180579,
+            -0.07850707204704577,
+            -28.16442442176401
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            -12.993694618273718,
+            5.257974780839027
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "conditional family mean loss difference: every tick and member seed on both sides must have defined loss",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "model_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_selection": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "actual_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_stable_actual_valid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "any_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "common_valid_empty": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK",
+      "right": "S1",
+      "metrics": {
+        "selection_loss": {
+          "difference_mean": 0.00654225600392048,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.039253536023522884,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.01308451200784096
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "conditional family mean loss difference: every tick and member seed on both sides must have defined loss",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "model_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_selection": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "actual_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_stable_actual_valid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "any_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "common_valid_empty": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK-11",
+      "right": "S1-11",
+      "metrics": {
+        "selection_loss": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "conditional family mean loss difference: every tick and member seed on both sides must have defined loss",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "model_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_selection": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "actual_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_stable_actual_valid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "any_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "common_valid_empty": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK-23",
+      "right": "S1-23",
+      "metrics": {
+        "selection_loss": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "conditional family mean loss difference: every tick and member seed on both sides must have defined loss",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "model_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_selection": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "actual_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_stable_actual_valid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "any_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "common_valid_empty": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK-47",
+      "right": "S1-47",
+      "metrics": {
+        "selection_loss": {
+          "difference_mean": 0.019626768011761442,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.11776060807056865,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.039253536023522884
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "conditional family mean loss difference: every tick and member seed on both sides must have defined loss",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "model_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_selection": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "selected_actual_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "actual_all_invalid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "no_stable_actual_valid": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "any_validity_changed": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        },
+        "common_valid_empty": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_ids": [
+            "p5-final-offset-00",
+            "p5-final-offset-01",
+            "p5-final-rotation-00",
+            "p5-final-rotation-01",
+            "p5-final-translation-00",
+            "p5-final-translation-01"
+          ],
+          "eligible_family_denominator": 6,
+          "original_family_denominator": 6,
+          "bootstrap_valid_replicates": 2000,
+          "bootstrap_unavailable_replicates": 0,
+          "bootstrap_replicate_denominator": 2000,
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "interval_conditions_on_nonempty_eligible_resample": true,
+          "zero_in_interval": true,
+          "estimand": "family mean difference in indicator fractions; all original model sets retained",
+          "claim": "exploratory six-family paired comparison; no equivalence/global-optimality/industrial or seed-population claim"
+        }
+      }
+    }
+  ],
+  "bootstrap": {
+    "seed": 7711,
+    "replicates": 2000,
+    "families_in_order": [
+      "p5-final-offset-00",
+      "p5-final-offset-01",
+      "p5-final-rotation-00",
+      "p5-final-rotation-01",
+      "p5-final-translation-00",
+      "p5-final-translation-01"
+    ],
+    "strata": {
+      "translation": [
+        "p5-final-translation-00",
+        "p5-final-translation-01"
+      ],
+      "rotation": [
+        "p5-final-rotation-00",
+        "p5-final-rotation-01"
+      ],
+      "offset": [
+        "p5-final-offset-00",
+        "p5-final-offset-01"
+      ]
+    },
+    "unit": "family within stratum; two draws per stratum; common draws across every model/contrast",
+    "averaging_order": "mean paired ticks0/29 within each model/family; mean training seeds within that family; then compare/resample families",
+    "missing_policy": "complete tick/seed family eligibility per estimand; preserve full draws, eligible position counts and zero-eligible replicate masks",
+    "limitations": "Two families per E1 stratum. Candidate costs, three physical repeats, related ticks and learning seeds are not independent family samples. Exploratory uncertainty; training-seed population variation is not fully covered."
+  },
+  "cost_rank_scope": "Existing diagnostic MAE/RMSE/rho are descriptive on their stored eligible masks; model-specific mask changes prevent a common-population superiority interpretation. Undefined rho or INCONCLUSIVE order is not reclassified as failure.",
+  "minimum_meaningful_difference": "NOT_SPECIFIED; no post-result threshold",
+  "personal_understanding": "NOT_ASSESSED"
+}

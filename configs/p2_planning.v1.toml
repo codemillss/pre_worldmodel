@@ -1,0 +1,23 @@
+# P2-05 model-only planning connection. Not closed-loop or performance evaluation.
+planning_id = "p2-model-planning-pilot-v1"
+device = "cpu"
+torch_threads = 1
+deterministic_algorithms = true
+candidate_count = 256
+horizon = 10
+block_lengths = [5, 5]
+candidate_speed_norm_max_m_s = 0.03
+geometry_proposal_enabled = false
+geometry_disabled_rule = "all six fixed geometry slots zero; random local geometry group remains zero-centred"
+candidate_seed_base = 2711
+trace_cases_per_regime = 2
+trace_selection = "validation transitions sorted episode_index/transition_index; first two for each first-step regime"
+trace_regime_order = ["noncontact", "sustained_contact", "transition"]
+repeat_case_index = 0
+stage_state_convention = "post-action predicted states 1..H"
+cost_time_convention = "action_dt_weighted_stage_plus_terminal"
+action_cost_scale = "physical 0.06 m/s limit; search subset is 0.03 m/s"
+support_diagnostic = "train original transitions only; marginal feature min/max, not joint-distribution guarantee"
+controlled_probe = "two one-step candidates; known position deltas; swapped predictions swap selected index"
+future_engine_guards = ["mj_step", "mj_step1", "mj_step2", "mj_forward", "mj_inverse"]
+scope = "candidate/model/cost/selection connection; no physics execution, candidate regret, alignment, or real-time claim"

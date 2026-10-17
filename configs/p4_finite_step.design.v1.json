@@ -1,0 +1,324 @@
+{
+  "schema": "p4-fixed-direction-finite-step-design-v1",
+  "status": "DESIGN_ONLY_NOT_RUN",
+  "created_at_utc": "2026-10-15T08:32:55.895544+00:00",
+  "question": "Does the nominal finite TOTAL/KEEP addend raise the common objective despite its negative local derivative, and do smaller steps along exactly that direction reduce it?",
+  "rationale": "Saved Adam TOTAL/KEEP is first-order descending on all28 selected cases; an immediate moment reset is not justified by a whole-direction reversal. All28 nominal linearizations were retained; eight are negative for a nonnegative squared loss, motivating direct finite-step measurement rather than claiming overshoot.",
+  "source_diagnostic": "runs/p4-adam-probe-20261015-01",
+  "source_run_index_sha256": "7dc0314060086279e61d5a81aad88bda8825d4ace65e689301babc5207c4d099",
+  "source_audit_sha256": "c3dede0f6ae2fa444bcae2a27ca01f0f917975ba2101f3f096955e2500549118",
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "cases": [
+    {
+      "snapshot_id": "common_initial",
+      "probe_name": "historical_update1",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/common_initial/historical_update1/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "00f055ac415ff94c9058dbc2bb9f511141c7c39eb9747e2c42ec0cf8c52110c0",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/common_initial/historical_update1/summary.json",
+      "original_gradient_summary_sha256": "7b6853d9cf470e4f0cf98137cccdf3e5acd66cf8c20d5e4ba71795faf64f1465"
+    },
+    {
+      "snapshot_id": "common_initial",
+      "probe_name": "D11_zero5",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/common_initial/D11_zero5/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "bc585749fc9f302176bbf2e424be96d7a0b4baf3c791eb8349b02b45e780091f",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/common_initial/D11_zero5/summary.json",
+      "original_gradient_summary_sha256": "7aa3bf9a053db5e320727761f492cf40b586aebbb211ebbd675f75699382808a"
+    },
+    {
+      "snapshot_id": "common_initial",
+      "probe_name": "D11_transition",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/common_initial/D11_transition/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "b88a5fbb05acfd08ad665714ddffd491b2ea866d25f9f340246e2f698e5db2e0",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/common_initial/D11_transition/summary.json",
+      "original_gradient_summary_sha256": "d2df4c2eb704ea04ad946c723b5e76bdf88a5f50afa1ce5e5b8ea5cb54f0fb32"
+    },
+    {
+      "snapshot_id": "common_initial",
+      "probe_name": "D11_noncontact",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/common_initial/D11_noncontact/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "2ccfd41deec84d07f4f0c4ef1f10fadf1c529695a78e61b9ab837f0d6ed9068f",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/common_initial/D11_noncontact/summary.json",
+      "original_gradient_summary_sha256": "c5f4a6c03966a04982101549b3db4dc4f1494280cdfdd7dded92e0231b91bc84"
+    },
+    {
+      "snapshot_id": "C0_u0100",
+      "probe_name": "historical_update1",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u0100/historical_update1/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "8d827812b95c8c93e6cc33b9de616edbf0d7973a50b0eb254181c9dd2f212d51",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u0100/historical_update1/summary.json",
+      "original_gradient_summary_sha256": "55cf9aa5ae3fd63097708e2abbfde3eb7a2a602eb6cca51bbadd545f51a551d1"
+    },
+    {
+      "snapshot_id": "C0_u0100",
+      "probe_name": "D11_zero5",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u0100/D11_zero5/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "1f1ff377680fb30c2cf39b95864508c44a4a5d0d6ab3fbcb77c13e75a09acca7",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u0100/D11_zero5/summary.json",
+      "original_gradient_summary_sha256": "f7b1e4f8fc27c468e0dfe5b6b255259391e408f5c6106a0d03d546ed62adf422"
+    },
+    {
+      "snapshot_id": "C0_u0100",
+      "probe_name": "D11_transition",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u0100/D11_transition/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "0be4269fb05c3d05a074b65e6cc2111e1be695f0addb3751d372695cad397280",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u0100/D11_transition/summary.json",
+      "original_gradient_summary_sha256": "b5f0da91883c4a5826a5d4136ae872629f3683e3d23d9906a4d7162c34ee256f"
+    },
+    {
+      "snapshot_id": "C0_u0100",
+      "probe_name": "D11_noncontact",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u0100/D11_noncontact/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "297956a97a2f59099d5a201b7aa084fdd330524128bf38b8e1584e85e5665ee3",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u0100/D11_noncontact/summary.json",
+      "original_gradient_summary_sha256": "e7727736d375eac878270c6d9fdf21acbf8939a99d81375ab21af0720455c2e5"
+    },
+    {
+      "snapshot_id": "C0_u0500",
+      "probe_name": "historical_update1",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u0500/historical_update1/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "2de57aafa09e27eaf85f7ed23ca5ac3a48409ac551e9fc91b9e84fbd7c5b7ab8",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u0500/historical_update1/summary.json",
+      "original_gradient_summary_sha256": "7a6afc72bf6fe128c9a3b69622acfec0817ccd295ecab8e2be3bd9c9a611b937"
+    },
+    {
+      "snapshot_id": "C0_u0500",
+      "probe_name": "D11_zero5",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u0500/D11_zero5/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "939cf52bcc309c807d693d9bd0539f2c60415cb2549d1c3d37c9ff20259a1087",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u0500/D11_zero5/summary.json",
+      "original_gradient_summary_sha256": "d2b24d8cf57ec9cd7b19f764057ca7fbb4cbf1837d70a01757cd937e51e23362"
+    },
+    {
+      "snapshot_id": "C0_u0500",
+      "probe_name": "D11_transition",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u0500/D11_transition/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "54913fa25e6cde3d878966d33bcca71fb09e0efa0885862a3961cdc25ca749e7",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u0500/D11_transition/summary.json",
+      "original_gradient_summary_sha256": "b702e2d82eb0d5b8565a7bd84504c34dfcb9bea54163933d0e4b46925d857531"
+    },
+    {
+      "snapshot_id": "C0_u0500",
+      "probe_name": "D11_noncontact",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u0500/D11_noncontact/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "76802059680a03aaea18d6767acc3b29f74aa4c0f001ce3a1cb8b1e843913e8f",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u0500/D11_noncontact/summary.json",
+      "original_gradient_summary_sha256": "408cedded9fd8b31fc89029e287187c18bfacd07ab9943f5fa51e05cc6ab9579"
+    },
+    {
+      "snapshot_id": "C0_u1000",
+      "probe_name": "historical_update1",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u1000/historical_update1/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "c79ff3745504fd5210289030f34339c2e068d7821ae5b486fac4b23f9b69d715",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u1000/historical_update1/summary.json",
+      "original_gradient_summary_sha256": "4350a176196afb8fab954b326513262167337cd08cbab71a8ba9e0296be5d6f3"
+    },
+    {
+      "snapshot_id": "C0_u1000",
+      "probe_name": "D11_zero5",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u1000/D11_zero5/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "dcc471e392d022dcc39e732e9c27deee22ef44b46d11c3231b304f6b7d3059ce",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u1000/D11_zero5/summary.json",
+      "original_gradient_summary_sha256": "5226f003f9e4ba26bbaad612199cf058d9b83fb26aa077573ef3a7519258c6c5"
+    },
+    {
+      "snapshot_id": "C0_u1000",
+      "probe_name": "D11_transition",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u1000/D11_transition/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "cd94a83a56860a772d54cc1583ceb9b042a4d478a2ac7f0e93403feb7a6dd5f8",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u1000/D11_transition/summary.json",
+      "original_gradient_summary_sha256": "989bb617118f6a221db79050bde6e486cc0f92da8b538df8990847bcba9a956b"
+    },
+    {
+      "snapshot_id": "C0_u1000",
+      "probe_name": "D11_noncontact",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/C0_u1000/D11_noncontact/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "e5e7664110669236e149b461fc9de98f03ad6cc0fd94d052c702affa41555cdb",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/C0_u1000/D11_noncontact/summary.json",
+      "original_gradient_summary_sha256": "d365593dd4f73ab8c86b6e92f98cf6c8ccf3d78409896f41a4aa85ceb4086f9f"
+    },
+    {
+      "snapshot_id": "R1_u0100",
+      "probe_name": "historical_update1",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u0100/historical_update1/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "f0b0800d65eb4efbfa96e5649f52fc62838c5d84642c73af5db5a06207474f82",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u0100/historical_update1/summary.json",
+      "original_gradient_summary_sha256": "58bdbcdb188bfcad2d7ede66f8afd693ade99331fb1122fca1098111ed417190"
+    },
+    {
+      "snapshot_id": "R1_u0100",
+      "probe_name": "D11_zero5",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u0100/D11_zero5/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "0c3f3b894463c8c431489db833f60ce11f2671aaa92a44b18462a6beff4e8aa0",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u0100/D11_zero5/summary.json",
+      "original_gradient_summary_sha256": "de5ce7296e0ff596e577f5585c7fd48bd504d8c3ba2f6e99543e4b6e53001d0b"
+    },
+    {
+      "snapshot_id": "R1_u0100",
+      "probe_name": "D11_transition",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u0100/D11_transition/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "55521f4f853a1b5ed7c0cada0d0dbef9596c07d3e6fb31707f01942f5712a140",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u0100/D11_transition/summary.json",
+      "original_gradient_summary_sha256": "77f960f3fa056c878ba7c5373c66909948e25e73456282cceca2955a9e69fe07"
+    },
+    {
+      "snapshot_id": "R1_u0100",
+      "probe_name": "D11_noncontact",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u0100/D11_noncontact/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "4a16d20d8b1364fbdbd38fa0f0497478d3c78794202accce760fed9da1cbc23f",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u0100/D11_noncontact/summary.json",
+      "original_gradient_summary_sha256": "7ac1470b2e318f2f9deb75741c5a1312eb592e3e554edf9752606533f61576b4"
+    },
+    {
+      "snapshot_id": "R1_u0500",
+      "probe_name": "historical_update1",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u0500/historical_update1/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "1819068781042672d7bc9aecb80d7e9bf2085ffdab364f685e53b29689a6d2b6",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u0500/historical_update1/summary.json",
+      "original_gradient_summary_sha256": "ee107f0c62634711a6b135f9df062fafb3ac7227e2825b6f667fac2ecbc5e237"
+    },
+    {
+      "snapshot_id": "R1_u0500",
+      "probe_name": "D11_zero5",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u0500/D11_zero5/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "604c61f2a866154b3e20e76105368de2bf25c2fb1d0c7479ff01166b558bc3b5",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u0500/D11_zero5/summary.json",
+      "original_gradient_summary_sha256": "4f11a4140398fc4be1dc2e3a53ed596f6a02ed58670e71d92f2323be9d070fe6"
+    },
+    {
+      "snapshot_id": "R1_u0500",
+      "probe_name": "D11_transition",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u0500/D11_transition/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "a1f57d77e9c35b1a28ec4872c6575c01eda485fb42840151120437dae48f6976",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u0500/D11_transition/summary.json",
+      "original_gradient_summary_sha256": "7f89d7a7e0a8ca267ca2daf73ed37a63c00aadf3385908cc93c266c41d12d2b0"
+    },
+    {
+      "snapshot_id": "R1_u0500",
+      "probe_name": "D11_noncontact",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u0500/D11_noncontact/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "7452fa966173726f5f95b3a85203dd6221dbf78e96810d37d2e54559fe862247",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u0500/D11_noncontact/summary.json",
+      "original_gradient_summary_sha256": "89ad92d5273e3a3843a4ce958b26291137f5e51098b5d4d3e7b5813d5df4a68c"
+    },
+    {
+      "snapshot_id": "R1_u1000",
+      "probe_name": "historical_update1",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u1000/historical_update1/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "0a479983cbaf9f4ed52a63982126cf0d4fa593af6c1816032fbaf9f8cad32331",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u1000/historical_update1/summary.json",
+      "original_gradient_summary_sha256": "2ba4eaf0126c05efadd1feeba73cb9ef647e29e5396708b9a7909a62c71745b3"
+    },
+    {
+      "snapshot_id": "R1_u1000",
+      "probe_name": "D11_zero5",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u1000/D11_zero5/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "1c38dc0d463341ec29dbdfe0d1810f044a12efbd973d4059985e4d1b95d308d5",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u1000/D11_zero5/summary.json",
+      "original_gradient_summary_sha256": "b0491de00d869959265f6e1a4e72fb40f629a44ccfcfa699728c7306f2d6df59"
+    },
+    {
+      "snapshot_id": "R1_u1000",
+      "probe_name": "D11_transition",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u1000/D11_transition/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "85c9acf0373db89d0f88902c2c8aeb174e88b5d4f059a5db83572f988d7b0787",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u1000/D11_transition/summary.json",
+      "original_gradient_summary_sha256": "84093e1856ec3b9cb927324887c8dccacaa01e2776455db8ae2a9cb37b43a266"
+    },
+    {
+      "snapshot_id": "R1_u1000",
+      "probe_name": "D11_noncontact",
+      "source_direction_npz": "runs/p4-adam-probe-20261015-01/probes/R1_u1000/D11_noncontact/directions.npz",
+      "source_direction_index": 3,
+      "source_summary_sha256": "63cb3dd8003688f25dfe58847462a6262c4be16059955e05b3245fc3181478b2",
+      "original_gradient_summary": "runs/p4-gradient-probe-20261015-01/probes/R1_u1000/D11_noncontact/summary.json",
+      "original_gradient_summary_sha256": "307f95d39e7600de5d0eae7800d61d630738804a15b2a1763251ebff29ee324e"
+    }
+  ],
+  "case_count": 28,
+  "evaluation_count": 112,
+  "changed_factor": "Only the scalar alpha multiplying the same saved TOTAL/KEEP addend at each frozen case",
+  "held_fixed": [
+    "original weights",
+    "batch states/actions/mask",
+    "normalizer",
+    "common objective beta.2/rollout.1 and denominators",
+    "saved Adam-derived addend",
+    "mode/history state",
+    "precision/runtime and CPU thread count"
+  ],
+  "parameter_handling": "For every alpha, independently derive a disposable parameter map/copy from the same original theta. Prefer functional evaluation. Never mutate the source model/checkpoint or chain alphas; no gradient or Adam recomputation. Record actual float32 theta_alpha-theta and use g_total dot that actual difference for primary Taylor comparison. Nominal alpha*(g dot d) is separate reference.",
+  "metrics": [
+    "actual base/weightedaux/common total loss for everyalpha",
+    "actual total loss difference from alpha0",
+    "actual rounded parameter-difference norms and planned-addend discrepancy",
+    "actual total loss minus Taylor prediction using rounded difference",
+    "numerical reproduction/failure status with all28 denominator"
+  ],
+  "reference_objective": "The same common hypothetical TOTAL for every snapshot; for C0/common this is not their historical training objective.",
+  "alpha0_reproduction": {
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "failure_policy": "Mark REPRODUCTION_FAILURE and retain case; no finite-step interpretation for that case, no denominator removal."
+  },
+  "loss_change_neutral_band": {
+    "formula": "1e-6*max(1,abs(alpha0_total_loss))",
+    "meaning": "Conservative predeclared tie margin for computed float32-model comparisons, not a statistical confidence bound or learning-performance threshold. Changes inside it stay NUMERIC_TIE."
+  },
+  "decision_rules": {
+    "nominal_increase_smaller_decrease": "If alpha1 increase exceeds margin and at least one predeclared smaller alpha decreases beyond margin, support nominal-step overshoot only for that fixed snapshot/batch/direction.",
+    "all_positive_alphas_decrease": "No alpha1 overshoot observed on this grid for that case; do not exclude curvature, other step lengths or whole training causes.",
+    "all_increase_ties_or_other_mixed_patterns": "INCONCLUSIVE for this proposed overshoot contrast; retain all measured endpoints and do not add alphas after seeing results.",
+    "numeric_failure": "Keep NUMERICAL_FAILURE; never remove failed rows to make a mean."
+  },
+  "expected_new_root_model_forward_calls": 672,
+  "expected_new_root_model_forward_rows": 31360,
+  "new_training_updates": 0,
+  "new_autograd_traversals": 0,
+  "new_optimizer_steps": 0,
+  "new_physics_steps": 0,
+  "new_data_collection": false,
+  "new_checkpoint_writes": 0,
+  "final_test_used": false,
+  "model_selection": "NONE; do not promote alpha/500 checkpoint as a result of this diagnostic",
+  "execution_in_current_task": false,
+  "before_future_execution": [
+    "Implement and test functional/disposable-copy evaluation",
+    "Bind all source/config/runtime hashes in a new execution registration",
+    "Recheck resources and alpha0 reproducibility; preserve all frozen inputs"
+  ],
+  "P5_01": "HOLD",
+  "limits": "Local finite-step objective behavior on selected overlapping training probes, not independent generalization, complete historical cause, task alignment or real-world value."
+}

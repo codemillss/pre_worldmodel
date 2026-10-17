@@ -1,0 +1,80 @@
+{
+  "spec": {
+    "candidates": 16,
+    "controller_id": "G",
+    "episode_index": 8,
+    "family_id": "p5-final-offset-00",
+    "horizon": 5,
+    "missing_policy": "INCOMPLETE without replacement or postterminal generation",
+    "physical_repeats": 3,
+    "snapshot_id": "p5-final-offset-00/G/tick-000",
+    "stratum": "offset",
+    "tick": 0
+  },
+  "source_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/G/manifest.json",
+  "source_manifest_sha256": "902af1475530a8a89b8e9051db11ea5558beb8006d3c73a784c952c3b08d4fb2",
+  "source_full_input": {
+    "tick": 0,
+    "files_sha256": {
+      "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/G/plans/step-000/trace.npz": "22dce9515bcdcfc9b09fef67598bf566066baf1b4f5e5308b95c3723baaefb2e",
+      "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/G/plans/step-000/input.json.gz": "2a8a23419c0ed90227612fbf0011e98d1a74ee0f3baa48c3cef64ee95ac3dc03"
+    },
+    "bytes": {
+      "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/G/plans/step-000/trace.npz": 1725,
+      "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/G/plans/step-000/input.json.gz": 32617
+    },
+    "input_exact_sha256": "d5f26157aaf64ec87247059b9085f5ee483694dc6b7e0e8341707362ba61929e",
+    "full_model_arrays": false
+  },
+  "input_hash": "91a236bba816114e9bf20fb942e2d0a4f445302c2884053676c3e3eb72a7f381",
+  "previous_applied_action": [
+    0.0,
+    0.0
+  ],
+  "warm_sequence": null,
+  "candidate_rng_before": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 27406699129101477882395657243039198522,
+      "inc": 137849074150308534444329900916765418823
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "candidate_rng_after": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 77658588316851338201718638294535348058,
+      "inc": 137849074150308534444329900916765418823
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "candidate_hash": "62bba192539fe940fafad345c2395c1936915c2aec5fe4fd7f591135625eb1e6",
+  "generation": {
+    "candidate_count": 16,
+    "horizon": 5,
+    "block_lengths": [
+      2,
+      3
+    ],
+    "command_speed_norm_max_m_s": 0.03,
+    "physical_command_speed_norm_max_m_s": 0.06,
+    "planner_support_limit_overridden": true,
+    "geometry_proposal_enabled": true,
+    "geometry_proposal_status": "available",
+    "geometry_fixed_slots_zeroed": false,
+    "geometry_tangent_perturbation_applied": true,
+    "warm_start_available": false,
+    "random_group_counts": {
+      "global": 4,
+      "local_geometry": 2,
+      "local_warm": 2
+    },
+    "rng": "numpy_PCG64",
+    "replacement_draws": 0,
+    "duplicates_removed": 0
+  },
+  "observed_signed_geometric_gap_m": 0.003000000779565165,
+  "regime_scope": "Current observed geometry only; no assumption of actual future contact/force."
+}

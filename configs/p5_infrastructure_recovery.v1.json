@@ -1,0 +1,26 @@
+{
+  "schema": "p5-authorized-infrastructure-recovery-v1",
+  "parent_run": "runs/p5-final-20261017-01",
+  "new_run": "runs/p5-final-20261017-02",
+  "parent_manifest_sha256": "11eeaa35b8b3774b65998cd116b8d356eeeb34b129418af3f9ed0426f09f055c",
+  "parent_freeze_receipt_sha256": "d4f4eb299996f6267add16b1c11b8a03ce1bc02983b7b684b50522569d16f5e9",
+  "user_authorization": "저장기 보완 후 같은 조건으로 새 실행 (권장)",
+  "protocol_version": "p5-recording-reservation-v2",
+  "selection_rule": "all96 restart; retain parent separately; no pooling or best-case replacement",
+  "parent_outcomes_observed": true,
+  "observed_scope": {
+    "accepted_E2": 1,
+    "partial_E2": 1,
+    "unattempted_E2": 94
+  },
+  "outcomes_used_for_scientific_selection": false,
+  "scientific_changes": [],
+  "parent_preservation_receipt": "reports/p5_recovery_parent_preservation.v1.json",
+  "parent_preservation_sha256": "5169d8fc33b3f7d3ac35f640782ce75b5ef4243b7ee8cf62309cef25a14e54c3",
+  "allowed_changes": [
+    "recording resource lifecycle and failure telemetry",
+    "incomplete recording stop handling",
+    "explicit same-condition recovery freeze and provenance"
+  ],
+  "no_automatic_retry_within_new_execution": true
+}

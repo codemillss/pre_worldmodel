@@ -1,0 +1,27 @@
+# P3-04 common one-step MLP; declared before the official run.
+training_id = "p3-one-step-common-v1"
+device = "cpu"
+torch_threads = 1
+deterministic_algorithms = true
+seeds = [11, 23, 47]
+shuffle_seeds = [1011, 1023, 1047]
+main_initialization = "fresh model and Adam per seed; no pilot, Ridge or probe weights"
+main_epochs = 100
+batch_size = 256
+drop_last = false
+updates_per_epoch = 13
+updates_per_seed = 1300
+total_updates = 3900
+fit_count = 3200
+validation_count = 1600
+evaluation_horizons = [1, 5, 10]
+one_step_loss = "mean squared physical delta error / stored train delta scale; yaw wrap_2pi before scaling"
+selection = "trained epochs 1..100; validation K5 endpoint equal-regime score; exact strict improvement; earliest tie; separately per seed"
+invalid_selection = "missing regime or any invalid K5 window => ineligible; no survivor-only score or final fallback"
+checkpoint_policy = "save all 100 trained epoch boundaries with weights, Adam, Torch/shuffle RNG and K5 validation traces"
+resume_probe = "saved selected witness and two independent restored copies; identical next shuffle/batch/update/Adam; diagnostic copies only"
+leakage_probe_updates = 3
+diagnostic_baseline = "hold entire initial state; prediction reference only"
+normalizer_hash = "3ea38c6a9b5d17a751de10b77e557838d3f2fac6b6bafa6f3728d7de69753c22"
+dataset_manifest_sha256 = "9faa2f64a2eaf302f3a68fb06fc9d6340118b9ff703e213e9ba6abeb56a5df4b"
+scope = "three-seed main one-step common checkpoint and free-prediction validation; P3-05 planning and P4 S1/SK training not run; no alignment or final-test claim"

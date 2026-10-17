@@ -1,0 +1,235 @@
+# 동일 정적 자세의 접촉 거리·법선 이상에 따른 legacy 충돌 경로 후보.
+# v2 대비 native_ccd=false 하나만 변경하며 dt·마찰·형상·허용치는 유지한다.
+# 의미·변경 절차: docs/05_구현계약과_설정명세.md
+config_id = "pilot-v3-legacyccd"
+status = "unverified_draft"
+schema_version = "push-align-state-v1"
+final_evaluation_allowed = false
+
+[runtime]
+device = "cpu"
+model_dtype = "float32"
+headless = true
+extra_paid_services = false
+
+[schema]
+state_fields = ["obj_x", "obj_y", "obj_yaw", "obj_vx", "obj_vy", "obj_wz", "pusher_x", "pusher_y", "pusher_vx", "pusher_vy"]
+state_units = ["m", "m", "rad", "m/s", "m/s", "rad/s", "m", "m", "m/s", "m/s"]
+feature_fields = ["relative_pusher_x", "relative_pusher_y", "sin_2yaw", "cos_2yaw", "obj_vx", "obj_vy", "obj_wz", "pusher_vx", "pusher_vy", "applied_vx", "applied_vy"]
+delta_fields = ["delta_obj_x", "delta_obj_y", "delta_obj_yaw", "delta_obj_vx", "delta_obj_vy", "delta_obj_wz", "delta_pusher_x", "delta_pusher_y", "delta_pusher_vx", "delta_pusher_vy"]
+action_fields = ["target_vx_world", "target_vy_world"]
+goal_fields = ["goal_x", "goal_y", "goal_yaw"]
+yaw_storage = "wrap_2pi_minus_pi_inclusive"
+task_yaw_error = "symmetric_pi"
+learning_yaw_error = "wrap_2pi"
+action_semantics = "constant_target_velocity_per_action_interval"
+
+[physics]
+timestep_s = 0.0005
+frame_skip = 200
+action_dt_s = 0.1
+gravity_m_s2 = [0.0, 0.0, -9.81]
+integrator = "implicitfast"
+solver = "Newton"
+solver_iterations = 50
+solver_tolerance = 1e-8
+native_ccd = false
+
+[object]
+size_full_xyz_m = [0.08, 0.06, 0.02]
+mass_kg = 0.10
+joint_type = "free"
+center_of_mass = "geometric_center"
+
+[pusher]
+radius_m = 0.008
+height_full_m = 0.016
+center_z_m = 0.012
+mass_kg = 0.10
+actuator_type = "velocity"
+gear = 1.0
+velocity_gain_N_s_m = 20.0
+actuator_force_limit_abs_N = 2.0
+command_speed_norm_max_m_s = 0.06
+joint_range_xy_m = [-0.25, 0.25]
+command_filter = "none"
+joint_damping_N_s_m = 0.0
+joint_frictionloss_N = 0.0
+
+[contact]
+condim = 3
+pair_mode = "explicit"
+floor_object_friction = [0.3, 0.3, 0.0, 0.0, 0.0]
+pusher_object_friction = [0.5, 0.5, 0.0, 0.0, 0.0]
+solref = [0.02, 1.0]
+solimp = [0.9, 0.95, 0.001, 0.5, 2.0]
+margin_m = 0.0
+gap_m = 0.0
+
+[workspace]
+x_bounds_m = [-0.20, 0.20]
+y_bounds_m = [-0.20, 0.20]
+check_object = "all_projected_corners"
+check_pusher = "circle_extent"
+
+[reset]
+max_settle_time_s = 2.0
+required_stable_time_s = 0.2
+linear_speed_tolerance_m_s = 0.001
+angular_speed_tolerance_rad_s = 0.01
+initial_object_center_z_m = 0.011
+pusher_surface_gap_m = 0.003
+initial_pusher_face = "body_minus_x"
+initial_pusher_tangent_offset_m = 0.0
+
+[task]
+goal_xy_m = [0.08, 0.0]
+goal_yaw_rad = 0.0
+position_tolerance_m = 0.005
+yaw_tolerance_rad = 0.05235987755982989
+linear_speed_tolerance_m_s = 0.01
+angular_speed_tolerance_rad_s = 0.05
+hold_time_s = 0.3
+max_episode_time_s = 30.0
+automatic_task_retries = 0
+success_check = "action_boundary_with_continuous_substep_hold"
+
+[initial_conditions]
+object_x_range_m = [-0.02, 0.02]
+object_y_range_m = [-0.01, 0.01]
+object_yaw_range_rad = [-0.2617993877991494, 0.2617993877991494]
+velocity_after_settle = "measured_not_overwritten"
+goal_policy = "fixed_handoff_pose"
+
+[validity]
+height_deviation_from_settled_m = 0.002
+tilt_max_rad = 0.08726646259971647
+vertical_speed_abs_max_m_s = 0.05
+horizontal_angular_speed_norm_max_rad_s = 0.5
+predicted_penetration_tolerance_m = 0.001
+predicted_state_checks = ["finite", "workspace", "penetration", "raw_delta_yaw_less_than_pi"]
+predicted_raw_yaw_increment_abs_limit_rad = 3.141592653589793
+dt_match_tolerance_s = 1e-9
+thresholds_physically_validated = false
+
+[normalization]
+fit_split = "train"
+input_fixed_unit_indices = [2, 3]
+input_scale_floor = [0.001, 0.001, 1.0, 1.0, 0.001, 0.001, 0.01, 0.001, 0.001, 0.001, 0.001]
+delta_scale_floor = [0.0001, 0.0001, 0.001, 0.001, 0.001, 0.01, 0.0001, 0.0001, 0.001, 0.001]
+rollout_error_scale = "train_delta_scale"
+
+[data]
+format = "episode_npz_plus_json_manifest"
+max_actions_per_collection_episode = 100
+pilot_train_episodes = 24
+pilot_validation_episodes = 8
+pilot_smoke_test_episodes = 8
+main_train_episodes_candidate = 200
+main_validation_episodes_candidate = 50
+split_unit = "family_id"
+incomplete_transition_policy = "retain_raw_exclude_fixed_dt_loss"
+collection_modes = ["noncontact", "central_push", "eccentric_push", "contact_transition", "feedback_perturbed"]
+collection_mode_episode_weights = [0.25, 0.25, 0.25, 0.25, 0.0]
+
+[model]
+kind = "mlp_delta"
+hidden_widths = [128, 128]
+activation = "silu"
+output_activation = "linear"
+learned_inputs = 11
+learned_outputs = 10
+
+[training]
+optimizer = "adam"
+learning_rate = 0.001
+batch_size = 256
+pilot_max_epochs = 30
+main_max_epochs_candidate = 100
+weight_decay = 0.0
+gradient_clip_norm = 1.0
+seed_candidates = [11, 23, 47]
+rollout_K = 5
+lambda_rollout_candidates = [0.1, 1.0]
+validation_metric = "equal_regime_object_position_yaw_error"
+validation_prediction_horizon = 5
+validation_time_aggregation = "endpoint"
+validation_regime = "first_transition_substep_contact_pattern"
+missing_validation_regime_policy = "no_checkpoint_selection"
+common_checkpoint_rule = "best_validation_epoch_earliest_tie"
+branch_checkpoint_rule = "matched_final_update"
+fork_update_budget = "freeze_after_pilot_measurement"
+
+[ridge]
+alpha_candidates = [0.0001, 0.01, 1.0, 100.0]
+fit_intercept = true
+penalize_intercept = false
+
+[planner]
+kind = "random_shooting"
+horizon = 10
+candidate_count = 256
+block_lengths = [5, 5]
+reserved_candidates = ["zero", "shifted_previous", "geometry_constant", "geometry_then_zero", "zero_then_geometry", "half_geometry", "geometry_plus_tangent", "geometry_minus_tangent"]
+geometry_proposal_enabled = false
+geometry_tangent_perturbation_m_s = 0.01
+random_global_fraction = 0.5
+random_local_noise_std_m_s = 0.02
+second_block_correlation = 0.7
+invalid_candidate_cost = "positive_infinity"
+all_invalid_action = "zero_then_fail"
+use_simulator_for_candidate_prediction = false
+
+[cost]
+stage_position = 1.0
+stage_yaw = 1.0
+stage_action = 0.02
+stage_action_change = 0.02
+stage_gap = 0.1
+terminal_position = 5.0
+terminal_yaw = 5.0
+terminal_speed = 0.1
+terminal_angular_speed = 0.1
+gap_scale_m = 0.08
+time_sum = "action_dt_weighted_stage_plus_terminal"
+
+[geometry_baseline]
+position_gain_per_s = 0.8
+speed_max_m_s = 0.04
+waypoint_gain_per_s = 3.0
+waypoint_velocity_damping = 0.2
+approach_speed_max_m_s = 0.01
+yaw_creep_speed_m_s = 0.005
+yaw_offset_gain_m_rad = 0.03
+angular_damping_gain_m_s_rad = 0.01
+contact_offset_abs_max_m = 0.015
+retreat_gap_m = 0.012
+approach_gap_m = 0.001
+near_contact_loss_gap_m = 0.003
+waypoint_tolerance_m = 0.0015
+contact_offset_replan_threshold_m = 0.004
+minimum_inward_direction_cosine = 0.25
+contact_mode_max_elapsed_s = 2.0
+
+[evaluation]
+id_episode_count_candidate = 60
+mlp_training_seed_count_candidate = 3
+prediction_horizons = [1, 5, 10]
+development_counterfactual_states = 12
+development_counterfactual_candidates = 32
+bootstrap_replicates_candidate = 2000
+include_ood_in_required_scope = false
+final_manifest_frozen = false
+contact_active_normal_force_min_N = 0.001
+recontact_absence_min_s = 0.04
+recontact_presence_min_s = 0.01
+
+[reproducibility]
+base_seed = 20260927
+rng = "numpy_PCG64"
+planner_rng_keys = ["base_seed", "episode_index", "control_tick", "stream_id"]
+include_model_id_in_planner_seed = false
+data_manifest_hash_required = true
+normalizer_hash_required = true
+environment_hash_required = true
+fail_on_contract_mismatch = true

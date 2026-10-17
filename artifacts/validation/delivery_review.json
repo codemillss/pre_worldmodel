@@ -1,0 +1,166 @@
+{
+  "schema": "public-delivery-review-v1",
+  "as_of_kst": "2026-10-18",
+  "status": "PASS_DECLARED_DELIVERY_CHECKS",
+  "reports": [
+    {
+      "path": "reports/Business_Report.ko.pdf",
+      "sha256": "03c0a8010145ca7b822f8137e4b3db79caa6037f9ec210dfbfa60c4b129e218a",
+      "pages": 5,
+      "links": {
+        "internal": 18,
+        "web": 4
+      }
+    },
+    {
+      "path": "reports/Technical_Report.ko.pdf",
+      "sha256": "57ccc02f464d4bd9753165dc93f4a8f71634ef4c6c5a1817cfa4638b91d1ea02",
+      "pages": 10,
+      "links": {
+        "internal": 41,
+        "web": 5
+      }
+    }
+  ],
+  "direct_visual_review": {
+    "business_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "technical_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "review": "Each latest content page opened individually; technical6-10 independently reviewed, business1-5 also independently reviewed before label shortening; root reviewed final business1-5 and technical1-5",
+    "findings": "No clipping, overlap, broken Korean glyphs or isolated comparison rows. SK-S1 comparison stays in one table.",
+    "final_fresh_render_exactly_matches_reviewed_PNG": true,
+    "page_PNG_sha256": {
+      "technical-01.png": "6d8d03b4368cb682e73ea45a1288ab03d23f08a37de8a317f46ce4d5e218ee78",
+      "technical-03.png": "9f570a95daf7f0d2cdf00eec32021d0b9b8329cb85fff892d40bf1af63144b7f",
+      "technical-02.png": "954584442bbaa20ee5bce23ee768bc60bddf6fc430ba72053e8bf5492fb00e54",
+      "technical-06.png": "26383870c1d3c9636f5a8fa8ec8b68244868ac94416200d099383bdc1dccec1a",
+      "technical-07.png": "87265dd63b613e52e30b64c74cdad4b1c40a7f3607d71db9a17e0b3bb71fba2e",
+      "technical-05.png": "3f1a7a57ec8e02defe8636385cac52a039545196c1ff23c924b22b889215898d",
+      "technical-10.png": "69e57cd373e0d87461d7082bc46417fea64b598f56b797059263688f3b5023ec",
+      "technical-04.png": "e46d2d74241bc3f5ab823049320568fe8907911fd6501f5ebd52f54a3e9d3c88",
+      "business-5.png": "7948149f184e4be4968aafc6e64c0b28ab869697d3b432b96196b8d8a3d04687",
+      "business-4.png": "b0f0cec0c6c45040f6655d81d965b8bf80825927205e15181eaac67cb9907df3",
+      "business-1.png": "5b6aa1ee9d92c9bd5a80444a30a61c9eaca753e80b9124d5d95da2a1d5da4085",
+      "business-3.png": "5e37a28c1c2d53c872a76d610567ce6495a075948e37ac399f593abfc4f714a6",
+      "business-2.png": "66340f068cad8afa4a99b03ac36948053e2b286ed3583294249cecad5c7a3ead",
+      "technical-09.png": "e06c47c33d3414753b585a9a647f20416f5cd3a05da27084043fb93d5a7553f8",
+      "technical-08.png": "b58f3af04c91b2e94afecfd86a4f35def842421ea679e0005232db77a8c06943"
+    }
+  },
+  "final_public_recomputation": {
+    "status": "PASS_SELECTED_PUBLIC_EVIDENCE",
+    "verified_copied_file_count": 822,
+    "E2_episodes": 96,
+    "E2_independent_families": 12,
+    "controllers": {
+      "G": {
+        "success": 8,
+        "episodes": 12,
+        "terminations": {
+          "timeout": 3,
+          "ready": 8,
+          "controller_infeasible": 1
+        }
+      },
+      "R": {
+        "success": 0,
+        "episodes": 12,
+        "terminations": {
+          "timeout": 12
+        }
+      },
+      "S1-11": {
+        "success": 4,
+        "episodes": 12,
+        "terminations": {
+          "timeout": 7,
+          "planner_invalid": 1,
+          "ready": 4
+        }
+      },
+      "S1-23": {
+        "success": 5,
+        "episodes": 12,
+        "terminations": {
+          "planner_invalid": 2,
+          "timeout": 5,
+          "ready": 5
+        }
+      },
+      "S1-47": {
+        "success": 4,
+        "episodes": 12,
+        "terminations": {
+          "timeout": 8,
+          "ready": 4
+        }
+      },
+      "SK-11": {
+        "success": 4,
+        "episodes": 12,
+        "terminations": {
+          "timeout": 8,
+          "ready": 4
+        }
+      },
+      "SK-23": {
+        "success": 4,
+        "episodes": 12,
+        "terminations": {
+          "timeout": 8,
+          "ready": 4
+        }
+      },
+      "SK-47": {
+        "success": 4,
+        "episodes": 12,
+        "terminations": {
+          "timeout": 8,
+          "ready": 4
+        }
+      }
+    },
+    "application": {
+      "episodes": 8,
+      "successes": 1
+    },
+    "new_physics": 0,
+    "new_model_calls": 0,
+    "training_updates": 0,
+    "scope": "Publication hashes and saved outcomes; omitted substep raw and physical replay are not revalidated",
+    "E2_recomputed_summary_exact": true,
+    "E2_bootstrap_arrays_exact": 163,
+    "E1_saved_model_sets_checked": 84,
+    "E1_S1_SK_same_selected_index": "35/36",
+    "recomputation_scope": "E2 exact arithmetic; E1 saved cost selection only; not original raw generation or fixed-prediction window re-inference"
+  },
+  "link_checks": "README, docs, artifacts/index and development/index relative targets exist",
+  "scope": "File integrity and exact saved-result arithmetic, bound inference and selected tests per public_validation.json; not a new scientific final run, causal proof or all raw archive validation",
+  "core_source_copy_map_unchanged": true,
+  "original_research_artifacts_modified": false,
+  "git_format_policy": {
+    "binary_PDF_and_array_attributes": true,
+    "historical_byte_identical_whitespace_exemptions": [
+      "tools/check_p4_adam_probe.py:blank-at-eof",
+      "tools/check_p4_finite_step.py:blank-at-eof",
+      "tools/p2_closed_loop_analysis.py:blank-at-eol"
+    ],
+    "scientific_source_edits": 0
+  }
+}

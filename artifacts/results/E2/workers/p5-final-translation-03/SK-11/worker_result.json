@@ -1,0 +1,166 @@
+{
+  "status": "ACCEPT_COMPLETED_TASK_FAILURE",
+  "phase": "E2",
+  "cell": {
+    "cell_id": "p5-final-translation-03/SK-11",
+    "controller_id": "SK-11",
+    "episode_id": "p5-final-translation-03",
+    "episode_index": 3,
+    "family_id": "p5-final-translation-03",
+    "stratum": "translation"
+  },
+  "row": {
+    "cell_id": "p5-final-translation-03/SK-11",
+    "controller_id": "SK-11",
+    "episode_id": "p5-final-translation-03",
+    "episode_index": 3,
+    "family_id": "p5-final-translation-03",
+    "stratum": "translation",
+    "execution_status": "completed",
+    "termination": "timeout",
+    "success": false,
+    "elapsed_s": 29.999999999974637,
+    "final_position_error_m": 0.007175862579082625,
+    "final_yaw_error_rad": 0.02638324401044967,
+    "final_linear_speed_m_s": 1.6251182095055332e-10,
+    "final_angular_speed_rad_s": 5.937653225301216e-23,
+    "final_observation_available": true,
+    "metric_state_origin": "terminal_observation",
+    "metric_state_time_s": 29.999999999974637,
+    "unavailable_reason": null,
+    "recontact_count": 7,
+    "contact_events": {
+      "entry_times_s": [
+        0.47600000000000037,
+        7.120499999998773,
+        7.369499999998635,
+        7.445999999998593,
+        7.622999999998495,
+        7.802499999998395,
+        8.03599999999833,
+        8.180999999998507,
+        8.51849999999892
+      ],
+      "exit_times_s": [
+        6.941999999998872,
+        7.16199999999875,
+        7.441999999998595,
+        7.449999999998591,
+        7.6559999999984765,
+        7.841999999998373,
+        8.054499999998352,
+        8.241999999998582,
+        8.541999999998948
+      ],
+      "raw_crossing_count": 18,
+      "qualified_recontacts": [
+        {
+          "contact_loss_time_s": 6.941999999998872,
+          "contact_resume_time_s": 7.120499999998773,
+          "observed_inactive_span_s": 0.17799999999990135,
+          "observed_resumed_active_span_s": 0.04099999999997728
+        },
+        {
+          "contact_loss_time_s": 7.16199999999875,
+          "contact_resume_time_s": 7.369499999998635,
+          "observed_inactive_span_s": 0.20699999999988528,
+          "observed_resumed_active_span_s": 0.0719999999999601
+        },
+        {
+          "contact_loss_time_s": 7.449999999998591,
+          "contact_resume_time_s": 7.622999999998495,
+          "observed_inactive_span_s": 0.1724999999999044,
+          "observed_resumed_active_span_s": 0.03249999999998199
+        },
+        {
+          "contact_loss_time_s": 7.6559999999984765,
+          "contact_resume_time_s": 7.802499999998395,
+          "observed_inactive_span_s": 0.14599999999991908,
+          "observed_resumed_active_span_s": 0.038999999999978385
+        },
+        {
+          "contact_loss_time_s": 7.841999999998373,
+          "contact_resume_time_s": 8.03599999999833,
+          "observed_inactive_span_s": 0.19349999999995582,
+          "observed_resumed_active_span_s": 0.018000000000022
+        },
+        {
+          "contact_loss_time_s": 8.054499999998352,
+          "contact_resume_time_s": 8.180999999998507,
+          "observed_inactive_span_s": 0.126000000000154,
+          "observed_resumed_active_span_s": 0.06050000000007394
+        },
+        {
+          "contact_loss_time_s": 8.241999999998582,
+          "contact_resume_time_s": 8.51849999999892,
+          "observed_inactive_span_s": 0.2760000000003373,
+          "observed_resumed_active_span_s": 0.02300000000002811
+        }
+      ],
+      "deduplicated_raw_sample_count": 60001,
+      "unknown_force_sample_count": 0,
+      "inactive_min_s": 0.04,
+      "resumed_active_min_s": 0.01,
+      "duration_rule": "contiguous run last observed time minus first observed time",
+      "scope": "all raw intervals, including excluded terminal intervals; threshold events, not controller decisions"
+    },
+    "planning_wall_s": 1.853944624774158,
+    "execution_wall_s": 35.79752358305268,
+    "planning_time_scope": "sum of unchanged G proposal and learned plan calls; recording/source checks excluded",
+    "counts": {
+      "controller_decisions": 300,
+      "physics_interval_attempts": 300,
+      "physics_intervals_returned": 300,
+      "completed_boundary_records": 300
+    },
+    "future_engine_calls": {
+      "mj_step": 0,
+      "mj_step1": 0,
+      "mj_step2": 0,
+      "mj_forward": 0,
+      "mj_inverse": 0
+    }
+  },
+  "timings": {
+    "plan": 1.8044060007669032,
+    "geometry": 0.04953862400725484,
+    "plan_calls": 300,
+    "geometry_calls": 300,
+    "plan_first_call_s": 0.016655582934617996,
+    "geometry_first_call_s": 0.00030745891854166985,
+    "plan_repeat_wall_s": 1.7877504178322852,
+    "geometry_repeat_wall_s": 0.04923116508871317,
+    "plan_repeat_calls": 299,
+    "geometry_repeat_calls": 299,
+    "initialization_wall_s": 2.9671397500205785,
+    "initialization_scope": "worker entry through imports, source/capacity checks, model loading and physical reset/common snapshot check; process startup excluded",
+    "warmup_performed": false,
+    "dedicated_warmup_calls": 0,
+    "first_call_scope": "first actual task call; included in total, never relabeled as warmup"
+  },
+  "record_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/SK-11/manifest.json",
+  "record_manifest_sha256": "47944283c771a17ba5d746d4fec46a0c4117b0dc841b90cfa611884f8272e965",
+  "comparison": null,
+  "review_sha256": "06b1a0021993bff9798ceb9940dbd96f4e9db1887dc2fd224d8fdbf83619b889",
+  "recording_status": "COMPLETE_RECORDED",
+  "component_review_sha256": "dd76cca3ce3b62152c70ce1cea908dc7a873d70e3cec71360feb56cc48a83b4a",
+  "cell_bytes": 19552128,
+  "process_peak_rss_bytes": 1569751040,
+  "P5_task_success": false,
+  "learning_updates": 0,
+  "recording_guard_phase_after_return": "CLOSED",
+  "recording_guard_phase_history": [
+    {
+      "phase": "CONTROL",
+      "timestamp_utc": "2026-10-17T10:52:31.970118+00:00"
+    },
+    {
+      "phase": "SEALING",
+      "timestamp_utc": "2026-10-17T10:52:46.880806+00:00"
+    },
+    {
+      "phase": "CLOSED",
+      "timestamp_utc": "2026-10-17T10:53:07.702742+00:00"
+    }
+  ]
+}

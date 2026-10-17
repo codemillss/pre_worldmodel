@@ -1,0 +1,3901 @@
+{
+  "status": "COMPLETE_EXPECTED_E2_DENOMINATORS",
+  "episode_count": 96,
+  "family_count": 12,
+  "controller_count": 8,
+  "controllers": {
+    "G": {
+      "episode_count": 12,
+      "family_count": 12,
+      "success_count": 8,
+      "success_rate": 0.6666666666666666,
+      "timeout_count": 3,
+      "timeout_rate": 0.25,
+      "termination_counts": {
+        "controller_infeasible": 1,
+        "ready": 8,
+        "timeout": 3
+      },
+      "success_conditional_time_s": {
+        "denominator": 8,
+        "mean": 19.349999999997355,
+        "median": 17.500000000003666,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 12
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.6666666666666666,
+        "elapsed_s": 22.133333333324902,
+        "final_position_error_m": 0.005786973531436977,
+        "final_yaw_error_rad": 0.01822452903170543,
+        "final_linear_speed_m_s": 0.0004931128213723305,
+        "final_angular_speed_rad_s": 0.0030762492992772775,
+        "recontact_count": 4.333333333333333,
+        "planning_wall_s": 0.04129813465988263,
+        "execution_wall_s": 27.04375659720972
+      },
+      "metric_denominators": {
+        "success": 12,
+        "elapsed_s": 12,
+        "final_position_error_m": 12,
+        "final_yaw_error_rad": 12,
+        "final_linear_speed_m_s": 12,
+        "final_angular_speed_rad_s": 12,
+        "recontact_count": 12,
+        "planning_wall_s": 12,
+        "execution_wall_s": 12
+      },
+      "by_stratum": {
+        "translation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 4,
+          "success_rate": 1.0,
+          "timeout_count": 0,
+          "timeout_rate": 0.0,
+          "termination_counts": {
+            "ready": 4
+          },
+          "success_conditional_time_s": {
+            "denominator": 4,
+            "mean": 15.650000000004729,
+            "median": 15.450000000007808,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 1.0,
+            "elapsed_s": 15.650000000004729,
+            "final_position_error_m": 0.004625986627493505,
+            "final_yaw_error_rad": 0.002414967781063204,
+            "final_linear_speed_m_s": 4.6935678432993905e-09,
+            "final_angular_speed_rad_s": 3.0543358593493457e-09,
+            "recontact_count": 3.0,
+            "planning_wall_s": 0.0283964853733778,
+            "execution_wall_s": 18.27121696906397
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "rotation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 1,
+          "success_rate": 0.25,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "controller_infeasible": 1,
+            "ready": 1,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 1,
+            "mean": 29.699999999975336,
+            "median": 29.699999999975336,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.25,
+            "elapsed_s": 27.624999999980172,
+            "final_position_error_m": 0.007153687217009644,
+            "final_yaw_error_rad": 0.04786513046082729,
+            "final_linear_speed_m_s": 0.0014793302423345242,
+            "final_angular_speed_rad_s": 0.009228744843493617,
+            "recontact_count": 5.5,
+            "planning_wall_s": 0.05156537931179628,
+            "execution_wall_s": 33.83007405180251
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "offset": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 3,
+          "success_rate": 0.75,
+          "timeout_count": 1,
+          "timeout_rate": 0.25,
+          "termination_counts": {
+            "ready": 3,
+            "timeout": 1
+          },
+          "success_conditional_time_s": {
+            "denominator": 3,
+            "mean": 20.8333333333282,
+            "median": 19.999999999997943,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.75,
+            "elapsed_s": 23.12499999998981,
+            "final_position_error_m": 0.005581246749807779,
+            "final_yaw_error_rad": 0.004393488853225769,
+            "final_linear_speed_m_s": 3.528214624068299e-09,
+            "final_angular_speed_rad_s": 2.354544884809248e-15,
+            "recontact_count": 4.5,
+            "planning_wall_s": 0.043932539294473834,
+            "execution_wall_s": 29.029978770762682
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        }
+      }
+    },
+    "R": {
+      "episode_count": 12,
+      "family_count": 12,
+      "success_count": 0,
+      "success_rate": 0.0,
+      "timeout_count": 12,
+      "timeout_rate": 1.0,
+      "termination_counts": {
+        "timeout": 12
+      },
+      "success_conditional_time_s": {
+        "denominator": 0,
+        "mean": null,
+        "median": null,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 12
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.0,
+        "elapsed_s": 29.999999999974637,
+        "final_position_error_m": 0.017101973459008976,
+        "final_yaw_error_rad": 0.14090974791853733,
+        "final_linear_speed_m_s": 1.3082896005588732e-10,
+        "final_angular_speed_rad_s": 4.217953953901218e-17,
+        "recontact_count": 8.416666666666666,
+        "planning_wall_s": 1.475204516609665,
+        "execution_wall_s": 37.279012628423516
+      },
+      "metric_denominators": {
+        "success": 12,
+        "elapsed_s": 12,
+        "final_position_error_m": 12,
+        "final_yaw_error_rad": 12,
+        "final_linear_speed_m_s": 12,
+        "final_angular_speed_rad_s": 12,
+        "recontact_count": 12,
+        "planning_wall_s": 12,
+        "execution_wall_s": 12
+      },
+      "by_stratum": {
+        "translation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 0,
+          "success_rate": 0.0,
+          "timeout_count": 4,
+          "timeout_rate": 1.0,
+          "termination_counts": {
+            "timeout": 4
+          },
+          "success_conditional_time_s": {
+            "denominator": 0,
+            "mean": null,
+            "median": null,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.0,
+            "elapsed_s": 29.999999999974637,
+            "final_position_error_m": 0.011552887037301117,
+            "final_yaw_error_rad": 0.10144270144252909,
+            "final_linear_speed_m_s": 1.193143909994157e-10,
+            "final_angular_speed_rad_s": 1.2444340272356016e-16,
+            "recontact_count": 9.5,
+            "planning_wall_s": 1.3753600609488785,
+            "execution_wall_s": 36.223158166743815
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "rotation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 0,
+          "success_rate": 0.0,
+          "timeout_count": 4,
+          "timeout_rate": 1.0,
+          "termination_counts": {
+            "timeout": 4
+          },
+          "success_conditional_time_s": {
+            "denominator": 0,
+            "mean": null,
+            "median": null,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.0,
+            "elapsed_s": 29.999999999974637,
+            "final_position_error_m": 0.019757964499393977,
+            "final_yaw_error_rad": 0.16021111189763626,
+            "final_linear_speed_m_s": 1.168275739662946e-10,
+            "final_angular_speed_rad_s": 9.05713409104377e-20,
+            "recontact_count": 7.250000000000001,
+            "planning_wall_s": 1.4888326877262443,
+            "execution_wall_s": 36.84531261434313
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "offset": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 0,
+          "success_rate": 0.0,
+          "timeout_count": 4,
+          "timeout_rate": 1.0,
+          "termination_counts": {
+            "timeout": 4
+          },
+          "success_conditional_time_s": {
+            "denominator": 0,
+            "mean": null,
+            "median": null,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.0,
+            "elapsed_s": 29.999999999974637,
+            "final_position_error_m": 0.019995068840331826,
+            "final_yaw_error_rad": 0.1610754304154467,
+            "final_linear_speed_m_s": 1.5634491520195162e-10,
+            "final_angular_speed_rad_s": 2.0046445525659544e-18,
+            "recontact_count": 8.5,
+            "planning_wall_s": 1.5614208011538724,
+            "execution_wall_s": 38.7685671041836
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        }
+      }
+    },
+    "S1-11": {
+      "episode_count": 12,
+      "family_count": 12,
+      "success_count": 4,
+      "success_rate": 0.3333333333333333,
+      "timeout_count": 7,
+      "timeout_rate": 0.5833333333333334,
+      "termination_counts": {
+        "planner_invalid": 1,
+        "ready": 4,
+        "timeout": 7
+      },
+      "success_conditional_time_s": {
+        "denominator": 4,
+        "mean": 5.824999999999302,
+        "median": 5.499999999999482,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 12
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.3333333333333333,
+        "elapsed_s": 21.46666666665063,
+        "final_position_error_m": 0.010643002064959769,
+        "final_yaw_error_rad": 0.047677362627456296,
+        "final_linear_speed_m_s": 0.0005248998235178662,
+        "final_angular_speed_rad_s": 0.009502427286655887,
+        "recontact_count": 2.2500000000000004,
+        "planning_wall_s": 1.3029892973718233,
+        "execution_wall_s": 25.944797350656398
+      },
+      "metric_denominators": {
+        "success": 12,
+        "elapsed_s": 12,
+        "final_position_error_m": 12,
+        "final_yaw_error_rad": 12,
+        "final_linear_speed_m_s": 12,
+        "final_angular_speed_rad_s": 12,
+        "recontact_count": 12,
+        "planning_wall_s": 12,
+        "execution_wall_s": 12
+      },
+      "by_stratum": {
+        "translation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 5.449999999999511,
+            "median": 5.449999999999511,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 17.724999999987073,
+            "final_position_error_m": 0.007072178616835372,
+            "final_yaw_error_rad": 0.020073759939530644,
+            "final_linear_speed_m_s": 5.6716872821206846e-11,
+            "final_angular_speed_rad_s": 1.0553710864295794e-20,
+            "recontact_count": 2.0,
+            "planning_wall_s": 1.0898892271798104,
+            "execution_wall_s": 21.39904673950514
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "rotation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 6.199999999999093,
+            "median": 6.199999999999093,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 18.099999999986867,
+            "final_position_error_m": 0.010178303966686347,
+            "final_yaw_error_rad": 0.03902442133514583,
+            "final_linear_speed_m_s": 1.1160424439569551e-10,
+            "final_angular_speed_rad_s": 5.1355852916967257e-20,
+            "recontact_count": 1.5,
+            "planning_wall_s": 1.0521530638798138,
+            "execution_wall_s": 21.968092947965488
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "offset": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 0,
+          "success_rate": 0.0,
+          "timeout_count": 3,
+          "timeout_rate": 0.75,
+          "termination_counts": {
+            "planner_invalid": 1,
+            "timeout": 3
+          },
+          "success_conditional_time_s": {
+            "denominator": 0,
+            "mean": null,
+            "median": null,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.0,
+            "elapsed_s": 28.57499999997796,
+            "final_position_error_m": 0.014678523611357588,
+            "final_yaw_error_rad": 0.0839339066076924,
+            "final_linear_speed_m_s": 0.0015746993022324816,
+            "final_angular_speed_rad_s": 0.028507281859967662,
+            "recontact_count": 3.25,
+            "planning_wall_s": 1.7669256010558456,
+            "execution_wall_s": 34.46725236449856
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        }
+      }
+    },
+    "S1-23": {
+      "episode_count": 12,
+      "family_count": 12,
+      "success_count": 5,
+      "success_rate": 0.4166666666666667,
+      "timeout_count": 5,
+      "timeout_rate": 0.4166666666666667,
+      "termination_counts": {
+        "planner_invalid": 2,
+        "ready": 5,
+        "timeout": 5
+      },
+      "success_conditional_time_s": {
+        "denominator": 5,
+        "mean": 6.599999999999598,
+        "median": 5.8999999999992605,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 12
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.4166666666666667,
+        "elapsed_s": 19.52499999998673,
+        "final_position_error_m": 0.008476214997204471,
+        "final_yaw_error_rad": 0.06459976059409629,
+        "final_linear_speed_m_s": 0.0006615684285650621,
+        "final_angular_speed_rad_s": 0.010187634536881901,
+        "recontact_count": 2.0,
+        "planning_wall_s": 1.169708580884617,
+        "execution_wall_s": 24.713695156155154
+      },
+      "metric_denominators": {
+        "success": 12,
+        "elapsed_s": 12,
+        "final_position_error_m": 12,
+        "final_yaw_error_rad": 12,
+        "final_linear_speed_m_s": 12,
+        "final_angular_speed_rad_s": 12,
+        "recontact_count": 12,
+        "planning_wall_s": 12,
+        "execution_wall_s": 12
+      },
+      "by_stratum": {
+        "translation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 3,
+          "success_rate": 0.75,
+          "timeout_count": 1,
+          "timeout_rate": 0.25,
+          "termination_counts": {
+            "ready": 3,
+            "timeout": 1
+          },
+          "success_conditional_time_s": {
+            "denominator": 3,
+            "mean": 6.8666666666666005,
+            "median": 5.8999999999992605,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.75,
+            "elapsed_s": 12.649999999993609,
+            "final_position_error_m": 0.00710037590475187,
+            "final_yaw_error_rad": 0.021939172325025846,
+            "final_linear_speed_m_s": 0.0003146384713325769,
+            "final_angular_speed_rad_s": 0.0013488615925558258,
+            "recontact_count": 0.25,
+            "planning_wall_s": 0.7294088646303862,
+            "execution_wall_s": 16.005600614473224
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "rotation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 6.199999999999093,
+            "median": 6.199999999999093,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 18.099999999986867,
+            "final_position_error_m": 0.009573649342093746,
+            "final_yaw_error_rad": 0.07215972484167588,
+            "final_linear_speed_m_s": 6.544380692486679e-11,
+            "final_angular_speed_rad_s": 1.5588040483973138e-20,
+            "recontact_count": 0.75,
+            "planning_wall_s": 1.0508044946473092,
+            "execution_wall_s": 22.7548409687588
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "offset": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 0,
+          "success_rate": 0.0,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "planner_invalid": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 0,
+            "mean": null,
+            "median": null,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.0,
+            "elapsed_s": 27.824999999979706,
+            "final_position_error_m": 0.008754619744767805,
+            "final_yaw_error_rad": 0.09970038461558715,
+            "final_linear_speed_m_s": 0.0016700667489188022,
+            "final_angular_speed_rad_s": 0.029214042018089876,
+            "recontact_count": 5.0,
+            "planning_wall_s": 1.728912383376155,
+            "execution_wall_s": 35.38064388523344
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        }
+      }
+    },
+    "S1-47": {
+      "episode_count": 12,
+      "family_count": 12,
+      "success_count": 4,
+      "success_rate": 0.3333333333333333,
+      "timeout_count": 8,
+      "timeout_rate": 0.6666666666666666,
+      "termination_counts": {
+        "ready": 4,
+        "timeout": 8
+      },
+      "success_conditional_time_s": {
+        "denominator": 4,
+        "mean": 5.77499999999933,
+        "median": 5.399999999999538,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 12
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.3333333333333333,
+        "elapsed_s": 21.924999999982866,
+        "final_position_error_m": 0.009929377295031296,
+        "final_yaw_error_rad": 0.04651444534588422,
+        "final_linear_speed_m_s": 3.1663981717698154e-10,
+        "final_angular_speed_rad_s": 2.2822913352478303e-17,
+        "recontact_count": 6.416666666666666,
+        "planning_wall_s": 1.3293445272720419,
+        "execution_wall_s": 27.987677729455758
+      },
+      "metric_denominators": {
+        "success": 12,
+        "elapsed_s": 12,
+        "final_position_error_m": 12,
+        "final_yaw_error_rad": 12,
+        "final_linear_speed_m_s": 12,
+        "final_angular_speed_rad_s": 12,
+        "recontact_count": 12,
+        "planning_wall_s": 12,
+        "execution_wall_s": 12
+      },
+      "by_stratum": {
+        "translation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 5.399999999999538,
+            "median": 5.399999999999538,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 17.699999999987085,
+            "final_position_error_m": 0.0063806300394545585,
+            "final_yaw_error_rad": 0.04010820400485016,
+            "final_linear_speed_m_s": 4.4355222860621017e-10,
+            "final_angular_speed_rad_s": 7.853110689826452e-18,
+            "recontact_count": 8.0,
+            "planning_wall_s": 0.9971350563573652,
+            "execution_wall_s": 24.01430239609908
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "rotation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 6.149999999999122,
+            "median": 6.149999999999122,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 18.07499999998688,
+            "final_position_error_m": 0.008825310110954138,
+            "final_yaw_error_rad": 0.04947491454887831,
+            "final_linear_speed_m_s": 1.33790681901082e-10,
+            "final_angular_speed_rad_s": 1.053145085176984e-19,
+            "recontact_count": 4.25,
+            "planning_wall_s": 1.122718125290703,
+            "execution_wall_s": 23.541465229529422
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "offset": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 0,
+          "success_rate": 0.0,
+          "timeout_count": 4,
+          "timeout_rate": 1.0,
+          "termination_counts": {
+            "timeout": 4
+          },
+          "success_conditional_time_s": {
+            "denominator": 0,
+            "mean": null,
+            "median": null,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.0,
+            "elapsed_s": 29.999999999974637,
+            "final_position_error_m": 0.01458219173468519,
+            "final_yaw_error_rad": 0.04996021748392421,
+            "final_linear_speed_m_s": 3.725765410236526e-10,
+            "final_angular_speed_rad_s": 6.051031485909076e-17,
+            "recontact_count": 7.0,
+            "planning_wall_s": 1.8681804001680575,
+            "execution_wall_s": 36.407265562738765
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        }
+      }
+    },
+    "SK-11": {
+      "episode_count": 12,
+      "family_count": 12,
+      "success_count": 4,
+      "success_rate": 0.3333333333333333,
+      "timeout_count": 8,
+      "timeout_rate": 0.6666666666666666,
+      "termination_counts": {
+        "ready": 4,
+        "timeout": 8
+      },
+      "success_conditional_time_s": {
+        "denominator": 4,
+        "mean": 5.799999999999316,
+        "median": 5.44999999999951,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 12
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.3333333333333333,
+        "elapsed_s": 21.9333333333162,
+        "final_position_error_m": 0.011710812219430712,
+        "final_yaw_error_rad": 0.043570187974619645,
+        "final_linear_speed_m_s": 5.637978588006605e-11,
+        "final_angular_speed_rad_s": 1.1627114029858934e-19,
+        "recontact_count": 1.3333333333333333,
+        "planning_wall_s": 1.3157817603011306,
+        "execution_wall_s": 26.438668263979103
+      },
+      "metric_denominators": {
+        "success": 12,
+        "elapsed_s": 12,
+        "final_position_error_m": 12,
+        "final_yaw_error_rad": 12,
+        "final_linear_speed_m_s": 12,
+        "final_angular_speed_rad_s": 12,
+        "recontact_count": 12,
+        "planning_wall_s": 12,
+        "execution_wall_s": 12
+      },
+      "by_stratum": {
+        "translation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 5.399999999999538,
+            "median": 5.399999999999538,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 17.699999999987085,
+            "final_position_error_m": 0.007487848430386308,
+            "final_yaw_error_rad": 0.02120880504873257,
+            "final_linear_speed_m_s": 7.33508718930132e-11,
+            "final_angular_speed_rad_s": 5.0756197595404366e-20,
+            "recontact_count": 2.0,
+            "planning_wall_s": 1.0463726370362565,
+            "execution_wall_s": 21.38065986445872
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "rotation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 6.199999999999093,
+            "median": 6.199999999999093,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 18.099999999986867,
+            "final_position_error_m": 0.009706129591503462,
+            "final_yaw_error_rad": 0.04120491112236724,
+            "final_linear_speed_m_s": 8.921857370898072e-11,
+            "final_angular_speed_rad_s": 2.9804421276705015e-19,
+            "recontact_count": 0.75,
+            "planning_wall_s": 1.0521530348923989,
+            "execution_wall_s": 22.12240407319041
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "offset": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 0,
+          "success_rate": 0.0,
+          "timeout_count": 4,
+          "timeout_rate": 1.0,
+          "termination_counts": {
+            "timeout": 4
+          },
+          "success_conditional_time_s": {
+            "denominator": 0,
+            "mean": null,
+            "median": null,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.0,
+            "elapsed_s": 29.999999999974637,
+            "final_position_error_m": 0.017938458636402362,
+            "final_yaw_error_rad": 0.06829684775275913,
+            "final_linear_speed_m_s": 6.5699120382042435e-12,
+            "final_angular_speed_rad_s": 1.3010533313511819e-23,
+            "recontact_count": 1.25,
+            "planning_wall_s": 1.8488196089747362,
+            "execution_wall_s": 35.81294085428817
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        }
+      }
+    },
+    "SK-23": {
+      "episode_count": 12,
+      "family_count": 12,
+      "success_count": 4,
+      "success_rate": 0.3333333333333333,
+      "timeout_count": 8,
+      "timeout_rate": 0.6666666666666666,
+      "termination_counts": {
+        "ready": 4,
+        "timeout": 8
+      },
+      "success_conditional_time_s": {
+        "denominator": 4,
+        "mean": 5.799999999999316,
+        "median": 5.44999999999951,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 12
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.3333333333333333,
+        "elapsed_s": 21.9333333333162,
+        "final_position_error_m": 0.012498785580020768,
+        "final_yaw_error_rad": 0.05552762220609556,
+        "final_linear_speed_m_s": 9.82157819834328e-11,
+        "final_angular_speed_rad_s": 1.9183465785781565e-20,
+        "recontact_count": 0.5,
+        "planning_wall_s": 1.3624687513802198,
+        "execution_wall_s": 27.552798267395698
+      },
+      "metric_denominators": {
+        "success": 12,
+        "elapsed_s": 12,
+        "final_position_error_m": 12,
+        "final_yaw_error_rad": 12,
+        "final_linear_speed_m_s": 12,
+        "final_angular_speed_rad_s": 12,
+        "recontact_count": 12,
+        "planning_wall_s": 12,
+        "execution_wall_s": 12
+      },
+      "by_stratum": {
+        "translation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 5.399999999999538,
+            "median": 5.399999999999538,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 17.699999999987085,
+            "final_position_error_m": 0.007438695430685325,
+            "final_yaw_error_rad": 0.022914185956356307,
+            "final_linear_speed_m_s": 8.988581507174194e-11,
+            "final_angular_speed_rad_s": 6.5110733074769075e-21,
+            "recontact_count": 0.0,
+            "planning_wall_s": 1.0223316902993247,
+            "execution_wall_s": 21.43536639574449
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "rotation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 6.199999999999093,
+            "median": 6.199999999999093,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 18.099999999986867,
+            "final_position_error_m": 0.011062876879290045,
+            "final_yaw_error_rad": 0.06381527140598986,
+            "final_linear_speed_m_s": 8.453753179250612e-11,
+            "final_angular_speed_rad_s": 5.101909160685641e-20,
+            "recontact_count": 1.5,
+            "planning_wall_s": 1.0576435871189462,
+            "execution_wall_s": 22.29854210402118
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "offset": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 0,
+          "success_rate": 0.0,
+          "timeout_count": 4,
+          "timeout_rate": 1.0,
+          "termination_counts": {
+            "timeout": 4
+          },
+          "success_conditional_time_s": {
+            "denominator": 0,
+            "mean": null,
+            "median": null,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.0,
+            "elapsed_s": 29.999999999974637,
+            "final_position_error_m": 0.01899478443008693,
+            "final_yaw_error_rad": 0.07985340925594053,
+            "final_linear_speed_m_s": 1.2022399908605042e-10,
+            "final_angular_speed_rad_s": 2.0232443011381533e-23,
+            "recontact_count": 0.0,
+            "planning_wall_s": 2.0074309767223895,
+            "execution_wall_s": 38.92448630242143
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        }
+      }
+    },
+    "SK-47": {
+      "episode_count": 12,
+      "family_count": 12,
+      "success_count": 4,
+      "success_rate": 0.3333333333333333,
+      "timeout_count": 8,
+      "timeout_rate": 0.6666666666666666,
+      "termination_counts": {
+        "ready": 4,
+        "timeout": 8
+      },
+      "success_conditional_time_s": {
+        "denominator": 4,
+        "mean": 5.849999999999288,
+        "median": 5.5499999999994545,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 12
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.3333333333333333,
+        "elapsed_s": 21.949999999982854,
+        "final_position_error_m": 0.010266630997185361,
+        "final_yaw_error_rad": 0.043744020916126426,
+        "final_linear_speed_m_s": 1.1501295433508359e-10,
+        "final_angular_speed_rad_s": 3.539139878544686e-20,
+        "recontact_count": 4.416666666666666,
+        "planning_wall_s": 1.416034341440536,
+        "execution_wall_s": 28.295804607643127
+      },
+      "metric_denominators": {
+        "success": 12,
+        "elapsed_s": 12,
+        "final_position_error_m": 12,
+        "final_yaw_error_rad": 12,
+        "final_linear_speed_m_s": 12,
+        "final_angular_speed_rad_s": 12,
+        "recontact_count": 12,
+        "planning_wall_s": 12,
+        "execution_wall_s": 12
+      },
+      "by_stratum": {
+        "translation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 5.5499999999994545,
+            "median": 5.5499999999994545,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 17.774999999987045,
+            "final_position_error_m": 0.006953476760176684,
+            "final_yaw_error_rad": 0.025975048691680325,
+            "final_linear_speed_m_s": 9.576884982205103e-11,
+            "final_angular_speed_rad_s": 6.918561584525062e-20,
+            "recontact_count": 3.5,
+            "planning_wall_s": 1.142809112672694,
+            "execution_wall_s": 22.731004364497494
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "rotation": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 2,
+          "success_rate": 0.5,
+          "timeout_count": 2,
+          "timeout_rate": 0.5,
+          "termination_counts": {
+            "ready": 2,
+            "timeout": 2
+          },
+          "success_conditional_time_s": {
+            "denominator": 2,
+            "mean": 6.149999999999122,
+            "median": 6.149999999999122,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.5,
+            "elapsed_s": 18.07499999998688,
+            "final_position_error_m": 0.008759427472890716,
+            "final_yaw_error_rad": 0.054739956799655376,
+            "final_linear_speed_m_s": 1.324772845613232e-10,
+            "final_angular_speed_rad_s": 3.697583614989733e-20,
+            "recontact_count": 2.75,
+            "planning_wall_s": 1.0494843810447492,
+            "execution_wall_s": 22.73569931270322
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        },
+        "offset": {
+          "episode_count": 4,
+          "family_count": 4,
+          "success_count": 0,
+          "success_rate": 0.0,
+          "timeout_count": 4,
+          "timeout_rate": 1.0,
+          "termination_counts": {
+            "timeout": 4
+          },
+          "success_conditional_time_s": {
+            "denominator": 0,
+            "mean": null,
+            "median": null,
+            "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+          },
+          "state_observation_populations": {
+            "terminal_observation": 4
+          },
+          "terminal_observation_unavailable_count": 0,
+          "all_episode_means": {
+            "success": 0.0,
+            "elapsed_s": 29.999999999974637,
+            "final_position_error_m": 0.015086988758488684,
+            "final_yaw_error_rad": 0.05051705725704358,
+            "final_linear_speed_m_s": 1.1679272862187652e-10,
+            "final_angular_speed_rad_s": 1.2744361192619122e-23,
+            "recontact_count": 7.0,
+            "planning_wall_s": 2.055809530604165,
+            "execution_wall_s": 39.42071014572866
+          },
+          "metric_denominators": {
+            "success": 4,
+            "elapsed_s": 4,
+            "final_position_error_m": 4,
+            "final_yaw_error_rad": 4,
+            "final_linear_speed_m_s": 4,
+            "final_angular_speed_rad_s": 4,
+            "recontact_count": 4,
+            "planning_wall_s": 4,
+            "execution_wall_s": 4
+          }
+        }
+      }
+    }
+  },
+  "seed_group_summary": {
+    "G": {
+      "episode_count": 12,
+      "family_count": 12,
+      "success_count": 8,
+      "success_rate": 0.6666666666666666,
+      "timeout_count": 3,
+      "timeout_rate": 0.25,
+      "termination_counts": {
+        "controller_infeasible": 1,
+        "ready": 8,
+        "timeout": 3
+      },
+      "success_conditional_time_s": {
+        "denominator": 8,
+        "mean": 19.349999999997355,
+        "median": 17.500000000003666,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 12
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.6666666666666666,
+        "elapsed_s": 22.133333333324902,
+        "final_position_error_m": 0.005786973531436977,
+        "final_yaw_error_rad": 0.01822452903170543,
+        "final_linear_speed_m_s": 0.0004931128213723305,
+        "final_angular_speed_rad_s": 0.0030762492992772775,
+        "recontact_count": 4.333333333333333,
+        "planning_wall_s": 0.04129813465988263,
+        "execution_wall_s": 27.04375659720972
+      },
+      "metric_denominators": {
+        "success": 12,
+        "elapsed_s": 12,
+        "final_position_error_m": 12,
+        "final_yaw_error_rad": 12,
+        "final_linear_speed_m_s": 12,
+        "final_angular_speed_rad_s": 12,
+        "recontact_count": 12,
+        "planning_wall_s": 12,
+        "execution_wall_s": 12
+      }
+    },
+    "R": {
+      "episode_count": 12,
+      "family_count": 12,
+      "success_count": 0,
+      "success_rate": 0.0,
+      "timeout_count": 12,
+      "timeout_rate": 1.0,
+      "termination_counts": {
+        "timeout": 12
+      },
+      "success_conditional_time_s": {
+        "denominator": 0,
+        "mean": null,
+        "median": null,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 12
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.0,
+        "elapsed_s": 29.999999999974637,
+        "final_position_error_m": 0.017101973459008976,
+        "final_yaw_error_rad": 0.14090974791853733,
+        "final_linear_speed_m_s": 1.3082896005588732e-10,
+        "final_angular_speed_rad_s": 4.217953953901218e-17,
+        "recontact_count": 8.416666666666666,
+        "planning_wall_s": 1.475204516609665,
+        "execution_wall_s": 37.279012628423516
+      },
+      "metric_denominators": {
+        "success": 12,
+        "elapsed_s": 12,
+        "final_position_error_m": 12,
+        "final_yaw_error_rad": 12,
+        "final_linear_speed_m_s": 12,
+        "final_angular_speed_rad_s": 12,
+        "recontact_count": 12,
+        "planning_wall_s": 12,
+        "execution_wall_s": 12
+      }
+    },
+    "S1": {
+      "episode_count": 36,
+      "family_count": 12,
+      "success_count": 13,
+      "success_rate": 0.3611111111111111,
+      "timeout_count": 20,
+      "timeout_rate": 0.5555555555555556,
+      "termination_counts": {
+        "planner_invalid": 3,
+        "ready": 13,
+        "timeout": 20
+      },
+      "success_conditional_time_s": {
+        "denominator": 13,
+        "mean": 6.107692307691732,
+        "median": 5.799999999999316,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 36
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.3611111111111111,
+        "elapsed_s": 20.97222222220674,
+        "final_position_error_m": 0.009682864785731847,
+        "final_yaw_error_rad": 0.052930522855812276,
+        "final_linear_speed_m_s": 0.0003954895229075819,
+        "final_angular_speed_rad_s": 0.00656335394117927,
+        "recontact_count": 3.555555555555556,
+        "planning_wall_s": 1.2673474685094939,
+        "execution_wall_s": 26.215390078755764
+      },
+      "metric_denominators": {
+        "success": 36,
+        "elapsed_s": 36,
+        "final_position_error_m": 36,
+        "final_yaw_error_rad": 36,
+        "final_linear_speed_m_s": 36,
+        "final_angular_speed_rad_s": 36,
+        "recontact_count": 36,
+        "planning_wall_s": 36,
+        "execution_wall_s": 36
+      }
+    },
+    "SK": {
+      "episode_count": 36,
+      "family_count": 12,
+      "success_count": 12,
+      "success_rate": 0.3333333333333333,
+      "timeout_count": 24,
+      "timeout_rate": 0.6666666666666666,
+      "termination_counts": {
+        "ready": 12,
+        "timeout": 24
+      },
+      "success_conditional_time_s": {
+        "denominator": 12,
+        "mean": 5.816666666665974,
+        "median": 5.499999999999483,
+        "estimand": "pooled successful episodes; seed-group pool is separate from family-first paired comparisons"
+      },
+      "state_observation_populations": {
+        "terminal_observation": 36
+      },
+      "terminal_observation_unavailable_count": 0,
+      "all_episode_means": {
+        "success": 0.3333333333333333,
+        "elapsed_s": 21.938888888871748,
+        "final_position_error_m": 0.011492076265545612,
+        "final_yaw_error_rad": 0.047613943698947205,
+        "final_linear_speed_m_s": 8.986950739952749e-11,
+        "final_angular_speed_rad_s": 5.694866828993927e-20,
+        "recontact_count": 2.0833333333333335,
+        "planning_wall_s": 1.3647616177072954,
+        "execution_wall_s": 27.429090379672648
+      },
+      "metric_denominators": {
+        "success": 36,
+        "elapsed_s": 36,
+        "final_position_error_m": 36,
+        "final_yaw_error_rad": 36,
+        "final_linear_speed_m_s": 36,
+        "final_angular_speed_rad_s": 36,
+        "recontact_count": 36,
+        "planning_wall_s": 36,
+        "execution_wall_s": 36
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "left": "R",
+      "right": "G",
+      "family_count": 12,
+      "metrics": {
+        "success": {
+          "difference_mean": -0.6666666666666666,
+          "family_differences": [
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.8333333333333334,
+            -0.5
+          ],
+          "zero_in_interval": false,
+          "unit": "proportion",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "elapsed_s": {
+          "difference_mean": 7.866666666649733,
+          "family_differences": [
+            0.0,
+            9.999999999976694,
+            15.299999999967746,
+            2.1999999999948727,
+            9.199999999978559,
+            0.0,
+            0.0,
+            0.2999999999993008,
+            14.699999999967012,
+            17.69999999997068,
+            14.399999999966646,
+            10.599999999975296
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            5.3331249999879775,
+            10.316666666643988
+          ],
+          "zero_in_interval": false,
+          "unit": "elapsed_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_position_error_m": {
+          "difference_mean": 0.011314999927571996,
+          "family_differences": [
+            0.022755694977507453,
+            0.025064253758288302,
+            0.009257481947026112,
+            0.0005778576792743115,
+            0.02656072873474544,
+            -0.007855278010773384,
+            0.009596724857425387,
+            0.02211493354813989,
+            0.016085313755684717,
+            0.0014949308822566369,
+            0.009215773691704843,
+            0.0009115833095842477
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.0056157705602438756,
+            0.016543588365279263
+          ],
+          "zero_in_interval": false,
+          "unit": "final_position_error_m",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_yaw_error_rad": {
+          "difference_mean": 0.12268521888683193,
+          "family_differences": [
+            0.24079317396922573,
+            0.23056334258203925,
+            0.11875878011208707,
+            0.03661246958553166,
+            0.06439255879672245,
+            0.051991460248362646,
+            0.11564148080866456,
+            0.21735842589348617,
+            0.17308777057835334,
+            0.058374266235922345,
+            0.11293313102914748,
+            0.051715766802440395
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.08707941444979622,
+            0.15862204120775178
+          ],
+          "zero_in_interval": false,
+          "unit": "final_yaw_error_rad",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_linear_speed_m_s": {
+          "difference_mean": -0.0004931126905433705,
+          "family_differences": [
+            4.698912401700554e-12,
+            -2.637168660851036e-09,
+            -6.436262714492134e-09,
+            -4.418746372523921e-09,
+            -0.005364806049849997,
+            -2.820418281790335e-09,
+            -0.0005525077022264097,
+            -3.929533113333548e-09,
+            -5.11702390987776e-09,
+            -5.092874830020597e-09,
+            -4.122167973645836e-09,
+            -3.964947095655705e-09
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.0013412047414421095,
+            -3.638169610121437e-09
+          ],
+          "zero_in_interval": false,
+          "unit": "final_linear_speed_m_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_angular_speed_rad_s": {
+          "difference_mean": -0.003076249299277235,
+          "family_differences": [
+            -7.007583592539785e-18,
+            -3.6679133236507806e-16,
+            -8.888575252371742e-15,
+            -1.477867926973674e-16,
+            -0.03624054069428767,
+            -9.096220737540768e-16,
+            -0.000674438679685868,
+            -1.7188022576065932e-17,
+            2.669276450631821e-16,
+            -1.2217343179851058e-08,
+            -1.5717305506326475e-17,
+            -1.0983052126529702e-17
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.009060136217139542,
+            -1.0181121040091223e-09
+          ],
+          "zero_in_interval": false,
+          "unit": "final_angular_speed_rad_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "recontact_count": {
+          "difference_mean": 4.083333333333333,
+          "family_differences": [
+            1.0,
+            1.0,
+            11.0,
+            3.0,
+            -1.0,
+            5.0,
+            1.0,
+            2.0,
+            11.0,
+            3.0,
+            4.0,
+            8.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            2.3333333333333335,
+            6.0
+          ],
+          "zero_in_interval": false,
+          "unit": "recontact_count",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "planning_wall_s": {
+          "difference_mean": 1.4339063819497828,
+          "family_differences": [
+            1.362375101307407,
+            1.6253887400962412,
+            1.7520675885025412,
+            1.330121617531404,
+            1.4219407916534692,
+            1.455101930303499,
+            1.3138284527231008,
+            1.5581980589777231,
+            1.2986285770311952,
+            1.3586191260255873,
+            1.3646200897637755,
+            1.365986509481445
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            1.370159810127128,
+            1.4986987181429867
+          ],
+          "zero_in_interval": false,
+          "unit": "planning_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "execution_wall_s": {
+          "difference_mean": 10.235256031213794,
+          "family_differences": [
+            -0.5168389591854066,
+            14.986433957936242,
+            23.02799200080335,
+            1.4567663341294974,
+            10.58715487504378,
+            2.5045405831187963,
+            -2.7442085000220686,
+            1.71346729202196,
+            19.59489699988626,
+            19.816246123984456,
+            16.69663262483664,
+            15.699989042012021
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            6.6453100062023935,
+            13.804511660987435
+          ],
+          "zero_in_interval": false,
+          "unit": "execution_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "S1",
+      "right": "G",
+      "family_count": 12,
+      "metrics": {
+        "success": {
+          "difference_mean": -0.3055555555555556,
+          "family_differences": [
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            0.0,
+            1.0,
+            1.0,
+            -1.0,
+            -1.0,
+            0.0,
+            0.0,
+            -0.6666666666666667
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.638888888888889,
+            0.02777777777777775
+          ],
+          "zero_in_interval": true,
+          "unit": "proportion",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "elapsed_s": {
+          "difference_mean": -1.1611111111181607,
+          "family_differences": [
+            -1.5333333333297574,
+            8.63333333331321,
+            13.399999999972174,
+            2.1999999999948727,
+            9.199999999978559,
+            -22.59999999997621,
+            -25.033333333308192,
+            0.2999999999993008,
+            14.699999999967012,
+            -7.333333333337514,
+            -9.70000000000873,
+            3.8333333333173414
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -7.419513888889268,
+            4.66701388887317
+          ],
+          "zero_in_interval": true,
+          "unit": "elapsed_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_position_error_m": {
+          "difference_mean": 0.0038958912542948693,
+          "family_differences": [
+            0.005480962587605314,
+            0.010497204102810546,
+            0.008458027649080864,
+            0.00392593211568627,
+            0.012827831151153428,
+            -0.009435497223005474,
+            -0.0004866824232682386,
+            0.0065826175200606775,
+            0.00815419360243326,
+            -0.0005102519293956106,
+            0.0003490112244922553,
+            0.0009073466738851376
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.0008291485138071887,
+            0.006832057048334671
+          ],
+          "zero_in_interval": false,
+          "unit": "final_position_error_m",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_yaw_error_rad": {
+          "difference_mean": 0.03470599382410684,
+          "family_differences": [
+            0.06475910214052583,
+            0.0839587857712735,
+            0.114131519999769,
+            0.031035981618466955,
+            -0.06059409722453367,
+            0.0060881102473432005,
+            0.016989304117533223,
+            0.060268241983948055,
+            0.0462195061063048,
+            0.007194108525354773,
+            0.008251611474902868,
+            0.038169751128393596
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.015916107155135095,
+            0.05187563750137119
+          ],
+          "zero_in_interval": false,
+          "unit": "final_yaw_error_rad",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_linear_speed_m_s": {
+          "difference_mean": -9.762329846474879e-05,
+          "family_differences": [
+            0.0003369039264646488,
+            0.0018898492290354177,
+            0.002099592480315555,
+            -4.517037018215609e-09,
+            -0.005364805949649447,
+            -2.8963590521657535e-09,
+            -0.0005525077290415589,
+            -3.979836395335114e-09,
+            0.0004195123804058757,
+            -5.2113899942275546e-09,
+            -3.788553262616694e-09,
+            -3.525931754327507e-09
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.0009912815744795094,
+            0.0005529733667150857
+          ],
+          "zero_in_interval": true,
+          "unit": "final_linear_speed_m_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_angular_speed_rad_s": {
+          "difference_mean": 0.0034871046419019933,
+          "family_differences": [
+            0.004268995852012395,
+            0.03468306017210714,
+            0.038009709146614654,
+            -1.477767642511856e-16,
+            -0.03624054069428767,
+            -9.09600283803089e-16,
+            -0.0006744386796858678,
+            -1.7549482645875207e-17,
+            0.0017984821234074296,
+            -1.2217343179828023e-08,
+            -1.435601778458314e-17,
+            1.055098112881546e-16
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.005087489841161296,
+            0.009825341888685661
+          ],
+          "zero_in_interval": true,
+          "unit": "final_angular_speed_rad_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "recontact_count": {
+          "difference_mean": -0.7777777777777781,
+          "family_differences": [
+            -4.666666666666667,
+            0.3333333333333339,
+            3.333333333333333,
+            3.333333333333332,
+            3.333333333333333,
+            -6.0,
+            -6.0,
+            -4.666666666666667,
+            4.666666666666666,
+            -2.0,
+            -3.0,
+            2.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -2.6944444444444446,
+            1.2229166666666627
+          ],
+          "zero_in_interval": true,
+          "unit": "recontact_count",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "planning_wall_s": {
+          "difference_mean": 1.2260493338496115,
+          "family_differences": [
+            1.6076284258936844,
+            1.6529552768915892,
+            1.6484656136793396,
+            2.0672450391575694,
+            1.8078849542265136,
+            0.35073556502660114,
+            0.2110690837725997,
+            1.7249497914842018,
+            1.688193433685228,
+            0.26912197354249656,
+            0.29157788756613934,
+            1.3927649612693735
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.8849130502239051,
+            1.5400679180456784
+          ],
+          "zero_in_interval": false,
+          "unit": "planning_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "execution_wall_s": {
+          "difference_mean": -0.8283665184539516,
+          "family_differences": [
+            -4.169599250579871,
+            9.44703370837184,
+            13.497017888895549,
+            6.779181653556101,
+            11.320178931734219,
+            -25.615801736013964,
+            -29.27247979150464,
+            -0.7329947497540417,
+            17.028853152723364,
+            -6.349943570249404,
+            -9.606775624832759,
+            7.734931166206181
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -7.991765148297415,
+            5.948487468416795
+          ],
+          "zero_in_interval": true,
+          "unit": "execution_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK",
+      "right": "G",
+      "family_count": 12,
+      "metrics": {
+        "success": {
+          "difference_mean": -0.3333333333333333,
+          "family_differences": [
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            0.0,
+            1.0,
+            1.0,
+            -1.0,
+            -1.0,
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.6666666666666666,
+            0.0
+          ],
+          "zero_in_interval": true,
+          "unit": "proportion",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "elapsed_s": {
+          "difference_mean": -0.19444444445315381,
+          "family_differences": [
+            0.0,
+            9.999999999976694,
+            15.299999999967746,
+            2.1999999999948727,
+            9.199999999978559,
+            -22.59999999997621,
+            -25.033333333308192,
+            0.2999999999993008,
+            14.699999999967012,
+            -7.333333333337514,
+            -9.666666666675415,
+            10.599999999975296
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -6.84611111111,
+            6.025138888872798
+          ],
+          "zero_in_interval": true,
+          "unit": "elapsed_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_position_error_m": {
+          "difference_mean": 0.005705102734108634,
+          "family_differences": [
+            0.010182117514492543,
+            0.016565555345713266,
+            0.01610558169115356,
+            0.004182067549380145,
+            0.01165873154299885,
+            -0.00954237711286172,
+            -0.0006663594972178008,
+            0.009306501457287716,
+            0.007702015376848683,
+            -0.00031498260844884263,
+            -1.4385139167751547e-05,
+            0.003296766689124979
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.0022403173426409125,
+            0.008749852922778368
+          ],
+          "zero_in_interval": false,
+          "unit": "final_position_error_m",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_yaw_error_rad": {
+          "difference_mean": 0.029389414667241796,
+          "family_differences": [
+            0.05957209661132401,
+            0.07975479520483933,
+            0.08035329997490873,
+            0.02763560515034917,
+            -0.05971178641248573,
+            0.0050515257617183736,
+            0.021378723287580392,
+            0.0548345346238944,
+            0.04247806747828683,
+            0.007496715063978421,
+            0.00526553030617179,
+            0.02856386895633574
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.012381271779133004,
+            0.044299607710910904
+          ],
+          "zero_in_interval": false,
+          "unit": "final_yaw_error_rad",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_linear_speed_m_s": {
+          "difference_mean": -0.0004931127315028232,
+          "family_differences": [
+            -4.390773671842458e-11,
+            -2.746430143477081e-09,
+            -6.535729155177688e-09,
+            -4.4620092745718296e-09,
+            -0.005364805996471315,
+            -2.8582443636952195e-09,
+            -0.0005525077301164101,
+            -3.976194822347422e-09,
+            -5.1759536149012414e-09,
+            -5.21753992331701e-09,
+            -4.227041205227099e-09,
+            -3.808395914036468e-09
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.0013412047588694808,
+            -3.704378853358998e-09
+          ],
+          "zero_in_interval": false,
+          "unit": "final_linear_speed_m_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_angular_speed_rad_s": {
+          "difference_mean": -0.003076249299277277,
+          "family_differences": [
+            -7.00758041149861e-18,
+            -3.6679135822084955e-16,
+            -8.896585738497204e-15,
+            -1.477948007909887e-16,
+            -0.03624054069428767,
+            -9.095625131520382e-16,
+            -0.0006744386796858676,
+            -1.755016623077724e-17,
+            -2.3084530451870236e-16,
+            -1.2217343179808521e-08,
+            -1.559196619488942e-17,
+            -1.0982985687882353e-17
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.009060136217139548,
+            -1.0181121577216605e-09
+          ],
+          "zero_in_interval": false,
+          "unit": "final_angular_speed_rad_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "recontact_count": {
+          "difference_mean": -2.2499999999999996,
+          "family_differences": [
+            -5.333333333333333,
+            -3.0,
+            2.333333333333333,
+            -1.0,
+            2.333333333333333,
+            -6.0,
+            -6.0,
+            -5.666666666666667,
+            -2.0,
+            -2.0,
+            -3.0,
+            2.333333333333334
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -3.750000000000001,
+            -0.5277777777777779
+          ],
+          "zero_in_interval": false,
+          "unit": "recontact_count",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "planning_wall_s": {
+          "difference_mean": 1.323463483047413,
+          "family_differences": [
+            1.7171423302497715,
+            1.8233930200804025,
+            1.9638011790035914,
+            2.202680135223394,
+            1.7016142695210874,
+            0.35839118203148246,
+            0.20935016707517207,
+            1.7367575348665316,
+            1.6383679017114143,
+            0.3102415713947267,
+            0.3661046704122176,
+            1.8537178349991639
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.9675316675582305,
+            1.645112949957062
+          ],
+          "zero_in_interval": false,
+          "unit": "planning_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "execution_wall_s": {
+          "difference_mean": 0.3853337824629201,
+          "family_differences": [
+            -2.6010016388415096,
+            10.591399250319228,
+            18.13564755550275,
+            9.964889486553147,
+            10.478933417393513,
+            -25.46490050006347,
+            -29.30365822184831,
+            -1.4884769161387013,
+            15.514577193961784,
+            -6.023452556304013,
+            -9.472699472447857,
+            14.292747791468479
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -6.943773142825296,
+            7.354781762310849
+          ],
+          "zero_in_interval": true,
+          "unit": "execution_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "S1",
+      "right": "R",
+      "family_count": 12,
+      "metrics": {
+        "success": {
+          "difference_mean": 0.3611111111111111,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.3333333333333333
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.16666666666666666,
+            0.5833333333333334
+          ],
+          "zero_in_interval": false,
+          "unit": "proportion",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "elapsed_s": {
+          "difference_mean": -9.027777777767895,
+          "family_differences": [
+            -1.5333333333297574,
+            -1.366666666663484,
+            -1.899999999995572,
+            0.0,
+            0.0,
+            -22.59999999997621,
+            -25.033333333308192,
+            0.0,
+            0.0,
+            -25.033333333308192,
+            -24.099999999975374,
+            -6.7666666666579545
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -14.608472222207041,
+            -4.133263888883806
+          ],
+          "zero_in_interval": false,
+          "unit": "elapsed_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_position_error_m": {
+          "difference_mean": -0.007419108673277127,
+          "family_differences": [
+            -0.01727473238990214,
+            -0.014567049655477757,
+            -0.0007994542979452481,
+            0.003348074436411958,
+            -0.013732897583592012,
+            -0.0015802192122320903,
+            -0.010083407280693625,
+            -0.015532316028079215,
+            -0.007931120153251455,
+            -0.0020051828116522475,
+            -0.008866762467212588,
+            -4.236635699110015e-06
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.010779267676441313,
+            -0.003980612692258688
+          ],
+          "zero_in_interval": false,
+          "unit": "final_position_error_m",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_yaw_error_rad": {
+          "difference_mean": -0.08797922506272508,
+          "family_differences": [
+            -0.1760340718286999,
+            -0.14660455681076576,
+            -0.004627260112318066,
+            -0.005576487967064704,
+            -0.12498665602125612,
+            -0.045903350001019444,
+            -0.09865217669113133,
+            -0.1570901839095381,
+            -0.12686826447204855,
+            -0.051180157710567574,
+            -0.10468151955424461,
+            -0.013546015674046799
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.11840786505567136,
+            -0.057256330786621894
+          ],
+          "zero_in_interval": false,
+          "unit": "final_yaw_error_rad",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_linear_speed_m_s": {
+          "difference_mean": 0.0003954893920786217,
+          "family_differences": [
+            0.0003369039217657364,
+            0.0018898518662040784,
+            0.0020995989165782693,
+            -9.829064569168763e-11,
+            1.0020055002692686e-10,
+            -7.594077037541826e-11,
+            -2.6815149219595103e-11,
+            -5.030328200156618e-11,
+            0.00041951749742978557,
+            -1.1851516420695815e-10,
+            3.3361471102914166e-10,
+            4.3901534132819866e-10
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            6.303518361226543e-05,
+            0.0006998682931708215
+          ],
+          "zero_in_interval": false,
+          "unit": "final_linear_speed_m_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_angular_speed_rad_s": {
+          "difference_mean": 0.006563353941179227,
+          "family_differences": [
+            0.004268995852012402,
+            0.03468306017210751,
+            0.03800970914662354,
+            1.0028446181779544e-20,
+            4.3491273591481797e-23,
+            2.1789950987879428e-20,
+            2.0701913313090687e-19,
+            -3.614600698092768e-19,
+            0.0017984821234071626,
+            2.3034560356534062e-20,
+            1.3612877217433325e-18,
+            1.1649286341468432e-16
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.0007114993086687431,
+            0.012290481860219814
+          ],
+          "zero_in_interval": false,
+          "unit": "final_angular_speed_rad_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "recontact_count": {
+          "difference_mean": -4.861111111111111,
+          "family_differences": [
+            -5.666666666666667,
+            -0.6666666666666661,
+            -7.666666666666667,
+            0.33333333333333215,
+            4.333333333333333,
+            -11.0,
+            -7.0,
+            -6.666666666666667,
+            -6.333333333333334,
+            -5.0,
+            -7.0,
+            -6.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -6.888888888888888,
+            -2.4722222222222228
+          ],
+          "zero_in_interval": false,
+          "unit": "recontact_count",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "planning_wall_s": {
+          "difference_mean": -0.207857048100171,
+          "family_differences": [
+            0.24525332458627735,
+            0.02756653679534793,
+            -0.10360197482320155,
+            0.7371234216261655,
+            0.3859441625730444,
+            -1.104366365276898,
+            -1.102759368950501,
+            0.16675173250647868,
+            0.38956485665403284,
+            -1.0894971524830908,
+            -1.073042202197636,
+            0.026778451787928592
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.5415029772227474,
+            0.11165265667708178
+          ],
+          "zero_in_interval": true,
+          "unit": "planning_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "execution_wall_s": {
+          "difference_mean": -11.063622549667746,
+          "family_differences": [
+            -3.652760291394465,
+            -5.539400249564402,
+            -9.530974111907803,
+            5.322415319426604,
+            0.7330240566904394,
+            -28.12034231913276,
+            -26.52827129148257,
+            -2.4464620417760017,
+            -2.566043847162895,
+            -26.16618969423386,
+            -26.303408249669396,
+            -7.96505787580584
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -17.043106513825478,
+            -5.418684990509225
+          ],
+          "zero_in_interval": false,
+          "unit": "execution_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK",
+      "right": "R",
+      "family_count": 12,
+      "metrics": {
+        "success": {
+          "difference_mean": 0.3333333333333333,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.08333333333333333,
+            0.5833333333333334
+          ],
+          "zero_in_interval": false,
+          "unit": "proportion",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "elapsed_s": {
+          "difference_mean": -8.061111111102889,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -22.59999999997621,
+            -25.033333333308192,
+            0.0,
+            0.0,
+            -25.033333333308192,
+            -24.06666666664206,
+            0.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -14.158333333318915,
+            -2.086111111109016
+          ],
+          "zero_in_interval": false,
+          "unit": "elapsed_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_position_error_m": {
+          "difference_mean": -0.0056098971934633625,
+          "family_differences": [
+            -0.01257357746301491,
+            -0.008498698412575039,
+            0.006848099744127449,
+            0.0036042098701058334,
+            -0.014901997191746591,
+            -0.0016870991020883352,
+            -0.010263084354643189,
+            -0.012808432090852176,
+            -0.008383298378836033,
+            -0.0018099134907054795,
+            -0.009230158830872595,
+            0.0023851833795407312
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.008954958227939333,
+            -0.002175219894537204
+          ],
+          "zero_in_interval": false,
+          "unit": "final_position_error_m",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_yaw_error_rad": {
+          "difference_mean": -0.09329580421959013,
+          "family_differences": [
+            -0.18122107735790172,
+            -0.15080854737719993,
+            -0.038405480137178344,
+            -0.008976864435182488,
+            -0.12410434520920818,
+            -0.04693993448664427,
+            -0.09426275752108416,
+            -0.16252389126959177,
+            -0.1306097031000665,
+            -0.050877551171943924,
+            -0.1076676007229757,
+            -0.023151897846104656
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.12226424841383102,
+            -0.06384133121657298
+          ],
+          "zero_in_interval": false,
+          "unit": "final_yaw_error_rad",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_linear_speed_m_s": {
+          "difference_mean": -4.095945265635982e-11,
+          "family_differences": [
+            -4.860664912012513e-11,
+            -1.0926148262604496e-10,
+            -9.94664406855537e-11,
+            -4.326290204790787e-11,
+            5.337868223165212e-11,
+            -3.782608190488443e-11,
+            -2.789000042765847e-11,
+            -4.666170901387419e-11,
+            -5.892970502348122e-11,
+            -1.2466509329641335e-10,
+            -1.0487323158126422e-10,
+            1.5655118161923753e-10
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -7.58389950440856e-11,
+            2.8631529122132087e-12
+          ],
+          "zero_in_interval": true,
+          "unit": "final_linear_speed_m_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_angular_speed_rad_s": {
+          "difference_mean": -4.2122590870722237e-17,
+          "family_differences": [
+            3.181041176528853e-24,
+            -2.5855771458625098e-23,
+            -8.0104861254622e-18,
+            -8.008093621311045e-21,
+            3.372247952333061e-23,
+            5.956060203861017e-20,
+            4.549828205831612e-19,
+            -3.6214365471130706e-19,
+            -4.977729495818845e-16,
+            4.253678655700627e-20,
+            1.2533931143705236e-19,
+            6.643864735026647e-23
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -1.2506436739399564e-16,
+            6.9423266456338e-20
+          ],
+          "zero_in_interval": true,
+          "unit": "final_angular_speed_rad_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "recontact_count": {
+          "difference_mean": -6.333333333333334,
+          "family_differences": [
+            -6.333333333333333,
+            -4.0,
+            -8.666666666666668,
+            -4.0,
+            3.333333333333333,
+            -11.0,
+            -7.0,
+            -7.666666666666667,
+            -13.0,
+            -5.0,
+            -7.0,
+            -5.666666666666666
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -8.333333333333332,
+            -4.111111111111112
+          ],
+          "zero_in_interval": false,
+          "unit": "recontact_count",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "planning_wall_s": {
+          "difference_mean": -0.11044289890236941,
+          "family_differences": [
+            0.35476722894236445,
+            0.19800427998416126,
+            0.21173359050105023,
+            0.8725585176919899,
+            0.2796734778676182,
+            -1.0967107482720166,
+            -1.1044782856479287,
+            0.1785594758888085,
+            0.33973932468021917,
+            -1.0483775546308607,
+            -0.9985154193515579,
+            0.4877313255177189
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.4523553550671851,
+            0.20999627869508242
+          ],
+          "zero_in_interval": true,
+          "unit": "planning_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "execution_wall_s": {
+          "difference_mean": -9.849922248750874,
+          "family_differences": [
+            -2.084162679656103,
+            -4.395034707617015,
+            -4.892344445300601,
+            8.50812315242365,
+            -0.10822145765026647,
+            -27.969441083182268,
+            -26.55944972182624,
+            -3.2019442081606613,
+            -4.080319805924475,
+            -25.83969868028847,
+            -26.169332097284496,
+            -1.4072412505435423
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -15.800307935378802,
+            -4.1282560715970895
+          ],
+          "zero_in_interval": false,
+          "unit": "execution_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK",
+      "right": "S1",
+      "family_count": 12,
+      "metrics": {
+        "success": {
+          "difference_mean": -0.027777777777777776,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.3333333333333333
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.08333333333333333,
+            0.0
+          ],
+          "zero_in_interval": true,
+          "unit": "proportion",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "elapsed_s": {
+          "difference_mean": 0.9666666666650068,
+          "family_differences": [
+            1.5333333333297574,
+            1.366666666663484,
+            1.899999999995572,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.03333333333331456,
+            6.7666666666579545
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.23333333333279976,
+            2.0920138888857758
+          ],
+          "zero_in_interval": false,
+          "unit": "elapsed_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_position_error_m": {
+          "difference_mean": 0.0018092114798137662,
+          "family_differences": [
+            0.004701154926887229,
+            0.006068351242902718,
+            0.007647554042072697,
+            0.0002561354336938753,
+            -0.0011690996081545786,
+            -0.00010687988985624494,
+            -0.00017967707394956223,
+            0.002723883937227039,
+            -0.00045217822558457806,
+            0.00019526932094676794,
+            -0.0003633963636600068,
+            0.0023894200152398412
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.0006674308567085786,
+            0.0028348099867771584
+          ],
+          "zero_in_interval": false,
+          "unit": "final_position_error_m",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_yaw_error_rad": {
+          "difference_mean": -0.005316579156865056,
+          "family_differences": [
+            -0.005187005529201816,
+            -0.004203990566434168,
+            -0.03377822002486028,
+            -0.003400376468117784,
+            0.00088231081204794,
+            -0.001036584485624827,
+            0.004389419170047169,
+            -0.0054337073600536565,
+            -0.0037414386280179707,
+            0.0003026065386236478,
+            -0.0029860811687310775,
+            -0.009605882172057857
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.01040778849631118,
+            -0.001678231996658912
+          ],
+          "zero_in_interval": false,
+          "unit": "final_yaw_error_rad",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_linear_speed_m_s": {
+          "difference_mean": -0.0003954894330380744,
+          "family_differences": [
+            -0.0003369039703723855,
+            -0.001889851975465561,
+            -0.00209959901604471,
+            5.502774364377977e-11,
+            -4.682186779527474e-11,
+            3.8114688470533836e-11,
+            -1.0748512080633678e-12,
+            3.641572987691989e-12,
+            -0.0004195175563594906,
+            -6.1499290894551925e-12,
+            -4.384879426104059e-10,
+            -2.8246415970896115e-10
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.0006998683521951269,
+            -6.303520351455674e-05
+          ],
+          "zero_in_interval": false,
+          "unit": "final_linear_speed_m_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_angular_speed_rad_s": {
+          "difference_mean": -0.00656335394117927,
+          "family_differences": [
+            -0.004268995852012402,
+            -0.03468306017210751,
+            -0.03800970914662355,
+            -1.8036539803090588e-20,
+            -9.768794068151189e-24,
+            3.7770651050730734e-20,
+            2.4796368745225438e-19,
+            -6.835849020302691e-22,
+            -0.0017984821234076605,
+            1.9502226200472214e-20,
+            -1.2359484103062802e-18,
+            -1.1649279697603694e-16
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.01229048186021995,
+            -0.0007114993086687431
+          ],
+          "zero_in_interval": false,
+          "unit": "final_angular_speed_rad_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "recontact_count": {
+          "difference_mean": -1.472222222222222,
+          "family_differences": [
+            -0.6666666666666666,
+            -3.333333333333334,
+            -1.0,
+            -4.333333333333332,
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            -6.666666666666666,
+            0.0,
+            0.0,
+            0.3333333333333339
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -2.6388888888888884,
+            -0.5277777777777776
+          ],
+          "zero_in_interval": false,
+          "unit": "recontact_count",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "planning_wall_s": {
+          "difference_mean": 0.09741414919780157,
+          "family_differences": [
+            0.1095139043560871,
+            0.17043774318881333,
+            0.3153355653242518,
+            0.13543509606582438,
+            -0.10627068470542622,
+            0.007655617004881321,
+            -0.0017189166974276304,
+            0.011807743382329816,
+            -0.049825531973813675,
+            0.04111959785223013,
+            0.07452678284607828,
+            0.4609528737297903
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.037940105109009956,
+            0.170102099626739
+          ],
+          "zero_in_interval": false,
+          "unit": "planning_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "execution_wall_s": {
+          "difference_mean": 1.213700300916872,
+          "family_differences": [
+            1.5685976117383618,
+            1.144365541947387,
+            4.638629666607201,
+            3.1857078329970463,
+            -0.8412455143407058,
+            0.1509012359504922,
+            -0.031178430343667962,
+            -0.7554821663846596,
+            -1.51427595876158,
+            0.3264910139453905,
+            0.13407615238490145,
+            6.557816625262298
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.30092069310905606,
+            2.389386979251379
+          ],
+          "zero_in_interval": false,
+          "unit": "execution_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK-11",
+      "right": "S1-11",
+      "family_count": 12,
+      "metrics": {
+        "success": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "zero_in_interval": true,
+          "unit": "proportion",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "elapsed_s": {
+          "difference_mean": 0.4666666666655642,
+          "family_differences": [
+            0.0,
+            0.0,
+            5.699999999986716,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.09999999999994458,
+            0.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.016666666666657427,
+            1.4166666666633503
+          ],
+          "zero_in_interval": true,
+          "unit": "elapsed_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_position_error_m": {
+          "difference_mean": 0.0010678101544709408,
+          "family_differences": [
+            0.002194467176117744,
+            -0.0012188973305047382,
+            0.011599355991645318,
+            0.0004648142629207711,
+            -0.0016037537517236237,
+            0.00012645367178407835,
+            -0.0005319402173864741,
+            0.00012054279659447047,
+            -0.000305810457068751,
+            2.4153176242647928e-05,
+            -3.263906242961193e-05,
+            0.0019769755974594592
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.00028397367988966933,
+            0.0029738854021110982
+          ],
+          "zero_in_interval": true,
+          "unit": "final_position_error_m",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_yaw_error_rad": {
+          "difference_mean": -0.004107174652836647,
+          "family_differences": [
+            -0.00353428428374869,
+            -0.004844131885327396,
+            -0.0530701129359592,
+            -0.0010997063146978014,
+            0.002438177769720884,
+            0.0007882654025221925,
+            0.008977190973089133,
+            -0.003481674996446582,
+            0.0006585161718692945,
+            0.0020983467361359587,
+            -0.004948154780286097,
+            0.006731472309088545
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.012466355936230952,
+            0.0014912992875547298
+          ],
+          "zero_in_interval": true,
+          "unit": "final_yaw_error_rad",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_linear_speed_m_s": {
+          "difference_mean": -0.0005248997671380802,
+          "family_differences": [
+            3.851577561025204e-12,
+            1.4548415460238555e-12,
+            -0.006298797200030351,
+            1.2073654290489033e-11,
+            -1.5468246515873505e-10,
+            -1.478301451665137e-11,
+            7.641975673195072e-11,
+            3.5030401965765524e-12,
+            -8.47755603961837e-12,
+            2.1724963688462633e-11,
+            4.602454491626872e-11,
+            7.2640437221124384e-12
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.0015746993039465794,
+            2.0988811067539228e-11
+          ],
+          "zero_in_interval": true,
+          "unit": "final_linear_speed_m_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_angular_speed_rad_s": {
+          "difference_mean": -0.009502427286655887,
+          "family_differences": [
+            9.934671778489643e-24,
+            5.069768678608374e-24,
+            -0.11402912743987065,
+            1.699551554114213e-23,
+            -9.805907539515596e-23,
+            -3.793906560615335e-20,
+            1.0256111265942437e-18,
+            -8.205625123636175e-22,
+            -3.9473836231767737e-23,
+            7.772870169943705e-20,
+            8.309618948833093e-20,
+            2.452957289809669e-23
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.028507281859967662,
+            1.9113276668190647e-19
+          ],
+          "zero_in_interval": true,
+          "unit": "final_angular_speed_rad_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "recontact_count": {
+          "difference_mean": -0.9166666666666667,
+          "family_differences": [
+            -1.0,
+            -5.0,
+            -2.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            -1.0,
+            -2.0,
+            0.0,
+            0.0,
+            2.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -1.7499999999999996,
+            -0.08333333333333333
+          ],
+          "zero_in_interval": false,
+          "unit": "recontact_count",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "planning_wall_s": {
+          "difference_mean": 0.01279246292930717,
+          "family_differences": [
+            0.0007528960704803467,
+            -0.03276533493772149,
+            0.31915406440384686,
+            0.04043440613895655,
+            -0.02120619942434132,
+            0.005780507577583194,
+            3.9285048842430115e-05,
+            0.015386290848255157,
+            -0.054445787565782666,
+            0.00411933334544301,
+            0.006999007426202297,
+            -0.1307389137800783
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.02850747816992225,
+            0.06794109212351024
+          ],
+          "zero_in_interval": true,
+          "unit": "planning_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "execution_wall_s": {
+          "difference_mean": 0.49387091332270455,
+          "family_differences": [
+            0.4265359581913799,
+            -0.9488583740312606,
+            4.918591541936621,
+            0.9864848330616951,
+            0.655025125015527,
+            0.29265941702760756,
+            0.005128874909132719,
+            -0.3355689160525799,
+            -0.46233654115349054,
+            0.22648674994707108,
+            -0.043354876106604934,
+            0.20565716712735593
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.122993591358924,
+            1.3074531113646417
+          ],
+          "zero_in_interval": true,
+          "unit": "execution_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK-23",
+      "right": "S1-23",
+      "family_count": 12,
+      "metrics": {
+        "success": {
+          "difference_mean": -0.08333333333333333,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.25,
+            0.0
+          ],
+          "zero_in_interval": true,
+          "unit": "proportion",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "elapsed_s": {
+          "difference_mean": 2.4083333333294696,
+          "family_differences": [
+            4.599999999989279,
+            4.099999999990445,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.09999999999994458,
+            0.0,
+            20.299999999973856
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.324999999999213,
+            5.791666666658445
+          ],
+          "zero_in_interval": false,
+          "unit": "elapsed_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_position_error_m": {
+          "difference_mean": 0.004022570582816292,
+          "family_differences": [
+            0.012563344823386738,
+            0.01594080167352968,
+            0.011332464486156397,
+            0.0011240477582036747,
+            -0.0010863452537559527,
+            -0.0006643404807288407,
+            0.00014222281767056841,
+            0.007565373065599422,
+            -0.00222364311724387,
+            0.0009364268514548977,
+            -0.00010217442540556496,
+            0.002742668794928355
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.0016809328098894639,
+            0.0060758851374237005
+          ],
+          "zero_in_interval": false,
+          "unit": "final_position_error_m",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_yaw_error_rad": {
+          "difference_mean": -0.00907213838800073,
+          "family_differences": [
+            -0.009825097244292369,
+            -0.0005493024131539848,
+            -0.05947683645322274,
+            -0.009536665327917415,
+            -0.0046623960688205734,
+            -0.006621358475506156,
+            -0.004069333082163947,
+            -0.018024726116253387,
+            -0.001441124392590254,
+            0.000688301948375436,
+            0.0009796014040599488,
+            0.003673275565476697
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.01778918077736999,
+            -0.0029961538939301873
+          ],
+          "zero_in_interval": false,
+          "unit": "final_yaw_error_rad",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_linear_speed_m_s": {
+          "difference_mean": -0.0006615683303492799,
+          "family_differences": [
+            -0.0010107119103224475,
+            -0.005669554610236976,
+            -2.1117178720645147e-13,
+            5.991383151438779e-12,
+            1.0116484144173355e-11,
+            -3.9208677594518066e-11,
+            1.0815930739863661e-10,
+            -2.692214477734535e-12,
+            -0.0012585526605361917,
+            -4.285294012706014e-11,
+            3.044558481430545e-11,
+            -8.528435002772118e-10
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.0015222681854558258,
+            -8.422599036487561e-05
+          ],
+          "zero_in_interval": false,
+          "unit": "final_linear_speed_m_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_angular_speed_rad_s": {
+          "difference_mean": -0.0101876345368819,
+          "family_differences": [
+            -0.012806987556037206,
+            -0.1040491805163223,
+            -5.176077943190133e-24,
+            -5.412433895373545e-20,
+            7.698461801222213e-23,
+            8.468973496962258e-21,
+            1.3448031081618592e-19,
+            -1.3020644396273423e-21,
+            -0.005395446370222954,
+            -2.0164806551542378e-20,
+            2.078283509900135e-20,
+            -3.494784929630972e-16
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.02691153619078443,
+            -0.0004496205308519128
+          ],
+          "zero_in_interval": false,
+          "unit": "final_angular_speed_rad_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "recontact_count": {
+          "difference_mean": -1.4999999999999998,
+          "family_differences": [
+            -1.0,
+            -1.0,
+            -5.0,
+            -13.0,
+            5.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -3.41875,
+            0.1666666666666667
+          ],
+          "zero_in_interval": true,
+          "unit": "recontact_count",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "planning_wall_s": {
+          "difference_mean": 0.19276017049560326,
+          "family_differences": [
+            0.28752165217883885,
+            0.20758187887258828,
+            0.4353068557102233,
+            0.1836639866232872,
+            0.0003928139340132475,
+            0.00044971657916903496,
+            -0.0005533287767320871,
+            0.02706716815009713,
+            -0.08221091190353036,
+            0.028755912790074944,
+            -0.00901891733519733,
+            1.2341652191244066
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.06287172716110945,
+            0.40127093899160765
+          ],
+          "zero_in_interval": false,
+          "unit": "planning_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "execution_wall_s": {
+          "difference_mean": 2.8391031112405467,
+          "family_differences": [
+            3.1362310429103673,
+            1.9159647088963538,
+            3.67519395891577,
+            5.447979958029464,
+            0.3751442909706384,
+            -0.09300579223781824,
+            -0.03199270786717534,
+            -2.0753412498161197,
+            -1.0748725419398397,
+            0.6711117089726031,
+            -0.4475775419268757,
+            22.570401499979198
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.54331122606042,
+            6.632368771392308
+          ],
+          "zero_in_interval": false,
+          "unit": "execution_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        }
+      }
+    },
+    {
+      "left": "SK-47",
+      "right": "S1-47",
+      "family_count": 12,
+      "metrics": {
+        "success": {
+          "difference_mean": 0.0,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.0,
+            0.0
+          ],
+          "zero_in_interval": true,
+          "unit": "proportion",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "elapsed_s": {
+          "difference_mean": 0.024999999999986144,
+          "family_differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.09999999999994458,
+            0.19999999999988916,
+            0.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.0,
+            0.04999999999997229
+          ],
+          "zero_in_interval": true,
+          "unit": "elapsed_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_position_error_m": {
+          "difference_mean": 0.0003372537021540648,
+          "family_differences": [
+            -0.0006543472188427872,
+            0.0034831493856832055,
+            1.0841648416366756e-05,
+            -0.0008204557200428165,
+            -0.0008171998189841663,
+            0.00021724713937603096,
+            -0.00014931382213278013,
+            0.0004857359494872225,
+            0.0011729188975588799,
+            -0.00037477206485724435,
+            -0.0009553756031448436,
+            0.0024486156533317094
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.0003449601703620446,
+            0.001127536128406731
+          ],
+          "zero_in_interval": true,
+          "unit": "final_position_error_m",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_yaw_error_rad": {
+          "difference_mean": -0.0027704244297577945,
+          "family_differences": [
+            -0.0022016350595643885,
+            -0.007218537400821123,
+            0.011212289314601165,
+            0.00043524223826185704,
+            0.004871150735243496,
+            0.002723339616109488,
+            0.008260399619216319,
+            0.005205279032538979,
+            -0.010441707663332966,
+            -0.001878829068640453,
+            -0.004989690129967081,
+            -0.039222394390738824
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.008308599334214548,
+            0.0018531963160754777
+          ],
+          "zero_in_interval": true,
+          "unit": "final_yaw_error_rad",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_linear_speed_m_s": {
+          "difference_mean": -2.0162686284189806e-10,
+          "family_differences": [
+            -4.646286706045201e-12,
+            -1.317614549067928e-09,
+            1.5210739267745728e-10,
+            1.4701819348941155e-10,
+            4.100377628737446e-12,
+            1.6833575752277092e-10,
+            -1.878036177547775e-10,
+            1.0113893244233887e-11,
+            -6.472417329272036e-14,
+            2.6781891702319466e-12,
+            -1.391933957561792e-09,
+            -1.8130225717841954e-12
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -5.300731135238623e-10,
+            4.9752775586652435e-11
+          ],
+          "zero_in_interval": true,
+          "unit": "final_linear_speed_m_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "final_angular_speed_rad_s": {
+          "difference_mean": -2.2787521953692853e-17,
+          "family_differences": [
+            -2.8788340682672595e-23,
+            -2.420411994696076e-16,
+            2.2075001163346805e-23,
+            -2.275971077461111e-24,
+            -8.231924821519749e-24,
+            1.4278204526138328e-19,
+            -4.162003750536662e-19,
+            7.187224590015242e-23,
+            -2.7324996329285482e-17,
+            9.427834535219658e-22,
+            -3.8117242555061725e-18,
+            7.750541332459604e-23
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -6.311619279383703e-17,
+            -3.0557119015540075e-19
+          ],
+          "zero_in_interval": false,
+          "unit": "final_angular_speed_rad_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "recontact_count": {
+          "difference_mean": -2.0,
+          "family_differences": [
+            0.0,
+            -4.0,
+            4.0,
+            0.0,
+            -6.0,
+            0.0,
+            0.0,
+            0.0,
+            -18.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -5.0,
+            0.3333333333333333
+          ],
+          "zero_in_interval": true,
+          "unit": "recontact_count",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "planning_wall_s": {
+          "difference_mean": 0.08668981416849418,
+          "family_differences": [
+            0.04026716481894255,
+            0.3364966856315732,
+            0.19154577585868537,
+            0.18220689543522894,
+            -0.2979986686259508,
+            0.01673662685789168,
+            -0.004642706364393234,
+            -0.007030228851363063,
+            -0.012819896452128887,
+            0.09048354742117226,
+            0.22560025844722986,
+            0.27943231584504247
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            0.02157014947248778,
+            0.15203747687240435
+          ],
+          "zero_in_interval": false,
+          "unit": "planning_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        },
+        "execution_wall_s": {
+          "difference_mean": 0.30812687818737067,
+          "family_differences": [
+            1.1430258341133595,
+            2.465990290977061,
+            5.322103498969227,
+            3.122658707899973,
+            -3.5539059590082616,
+            0.2530500830616802,
+            -0.06667145807296038,
+            0.14446366671472788,
+            -3.0056187931913882,
+            0.08187458291649818,
+            0.8931608751881868,
+            -3.1026087913196534
+          ],
+          "eligible_family_denominator": 12,
+          "bootstrap_valid_replicates": 2000,
+          "missing_policy": "all members of both methods need a measured state; task outcomes retain every episode",
+          "percentile95_interval": [
+            -0.6107714878763849,
+            1.2643583416400355
+          ],
+          "zero_in_interval": true,
+          "unit": "execution_wall_s",
+          "claim": "exploratory family-paired difference; no equivalence or industrial/general seed-population claim"
+        }
+      }
+    }
+  ],
+  "bootstrap": {
+    "seed": 7711,
+    "replicates": 2000,
+    "unit": "family within stratum; all methods share each draw; seed average within family first",
+    "families_in_order": [
+      "p5-final-offset-00",
+      "p5-final-offset-01",
+      "p5-final-offset-02",
+      "p5-final-offset-03",
+      "p5-final-rotation-00",
+      "p5-final-rotation-01",
+      "p5-final-rotation-02",
+      "p5-final-rotation-03",
+      "p5-final-translation-00",
+      "p5-final-translation-01",
+      "p5-final-translation-02",
+      "p5-final-translation-03"
+    ],
+    "strata": {
+      "translation": [
+        "p5-final-translation-00",
+        "p5-final-translation-01",
+        "p5-final-translation-02",
+        "p5-final-translation-03"
+      ],
+      "rotation": [
+        "p5-final-rotation-00",
+        "p5-final-rotation-01",
+        "p5-final-rotation-02",
+        "p5-final-rotation-03"
+      ],
+      "offset": [
+        "p5-final-offset-00",
+        "p5-final-offset-01",
+        "p5-final-offset-02",
+        "p5-final-offset-03"
+      ]
+    },
+    "limitations": "Four E2 families per stratum; exploratory uncertainty, no power/equivalence/industrial-frequency guarantee; training-seed variation not fully covered"
+  },
+  "performance_floor_or_minimum_meaningful_difference": "NOT_SPECIFIED; no post-result threshold",
+  "metric_state_time_basis": "episode-relative seconds: absolute raw sim_time minus initial task sim_time",
+  "personal_understanding": "NOT_ASSESSED"
+}

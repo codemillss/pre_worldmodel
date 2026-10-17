@@ -1,0 +1,48 @@
+{
+  "schema": "p5-driver-native-preflight-design-v1",
+  "status": "DEVELOPMENT_ONLY_PREDECLARED_BEFORE_NATIVE_DRIVER_EXECUTION",
+  "question": "Does the unchanged real R controller, final recording driver and lossless columnar codec preserve all fields, exact actual-controller rerun and bounded memory/output over an existing long development condition?",
+  "source": {
+    "source_folder": "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00",
+    "source_tick": 0
+  },
+  "source_rule": "Exactly the unchanged G1 actual_cases start entry; source path and hashes are predeclared before native execution. No fallback.",
+  "controller_id": "R",
+  "candidate_seed_base": 4711,
+  "candidate_stream_id": 0,
+  "max_intervals_per_execution": 300,
+  "attempts": [
+    "reference",
+    "fresh_actual_controller_rerun"
+  ],
+  "maximum_new_action_intervals": 600,
+  "automatic_retries": 0,
+  "models_and_task": "Existing R, normalizer, physical config, N128/H5 weighted cost and30s/0.3s handoff task unchanged; no alternate result-based case/seed selection",
+  "raw_codec": "push_align.final_recording_columns",
+  "maximum_new_output_bytes": 134217728,
+  "minimum_free_reserve_bytes": 2147483648,
+  "cell_write_allowance_bytes": 67108864,
+  "whole_bounded_probe_required_bytes": 2281701376,
+  "memory": {
+    "device_GiB": 16,
+    "pre_action_stop_RSS_bytes": 6442450944,
+    "scope": "Measure fresh-process whole driver+controller+codec+exact replay peak; one episode at a time; drop original in-memory results before fresh. RSS threshold is a stop checkpoint, not an OS memory guarantee or a universal bound."
+  },
+  "required_checks": [
+    "all original scientific/model/source hashes unchanged",
+    "actual controller/physics invoked independently for fresh",
+    "COMPLETE_RECORDED both attempts",
+    "boundary replay PASS_REPRODUCTION",
+    "all typed raw and complete diagnostics PASS_EXACT",
+    "all per-index arrays PASS_EXACT",
+    "full trace/input tick0/29/299 or explicit missing ticks when natural early termination",
+    "future physical queries during planning0",
+    "same terminal outcome",
+    "output and free reserve inside bounded budget",
+    "memory measurement complete",
+    "no final families or training"
+  ],
+  "interpretation": "Tests final integration/resource/reproduction only; no independent task success or superiority claim. Natural early termination is retained; missing300-step duration limits the memory extrapolation.",
+  "actual_final_test_generated": false,
+  "P5_01": "HOLD"
+}

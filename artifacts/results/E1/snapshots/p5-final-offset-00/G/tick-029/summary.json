@@ -1,0 +1,12 @@
+{
+  "snapshot_id": "p5-final-offset-00/G/tick-029",
+  "family_id": "p5-final-offset-00",
+  "stratum": "offset",
+  "tick": 29,
+  "candidate_count": 16,
+  "physical_replays": 48,
+  "actual_stable_valid_candidates": 16,
+  "all7_common_valid": 12,
+  "all3_repeats_exact": true,
+  "validity_changed_candidates": []
+}

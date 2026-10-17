@@ -1,0 +1,83 @@
+{
+  "schema": "public-development-manuscript-copies-v1",
+  "scope": "Seven historical P4 manuscripts as byte-identical plain-text evidence; not raw-data publication or new numerical verification",
+  "entries": [
+    {
+      "label": "인계 비용 대조",
+      "source_path": "reports/p4_handoff_cost_comparison.md",
+      "source_sha256": "609b67679aa97e1648b48c6ebe48ce18828cb86e9892aacbd781049754c8fb93",
+      "public_path": "artifacts/development/p4_handoff_cost_comparison.source.txt",
+      "public_sha256": "609b67679aa97e1648b48c6ebe48ce18828cb86e9892aacbd781049754c8fb93",
+      "bytes": 17501,
+      "transformation": "byte_identical_original_markdown_as_plain_text",
+      "relative_links": "Original source identifiers; targets are not promised present in selected public archive",
+      "measurement_scope": "Historical development observation; not newly recomputed for publication; not final checkpoint adoption"
+    },
+    {
+      "label": "후보11·77 국소 예측 진단",
+      "source_path": "reports/p4_local_prediction_diagnostic.md",
+      "source_sha256": "bc7e45b79887d7e059a75755e534005aeff2a9945b8aafc7813df3590a662d66",
+      "public_path": "artifacts/development/p4_local_prediction_diagnostic.source.txt",
+      "public_sha256": "bc7e45b79887d7e059a75755e534005aeff2a9945b8aafc7813df3590a662d66",
+      "bytes": 16959,
+      "transformation": "byte_identical_original_markdown_as_plain_text",
+      "relative_links": "Original source identifiers; targets are not promised present in selected public archive",
+      "measurement_scope": "Historical development observation; not newly recomputed for publication; not final checkpoint adoption"
+    },
+    {
+      "label": "자료 보완 재학습 대조",
+      "source_path": "reports/p4_data_retraining_comparison.md",
+      "source_sha256": "59607dec1698eadd07fdebc1cb68546cc2ec91fd04837fa47efc22e5c73e9e6a",
+      "public_path": "artifacts/development/p4_data_retraining_comparison.source.txt",
+      "public_sha256": "59607dec1698eadd07fdebc1cb68546cc2ec91fd04837fa47efc22e5c73e9e6a",
+      "bytes": 18108,
+      "transformation": "byte_identical_original_markdown_as_plain_text",
+      "relative_links": "Original source identifiers; targets are not promised present in selected public archive",
+      "measurement_scope": "Historical development observation; not newly recomputed for publication; not final checkpoint adoption"
+    },
+    {
+      "label": "접촉·정지 오차 기전 진단",
+      "source_path": "reports/p4_error_mechanism_diagnostic.md",
+      "source_sha256": "5ea0604eef04217e0fcc45c9295263893ba65f18ab53df79e206beadb78a9926",
+      "public_path": "artifacts/development/p4_error_mechanism_diagnostic.source.txt",
+      "public_sha256": "5ea0604eef04217e0fcc45c9295263893ba65f18ab53df79e206beadb78a9926",
+      "bytes": 16299,
+      "transformation": "byte_identical_original_markdown_as_plain_text",
+      "relative_links": "Original source identifiers; targets are not promised present in selected public archive",
+      "measurement_scope": "Historical development observation; not newly recomputed for publication; not final checkpoint adoption"
+    },
+    {
+      "label": "상대위치 학습항 대조",
+      "source_path": "reports/p4_relative_loss_comparison.md",
+      "source_sha256": "f1a68890eb4a86e1837eb3cff31784a9badc4c03f5847fac3fe0a1bfc8262835",
+      "public_path": "artifacts/development/p4_relative_loss_comparison.source.txt",
+      "public_sha256": "f1a68890eb4a86e1837eb3cff31784a9badc4c03f5847fac3fe0a1bfc8262835",
+      "bytes": 17702,
+      "transformation": "byte_identical_original_markdown_as_plain_text",
+      "relative_links": "Original source identifiers; targets are not promised present in selected public archive",
+      "measurement_scope": "Historical development observation; not newly recomputed for publication; not final checkpoint adoption"
+    },
+    {
+      "label": "다른 학습 배치의 갱신 방향 교차 평가",
+      "source_path": "reports/p4_cross_batch_comparison.md",
+      "source_sha256": "985cec6f9bceb3fff576eb6b4f027b1ec8b9ea8a725594a6c02a81cf8b3c986d",
+      "public_path": "artifacts/development/p4_cross_batch_comparison.source.txt",
+      "public_sha256": "985cec6f9bceb3fff576eb6b4f027b1ec8b9ea8a725594a6c02a81cf8b3c986d",
+      "bytes": 11503,
+      "transformation": "byte_identical_original_markdown_as_plain_text",
+      "relative_links": "Original source identifiers; targets are not promised present in selected public archive",
+      "measurement_scope": "Historical development observation; not newly recomputed for publication; not final checkpoint adoption"
+    },
+    {
+      "label": "비접촉 방향의 Adam 첫 모멘트 대조",
+      "source_path": "reports/p4_first_moment_comparison.md",
+      "source_sha256": "a83d273941de7729f61672bd0874fa328570b185f3489060cde420897d56d1ee",
+      "public_path": "artifacts/development/p4_first_moment_comparison.source.txt",
+      "public_sha256": "a83d273941de7729f61672bd0874fa328570b185f3489060cde420897d56d1ee",
+      "bytes": 6112,
+      "transformation": "byte_identical_original_markdown_as_plain_text",
+      "relative_links": "Original source identifiers; targets are not promised present in selected public archive",
+      "measurement_scope": "Historical development observation; not newly recomputed for publication; not final checkpoint adoption"
+    }
+  ]
+}

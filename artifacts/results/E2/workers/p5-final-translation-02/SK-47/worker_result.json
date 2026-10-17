@@ -1,0 +1,107 @@
+{
+  "status": "ACCEPT_COMPLETED_RECORDING",
+  "phase": "E2",
+  "cell": {
+    "cell_id": "p5-final-translation-02/SK-47",
+    "controller_id": "SK-47",
+    "episode_id": "p5-final-translation-02",
+    "episode_index": 2,
+    "family_id": "p5-final-translation-02",
+    "stratum": "translation"
+  },
+  "row": {
+    "cell_id": "p5-final-translation-02/SK-47",
+    "controller_id": "SK-47",
+    "episode_id": "p5-final-translation-02",
+    "episode_index": 2,
+    "family_id": "p5-final-translation-02",
+    "stratum": "translation",
+    "execution_status": "completed",
+    "termination": "ready",
+    "success": true,
+    "elapsed_s": 5.999999999999205,
+    "final_position_error_m": 0.0038521678144798335,
+    "final_yaw_error_rad": 0.005981442438619756,
+    "final_linear_speed_m_s": 2.7477084353358386e-11,
+    "final_angular_speed_rad_s": 2.3771949015264514e-19,
+    "final_observation_available": true,
+    "metric_state_origin": "terminal_observation",
+    "metric_state_time_s": 5.999999999999205,
+    "unavailable_reason": null,
+    "recontact_count": 0,
+    "contact_events": {
+      "entry_times_s": [
+        0.44700000000000034
+      ],
+      "exit_times_s": [
+        5.941999999999426
+      ],
+      "raw_crossing_count": 2,
+      "qualified_recontacts": [],
+      "deduplicated_raw_sample_count": 12001,
+      "unknown_force_sample_count": 0,
+      "inactive_min_s": 0.04,
+      "resumed_active_min_s": 0.01,
+      "duration_rule": "contiguous run last observed time minus first observed time",
+      "scope": "all raw intervals, including excluded terminal intervals; threshold events, not controller decisions"
+    },
+    "planning_wall_s": 0.5408497503958642,
+    "execution_wall_s": 9.903871167218313,
+    "planning_time_scope": "sum of unchanged G proposal and learned plan calls; recording/source checks excluded",
+    "counts": {
+      "controller_decisions": 60,
+      "physics_interval_attempts": 60,
+      "physics_intervals_returned": 60,
+      "completed_boundary_records": 60
+    },
+    "future_engine_calls": {
+      "mj_step": 0,
+      "mj_step1": 0,
+      "mj_step2": 0,
+      "mj_forward": 0,
+      "mj_inverse": 0
+    }
+  },
+  "timings": {
+    "plan": 0.5260786677245051,
+    "geometry": 0.014771082671359181,
+    "plan_calls": 56,
+    "geometry_calls": 60,
+    "plan_first_call_s": 0.005730124888941646,
+    "geometry_first_call_s": 0.00022566714324057102,
+    "plan_repeat_wall_s": 0.5203485428355634,
+    "geometry_repeat_wall_s": 0.01454541552811861,
+    "plan_repeat_calls": 55,
+    "geometry_repeat_calls": 59,
+    "initialization_wall_s": 2.584869916085154,
+    "initialization_scope": "worker entry through imports, source/capacity checks, model loading and physical reset/common snapshot check; process startup excluded",
+    "warmup_performed": false,
+    "dedicated_warmup_calls": 0,
+    "first_call_scope": "first actual task call; included in total, never relabeled as warmup"
+  },
+  "record_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/SK-47/manifest.json",
+  "record_manifest_sha256": "1b4c9145e7bca6f4df94b2fd269065d66e8e185a7a5c77ff6dfb58275b3f96b7",
+  "comparison": null,
+  "review_sha256": "cac674e285f870660ef1f48cd8ee5608ec8f19268a5016bb673af325de310279",
+  "recording_status": "COMPLETE_RECORDED",
+  "component_review_sha256": "721cf021ff4943456111dd6c2d82d029596371ff7f9436ca03252c65661ae575",
+  "cell_bytes": 7021038,
+  "process_peak_rss_bytes": 716783616,
+  "P5_task_success": true,
+  "learning_updates": 0,
+  "recording_guard_phase_after_return": "CLOSED",
+  "recording_guard_phase_history": [
+    {
+      "phase": "CONTROL",
+      "timestamp_utc": "2026-10-17T10:45:17.703094+00:00"
+    },
+    {
+      "phase": "SEALING",
+      "timestamp_utc": "2026-10-17T10:45:21.753444+00:00"
+    },
+    {
+      "phase": "CLOSED",
+      "timestamp_utc": "2026-10-17T10:45:27.557579+00:00"
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "schema": "p5-final-claim-to-evidence-v1",
+  "status": "SCIENTIFIC_BUNDLE_VERIFIED_WITH_STATED_LIMITS",
+  "updated_at_utc": "2026-10-17T17:27:52.249927+00:00",
+  "run": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02",
+  "frozen_manifest_sha256": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f",
+  "claims": [
+    {
+      "id": "C01",
+      "status": "VERIFIED_WITH_SCOPE",
+      "statement": "정식 E2 96개 실행의 성공·실패를 원래 분모에 보존했다.",
+      "numerators": {
+        "G": 8,
+        "R": 0,
+        "S1": 13,
+        "SK": 12
+      },
+      "episode_denominators": {
+        "G": 12,
+        "R": 12,
+        "S1": 36,
+        "SK": 36
+      },
+      "independent_unit": "12 families; S1/SK each three fixed seeds within family",
+      "sources": [
+        {
+          "path": "runs/p5-final-20261017-02/statistics/recovery-v2/summary.json",
+          "sha256": "103f08e2a85a1cfa7eb1ac8db64c0fd8d641266520e46d083142cf218ee83a66"
+        },
+        {
+          "path": "reports/p5_analysis_recovery_actual_review.v1.json",
+          "sha256": "679cc14f11537a641235983379dbed0266fc62fd0c96e8f6956a23316b2676eb"
+        }
+      ],
+      "limitations": [
+        "Fixed part and physics, restricted initial conditions, true state observation, single pushing face.",
+        "Pooled seed episodes are not36 independent initial conditions."
+      ]
+    },
+    {
+      "id": "C02",
+      "status": "VERIFIED_NEGATIVE_RESULT_WITH_SCOPE",
+      "statement": "SK의 자유 예측 손실 추가가 인계 성공을 개선했다는 결과는 얻지 못했다.",
+      "contrast": "SK minus S1 success proportion",
+      "mean": -0.027777777777777776,
+      "percentile95_interval": [
+        -0.08333333333333333,
+        0.0
+      ],
+      "independent_families": 12,
+      "bootstrap_replicates": 2000,
+      "sources": [
+        {
+          "path": "runs/p5-final-20261017-02/statistics/recovery-v2/summary.json",
+          "sha256": "103f08e2a85a1cfa7eb1ac8db64c0fd8d641266520e46d083142cf218ee83a66"
+        }
+      ],
+      "limitations": [
+        "Exploratory family-stratified paired comparison; no multiplicity correction.",
+        "Zero inclusion does not establish equivalence; no practical minimum meaningful difference was specified."
+      ]
+    },
+    {
+      "id": "C03",
+      "status": "VERIFIED_NEGATIVE_RESULT_WITH_SCOPE",
+      "statement": "공통 G 상태·후보의 E1 선택손실에서도 SK 개선은 확인되지 않았다.",
+      "contrast": "SK minus S1 conditional selection loss",
+      "mean": 0.00654225600392048,
+      "percentile95_interval": [
+        0.0,
+        0.01308451200784096
+      ],
+      "independent_families": 6,
+      "snapshots": 12,
+      "shared_physical_repeats": 576,
+      "sources": [
+        {
+          "path": "runs/p5-final-20261017-02/e1_statistics/summary.json",
+          "sha256": "0f41783dfeaa99b188005aab9bf8d21adf1011de56ffca627304c800a6ab851b"
+        },
+        {
+          "path": "runs/p5-final-20261017-02/E1/stage_receipt.json",
+          "sha256": "01f18736dbfe4a7a375ef1b7707809e4a4a76ddc9fe44d767345b57dab6e532c"
+        }
+      ],
+      "limitations": [
+        "N16/H5 finite candidates on G behavior states, not onlineN128 or global optimum.",
+        "Raw repeated cost intervals are not confidence intervals."
+      ]
+    },
+    {
+      "id": "C04",
+      "status": "VERIFIED_POSTHOC_DESCRIPTIVE",
+      "statement": "E1의 같은 seed·snapshot 36쌍 중 S1/SK는35쌍에서 같은 후보 번호를 선택했다.",
+      "numerator": 35,
+      "denominator": 36,
+      "unit": "paired seed-snapshot entries; independent6 families",
+      "sources": [
+        {
+          "path": "reports/p5_final_E1_choice_agreement.v1.json",
+          "sha256": "6173d651b9aec9a8769424c5eac5261e8750160a283ad150454c1d1a03ab6a77"
+        }
+      ],
+      "limitations": [
+        "Added after outcomes were observed.",
+        "Does not establish equal predictions, entire policies, online choices, or the causal reason for E2 failures."
+      ]
+    },
+    {
+      "id": "C05",
+      "status": "VERIFIED_POSTHOC_DESCRIPTIVE",
+      "statement": "G rotation-02는 종료 순간 네 조건을 만족했지만 연속 유지0.0825초가0.3초에 못 미쳐 실패했다.",
+      "numerator": 1,
+      "denominator": 63,
+      "unit": "failures with all four instantaneous endpoint criteria met",
+      "sources": [
+        {
+          "path": "reports/p5_final_failure_inventory.v1.json",
+          "sha256": "c4bc3fc3c5409b27f3234f2399de271df0db75cd8ba66f41566235db5cbb7d85"
+        }
+      ],
+      "limitations": [
+        "The snapshot is not a success; no duration extension was tested.",
+        "Endpoint criterion misses do not establish a model/data/controller root cause."
+      ]
+    },
+    {
+      "id": "C06",
+      "status": "NOT_ASSESSED",
+      "statement": "생성 코드·실험·검산의 완성만으로 사용자 개인의 설명·수정 역량을 검증했다고 하지 않는다.",
+      "sources": [
+        {
+          "path": "reports/p5_final_problem_and_system.v1.md",
+          "sha256": "e7f4047e8c4c0d64d1d25d81e8279f816f97f7cae408978b559c1c8b8c5816c9"
+        }
+      ],
+      "limitations": [
+        "Individual understanding requires the user to personally explain, modify, diagnose and validate.",
+        "This status does not prevent completion of the authorized experiment/reporting pipeline."
+      ]
+    },
+    {
+      "id": "C07",
+      "status": "NOT_ESTABLISHED",
+      "statement": "산업 비용 절감·범용 월드모델·새 알고리즘·실물 전이 성과를 이번 결과로 주장하지 않는다.",
+      "sources": [
+        {
+          "path": "reports/p5_final_problem_brief.v1.md",
+          "sha256": "c2382676dd05a8f53d1258f3cc2c9738e66b2877bde60dc117187d79cca5e06f"
+        },
+        {
+          "path": "reports/p5_background_recheck.v1.json",
+          "sha256": "3eb69e3fe8141051aa9da0f5b87246574c0b1d49575e45bd1ae8a8a377c89fb5"
+        }
+      ],
+      "limitations": [
+        "Industrial context verifies part-presentation relevance, not customer demand or necessity/superiority of learning.",
+        "Known learned-dynamics planning work predates this project."
+      ]
+    },
+    {
+      "id": "C08",
+      "status": "VERIFIED_DESCRIPTIVE_SAME_WINDOW_COMPARISON",
+      "statement": "같은 고정 G 행동 창에서 seed23·47의 SK K5/K10 물체 예측 오차는 S1보다 낮았지만 E2 인계 성공 개선은 확인되지 않았다.",
+      "independent_families": 12,
+      "values": {
+        "23": {
+          "K5": {
+            "common_truth_valid_windows": 2608,
+            "S1_object_endpoint_error_m_family_mean": 9.060476783065049e-05,
+            "SK_object_endpoint_error_m_family_mean": 5.864705091131524e-05
+          },
+          "K10": {
+            "common_truth_valid_windows": 2548,
+            "S1_object_endpoint_error_m_family_mean": 0.00016690677683903573,
+            "SK_object_endpoint_error_m_family_mean": 9.569184332977135e-05
+          }
+        },
+        "47": {
+          "K5": {
+            "common_truth_valid_windows": 2608,
+            "S1_object_endpoint_error_m_family_mean": 8.423539034475276e-05,
+            "SK_object_endpoint_error_m_family_mean": 6.899429664003857e-05
+          },
+          "K10": {
+            "common_truth_valid_windows": 2548,
+            "S1_object_endpoint_error_m_family_mean": 0.00014753120998617678,
+            "SK_object_endpoint_error_m_family_mean": 0.00010833473200770958
+          }
+        }
+      },
+      "sources": [
+        {
+          "path": "runs/p5-final-20261017-02/fixed_prediction/summary.json",
+          "sha256": "0b649daa867029138722000ffd45ae972e49f75b0b7f3be59f61620d2e7a4e6e"
+        },
+        {
+          "path": "reports/p5_fixed_prediction_adoption.v1.json",
+          "sha256": "2610629fd15359dd5cd97eca0e97e9be6a91888fa4a25dc8941fc541e814a608"
+        },
+        {
+          "path": "runs/p5-final-20261017-02/statistics/recovery-v2/summary.json",
+          "sha256": "103f08e2a85a1cfa7eb1ac8db64c0fd8d641266520e46d083142cf218ee83a66"
+        }
+      ],
+      "limitations": [
+        "Descriptive comparison on G behavior distribution; overlapping windows are not independent families.",
+        "Seed11 has two invalid S1 K5/K10 windows and is not claimed to share the full valid comparison population.",
+        "Does not prove superiority across all metrics/policies/tasks or identify a causal failure mechanism."
+      ]
+    },
+    {
+      "id": "C09",
+      "status": "VERIFIED_REPRODUCTION_WITH_STATED_SCOPE",
+      "statement": "원래 선정 규칙의33사례에서 fresh controller 실행과 저장된 행동 기록의 일치를 확인했다.",
+      "cases": 33,
+      "by_controller": {
+        "G": 4,
+        "R": 3,
+        "S1-11": 5,
+        "S1-23": 5,
+        "S1-47": 4,
+        "SK-11": 4,
+        "SK-23": 4,
+        "SK-47": 4
+      },
+      "state10_maximum_component_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sources": [
+        {
+          "path": "reports/p5_replay_completion.v1.json",
+          "sha256": "d18dba5aba893b647a1d959d24b60daa7c8f07b7458d6589cb376e072f7b475b"
+        },
+        {
+          "path": "reports/p5_replay_saved_witness_crosscheck.v1.json",
+          "sha256": "c4c66cf27cfce2ecf0433812b85a82d9fa06873434d5b70e85bdabe8a9a530f4"
+        },
+        {
+          "path": "reports/p5_replay_progress_snapshot.v1/snapshot_receipt.json",
+          "sha256": "5f2a0b7401054a22afdb960f804db5fd10adcd6095bcfe8765808af11b78590d"
+        }
+      ],
+      "limitations": [
+        "Fresh controller execution differs from saved-command playback; no replacement cases or automatic retries.",
+        "33 selected cases are reproduction evidence and are not added to the E2 performance denominator.",
+        "All saved normalized behavioral payloads are independently compared; producer typed raw/index checks are collected as source-bound execution attestations.",
+        "differing_ticks contains diagnosed type-only false positives and is not an actual behavior-difference count. G empty index does not establish neural plan reproduction.",
+        "The original progress files advance in application; the exact two crosscheck inputs are preserved in the linked snapshot."
+      ]
+    },
+    {
+      "id": "C10",
+      "status": "VERIFIED_WITH_SCOPE",
+      "statement": "예약한13번째 same-range 초기조건에 설정 변경 없이8개 방법을 실행하고 결과를 모두 보존했다. G만 ready, 나머지7개 timeout이다.",
+      "family_count": 1,
+      "method_count": 8,
+      "success_count": 1,
+      "sources": [
+        {
+          "path": "reports/p5_application_completion.v1.json",
+          "sha256": "a97387bfbfac335cc80024abb23653dda4723470b861159e77473de66e4c6cbc"
+        },
+        {
+          "path": "reports/p5_application_prospective_note.v1.json",
+          "sha256": "eed485b963b17b26e87d0d61146e931b81c5bb5b73b98f5a31439cb88528ad3b"
+        },
+        {
+          "path": "reports/p5_application_prospective_rng_addendum.v2.json",
+          "sha256": "c2c2be6e6c812fa40a58965bbc089d01b5ccc0086541dfc0b256bdc71da6c6dc"
+        }
+      ],
+      "limitations": [
+        "Same-range single family; separate from E2 independent12families.",
+        "Prospective expectation recorded after E2, before application. No OOD/new-task/population claim."
+      ]
+    },
+    {
+      "id": "C11",
+      "status": "VERIFIED_DECLARED_EXECUTION_SCOPE",
+      "statement": "원래 실행 분모와 원시 검증을 마친 별도 분석 v3 완료 receipt를 확보했다.",
+      "sources": [
+        {
+          "path": "runs/p5-final-20261017-02/execution_complete.analysis-v3.json",
+          "sha256": "f501b07c015b352301ef46105de3db0c684490b2a656af4a28ff11dfdb77d824"
+        }
+      ],
+      "limitations": [
+        "Execution completion is separate from independent arithmetic, visual/PDF QA and resource closure.",
+        "Original root completion/statistics remain absent and originals immutable."
+      ]
+    },
+    {
+      "id": "C12",
+      "status": "VERIFIED_INDEPENDENT_SAVED_EVIDENCE_SCOPE",
+      "statement": "추가 독립 검산에서 동결·보존·E2·E1·고정 예측·재현/적용 분모와 저장 산술이 통과했다.",
+      "sources": [
+        {
+          "path": "reports/p5_independent_closeout.v2.json",
+          "sha256": "d98a47215d96401ac85330417472bd81c3b27954719c904dcfb7f598dc78c401"
+        },
+        {
+          "path": "reports/p5_independent_auditor_type_diagnostic.v1.json",
+          "sha256": "f79e14a24315c98023aa404a575bc624ebed1f68b447e0d1f2bde12ac84ee51f"
+        },
+        {
+          "path": "reports/p5_independent_closeout.v1.json",
+          "sha256": "2fb4c147c61c975ebff7bbaf8b46c0b365145a81d06d3961b5d889bed7c57f1c"
+        }
+      ],
+      "limitations": [
+        "Extra auditor written after freeze; independent arithmetic uses unchanged rtol=atol1e-12.",
+        "Original failed audit retained;126maxima exactly equal and comparison scalar boundary only repaired in new version.",
+        "Does not independently recreate physical truth, original model inference or all original diagnostic algorithms."
+      ]
+    },
+    {
+      "id": "C13",
+      "status": "VERIFIED_DIRECT_VISUAL_REVIEW_WITH_SCOPE",
+      "statement": "원래 사전선정3개 GIF·전체96개 상태/궤적/비교 그림과9개 시작·중간·끝 프리뷰를 생성·검토했다.",
+      "sources": [
+        {
+          "path": "runs/p5-final-20261017-02/visuals-v2/visual_index.json",
+          "sha256": "501d143f18d9e95de04845b97b58959e6e461ba412e07fe82abbfe94e15c0d29"
+        },
+        {
+          "path": "reports/p5_original_figures_visual_review.v1.json",
+          "sha256": "fe252e06894539a4764d87464ff676ec00e9dd85f1184f9dda8d65cbab7a3111"
+        },
+        {
+          "path": "reports/p5_original_clips_visual_review.v1.json",
+          "sha256": "921cc5ddee8ae0f635a35555c009308453772bcec6898c428db0f8b6b450432e"
+        }
+      ],
+      "limitations": [
+        "Direct review3figures+9previews;468frame-index metadata checked, not allGIFframe direct visual review.",
+        "Actual action-boundary pose diagrams at5fps ZOH, no new physics or photorealistic camera recording.",
+        "Preselected3families/24cells do not estimate96case success rate; rendered post-terminal hold is not measured handoff duration."
+      ]
+    }
+  ],
+  "pending_claim_sections": [],
+  "outcome_pooling": "No parent-run pooling or best-case replacement",
+  "personal_understanding": "NOT_ASSESSED",
+  "delivery_acceptance_outside_this_immutable_ledger": [
+    "New PDF/manifest and allpage direct visual QA after export.",
+    "Final shared64MiB report and32MiB scratch+operational resource closure.",
+    "External final project completion receipt; never inferred from this scientific ledger alone."
+  ]
+}

@@ -1,0 +1,56 @@
+# P2-02 small learning-connection data. Freeze this version before collection.
+collection_id = "p2-pilot-collection-v1"
+purpose = "pilot"
+initial_seed = 2026100701
+split_seed = 2026100702
+action_seed = 2026100703
+actions_per_episode = 16
+modes = ["noncontact", "central", "eccentric", "contact_transition"]
+initial_sampling = "independent_uniform_within_nominal_xy_yaw_ranges"
+family_rule = "one independently generated reset per family; any future repeats/variants retain that family"
+mode_assignment = "after_global_family_split_before_physics; sorted_ids_cycle_four_modes_within_each_split"
+
+[split_counts]
+train = 24
+validation = 8
+smoke-test = 8
+
+[commands]
+forward_speed_min_m_s = 0.02
+forward_speed_max_m_s = 0.03
+retreat_speed_m_s = 0.025
+noncontact_lateral_speed_m_s = 0.015
+noncontact_return_speed_m_s = 0.015
+central_tangent_abs_max_m_s = 0.0015
+eccentric_tangent_abs_max_m_s = 0.002
+command_support_norm_max_m_s = 0.03
+eccentric_offset_abs_min_m = 0.010
+eccentric_offset_abs_max_m = 0.015
+eccentric_sign_rule = "alternate_within_each_split"
+blocks = "four_steps_per_speed_draw; constant_world_commands; no feedback or learned controller"
+noncontact_phases = ["zero:2", "retreat:4", "lateral:4", "partial_return:4", "zero:2"]
+contact_transition_phases = ["forward:5", "retreat:3", "reapproach:8"]
+
+[coverage]
+horizons = [1, 5, 10]
+required_validation_horizon = 5
+required_validation_regimes = ["noncontact", "sustained_contact", "transition"]
+active_contact_rule = "pusher_object normal_force strictly greater than environment threshold; start plus every substep"
+window_regime = "first_transition_only"
+position_signal_min_m = 0.001
+yaw_signal_min_rad = 0.010471975511965976
+signal_basis = "existing P1 minimum signal fraction 0.2 times task 5mm/3deg; episode excursion, not precision or generalization"
+require_signal_per_split = true
+require_qualified_recontact_per_split = true
+
+[physics_extension]
+representative_rule = "lowest_episode_id_per_mode"
+physics_dt_scale = 0.5
+comparison = "identical_stabilized_initial_snapshot; both warmstarts zero; max difference at all shared action boundaries"
+budgets = "unchanged acceptance-v1 dt position/yaw budgets"
+
+[limits]
+final_evaluation_allowed = false
+feedback_collection_enabled = false
+includes_p2_01_stress_fixture = false
+planner_support_note = "0.03m/s cap alone does not prove arbitrary-direction support; 0.03-0.06 and unvisited state/action combinations remain unverified"

@@ -1,0 +1,42 @@
+{
+  "schema": "public-publication-validation-v1",
+  "as_of_kst": "2026-10-18",
+  "status": "PASS_DECLARED_PUBLIC_CHECKS",
+  "runtime": "Existing original project Python 3.14.7 environment, CPU, arm64 Darwin; no new packages installed",
+  "checks": [
+    {
+      "command": "python -B scripts/verify_public_results.py --recompute",
+      "exit_code": 0,
+      "copied_inventory_files": 822,
+      "E2_rows": 96,
+      "E2_independent_families": 12,
+      "E2_summary_exact": true,
+      "E2_bootstrap_arrays_exact": 163,
+      "E1_saved_model_sets": 84,
+      "E1_same_S1_SK_choice": "35/36",
+      "new_physics_intervals": 0,
+      "new_model_calls": 0,
+      "training_updates": 0
+    },
+    {
+      "command": "python -B scripts/smoke_public.py",
+      "exit_code": 0,
+      "physical_intervals": 1,
+      "action_dt_s": 0.10000000000000009,
+      "bound_models_loaded": ["R", "S1-11", "S1-23", "S1-47", "SK-11", "SK-23", "SK-47"],
+      "rollout_steps_per_model": 5,
+      "rollout_state_shape_per_model": [6, 10],
+      "all_finite": true,
+      "training_updates": 0
+    },
+    {
+      "command": "PYTHONPATH=src:scripts:tests python -B -m unittest test_p2_representation test_p2_dynamics test_p2_planning test_p2_task test_p4_sequence_training test_p4_fork_checkpoint test_p5_final_statistics_v2",
+      "exit_code": 0,
+      "tests_run": 149,
+      "elapsed_s": 1.972,
+      "status": "OK"
+    }
+  ],
+  "scope": "Selected publication only; not full archive, full physical replay, retraining, installation in a fresh environment, or cross-platform verification",
+  "original_frozen_artifacts_modified": false
+}

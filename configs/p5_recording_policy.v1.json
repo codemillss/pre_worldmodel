@@ -1,0 +1,64 @@
+{
+  "schema": "p5-final-recording-policy-v1",
+  "as_of_client_date": "2026-10-16",
+  "status": "MEASURED_CODEC_PROPOSAL_NOT_FINAL_BATCH_INTEGRATED",
+  "scope_reference": "configs/p3_evaluation_scope.v3.json",
+  "scientific_change": "none: models, data, loss, candidate generation, N128/H5, cost, success criteria, repeats and families unchanged",
+  "existing_artifacts": "Never recompress, overwrite or delete original source/data/checkpoints/success/failure/raw/PDF history to make space. New codec files have new paths and external SHA receipts.",
+  "raw": {
+    "applies_to": "all E2 original episodes, all shared E1 physical futures, all eight new-family episodes and fresh replay mismatch/error prefixes",
+    "format": "p5-lossless-raw-xz-v1: numeric NPZ plus complete JSON diagnostics XZ preset6",
+    "retain": "every StepResult including all substep states/times, requested/applied actions, actual dt, final observations, explicit observation times/schema/validity and transition validity, ragged offsets, nonfinite payloads and full initial snapshot",
+    "integrity": "exclusive create; fsync; external receipt SHA binds NPZ and XZ; pair-internal NPZ SHA; partial writes retained as INCOMPLETE",
+    "source": "src/push_align/final_recording.py",
+    "durability_limit": "Codec writes a completed prefix; current executor accumulates in RAM. No power-loss recovery or per-interval durable persistence claim. Disk guard must preauthorize next whole-cell output."
+  },
+  "boundary_witness": {
+    "applies_to": "all E2 originals, required actual fresh controller reruns and all new-family episodes",
+    "format": "unchanged logical p5-controller-boundary-witness-v1; multi-member gzip forming a single valid JSON document",
+    "retain": "all decisions including unexecuted terminal decision, action boundaries, requests/applied actions, time/state/task/holding/validity/termination/context/RNG and candidate/prediction/selection identities",
+    "normal_fresh": "Must recompute controller and execute fresh physics. Only a matching, source-bound witness may reference the retained original raw/plan archive; source-file SHA and actual rerun comparison are retained. Recorded actions must never drive the fresh controller.",
+    "scope_limit": "Boundary replay PASS alone does not prove all raw substeps or diagnostic bytes identical. Original archive remains original evidence; full fresh per-index equality is claimed only if typed arrays are directly compared."
+  },
+  "plan_per_index": {
+    "applies_to": "every original E2/new-family learned decision, including partial invalid and all-invalid/unexecuted terminal decisions",
+    "format": "one lossless ZIP_STORED archive per episode, with compressed NPZ per tick plus manifest hashes/dtype/shape",
+    "retain": ["candidate index", "valid mask", "per-index reason", "per-index failure step", "total cost", "every cost component"],
+    "identity": "original N128 ordering and +inf/nonfinite entries preserved; no filtering or valid-only renumbering",
+    "fresh_reuse_requirement": "Driver compares complete per-index typed arrays with original before reuse if it claims equality; any per-index difference prohibits a blanket identical-index claim and saves fresh index/full trace within diagnostic allowance before STOP/review. This connection is not yet implemented."
+  },
+  "full_plan_arrays_and_inputs": {
+    "normal_predeclared_ticks": [0, 29, 299],
+    "extra": "all-invalid terminal decision at its original tick, union-deduplicated with normal ticks; at most one per episode",
+    "retain": "original N128 candidate actions, full predicted states/deltas, costs/masks/reasons/failure steps, selected identity and complete predecision physical/task/planner/G/RNG input snapshot",
+    "partial_invalid": "Per-index record is retained for every decision. Partial invalid is not a trigger to save all N128xH5 arrays at every tick. Regeneration uses retained raw boundary, prior context, model/config/source and RNG hashes; an observed mismatch requires an additional full trace and prefix under the diagnostic cap.",
+    "missing_tick": "Mark unavailable if task ended before tick; never replace with another successful case. E1 still requires actual G ticks0/29 and blocks E1 completion when absent.",
+    "G_input_captures": "three predeclared slots per G original/fresh/new episode, 25 episodes*3=75 conservative slots; tick299 extra beyond E1 requirement is for consistency",
+    "scope_limit": "No full-array archive at every ordinary decision; exact offline regeneration coverage remains an integration check, not already proven for a final 300-step execution."
+  },
+  "mismatch_error_missing": {
+    "required": "fresh full executed raw prefix, witness, fresh per-index/full trace needed to diagnose difference; retain every failure and denominator",
+    "initial_allowance_bytes": 268435456,
+    "exhaustion": "Stop before next output would exceed allowance, preserve current evidence, reestimate and resolve required reruns; do not drop cases, relax replay tolerance or silently restart. This is not a bound on all possible failures."
+  },
+  "resource_guards": {
+    "hard_free_reserve_bytes": 2147483648,
+    "planning_multiplier": "1.5, empirical planning allowance and not a proven upper bound",
+    "before_stage_and_cell": "Remeasure free, reprice all remaining counts with larger observed rates, require full remaining estimate and next-cell output to leave reserve, check hashes and mismatch capacity; otherwise STOP_PRESERVE_PREFIX",
+    "RAM": "One worker and one cell at a time; final driver+codec combined peak and cleanup still require bounded integration measurement before batch. No 96-cell result accumulation in RAM.",
+    "source": "src/push_align/resource_budget.py",
+    "connection": "pure calculator/stop checker tested; actual batch wiring remains required"
+  },
+  "this_G2_operation": {
+    "allowed": "existing-record reads, codecs, pure arithmetic/tests, documentation/PDF/QA",
+    "model_forward_calls": 0,
+    "training_updates": 0,
+    "physics_engine_calls": 0,
+    "final_family_generation": 0,
+    "own_new_artifact_envelope_bytes": 268435456,
+    "measurement_scratch_limit_bytes_per_task": 67108864,
+    "minimum_free_bytes": 2147483648
+  },
+  "actual_final_test_manifest_generated": false,
+  "P5_01": "HOLD"
+}

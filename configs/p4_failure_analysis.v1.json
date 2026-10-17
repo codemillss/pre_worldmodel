@@ -1,0 +1,63 @@
+{
+  "protocol_id": "p4-failure-analysis-v1",
+  "created_on": "2026-10-13",
+  "actual_failure_source": "runs/p3-05-20261010-01/full_resource/MLP-11",
+  "source_ticks": [
+    49,
+    99
+  ],
+  "models": [
+    "MLP-11",
+    "S1-11",
+    "SK-11"
+  ],
+  "learning_seed": 11,
+  "N128_horizon": 5,
+  "candidate_rng": [
+    4711,
+    0
+  ],
+  "physical_repeats": 3,
+  "subset_size": 16,
+  "subset_rule": "reserved indices0..7 union all three N128 argmins (None retained as invalid), ascending fill to16, sorted; no actual future used",
+  "hypotheses": {
+    "H1": "Same-source finite subset contains strictly lower actual-cost candidate than model choice: padded3-repeat ranges disjoint => misranking supported only within subset.",
+    "H2": "No valid subset endpoint improves object position by >5micrometres without yaw worsening by >0.003deg => candidate/H0.5 limitation supported only within subset; endpoint qualifies does not imply continuous hold.",
+    "H3": "Only recursive accumulation: teacher-forced actual-current one-step errors stay within existing numeric replay budgets while free errors grow. Detectable one-step errors reject recursion-only explanation; not an accuracy PASS threshold."
+  },
+  "single_factor_contrast": "S1-11 vs SK-11 matched common origin, additional1000 updates, window order, optimizer config, normalizer, N128/H5/cost/G/holding/task/RNG. Loss objective only. Common vs either includes extra training.",
+  "offline_truth": "Actual next states and contacts only in cost/teacher-forcing diagnostics; no online oracle, retraining, lambda or checkpoint selection.",
+  "numeric_detection": {
+    "xy_m": 5e-06,
+    "yaw_rad": 5.235987755982989e-05,
+    "linear_m_s": 1e-05,
+    "angular_rad_s": 5e-05
+  },
+  "budget": {
+    "closed_loop_cells": 3,
+    "closed_loop_max_intervals": 900,
+    "additional_E1_max_intervals": 480,
+    "scope_revision": "P4-03 used original E1 allowance1440; this adds480 before execution, closed-loop900 fits existing2400. Shared1GiB pool and2GiB reserve retained. No P5 criterion removed.",
+    "P4_pool_limit_bytes": 1073741824,
+    "prior_consumed_bytes": 139208599,
+    "estimated_stage_bytes": 399544326,
+    "free_at_preregistration_bytes": 13393920000,
+    "extra_spending_KRW": 0
+  },
+  "bindings_sha256": {
+    "configs/p3_planning.v1.json": "3fda5e0a2ea077ab391b2d750547973658219b847f0998163e6c1f595af3c1f8",
+    "configs/p3_evaluation_scope.v3.json": "0287b054ba218ae1507d24dcbede7444fba2a5ced8e6a38c5fff18340e97b239",
+    "configs/acceptance.v1.toml": "d65a615a1098fc339c7b7de00e5bbd10a3dc8aa5e4a956c37cf8250d74f6ce22",
+    "configs/p4_fork_budget.v2.json": "9054a25951e1e771c62fbb101cc900c3b5f2cf06fc67eed4e21d1eb9e0e95a70",
+    "configs/p4_development_e1.v1.json": "1a66021cd059d7e33afa7d04e6344a31bf08b950484bd9cd12f7b871463fa50f",
+    "runs/p4-02-20261012-01/summary.json": "30279c12243fe92f6d22c94b46bf586142abd6f8a3e461454981cc37b044af32",
+    "runs/p4-03-20261012-02/summary.json": "efb187a99f97c22da85e49a0595d99b0a0732ed2de9e6729e62e59abcfc4f1bb",
+    "runs/p3-05-20261010-01/full_resource/MLP-11/summary.json": "0a60109d02839b8e52efb00717d249573856e17f387566c37e174694edf7a8fa",
+    "runs/p3-05-20261010-01/full_resource/MLP-11/manifest.json": "d1b7ae0a386bf4c535e4a857691735b6d52a7293e091bce3f56056ee0b1f290c",
+    "runs/p3-05-20261010-01/full_resource/MLP-11/plans/step-000/identity.json": "65d86dbd2f23f66f2d2b6e24949f061395d369869e7595dac6880a776f0e19c0",
+    "runs/p3-05-20261010-01/full_resource/MLP-11/plans/step-049/identity.json": "fc0ef02c1d56e3ee145324f9e3e373fda3a4c81815573ddfc889d41638cbcc72",
+    "runs/p3-05-20261010-01/full_resource/MLP-11/plans/step-099/identity.json": "74088d7927b791165ee98bd88bb8951e49316a8c426c192eaf35aa1453d25017"
+  },
+  "analysis_limits": "One reused case/one matched seed; two dependent snapshots, selected 16 of128; no unseen generalization, field benefit, complete causal attribution, or personal-understanding claim.",
+  "completion": "Exact actualfailure reproduction, >=2preregistered hypotheses, single-factor E1+closedloop, >=1distinguished hypothesis with scope, full denominators/raw/provenance. Improvement or SK superiority not required."
+}

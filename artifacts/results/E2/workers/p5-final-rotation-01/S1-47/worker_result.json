@@ -1,0 +1,113 @@
+{
+  "status": "ACCEPT_COMPLETED_RECORDING",
+  "phase": "E2",
+  "cell": {
+    "cell_id": "p5-final-rotation-01/S1-47",
+    "controller_id": "S1-47",
+    "episode_id": "p5-final-rotation-01",
+    "episode_index": 5,
+    "family_id": "p5-final-rotation-01",
+    "stratum": "rotation"
+  },
+  "row": {
+    "cell_id": "p5-final-rotation-01/S1-47",
+    "controller_id": "S1-47",
+    "episode_id": "p5-final-rotation-01",
+    "episode_index": 5,
+    "family_id": "p5-final-rotation-01",
+    "stratum": "rotation",
+    "execution_status": "completed",
+    "termination": "ready",
+    "success": true,
+    "elapsed_s": 7.399999999998429,
+    "final_position_error_m": 0.004510874733526673,
+    "final_yaw_error_rad": 0.010677139633614274,
+    "final_linear_speed_m_s": 3.6714656007069274e-11,
+    "final_angular_speed_rad_s": 3.305217692755869e-21,
+    "final_observation_available": true,
+    "metric_state_origin": "terminal_observation",
+    "metric_state_time_s": 7.399999999998429,
+    "unavailable_reason": null,
+    "recontact_count": 0,
+    "contact_events": {
+      "entry_times_s": [
+        0.47950000000000037,
+        1.1739999999999262,
+        1.2069999999999226,
+        7.351999999998645
+      ],
+      "exit_times_s": [
+        1.1734999999999263,
+        1.2064999999999226,
+        7.3419999999986505,
+        7.373999999998633
+      ],
+      "raw_crossing_count": 8,
+      "qualified_recontacts": [],
+      "deduplicated_raw_sample_count": 14801,
+      "unknown_force_sample_count": 0,
+      "inactive_min_s": 0.04,
+      "resumed_active_min_s": 0.01,
+      "duration_rule": "contiguous run last observed time minus first observed time",
+      "scope": "all raw intervals, including excluded terminal intervals; threshold events, not controller decisions"
+    },
+    "planning_wall_s": 0.4048164156265557,
+    "execution_wall_s": 11.264149209018797,
+    "planning_time_scope": "sum of unchanged G proposal and learned plan calls; recording/source checks excluded",
+    "counts": {
+      "controller_decisions": 74,
+      "physics_interval_attempts": 74,
+      "physics_intervals_returned": 74,
+      "completed_boundary_records": 74
+    },
+    "future_engine_calls": {
+      "mj_step": 0,
+      "mj_step1": 0,
+      "mj_step2": 0,
+      "mj_forward": 0,
+      "mj_inverse": 0
+    }
+  },
+  "timings": {
+    "plan": 0.38962054369039834,
+    "geometry": 0.015195871936157346,
+    "plan_calls": 70,
+    "geometry_calls": 74,
+    "plan_first_call_s": 0.006534541957080364,
+    "geometry_first_call_s": 0.00021525006741285324,
+    "plan_repeat_wall_s": 0.38308600173331797,
+    "geometry_repeat_wall_s": 0.014980621868744493,
+    "plan_repeat_calls": 69,
+    "geometry_repeat_calls": 73,
+    "initialization_wall_s": 2.5011262090411037,
+    "initialization_scope": "worker entry through imports, source/capacity checks, model loading and physical reset/common snapshot check; process startup excluded",
+    "warmup_performed": false,
+    "dedicated_warmup_calls": 0,
+    "first_call_scope": "first actual task call; included in total, never relabeled as warmup"
+  },
+  "record_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-47/manifest.json",
+  "record_manifest_sha256": "f02fdb4c7265a8e4a33289eb0fd25f308a7317933de8ea66b9c1ef64ab788a2e",
+  "comparison": null,
+  "review_sha256": "f132f0c6f8789903cbf87a8890520b454618c64d23bf51d1d094cf0674e986d1",
+  "recording_status": "COMPLETE_RECORDED",
+  "component_review_sha256": "befd992dfa3ac6e758ec7059222957b6ca848bb3121d03dbcafea226fa7387b7",
+  "cell_bytes": 8632129,
+  "process_peak_rss_bytes": 853114880,
+  "P5_task_success": true,
+  "learning_updates": 0,
+  "recording_guard_phase_after_return": "CLOSED",
+  "recording_guard_phase_history": [
+    {
+      "phase": "CONTROL",
+      "timestamp_utc": "2026-10-17T11:13:20.819672+00:00"
+    },
+    {
+      "phase": "SEALING",
+      "timestamp_utc": "2026-10-17T11:13:25.070871+00:00"
+    },
+    {
+      "phase": "CLOSED",
+      "timestamp_utc": "2026-10-17T11:13:32.033500+00:00"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "p4-relative-loss-supplemental-audit-protocol-v1",
+  "registered_at_utc": "2026-10-14T09:04:02.890361+00:00",
+  "registered_after_training_and_prediction_before_v2_audit": true,
+  "scientific_protocol_unchanged": true,
+  "reason": "Original independent checker expected base identities without registered auxiliary actual_contact_regime metadata; strict identity comparison failed",
+  "change": "New checker derives added contact-regime metadata from raw saved regime trace and retains exact identity comparison; additionally verifies six strata and posthoc saved-only diagnostic",
+  "metric_formulas_thresholds_unchanged": true,
+  "original_failure_preserved": true,
+  "no_training_prediction_physics_rerun": true,
+  "bindings_sha256": {
+    "configs/p4_relative_loss.v1.json": "df03256d5298241d0d2ed9148927bba5f0eea851bcb47b6f2fca06c794875446",
+    "tools/check_p4_relative_loss.py": "0c6db8124bbf038bf611ec65badec7fba7da0caaa7de451eaafe2336052dad2a",
+    "reports/p4_relative_loss_independent_review.json": "b8bdbe65bf4b1a90f05abb841f98b5906c6f0c20a4fe60d607860730c7f95336",
+    "tools/check_p4_relative_loss_v2.py": "2f87ebf499546ed691fe85ace3b36afd224e5beef559b901337c882dd0cbdbcd",
+    "runs/p4-relative-loss-20261014-01/training_artifact_hashes.json": "26168ddec4f8df7710971e54bcabc6e9720a1d6de7dd1d3297fbac9f52f4bbcb",
+    "runs/p4-relative-loss-20261014-01/prediction_evaluation/artifact_hashes.json": "1328f4ab07b83d2f7bba24223113cfd693e9e82c5db2594417034aa65da6a0c5",
+    "reports/p4_relative_loss_failure_analysis.json": "b506a6f5daea92e12098ef49d82ca6b2d7217c3406aa534a8abfd74b95976dbe"
+  }
+}

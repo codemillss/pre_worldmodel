@@ -1,0 +1,82 @@
+# P2-06 predeclared development smoke. Not final test or training data.
+closed_loop_id = "p2-learned-closed-loop-smoke-v1"
+device = "cpu"
+torch_threads = 1
+deterministic_algorithms = true
+episode_count = 10
+candidate_seed_base = 3711
+candidate_speed_norm_max_m_s = 0.03
+max_episode_time_s = 30.0
+action_dt_s = 0.1
+max_action_intervals = 300
+holding_warm_start = "clear; use actual applied zero as previous command"
+plan_trace = "every plan: candidates, predicted states/deltas, costs, validity and selection; compressed NPZ"
+future_engine_guards = ["mj_step", "mj_step1", "mj_step2", "mj_forward", "mj_inverse"]
+causal_prefix_intervals = 10
+causal_rule = "each episode's first up-to-10 actually applied intervals; replay from identical initial snapshot versus zero commands"
+causal_selection = "evaluate all recorded prefixes; no successful-case replacement"
+holding_fixture = "separate at-goal zero-command physics fixture; not one of the ten smoke outcomes"
+minimum_causal_contact_traces = 1
+unresolved_physics_codes = ["physics_error", "geometry_invalid"]
+scope = "ten fixed closed-loop development executions; connection and termination checks; alignment reported separately; no final-test or baseline superiority claim"
+
+[[cases]]
+id = "smoke-00"
+object_x = 0.0
+object_y = 0.0
+object_yaw_deg = 0.0
+tangent_offset_m = 0.0
+[[cases]]
+id = "smoke-01"
+object_x = 0.0
+object_y = 0.0
+object_yaw_deg = 10.0
+tangent_offset_m = 0.0
+[[cases]]
+id = "smoke-02"
+object_x = 0.0
+object_y = 0.0
+object_yaw_deg = -10.0
+tangent_offset_m = 0.0
+[[cases]]
+id = "smoke-03"
+object_x = -0.01
+object_y = 0.0
+object_yaw_deg = 0.0
+tangent_offset_m = 0.0
+[[cases]]
+id = "smoke-04"
+object_x = 0.01
+object_y = 0.0
+object_yaw_deg = 0.0
+tangent_offset_m = 0.0
+[[cases]]
+id = "smoke-05"
+object_x = 0.0
+object_y = -0.005
+object_yaw_deg = 0.0
+tangent_offset_m = 0.0
+[[cases]]
+id = "smoke-06"
+object_x = 0.0
+object_y = 0.005
+object_yaw_deg = 0.0
+tangent_offset_m = 0.0
+[[cases]]
+id = "smoke-07"
+object_x = 0.0
+object_y = 0.0
+object_yaw_deg = 0.0
+tangent_offset_m = 0.015
+[[cases]]
+id = "smoke-08"
+object_x = 0.0
+object_y = 0.0
+object_yaw_deg = 0.0
+tangent_offset_m = -0.015
+[[cases]]
+id = "smoke-09"
+object_x = -0.01
+object_y = 0.005
+object_yaw_deg = 10.0
+tangent_offset_m = 0.0

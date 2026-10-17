@@ -1,0 +1,109 @@
+{
+  "protocol_id": "P4-stored-error-mechanism-v1",
+  "created_at_utc": "2026-10-13T15:19:47.310983+00:00",
+  "analysis_type": "Exploratory post hoc development diagnosis, selected known failures. Register analysis method before new diagnostic execution; not blind causal preregistration.",
+  "authorization": "User requested continuing the existing robot experiment after the fixed-budget data intervention comparison.",
+  "parent_run": "runs/p4-data-retrain-20261013-02",
+  "contact_target": {
+    "family": "f001",
+    "Y": "Y1",
+    "S": "S0",
+    "current_core_state": 1,
+    "next_core_state": 2,
+    "arms": [
+      "R",
+      "D00",
+      "D10",
+      "D01",
+      "D11"
+    ],
+    "S1_duplicate_excluded": true,
+    "rows": 5,
+    "canonical_family_id": "p4-data-development-2026101302-f001",
+    "family_rank": 1
+  },
+  "stop_targets": {
+    "arm": "D10",
+    "families": [
+      "f001",
+      "f010"
+    ],
+    "Y": "Y0",
+    "S": "S1",
+    "actual_start_core_state": 10,
+    "actual_end_core_state": 15,
+    "steps": 5,
+    "modes": [
+      "free",
+      "actual_state_conditioned"
+    ],
+    "rows": 20,
+    "canonical_family_ids": [
+      "p4-data-development-2026101302-f001",
+      "p4-data-development-2026101302-f010"
+    ],
+    "family_ranks": [
+      1,
+      10
+    ]
+  },
+  "geometry_method": {
+    "blocks": [
+      "object_xy",
+      "pusher_xy",
+      "object_yaw"
+    ],
+    "hybrid_count": 8,
+    "exact_allocation": "Three-block inclusion-exclusion and Shapley with all interactions retained",
+    "local_linearization": "Unique actual-endpoint signed-distance derivative with nonlinear remainder. Exact nonsmooth ties NOT_DEFINED; conservative 1e-12m proximity guard NEAR_SWITCH_NOT_ASSESSED; this guard changes no physical validity threshold.",
+    "scope": "Diagnostic geometry combinations, not physically feasible states, model re-prediction or causal interventions"
+  },
+  "error_method": {
+    "identity": "e_next = e_prev + (teacher_delta - actual_delta) + (free_delta - teacher_delta)",
+    "yaw": "2pi principal errors and separate raw delta cumulative sum; no pi error reduction",
+    "batch_note": "Saved free and teacher batches differ. First identical-input numerical difference is recorded, not claimed pure state-input effect."
+  },
+  "support_method": {
+    "primary_distance": "L2 of frozen-normalizer float32 model boundary 11 features, not absolute-state mixed-unit distance",
+    "top_k": 10,
+    "secondary_distance": "float64 encoding only for sensitivity, no alternative rank selection",
+    "population": "Unique training transition identities, retain overlapping window memberships and separate L_one teacher-target vs SK rollout start exposure",
+    "provenance": "Old/new, family/episode/transition/depth, contact regime from existing actual contact summaries",
+    "limits": "Nearness and exposure are descriptive. No sufficient-data threshold, overfit claim or model error attributed by nearest distance alone."
+  },
+  "arithmetic_tolerance": {
+    "geometry_and_decomposition_abs": 1e-12,
+    "meaning": "Roundoff check only; unchanged physical and task thresholds"
+  },
+  "predicted_penetration_tolerance_m": 0.001,
+  "denominators": {
+    "selected_development_families": 2,
+    "diagnostic_rows": 25,
+    "contact_rows": 5,
+    "stop_rows": 20,
+    "independent_samples": false
+  },
+  "checks": [
+    "Frozen parent/source SHA before and after",
+    "Target identity/real-state teacher input and zero commands",
+    "Original invalid masks/reasons retained",
+    "Geometry independent four-segment distance and 8-combination closure",
+    "2pi delta/endpoint and residual decomposition",
+    "NN input contract/rank/provenance and distinct teacher/rollout exposure",
+    "No training, learned forward, engine calls or primary result changes"
+  ],
+  "budget": {
+    "new_learned_model_forwards": 0,
+    "new_learning_updates": 0,
+    "new_physical_intervals": 0,
+    "run_bytes_maximum": 16777216,
+    "document_reserve_bytes": 67108864,
+    "minimum_free_reserve_bytes": 2147483648,
+    "extra_paid_spend_KRW": 0
+  },
+  "P5_01": "HOLD",
+  "primary_effect_status_unchanged": "HOLD_INVALID_PRIMARY",
+  "new_closed_loop_execution": false,
+  "final_test_used": false,
+  "personal_understanding": "NOT_ASSESSED"
+}

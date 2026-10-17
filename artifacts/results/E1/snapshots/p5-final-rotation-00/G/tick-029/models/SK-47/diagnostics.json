@@ -1,0 +1,1667 @@
+{
+  "schema": "push-align-offline-candidate-diagnostics-v1",
+  "selected_index": 13,
+  "selected_actual_status": "STABLE_VALID",
+  "selection_status": "selected_actual_valid",
+  "actual_best_index": 13,
+  "selection_loss": 0.0,
+  "actual_second_index": 8,
+  "actual_best_mean_cost": 1042.049093662894,
+  "actual_second_mean_cost": 1078.5410107191299,
+  "actual_best_second_mean_gap": 36.491917056235934,
+  "actual_best_second_gap_ordering": "SECOND_WORSE",
+  "selection_loss_denominator": 1,
+  "selection_loss_ordering": "INCONCLUSIVE",
+  "selected_actual_cost_interval": [
+    1042.0386721719574,
+    1042.0595151538305
+  ],
+  "actual_best_cost_interval": [
+    1042.0386721719574,
+    1042.0595151538305
+  ],
+  "selected_is_actual_mean_best": true,
+  "model_all_invalid": false,
+  "actual_all_invalid": false,
+  "no_stable_actual_valid": false,
+  "actual_status": "has_stable_valid_candidate",
+  "common_valid_empty": false,
+  "validity_flip_indices": [],
+  "infrastructure_status": "CONSISTENT_REPEATS",
+  "counts": {
+    "candidate_count": 16,
+    "predicted_valid": 16,
+    "predicted_invalid": 0,
+    "actual_stable_valid": 16,
+    "actual_stable_invalid": 0,
+    "actual_validity_changed": 0,
+    "common_valid": 16,
+    "false_valid": 0,
+    "false_invalid": 0,
+    "predicted_valid_actual_unstable": 0,
+    "predicted_invalid_actual_unstable": 0,
+    "actual_repeat_attempts": 48,
+    "actual_repeat_valid": 48,
+    "actual_repeat_invalid": 0
+  },
+  "error_metrics": {
+    "denominator": 16,
+    "MAE": 7.3500629873697525,
+    "RMSE": 13.687677492789456
+  },
+  "rank_correlation": {
+    "method": "Spearman_average_exact_ties",
+    "denominator": 16,
+    "value": 0.11929307805596467,
+    "scope": "Descriptive correlation of predicted costs with actual means on common-valid candidates. Numerical-range pairwise ambiguity remains separate."
+  },
+  "pairwise": {
+    "total_pairs": 120,
+    "common_valid_pairs": 120,
+    "excluded_noncommon_pairs": 0,
+    "actual_inconclusive": 91,
+    "predicted_tie": 0,
+    "concordant": 29,
+    "discordant": 0,
+    "strict_comparison_pairs": 29,
+    "concordance_rate": 1.0,
+    "records": [
+      {
+        "indices": [
+          0,
+          1
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "TIE",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          2
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          3
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          4
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          5
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          6
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          7
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          8
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          0,
+          9
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          10
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          11
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          0,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          0,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          2
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          3
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          4
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          5
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          6
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          7
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          8
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          1,
+          9
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          10
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          11
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          1,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          1,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          3
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          4
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          5
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          6
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          7
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          8
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          2,
+          9
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          10
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          11
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          2,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          2,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          3,
+          4
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          3,
+          5
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          3,
+          6
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          3,
+          7
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          3,
+          8
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          3,
+          9
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          3,
+          10
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          3,
+          11
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          3,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          3,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          3,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          3,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          4,
+          5
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          4,
+          6
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          4,
+          7
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          4,
+          8
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          4,
+          9
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          4,
+          10
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          4,
+          11
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          4,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          4,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          4,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          4,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          5,
+          6
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          5,
+          7
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          5,
+          8
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          5,
+          9
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          5,
+          10
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          5,
+          11
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          5,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          5,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          5,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          5,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          6,
+          7
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          6,
+          8
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          6,
+          9
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          6,
+          10
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          6,
+          11
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          6,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          6,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          6,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          6,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          7,
+          8
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          7,
+          9
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          7,
+          10
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          7,
+          11
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          7,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          7,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          7,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          7,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          8,
+          9
+        ],
+        "actual_order": "FIRST_LOWER",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          8,
+          10
+        ],
+        "actual_order": "FIRST_LOWER",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          8,
+          11
+        ],
+        "actual_order": "FIRST_LOWER",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          8,
+          12
+        ],
+        "actual_order": "FIRST_LOWER",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          8,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          8,
+          14
+        ],
+        "actual_order": "FIRST_LOWER",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          8,
+          15
+        ],
+        "actual_order": "FIRST_LOWER",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          9,
+          10
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          9,
+          11
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          9,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          9,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          9,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          9,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          10,
+          11
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          10,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          10,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          10,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          10,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          11,
+          12
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          11,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          11,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          11,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          12,
+          13
+        ],
+        "actual_order": "SECOND_LOWER",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          12,
+          14
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          12,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      },
+      {
+        "indices": [
+          13,
+          14
+        ],
+        "actual_order": "FIRST_LOWER",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          13,
+          15
+        ],
+        "actual_order": "FIRST_LOWER",
+        "predicted_order": "FIRST_LOWER",
+        "classification": "concordant"
+      },
+      {
+        "indices": [
+          14,
+          15
+        ],
+        "actual_order": "INCONCLUSIVE",
+        "predicted_order": "SECOND_LOWER",
+        "classification": "actual_inconclusive"
+      }
+    ]
+  },
+  "actual_records": [
+    {
+      "index": 0,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.1117858967548,
+        1164.1117858967548,
+        1164.1117858967548
+      ],
+      "mean_cost": 1164.1117858967548,
+      "cost_interval": [
+        1164.100143778896,
+        1164.1234280146136
+      ],
+      "epsilon": 0.011642117858967549,
+      "observed_cost_range": [
+        1164.1117858967548,
+        1164.1117858967548
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 1,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.1117858967548,
+        1164.1117858967548,
+        1164.1117858967548
+      ],
+      "mean_cost": 1164.1117858967548,
+      "cost_interval": [
+        1164.100143778896,
+        1164.1234280146136
+      ],
+      "epsilon": 0.011642117858967549,
+      "observed_cost_range": [
+        1164.1117858967548,
+        1164.1117858967548
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 2,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.1118632829923,
+        1164.1118632829923,
+        1164.1118632829923
+      ],
+      "mean_cost": 1164.1118632829923,
+      "cost_interval": [
+        1164.1002211643595,
+        1164.1235054016252
+      ],
+      "epsilon": 0.011642118632829924,
+      "observed_cost_range": [
+        1164.1118632829923,
+        1164.1118632829923
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 3,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.1117860988813,
+        1164.1117860988813,
+        1164.1117860988813
+      ],
+      "mean_cost": 1164.1117860988813,
+      "cost_interval": [
+        1164.1001439810204,
+        1164.1234282167422
+      ],
+      "epsilon": 0.011642117860988814,
+      "observed_cost_range": [
+        1164.1117860988813,
+        1164.1117860988813
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 4,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.1119388808936,
+        1164.1119388808936,
+        1164.1119388808936
+      ],
+      "mean_cost": 1164.1119388808936,
+      "cost_interval": [
+        1164.1002967615048,
+        1164.1235810002825
+      ],
+      "epsilon": 0.011642119388808936,
+      "observed_cost_range": [
+        1164.1119388808936,
+        1164.1119388808936
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 5,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.1117210686732,
+        1164.1117210686732,
+        1164.1117210686732
+      ],
+      "mean_cost": 1164.1117210686732,
+      "cost_interval": [
+        1164.1000789514626,
+        1164.1233631858838
+      ],
+      "epsilon": 0.011642117210686732,
+      "observed_cost_range": [
+        1164.1117210686732,
+        1164.1117210686732
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 6,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.1121266170885,
+        1164.1121266170885,
+        1164.1121266170885
+      ],
+      "mean_cost": 1164.1121266170885,
+      "cost_interval": [
+        1164.1004844958222,
+        1164.1237687383548
+      ],
+      "epsilon": 0.011642121266170886,
+      "observed_cost_range": [
+        1164.1121266170885,
+        1164.1121266170885
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 7,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.1120443933405,
+        1164.1120443933405,
+        1164.1120443933405
+      ],
+      "mean_cost": 1164.1120443933405,
+      "cost_interval": [
+        1164.1004022728966,
+        1164.1236865137844
+      ],
+      "epsilon": 0.011642120443933405,
+      "observed_cost_range": [
+        1164.1120443933405,
+        1164.1120443933405
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 8,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1078.5410107191299,
+        1078.5410107191299,
+        1078.5410107191299
+      ],
+      "mean_cost": 1078.5410107191299,
+      "cost_interval": [
+        1078.5302243090227,
+        1078.551797129237
+      ],
+      "epsilon": 0.010786410107191299,
+      "observed_cost_range": [
+        1078.5410107191299,
+        1078.5410107191299
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 9,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.11322375355,
+        1164.11322375355,
+        1164.11322375355
+      ],
+      "mean_cost": 1164.11322375355,
+      "cost_interval": [
+        1164.1015816213126,
+        1164.1248658857876
+      ],
+      "epsilon": 0.011642132237535501,
+      "observed_cost_range": [
+        1164.11322375355,
+        1164.11322375355
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 10,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.112595890461,
+        1164.112595890461,
+        1164.112595890461
+      ],
+      "mean_cost": 1164.112595890461,
+      "cost_interval": [
+        1164.1009537645023,
+        1164.12423801642
+      ],
+      "epsilon": 0.011642125958904612,
+      "observed_cost_range": [
+        1164.112595890461,
+        1164.112595890461
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 11,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.112932869227,
+        1164.112932869227,
+        1164.112932869227
+      ],
+      "mean_cost": 1164.112932869227,
+      "cost_interval": [
+        1164.1012907398983,
+        1164.1245749985558
+      ],
+      "epsilon": 0.01164212932869227,
+      "observed_cost_range": [
+        1164.112932869227,
+        1164.112932869227
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 12,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.116058275119,
+        1164.116058275119,
+        1164.116058275119
+      ],
+      "mean_cost": 1164.116058275119,
+      "cost_interval": [
+        1164.1044161145362,
+        1164.1277004357019
+      ],
+      "epsilon": 0.01164216058275119,
+      "observed_cost_range": [
+        1164.116058275119,
+        1164.116058275119
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 13,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1042.049093662894,
+        1042.049093662894,
+        1042.049093662894
+      ],
+      "mean_cost": 1042.049093662894,
+      "cost_interval": [
+        1042.0386721719574,
+        1042.0595151538305
+      ],
+      "epsilon": 0.01042149093662894,
+      "observed_cost_range": [
+        1042.049093662894,
+        1042.049093662894
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 14,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.1121307308993,
+        1164.1121307308993,
+        1164.1121307308993
+      ],
+      "mean_cost": 1164.1121307308993,
+      "cost_interval": [
+        1164.100488609592,
+        1164.1237728522065
+      ],
+      "epsilon": 0.011642121307308993,
+      "observed_cost_range": [
+        1164.1121307308993,
+        1164.1121307308993
+      ],
+      "observed_cost_range_width": 0.0
+    },
+    {
+      "index": 15,
+      "status": "STABLE_VALID",
+      "repeated_valid": [
+        true,
+        true,
+        true
+      ],
+      "repeated_costs": [
+        1164.1126876121227,
+        1164.1126876121227,
+        1164.1126876121227
+      ],
+      "mean_cost": 1164.1126876121227,
+      "cost_interval": [
+        1164.1010454852467,
+        1164.1243297389988
+      ],
+      "epsilon": 0.011642126876121227,
+      "observed_cost_range": [
+        1164.1126876121227,
+        1164.1126876121227
+      ],
+      "observed_cost_range_width": 0.0
+    }
+  ],
+  "predicted_records": [
+    {
+      "index": 0,
+      "valid": true,
+      "cost": 1160.9142466715764
+    },
+    {
+      "index": 1,
+      "valid": true,
+      "cost": 1160.9142466715764
+    },
+    {
+      "index": 2,
+      "valid": true,
+      "cost": 1164.585778126626
+    },
+    {
+      "index": 3,
+      "valid": true,
+      "cost": 1164.0846078853328
+    },
+    {
+      "index": 4,
+      "valid": true,
+      "cost": 1163.5960790555948
+    },
+    {
+      "index": 5,
+      "valid": true,
+      "cost": 1162.3329363237376
+    },
+    {
+      "index": 6,
+      "valid": true,
+      "cost": 1157.5006690624652
+    },
+    {
+      "index": 7,
+      "valid": true,
+      "cost": 1164.7181442757987
+    },
+    {
+      "index": 8,
+      "valid": true,
+      "cost": 1072.4977644529004
+    },
+    {
+      "index": 9,
+      "valid": true,
+      "cost": 1120.5421506176406
+    },
+    {
+      "index": 10,
+      "valid": true,
+      "cost": 1156.7046103079845
+    },
+    {
+      "index": 11,
+      "valid": true,
+      "cost": 1155.3963830729833
+    },
+    {
+      "index": 12,
+      "valid": true,
+      "cost": 1165.1333416737878
+    },
+    {
+      "index": 13,
+      "valid": true,
+      "cost": 1038.9081545456177
+    },
+    {
+      "index": 14,
+      "valid": true,
+      "cost": 1161.9372034884311
+    },
+    {
+      "index": 15,
+      "valid": true,
+      "cost": 1134.992057868334
+    }
+  ],
+  "tolerances": {
+    "atol": 1e-06,
+    "rtol": 1e-05
+  },
+  "scope": "Actual futures are offline labels only; conditional errors/ranking/loss retain invalid and changed-validity denominators. Repeated intervals are observed numerical ranges, not confidence intervals.",
+  "snapshot_id": "p5-final-rotation-00/G/tick-029",
+  "family_id": "p5-final-rotation-00",
+  "stratum": "rotation",
+  "model": "SK-47",
+  "tick": 29,
+  "input_hash": "cd9f2299a5b1e0a09840d6f1918e0d4e15a19493819bb2e05264d5c0f4ae6b5e",
+  "candidate_hash": "aa0459dda66c6a43fce91efcf5e6cf7f4079b81e5489b219387738833cc0bcc4",
+  "all3_physical_repeats_exact": true,
+  "trajectory_valid_candidate_count": 16,
+  "trajectory_valid_but_cost_nonfinite_indices": [],
+  "conditional_endpoint_errors": {
+    "denominator": 16,
+    "XY_mean_m": 0.0002815112472510503,
+    "yaw_absolute_mean_rad": 0.0019502881889749135,
+    "actual_reference": "repeat0, stable valid candidates only; conditional on this mask"
+  },
+  "all7_common_valid_endpoint_errors": {
+    "denominator": 15,
+    "XY_mean_m": 0.00028512442201382535,
+    "yaw_absolute_mean_rad": 0.0018474998289428038,
+    "actual_reference": "repeat0, stable valid candidates only; conditional on this mask"
+  },
+  "all7_common_valid_cost_error": {
+    "denominator": 15,
+    "MAE": 7.630671245375985
+  },
+  "statistical_unit": "six independent families; paired ticks within each family, related training seeds"
+}

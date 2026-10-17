@@ -1,0 +1,121 @@
+{
+  "status": "ACCEPT_COMPLETED_RECORDING",
+  "phase": "E2",
+  "cell": {
+    "cell_id": "p5-final-rotation-01/S1-11",
+    "controller_id": "S1-11",
+    "episode_id": "p5-final-rotation-01",
+    "episode_index": 5,
+    "family_id": "p5-final-rotation-01",
+    "stratum": "rotation"
+  },
+  "row": {
+    "cell_id": "p5-final-rotation-01/S1-11",
+    "controller_id": "S1-11",
+    "episode_id": "p5-final-rotation-01",
+    "episode_index": 5,
+    "family_id": "p5-final-rotation-01",
+    "stratum": "rotation",
+    "execution_status": "completed",
+    "termination": "ready",
+    "success": true,
+    "elapsed_s": 7.399999999998429,
+    "final_position_error_m": 0.004069245499339007,
+    "final_yaw_error_rad": 0.006441342079500867,
+    "final_linear_speed_m_s": 1.2138233843666724e-10,
+    "final_angular_speed_rad_s": 4.466342275490689e-20,
+    "final_observation_available": true,
+    "metric_state_origin": "terminal_observation",
+    "metric_state_time_s": 7.399999999998429,
+    "unavailable_reason": null,
+    "recontact_count": 0,
+    "contact_events": {
+      "entry_times_s": [
+        0.45600000000000035,
+        1.1694999999999267,
+        1.202499999999923,
+        1.2559999999999172,
+        1.2724999999999154,
+        1.302999999999912,
+        1.32149999999991,
+        7.353499999998644
+      ],
+      "exit_times_s": [
+        1.1689999999999268,
+        1.2014999999999232,
+        1.2554999999999172,
+        1.2714999999999155,
+        1.302499999999912,
+        1.32049999999991,
+        7.3419999999986505,
+        7.362999999998639
+      ],
+      "raw_crossing_count": 16,
+      "qualified_recontacts": [],
+      "deduplicated_raw_sample_count": 14801,
+      "unknown_force_sample_count": 0,
+      "inactive_min_s": 0.04,
+      "resumed_active_min_s": 0.01,
+      "duration_rule": "contiguous run last observed time minus first observed time",
+      "scope": "all raw intervals, including excluded terminal intervals; threshold events, not controller decisions"
+    },
+    "planning_wall_s": 0.4098128310870379,
+    "execution_wall_s": 11.331218458013609,
+    "planning_time_scope": "sum of unchanged G proposal and learned plan calls; recording/source checks excluded",
+    "counts": {
+      "controller_decisions": 74,
+      "physics_interval_attempts": 74,
+      "physics_intervals_returned": 74,
+      "completed_boundary_records": 74
+    },
+    "future_engine_calls": {
+      "mj_step": 0,
+      "mj_step1": 0,
+      "mj_step2": 0,
+      "mj_forward": 0,
+      "mj_inverse": 0
+    }
+  },
+  "timings": {
+    "plan": 0.39437379059381783,
+    "geometry": 0.01543904049322009,
+    "plan_calls": 70,
+    "geometry_calls": 74,
+    "plan_first_call_s": 0.006880084052681923,
+    "geometry_first_call_s": 0.00022741593420505524,
+    "plan_repeat_wall_s": 0.3874937065411359,
+    "geometry_repeat_wall_s": 0.015211624559015036,
+    "plan_repeat_calls": 69,
+    "geometry_repeat_calls": 73,
+    "initialization_wall_s": 2.5705932080745697,
+    "initialization_scope": "worker entry through imports, source/capacity checks, model loading and physical reset/common snapshot check; process startup excluded",
+    "warmup_performed": false,
+    "dedicated_warmup_calls": 0,
+    "first_call_scope": "first actual task call; included in total, never relabeled as warmup"
+  },
+  "record_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-11/manifest.json",
+  "record_manifest_sha256": "cb11ebc18cb2cb1d619af83f37d8c4a1510d12d2fbf050afd5c53c07f001a62e",
+  "comparison": null,
+  "review_sha256": "32a0d5e0efb4d4a7c9e9f02a4a5427d12e4be40a799da9a58ea52bf33ed18fe6",
+  "recording_status": "COMPLETE_RECORDED",
+  "component_review_sha256": "27e7366bfef78cfe8b7b2d55e330cd7044bd245a614f40218b86edfb673b56d5",
+  "cell_bytes": 8699757,
+  "process_peak_rss_bytes": 857456640,
+  "P5_task_success": true,
+  "learning_updates": 0,
+  "recording_guard_phase_after_return": "CLOSED",
+  "recording_guard_phase_history": [
+    {
+      "phase": "CONTROL",
+      "timestamp_utc": "2026-10-17T11:12:16.746129+00:00"
+    },
+    {
+      "phase": "SEALING",
+      "timestamp_utc": "2026-10-17T11:12:21.022066+00:00"
+    },
+    {
+      "phase": "CLOSED",
+      "timestamp_utc": "2026-10-17T11:12:28.027781+00:00"
+    }
+  ]
+}

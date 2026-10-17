@@ -1,0 +1,26 @@
+{
+  "snapshot_id": "p5-final-rotation-00/G/tick-000",
+  "family_id": "p5-final-rotation-00",
+  "stratum": "rotation",
+  "model": "SK-11",
+  "selected_index": 9,
+  "selected_action": [
+    0.019063532412728196,
+    -0.022566852755070407
+  ],
+  "reason": "selected",
+  "input_hash": "daf8df8d5530d479ef900478a3e3e09d2ec518a6878a60b8d9bb322e81f57fc3",
+  "candidate_hash": "be08c594651b5081abc40924612b95fe286fd2b3ea70a67378cc1cf3368ec5f9",
+  "prediction_hash": "b0461a4adde99728bb9caf7acd90e8f022037315ff93e57ca6724f59e097cd1d",
+  "cost_hash": "0fc44199f69e220c63184f166bd2be73195a1742a4f5c28470bbf307310f1e00",
+  "previous_applied_action_hash": "ef1ccba3107f3420038733108343ee0492fe3dd57ebfa9add8ecc93aa3365ca8",
+  "warm_sequence": null,
+  "candidate_rng_keys": [
+    6811,
+    4,
+    0,
+    1
+  ],
+  "predictor_calls": 5,
+  "before_any_physical_future": true
+}

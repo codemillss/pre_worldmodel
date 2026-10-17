@@ -1,0 +1,109 @@
+{
+  "protocol_id": "p3-common-planning-v1",
+  "selection_run": "runs/p3-05-20261010-01",
+  "selection_summary_sha256": "7479a52bcc2dd0b149eeeefe8710e3bd8a1f8a5210d1510a1dc32b7f9188f5d5",
+  "selection_id": "N128-H5",
+  "planner": {
+    "all_invalid_action": "zero_then_fail",
+    "block_lengths": [
+      2,
+      3
+    ],
+    "candidate_count": 128,
+    "geometry_proposal_enabled": true,
+    "geometry_tangent_perturbation_m_s": 0.01,
+    "horizon": 5,
+    "invalid_candidate_cost": "positive_infinity",
+    "kind": "random_shooting",
+    "random_global_fraction": 0.5,
+    "random_local_noise_std_m_s": 0.02,
+    "reserved_candidates": [
+      "zero",
+      "shifted_previous",
+      "geometry_constant",
+      "geometry_then_zero",
+      "zero_then_geometry",
+      "half_geometry",
+      "geometry_plus_tangent",
+      "geometry_minus_tangent"
+    ],
+    "second_block_correlation": 0.7,
+    "use_simulator_for_candidate_prediction": false,
+    "command_speed_norm_max_m_s": 0.03
+  },
+  "cost": {
+    "gap_scale_m": 0.08,
+    "stage_action": 0.02,
+    "stage_action_change": 0.02,
+    "stage_gap": 0.1,
+    "stage_position": 1.0,
+    "stage_yaw": 1.0,
+    "terminal_angular_speed": 0.1,
+    "terminal_position": 5.0,
+    "terminal_speed": 0.1,
+    "terminal_yaw": 5.0,
+    "time_sum": "action_dt_weighted_stage_plus_terminal"
+  },
+  "task": {
+    "angular_speed_tolerance_rad_s": 0.05,
+    "automatic_task_retries": 0,
+    "goal_xy_m": [
+      0.08,
+      0.0
+    ],
+    "goal_yaw_rad": 0.0,
+    "hold_time_s": 0.3,
+    "linear_speed_tolerance_m_s": 0.01,
+    "max_episode_time_s": 30.0,
+    "position_tolerance_m": 0.005,
+    "success_check": "action_boundary_with_continuous_substep_hold",
+    "yaw_tolerance_rad": 0.05235987755982989
+  },
+  "physical_config_id": "pilot-v4-legacy-elliptic",
+  "physical_config_rule": "load saved original model/environment config; override planner only; no environment/normalizer mutation",
+  "geometry_selected_overrides": {
+    "position_gain_per_s": 4.0,
+    "yaw_creep_speed_m_s": 0.02,
+    "yaw_offset_gain_m_rad": 0.09,
+    "speed_max_m_s": 0.03
+  },
+  "geometry_effective_16": {
+    "angular_damping_gain_m_s_rad": 0.01,
+    "approach_gap_m": 0.001,
+    "approach_speed_max_m_s": 0.01,
+    "contact_mode_max_elapsed_s": 2.0,
+    "contact_offset_abs_max_m": 0.015,
+    "contact_offset_replan_threshold_m": 0.004,
+    "minimum_inward_direction_cosine": 0.25,
+    "near_contact_loss_gap_m": 0.003,
+    "position_gain_per_s": 4.0,
+    "retreat_gap_m": 0.012,
+    "speed_max_m_s": 0.03,
+    "waypoint_gain_per_s": 3.0,
+    "waypoint_tolerance_m": 0.0015,
+    "waypoint_velocity_damping": 0.2,
+    "yaw_creep_speed_m_s": 0.02,
+    "yaw_offset_gain_m_rad": 0.09
+  },
+  "geometry_transition": {
+    "schema_version": "geometry-transition-v2",
+    "offset_taper_start_m": 0.002,
+    "phase_end_taper_s": 0.4,
+    "phase_entry_ramp_s": 0.4,
+    "slide_blend_outer_tolerance_multiplier": 2.0,
+    "free_motion_speed_max_m_s": 0.01,
+    "clock_snap_tolerance_s": 1e-09
+  },
+  "geometry_context_policy": "propose on each actual control tick from observed state and raw elapsed; commit returned context even if G action not selected; never record proposed G as applied command; holding resets via G.propose",
+  "rng_rule": [
+    "base_seed",
+    "episode_index",
+    "actual_control_tick",
+    "stream_id"
+  ],
+  "development_base_seed": 4711,
+  "final_base_seed_candidate": 6811,
+  "selection_scope": "3 previously used cases x 4 model instances; 5s surrogate, MLP seeds jointly have 3/4 cell weight; not independent superiority",
+  "holding": "common zero command; previous actual action zero, warm sequence clear; actual control tick includes holding",
+  "all_invalid": "planner_invalid; save unexecuted full trace; no extra zero physics step"
+}

@@ -1,0 +1,85 @@
+# P3-02 main development v2 candidate: smooth G transitions. Frozen before physics; no final evaluation data.
+collection_id = "p3-main-development-v2"
+purpose = "main-development"
+initial_seed = 2026100801
+split_seed = 2026100802
+action_seed = 2026100803
+actions_per_episode = 16
+feedback_max_ticks = 128
+modes = ["noncontact", "central", "eccentric", "contact_transition", "geometry_feedback", "geometry_perturbed"]
+initial_sampling = "independent_uniform_within_nominal_xy_yaw_ranges"
+family_rule = "one independently generated reset per family; any future repeats/variants retain that family"
+mode_assignment = "after_global_family_split_before_physics; sorted_ids_cycle_six_modes_within_each_split"
+
+[split_counts]
+train = 60
+validation = 30
+
+[commands]
+forward_speed_min_m_s = 0.02
+forward_speed_max_m_s = 0.04
+retreat_speed_m_s = 0.025
+noncontact_lateral_speed_m_s = 0.015
+noncontact_return_speed_m_s = 0.015
+central_tangent_abs_max_m_s = 0.0015
+eccentric_tangent_abs_max_m_s = 0.002
+command_support_norm_max_m_s = 0.04
+eccentric_offset_abs_min_m = 0.010
+eccentric_offset_abs_max_m = 0.015
+eccentric_sign_rule = "alternate_within_each_split"
+blocks = "four_steps_per_speed_draw; constant_world_commands; no feedback or learned controller"
+noncontact_phases = ["zero:2", "retreat:4", "lateral:4", "partial_return:4", "zero:2"]
+contact_transition_phases = ["forward:5", "retreat:3", "reapproach:8"]
+
+[perturbation]
+block_steps = 4
+world_xy_std_m_s = 0.003
+apply_mode = "PUSH_only"
+holding_noise_enabled = false
+frame = "world_xy"
+generation = "PCG64([action_seed, episode_index]); Gaussian blocks pregenerated before physics"
+
+[coverage]
+horizons = [1, 5, 10]
+required_validation_horizon = 5
+required_validation_regimes = ["noncontact", "sustained_contact", "transition"]
+minimum_distinct_validation_families_per_regime = 5
+active_contact_rule = "pusher_object normal_force strictly greater than environment threshold; start plus every substep"
+window_regime = "first_transition_only"
+position_signal_min_m = 0.001
+yaw_signal_min_rad = 0.010471975511965976
+require_signal_per_split = true
+require_qualified_recontact_per_split = true
+stationary_data = "count separately; not evidence of broad state support"
+
+[physics_extension]
+representative_rule = "lowest_episode_id_per_mode; frozen before physics"
+physics_dt_scale = 0.5
+comparison = "independent feedback at observed states with identical predeclared noise; identical stabilized snapshot and zero warmstarts; all shared action boundaries"
+require_full_equal_execution_lengths = true
+budgets = "unchanged acceptance-v1 dt position/yaw budgets"
+on_failure = "preserve evidence; block main collection; no replacement or threshold relaxation"
+
+[limits]
+final_evaluation_allowed = false
+feedback_collection_enabled = true
+includes_p2_01_stress_fixture = false
+alignment_success_evaluation = false
+termination = "fixed 16 or 128 ticks; pose goal means zero action without declaring handoff success; preserve controller-infeasible and invalid prefixes"
+physical_command_limit_m_s = 0.06
+coverage_note = "bounded sampled support only; no full range, joint coverage, OOD or final-task performance claim"
+
+[resources]
+maximum_planned_transitions = 4800
+free_disk_reserve_gib = 2.0
+reason = "reduce independent families from the unfrozen 250-family candidate; extend feedback cap to 128 ticks to cover the demonstrated 12.3-second G flow; retain train-only normalization, contact regimes, feedback and multistep learning"
+
+# Opt-in transition policy; original v1 and original failed cases are preserved.
+[geometry_transition]
+schema_version = "geometry-transition-v1"
+offset_taper_start_m = 0.002
+phase_end_taper_s = 0.4
+phase_entry_ramp_s = 0.4
+slide_blend_outer_tolerance_multiplier = 2.0
+free_motion_speed_max_m_s = 0.01
+noise_weighting = "same predeclared PUSH-only vector times continuous phase entry and pre-reassessment gain; zero in holding/free modes"

@@ -1,0 +1,9 @@
+{
+  "schema_version": "geometry-transition-v2",
+  "offset_taper_start_m": 0.002,
+  "phase_end_taper_s": 0.4,
+  "phase_entry_ramp_s": 0.4,
+  "slide_blend_outer_tolerance_multiplier": 2.0,
+  "free_motion_speed_max_m_s": 0.01,
+  "clock_snap_tolerance_s": 1e-09
+}

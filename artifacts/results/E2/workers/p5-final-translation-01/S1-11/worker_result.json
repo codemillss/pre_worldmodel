@@ -1,0 +1,109 @@
+{
+  "status": "ACCEPT_COMPLETED_RECORDING",
+  "phase": "E2",
+  "cell": {
+    "cell_id": "p5-final-translation-01/S1-11",
+    "controller_id": "S1-11",
+    "episode_id": "p5-final-translation-01",
+    "episode_index": 1,
+    "family_id": "p5-final-translation-01",
+    "stratum": "translation"
+  },
+  "row": {
+    "cell_id": "p5-final-translation-01/S1-11",
+    "controller_id": "S1-11",
+    "episode_id": "p5-final-translation-01",
+    "episode_index": 1,
+    "family_id": "p5-final-translation-01",
+    "stratum": "translation",
+    "execution_status": "completed",
+    "termination": "ready",
+    "success": true,
+    "elapsed_s": 4.899999999999815,
+    "final_position_error_m": 0.00465202029557265,
+    "final_yaw_error_rad": 0.0029458327958962194,
+    "final_linear_speed_m_s": 2.8552319705733075e-11,
+    "final_angular_speed_rad_s": 7.286280906270167e-21,
+    "final_observation_available": true,
+    "metric_state_origin": "terminal_observation",
+    "metric_state_time_s": 4.899999999999815,
+    "unavailable_reason": null,
+    "recontact_count": 0,
+    "contact_events": {
+      "entry_times_s": [
+        0.4900000000000004,
+        4.856000000000028
+      ],
+      "exit_times_s": [
+        4.842000000000036,
+        4.859500000000026
+      ],
+      "raw_crossing_count": 4,
+      "qualified_recontacts": [],
+      "deduplicated_raw_sample_count": 9801,
+      "unknown_force_sample_count": 0,
+      "inactive_min_s": 0.04,
+      "resumed_active_min_s": 0.01,
+      "duration_rule": "contiguous run last observed time minus first observed time",
+      "scope": "all raw intervals, including excluded terminal intervals; threshold events, not controller decisions"
+    },
+    "planning_wall_s": 0.31285712542012334,
+    "execution_wall_s": 7.759622958023101,
+    "planning_time_scope": "sum of unchanged G proposal and learned plan calls; recording/source checks excluded",
+    "counts": {
+      "controller_decisions": 49,
+      "physics_interval_attempts": 49,
+      "physics_intervals_returned": 49,
+      "completed_boundary_records": 49
+    },
+    "future_engine_calls": {
+      "mj_step": 0,
+      "mj_step1": 0,
+      "mj_step2": 0,
+      "mj_forward": 0,
+      "mj_inverse": 0
+    }
+  },
+  "timings": {
+    "plan": 0.3010921694803983,
+    "geometry": 0.011764955939725041,
+    "plan_calls": 45,
+    "geometry_calls": 49,
+    "plan_first_call_s": 0.008922458160668612,
+    "geometry_first_call_s": 0.000340375117957592,
+    "plan_repeat_wall_s": 0.2921697113197297,
+    "geometry_repeat_wall_s": 0.01142458082176745,
+    "plan_repeat_calls": 44,
+    "geometry_repeat_calls": 48,
+    "initialization_wall_s": 2.5469567920081317,
+    "initialization_scope": "worker entry through imports, source/capacity checks, model loading and physical reset/common snapshot check; process startup excluded",
+    "warmup_performed": false,
+    "dedicated_warmup_calls": 0,
+    "first_call_scope": "first actual task call; included in total, never relabeled as warmup"
+  },
+  "record_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/S1-11/manifest.json",
+  "record_manifest_sha256": "5d97b2bb8ab367bbbcf6cc5a4659a4a447419b236dec140ad18100a99f821e13",
+  "comparison": null,
+  "review_sha256": "223e7f09bd74671202c73966e0bf2073d1c461128c63da253f2144bdc6f1dede",
+  "recording_status": "COMPLETE_RECORDED",
+  "component_review_sha256": "af426d0c79832e299ad4ad145b8d15a5b798db58aeae6532373376a658ef4990",
+  "cell_bytes": 5755468,
+  "process_peak_rss_bytes": 714145792,
+  "P5_task_success": true,
+  "learning_updates": 0,
+  "recording_guard_phase_after_return": "CLOSED",
+  "recording_guard_phase_history": [
+    {
+      "phase": "CONTROL",
+      "timestamp_utc": "2026-10-17T10:38:30.375727+00:00"
+    },
+    {
+      "phase": "SEALING",
+      "timestamp_utc": "2026-10-17T10:38:33.790412+00:00"
+    },
+    {
+      "phase": "CLOSED",
+      "timestamp_utc": "2026-10-17T10:38:38.074018+00:00"
+    }
+  ]
+}

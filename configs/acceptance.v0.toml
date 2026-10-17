@@ -1,0 +1,83 @@
+# 완료 판정을 위한 사전 제안 기준. 실제 물리·학습 검사는 아직 실행하지 않음.
+# 산업 규격/문헌 표준이 아니다. 의미와 동결 절차는 docs/06 참조.
+profile_id = "acceptance-v0"
+status = "proposed_unexecuted"
+runtime_checks_executed = false
+
+[invariants]
+allowed_schema_violations = 0
+allowed_split_leaks = 0
+allowed_invalid_training_windows = 0
+allowed_future_simulator_calls_in_planning = 0
+allowed_required_evidence_missing = 0
+allowed_unresolved_infrastructure_items_at_final = 0
+
+[numeric]
+# 모델·정규화 검사는 정규화된 값에서 allclose를 사용한다.
+float32_atol = 1e-6
+float32_rtol = 1e-5
+angle_formula_atol_rad_float64 = 1e-10
+replay_tolerance_fraction_of_task_tolerance = 0.001
+physical_drift_fraction_of_task_tolerance = 0.1
+timestep_difference_fraction_of_task_tolerance = 0.1
+signal_to_control_drift_min_ratio = 5.0
+signal_min_fraction_of_task_tolerance = 0.2
+
+[physics_suite]
+observation_duration_s = 1.0
+replays_per_snapshot = 3
+initial_yaw_candidates_deg = [-10.0, 0.0, 10.0]
+conditions = ["zero", "noncontact", "central", "positive_offset", "negative_offset"]
+probe_command_speed_m_s = 0.03
+probe_offset_abs_m = 0.015
+physics_dt_comparison_scale = 0.5
+freeze_before_main_collection = true
+
+[learning_checks]
+tiny_subset_transition_count = 16
+tiny_subset_max_updates = 500
+tiny_subset_loss_relative_decrease_min = 0.01
+tiny_subset_seed_count = 1
+require_nonstationary_contact_samples = true
+require_prediction_change_above_numeric_tolerance = true
+require_validation_improvement_for_connection = false
+require_neural_model_to_beat_baseline = false
+
+[closed_loop_smoke]
+episode_count = 10
+minimum_causal_contact_traces = 1
+require_full_alignment_success_for_P2 = false
+manifest_is_separate_from_open_loop_data_smoke_split = true
+
+[baseline_competency]
+case_ids = ["small_translation", "positive_yaw", "negative_yaw", "reapproach"]
+all_predeclared_feasible_cases_must_pass = true
+allow_replacing_failed_cases_after_tuning = false
+
+[main_data]
+validation_min_families_per_regime = 5
+required_regimes = ["noncontact", "sustained_contact", "transition"]
+minimum_is_coverage_check_not_statistical_power = true
+
+[counterfactual_check]
+replays_per_candidate = 3
+cost_padding_atol = 1e-6
+cost_padding_rtol = 1e-5
+rank_rule = "nonoverlapping_padded_observed_cost_ranges"
+rank_inconclusive_does_not_invalidate_correct_diagnostic = true
+
+[controller_replay]
+tolerance_fraction_of_task_tolerance = 0.001
+require_matching_terminal_type = true
+selection_rule = "smallest_episode_id_per_stratum_plus_smallest_id_per_observed_outcome_per_method_seed"
+selection_rule_frozen_before_final_evaluation = true
+
+[final_review]
+infrastructure_missing_blocks_pass = true
+task_failures_count_as_completed_executions = true
+require_regenerated_tables = true
+require_fresh_controller_replays = true
+require_learner_evidence_separate_from_generated_explanation = true
+aggregate_success_rate_target = "not_specified"
+minimum_meaningful_improvement = "not_specified"
+success_rate_claim_rule = "report_observed_rate_and_uncertainty_no_target_met_claim_without_prior_target"

@@ -1,0 +1,35 @@
+{
+  "protocol_id": "p4-stop-diagnostic-v1",
+  "created_on": "2026-10-13",
+  "user_choice": "Short supplemental diagnostic before freezing, received in this task on2026-10-13",
+  "source_tick": 99,
+  "original_candidates": [
+    11,
+    60
+  ],
+  "selection_scope": "Post-hoc existing development; candidate11 chosen for endpointpose within tolerances but wz>limit.60is original frozen three-model argmin. Not independent validation.",
+  "actions": "Original five commands unchanged then exactly5 zero commands, dt0.1, total1s, threefresh fullsnapshot repeats each; no parameter tuning or replacement on failure.",
+  "hypothesis": "The near-goal candidate11 is blocked by terminal angular speed and may qualify+hold after0.5s zero suffix; if it staysoutsidepose/speed or doesnotretain0.3s, this bounded settling hypothesis is not supported. Modelchoice60 is matched no-progress control.",
+  "measurement": "Original task/status/rawsubstep continuoushold supervision; terminalstatus consumedonce, subsequent fixedopenloop recording explicit. Report firstready and endstate separately. No online model/policy changed; H10 J notcomparednumericallytoH5 J.",
+  "budget": {
+    "max_attempts": 6,
+    "max_intervals": 60,
+    "reexecuted_original_prefix_intervals": 30,
+    "additional_zero_intervals": 30,
+    "prior_pool_bytes": 280996193,
+    "estimated_bytes": 31457280,
+    "unchanged_pool_bytes": 1073741824,
+    "free_at_registration_bytes": 13271040000
+  },
+  "bindings_sha256": {
+    "runs/p4-04-20261013-01/summary.json": "07f2ae54496e2a364f200f7bbd6f1cac0aa50ee3357fc245616704fe64c417d6",
+    "runs/p4-04-20261013-01/artifact_hashes.json": "31d9da465e3ef6d219d7929578b3f1e0648c83ab18e91c869f0bc800665b8e02",
+    "runs/p4-04-20261013-01/snapshots/tick-099/candidates.npz": "4723bcfb19781147a0774eb20a67884e3a61e027870bd266a9e031d62ea2df78",
+    "runs/p4-04-20261013-01/snapshots/tick-099/hypothesis_results.json": "d1797d50023db05ac88fc97f97d6d4b25894730f23afa229ce337791a3630bb6",
+    "configs/acceptance.v1.toml": "d65a615a1098fc339c7b7de00e5bbd10a3dc8aa5e4a956c37cf8250d74f6ce22",
+    "configs/p3_planning.v1.json": "3fda5e0a2ea077ab391b2d750547973658219b847f0998163e6c1f595af3c1f8"
+  },
+  "final_test_used": false,
+  "learning_updates": 0,
+  "model_inference_calls": 0
+}

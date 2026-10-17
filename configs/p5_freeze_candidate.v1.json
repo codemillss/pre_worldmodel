@@ -1,0 +1,302 @@
+{
+  "schema": "p5-freeze-candidate-v1",
+  "status": "REVIEW_CANDIDATE_NOT_FROZEN",
+  "created_at_utc": "2026-10-15T12:38:58.468940+00:00",
+  "question": "Under the same existing N128/H5 weighted-cost planner, how do Ridge, one-step MLP and multi-step-trained MLP differ in prediction, candidate choice and actual handoff? G is a task baseline; S1/SK within each seed isolates the loss intervention.",
+  "learned_models": [
+    {
+      "controller": "Ridge",
+      "seed": null,
+      "path": "runs/p3-03-20261009-01/candidates/alpha-00/model",
+      "ridge_hash": "4426f7c3ceeb3d805cac010543775175af7d6c00b3fea7bf6d3fc93bd6ab2a06",
+      "ridge_json_sha256": "d13fff6eeba5625133776a8229091e01d9af9be891ac4a5e084075ee5ad66599",
+      "files_sha256": {
+        "weights.npz": "064a3e3a95d43ae0f225c46761080aeaf6c7d3b3e188fb64d7c3c160403940b7"
+      },
+      "selected_alpha": 0.0,
+      "final_controller_id": "R"
+    },
+    {
+      "controller": "S1",
+      "seed": 11,
+      "path": "runs/p4-02-20261012-01/seeds/seed-11/S1/checkpoints/update-1000",
+      "checkpoint_hash": "e63138dc93d336fa414c3f6e0df90db1aa840d7d2c3b14f4e141725f9129631b",
+      "checkpoint_json_sha256": "170cbc99d3f4cda178f4c20f168df6c62b064441021bdedbf7293b0410305356",
+      "files_sha256": {
+        "training_state.pt": "1b45e498e559ebceb1eff44f40be711d78f85b097010839d79d889b4d7f9608d",
+        "weights.pt": "24b3e2973d2dfcca87624696d87046c3ac63ae95c514119699ac93ed1cf48fca"
+      },
+      "additional_updates": 1000,
+      "total_updates": 2300,
+      "final_controller_id": "S1-11"
+    },
+    {
+      "controller": "S1",
+      "seed": 23,
+      "path": "runs/p4-02-20261012-01/seeds/seed-23/S1/checkpoints/update-1000",
+      "checkpoint_hash": "ecaa103896c498462cc79238a360991e00cb2cce03bb2af0d9c7877f7737be64",
+      "checkpoint_json_sha256": "081530226c08c6f5426ee7fc63adf04fd5943983c3552de6a45d8638629aa336",
+      "files_sha256": {
+        "training_state.pt": "17d6407c79e1b7f1e28ce5064b0c83f5bbf411e03df7cfe1b385527a30ec4b18",
+        "weights.pt": "25e90fd605232c8732042d95747e3c4fe70266716553e9fefd1824edfa20b330"
+      },
+      "additional_updates": 1000,
+      "total_updates": 2261,
+      "final_controller_id": "S1-23"
+    },
+    {
+      "controller": "S1",
+      "seed": 47,
+      "path": "runs/p4-02-20261012-01/seeds/seed-47/S1/checkpoints/update-1000",
+      "checkpoint_hash": "7969cdccc46aee016d50da881e94cb92cda2f4125b702a4fac9a7583a1842df6",
+      "checkpoint_json_sha256": "bcebf2e3792f0bfc86958209ca0cb885d503eeb4237e3fc42fa88a96161e70aa",
+      "files_sha256": {
+        "training_state.pt": "afe0e8cc3e44dfeee3a8f6b7156d87fa680d372d9b274f61ef49df826696e076",
+        "weights.pt": "b654abc205682dfac7a10d63ee3ff76d77e62b22a76d9330e012b845902918b1"
+      },
+      "additional_updates": 1000,
+      "total_updates": 2274,
+      "final_controller_id": "S1-47"
+    },
+    {
+      "controller": "SK-lambda0.1",
+      "seed": 11,
+      "path": "runs/p4-02-20261012-01/seeds/seed-11/SK-lambda0.1/checkpoints/update-1000",
+      "checkpoint_hash": "badb2c03916931c5fce5cb653b34163c7774bf90cd9eb8b44309270d016f1f9f",
+      "checkpoint_json_sha256": "465fcfc60ead6b170ee27f67cf9d19aa2d1b403f74fa7e5b9801c6f8f0d31e49",
+      "files_sha256": {
+        "training_state.pt": "46ad727d1306c1b24cf4f104082085895f784c9ac7c806d76f5a9b44ce91df0f",
+        "weights.pt": "23be9f97738fd1b464ab4d21623c3103d05589cd0803e7075e205af71f306913"
+      },
+      "additional_updates": 1000,
+      "total_updates": 2300,
+      "final_controller_id": "SK-11"
+    },
+    {
+      "controller": "SK-lambda0.1",
+      "seed": 23,
+      "path": "runs/p4-02-20261012-01/seeds/seed-23/SK-lambda0.1/checkpoints/update-1000",
+      "checkpoint_hash": "2ae6387708aadbbb57bf22ba67cc4d37c70a255a7cd04be7bbc9613cc6ef6aa8",
+      "checkpoint_json_sha256": "cd09e3c648769eca618940e0480f0b636187db525589002218555bda6aba8f01",
+      "files_sha256": {
+        "training_state.pt": "e2f68479960bf4fef27bea65b870dce39f8f4de9428f29936b42b24b77c4244a",
+        "weights.pt": "e2e99fe3636a34a09756b91c99d935c45072a2bedbc995cdd8f2578a00c8f0f5"
+      },
+      "additional_updates": 1000,
+      "total_updates": 2261,
+      "final_controller_id": "SK-23"
+    },
+    {
+      "controller": "SK-lambda0.1",
+      "seed": 47,
+      "path": "runs/p4-02-20261012-01/seeds/seed-47/SK-lambda0.1/checkpoints/update-1000",
+      "checkpoint_hash": "fe4862776ca11d61af4ebc5aa1f066f8db78c693a591c1f59eae413544e38568",
+      "checkpoint_json_sha256": "89a71d22499d3dd450076c19cb5eb94884d64e15f044e6d2189afc1aa07d61e3",
+      "files_sha256": {
+        "training_state.pt": "a94d0e1ae12025db6ef2904174580c0f0eb002df44bc580134e486c80d0d0e9d",
+        "weights.pt": "1ca90e0fd81a0723e3a57b9c9ef0546417cff1a96c888ec2018d3e258f815e44"
+      },
+      "additional_updates": 1000,
+      "total_updates": 2274,
+      "final_controller_id": "SK-47"
+    }
+  ],
+  "G": {
+    "learned_model": false,
+    "selected_id": "G4",
+    "settings": [
+      "configs/p3_geometry_selected.v2.json",
+      "configs/p3_geometry_transition.v2.json"
+    ],
+    "common_planning": "configs/p3_planning.v1.json",
+    "source": [
+      "src/push_align/geometry_control.py",
+      "src/push_align/geometry_control_smooth.py"
+    ]
+  },
+  "normalizer": "runs/p3-02-20261009-01/learning_data/normalizer",
+  "common_planning": {
+    "path": "configs/p3_planning.v1.json",
+    "sha256": "3fda5e0a2ea077ab391b2d750547973658219b847f0998163e6c1f595af3c1f8",
+    "choice": "RECOMMENDED_LEGACY_PRIMARY",
+    "N": 128,
+    "H": 5,
+    "cost": "Original dt-weighted stage sum plus terminal weighted cost; no handoff-rank substitution.",
+    "comparison": "Identical generator/cost/validity/holding/RNG rules for R/S1/SK. Actual trajectories and thus later warm/G-based proposals may diverge as outcomes.",
+    "all_invalid": "planner_invalid with unexecuted trace; no extra zero physics step or candidate resampling."
+  },
+  "task": {
+    "angular_speed_tolerance_rad_s": 0.05,
+    "automatic_task_retries": 0,
+    "goal_xy_m": [
+      0.08,
+      0.0
+    ],
+    "goal_yaw_rad": 0.0,
+    "hold_time_s": 0.3,
+    "linear_speed_tolerance_m_s": 0.01,
+    "max_episode_time_s": 30.0,
+    "position_tolerance_m": 0.005,
+    "success_check": "action_boundary_with_continuous_substep_hold",
+    "yaw_tolerance_rad": 0.05235987755982989
+  },
+  "physical_scope": "Existing physical v4 / acceptance v1; actual raw-substep hold0.3s. Supplemental D11 zero5=0.5s data is not a revised success criterion.",
+  "scope_reference": {
+    "path": "configs/p3_evaluation_scope.v3.json",
+    "sha256": "0287b054ba218ae1507d24dcbede7444fba2a5ced8e6a38c5fff18340e97b239"
+  },
+  "E2": {
+    "family_count": 12,
+    "controllers": [
+      "G",
+      "R",
+      "S1-11",
+      "S1-23",
+      "S1-47",
+      "SK-11",
+      "SK-23",
+      "SK-47"
+    ],
+    "episode_count": 96,
+    "actual_final_family_ids": null
+  },
+  "E1": {
+    "family_count": 6,
+    "snapshot_count": 12,
+    "ticks": [
+      0,
+      29
+    ],
+    "candidates": 16,
+    "horizon": 5,
+    "physical_repeats": 3,
+    "missing_policy": "Keep unavailable snapshot record, do not substitute families/ticks, withhold E1 completion."
+  },
+  "supplementary_only": [
+    "D11/R1 data/loss/optimizer probes",
+    "H10-stop and TASK_H10-stop post-hoc development diagnostics"
+  ],
+  "not_claimed": [
+    "Best possible planner/cost",
+    "General learned-planning superiority",
+    "Industrial value or hardware transfer",
+    "Whole-training causal explanation"
+  ],
+  "actual_final_test_manifest_generated": false,
+  "final_test_opened": false,
+  "P5_01": "HOLD",
+  "source_sha256": {
+    "configs/p4_fork_budget.v2.json": "9054a25951e1e771c62fbb101cc900c3b5f2cf06fc67eed4e21d1eb9e0e95a70",
+    "reports/p4_02_matched_forks.md": "ae7a5212fe09a6cb8f44cf8b31a005b8af1d5dff878b240078e5fb0172aced72",
+    "runs/p4-02-20261012-01/manifest.json": "3c93837440497cb823a8c496e96d29174f2e1de4cccbffc3c9b9c5fb23ef6128",
+    "runs/p4-02-20261012-01/lambda_selection.json": "3727d6777d41bdd58831942de26e1de420df41219f56b4a180e02c265f148d78",
+    "runs/p4-02-20261012-01/final_lambda_records.json": "bbcabd012393aab6722de3c50c5b2cd66f145c4119058c5f8ff7ccefa80638e8",
+    "runs/p4-02-20261012-01/matched_controls.json": "e426790ef0a10a716f9f6a7fd2b3ee3c93546c12eb33d3bb1c62d06d6c03bab2",
+    "runs/p4-02-20261012-01/summary.json": "30279c12243fe92f6d22c94b46bf586142abd6f8a3e461454981cc37b044af32",
+    "runs/p4-02-20261012-01/artifact_hashes.json": "31da47020db9a646587d86a89f43123e4db77f0211b38b453f6259120341259a",
+    "runs/p3-03-20261009-01/manifest.json": "58b3421c48fd9a1c08b27d2b43664ca3b4a1152a0180630f308f53dc30fc3790",
+    "runs/p3-03-20261009-01/selection.json": "0cfdf3d76c33cd9a8c9645706fa864eeb83c040b0a8e3ea9b9e4d07c7b13c488",
+    "runs/p3-02-20261009-01/learning_data/manifest.json": "0d2278e997f8dbdb4812bb1c5ab8da5916dbea7eb5dc3667efb424ab8cc41f35",
+    "runs/p3-02-20261009-01/learning_data/normalizer/normalizer.json": "b672e13fc0c91ff3bdfbb4a761bfc9aac5595420286312f55667cdc3207991af",
+    "runs/p3-02-20261009-01/learning_data/normalizer/statistics.npz": "10b27958ddf0e1563a38a3954499295fad9e63cc69714ef8b95d64ccbfd6ba8e",
+    "runs/p3-02-20261009-01/learning_data/prepared.npz": "dc64f80110445298a9e206c0b1bf18199729cd95d72cebd52ecdac2c1ebdbda5",
+    "runs/p3-02-20261009-01/data/p3-main-v3/manifest.json": "9faa2f64a2eaf302f3a68fb06fc9d6340118b9ff703e213e9ba6abeb56a5df4b",
+    "configs/p3_planning.v1.json": "3fda5e0a2ea077ab391b2d750547973658219b847f0998163e6c1f595af3c1f8",
+    "configs/p3_geometry_selected.v2.json": "c67c03dbc1c9e0de40070d2f050f37e937995904c1112ae06c6b86226da12545",
+    "configs/p3_geometry_transition.v2.json": "e8ee698b91f160f67f0bc18e945e431ac02dd4ba0f82a10d4bffa752d4cfeb05",
+    "src/push_align/geometry_control.py": "b2e159d75efa319f3f7100e94e112a30bed45a814dd6b7e476b55dd3149a4dab",
+    "src/push_align/geometry_control_smooth.py": "3a717583867f5371c63e2df082a3c749f739e5011feeb65f7040ddb9a190a7ff",
+    "runs/p3-05-20261010-01/summary.json": "7479a52bcc2dd0b149eeeefe8710e3bd8a1f8a5210d1510a1dc32b7f9188f5d5",
+    "runs/p3-05-20261010-01/planning_selection.json": "c52ae186aad07057323bd5de045c7cb85914180b0d15d9725bb246a9007de88c",
+    "runs/p3-04-20261009-01/seeds/seed-11/checkpoints/epoch-100/checkpoint.json": "b55ef613a55b5077b4c274e9e5356b3a6f6646056bfd56655d57fa16da71413f",
+    "runs/p3-04-20261009-01/seeds/seed-11/checkpoints/epoch-100/training_state.pt": "2a7dfc719eee84d12ecf47f209a9c1013c2f4e0bfbf2bf04470f688989e28f33",
+    "runs/p3-04-20261009-01/seeds/seed-11/checkpoints/epoch-100/weights.pt": "6d0bbc2a7727fb293a37b98450989b53aaf29cebad9f1c20731a818a72af658e",
+    "runs/p4-02-20261012-01/seeds/seed-11/S1/checkpoints/update-1000/checkpoint.json": "170cbc99d3f4cda178f4c20f168df6c62b064441021bdedbf7293b0410305356",
+    "runs/p4-02-20261012-01/seeds/seed-11/S1/checkpoints/update-1000/training_state.pt": "1b45e498e559ebceb1eff44f40be711d78f85b097010839d79d889b4d7f9608d",
+    "runs/p4-02-20261012-01/seeds/seed-11/S1/checkpoints/update-1000/weights.pt": "24b3e2973d2dfcca87624696d87046c3ac63ae95c514119699ac93ed1cf48fca",
+    "runs/p4-02-20261012-01/seeds/seed-11/S1/branch_summary.json": "5b212cb17ed71d2a6b607cc2737a7bd080ad7e774cc466a0f9171487d826dc37",
+    "runs/p4-02-20261012-01/seeds/seed-11/SK-lambda0.1/checkpoints/update-1000/checkpoint.json": "465fcfc60ead6b170ee27f67cf9d19aa2d1b403f74fa7e5b9801c6f8f0d31e49",
+    "runs/p4-02-20261012-01/seeds/seed-11/SK-lambda0.1/checkpoints/update-1000/training_state.pt": "46ad727d1306c1b24cf4f104082085895f784c9ac7c806d76f5a9b44ce91df0f",
+    "runs/p4-02-20261012-01/seeds/seed-11/SK-lambda0.1/checkpoints/update-1000/weights.pt": "23be9f97738fd1b464ab4d21623c3103d05589cd0803e7075e205af71f306913",
+    "runs/p4-02-20261012-01/seeds/seed-11/SK-lambda0.1/branch_summary.json": "a553f2b4c432ea9c264d3930f7bfa8956e328cb36d4606681fee65128aca7004",
+    "runs/p3-04-20261009-01/seeds/seed-23/checkpoints/epoch-097/checkpoint.json": "f0ff139f72e20170ea67e1dfe06544c5be9a7c6cf55b435032013cd165caef0a",
+    "runs/p3-04-20261009-01/seeds/seed-23/checkpoints/epoch-097/training_state.pt": "6b22b7dbf96571cc5b5fe0bc19cfe64e1ab157aef47ef1f85a86ac9769a0317f",
+    "runs/p3-04-20261009-01/seeds/seed-23/checkpoints/epoch-097/weights.pt": "6264fdf9aa51ada8a2a027bca3eb2af8c0d438d756fd8883e6dc4ba8f661a903",
+    "runs/p4-02-20261012-01/seeds/seed-23/S1/checkpoints/update-1000/checkpoint.json": "081530226c08c6f5426ee7fc63adf04fd5943983c3552de6a45d8638629aa336",
+    "runs/p4-02-20261012-01/seeds/seed-23/S1/checkpoints/update-1000/training_state.pt": "17d6407c79e1b7f1e28ce5064b0c83f5bbf411e03df7cfe1b385527a30ec4b18",
+    "runs/p4-02-20261012-01/seeds/seed-23/S1/checkpoints/update-1000/weights.pt": "25e90fd605232c8732042d95747e3c4fe70266716553e9fefd1824edfa20b330",
+    "runs/p4-02-20261012-01/seeds/seed-23/S1/branch_summary.json": "512a4533b20f3830163f91744728b9a0d4476361e4a6d63dbf422bf7c204009d",
+    "runs/p4-02-20261012-01/seeds/seed-23/SK-lambda0.1/checkpoints/update-1000/checkpoint.json": "cd09e3c648769eca618940e0480f0b636187db525589002218555bda6aba8f01",
+    "runs/p4-02-20261012-01/seeds/seed-23/SK-lambda0.1/checkpoints/update-1000/training_state.pt": "e2f68479960bf4fef27bea65b870dce39f8f4de9428f29936b42b24b77c4244a",
+    "runs/p4-02-20261012-01/seeds/seed-23/SK-lambda0.1/checkpoints/update-1000/weights.pt": "e2e99fe3636a34a09756b91c99d935c45072a2bedbc995cdd8f2578a00c8f0f5",
+    "runs/p4-02-20261012-01/seeds/seed-23/SK-lambda0.1/branch_summary.json": "b6887582530382abc97ed37fb1c81fb8a81ea6816d0b8c1db3a11f63b662845e",
+    "runs/p3-04-20261009-01/seeds/seed-47/checkpoints/epoch-098/checkpoint.json": "5992d12fc2e110b47f256befbb09dc5932b34b1143051cee9127b599f89ab523",
+    "runs/p3-04-20261009-01/seeds/seed-47/checkpoints/epoch-098/training_state.pt": "ec022c114047471c4dfc18b166725cea6120a46d7ea9a69280a5f5ae271f3b38",
+    "runs/p3-04-20261009-01/seeds/seed-47/checkpoints/epoch-098/weights.pt": "697bfee431987579543edd38d1818888628e301db9174bcfc4078842e599d282",
+    "runs/p4-02-20261012-01/seeds/seed-47/S1/checkpoints/update-1000/checkpoint.json": "bcebf2e3792f0bfc86958209ca0cb885d503eeb4237e3fc42fa88a96161e70aa",
+    "runs/p4-02-20261012-01/seeds/seed-47/S1/checkpoints/update-1000/training_state.pt": "afe0e8cc3e44dfeee3a8f6b7156d87fa680d372d9b274f61ef49df826696e076",
+    "runs/p4-02-20261012-01/seeds/seed-47/S1/checkpoints/update-1000/weights.pt": "b654abc205682dfac7a10d63ee3ff76d77e62b22a76d9330e012b845902918b1",
+    "runs/p4-02-20261012-01/seeds/seed-47/S1/branch_summary.json": "4ed51a97cda67f8f55612392ab1acdd8d490e53f04ec530ef67f83861da55af0",
+    "runs/p4-02-20261012-01/seeds/seed-47/SK-lambda0.1/checkpoints/update-1000/checkpoint.json": "89a71d22499d3dd450076c19cb5eb94884d64e15f044e6d2189afc1aa07d61e3",
+    "runs/p4-02-20261012-01/seeds/seed-47/SK-lambda0.1/checkpoints/update-1000/training_state.pt": "a94d0e1ae12025db6ef2904174580c0f0eb002df44bc580134e486c80d0d0e9d",
+    "runs/p4-02-20261012-01/seeds/seed-47/SK-lambda0.1/checkpoints/update-1000/weights.pt": "1ca90e0fd81a0723e3a57b9c9ef0546417cff1a96c888ec2018d3e258f815e44",
+    "runs/p4-02-20261012-01/seeds/seed-47/SK-lambda0.1/branch_summary.json": "0b81839dc0cee5bec46942e02964423c2c7fc6ab9a93c2c09c4d56cdf9983a69",
+    "runs/p3-03-20261009-01/candidates/alpha-00/model/ridge.json": "d13fff6eeba5625133776a8229091e01d9af9be891ac4a5e084075ee5ad66599",
+    "runs/p3-03-20261009-01/candidates/alpha-00/model/weights.npz": "064a3e3a95d43ae0f225c46761080aeaf6c7d3b3e188fb64d7c3c160403940b7",
+    "reports/p4_data_retraining_comparison.md": "59607dec1698eadd07fdebc1cb68546cc2ec91fd04837fa47efc22e5c73e9e6a",
+    "reports/p4_relative_loss_comparison.md": "f1a68890eb4a86e1837eb3cff31784a9badc4c03f5847fac3fe0a1bfc8262835",
+    "reports/p4_first_moment_comparison.md": "a83d273941de7729f61672bd0874fa328570b185f3489060cde420897d56d1ee",
+    "configs/p4_handoff_cost.v1.json": "90149737ef2f190cdecf299a726cfa4deb4e9d92a610a71177658a04eff9c2de",
+    "configs/p4_handoff_cost.v2.json": "52391ba06e1bf11a5cf0e394e72afcfb5be13c2300c02f2c62a9b7a81f698592",
+    "src/push_align/planning.py": "1d13f0004ee9795ce1d08386a49c60b0540a536b817d2b1cecd02b9ef40f93bb",
+    "src/push_align/planning_protocol.py": "8f20c56874c4a849facb5c6493c0a4ad7eff37d466f1d233bf8187ac01103aaa",
+    "src/push_align/handoff_cost.py": "7997be5c1e688fb478ad1b0ba14a0cfa43ab4a54fe1a6fecb55c7792c8a7793b",
+    "src/push_align/closed_loop.py": "16926468055a0928086883d7d16dc64ceb344c065e2b4f4a6ff8886ca1879d65",
+    "src/push_align/task.py": "126be1839024d338b2e32f83f2480401a0c79635ddfb1ea51d62a20051623e14",
+    "scripts/p3_planning_settings.py": "7d4d462ce5aeee23b7c39a17b5a1884314dd7ff7cea8cd1df062b5ce5a3fe6a9",
+    "scripts/p4_handoff_cost_compare.py": "b3047e4b47972ae69152f23ada44feeae011fba2dc766c396d3cd0c07952e172",
+    "scripts/p4_development_inputs.py": "11b0eb98a86d127a37b1e5325038b342a04e686454f7bdc74dead108b80f76a0",
+    "reports/p3_05_planning_settings.md": "5a6baf41746263f8d4231c86ffa695a55f12734e4b7a9af3acbae4e965b01d12",
+    "reports/p4_handoff_cost_comparison.md": "609b67679aa97e1648b48c6ebe48ce18828cb86e9892aacbd781049754c8fb93",
+    "reports/development_failure_case.md": "950dd925a00347d6369a4b75ce6c30cec43c105b4e5a7cc76abcf05436d5490d",
+    "reports/p4_03_candidate_comparison.md": "a3822b550ee37f55af77c5bbaaeea3fbceae1689b255efe3c29086d36bda7f07",
+    "reports/p4_04_stop_independent_review.json": "aeb6eb5e93df482737f2a71d05141b6a88c7ac719cb75f67c0c1cb8e9cd8242c",
+    "runs/p4-04-stop-20261013-01/summary.json": "c0359a432c86776e8e553a11c6e7315d68cc09d986be10bc8ec6089a180fae85",
+    "runs/p4-cost-20261013-02/summary.json": "95e22368348d1dcf38ddf464e4525b34a35cfd9b8e4b4075f5a17b0ab4ca24e2",
+    "runs/p4-cost-20261013-02/selection_effects.json": "e21c88b3db8ecd766343420ee9066db518b22c36562160856a697989212b7a77",
+    "runs/p4-04-20261013-01/replay_ledger.json": "0b77a7cca5a8e3cafd51ab56d9c6cb9c3b830b30c1482d8b24dfa9e981252157",
+    "configs/p3_evaluation_scope.v3.json": "0287b054ba218ae1507d24dcbede7444fba2a5ced8e6a38c5fff18340e97b239",
+    "configs/acceptance.v1.toml": "d65a615a1098fc339c7b7de00e5bbd10a3dc8aa5e4a956c37cf8250d74f6ce22",
+    "configs/pilot.v4.toml": "315829e26c53e3c0f5f0646cdb0f1ed6dd5753da98f4ca6f290f46cb4a9e5a9d",
+    "docs/05_구현계약과_설정명세.md": "44d9621783ca3676608b27f0a5200d98812cc8a7291f76da69fa189548109e96",
+    "docs/06_단계별_완료판정.md": "8d0326d342b4f8fa9515ce358484d5f109d5fd27d518e0de57a9833ecb01be93",
+    "src/push_align/candidate_replay.py": "31f493fb544b7ad5d19f3805078c71163504ac0b17faea1415b5d31f3072cdc9",
+    "src/push_align/environment.py": "e2c9824bad0a076a6dd3ffb8b1cbfb332e1896d81774e038fc8c91c79a094bea",
+    "tools/freeze_p3_scope.py": "bf06a20895cf043389a146a0714506281d528693d17b69a2576bced9d66b555d",
+    "reports/p4_02_independent_review.json": "3f6f0085cbf1f7cbeaf6d389c990d72f2d7cc0ba6ed168d29eee5aac0430d39c",
+    "reports/p4_02_resource_reestimate.json": "d0897fd93f74a249d0bdfd8c2ff6319455bd162220adcb49ef4830ab295e1e63",
+    "reports/p4_03_resource_reestimate.json": "267b3c0c00f3bbbd7b7517ac96e989f75a6c70aa7e0e9543b792adee64034f5a",
+    "reports/p4_04_resource_reestimate.json": "f63c3814bab4ab8f05904975100cbfa9d3a8297687a9cbff2a4791917b162713",
+    "reports/p4_cost_resource_reestimate.json": "a4229d2c11a2134993f1958ecd8e4198992bf0d1058975296110e0f48ff7ce6d",
+    "reports/p5_entry_model_review.json": "643377d7be15d1c312db2f825d49ace2d0891dfd74acee1a0905bd766b3db57b",
+    "reports/p5_entry_planning_review.json": "a875b4e48fca155fa6c7d0e2fdbffde23f67d132821244c6166b3055d7bbd13f",
+    "reports/p5_entry_evaluation_review.json": "3e0fa8761c7abc220c734b2ac823bd7f419685fb628ee844f3de326cce16a7df",
+    "tmp/p5-entry-review-before/docs/reports/task_status.md": "4b7007eb55425b6ceb50bc89606ed4b5999b980eb7852668e39ae255f6aa9afb",
+    "tmp/p5-entry-review-before/docs/docs/04_세부실행계획.md": "f9cfc504e4c76272064fdb18304a610ac09d00f3fdf7e3e31bf9d2bfe940654f"
+  },
+  "required_before_final_freeze": [
+    "Implement/bind final executor and compare-witness with development-only contract checks.",
+    "Measure final recording/witness bytes and reestimate remaining P5 workload with2GiB hard reserve and original preservation.",
+    "Generate and validate outcomes-blind canonical-disjoint actual family/seed/controller/metric/failure/replay manifest; timestamp/hash freeze before final outcomes."
+  ],
+  "source_snapshot_map": {
+    "reports/task_status.md": {
+      "path": "tmp/p5-entry-review-before/docs/reports/task_status.md",
+      "sha256": "4b7007eb55425b6ceb50bc89606ed4b5999b980eb7852668e39ae255f6aa9afb"
+    },
+    "docs/04_세부실행계획.md": {
+      "path": "tmp/p5-entry-review-before/docs/docs/04_세부실행계획.md",
+      "sha256": "f9cfc504e4c76272064fdb18304a610ac09d00f3fdf7e3e31bf9d2bfe940654f"
+    }
+  }
+}

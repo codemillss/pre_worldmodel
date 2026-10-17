@@ -1,0 +1,93 @@
+{
+  "schema": "p5-fresh-controller-replay-completion-v1",
+  "at_utc": "2026-10-17T16:45:57.810487+00:00",
+  "status": "PASS_ALL33_REPLAYS_AND_SAVED_WITNESS_CROSSCHECK",
+  "native_original_command_exit_observed": {
+    "session_id": 94945,
+    "exit_code": 0,
+    "log": "runs/p5-final-20261017-02/replay-v2.log"
+  },
+  "replays": 33,
+  "by_controller": {
+    "G": 4,
+    "R": 3,
+    "S1-11": 5,
+    "S1-23": 5,
+    "S1-47": 4,
+    "SK-11": 4,
+    "SK-23": 4,
+    "SK-47": 4
+  },
+  "stored_normalized_payload_fields": [
+    "counts",
+    "decisions",
+    "final_task",
+    "future_engine_calls",
+    "intervals",
+    "termination",
+    "unexecuted_plan"
+  ],
+  "all_33_by_7_payload_checks_exact": true,
+  "maximum_differences_from_producer": {
+    "angular_speed_rad_s": 0,
+    "applied_action_components": [
+      0,
+      0
+    ],
+    "applied_action_norm_m_s": 0,
+    "linear_speed_m_s": 0,
+    "position_m": 0,
+    "pusher_position_m": 0,
+    "pusher_speed_m_s": 0,
+    "requested_action_components": [
+      0,
+      0
+    ],
+    "requested_action_norm_m_s": 0,
+    "state_components": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "time_s": 0,
+    "yaw_rad": 0
+  },
+  "recorded_model_plan_decisions_by_controller": {
+    "G": 0,
+    "R": 900,
+    "S1-11": 1214,
+    "S1-23": 1225,
+    "S1-47": 970,
+    "SK-11": 970,
+    "SK-23": 970,
+    "SK-47": 970
+  },
+  "G_cases_with_empty_learned_plan_index": 4,
+  "typed_raw_exact_producer_attestations": 33,
+  "typed_plan_index_exact_producer_attestations": 33,
+  "input_snapshot": "reports/p5_replay_progress_snapshot.v1/snapshot_receipt.json",
+  "sources_sha256": {
+    "runs/p5-final-20261017-02/manifest.json": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f",
+    "reports/p5_replay_saved_witness_crosscheck.v1.json": "c4c66cf27cfce2ecf0433812b85a82d9fa06873434d5b70e85bdabe8a9a530f4",
+    "runs/p5-final-20261017-02/replay_selection.json": "6aefa0026709ad1ceb7040428ee2f96fdb77b3eac856bdf0fbb1edd3f029542c",
+    "reports/p5_replay_progress_snapshot.v1/snapshot_receipt.json": "5f2a0b7401054a22afdb960f804db5fd10adcd6095bcfe8765808af11b78590d",
+    "reports/p5_replay_diagnostic_type_asymmetry.v1.json": "28964add0320048ab7fb04893ababc95ee627fdcbf77590c32e617df7ddcba20"
+  },
+  "interpretation": [
+    "Fresh controller execution differs from saved-command playback; no replacement cases or automatic retries.",
+    "33 selected cases are reproduction evidence and are not added to the E2 performance denominator.",
+    "All saved normalized behavioral payloads are independently compared; producer typed raw/index checks are collected as source-bound execution attestations.",
+    "differing_ticks contains diagnosed type-only false positives and is not an actual behavior-difference count. G empty index does not establish neural plan reproduction.",
+    "The original progress files advance in application; the exact two crosscheck inputs are preserved in the linked snapshot."
+  ],
+  "P5_04_application": "NOT_YET_COMPLETED",
+  "new_physical_calls_by_this_aggregation": 0,
+  "new_model_calls_by_this_aggregation": 0
+}

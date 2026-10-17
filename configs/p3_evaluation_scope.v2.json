@@ -1,0 +1,171 @@
+{
+  "scope_id": "p3-remaining-work-v2",
+  "created_at": "2026-10-10T00:54:32.483375+09:00",
+  "supersedes": "configs/p3_evaluation_scope.v1.json and original scope_freeze.json retained; v1 omitted G metadata and existing three-replay cost rule; v2 reduces offline candidate set only, keeps original replay criterion",
+  "physical_contract": "unchanged p3-main-v3 physical v4/acceptance-v1; task goal [0.08,0,0], 5mm/3deg and measured low speeds for >=0.3s, max30s, retries0",
+  "data": "unchanged 90 families, train60/validation30, original train3200/validation1600; no new collection required",
+  "learning": "three seeds, K5, two lambda candidates, matched1000 additional updates/branch; nine training branches",
+  "E2": {
+    "family_count": 12,
+    "strata_count": 3,
+    "families_per_stratum": 4,
+    "controllers_per_family": 8,
+    "controllers": [
+      "G",
+      "R",
+      "S1-11",
+      "S1-23",
+      "S1-47",
+      "SK-11",
+      "SK-23",
+      "SK-47"
+    ],
+    "episodes": 96,
+    "max_action_intervals": 28800,
+    "strata": [
+      {
+        "id": "translation",
+        "yaw_deg": 0,
+        "tangent_offset_m": 0
+      },
+      {
+        "id": "rotation",
+        "abs_yaw_deg_range": [
+          5,
+          15
+        ],
+        "yaw_sign_balance": [
+          2,
+          2
+        ],
+        "tangent_offset_m": 0
+      },
+      {
+        "id": "offset",
+        "yaw_deg_range": [
+          -15,
+          15
+        ],
+        "abs_tangent_offset_m_range": [
+          0.01,
+          0.015
+        ],
+        "offset_sign_balance": [
+          2,
+          2
+        ]
+      }
+    ],
+    "all_strata_object_x_range_m": [
+      -0.02,
+      0.02
+    ],
+    "all_strata_object_y_range_m": [
+      -0.01,
+      0.01
+    ],
+    "initial_seed_candidate": 6711,
+    "candidate_seed_candidate": 6811,
+    "test_generation": "P5-01 only; canonical initial pose/pusher identity disjoint from train/validation/previous development; outcomes never guide replacement",
+    "normal_failures": "retain timeout/planner_invalid/workspace and physics failures with original denominator; unresolved infrastructure blocks complete evaluation",
+    "final_manifest": "NOT_GENERATED"
+  },
+  "E1": {
+    "snapshots": 12,
+    "family_count": 6,
+    "families_per_stratum": 2,
+    "snapshots_per_family": 2,
+    "family_selection": "first two final families by fixed ID in each stratum; selected before results",
+    "ticks": [
+      0,
+      29
+    ],
+    "snapshot_source": "G actual E2 path before decision; full physical+task+actual previous action+G context+RNG; warm None shared; initial and later contact-capable prefix, actual regime reported not assumed",
+    "missing_snapshot": "record unavailable and stop E1 completion; no successful-family substitution",
+    "candidates": 16,
+    "horizon": 5,
+    "candidate_stream_id": 1,
+    "physical_repeats_per_candidate": 3,
+    "candidate_groups": {
+      "reserved": 8,
+      "global": 4,
+      "local_geometry": 2,
+      "local_warm": 2
+    },
+    "actual_future_max_intervals": 2880,
+    "future_rule": "independent offline physical replay from same complete snapshot three times per candidate, shared by all seven model instances, not repeated separately by model; never fed into online planning",
+    "cost_range_rule": "preserve docs06: [min(J)-epsilon,max(J)+epsilon], epsilon=profile atol+rtol*max(abs(J)); overlap=>ranking INCONCLUSIVE, repeated validity changes=>investigate; keep all attempts/costs/denominators",
+    "limits": "N16 diagnostic set is smaller than v1 N32 and online N128; 12 snapshots are six independent families, no full-N optimality claim",
+    "execution": "NOT_RUN"
+  },
+  "E3": "same S1/SK raw E1/E2 contrasts with other settings matched; no redundant physics benchmark",
+  "statistics": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 7711,
+    "unit": "family within stratum, common resample across models; seed averages first within each family plus each seed separately",
+    "limitations": "four families per E2 stratum and two per E1 stratum; exploratory uncertainty, no power/equivalence or industrial population guarantee; intervals do not cover all training-seed variation"
+  },
+  "P4_development_resource_allowance": {
+    "closed_loop_cells": 8,
+    "closed_loop_max_intervals": 2400,
+    "E1_snapshots": 6,
+    "E1_candidates": 16,
+    "E1_repeats": 3,
+    "E1_horizon": 5,
+    "E1_max_intervals": 1440,
+    "E1_selection": "two development snapshots per stratum/regime by fixed source ID/tick declared in P4-03 before physical outcomes; previous development data only, final test not used",
+    "computed_raw_and_plan_bytes": 921865276.8000001,
+    "analysis_allowance_bytes": 107374182.4,
+    "total_allowance_bytes": 1073741824,
+    "rule": "failure replay and single-change hypotheses plus development E1; revise estimate before exceeding declared work/space; no future criterion removed"
+  },
+  "P5_replay_application_resource_allowance": "one predeclared final family replay and one separate new same-range initial family, all eight controllers, up to16 episodes; no OOD/new-task claim",
+  "storage": {
+    "observed_raw_bytes_per_interval_max": 147308.38,
+    "observed_nonraw_bytes_per_interval_max": 20380.28,
+    "safety_multiplier": 1.5,
+    "multiplier_is": "planning allowance, not measured worst-case bound",
+    "observed_G_metadata_bytes_per_interval_max": 5543.64,
+    "parts_bytes": {
+      "E2_raw": 6363722016.0,
+      "E2_plan_and_cell_metadata": 770374584.0,
+      "E2_G_cell_metadata": 29935656.0,
+      "E1_raw": 636372201.6,
+      "E1_predictions_and_analysis_allowance": 107374182.4,
+      "learning_checkpoints_validation_allowance": 1073741824,
+      "P4_development_allowance": 1073741824,
+      "P5_replay_and_small_application": 1189016100.0,
+      "P5_G_cell_metadata": 4989276.0,
+      "free_disk_reserve": 2147483648
+    },
+    "required_bytes_including_reserve": 13396751312.0,
+    "free_bytes_at_freeze": 14254080000,
+    "headroom_beyond_reserved_bytes": 857328688.0,
+    "24family_same_allowances_required_bytes": 20560783568.0,
+    "60family_same_allowances_required_bytes": 42052880336.0,
+    "new_recording": "all original StepResult fields and initial snapshot compressed losslessly, all applied/requested commands and raw substeps retained; every plan compact replay inputs/hash and predeclared full snapshots/invalid trace",
+    "old_records": "all original successes/failures/models/statistics/sources kept unchanged",
+    "guard": "before each stage remeasure free disk and actual bytes/interval; minimum free2GiB; exceed estimate => preserve prefix and revise scope before continuing"
+  },
+  "time": {
+    "observed_full_case_wall_s_per_interval_max": 0.16532014851503435,
+    "extrapolation_factor": 1.5,
+    "E2_max_action_work_extrapolated_s": 7141.830415849484,
+    "E1_max_action_work_extrapolated_s": 714.1830415849483,
+    "P4_dev_max_action_work_extrapolated_s": 952.2440554465978,
+    "P5_replay_apply_max_action_work_extrapolated_s": 1190.3050693082473,
+    "nine_branch_update_path_mean_extrapolated_s": 41.29465634585358,
+    "nine_branch_update_path_with_allowance_s": 61.94198451878037,
+    "excluded_or_uncertain": "new E1 implementation/labels, P4 formal validation/checkpoints/audit, setup/load/bootstrap/report and retries; no guaranteed completion date or device real-time claim",
+    "same_updates_not_same_time": true
+  },
+  "measured_device_scope": {
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "cpu": "local arm64 CPU; Torch1; BLAS threads unmeasured",
+    "peak_rss_MiB": 2033.53125,
+    "other_M1_M4": "not separately measured; one small replay/training timing on the destination device before extrapolating"
+  },
+  "budget": "no paid service/cloud/equipment; additional monetary spending0; under100000KRW scope",
+  "rationale": "12 family preserves contact/rotation/three seeds/learning-control; 24 and original60 exceed current conservative storage. Sample size changes, learning core retained.",
+  "stage_scope": "P3 comparison preparation only; P4/P5 formal work not run"
+}

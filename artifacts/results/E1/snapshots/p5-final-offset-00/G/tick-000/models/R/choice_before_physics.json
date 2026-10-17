@@ -1,0 +1,26 @@
+{
+  "snapshot_id": "p5-final-offset-00/G/tick-000",
+  "family_id": "p5-final-offset-00",
+  "stratum": "offset",
+  "model": "R",
+  "selected_index": 13,
+  "selected_action": [
+    0.02186832106568739,
+    0.02053719878094413
+  ],
+  "reason": "selected",
+  "input_hash": "91a236bba816114e9bf20fb942e2d0a4f445302c2884053676c3e3eb72a7f381",
+  "candidate_hash": "62bba192539fe940fafad345c2395c1936915c2aec5fe4fd7f591135625eb1e6",
+  "prediction_hash": "4a4c307036782e3b66ec3d15731f3db01bf79450ac871c2d471e90b6018ac570",
+  "cost_hash": "c93cc44cf1a66f992c8d6475d7ec9cde13ada4392dc84359e5e8547d586cca4f",
+  "previous_applied_action_hash": "ef1ccba3107f3420038733108343ee0492fe3dd57ebfa9add8ecc93aa3365ca8",
+  "warm_sequence": null,
+  "candidate_rng_keys": [
+    6811,
+    8,
+    0,
+    1
+  ],
+  "predictor_calls": 5,
+  "before_any_physical_future": true
+}

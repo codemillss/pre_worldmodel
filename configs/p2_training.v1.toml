@@ -1,0 +1,20 @@
+# P2-04 actual one-step learning connection; not main training/final evaluation.
+training_id = "p2-one-step-pilot-v1"
+device = "cpu"
+torch_threads = 1
+deterministic_algorithms = true
+seed = 11
+shuffle_seed = 1011
+tiny_updates = 500
+tiny_subset_rule = "8 largest train-contact XY changes; 8 largest remaining absolute yaw changes; ties original episode/transition ascending"
+main_initialization = "fresh seed 11; never reuse tiny-fit weights"
+main_epochs = 30
+batch_size = 256
+drop_last = false
+one_step_loss = "mean squared physical delta error / train delta scale; yaw error wrap_2pi before scaling"
+selection = "trained epochs 1..30; validation K5 endpoint equal-regime score; strict improvement; earliest tie"
+invalid_selection = "missing regime or any invalid K5 window => null score; no survivor-only score"
+evaluation_horizons = [1, 5, 10]
+diagnostic_baseline = "repeat initial entire state; no learned response; not G or Ridge"
+checkpoint_policy = "save every strict validation improvement and final epoch; keep epoch history"
+scope = "one seed and 60 main updates; wiring/prediction pilot; no main-model or alignment claim"

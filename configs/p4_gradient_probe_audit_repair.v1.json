@@ -1,0 +1,20 @@
+{
+  "schema": "p4-gradient-probe-supplemental-audit-protocol-v1",
+  "registered_at_utc": "2026-10-15T07:42:03.938994+00:00",
+  "registered_after_diagnostic_before_v2_audit": true,
+  "scientific_protocol_unchanged": true,
+  "reason": "Producer NumPy2 weak-scalar bound expression rounds through float32; original independent auditor compared serialized bound with ideal float64 scalar arithmetic. Original first failure was closure_bound, not the gradient closure residual.",
+  "change": "Independently recompute the explicit float32 producer bound and require exact stored match. Also require actual closure residual to pass the unchanged ideal float64 bound. Record both margins for all 28 probes.",
+  "metric_formulas_scientific_thresholds_relaxed": false,
+  "original_failure_preserved": true,
+  "no_model_prediction_derivatives_updates_physics_rerun": true,
+  "bindings_sha256": {
+    "configs/p4_gradient_probe.v1.json": "ed9bd2d0bcf470f3b4595039276eec67c914910d88afd5704d28de34d7e01ab3",
+    "tools/check_p4_gradient_probe.py": "85679731b06ea6baaa846da721f77e4612eab3609927e2e6bc292a2604d63e02",
+    "reports/p4_gradient_probe_independent_review.json": "d79d6c6f46d6a3927e53ed1e8779660247042605c9c9393128464bce585cda2b",
+    "tools/check_p4_gradient_probe_v2.py": "b18709e44b38ae15925d6546af6b64e5d0aa4705089782fcbd816206af07a8ff",
+    "tests/test_p4_gradient_probe_bound_v2.py": "bcacb5378ce569c0930679f067fe3ecf39bb4392aa8e71486388e41d2936e7dc",
+    "reports/p4_gradient_probe_audit_repair_validation.json": "bc0f1759db9a51378b42febe59ce5456515a8416284f31ce012d3555b19f9c5f",
+    "runs/p4-gradient-probe-20261015-01/artifact_hashes.json": "9b4b9223e4846efda36f0afced81e35ebf22e5456b3b4e11110a20d2636ceb8c"
+  }
+}

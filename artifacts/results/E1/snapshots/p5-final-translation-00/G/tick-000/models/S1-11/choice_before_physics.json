@@ -1,0 +1,26 @@
+{
+  "snapshot_id": "p5-final-translation-00/G/tick-000",
+  "family_id": "p5-final-translation-00",
+  "stratum": "translation",
+  "model": "S1-11",
+  "selected_index": 12,
+  "selected_action": [
+    0.02267167449398493,
+    0.01964675992724483
+  ],
+  "reason": "selected",
+  "input_hash": "5fba7e541c137744a5f7a5efc2e97718dc305fec66acf7400ba8930566ac5887",
+  "candidate_hash": "b74695e0d881c47b80c9ac197918cc78069fd1df190efceb8700a10b0a854d10",
+  "prediction_hash": "07c4686889cd05aaa81ea7cbd5443015e4dcf7e637a096c9a878d7625ac1bbd0",
+  "cost_hash": "05b1ca77cce3a6f7b4cf975163d7d3302142faa3d14a0529ad63b32c6e936cf7",
+  "previous_applied_action_hash": "ef1ccba3107f3420038733108343ee0492fe3dd57ebfa9add8ecc93aa3365ca8",
+  "warm_sequence": null,
+  "candidate_rng_keys": [
+    6811,
+    0,
+    0,
+    1
+  ],
+  "predictor_calls": 5,
+  "before_any_physical_future": true
+}

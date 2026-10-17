@@ -1,0 +1,113 @@
+{
+  "status": "ACCEPT_COMPLETED_RECORDING",
+  "phase": "E2",
+  "cell": {
+    "cell_id": "p5-final-rotation-02/SK-11",
+    "controller_id": "SK-11",
+    "episode_id": "p5-final-rotation-02",
+    "episode_index": 6,
+    "family_id": "p5-final-rotation-02",
+    "stratum": "rotation"
+  },
+  "row": {
+    "cell_id": "p5-final-rotation-02/SK-11",
+    "controller_id": "SK-11",
+    "episode_id": "p5-final-rotation-02",
+    "episode_index": 6,
+    "family_id": "p5-final-rotation-02",
+    "stratum": "rotation",
+    "execution_status": "completed",
+    "termination": "ready",
+    "success": true,
+    "elapsed_s": 4.999999999999759,
+    "final_position_error_m": 0.004099892499138806,
+    "final_yaw_error_rad": 0.02869903886553793,
+    "final_linear_speed_m_s": 2.3846008951029446e-10,
+    "final_angular_speed_rad_s": 1.18539517264921e-18,
+    "final_observation_available": true,
+    "metric_state_origin": "terminal_observation",
+    "metric_state_time_s": 4.999999999999759,
+    "unavailable_reason": null,
+    "recontact_count": 0,
+    "contact_events": {
+      "entry_times_s": [
+        0.44950000000000034,
+        0.7739999999999702,
+        0.8439999999999624,
+        4.955999999999973
+      ],
+      "exit_times_s": [
+        0.7729999999999703,
+        0.8434999999999625,
+        4.941999999999981,
+        4.96149999999997
+      ],
+      "raw_crossing_count": 8,
+      "qualified_recontacts": [],
+      "deduplicated_raw_sample_count": 10001,
+      "unknown_force_sample_count": 0,
+      "inactive_min_s": 0.04,
+      "resumed_active_min_s": 0.01,
+      "duration_rule": "contiguous run last observed time minus first observed time",
+      "scope": "all raw intervals, including excluded terminal intervals; threshold events, not controller decisions"
+    },
+    "planning_wall_s": 0.26875928649678826,
+    "execution_wall_s": 7.423084291862324,
+    "planning_time_scope": "sum of unchanged G proposal and learned plan calls; recording/source checks excluded",
+    "counts": {
+      "controller_decisions": 50,
+      "physics_interval_attempts": 50,
+      "physics_intervals_returned": 50,
+      "completed_boundary_records": 50
+    },
+    "future_engine_calls": {
+      "mj_step": 0,
+      "mj_step1": 0,
+      "mj_step2": 0,
+      "mj_forward": 0,
+      "mj_inverse": 0
+    }
+  },
+  "timings": {
+    "plan": 0.2578533326741308,
+    "geometry": 0.010905953822657466,
+    "plan_calls": 46,
+    "geometry_calls": 50,
+    "plan_first_call_s": 0.006083791144192219,
+    "geometry_first_call_s": 0.0004016661550849676,
+    "plan_repeat_wall_s": 0.2517695415299386,
+    "geometry_repeat_wall_s": 0.010504287667572498,
+    "plan_repeat_calls": 45,
+    "geometry_repeat_calls": 49,
+    "initialization_wall_s": 2.385772207984701,
+    "initialization_scope": "worker entry through imports, source/capacity checks, model loading and physical reset/common snapshot check; process startup excluded",
+    "warmup_performed": false,
+    "dedicated_warmup_calls": 0,
+    "first_call_scope": "first actual task call; included in total, never relabeled as warmup"
+  },
+  "record_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/SK-11/manifest.json",
+  "record_manifest_sha256": "d155dad8c75b7c8c89cce20d6598217954aea9747a5edfe8239e6e2a72fa06a0",
+  "comparison": null,
+  "review_sha256": "ce78832496ebefd4dfa6315f5e1932cf8b27bb3fa77a84961e5f9bbadb15e175",
+  "recording_status": "COMPLETE_RECORDED",
+  "component_review_sha256": "c4c99010ca0f0533d102216fb3004ded37384416712b20e3c42a2e2420dc9ead",
+  "cell_bytes": 5930264,
+  "process_peak_rss_bytes": 692256768,
+  "P5_task_success": true,
+  "learning_updates": 0,
+  "recording_guard_phase_after_return": "CLOSED",
+  "recording_guard_phase_history": [
+    {
+      "phase": "CONTROL",
+      "timestamp_utc": "2026-10-17T11:19:35.411936+00:00"
+    },
+    {
+      "phase": "SEALING",
+      "timestamp_utc": "2026-10-17T11:19:38.289665+00:00"
+    },
+    {
+      "phase": "CLOSED",
+      "timestamp_utc": "2026-10-17T11:19:42.785507+00:00"
+    }
+  ]
+}

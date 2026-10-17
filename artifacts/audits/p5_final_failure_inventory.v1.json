@@ -1,0 +1,4623 @@
+{
+  "schema": "p5-posthoc-E2-failure-inventory-v1",
+  "status": "COMPLETE_96_SAVED_WITNESS_ENDPOINT_INVENTORY",
+  "created_at_utc": "2026-10-17T12:25:29.187037+00:00",
+  "run": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02",
+  "posthoc_descriptive_analysis": true,
+  "overall": {
+    "episodes": 96,
+    "successes": 33,
+    "termination_counts": {
+      "ready": 33,
+      "timeout": 59,
+      "controller_infeasible": 1,
+      "planner_invalid": 3
+    },
+    "failure_endpoint_criterion_not_met_counts": {
+      "position": 62,
+      "yaw": 38,
+      "angular_speed": 2
+    },
+    "failures_with_all_four_endpoint_criteria_met": 1,
+    "failure_joint_endpoint_labels": {
+      "position+yaw": 36,
+      "position": 24,
+      "none_or_unavailable": 1,
+      "position+yaw+angular_speed": 2
+    }
+  },
+  "by_controller": {
+    "G": {
+      "episodes": 12,
+      "successes": 8,
+      "termination_counts": {
+        "ready": 8,
+        "controller_infeasible": 1,
+        "timeout": 3
+      },
+      "failure_endpoint_criterion_not_met_counts": {
+        "position": 3,
+        "yaw": 1
+      },
+      "failures_with_all_four_endpoint_criteria_met": 1,
+      "failure_joint_endpoint_labels": {
+        "position+yaw": 1,
+        "position": 2,
+        "none_or_unavailable": 1
+      }
+    },
+    "R": {
+      "episodes": 12,
+      "successes": 0,
+      "termination_counts": {
+        "timeout": 12
+      },
+      "failure_endpoint_criterion_not_met_counts": {
+        "position": 12,
+        "yaw": 11
+      },
+      "failures_with_all_four_endpoint_criteria_met": 0,
+      "failure_joint_endpoint_labels": {
+        "position+yaw": 11,
+        "position": 1
+      }
+    },
+    "S1-11": {
+      "episodes": 12,
+      "successes": 4,
+      "termination_counts": {
+        "timeout": 7,
+        "ready": 4,
+        "planner_invalid": 1
+      },
+      "failure_endpoint_criterion_not_met_counts": {
+        "position": 8,
+        "yaw": 4,
+        "angular_speed": 1
+      },
+      "failures_with_all_four_endpoint_criteria_met": 0,
+      "failure_joint_endpoint_labels": {
+        "position": 4,
+        "position+yaw": 3,
+        "position+yaw+angular_speed": 1
+      }
+    },
+    "S1-23": {
+      "episodes": 12,
+      "successes": 5,
+      "termination_counts": {
+        "timeout": 5,
+        "ready": 5,
+        "planner_invalid": 2
+      },
+      "failure_endpoint_criterion_not_met_counts": {
+        "position": 7,
+        "yaw": 5,
+        "angular_speed": 1
+      },
+      "failures_with_all_four_endpoint_criteria_met": 0,
+      "failure_joint_endpoint_labels": {
+        "position": 2,
+        "position+yaw": 4,
+        "position+yaw+angular_speed": 1
+      }
+    },
+    "S1-47": {
+      "episodes": 12,
+      "successes": 4,
+      "termination_counts": {
+        "timeout": 8,
+        "ready": 4
+      },
+      "failure_endpoint_criterion_not_met_counts": {
+        "position": 8,
+        "yaw": 5
+      },
+      "failures_with_all_four_endpoint_criteria_met": 0,
+      "failure_joint_endpoint_labels": {
+        "position+yaw": 5,
+        "position": 3
+      }
+    },
+    "SK-11": {
+      "episodes": 12,
+      "successes": 4,
+      "termination_counts": {
+        "timeout": 8,
+        "ready": 4
+      },
+      "failure_endpoint_criterion_not_met_counts": {
+        "position": 8,
+        "yaw": 4
+      },
+      "failures_with_all_four_endpoint_criteria_met": 0,
+      "failure_joint_endpoint_labels": {
+        "position": 4,
+        "position+yaw": 4
+      }
+    },
+    "SK-23": {
+      "episodes": 12,
+      "successes": 4,
+      "termination_counts": {
+        "timeout": 8,
+        "ready": 4
+      },
+      "failure_endpoint_criterion_not_met_counts": {
+        "position": 8,
+        "yaw": 5
+      },
+      "failures_with_all_four_endpoint_criteria_met": 0,
+      "failure_joint_endpoint_labels": {
+        "position": 3,
+        "position+yaw": 5
+      }
+    },
+    "SK-47": {
+      "episodes": 12,
+      "successes": 4,
+      "termination_counts": {
+        "timeout": 8,
+        "ready": 4
+      },
+      "failure_endpoint_criterion_not_met_counts": {
+        "position": 8,
+        "yaw": 3
+      },
+      "failures_with_all_four_endpoint_criteria_met": 0,
+      "failure_joint_endpoint_labels": {
+        "position": 5,
+        "position+yaw": 3
+      }
+    }
+  },
+  "cases": [
+    {
+      "cell_id": "p5-final-translation-00/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-translation-00",
+      "episode_index": 0,
+      "family_id": "p5-final-translation-00",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 15.300000000007625,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 15.300000000007625,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004385918767910346,
+        "final_yaw_error_rad": 0.003748743819534717,
+        "final_linear_speed_m_s": 5.280340696215978e-09,
+        "final_angular_speed_rad_s": 2.308453292505568e-16
+      },
+      "final_held_time_s": 0.38650000000047235,
+      "boundary_sampled_held_time_max_s": 0.38650000000047235,
+      "last_decision": {
+        "index": 152,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-00/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-translation-00",
+      "episode_index": 0,
+      "family_id": "p5-final-translation-00",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.020471232523595062,
+        "final_yaw_error_rad": 0.17683651439788806,
+        "final_linear_speed_m_s": 1.633167863382182e-10,
+        "final_angular_speed_rad_s": 4.977729743137389e-16
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 4
+        },
+        "valid_predictions": 124,
+        "eligible_costs": 124,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-00/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-translation-00",
+      "episode_index": 0,
+      "family_id": "p5-final-translation-00",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.013659666208478955,
+        "final_yaw_error_rad": 0.04629333879335462,
+        "final_linear_speed_m_s": 9.154485636501863e-12,
+        "final_angular_speed_rad_s": 4.1013035141947345e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 1
+        },
+        "valid_predictions": 127,
+        "eligible_costs": 127,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-00/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-translation-00",
+      "episode_index": 0,
+      "family_id": "p5-final-translation-00",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.014732368566130772,
+        "final_yaw_error_rad": 0.049415274283627575,
+        "final_linear_speed_m_s": 0.0012585528160909622,
+        "final_angular_speed_rad_s": 0.005395446370222954
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 38
+        },
+        "valid_predictions": 90,
+        "eligible_costs": 90,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:unsafe_same_face_waypoint"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-00/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-translation-00",
+      "episode_index": 0,
+      "family_id": "p5-final-translation-00",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.009228302336421098,
+        "final_yaw_error_rad": 0.05419613670053636,
+        "final_linear_speed_m_s": 1.569942680122038e-10,
+        "final_angular_speed_rad_s": 2.7325029831052174e-17
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-00/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-translation-00",
+      "episode_index": 0,
+      "family_id": "p5-final-translation-00",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.013353855751410204,
+        "final_yaw_error_rad": 0.046951854965223916,
+        "final_linear_speed_m_s": 6.769295968834925e-13,
+        "final_angular_speed_rad_s": 1.5391989101796066e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-00/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-translation-00",
+      "episode_index": 0,
+      "family_id": "p5-final-translation-00",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.012508725448886902,
+        "final_yaw_error_rad": 0.04797414989103732,
+        "final_linear_speed_m_s": 1.5555477050841637e-10,
+        "final_angular_speed_rad_s": 3.9154597718920036e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-00/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-translation-00",
+      "episode_index": 0,
+      "family_id": "p5-final-translation-00",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.010401221233979978,
+        "final_yaw_error_rad": 0.04375442903720339,
+        "final_linear_speed_m_s": 1.569295438389111e-10,
+        "final_angular_speed_rad_s": 3.350176669240348e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-01/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-translation-01",
+      "episode_index": 1,
+      "family_id": "p5-final-translation-01",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 12.300000000003958,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 12.300000000003958,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004990755633314432,
+        "final_yaw_error_rad": 0.00299012475168503,
+        "final_linear_speed_m_s": 5.252572008184835e-09,
+        "final_angular_speed_rad_s": 1.2217343179851114e-08
+      },
+      "final_held_time_s": 0.3110000000003801,
+      "boundary_sampled_held_time_max_s": 0.3110000000003801,
+      "last_decision": {
+        "index": 122,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-01/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-translation-01",
+      "episode_index": 1,
+      "family_id": "p5-final-translation-01",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.0064856865155710685,
+        "final_yaw_error_rad": 0.061364390987607376,
+        "final_linear_speed_m_s": 1.5969717816423815e-10,
+        "final_angular_speed_rad_s": 5.622540977015765e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 1
+        },
+        "valid_predictions": 127,
+        "eligible_costs": 127,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-01/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-translation-01",
+      "episode_index": 1,
+      "family_id": "p5-final-translation-01",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.899999999999815,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.899999999999815,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.00465202029557265,
+        "final_yaw_error_rad": 0.0029458327958962194,
+        "final_linear_speed_m_s": 2.8552319705733075e-11,
+        "final_angular_speed_rad_s": 7.286280906270167e-21
+      },
+      "final_held_time_s": 0.39699999999978,
+      "boundary_sampled_held_time_max_s": 0.39699999999978,
+      "last_decision": {
+        "index": 48,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-01/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-translation-01",
+      "episode_index": 1,
+      "family_id": "p5-final-translation-01",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.999999999999759,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.999999999999759,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.003961440141359124,
+        "final_yaw_error_rad": 0.008332199166815268,
+        "final_linear_speed_m_s": 5.871749935538891e-11,
+        "final_angular_speed_rad_s": 2.40237708176994e-20
+      },
+      "final_held_time_s": 0.39849999999977914,
+      "boundary_sampled_held_time_max_s": 0.39849999999977914,
+      "last_decision": {
+        "index": 49,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-01/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-translation-01",
+      "episode_index": 1,
+      "family_id": "p5-final-translation-01",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.999999999999759,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.999999999999759,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.0048280506748246904,
+        "final_yaw_error_rad": 0.019274667868407924,
+        "final_linear_speed_m_s": 3.6276222810718e-11,
+        "final_angular_speed_rad_s": 3.7962305574943086e-20
+      },
+      "final_held_time_s": 0.39899999999977886,
+      "boundary_sampled_held_time_max_s": 0.39899999999977886,
+      "last_decision": {
+        "index": 49,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-01/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-translation-01",
+      "episode_index": 1,
+      "family_id": "p5-final-translation-01",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.899999999999815,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.899999999999815,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004676173471815298,
+        "final_yaw_error_rad": 0.005044179532032178,
+        "final_linear_speed_m_s": 5.027728339419571e-11,
+        "final_angular_speed_rad_s": 8.501498260570721e-20
+      },
+      "final_held_time_s": 0.39699999999978,
+      "boundary_sampled_held_time_max_s": 0.39699999999978,
+      "last_decision": {
+        "index": 48,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-01/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-translation-01",
+      "episode_index": 1,
+      "family_id": "p5-final-translation-01",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.899999999999815,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.899999999999815,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004897866992814022,
+        "final_yaw_error_rad": 0.009020501115190704,
+        "final_linear_speed_m_s": 1.586455922832877e-11,
+        "final_angular_speed_rad_s": 3.858964266157022e-21
+      },
+      "final_held_time_s": 0.3974999999997797,
+      "boundary_sampled_held_time_max_s": 0.3974999999997797,
+      "last_decision": {
+        "index": 48,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-01/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-translation-01",
+      "episode_index": 1,
+      "family_id": "p5-final-translation-01",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 5.099999999999704,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 5.099999999999704,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004453278609967446,
+        "final_yaw_error_rad": 0.01739583879976747,
+        "final_linear_speed_m_s": 3.8954411980949946e-11,
+        "final_angular_speed_rad_s": 3.890508902846505e-20
+      },
+      "final_held_time_s": 0.3974999999997797,
+      "boundary_sampled_held_time_max_s": 0.3974999999997797,
+      "last_decision": {
+        "index": 50,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-02/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-translation-02",
+      "episode_index": 2,
+      "family_id": "p5-final-translation-02",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 15.600000000007991,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 15.600000000007991,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.0044172556700392916,
+        "final_yaw_error_rad": 0.0005454066073578012,
+        "final_linear_speed_m_s": 4.275550001030072e-09,
+        "final_angular_speed_rad_s": 1.5717884344916436e-17
+      },
+      "final_held_time_s": 0.37750000000046136,
+      "boundary_sampled_held_time_max_s": 0.37750000000046136,
+      "last_decision": {
+        "index": 155,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-02/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-translation-02",
+      "episode_index": 2,
+      "family_id": "p5-final-translation-02",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.013633029361744134,
+        "final_yaw_error_rad": 0.11347853763650528,
+        "final_linear_speed_m_s": 1.5338202738423628e-10,
+        "final_angular_speed_rad_s": 5.788385899629872e-22
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 1
+        },
+        "valid_predictions": 127,
+        "eligible_costs": 127,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-02/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-translation-02",
+      "episode_index": 2,
+      "family_id": "p5-final-translation-02",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 5.999999999999205,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 5.999999999999205,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004778140981666718,
+        "final_yaw_error_rad": 0.011404096467510616,
+        "final_linear_speed_m_s": 3.391290871415157e-11,
+        "final_angular_speed_rad_s": 3.4852702556416146e-20
+      },
+      "final_held_time_s": 0.39699999999978,
+      "boundary_sampled_held_time_max_s": 0.39699999999978,
+      "last_decision": {
+        "index": 59,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-02/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-translation-02",
+      "episode_index": 2,
+      "family_id": "p5-final-translation-02",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 5.8999999999992605,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 5.8999999999992605,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004713116284303246,
+        "final_yaw_error_rad": 0.004015825210684554,
+        "final_linear_speed_m_s": 7.666264610832075e-12,
+        "final_angular_speed_rad_s": 1.3032327846525343e-21
+      },
+      "final_held_time_s": 0.39849999999977914,
+      "boundary_sampled_held_time_max_s": 0.39849999999977914,
+      "last_decision": {
+        "index": 58,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-02/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-translation-02",
+      "episode_index": 2,
+      "family_id": "p5-final-translation-02",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 5.799999999999316,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 5.799999999999316,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004807543417624677,
+        "final_yaw_error_rad": 0.010971132568586837,
+        "final_linear_speed_m_s": 1.4194110419151502e-09,
+        "final_angular_speed_rad_s": 4.0494437456588176e-18
+      },
+      "final_held_time_s": 0.3074999999998296,
+      "boundary_sampled_held_time_max_s": 0.3074999999998296,
+      "last_decision": {
+        "index": 57,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-02/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-translation-02",
+      "episode_index": 2,
+      "family_id": "p5-final-translation-02",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 5.8999999999992605,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 5.8999999999992605,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004745501919237106,
+        "final_yaw_error_rad": 0.006455941687224519,
+        "final_linear_speed_m_s": 7.993745363042029e-11,
+        "final_angular_speed_rad_s": 1.1794889204474707e-19
+      },
+      "final_held_time_s": 0.3994999999997786,
+      "boundary_sampled_held_time_max_s": 0.3994999999997786,
+      "last_decision": {
+        "index": 58,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-02/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-translation-02",
+      "episode_index": 2,
+      "family_id": "p5-final-translation-02",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 5.8999999999992605,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 5.8999999999992605,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004610941858897681,
+        "final_yaw_error_rad": 0.0049954266147445026,
+        "final_linear_speed_m_s": 3.811184942513752e-11,
+        "final_angular_speed_rad_s": 2.2086067883653885e-20
+      },
+      "final_held_time_s": 0.3979999999997794,
+      "boundary_sampled_held_time_max_s": 0.3979999999997794,
+      "last_decision": {
+        "index": 58,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-02/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-translation-02",
+      "episode_index": 2,
+      "family_id": "p5-final-translation-02",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 5.999999999999205,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 5.999999999999205,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.0038521678144798335,
+        "final_yaw_error_rad": 0.005981442438619756,
+        "final_linear_speed_m_s": 2.7477084353358386e-11,
+        "final_angular_speed_rad_s": 2.3771949015264514e-19
+      },
+      "final_held_time_s": 0.3954999999997808,
+      "boundary_sampled_held_time_max_s": 0.3954999999997808,
+      "last_decision": {
+        "index": 59,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-03/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-translation-03",
+      "episode_index": 3,
+      "family_id": "p5-final-translation-03",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 19.39999999999934,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 19.39999999999934,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004710016438709953,
+        "final_yaw_error_rad": 0.0023755959456752684,
+        "final_linear_speed_m_s": 3.965808667766676e-09,
+        "final_angular_speed_rad_s": 1.098305364303163e-17
+      },
+      "final_held_time_s": 0.3314999999992274,
+      "boundary_sampled_held_time_max_s": 0.3314999999992274,
+      "last_decision": {
+        "index": 193,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-03/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-translation-03",
+      "episode_index": 3,
+      "family_id": "p5-final-translation-03",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.005621599748294201,
+        "final_yaw_error_rad": 0.054091362748115664,
+        "final_linear_speed_m_s": 8.615721109701814e-13,
+        "final_angular_speed_rad_s": 1.5165019266506604e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-03/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-translation-03",
+      "episode_index": 3,
+      "family_id": "p5-final-translation-03",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.005198886981623165,
+        "final_yaw_error_rad": 0.019651771701361124,
+        "final_linear_speed_m_s": 1.5524777722844088e-10,
+        "final_angular_speed_rad_s": 3.4846959354915467e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 59
+        },
+        "valid_predictions": 69,
+        "eligible_costs": 69,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-03/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-translation-03",
+      "episode_index": 3,
+      "family_id": "p5-final-translation-03",
+      "stratum": "translation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 9.70000000000078,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 9.70000000000078,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004994578627214336,
+        "final_yaw_error_rad": 0.02599339063897599,
+        "final_linear_speed_m_s": 1.002855581402297e-09,
+        "final_angular_speed_rad_s": 3.4947855306957954e-16
+      },
+      "final_held_time_s": 0.32850000000040147,
+      "boundary_sampled_held_time_max_s": 0.32850000000040147,
+      "last_decision": {
+        "index": 96,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-03/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-translation-03",
+      "episode_index": 3,
+      "family_id": "p5-final-translation-03",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.006658623728947769,
+        "final_yaw_error_rad": 0.0759908788818695,
+        "final_linear_speed_m_s": 1.615273816867689e-10,
+        "final_angular_speed_rad_s": 6.877019875337858e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-03/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-translation-03",
+      "episode_index": 3,
+      "family_id": "p5-final-translation-03",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.007175862579082625,
+        "final_yaw_error_rad": 0.02638324401044967,
+        "final_linear_speed_m_s": 1.6251182095055332e-10,
+        "final_angular_speed_rad_s": 5.937653225301216e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 76
+        },
+        "valid_predictions": 52,
+        "eligible_costs": 52,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-03/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-translation-03",
+      "episode_index": 3,
+      "family_id": "p5-final-translation-03",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.0077372474221426915,
+        "final_yaw_error_rad": 0.029666666204452685,
+        "final_linear_speed_m_s": 1.5001208112508508e-10,
+        "final_angular_speed_rad_s": 6.010648237780534e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-translation-03/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-translation-03",
+      "episode_index": 3,
+      "family_id": "p5-final-translation-03",
+      "stratum": "translation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.009107239382279479,
+        "final_yaw_error_rad": 0.03676848449113068,
+        "final_linear_speed_m_s": 1.597143591149847e-10,
+        "final_angular_speed_rad_s": 8.43824331999339e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 84
+        },
+        "valid_predictions": 44,
+        "eligible_costs": 44,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-00/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-rotation-00",
+      "episode_index": 4,
+      "family_id": "p5-final-rotation-00",
+      "stratum": "rotation",
+      "termination": "controller_infeasible",
+      "success": false,
+      "elapsed_s": 20.79999999999608,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 20.79999999999608,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.005074849185526284,
+        "final_yaw_error_rad": 0.18374449371058166,
+        "final_linear_speed_m_s": 0.0053648060530513955,
+        "final_angular_speed_rad_s": 0.03624054069428767
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 208,
+        "source": "geometry",
+        "executed": false,
+        "holding": false,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-00/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-rotation-00",
+      "episode_index": 4,
+      "family_id": "p5-final-rotation-00",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.031635577920271725,
+        "final_yaw_error_rad": 0.2481370525073041,
+        "final_linear_speed_m_s": 3.2013986218190035e-12,
+        "final_angular_speed_rad_s": 5.503144241945252e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-00/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-rotation-00",
+      "episode_index": 4,
+      "family_id": "p5-final-rotation-00",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.02207565759383171,
+        "final_yaw_error_rad": 0.0924917874722273,
+        "final_linear_speed_m_s": 1.595124610074949e-10,
+        "final_angular_speed_rad_s": 9.852823282137004e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 103
+        },
+        "valid_predictions": 25,
+        "eligible_costs": 25,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-00/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-rotation-00",
+      "episode_index": 4,
+      "family_id": "p5-final-rotation-00",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.014880683821445456,
+        "final_yaw_error_rad": 0.13571161251852892,
+        "final_linear_speed_m_s": 8.639893795492685e-13,
+        "final_angular_speed_rad_s": 1.5509771511851743e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-00/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-rotation-00",
+      "episode_index": 4,
+      "family_id": "p5-final-rotation-00",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.01675169959476197,
+        "final_yaw_error_rad": 0.14124778946738778,
+        "final_linear_speed_m_s": 1.4982939555919344e-10,
+        "final_angular_speed_rad_s": 4.690404352772594e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-00/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-rotation-00",
+      "episode_index": 4,
+      "family_id": "p5-final-rotation-00",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.020471903842108088,
+        "final_yaw_error_rad": 0.09492996524194819,
+        "final_linear_speed_m_s": 4.829995848759849e-12,
+        "final_angular_speed_rad_s": 4.691574262140802e-25
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 83
+        },
+        "valid_predictions": 45,
+        "eligible_costs": 45,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-00/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-rotation-00",
+      "episode_index": 4,
+      "family_id": "p5-final-rotation-00",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.013794338567689503,
+        "final_yaw_error_rad": 0.13104921644970835,
+        "final_linear_speed_m_s": 1.0980473523722623e-11,
+        "final_angular_speed_rad_s": 7.85355951634073e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-00/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-rotation-00",
+      "episode_index": 4,
+      "family_id": "p5-final-rotation-00",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.015934499775777804,
+        "final_yaw_error_rad": 0.14611894020263128,
+        "final_linear_speed_m_s": 1.5392977318793088e-10,
+        "final_angular_speed_rad_s": 3.8672118706206194e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-01/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-rotation-01",
+      "episode_index": 5,
+      "family_id": "p5-final-rotation-01",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.013859929616176568,
+        "final_yaw_error_rad": 0.0038997302487548953,
+        "final_linear_speed_m_s": 2.97108270507159e-09,
+        "final_angular_speed_rad_s": 9.096220805940574e-16
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "geometry",
+        "executed": true,
+        "holding": false,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-01/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-rotation-01",
+      "episode_index": 5,
+      "family_id": "p5-final-rotation-01",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.006004651605403184,
+        "final_yaw_error_rad": 0.05589119049711754,
+        "final_linear_speed_m_s": 1.506644232812549e-10,
+        "final_angular_speed_rad_s": 6.839980592179225e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-01/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-rotation-01",
+      "episode_index": 5,
+      "family_id": "p5-final-rotation-01",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 7.399999999998429,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 7.399999999998429,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004069245499339007,
+        "final_yaw_error_rad": 0.006441342079500867,
+        "final_linear_speed_m_s": 1.2138233843666724e-10,
+        "final_angular_speed_rad_s": 4.466342275490689e-20
+      },
+      "final_held_time_s": 0.3974999999997797,
+      "boundary_sampled_held_time_max_s": 0.3974999999997797,
+      "last_decision": {
+        "index": 73,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-01/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-rotation-01",
+      "episode_index": 5,
+      "family_id": "p5-final-rotation-01",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 7.399999999998429,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 7.399999999998429,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004693176946647599,
+        "final_yaw_error_rad": 0.012845039775179146,
+        "final_linear_speed_m_s": 6.60739642737734e-11,
+        "final_angular_speed_rad_s": 1.7421732457752067e-20
+      },
+      "final_held_time_s": 0.3979999999997794,
+      "boundary_sampled_held_time_max_s": 0.3979999999997794,
+      "last_decision": {
+        "index": 73,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-01/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-rotation-01",
+      "episode_index": 5,
+      "family_id": "p5-final-rotation-01",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 7.399999999998429,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 7.399999999998429,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004510874733526673,
+        "final_yaw_error_rad": 0.010677139633614274,
+        "final_linear_speed_m_s": 3.6714656007069274e-11,
+        "final_angular_speed_rad_s": 3.305217692755869e-21
+      },
+      "final_held_time_s": 0.3974999999997797,
+      "boundary_sampled_held_time_max_s": 0.3974999999997797,
+      "last_decision": {
+        "index": 73,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-01/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-rotation-01",
+      "episode_index": 5,
+      "family_id": "p5-final-rotation-01",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 7.399999999998429,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 7.399999999998429,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004195699171123085,
+        "final_yaw_error_rad": 0.007229607482023059,
+        "final_linear_speed_m_s": 1.0659932392001587e-10,
+        "final_angular_speed_rad_s": 6.7243571487535375e-21
+      },
+      "final_held_time_s": 0.39849999999977914,
+      "boundary_sampled_held_time_max_s": 0.39849999999977914,
+      "last_decision": {
+        "index": 73,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-01/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-rotation-01",
+      "episode_index": 5,
+      "family_id": "p5-final-rotation-01",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 7.399999999998429,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 7.399999999998429,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.0040288364659187585,
+        "final_yaw_error_rad": 0.0062236812996729896,
+        "final_linear_speed_m_s": 2.6865286679255334e-11,
+        "final_angular_speed_rad_s": 2.5890705954714324e-20
+      },
+      "final_held_time_s": 0.3979999999997794,
+      "boundary_sampled_held_time_max_s": 0.3979999999997794,
+      "last_decision": {
+        "index": 73,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-01/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-rotation-01",
+      "episode_index": 5,
+      "family_id": "p5-final-rotation-01",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 7.399999999998429,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 7.399999999998429,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004728121872902704,
+        "final_yaw_error_rad": 0.013400479249723762,
+        "final_linear_speed_m_s": 2.050504135298402e-10,
+        "final_angular_speed_rad_s": 1.4608726295413915e-19
+      },
+      "final_held_time_s": 0.39649999999978025,
+      "boundary_sampled_held_time_max_s": 0.39649999999978025,
+      "last_decision": {
+        "index": 73,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-02/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-rotation-02",
+      "episode_index": 6,
+      "family_id": "p5-final-rotation-02",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004954078048999094,
+        "final_yaw_error_rad": 0.0020848705473670566,
+        "final_linear_speed_m_s": 0.0005525078604350581,
+        "final_angular_speed_rad_s": 0.000674438679685868
+      },
+      "final_held_time_s": 0.08249999999980773,
+      "boundary_sampled_held_time_max_s": 0.08249999999980773,
+      "last_decision": {
+        "index": 299,
+        "source": "geometry",
+        "executed": true,
+        "holding": false,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-02/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-rotation-02",
+      "episode_index": 6,
+      "family_id": "p5-final-rotation-02",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.01455080290642448,
+        "final_yaw_error_rad": 0.11772635135603161,
+        "final_linear_speed_m_s": 1.582086484092631e-10,
+        "final_angular_speed_rad_s": 6.469358866310863e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-02/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-rotation-02",
+      "episode_index": 6,
+      "family_id": "p5-final-rotation-02",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.999999999999759,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.999999999999759,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.00463183271652528,
+        "final_yaw_error_rad": 0.019721847892448796,
+        "final_linear_speed_m_s": 1.6204033277834374e-10,
+        "final_angular_speed_rad_s": 1.5978404605496628e-19
+      },
+      "final_held_time_s": 0.39649999999978025,
+      "boundary_sampled_held_time_max_s": 0.39649999999978025,
+      "last_decision": {
+        "index": 49,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-02/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-rotation-02",
+      "episode_index": 6,
+      "family_id": "p5-final-rotation-02",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.999999999999759,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.999999999999759,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.00390625702353705,
+        "final_yaw_error_rad": 0.02261849024583062,
+        "final_linear_speed_m_s": 3.5217807061055574e-11,
+        "final_angular_speed_rad_s": 4.358061091940024e-20
+      },
+      "final_held_time_s": 0.3959999999997805,
+      "boundary_sampled_held_time_max_s": 0.3959999999997805,
+      "last_decision": {
+        "index": 49,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-02/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-rotation-02",
+      "episode_index": 6,
+      "family_id": "p5-final-rotation-02",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.899999999999815,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.899999999999815,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004864097137130234,
+        "final_yaw_error_rad": 0.014882185856421426,
+        "final_linear_speed_m_s": 1.9692235772960475e-10,
+        "final_angular_speed_rad_s": 4.178868231843433e-19
+      },
+      "final_held_time_s": 0.3974999999997797,
+      "boundary_sampled_held_time_max_s": 0.3974999999997797,
+      "last_decision": {
+        "index": 48,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-02/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-rotation-02",
+      "episode_index": 6,
+      "family_id": "p5-final-rotation-02",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.999999999999759,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.999999999999759,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004099892499138806,
+        "final_yaw_error_rad": 0.02869903886553793,
+        "final_linear_speed_m_s": 2.3846008951029446e-10,
+        "final_angular_speed_rad_s": 1.18539517264921e-18
+      },
+      "final_held_time_s": 0.3959999999997805,
+      "boundary_sampled_held_time_max_s": 0.3959999999997805,
+      "last_decision": {
+        "index": 49,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-02/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-rotation-02",
+      "episode_index": 6,
+      "family_id": "p5-final-rotation-02",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.999999999999759,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.999999999999759,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004048479841207618,
+        "final_yaw_error_rad": 0.018549157163666674,
+        "final_linear_speed_m_s": 1.4337711445969219e-10,
+        "final_angular_speed_rad_s": 1.7806092173558617e-19
+      },
+      "final_held_time_s": 0.3954999999997808,
+      "boundary_sampled_held_time_max_s": 0.3954999999997808,
+      "last_decision": {
+        "index": 49,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-02/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-rotation-02",
+      "episode_index": 6,
+      "family_id": "p5-final-rotation-02",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 4.899999999999815,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 4.899999999999815,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004714783314997454,
+        "final_yaw_error_rad": 0.023142585475637745,
+        "final_linear_speed_m_s": 9.118739974827263e-12,
+        "final_angular_speed_rad_s": 1.6864481306771088e-21
+      },
+      "final_held_time_s": 0.3974999999997797,
+      "boundary_sampled_held_time_max_s": 0.3974999999997797,
+      "last_decision": {
+        "index": 48,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-03/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-rotation-03",
+      "episode_index": 7,
+      "family_id": "p5-final-rotation-03",
+      "stratum": "rotation",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 29.699999999975336,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.699999999975336,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004725892017336636,
+        "final_yaw_error_rad": 0.0017314273366055843,
+        "final_linear_speed_m_s": 4.084768938886389e-09,
+        "final_angular_speed_rad_s": 1.7550230902994184e-17
+      },
+      "final_held_time_s": 0.3254999999992414,
+      "boundary_sampled_held_time_max_s": 0.3254999999992414,
+      "last_decision": {
+        "index": 296,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-03/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-rotation-03",
+      "episode_index": 7,
+      "family_id": "p5-final-rotation-03",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.02684082556547653,
+        "final_yaw_error_rad": 0.21908985323009175,
+        "final_linear_speed_m_s": 1.5523582555284134e-10,
+        "final_angular_speed_rad_s": 3.6220832692825356e-19
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-03/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-rotation-03",
+      "episode_index": 7,
+      "family_id": "p5-final-rotation-03",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.009936480057049394,
+        "final_yaw_error_rad": 0.03744270789640636,
+        "final_linear_speed_m_s": 3.4818453602760913e-12,
+        "final_angular_speed_rad_s": 8.774146251744832e-22
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-03/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-rotation-03",
+      "episode_index": 7,
+      "family_id": "p5-final-rotation-03",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.014814479576744876,
+        "final_yaw_error_rad": 0.11746375682716481,
+        "final_linear_speed_m_s": 1.596194669850889e-10,
+        "final_angular_speed_rad_s": 1.348267581589069e-21
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-03/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-rotation-03",
+      "episode_index": 7,
+      "family_id": "p5-final-rotation-03",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.009174568978397675,
+        "final_yaw_error_rad": 0.031092543238089743,
+        "final_linear_speed_m_s": 1.5169631830846052e-10,
+        "final_angular_speed_rad_s": 1.9089150166700317e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-03/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-rotation-03",
+      "episode_index": 7,
+      "family_id": "p5-final-rotation-03",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.010057022853643864,
+        "final_yaw_error_rad": 0.033961032899959775,
+        "final_linear_speed_m_s": 6.984885556852644e-12,
+        "final_angular_speed_rad_s": 5.685211281086572e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-03/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-rotation-03",
+      "episode_index": 7,
+      "family_id": "p5-final-rotation-03",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.022379852642344298,
+        "final_yaw_error_rad": 0.09943903071091142,
+        "final_linear_speed_m_s": 1.5692725250735437e-10,
+        "final_angular_speed_rad_s": 4.620314196172679e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-rotation-03/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-rotation-03",
+      "episode_index": 7,
+      "family_id": "p5-final-rotation-03",
+      "stratum": "rotation",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.009660304927884897,
+        "final_yaw_error_rad": 0.03629782227062872,
+        "final_linear_speed_m_s": 1.618102115526944e-10,
+        "final_angular_speed_rad_s": 9.096139606685274e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-00/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-offset-00",
+      "episode_index": 8,
+      "family_id": "p5-final-offset-00",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.00802392993957484,
+        "final_yaw_error_rad": 0.0027995597140839656,
+        "final_linear_speed_m_s": 1.49349267774427e-10,
+        "final_angular_speed_rad_s": 7.007597515962619e-18
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "geometry",
+        "executed": true,
+        "holding": false,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-00/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-offset-00",
+      "episode_index": 8,
+      "family_id": "p5-final-offset-00",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.030779624917082294,
+        "final_yaw_error_rad": 0.2435927336833097,
+        "final_linear_speed_m_s": 1.5404818017612755e-10,
+        "final_angular_speed_rad_s": 1.392342283361875e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-00/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-offset-00",
+      "episode_index": 8,
+      "family_id": "p5-final-offset-00",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.01894300027923203,
+        "final_yaw_error_rad": 0.07498146102820735,
+        "final_linear_speed_m_s": 5.6657961200999765e-12,
+        "final_angular_speed_rad_s": 1.5152062134589902e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-00/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-offset-00",
+      "episode_index": 8,
+      "family_id": "p5-final-offset-00",
+      "stratum": "offset",
+      "termination": "planner_invalid",
+      "success": false,
+      "elapsed_s": 25.399999999985358,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 25.399999999985358,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.007595147656344917,
+        "final_yaw_error_rad": 0.09379883519145027,
+        "final_linear_speed_m_s": 0.0010107120670981606,
+        "final_angular_speed_rad_s": 0.012806987556037206
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 254,
+        "source": "model",
+        "executed": false,
+        "holding": false,
+        "plan_reason": "planner_invalid",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 128
+        },
+        "valid_predictions": 0,
+        "eligible_costs": 0,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:pusher_beyond_rear_local_recovery"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-00/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-offset-00",
+      "episode_index": 8,
+      "family_id": "p5-final-offset-00",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.013976529645963513,
+        "final_yaw_error_rad": 0.03389568934417175,
+        "final_linear_speed_m_s": 1.5467779302547196e-10,
+        "final_angular_speed_rad_s": 4.8055802479198417e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-00/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-offset-00",
+      "episode_index": 8,
+      "family_id": "p5-final-offset-00",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.021137467455349775,
+        "final_yaw_error_rad": 0.07144717674445866,
+        "final_linear_speed_m_s": 9.51737368112518e-12,
+        "final_angular_speed_rad_s": 2.5086733913079545e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-00/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-offset-00",
+      "episode_index": 8,
+      "family_id": "p5-final-offset-00",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.020158492479731654,
+        "final_yaw_error_rad": 0.0839737379471579,
+        "final_linear_speed_m_s": 1.567757131674553e-10,
+        "final_angular_speed_rad_s": 6.95919632083744e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-00/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-offset-00",
+      "episode_index": 8,
+      "family_id": "p5-final-offset-00",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.013322182427120726,
+        "final_yaw_error_rad": 0.031694054284607365,
+        "final_linear_speed_m_s": 1.5003150631942675e-10,
+        "final_angular_speed_rad_s": 1.9267461796525825e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 2
+        },
+        "valid_predictions": 126,
+        "eligible_costs": 126,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-01/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-offset-01",
+      "episode_index": 9,
+      "family_id": "p5-final-offset-01",
+      "stratum": "offset",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 19.999999999997943,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 19.999999999997943,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.00477184098834346,
+        "final_yaw_error_rad": 0.004708651625680903,
+        "final_linear_speed_m_s": 2.801228605697743e-09,
+        "final_angular_speed_rad_s": 3.66791378524596e-16
+      },
+      "final_held_time_s": 0.32799999999923557,
+      "boundary_sampled_held_time_max_s": 0.32799999999923557,
+      "last_decision": {
+        "index": 199,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-01/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-offset-01",
+      "episode_index": 9,
+      "family_id": "p5-final-offset-01",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.029836094746631764,
+        "final_yaw_error_rad": 0.23527199420772016,
+        "final_linear_speed_m_s": 1.640599448467074e-10,
+        "final_angular_speed_rad_s": 4.6159517919637606e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 8
+        },
+        "valid_predictions": 120,
+        "eligible_costs": 120,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-01/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-offset-01",
+      "episode_index": 9,
+      "family_id": "p5-final-offset-01",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.02229188858079698,
+        "final_yaw_error_rad": 0.08062240096487372,
+        "final_linear_speed_m_s": 1.2933006076336844e-12,
+        "final_angular_speed_rad_s": 2.0911060941628414e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-01/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-offset-01",
+      "episode_index": 9,
+      "family_id": "p5-final-offset-01",
+      "stratum": "offset",
+      "termination": "planner_invalid",
+      "success": false,
+      "elapsed_s": 25.899999999984193,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 25.899999999984193,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": false
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw",
+        "angular_speed"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.008638751334205759,
+        "final_yaw_error_rad": 0.11705549276719918,
+        "final_linear_speed_m_s": 0.005669554770525881,
+        "final_angular_speed_rad_s": 0.1040491805163223
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 259,
+        "source": "model",
+        "executed": false,
+        "holding": false,
+        "plan_reason": "planner_invalid",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 128
+        },
+        "valid_predictions": 0,
+        "eligible_costs": 0,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:pusher_beyond_rear_local_recovery"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-01/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-offset-01",
+      "episode_index": 9,
+      "family_id": "p5-final-offset-01",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.014876495358459287,
+        "final_yaw_error_rad": 0.06832441845879034,
+        "final_linear_speed_m_s": 1.3189728879657837e-09,
+        "final_angular_speed_rad_s": 2.4204120181168555e-16
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-01/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-offset-01",
+      "episode_index": 9,
+      "family_id": "p5-final-offset-01",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.02107299125029224,
+        "final_yaw_error_rad": 0.07577826907954632,
+        "final_linear_speed_m_s": 2.74814215365754e-12,
+        "final_angular_speed_rad_s": 7.160874772771215e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-01/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-offset-01",
+      "episode_index": 9,
+      "family_id": "p5-final-offset-01",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.024579553007735438,
+        "final_yaw_error_rad": 0.11650619035404519,
+        "final_linear_speed_m_s": 1.6028890561047416e-10,
+        "final_angular_speed_rad_s": 5.1408286699739926e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-01/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-offset-01",
+      "episode_index": 9,
+      "family_id": "p5-final-offset-01",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.018359644744142492,
+        "final_yaw_error_rad": 0.061105881057969214,
+        "final_linear_speed_m_s": 1.3583388978555902e-12,
+        "final_angular_speed_rad_s": 2.34207791052638e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-02/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-offset-02",
+      "episode_index": 10,
+      "family_id": "p5-final-offset-02",
+      "stratum": "offset",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 14.700000000006892,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 14.700000000006892,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004917039411619294,
+        "final_yaw_error_rad": 0.0004917687682364225,
+        "final_linear_speed_m_s": 6.589603141969625e-09,
+        "final_angular_speed_rad_s": 8.896585748263136e-15
+      },
+      "final_held_time_s": 0.39900000000048763,
+      "boundary_sampled_held_time_max_s": 0.39900000000048763,
+      "last_decision": {
+        "index": 146,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-02/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-offset-02",
+      "episode_index": 10,
+      "family_id": "p5-final-offset-02",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.014174521358645406,
+        "final_yaw_error_rad": 0.11925054888032349,
+        "final_linear_speed_m_s": 1.5334042747749162e-10,
+        "final_angular_speed_rad_s": 8.010495891394527e-18
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-02/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-offset-02",
+      "episode_index": 10,
+      "family_id": "p5-final-offset-02",
+      "stratum": "offset",
+      "termination": "planner_invalid",
+      "success": false,
+      "elapsed_s": 24.29999999998792,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 24.29999999998792,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": false
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw",
+        "angular_speed"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.008622588245462913,
+        "final_yaw_error_rad": 0.13813921623140546,
+        "final_linear_speed_m_s": 0.006298797200688846,
+        "final_angular_speed_rad_s": 0.11402912743987065
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 243,
+        "source": "model",
+        "executed": false,
+        "holding": false,
+        "plan_reason": "planner_invalid",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 128
+        },
+        "valid_predictions": 0,
+        "eligible_costs": 0,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:pusher_beyond_rear_local_recovery"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-02/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-offset-02",
+      "episode_index": 10,
+      "family_id": "p5-final-offset-02",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.011831208909554428,
+        "final_yaw_error_rad": 0.14218577508484384,
+        "final_linear_speed_m_s": 1.5628938854584014e-12,
+        "final_angular_speed_rad_s": 6.510743982900862e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-02/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-offset-02",
+      "episode_index": 10,
+      "family_id": "p5-final-offset-02",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.019671404027083134,
+        "final_yaw_error_rad": 0.06354487498776695,
+        "final_linear_speed_m_s": 7.504350616542624e-12,
+        "final_angular_speed_rad_s": 5.087216546772993e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 73
+        },
+        "valid_predictions": 55,
+        "eligible_costs": 55,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-02/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-offset-02",
+      "episode_index": 10,
+      "family_id": "p5-final-offset-02",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.02022194423710823,
+        "final_yaw_error_rad": 0.08506910329544626,
+        "final_linear_speed_m_s": 6.584949835618731e-13,
+        "final_angular_speed_rad_s": 8.0091322757506055e-25
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 84
+        },
+        "valid_predictions": 44,
+        "eligible_costs": 44,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-02/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-offset-02",
+      "episode_index": 10,
+      "family_id": "p5-final-offset-02",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.023163673395710824,
+        "final_yaw_error_rad": 0.0827089386316211,
+        "final_linear_speed_m_s": 1.3517220982519499e-12,
+        "final_angular_speed_rad_s": 1.3346660397107294e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-02/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-offset-02",
+      "episode_index": 10,
+      "family_id": "p5-final-offset-02",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": false,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position",
+        "yaw"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.0196822456754995,
+        "final_yaw_error_rad": 0.07475716430236812,
+        "final_linear_speed_m_s": 1.596117432939999e-10,
+        "final_angular_speed_rad_s": 2.71622177101198e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 78
+        },
+        "valid_predictions": 50,
+        "eligible_costs": 50,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-03/G",
+      "controller_id": "G",
+      "episode_id": "p5-final-offset-03",
+      "episode_index": 11,
+      "family_id": "p5-final-offset-03",
+      "stratum": "offset",
+      "termination": "ready",
+      "success": true,
+      "elapsed_s": 27.799999999979764,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 27.799999999979764,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": true,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.004612176659693525,
+        "final_yaw_error_rad": 0.009573975304901785,
+        "final_linear_speed_m_s": 4.572677480831402e-09,
+        "final_angular_speed_rad_s": 1.4779481493329592e-16
+      },
+      "final_held_time_s": 0.34349999999919945,
+      "boundary_sampled_held_time_max_s": 0.34349999999919945,
+      "last_decision": {
+        "index": 277,
+        "source": "holding",
+        "executed": true,
+        "holding": true,
+        "plan_reason": null,
+        "invalid_reasons": null,
+        "valid_predictions": null,
+        "eligible_costs": null,
+        "geometry_feasible": true,
+        "geometry_reason": "holding"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-03/R",
+      "controller_id": "R",
+      "episode_id": "p5-final-offset-03",
+      "episode_index": 11,
+      "family_id": "p5-final-offset-03",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.005190034338967836,
+        "final_yaw_error_rad": 0.04618644489043344,
+        "final_linear_speed_m_s": 1.5393110830748002e-10,
+        "final_angular_speed_rad_s": 8.022235928537433e-21
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "predicted_deep_penetration": 4
+        },
+        "valid_predictions": 124,
+        "eligible_costs": 124,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-03/S1-11",
+      "controller_id": "S1-11",
+      "episode_id": "p5-final-offset-03",
+      "episode_index": 11,
+      "family_id": "p5-final-offset-03",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.008856617339938436,
+        "final_yaw_error_rad": 0.041992548206283065,
+        "final_linear_speed_m_s": 1.2819830439833466e-12,
+        "final_angular_speed_rad_s": 1.9980957994793263e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 65
+        },
+        "valid_predictions": 63,
+        "eligible_costs": 63,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-03/S1-23",
+      "controller_id": "S1-23",
+      "episode_id": "p5-final-offset-03",
+      "episode_index": 11,
+      "family_id": "p5-final-offset-03",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.006953371078966115,
+        "final_yaw_error_rad": 0.045761435418855356,
+        "final_linear_speed_m_s": 1.5648827231658152e-10,
+        "final_angular_speed_rad_s": 5.414556657672069e-20
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-03/S1-47",
+      "controller_id": "S1-47",
+      "episode_id": "p5-final-offset-03",
+      "episode_index": 11,
+      "family_id": "p5-final-offset-03",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.009804337907234834,
+        "final_yaw_error_rad": 0.034075887144967794,
+        "final_linear_speed_m_s": 9.15113248681229e-12,
+        "final_angular_speed_rad_s": 4.481658430765598e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 76
+        },
+        "valid_predictions": 52,
+        "eligible_costs": 52,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-03/SK-11",
+      "controller_id": "SK-11",
+      "episode_id": "p5-final-offset-03",
+      "episode_index": 11,
+      "family_id": "p5-final-offset-03",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.009321431602859207,
+        "final_yaw_error_rad": 0.04089284189158526,
+        "final_linear_speed_m_s": 1.335563733447238e-11,
+        "final_angular_speed_rad_s": 1.8993611340621455e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 84
+        },
+        "valid_predictions": 44,
+        "eligible_costs": 44,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-03/SK-23",
+      "controller_id": "SK-23",
+      "episode_id": "p5-final-offset-03",
+      "episode_index": 11,
+      "family_id": "p5-final-offset-03",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.00807741883716979,
+        "final_yaw_error_rad": 0.03622477009093794,
+        "final_linear_speed_m_s": 1.624796554680203e-10,
+        "final_angular_speed_rad_s": 2.1227622985238046e-23
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {},
+        "valid_predictions": 128,
+        "eligible_costs": 128,
+        "geometry_feasible": true,
+        "geometry_reason": "command"
+      }
+    },
+    {
+      "cell_id": "p5-final-offset-03/SK-47",
+      "controller_id": "SK-47",
+      "episode_id": "p5-final-offset-03",
+      "episode_index": 11,
+      "family_id": "p5-final-offset-03",
+      "stratum": "offset",
+      "termination": "timeout",
+      "success": false,
+      "elapsed_s": 29.999999999974637,
+      "metric_state_origin": "terminal_observation",
+      "metric_state_time_s": 29.999999999974637,
+      "final_observation_available": true,
+      "endpoint_criteria_met": {
+        "position": false,
+        "yaw": true,
+        "linear_speed": true,
+        "angular_speed": true
+      },
+      "endpoint_criteria_not_met": [
+        "position"
+      ],
+      "endpoint_metrics": {
+        "final_position_error_m": 0.008983882187192017,
+        "final_yaw_error_rad": 0.03451112938322965,
+        "final_linear_speed_m_s": 1.5616932597622383e-10,
+        "final_angular_speed_rad_s": 2.205687353304487e-24
+      },
+      "final_held_time_s": 0.0,
+      "boundary_sampled_held_time_max_s": 0.0,
+      "last_decision": {
+        "index": 299,
+        "source": "model",
+        "executed": true,
+        "holding": false,
+        "plan_reason": "selected",
+        "invalid_reasons": {
+          "pusher_extent_outside_workspace": 79
+        },
+        "valid_predictions": 49,
+        "eligible_costs": 49,
+        "geometry_feasible": false,
+        "geometry_reason": "controller_infeasible:insufficient_inward_goal_direction"
+      }
+    }
+  ],
+  "source_sha256": {
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/manifest.json": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/G/worker_result.json": "bf25a819b22b4e0cc076983e19bd74e605ea31ead8fabd2efc3df52315002b9a",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/G/manifest.json": "8506e22adbb1e5633a6f90f3827372484b0bdb044a336782c878357936c1f7a1",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/G/witness.json.gz": "e777a8b77cde973127d5aa90537bd92c1dceaa7dbbf76781a510029611eae4db",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/R/worker_result.json": "5a9c7a9f2ad65d2b234439bd190fac22d3a66c4e383ae485a549a4d0966ac915",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/R/manifest.json": "29ea17d7fb8b6a54ebe4f4a80f21927dda2ac144620e1e90b3b66f09d3f3bb01",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/R/witness.json.gz": "08ce617e4fceff1c349afcfa67ce3970d1205a5ae245226fb7de2528bac6af30",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/S1-11/worker_result.json": "6d90c4ec6a34953494487313315d5d3c3c2cdb268e9c7642d2696ee4e489d91d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/S1-11/manifest.json": "dc8911f7911f939d9f66bb47188cc0a11f89f4892a5abf3c3efc5b51fe20c899",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/S1-11/witness.json.gz": "4df04ece179e35b6c847f016a0a52cff61312a438b164f5983d20667ea663e9f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/S1-23/worker_result.json": "417043c5fb4ff94935d451401494e76527ee1e9403cacd0ed92a79a262d4c169",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/S1-23/manifest.json": "49e1d9fac18e4348912dd8980274b170ca982c9a51b0f02d89ce59b832af99ff",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/S1-23/witness.json.gz": "de75220887ca81484e5927539bddc83ec1d207b7a604685a6550c208ab13df56",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/S1-47/worker_result.json": "136568001d358279e26e3d7983ffab1f9fea60f7b2a7efa325bde0ceaaa068c3",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/S1-47/manifest.json": "a28ca8187f870b9cae38e750fec1e57a16a2321efb3986c1d337de1b3692f2dc",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/S1-47/witness.json.gz": "04ab542b34881a3e1a72b03334cfd126224f829e23daa3a1e307b044d3fb568d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/SK-11/worker_result.json": "b029da0e864c126be2c63e7df9b3b84717fc7898b28828eea22f74438cb658c8",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/SK-11/manifest.json": "029b21a5eec7097b7d2287bdca409693a2f2b40547beaa82513ee595f6e74285",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/SK-11/witness.json.gz": "5578f5866a3172a28c131ab17300f639c78d73f255667da7d07aeb59c958be71",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/SK-23/worker_result.json": "a969cb24949adf1e51079e7b02740d8743f92def120b60b773f5469a5bd0384a",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/SK-23/manifest.json": "bd4f14d4c50b7a323cde3a4a3c5f0a26d2456abf3932fb022e766f08f5457c20",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/SK-23/witness.json.gz": "68e4aa74ded84078bc0986072a2cc5cab17eea303a36ebc5d062ab94f9c87b8c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/SK-47/worker_result.json": "bfff869cbcc6014ef4a600233414b4335074a1968d2723bce4e37238e001aca9",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/SK-47/manifest.json": "707b0b72e3be3480efccf0e43cfba4a8974c74b805a91007cf8a33e65bce00b4",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-00/SK-47/witness.json.gz": "435a32699ad273ce9a8d67049fabbd78a4e957051c837ec89afd8298478be3b9",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/G/worker_result.json": "bc9322128ae9550db2967c72fb4b795ef70864ae47fff6db969ccfb796dc6570",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/G/manifest.json": "9001c9f3c9b873a81fafaf64157c409ddc9a6345ea0b20837fec536b29a2e9d2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/G/witness.json.gz": "641a23cfd0389442b2f239566cd98f7bc0aeecd2ebf687de47ad72a8a9e13b7b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/R/worker_result.json": "0b5d92ead0e047f92856dc1b7ada8d4321ee862a2985150271fe1a56d2703a70",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/R/manifest.json": "460c3856d6a978fed3e714e18c30abcfbf35b97943ab829091865959f0709654",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/R/witness.json.gz": "069552d6683d4080e730975ee4253e6eb429521ed936fa3833c274a3326a50f8",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/S1-11/worker_result.json": "2d89ddd0c32852497f5a772b3bfaf7dc3e3fe40b696bef4b1247ee64a4261455",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/S1-11/manifest.json": "5d97b2bb8ab367bbbcf6cc5a4659a4a447419b236dec140ad18100a99f821e13",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/S1-11/witness.json.gz": "7b49d3e7ca1f19ec392cfd3ee8f833197506bdd965214aee22577337bf0ac390",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/S1-23/worker_result.json": "ef609fe551a1ffc2917ac4eeac9c3a7b4bb39cec912e5e0ac0c0a44d58e7b15c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/S1-23/manifest.json": "21174440697d86354abd612e5564558f6de154c3a87317b10e1aa357e398164f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/S1-23/witness.json.gz": "36618ba9ad6883d2c121bc46767f2049adb223afd352b474dfc268ced6ddcd5e",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/S1-47/worker_result.json": "2b9f8ca97d81633717222c7d6ab66ded2255dd0bc02d0e89e4d90fc7889de820",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/S1-47/manifest.json": "4a801c2c312fa2bb08e74e8b2acbc795af83783126ee9ff6629b1113be6d1cf2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/S1-47/witness.json.gz": "55fd3f56b90613de4a49fe3698adbc19c0096c2b9de6adda804938d749781a4b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/SK-11/worker_result.json": "a4a4cb87f15ae32382cc6b8778b9181754ca96408ae4ad5373ae3bef3044068a",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/SK-11/manifest.json": "7db723e72e7dfa98aef956d656e884c8df6ac3e4751080dc65da6178a6636cd9",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/SK-11/witness.json.gz": "f2b8ab60083d70447fb50d57cf6576e403a5335079daa7d54999e674a489e0d6",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/SK-23/worker_result.json": "d78db80f91e2c075aa7cc9c317afd41d79b013559403dc29affe2f7e06f5827c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/SK-23/manifest.json": "949089f8865fb6afb507f890f674aa26399e28eaeaa31ff8b9e6682329edfe66",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/SK-23/witness.json.gz": "715b371cb3e010d7680dacdc1614f5ba6245c729a76b494ee0771f399456a65d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/SK-47/worker_result.json": "f7e5c8240c499031aee879195c078ef57b3cfe385ab812bafb0985df328f5483",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/SK-47/manifest.json": "f0127eab89ec109e0d872f7a32a34e48a733b30475950b89ea67165053369555",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/SK-47/witness.json.gz": "1931f9a964ae41fe54d601cdc262412f84ce4fca7942aeb1262d3d6d0476a81d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/G/worker_result.json": "df2b5c132d0f228630c1feee5053eb225488d7e6d508ef802c72ca8a2e079f26",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/G/manifest.json": "ab3f92c43cd5dedc97255937e0fb2499b0f52f10a1908a73e5e4d33f0ab34507",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/G/witness.json.gz": "a07c3be669c5641ab2d59f3e5c385b433c8236fd16b0b2f7a9ceb3fe48848d1d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/R/worker_result.json": "51cffe174a953d44e4120ec710195631b24ffbbd718d40a954938df038ab9f2d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/R/manifest.json": "70316711c8a2e1df517b76b34bda3e073ccb6c56160662f8128e77bf56f7694f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/R/witness.json.gz": "31e7558ac5d42fec09618576f9e4ddd6ddf26484f5dcdc518b126ab75b5ad5cd",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/S1-11/worker_result.json": "5a75214a2296b34f81977b4234fa98ed2cb48bde666e9de88cf558e012b362c0",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/S1-11/manifest.json": "475b294b84df0d160c0797fe48f3942b353da8f4a42b6f12c58942927fd2b2c8",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/S1-11/witness.json.gz": "b4b1e739452d0f2ef9fce0f34e4845336316f89199971271e8c2592713914087",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/S1-23/worker_result.json": "78ba0cd2eb787789b927c4766f1735983f61b8429b2ccb69775330c3b8044db9",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/S1-23/manifest.json": "86051c3a3076d96e439b4cbbd0448188c9f7603ba9f093e3e08b1f7605e15e00",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/S1-23/witness.json.gz": "34848120cd629aea0ca732e418291180d0508d9add2bd43ebf7cbf0c8141da90",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/S1-47/worker_result.json": "ab483821d3fb0d3ae44c5da1578c5569a9a009d3b7803e9ccb4c5594e0938ff3",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/S1-47/manifest.json": "a50c7d2f1ad921962b8d3693f4de6fbd180da6dd964555ba0f6122896710a310",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/S1-47/witness.json.gz": "82e88437692d02c15d6f3ff34b1818dfadacb62bae9c9cd2f1ebb842c788901d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/SK-11/worker_result.json": "e5cf881caccb4c55ee226d0b1b305f418c146d18fc3d6f79154abcc8aa5dd8f5",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/SK-11/manifest.json": "1b4d7c6bf5123ec0a8529b3800d2e5242630aaad7d30cb801151657b857e2588",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/SK-11/witness.json.gz": "f017c99d3fcc8eaf33ef606c9488fb986d4b5f2b1692061763e95db1ea7b8288",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/SK-23/worker_result.json": "899cd0bc4090f0f2f7f9fb2cf74d49d6d24ebaf3c63d22e0f349af6d504c4b39",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/SK-23/manifest.json": "04365804dd5f1493ac4206b849ca59beaad278f99022a788afcd3c8c180e1c21",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/SK-23/witness.json.gz": "0a05d4e5ce25ef6bc06e2b4de103204e0c586bb026dda165e11dd5157f0de616",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/SK-47/worker_result.json": "a028fd010b41a734171357347b2a8763310402951fc85d3c88e41d1242598b3e",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/SK-47/manifest.json": "1b4c9145e7bca6f4df94b2fd269065d66e8e185a7a5c77ff6dfb58275b3f96b7",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/SK-47/witness.json.gz": "3c4a69c2225e135e47782fc0641ffa3a89b1346b0fce193eed2ea8ed46d39367",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/G/worker_result.json": "60b7f297917e58757e2cb5b9b66ffa34f96a26ef851bdc13829fc2743f06ab5a",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/G/manifest.json": "5b3e3a4dd7340d9f41101c0f91ba36ea637a06f3af3f32f794a6d3361d5b9402",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/G/witness.json.gz": "e85bb406d91045b2f8601ceadf5055f56dde20632a5ff2d13ff57b593ca59f88",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/R/worker_result.json": "1da19ab5a74b2faef4fed85cb06c6101b59f8f8a6bc9e01db38ad9bdd894ad23",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/R/manifest.json": "441b62e1ed9cfd5c4c30054a9f46f2e855fcb6c83d43820a1513f4aeaab9d08f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/R/witness.json.gz": "8d901572c1b31f6a9acff42a9e4837d9ee3516108022d64b495402722e6889f0",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-11/worker_result.json": "1790a0137e41876c98bded0ff1e368740c9569568efdf1790acd31cacd0e643c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-11/manifest.json": "908c594796f21decc66b8a5b62ce714e44758f7f85b1ddf7a32b1c32373a9956",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-11/witness.json.gz": "673512829251768bec01a7120bcbd52008a92bbbf5279e53b333d76d7e424055",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-23/worker_result.json": "5087d8fc0eb336c813dc605e088dbf906bb58bd872c5011466a65e400c90041d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-23/manifest.json": "7ec0066d9c45bf3dd4989ef18cc37eabf429c6e8e250b8ec7e041ddca58e9fef",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-23/witness.json.gz": "4722d85671b316caaa959009ee8da34b57e7cd3b89ad987d9ea61cc5c765a637",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-47/worker_result.json": "ca40db46086884b2baa120caf1e283dc6459e4bc09ebd12bbdf31dc059db8b29",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-47/manifest.json": "0aca4d556a53fd732a9fb9dc5b678da3e07d25cd8053b29ed4703f92482ae034",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-47/witness.json.gz": "4723ba481efeaaf006a66844d5d3930289bf7feff51445ddd3867567c6e64371",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/SK-11/worker_result.json": "747eeaf5ff1c33d0f57345eacdef7cf9ebbc2594d2d1e0c78dff76d8762563ee",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/SK-11/manifest.json": "47944283c771a17ba5d746d4fec46a0c4117b0dc841b90cfa611884f8272e965",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/SK-11/witness.json.gz": "2029f29eae2c32b7634f6626c9b2205d4e6cb3acc6d57fe88d80add348bbfce9",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/SK-23/worker_result.json": "f741def07f8451b7559f2c74b3f732c6cad497a547a45c801d902ce54db1d730",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/SK-23/manifest.json": "94d920a106561d2bf6cfe1b86bda76e20e11a55925e61453d4aed2d1207315b7",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/SK-23/witness.json.gz": "48ad5d0ce18db231ea548ed43deab387e15788e1d35ffef0bdd19e606a89a4c1",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/SK-47/worker_result.json": "ae0b7900c399a6d4d34064f18a6362f11e72171bda51164bae4d5f40ed688255",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/SK-47/manifest.json": "533a1acea09c59e50cfdb5286511adb4d51eb4ff95e21f20217fdc41ab379fde",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-03/SK-47/witness.json.gz": "757a3c4d539d669524fa23cff154b0375bdef7f3504c4bda90e34b462718be87",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/G/worker_result.json": "46807ad6124def94a0da3f23dc5e2419800c5727c6af3eebaaeeb91afd190648",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/G/manifest.json": "84f80fb6df9648e23d298794778e087c921114ca7be6532d36d081054b5ccff0",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/G/witness.json.gz": "c9eb513f5750367a4c6e3ed369e9ed2ff5b64cad0b161f74adf4fcfe4e2bdc3d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/R/worker_result.json": "8d61b616a516bbb7f48641ef0615b1d66c3ceee3e2a0caae979b2efb942ddd15",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/R/manifest.json": "6c270670b8f25519be61cfda85a648aed743e85eae9b722fbdb4fa13dcccdf23",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/R/witness.json.gz": "2d9159d7cc89c403dc9d1f0ae54ab3f349607d722194f989806666196b7191f2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/S1-11/worker_result.json": "9c93a7dbe45c0d5f5328c817e08b59d69e6b84b172374454d118e717ae9e31f7",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/S1-11/manifest.json": "d196ec7432a09c3f179823bfb6688b1aafecf1620ff67b9dd8821c586d01e4bc",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/S1-11/witness.json.gz": "481d6e9dc5027195dc985902551e8774d62782200d2c05e8e0f289e6ef8238e1",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/S1-23/worker_result.json": "860cafba1423e492f14adf046e479e0f5e9085e790aa34624bae9d78091976a2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/S1-23/manifest.json": "f711a04e77bcf0fac282e3e6bf321e89457171f76e04fb32202f5c4968cda7c2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/S1-23/witness.json.gz": "ef0efb4ae75033d351e46eb2ef680277db7664319fac077a9710ce8f3d0d3431",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/S1-47/worker_result.json": "5dedbe57348eefa4038fbd125b5b202cd1423a5afa7ede1722c18426a15acbb2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/S1-47/manifest.json": "6561b16e6810754b04575ef2d7f711ed8ed4721258af3e37d34ab1f1e422ee7e",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/S1-47/witness.json.gz": "4d24a748d5216167e73f2c6c3643468559eacace16eb41d9954122e733be32bd",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/SK-11/worker_result.json": "4575a28ff26b64325651b5974844e399f14f439876cbb411349e7a1fbed5592b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/SK-11/manifest.json": "2a714bcf0f8534a1f0709afe461a76a4a3d011c14d4881ab83f8f09758fbf962",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/SK-11/witness.json.gz": "c2139f75b884390ecac86355c85acd33763d4bdcceb522e03a9cf4fbe8dab63f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/SK-23/worker_result.json": "4f158084bd93c16fc7a1700d1d21cec6ff84b95a7d3d69b6188bceaf71c0d6ba",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/SK-23/manifest.json": "8f988429fe16b901cb5afc3faf0f6ab3ff93fe7b4780534b7f1741959617ef3d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/SK-23/witness.json.gz": "8b4caacfa3b1735d6d2aa795725af09a7fb92acd8550e1b751293eb3d68885b3",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/SK-47/worker_result.json": "00735b3ea0169ee437894ed0e7f38d7abc84823542c9a6171a3b675c50c5db53",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/SK-47/manifest.json": "eff9e1c105b111bce164dd4aab47fd70764f17aa5cdabe8d87b19a2cddd96e9e",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-00/SK-47/witness.json.gz": "5a68b7f68a6d5460c4d994a0647e3b0b1ba6b2d2d14c36864cbbed748b10686d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/G/worker_result.json": "21f2a5d66da1cd0e288a589c5b0e8e3486e70f86c8072915f18465a29292f096",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/G/manifest.json": "14b10d27af9b5c45f0e83ff499c357c0214faf0e8151fae1e6015e6226da6eee",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/G/witness.json.gz": "157da9e932611cd0f9f906ff36710ca883eed71cfddc4ef0a93b87c8d47b101c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/R/worker_result.json": "f38889d71ae07ac0ef8d7945f29e23091ddaeea7cc8b0e7e133f55260c2d4965",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/R/manifest.json": "d831efe1e0f4754cde9befbdc37ce886ba768416248e0b28d1a1c769fa2a6322",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/R/witness.json.gz": "7b13564d8587dbe4bd5bb06e8f3af81c4b7434f23102bfce928372d491ada77a",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-11/worker_result.json": "911f2ca344e96847dac735496706ec1a2a66e3c09a7a0d5792a354650585f05b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-11/manifest.json": "cb11ebc18cb2cb1d619af83f37d8c4a1510d12d2fbf050afd5c53c07f001a62e",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-11/witness.json.gz": "9c02050d5f0c2ca59a14b7949fe97c4a459832472e3e305ab31baa492d71e7c3",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-23/worker_result.json": "f40ebf7f13d04c864fc87e8e1677a2ca3b64a07f0238808ff7f3bde02ebc86f6",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-23/manifest.json": "58bace6d1c056d7c0851acf6ce50651fb6a025bb59db0cf919202f79be4dffa7",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-23/witness.json.gz": "91bea63d0e07b6a1e522ae3dd06f1d705314abfbd6ee3baf30698b2b4f86a86e",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-47/worker_result.json": "d1aff310f471fb29a951fe6b56732ee96c59d21b72ce11dce12a237511ac62d9",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-47/manifest.json": "f02fdb4c7265a8e4a33289eb0fd25f308a7317933de8ea66b9c1ef64ab788a2e",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/S1-47/witness.json.gz": "0bbb2d8acf77ecc615fb02d8a23192b7468d5e66da2bc76cb6da7da8c939c32a",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/SK-11/worker_result.json": "cb205f23691fd266f62f694e41472199b41932bb9917fcb3ed896b4e1854e9e2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/SK-11/manifest.json": "f3fad4efb63bdec346dad0167f56dcdf2e424b0371bf6af7a39b278125d33d7b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/SK-11/witness.json.gz": "1f6518dd2b5e48805b62ef7f391c266f88c79818e226f3e323f0e97625304d33",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/SK-23/worker_result.json": "8e9f29c830fc5fb34bc8372e67e3b47c271c9fbfc64e01717ea17abb6e46d51a",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/SK-23/manifest.json": "79711b231d8346ecf6289e1005dbc91cea8dcbd9e316a1926c147cc0946a24d4",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/SK-23/witness.json.gz": "ca8ef869bf32cfd68cbdf834b7a99b98173b224a6c44f0d22d21c9fb175b6048",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/SK-47/worker_result.json": "02605a529abe95b4d8cd9129ed4f454b3a9a412bae57a89f7cf33528fbe91efe",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/SK-47/manifest.json": "0261af9962ebcced7dc8b552271715e7a365694f995bbf90f4800ee7a62e1421",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-01/SK-47/witness.json.gz": "c8393ac7c1e3b8cfe3e8e0f43787fdc4ba9e10925810d45fdfc35800bd727022",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/G/worker_result.json": "cbc6873d0e3c1f641d215e94eb156a50b8d6ab048376bf3827a11e8367cdbdc0",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/G/manifest.json": "7663e93ad0ec979a8024e7403376f8a70c877dd00b1529fe63743de8b0c8bd5d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/G/witness.json.gz": "add3be13cff8e94ac5c4d7de76c157db175d0454f44541a8da4c56123019ab71",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/R/worker_result.json": "5d1e2ca7594bfa157665cd7441cf62cedd309077f96c3a2b78ba0b968cb821c7",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/R/manifest.json": "e1e1f86da45e3ed42a27d9d2d515f06c3740f6a181321c9c39f656fc9273651c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/R/witness.json.gz": "bd23776eb622d79c049bdf523be69b0c0c98895df93a11e077dd1fd27ea44504",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/S1-11/worker_result.json": "df43547df7973f2f4a289619762e898029be16029415ed16cd0bf4a2e4910976",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/S1-11/manifest.json": "b9ce9d736cd7eb084d5eb0842484aa0b5229e1082b86807a64cd7e22eaabe4d0",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/S1-11/witness.json.gz": "f41cda1dd50341c9a1b80cc37ddfa14a58b38828cfa471166fe5278a7e345fd7",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/S1-23/worker_result.json": "bba41d2747f890e9ca4ad0f19741ae5a7de02f241eb8c20c6aa045a966cbc268",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/S1-23/manifest.json": "a7b40815159fdd9923603d57dbc78c5f581d1dfda0db985b6653020fc182a5e5",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/S1-23/witness.json.gz": "7ae25a0f8450f2a72bc3244dc85471f2c51c4b5c6a25201e480ef1e62ba05290",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/S1-47/worker_result.json": "a0e177c765650238e75ac90c71e3141374eb73e5fd474e343b2e1504090f2c34",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/S1-47/manifest.json": "1acd31a21573f7266a75c75204258e16afcdf8eccdb83405bd51a53ae89e0815",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/S1-47/witness.json.gz": "31d690495ea0d0710a199618d9f4f134951af89789a56b4ffe641b7616895580",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/SK-11/worker_result.json": "9e07d7fbd0f42f0d3ac45be5125c5bd30b228a705f1b31e5da2402ccc635750f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/SK-11/manifest.json": "d155dad8c75b7c8c89cce20d6598217954aea9747a5edfe8239e6e2a72fa06a0",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/SK-11/witness.json.gz": "725432d8af8af7beb59d9bef604ca79d65dda60cbefb01a5985c2c92edeb150b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/SK-23/worker_result.json": "a22880774712afe09004595358ba9316ec2e7bab1d1a24de78d0dea13c266eab",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/SK-23/manifest.json": "23aba047130a4198038051483c837217fdc19233ea9cf45eaa52776cd0949071",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/SK-23/witness.json.gz": "0060827e158c5242dc2c88ac0e2137658c24f375a33fd94ff052b5e1b094d89e",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/SK-47/worker_result.json": "1bf14186677a8e296fe4c2dd1e2ccbc201068e24a35bab8dc08d0ecb0ff6486e",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/SK-47/manifest.json": "d843b94b500951e7517d62e17b2cdf08588055396c01739ba5310ad18c6d0fbe",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-02/SK-47/witness.json.gz": "a220366609468779c51994971f51659856b09e43e5f70eeaee9d3dee80b9de47",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/G/worker_result.json": "db4c8bce82f49089758baeaee851729a151229b8059697c84999c348cbaac1b7",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/G/manifest.json": "7545c643d4afb75d83d7353383fc4c70b636bf59ca7942927c6444fe26506061",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/G/witness.json.gz": "8920c99079c9fb2a8d59a802dc25e13428eca4744e602928ff8838026a60bcd2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/R/worker_result.json": "0da3c7ff85e18b97c2513bb4f7942260db16d833d7960743083d5937b7c8439c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/R/manifest.json": "262dcd8a435d2c7508077a05c512888ca709b89c552437ac3a08ad047cc37b13",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/R/witness.json.gz": "0e9cfe15623cf87932a0a7435121fe0529e1336f50889a96b2568498971d90b0",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-11/worker_result.json": "9fc992fc7eae75ec50d2d7f5c8beb177197340b71d55d1dd378f929b86cdf378",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-11/manifest.json": "53495f2a9e483e4455b1e31c7d38721638251a54fcb5a9f8fdd6a89f84184587",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-11/witness.json.gz": "3a6ac5552a25cdceff6fcdafac6215be4d3039e5fa1cf710b1360523784df223",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-23/worker_result.json": "c2ef3ae34083073473afd1b266dcd90759b9ba7cf8991aa4fffb1f45f584d396",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-23/manifest.json": "641340b30fce31deebe17e8bc4fdf7fbb984ca284ef4797842de4acaf3256147",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-23/witness.json.gz": "bce781d02c5086afb17da979e83a455d33aff46a2065c7220b95c6b6a32972c2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-47/worker_result.json": "a9adb977d2b6e56039f602d23c6889e1a6cdace36731c5a20a012177473c6d30",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-47/manifest.json": "a7745694ec088c472f283aba760bf29ba0789e993a096b1bf80add79c269ccbe",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-47/witness.json.gz": "7d503f94eb66939835e494aecc8d9df3849607d904c0df366bf1fc7ce53a2782",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/SK-11/worker_result.json": "3f9b075c87be9b42aed7335a930250f679b68f013b9b97da8b659eadb7307ee1",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/SK-11/manifest.json": "c7749fe0fd112bbb5ab6ecd1c17459aef4924e90d1ead42201bae93ee9fb8a95",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/SK-11/witness.json.gz": "5daf4426519c9374a76e691e68208db0f29d48fa049a65821526a6ec21ea5e3e",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/SK-23/worker_result.json": "15389e03bad1f691cc8c63375aa25f2a4a81f7e213d139592dacb578289a9f85",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/SK-23/manifest.json": "dac7b3a444507782a473b79b3089fdef3a02a6cb2e031796f85bf1a59a7439ae",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/SK-23/witness.json.gz": "fc3e1a0f65f00cb1c2e8fdfc169adaf556f96c0a7172923ab2b0a8af1fde8363",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/SK-47/worker_result.json": "ab580dd673589a83d2f154714d45278e66e90b88e4facfa8be7db8071b26d9cb",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/SK-47/manifest.json": "bc2017ca18804a6fda9c9c5c27a07a07af8f97308486db1ff48aa41b5366022d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-rotation-03/SK-47/witness.json.gz": "4c21357fe988443c9cc71955c6c8d5ca8bc5082267e409c5357b23f3852ce766",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/G/worker_result.json": "7c78a1b476e9cd3f9905646492dccbf3738bb7bface9de916a87c3a5bf6a7273",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/G/manifest.json": "902af1475530a8a89b8e9051db11ea5558beb8006d3c73a784c952c3b08d4fb2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/G/witness.json.gz": "e805b2f65c16a69474be04884ea21a1b351e3b2ee34458c081ad05c101694edf",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/R/worker_result.json": "34554d68c8904f1da45e38282a98e7ed37645a24e74bc6d27e915b00b2cb5ea4",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/R/manifest.json": "d196bc89f7b07e56178dbd91a9f45fb6bcf8c252793796be48957f9dc08c44fb",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/R/witness.json.gz": "3b78cad2a0428971e6efbfe8392b5b1151a807a129c47e5f19da5db23e4b6c7d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-11/worker_result.json": "12c8f2708fd40adf956138be7098181996533591015d40f704156fd0b1e530a6",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-11/manifest.json": "70e766344f5881e4d8ba97568c6259785ad4c41af0d4b920d528eb6fe4cd874a",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-11/witness.json.gz": "ee69f5155416c0a2d1eb0b1bc573cb8d4938320544241adb1d0a58c55ffe14f4",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/worker_result.json": "e0cf7d0ff9204248d184d5afc9a2658a75a8bddb8d042fcd6b452c896ec89887",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/manifest.json": "d8e2793ab3681d67808ca68f7b2b01562a7db18b0bc0ec60925c83df28d5dabe",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/witness.json.gz": "54c2455fe540934321d7f4352ab0a43ac43d56463fb29b210dd2214c75477b83",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-47/worker_result.json": "666bfbbe8491bc4be09634b808bf8f93d6b4a327bfb9f9d83358f51045ca8d1b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-47/manifest.json": "a6fdee894acf5d01fd2c0c49787b7638b65440258320576c9df59aeb750dcd6d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-47/witness.json.gz": "be3b8b5df3a0bcc8335c348217f9e2ad3c5291bc31973aa1904e00234c2273e0",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/SK-11/worker_result.json": "6829962aea4c1d9b141b50f2f431bcd29e4bd4854bad2e4ce4fa64c27f395154",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/SK-11/manifest.json": "6b71c411193b7a35d5f413a529ccda7e1b1d250dbc84b5c6acdf266e5297380f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/SK-11/witness.json.gz": "001d4c7cf708cbca9b72dba3dca4487b97465c1503a5f713eef1685f354553e5",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/SK-23/worker_result.json": "dd22ec6fb6073e12cff28c314589f66c4719813226ee3e7aec9b64da10b0c889",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/SK-23/manifest.json": "96554cc66bc180615e4ffc0b618b873d2e972f0ddf76ab1bd9a4cfb1d59e330b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/SK-23/witness.json.gz": "c89d599e8d9d935706de7b061302f6df4ad3b7669b4759e916a09fa66c59fa40",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/SK-47/worker_result.json": "8f7279abaed68e62cfc3094b478d2f7277d122fa3e53415d853234d7b900a071",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/SK-47/manifest.json": "11237983c78c8fb0ced838ad1671b9ad99635af8aee7211a9f619dd79221848b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-00/SK-47/witness.json.gz": "efc1ca2f1b7aa6a55b1300661f066066faa2f0183bcb258f2f0da655f16502de",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/G/worker_result.json": "67f8d0fff707129868f2821107f7cbb6648c3b61171cd5fdfcc29e2237dd93b2",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/G/manifest.json": "8d703b5b5d84cb59bc280781ec9316787312b46d738549e5cd003f3ea30d5b4f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/G/witness.json.gz": "8e0b92c08563dbc1e5538617bebf0e6bfdba4fb9c8ce2a9e0fea17acbd945498",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/R/worker_result.json": "b32ca8febaa8cb07c34776074fd5b90a2eab7f6ba9ed3337fc94032de7a259a6",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/R/manifest.json": "e6b34a01b5486b03129e8e9369ef1d1bf84434ae9d3d5afdccb452b3be3c1be9",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/R/witness.json.gz": "02c5a87f212362015aba4eb4d7fc6764e95d9e023ab8cfe271303b8fa9b8db88",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-11/worker_result.json": "5e9395f2d19ac3eaa141531944e4f0409b2ff0c0b5dc0698911e74a7b7bc62be",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-11/manifest.json": "0e774dc4b5d01b7f721b2c3727bfb14a1e6f91cf7f25e6dbbbaa8c9c7b870ad8",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-11/witness.json.gz": "9eea7d1a3ad728bad0a1954f3c13cf0b39399843ad1144eb390b8f9f21e8d9d9",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-23/worker_result.json": "f888a00498a830d18b1791ce380042addbb5a028a7584434b99fada170bb8523",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-23/manifest.json": "eadce836622c2eebe78ff7a582dd35fbec58dfdffcdb014c68e86f94d5e9d731",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-23/witness.json.gz": "a51e62c60faef18010b4a04b9367d78b660f6099a0fcb9fbe2fc6f085a7ef13b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-47/worker_result.json": "9c18343e8c011783989719beebf4b35d95a6af8282f98a9961265c3e769d862f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-47/manifest.json": "a370d031f1fd0962bb1f7d383021a2f95023969d74f02c46005e96443377a371",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-47/witness.json.gz": "17614559b62dc2bb953a28b643ab4254708dec5c3e3b99835f8f43aaa09091cf",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/SK-11/worker_result.json": "bca1ca19567876f4febd7dde3830b91bbf55661640d0564960f2c1d2f6773a41",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/SK-11/manifest.json": "1a00bdbe7e7da868bbeb07411c5789416d3b00e407030076312d6968bb4afd87",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/SK-11/witness.json.gz": "bd032b6dbaaad7799217e9b698b8ab06b14321b8b380baf6adc50df278285310",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/SK-23/worker_result.json": "7a9059ec87396361e9f9e1bb5eec3be8f64ccf9b71dfea256212ae962a37d5b4",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/SK-23/manifest.json": "eee9d1fa0de7f654111c55ce4dd8deeaf308f086dde5b2738a832ca3fff0f550",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/SK-23/witness.json.gz": "8aeee1fed40970183e1b253de1d4b72251ec8926ab67da747f5afd774a6197bf",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/SK-47/worker_result.json": "1e209f6db039870f5da26736d213f6ec123f91a85e54f02ef4922fbea2fde992",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/SK-47/manifest.json": "49945035edf0c0bbc319af2e22eb7171b004a4b349bafaf19420ba6e01aa2ae3",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-01/SK-47/witness.json.gz": "ef9a7aaba7e379f2f8ba1f28b77e255c091238ed13dc426c60bd131bfb09ccee",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/G/worker_result.json": "2db945ff1b7a9c7efd333008973d5e477d20df806eae5a4f0a9b6c6f30ba7377",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/G/manifest.json": "24ace05d433c0b374d2d366bf6a809c425884df5007c06e301cecede461dbc6d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/G/witness.json.gz": "6e649d517d0ca9fc0f927b9f5a7d253e68db4d16819baa1586b7ae9533c2ca5b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/R/worker_result.json": "799315b4cf1f4dea1c3fe22a54c761240346624ab562ea1d6b000a9a15980179",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/R/manifest.json": "8dae2d128512204d1ae25ead31b915b422b7be744d38a62ef10d2ffefa4c27a5",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/R/witness.json.gz": "8cd048371da96ee45c181d4b42fb4f7bdb4f025ff9a7c7f284c77da286584f47",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-11/worker_result.json": "cce1466c48548a5583bbd7b3440cc61274b808fd206d7361c0cf7fc29cbb8f39",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-11/manifest.json": "41136d0d2ba91cca1ca18c50bc78c1856e7a27c47833ee1a33ec33b89959d9c7",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-11/witness.json.gz": "1454e84de060cc2234b33403f73f8ba7fb04a47a6479da94ab575b7db05a1e8c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-23/worker_result.json": "97066e8d13fc0f12b2606a378e3d9124dff45023fd3ed872f4856b12caeb4d86",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-23/manifest.json": "6eb647403770dfff364a78711f566b285cd3314430adfc13e5053ef4ed0ceaee",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-23/witness.json.gz": "74130f0adba339ee113627222c9fda6b428bec1eb9cf4dcdaa5e17acec3fa932",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-47/worker_result.json": "a96411c8d88135eb0cfd2572b6b90add958d5a428c7b7caaeb69dcbed5f34d3d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-47/manifest.json": "f8ede8f065a6bc6c13d21d09e58d634c058ed622d1bc2942d6b0635f551993c1",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-47/witness.json.gz": "e087fff827b33e7745d8dd8b36987ed979af1c96ed5db8de12095eae8928de8a",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/SK-11/worker_result.json": "0a5cc6804806f5820210d4f83d4d5a65a99cd4fa8affa0769844e5a65bdaa2e9",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/SK-11/manifest.json": "7cd67a29b53a0b278104ea96c6bd60e0a96fb50a16af99ca5a4c0681eabbe38d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/SK-11/witness.json.gz": "f0d7fbf311f078732547948bce1d1fc40c25d5d1ad6c4ed867554f716761ae78",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/SK-23/worker_result.json": "bd5abeed1cadbc223af08ffd5513d26ee634b1bdc071cf21ba98613fc63b6626",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/SK-23/manifest.json": "83356f805c1cf29f0b54f0c872ba9fdf908e25e8d985e9879288765b878dff81",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/SK-23/witness.json.gz": "202d02aa12f48327f20912acce36ab245a19fc4ed7830681e8c3c932abc17c2b",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/SK-47/worker_result.json": "bbcc4fb3cb322c5ad47164e250ab5b46a95021deb2be41b019879f5a3eefd73c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/SK-47/manifest.json": "8f3f0d60bfeb1d23620dff172096c67c4707d266344cece4d8c0eb394675ac98",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-02/SK-47/witness.json.gz": "7b29538fac117256c1ab8ea3211dd1e761a4c64078d5186b90e54e52476fb08a",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/G/worker_result.json": "6a0a5b46e4d0ff6c0bea4adc282476612b40366f5945f89b343a59381b9824b9",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/G/manifest.json": "4cf696e5119a2af6f31ee8787dd897b73a3ec2543bf4242e1d1cc8823431d97d",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/G/witness.json.gz": "dbb1db95c28352aaab81dd2d80777d8df52173fbe2dad519231f9744f6f64db0",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/R/worker_result.json": "58716310dd5b76cdd28eecb72063b18f745e687f8239250a7bd97a01066f48c6",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/R/manifest.json": "5b1a9e6d144953afa86900e128cc22ec8d12b73e07c0316f6cdfa5820f9194e3",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/R/witness.json.gz": "41e3001181aeebeb29177f6e8afcba946cf4bdfa69c74359294c7baa71571427",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/S1-11/worker_result.json": "886bc1e77dec9046234cb131a9bced4cead7b34e2847210959836db0475e98f5",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/S1-11/manifest.json": "7fa56db669765c773f7682e1c294f4be93f36a65c017290a2ed50b49204d2d3c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/S1-11/witness.json.gz": "b2ca224c9a537e343c4b68ffeed7616daa304c72ae739cedbff047cb4ed8c422",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/S1-23/worker_result.json": "6e07584fda32f103b0cd44c5b1efd94127dd71bb2376d4b4655394e917871cf8",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/S1-23/manifest.json": "24b164663b3289aa121aed2244cee59ac988e2032e6e524e09b5fa1529520486",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/S1-23/witness.json.gz": "28f5629024ab4580edfb7ea36868c7a0b212b7b509fcfd091e2d844763d752bb",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/S1-47/worker_result.json": "07144ff37395586c824a83e846abdf6cbe0bc78f65cf4a881483d8cb5707cd13",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/S1-47/manifest.json": "1fc940bb61959062a47df36ae709d2edb45bde08c9f41ae759ec71eb132d99e6",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/S1-47/witness.json.gz": "b8dc57df8553878d95427262b56c1b5dd3f3d885b6b2092ac7debdceccdea646",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/SK-11/worker_result.json": "b926f2131ef1eac2e75b442bb4038bf8ec312870b3a294247e41087670dc3802",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/SK-11/manifest.json": "e42bbf2ab6d18007ebe96b90efdde6077645b2cb984df38e657bdbb164fd7d51",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/SK-11/witness.json.gz": "b58018e9f144f5a7f3fe8fd1c8aab1789987bf7a14fa01d7a0df02b2e1dd3cda",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/SK-23/worker_result.json": "ce532a6c71fd7eb2824bad0792859c1c1262fbd21b4a216725598a68f107ae9f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/SK-23/manifest.json": "680a27008a9cfad3ad198bc5c9aa24e5298c5cc01c80c028cef292b6b71b952c",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/SK-23/witness.json.gz": "54307a28fbcdf81857d58fc85986d1e4e720c3b780a819f995ec601e86665c3f",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/SK-47/worker_result.json": "e599aa394f496e68a4dec6ba248bebf4c1f981c5dc233925da809a704ced8bb7",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/SK-47/manifest.json": "78b15afd18df3cd01c3cc1ca5c790efd96f5248cd97e91c1fa4f383e20a874ad",
+    "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/SK-47/witness.json.gz": "e1666767263374eadc54a4c4098ba637371a3c8aa2b55a25f7c353af2abbeaec"
+  },
+  "limits": [
+    "Endpoint failures describe the saved final/last-valid observation, not a causal explanation for the entire trajectory.",
+    "Maximum boundary-sampled held time does not reconstruct qualifications between action boundaries; original sealed raw review supplies success acceptance.",
+    "Predicted invalidity is not proof of actual candidate infeasibility; no extra candidate future was run here.",
+    "Original success labels, thresholds, denominators and scientific settings are not changed.",
+    "This extra analysis was written after E2 outcomes and is not a preregistered new performance endpoint."
+  ],
+  "model_calls": 0,
+  "physics_calls": 0,
+  "training_updates": 0
+}

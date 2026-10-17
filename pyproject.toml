@@ -1,0 +1,9 @@
+[project]
+name = "push-align"
+version = "0.1.0"
+description = "State-based learned dynamics pilot for planar pushing"
+requires-python = ">=3.14"
+dependencies = ["numpy>=2.5", "mujoco>=3.14", "torch>=2.14"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

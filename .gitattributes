@@ -1,0 +1,12 @@
+# Generated documents and experimental arrays are binary artifacts.
+*.pdf binary
+*.png binary
+*.gif binary
+*.npz binary
+*.pt binary
+
+# Preserve these three historical source copies byte-for-byte. Their existing
+# harmless trailing whitespace is not a new change to experimental logic.
+tools/check_p4_adam_probe.py whitespace=-blank-at-eof
+tools/check_p4_finite_step.py whitespace=-blank-at-eof
+tools/p2_closed_loop_analysis.py whitespace=-blank-at-eol

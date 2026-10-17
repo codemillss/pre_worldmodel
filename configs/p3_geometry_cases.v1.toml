@@ -1,0 +1,40 @@
+# Frozen before controller tuning. Four development feasibility cases, not final test.
+case_manifest_id = "p3-01-geometry-feasibility-v1"
+episode_count = 4
+max_action_intervals = 300
+action_dt_s = 0.1
+max_episode_time_s = 30.0
+initial_pusher_surface_gap_m = 0.003
+initial_tangent_offset_m = 0.0
+recontact_trigger_push_intervals = 5
+withdrawal_intervals = 6
+withdrawal_speed_m_s = 0.02
+withdrawal_direction = "negative rear-face inward normal measured at intervention start; then fixed"
+recontact_scope = "one scheduled command-only withdrawal after five G PUSH intervals, then G reinitialization; forced-separation development recovery, not natural disturbance frequency"
+case_scope = "initial poses within the declared P1 pilot ranges; whole-task reachability is a hypothesis tested here, not established by P1"
+pass_rule = "all four ready under unchanged common task; recovery case additionally needs scheduled withdrawal, qualified measured recontact and same rear face"
+
+[[cases]]
+id = "g-translation"
+object_x = 0.02
+object_y = 0.0
+object_yaw_deg = 0.0
+require_recontact = false
+[[cases]]
+id = "g-yaw-positive"
+object_x = 0.02
+object_y = 0.0
+object_yaw_deg = 10.0
+require_recontact = false
+[[cases]]
+id = "g-yaw-negative"
+object_x = 0.02
+object_y = 0.0
+object_yaw_deg = -10.0
+require_recontact = false
+[[cases]]
+id = "g-recontact"
+object_x = 0.0
+object_y = 0.0
+object_yaw_deg = 0.0
+require_recontact = true

@@ -1,0 +1,155 @@
+{
+  "protocol_id": "p4-development-handoff-cost-v1",
+  "created_on": "2026-10-13",
+  "authorization": "User requested learned planning retained, handoff/stop/hold cost review and small comparison.",
+  "scope": "Post-hoc development correction, one archived Common11 source99, seed11. No independent P5 test, from-start performance or generalization claim.",
+  "models": [
+    "MLP-11",
+    "S1-11",
+    "SK-11"
+  ],
+  "source_tick": 99,
+  "source_folder": "runs/p3-05-20261010-01/full_resource/MLP-11",
+  "learning_updates": 0,
+  "generator": {
+    "head_horizon": 5,
+    "blocks": [
+      2,
+      3
+    ],
+    "candidate_count": 128,
+    "seed_base": 4711,
+    "stream": 0,
+    "global_tick": 99,
+    "full_snapshot_original_warm_context_G": true,
+    "action_representation": "world XY velocities, first0.1s then replan"
+  },
+  "evaluation_arms": [
+    "J_H5",
+    "J_H10_stop",
+    "TASK_H10_stop"
+  ],
+  "stopping_suffix": {
+    "zero_commands": 5,
+    "dt_s": 0.1,
+    "action_shape": [
+      128,
+      10,
+      2
+    ],
+    "state_shape": [
+      128,
+      11,
+      10
+    ],
+    "forecast_only_not_committed": true
+  },
+  "cost_only_contrast": "J_H10_stop vs TASK_H10_stop: EXACT same model forecast, actions, status and fullH10 eligibility. J_H5 is separate horizon reference: fullH10 failures after step5 do not exclude the H5 prefix.",
+  "task_rank": {
+    "order": [
+      "endpoint_surrogate_nonready",
+      "terminal_max_positive_normalized_excess_at_first_ready_else_H10",
+      "dt_integral_max_positive_normalized_excess_through_first_ready_else_H10",
+      "existing_whole_H10_J",
+      "original_index"
+    ],
+    "ratios": [
+      "position/5mm",
+      "pi_symmetric_yaw/3deg",
+      "linear_speed/.01m_s",
+      "absolute_angular_speed/.05rad_s"
+    ],
+    "held_surrogate": "Carry only observed initial held_time/qualification. Both adjacent endpoints qualify to adddt, reset on breach. First >=.3s boundary. Not proof between endpoints.",
+    "full_invalid_never_wins": true,
+    "no_tuned_weights": true,
+    "actual_success_criteria_unchanged": true,
+    "J_tiebreak_remains_whole_H10_after_surrogate_event": true
+  },
+  "physical_subset": {
+    "size": 16,
+    "rule": "reserved0..3 + all9 selections + known11/60; ascending fill, sort; preserve duplicate-action appearances, invalids; no substitution/resampling",
+    "repeats": 3,
+    "horizon": 10,
+    "max_intervals": 480,
+    "task": "Actual raw substeps use original consume_step/geometry priority; first terminal consumed once; whole fixed sequence retained."
+  },
+  "bounded_closed_loop": {
+    "cells": 9,
+    "models": 3,
+    "arms": 3,
+    "max_intervals_per_cell": 20,
+    "max_elapsed_from_source_s": 2.0,
+    "max_intervals": 180,
+    "source_TaskStatus_clock_context_G_preserved": true,
+    "holding_override": "Unchanged observed pose-in-goal =>zero",
+    "nonterminal_budget": "development_budget, not timeout",
+    "candidate_equivalence": "Initial common; subsequent path/warm/candidate divergence is policy outcome with same RNG key rule."
+  },
+  "hypotheses": [
+    {
+      "id": "C1",
+      "question": "Does the new rank prefer known ready11 to not-ready60 on the identical observedH10 traces?",
+      "expectation": "Strict actualrank11<60, originalJ60<J11; post-hoc purpose-compatibility check, not unseen validation."
+    },
+    {
+      "id": "C2",
+      "question": "Does sharedH10 task evaluation change predicted selection and actual fixed-sequence handoff?",
+      "expectation": "Freeze choices before physics; retain false-ready, missed-ready, invalids and unchanged selections. No automatic performance conclusion."
+    },
+    {
+      "id": "C3",
+      "question": "Does evaluation change improve bounded source99 suffix closed-loop handoff?",
+      "expectation": "Paired TASK vs J_H10 per same model; J_H5 controls tail. Actual raw ready/validity required, not mere changed choices."
+    }
+  ],
+  "decision_rules": {
+    "execution_PASS": "Regression/control/freeze/raw/guard/budget checks; independent of performance.",
+    "objective_compatibility_PASS": "Known pair actualrank11<60 with rawready11 and nonready60.",
+    "local_effect_DEMONSTRATED": "Within same model, TASK suffix rawready and pairedJ_H10 nonready during2s, physicallyvalid. Fixed-sequence and bounded-replanning evidence separate.",
+    "otherwise": "NOT_DEMONSTRATED or worse local result; distinguish objective, model forecast, temporal surrogate and candidate/commitment limitations; do not retune within run.",
+    "formal_freeze": "HOLD until findings reviewed; no finaltest generated/opened."
+  },
+  "budget": {
+    "prior_pool_bytes": 288015133,
+    "estimated_run_bytes": 167772160,
+    "pool_limit_bytes": 1073741824,
+    "free_reserve_bytes": 2147483648,
+    "free_at_registration_bytes": 12574720000,
+    "max_physical_intervals": 660,
+    "closed_loop_intervals_per_cell": 20,
+    "additional_spend_KRW": 0,
+    "failure": "Preserve failed run; no silent substitution/retry."
+  },
+  "bindings_sha256": {
+    "configs/acceptance.v1.toml": "d65a615a1098fc339c7b7de00e5bbd10a3dc8aa5e4a956c37cf8250d74f6ce22",
+    "configs/p3_evaluation_scope.v3.json": "0287b054ba218ae1507d24dcbede7444fba2a5ced8e6a38c5fff18340e97b239",
+    "configs/p3_planning.v1.json": "3fda5e0a2ea077ab391b2d750547973658219b847f0998163e6c1f595af3c1f8",
+    "reports/p4_04_resource_reestimate.json": "f63c3814bab4ab8f05904975100cbfa9d3a8297687a9cbff2a4791917b162713",
+    "runs/p3-04-20261009-01/seeds/seed-11/checkpoints/epoch-100/checkpoint.json": "b55ef613a55b5077b4c274e9e5356b3a6f6646056bfd56655d57fa16da71413f",
+    "runs/p3-04-20261009-01/seeds/seed-11/checkpoints/epoch-100/training_state.pt": "2a7dfc719eee84d12ecf47f209a9c1013c2f4e0bfbf2bf04470f688989e28f33",
+    "runs/p3-04-20261009-01/seeds/seed-11/checkpoints/epoch-100/weights.pt": "6d0bbc2a7727fb293a37b98450989b53aaf29cebad9f1c20731a818a72af658e",
+    "runs/p3-05-20261010-01/full_resource/MLP-11/manifest.json": "d1b7ae0a386bf4c535e4a857691735b6d52a7293e091bce3f56056ee0b1f290c",
+    "runs/p3-05-20261010-01/full_resource/MLP-11/raw_execution.json.gz": "a11954abf9082c6e2900bc3aaf28d9c4c16b3f175f7b8b55be0766ad4f1bf170",
+    "runs/p3-05-20261010-01/full_resource/MLP-11/raw_execution.npz": "ee126d4cb2b810177498c1c9aaca0a1359f134c3079639f54425155f635ebad7",
+    "runs/p3-05-20261010-01/full_resource/MLP-11/steps.jsonl": "5c643b14cc4f66446202e10522838857956d30cba8d228c947ec6e61cdcabed3",
+    "runs/p4-02-20261012-01/seeds/seed-11/S1/checkpoints/update-1000/checkpoint.json": "170cbc99d3f4cda178f4c20f168df6c62b064441021bdedbf7293b0410305356",
+    "runs/p4-02-20261012-01/seeds/seed-11/S1/checkpoints/update-1000/training_state.pt": "1b45e498e559ebceb1eff44f40be711d78f85b097010839d79d889b4d7f9608d",
+    "runs/p4-02-20261012-01/seeds/seed-11/S1/checkpoints/update-1000/weights.pt": "24b3e2973d2dfcca87624696d87046c3ac63ae95c514119699ac93ed1cf48fca",
+    "runs/p4-02-20261012-01/seeds/seed-11/SK-lambda0.1/checkpoints/update-1000/checkpoint.json": "465fcfc60ead6b170ee27f67cf9d19aa2d1b403f74fa7e5b9801c6f8f0d31e49",
+    "runs/p4-02-20261012-01/seeds/seed-11/SK-lambda0.1/checkpoints/update-1000/training_state.pt": "46ad727d1306c1b24cf4f104082085895f784c9ac7c806d76f5a9b44ce91df0f",
+    "runs/p4-02-20261012-01/seeds/seed-11/SK-lambda0.1/checkpoints/update-1000/weights.pt": "23be9f97738fd1b464ab4d21623c3103d05589cd0803e7075e205af71f306913",
+    "runs/p4-04-20261013-01/artifact_hashes.json": "31d9da465e3ef6d219d7929578b3f1e0648c83ab18e91c869f0bc800665b8e02",
+    "runs/p4-04-20261013-01/summary.json": "07f2ae54496e2a364f200f7bbd6f1cac0aa50ee3357fc245616704fe64c417d6",
+    "runs/p4-04-stop-20261013-01/artifact_hashes.json": "6d6ddc51521e91f01c9350cb34e83278bd6d4e0b23c8a94269de4ee1bad9cad9",
+    "runs/p4-04-stop-20261013-01/summary.json": "c0359a432c86776e8e553a11c6e7315d68cc09d986be10bc8ec6089a180fae85",
+    "scripts/p4_handoff_cost_compare.py": "da116d22f6bad74eb5d0d12953bbe39d7e234b31985acbaaba7eec19c45403f8",
+    "src/push_align/candidates.py": "5284c4519d9b0f349f03de4941c8d8302d814fb1ad974bf3a1df1c5afbf0f8ba",
+    "src/push_align/handoff_cost.py": "7997be5c1e688fb478ad1b0ba14a0cfa43ab4a54fe1a6fecb55c7792c8a7793b",
+    "src/push_align/planning.py": "1d13f0004ee9795ce1d08386a49c60b0540a536b817d2b1cecd02b9ef40f93bb",
+    "src/push_align/task.py": "126be1839024d338b2e32f83f2480401a0c79635ddfb1ea51d62a20051623e14",
+    "tests/test_handoff_cost.py": "4cd1c05733e02d5313222c8e099d365f2b97ea7890ccfe161cbb27da51b6486f",
+    "tests/test_p4_handoff_compare.py": "8e5ac4b22ed7de5955b61376da679c1f99a4d7a01a6468431a15fae8e6851825"
+  },
+  "final_test_used": false,
+  "personal_understanding": "NOT_ASSESSED"
+}

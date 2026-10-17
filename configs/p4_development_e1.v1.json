@@ -1,0 +1,122 @@
+{
+  "task_id": "P4-03",
+  "scope_id": "p4-development-e1-v1",
+  "created_at": "2026-10-12T16:59:51.256621+09:00",
+  "source_selection": "R path in frozen N128-H5, fixed first two pre-existing case IDs smoke-00/01; tick0, first previously recorded mixed-contact interval, tick24; no new candidate outcomes used",
+  "snapshots": [
+    {
+      "id": "dev-R-smoke-00-t000-noncontact",
+      "source_folder": "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00",
+      "source_tick": 0,
+      "source_regime": "noncontact",
+      "physical_snapshot_source": "stored"
+    },
+    {
+      "id": "dev-R-smoke-00-t002-transition",
+      "source_folder": "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00",
+      "source_tick": 2,
+      "source_regime": "transition",
+      "physical_snapshot_source": "initial_plus_2_recorded_applied_steps"
+    },
+    {
+      "id": "dev-R-smoke-00-t024-sustained_contact",
+      "source_folder": "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00",
+      "source_tick": 24,
+      "source_regime": "sustained_contact",
+      "physical_snapshot_source": "stored"
+    },
+    {
+      "id": "dev-R-smoke-01-t000-noncontact",
+      "source_folder": "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-01",
+      "source_tick": 0,
+      "source_regime": "noncontact",
+      "physical_snapshot_source": "stored"
+    },
+    {
+      "id": "dev-R-smoke-01-t001-transition",
+      "source_folder": "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-01",
+      "source_tick": 1,
+      "source_regime": "transition",
+      "physical_snapshot_source": "initial_plus_1_recorded_applied_steps"
+    },
+    {
+      "id": "dev-R-smoke-01-t024-sustained_contact",
+      "source_folder": "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-01",
+      "source_tick": 24,
+      "source_regime": "sustained_contact",
+      "physical_snapshot_source": "stored"
+    }
+  ],
+  "source_initial_condition_count": 2,
+  "snapshot_count": 6,
+  "source_regime_label": "first original recorded interval: pusher_object normal_force_N strictly above0.001 across start+200substeps; not new candidate regime input",
+  "source_files_sha256": {
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00/manifest.json": "f8a4e2ca302dafe69c172ab63f759ee6382aef74f30b5b1692bcb726fcec6ef8",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00/steps.jsonl": "45f61ad82da349f805dd006330a31ae598d08ce6021d25d304dfb53446f24045",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00/raw_execution.npz": "63d25b8fdc2ad6ea46d29190ce38d850f74e50d5ba1995c1d3553d203d18b7c9",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00/raw_execution.json.gz": "fd53601360edf59cff4014de16cfa416bbd134173987dd576f25c2152f82540c",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00/plans/step-000/identity.json": "4c87b717c61d50488048571c37e3cf12f4cf86a1d243d102e16118c6afcc2c12",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00/plans/step-024/identity.json": "1c94937eeced5034be266dc4146cb37c5324f2cd255cf314b36a1752687df350",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-01/manifest.json": "7a5938821223507f5597c07ca7c9bf5217f2fc382d10ae720fc8cb6b31e5b83a",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-01/steps.jsonl": "a82710260abe434de9196eedf4fb814abd0f37b0cb49a6eeb36056c3fc5b75da",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-01/raw_execution.npz": "96973defdd8e3f20711bd939208867325ad80a1a27c31d41b943a3ba32147dc7",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-01/raw_execution.json.gz": "5bdf4ef334261e9ed2230867ff45c8e9ea5c4e70bb0cbec68c61100514a7c389",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-01/plans/step-000/identity.json": "0feba67e6483974f0e43166a2c67683a2ada1d115c0ce362a89335b41f9482bc",
+    "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-01/plans/step-024/identity.json": "7b1343c5554e0190f28da9557baa6437759bd20ca1c5fa03b4d47947c1fe8c69"
+  },
+  "prerequisite_P4_02_summary_sha256": "30279c12243fe92f6d22c94b46bf586142abd6f8a3e461454981cc37b044af32",
+  "planning_protocol_sha256": "3fda5e0a2ea077ab391b2d750547973658219b847f0998163e6c1f595af3c1f8",
+  "scope_v3_sha256": "0287b054ba218ae1507d24dcbede7444fba2a5ced8e6a38c5fff18340e97b239",
+  "profile_sha256": "d65a615a1098fc339c7b7de00e5bbd10a3dc8aa5e4a956c37cf8250d74f6ce22",
+  "models": [
+    "R",
+    "S1-11",
+    "S1-23",
+    "S1-47",
+    "SK-11",
+    "SK-23",
+    "SK-47"
+  ],
+  "selected_lambda": 0.1,
+  "candidates": 16,
+  "horizon": 5,
+  "block_lengths": [
+    2,
+    3
+  ],
+  "candidate_groups": {
+    "reserved": 8,
+    "global": 4,
+    "local_geometry": 2,
+    "local_warm": 2
+  },
+  "candidate_rng_base": 4711,
+  "candidate_stream_id": 1,
+  "candidate_rng_keys": [
+    "base_seed",
+    "source_episode_index",
+    "source_tick",
+    "stream_id"
+  ],
+  "warm_sequence": "actual source R previous optimal sequence shared by all seven models; atinitial None; generation shifts once",
+  "previous_action": "original physically applied command; same smoothness cost for every prediction and physical replay",
+  "physical_repeats": 3,
+  "candidate_future_max_intervals": 1440,
+  "source_prefix_restore_intervals": 3,
+  "source_prefix_restore_scope": "3 recorded-action intervals only; separate from candidate future budget; preserve source raw references and exact replay witness",
+  "cost": "unchanged frozen p3_planning.v1.score; post-action 1..5 plus terminal; actual applied command sequence unchanged through all5steps unlessphysicalinvalid",
+  "candidate_selection": "predicted eligible minimum only, exacttie firstindex; choices frozen before physical future; never oracle replacement",
+  "cost_padding_atol": 1e-06,
+  "cost_padding_rtol": 1e-05,
+  "ranking": "strictly disjoint observed3repeat paddedcost intervals; any overlap includingtouch=>INCONCLUSIVE; rawconditional regret retained",
+  "repeat_validity_changed": "stage FAIL pending restoration/boundary investigation; all attempts preserved",
+  "coverage": "6 snapshots are repeated states from 2 existing development initialconditions, not6 independentfamilies",
+  "physical_failure": "retain executed prefix +inf cost; do not sum short failedprefix as advantage; allinvalid/allmodelinvalid/selectedinvalid denominators preserved",
+  "stage_storage_allowance_bytes": 1073741824,
+  "free_reserve_bytes": 2147483648,
+  "free_at_registration_bytes": 13721600000,
+  "new_closed_loop_alignment": "NOT_RUN",
+  "final_test_used": false,
+  "learning_updates": 0,
+  "personal_understanding": "NOT_ASSESSED"
+}

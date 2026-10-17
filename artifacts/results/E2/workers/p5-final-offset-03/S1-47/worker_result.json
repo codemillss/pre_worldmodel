@@ -1,0 +1,236 @@
+{
+  "status": "ACCEPT_COMPLETED_TASK_FAILURE",
+  "phase": "E2",
+  "cell": {
+    "cell_id": "p5-final-offset-03/S1-47",
+    "controller_id": "S1-47",
+    "episode_id": "p5-final-offset-03",
+    "episode_index": 11,
+    "family_id": "p5-final-offset-03",
+    "stratum": "offset"
+  },
+  "row": {
+    "cell_id": "p5-final-offset-03/S1-47",
+    "controller_id": "S1-47",
+    "episode_id": "p5-final-offset-03",
+    "episode_index": 11,
+    "family_id": "p5-final-offset-03",
+    "stratum": "offset",
+    "execution_status": "completed",
+    "termination": "timeout",
+    "success": false,
+    "elapsed_s": 29.999999999974637,
+    "final_position_error_m": 0.009804337907234834,
+    "final_yaw_error_rad": 0.034075887144967794,
+    "final_linear_speed_m_s": 9.15113248681229e-12,
+    "final_angular_speed_rad_s": 4.481658430765598e-24,
+    "final_observation_available": true,
+    "metric_state_origin": "terminal_observation",
+    "metric_state_time_s": 29.999999999974637,
+    "unavailable_reason": null,
+    "recontact_count": 14,
+    "contact_events": {
+      "entry_times_s": [
+        0.45150000000000035,
+        4.958999999999971,
+        4.990499999999954,
+        5.007999999999944,
+        5.028499999999933,
+        5.209499999999832,
+        5.244499999999813,
+        5.385499999999735,
+        5.48499999999968,
+        5.512999999999664,
+        5.53799999999965,
+        5.884499999999458,
+        6.112499999999332,
+        6.538499999999096,
+        7.012999999998833,
+        7.183999999998738,
+        7.517499999998553,
+        7.861499999998363,
+        8.403499999998779,
+        9.00999999999952,
+        9.879500000000583,
+        10.29400000000109,
+        10.853000000001773
+      ],
+      "exit_times_s": [
+        4.956499999999973,
+        4.989499999999954,
+        5.006999999999945,
+        5.027499999999933,
+        5.041999999999925,
+        5.241999999999814,
+        5.2579999999998055,
+        5.48399999999968,
+        5.511999999999665,
+        5.537499999999651,
+        5.541999999999648,
+        5.941999999999426,
+        6.341999999999205,
+        6.6419999999990385,
+        7.041999999998817,
+        7.3419999999986505,
+        7.641999999998484,
+        7.941999999998318,
+        8.441999999998826,
+        9.04199999999956,
+        10.042000000000781,
+        10.44200000000127,
+        10.942000000001881
+      ],
+      "raw_crossing_count": 46,
+      "qualified_recontacts": [
+        {
+          "contact_loss_time_s": 5.041999999999925,
+          "contact_resume_time_s": 5.209499999999832,
+          "observed_inactive_span_s": 0.16699999999990744,
+          "observed_resumed_active_span_s": 0.031999999999982265
+        },
+        {
+          "contact_loss_time_s": 5.2579999999998055,
+          "contact_resume_time_s": 5.385499999999735,
+          "observed_inactive_span_s": 0.1269999999999296,
+          "observed_resumed_active_span_s": 0.09799999999994569
+        },
+        {
+          "contact_loss_time_s": 5.541999999999648,
+          "contact_resume_time_s": 5.884499999999458,
+          "observed_inactive_span_s": 0.34199999999981046,
+          "observed_resumed_active_span_s": 0.05699999999996841
+        },
+        {
+          "contact_loss_time_s": 5.941999999999426,
+          "contact_resume_time_s": 6.112499999999332,
+          "observed_inactive_span_s": 0.16999999999990578,
+          "observed_resumed_active_span_s": 0.22899999999987308
+        },
+        {
+          "contact_loss_time_s": 6.341999999999205,
+          "contact_resume_time_s": 6.538499999999096,
+          "observed_inactive_span_s": 0.19599999999989137,
+          "observed_resumed_active_span_s": 0.10299999999994291
+        },
+        {
+          "contact_loss_time_s": 6.6419999999990385,
+          "contact_resume_time_s": 7.012999999998833,
+          "observed_inactive_span_s": 0.37049999999979466,
+          "observed_resumed_active_span_s": 0.028499999999984205
+        },
+        {
+          "contact_loss_time_s": 7.041999999998817,
+          "contact_resume_time_s": 7.183999999998738,
+          "observed_inactive_span_s": 0.14149999999992158,
+          "observed_resumed_active_span_s": 0.1574999999999127
+        },
+        {
+          "contact_loss_time_s": 7.3419999999986505,
+          "contact_resume_time_s": 7.517499999998553,
+          "observed_inactive_span_s": 0.174999999999903,
+          "observed_resumed_active_span_s": 0.12399999999993128
+        },
+        {
+          "contact_loss_time_s": 7.641999999998484,
+          "contact_resume_time_s": 7.861499999998363,
+          "observed_inactive_span_s": 0.21899999999987863,
+          "observed_resumed_active_span_s": 0.07999999999995566
+        },
+        {
+          "contact_loss_time_s": 7.941999999998318,
+          "contact_resume_time_s": 8.403499999998779,
+          "observed_inactive_span_s": 0.4610000000004604,
+          "observed_resumed_active_span_s": 0.03800000000004644
+        },
+        {
+          "contact_loss_time_s": 8.441999999998826,
+          "contact_resume_time_s": 9.00999999999952,
+          "observed_inactive_span_s": 0.5675000000006936,
+          "observed_resumed_active_span_s": 0.0315000000000385
+        },
+        {
+          "contact_loss_time_s": 9.04199999999956,
+          "contact_resume_time_s": 9.879500000000583,
+          "observed_inactive_span_s": 0.8370000000010229,
+          "observed_resumed_active_span_s": 0.16200000000019799
+        },
+        {
+          "contact_loss_time_s": 10.042000000000781,
+          "contact_resume_time_s": 10.29400000000109,
+          "observed_inactive_span_s": 0.25150000000030737,
+          "observed_resumed_active_span_s": 0.14750000000018026
+        },
+        {
+          "contact_loss_time_s": 10.44200000000127,
+          "contact_resume_time_s": 10.853000000001773,
+          "observed_inactive_span_s": 0.4105000000005017,
+          "observed_resumed_active_span_s": 0.08850000000010816
+        }
+      ],
+      "deduplicated_raw_sample_count": 60001,
+      "unknown_force_sample_count": 0,
+      "inactive_min_s": 0.04,
+      "resumed_active_min_s": 0.01,
+      "duration_rule": "contiguous run last observed time minus first observed time",
+      "scope": "all raw intervals, including excluded terminal intervals; threshold events, not controller decisions"
+    },
+    "planning_wall_s": 2.1265018230769783,
+    "execution_wall_s": 41.25007229205221,
+    "planning_time_scope": "sum of unchanged G proposal and learned plan calls; recording/source checks excluded",
+    "counts": {
+      "controller_decisions": 300,
+      "physics_interval_attempts": 300,
+      "physics_intervals_returned": 300,
+      "completed_boundary_records": 300
+    },
+    "future_engine_calls": {
+      "mj_step": 0,
+      "mj_step1": 0,
+      "mj_step2": 0,
+      "mj_forward": 0,
+      "mj_inverse": 0
+    }
+  },
+  "timings": {
+    "plan": 2.0678214512299746,
+    "geometry": 0.0586803718470037,
+    "plan_calls": 300,
+    "geometry_calls": 300,
+    "plan_first_call_s": 0.01704366598278284,
+    "geometry_first_call_s": 0.00023141712881624699,
+    "plan_repeat_wall_s": 2.050777785247192,
+    "geometry_repeat_wall_s": 0.05844895471818745,
+    "plan_repeat_calls": 299,
+    "geometry_repeat_calls": 299,
+    "initialization_wall_s": 3.8226403340231627,
+    "initialization_scope": "worker entry through imports, source/capacity checks, model loading and physical reset/common snapshot check; process startup excluded",
+    "warmup_performed": false,
+    "dedicated_warmup_calls": 0,
+    "first_call_scope": "first actual task call; included in total, never relabeled as warmup"
+  },
+  "record_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/S1-47/manifest.json",
+  "record_manifest_sha256": "1fc940bb61959062a47df36ae709d2edb45bde08c9f41ae759ec71eb132d99e6",
+  "comparison": null,
+  "review_sha256": "51d0fba2ded6d29387c574fd7a54cbf056c1023cd68934a7322d3c9f316b3769",
+  "recording_status": "COMPLETE_RECORDED",
+  "component_review_sha256": "8ad1a99bfd80289961bc039fba187246617e461128de907d9632888f4107706b",
+  "cell_bytes": 19740191,
+  "process_peak_rss_bytes": 1575239680,
+  "P5_task_success": false,
+  "learning_updates": 0,
+  "recording_guard_phase_after_return": "CLOSED",
+  "recording_guard_phase_history": [
+    {
+      "phase": "CONTROL",
+      "timestamp_utc": "2026-10-17T12:14:56.226722+00:00"
+    },
+    {
+      "phase": "SEALING",
+      "timestamp_utc": "2026-10-17T12:15:12.686146+00:00"
+    },
+    {
+      "phase": "CLOSED",
+      "timestamp_utc": "2026-10-17T12:15:37.418092+00:00"
+    }
+  ]
+}

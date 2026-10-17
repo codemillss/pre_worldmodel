@@ -1,0 +1,80 @@
+{
+  "spec": {
+    "candidates": 16,
+    "controller_id": "G",
+    "episode_index": 1,
+    "family_id": "p5-final-translation-01",
+    "horizon": 5,
+    "missing_policy": "INCOMPLETE without replacement or postterminal generation",
+    "physical_repeats": 3,
+    "snapshot_id": "p5-final-translation-01/G/tick-029",
+    "stratum": "translation",
+    "tick": 29
+  },
+  "source_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/G/manifest.json",
+  "source_manifest_sha256": "9001c9f3c9b873a81fafaf64157c409ddc9a6345ea0b20837fec536b29a2e9d2",
+  "source_full_input": {
+    "tick": 29,
+    "files_sha256": {
+      "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/G/plans/step-029/trace.npz": "f804d3eff8b23b76e188f28466dfb01a7ced52ce5a1ff102c986e1a998f18ec2",
+      "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/G/plans/step-029/input.json.gz": "9df1e699ac82a67bc40f026e81bfa0df7bf68fbfa61cbcadbd79280140e8ee9c"
+    },
+    "bytes": {
+      "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/G/plans/step-029/trace.npz": 1793,
+      "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-01/G/plans/step-029/input.json.gz": 32651
+    },
+    "input_exact_sha256": "7c238cf6dffb7df99c6a7fd81a4482a7fd10a6fcb0811b9d3cc0cfe47dbbfd54",
+    "full_model_arrays": false
+  },
+  "input_hash": "5844eab4f0d2b2935ffb4c87d1e3fb613adbd7c6dba2f75dfe636ac55139c86b",
+  "previous_applied_action": [
+    0.02986823955104524,
+    -0.0028086057255116703
+  ],
+  "warm_sequence": null,
+  "candidate_rng_before": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 1451151058392797350570205606015817286,
+      "inc": 16498446039688605430930559628978348519
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "candidate_rng_after": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 162785683958218177376290009269274840678,
+      "inc": 16498446039688605430930559628978348519
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "candidate_hash": "d986a75a833bd5aa37e37d91d3aa4c16e295680b18fdad7e819d30ba23183fe8",
+  "generation": {
+    "candidate_count": 16,
+    "horizon": 5,
+    "block_lengths": [
+      2,
+      3
+    ],
+    "command_speed_norm_max_m_s": 0.03,
+    "physical_command_speed_norm_max_m_s": 0.06,
+    "planner_support_limit_overridden": true,
+    "geometry_proposal_enabled": true,
+    "geometry_proposal_status": "available",
+    "geometry_fixed_slots_zeroed": false,
+    "geometry_tangent_perturbation_applied": true,
+    "warm_start_available": false,
+    "random_group_counts": {
+      "global": 4,
+      "local_geometry": 2,
+      "local_warm": 2
+    },
+    "rng": "numpy_PCG64",
+    "replacement_draws": 0,
+    "duplicates_removed": 0
+  },
+  "observed_signed_geometric_gap_m": -4.5869661052834465e-05,
+  "regime_scope": "Current observed geometry only; no assumption of actual future contact/force."
+}

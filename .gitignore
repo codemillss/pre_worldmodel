@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example
+tmp/
+*.log
+*.egg-info/
+build/
+dist/
+# Full raw experimental archives remain in the original local research folder.
+/runs/
+/data/

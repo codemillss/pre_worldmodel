@@ -1,0 +1,286 @@
+{
+  "status": "ACCEPT_COMPLETED_TASK_FAILURE",
+  "phase": "E2",
+  "cell": {
+    "cell_id": "p5-final-offset-03/SK-47",
+    "controller_id": "SK-47",
+    "episode_id": "p5-final-offset-03",
+    "episode_index": 11,
+    "family_id": "p5-final-offset-03",
+    "stratum": "offset"
+  },
+  "row": {
+    "cell_id": "p5-final-offset-03/SK-47",
+    "controller_id": "SK-47",
+    "episode_id": "p5-final-offset-03",
+    "episode_index": 11,
+    "family_id": "p5-final-offset-03",
+    "stratum": "offset",
+    "execution_status": "completed",
+    "termination": "timeout",
+    "success": false,
+    "elapsed_s": 29.999999999974637,
+    "final_position_error_m": 0.008983882187192017,
+    "final_yaw_error_rad": 0.03451112938322965,
+    "final_linear_speed_m_s": 1.5616932597622383e-10,
+    "final_angular_speed_rad_s": 2.205687353304487e-24,
+    "final_observation_available": true,
+    "metric_state_origin": "terminal_observation",
+    "metric_state_time_s": 29.999999999974637,
+    "unavailable_reason": null,
+    "recontact_count": 14,
+    "contact_events": {
+      "entry_times_s": [
+        0.45150000000000035,
+        3.3550000000002878,
+        3.4045000000003043,
+        3.7795000000004295,
+        3.8095000000004395,
+        3.843500000000451,
+        3.922000000000477,
+        4.768000000000077,
+        4.803500000000057,
+        4.826000000000045,
+        4.847500000000033,
+        4.862500000000025,
+        4.868000000000022,
+        4.880000000000015,
+        4.88850000000001,
+        4.899500000000004,
+        4.908499999999999,
+        4.918499999999994,
+        4.927499999999989,
+        4.936999999999983,
+        4.945999999999978,
+        4.954999999999973,
+        4.963499999999969,
+        4.971999999999964,
+        4.981499999999959,
+        4.989499999999954,
+        4.99799999999995,
+        5.006499999999945,
+        5.01499999999994,
+        5.022999999999936,
+        5.031499999999931,
+        5.039999999999926,
+        5.261499999999804,
+        5.446999999999701,
+        5.643499999999592,
+        5.792999999999509,
+        6.228999999999267,
+        6.875999999998909,
+        7.111999999998778,
+        7.355499999998643,
+        7.443999999998594,
+        7.573999999998522,
+        8.401999999998777,
+        9.69700000000036,
+        10.190000000000962,
+        10.891000000001819,
+        12.079000000003271,
+        12.37300000000363
+      ],
+      "exit_times_s": [
+        3.353000000000287,
+        3.403000000000304,
+        3.7790000000004293,
+        3.808500000000439,
+        3.8430000000004507,
+        3.9205000000004766,
+        4.767000000000078,
+        4.803000000000058,
+        4.825500000000045,
+        4.846500000000034,
+        4.862000000000025,
+        4.867500000000022,
+        4.879500000000015,
+        4.888000000000011,
+        4.8990000000000045,
+        4.9079999999999995,
+        4.917999999999994,
+        4.926999999999989,
+        4.936499999999984,
+        4.945499999999979,
+        4.954499999999974,
+        4.962999999999969,
+        4.971499999999964,
+        4.980999999999959,
+        4.988999999999955,
+        4.99749999999995,
+        5.005999999999945,
+        5.0144999999999404,
+        5.022499999999936,
+        5.030999999999931,
+        5.039499999999927,
+        5.041999999999925,
+        5.350999999999754,
+        5.641999999999593,
+        5.647999999999589,
+        6.041999999999371,
+        6.541999999999094,
+        6.941999999998872,
+        7.141999999998761,
+        7.441999999998595,
+        7.4574999999985865,
+        7.641999999998484,
+        8.652999999999084,
+        9.94200000000066,
+        10.342000000001148,
+        10.942000000001881,
+        12.247500000003477,
+        12.442000000003715
+      ],
+      "raw_crossing_count": 96,
+      "qualified_recontacts": [
+        {
+          "contact_loss_time_s": 5.041999999999925,
+          "contact_resume_time_s": 5.261499999999804,
+          "observed_inactive_span_s": 0.21899999999987863,
+          "observed_resumed_active_span_s": 0.08899999999995067
+        },
+        {
+          "contact_loss_time_s": 5.350999999999754,
+          "contact_resume_time_s": 5.446999999999701,
+          "observed_inactive_span_s": 0.09549999999994707,
+          "observed_resumed_active_span_s": 0.1944999999998922
+        },
+        {
+          "contact_loss_time_s": 5.647999999999589,
+          "contact_resume_time_s": 5.792999999999509,
+          "observed_inactive_span_s": 0.14449999999991991,
+          "observed_resumed_active_span_s": 0.24849999999986228
+        },
+        {
+          "contact_loss_time_s": 6.041999999999371,
+          "contact_resume_time_s": 6.228999999999267,
+          "observed_inactive_span_s": 0.18649999999989664,
+          "observed_resumed_active_span_s": 0.3124999999998268
+        },
+        {
+          "contact_loss_time_s": 6.541999999999094,
+          "contact_resume_time_s": 6.875999999998909,
+          "observed_inactive_span_s": 0.33349999999981517,
+          "observed_resumed_active_span_s": 0.0654999999999637
+        },
+        {
+          "contact_loss_time_s": 6.941999999998872,
+          "contact_resume_time_s": 7.111999999998778,
+          "observed_inactive_span_s": 0.16949999999990606,
+          "observed_resumed_active_span_s": 0.02949999999998365
+        },
+        {
+          "contact_loss_time_s": 7.141999999998761,
+          "contact_resume_time_s": 7.355499999998643,
+          "observed_inactive_span_s": 0.21299999999988195,
+          "observed_resumed_active_span_s": 0.08599999999995234
+        },
+        {
+          "contact_loss_time_s": 7.4574999999985865,
+          "contact_resume_time_s": 7.573999999998522,
+          "observed_inactive_span_s": 0.11599999999993571,
+          "observed_resumed_active_span_s": 0.06749999999996259
+        },
+        {
+          "contact_loss_time_s": 7.641999999998484,
+          "contact_resume_time_s": 8.401999999998777,
+          "observed_inactive_span_s": 0.7595000000002923,
+          "observed_resumed_active_span_s": 0.25050000000030614
+        },
+        {
+          "contact_loss_time_s": 8.652999999999084,
+          "contact_resume_time_s": 9.69700000000036,
+          "observed_inactive_span_s": 1.0435000000012753,
+          "observed_resumed_active_span_s": 0.2445000000002988
+        },
+        {
+          "contact_loss_time_s": 9.94200000000066,
+          "contact_resume_time_s": 10.190000000000962,
+          "observed_inactive_span_s": 0.24750000000030248,
+          "observed_resumed_active_span_s": 0.15150000000018515
+        },
+        {
+          "contact_loss_time_s": 10.342000000001148,
+          "contact_resume_time_s": 10.891000000001819,
+          "observed_inactive_span_s": 0.5485000000006703,
+          "observed_resumed_active_span_s": 0.05050000000006172
+        },
+        {
+          "contact_loss_time_s": 10.942000000001881,
+          "contact_resume_time_s": 12.079000000003271,
+          "observed_inactive_span_s": 1.136500000001389,
+          "observed_resumed_active_span_s": 0.16800000000020532
+        },
+        {
+          "contact_loss_time_s": 12.247500000003477,
+          "contact_resume_time_s": 12.37300000000363,
+          "observed_inactive_span_s": 0.12500000000015277,
+          "observed_resumed_active_span_s": 0.06850000000008372
+        }
+      ],
+      "deduplicated_raw_sample_count": 60001,
+      "unknown_force_sample_count": 0,
+      "inactive_min_s": 0.04,
+      "resumed_active_min_s": 0.01,
+      "duration_rule": "contiguous run last observed time minus first observed time",
+      "scope": "all raw intervals, including excluded terminal intervals; threshold events, not controller decisions"
+    },
+    "planning_wall_s": 2.3087087185122073,
+    "execution_wall_s": 44.37273099995218,
+    "planning_time_scope": "sum of unchanged G proposal and learned plan calls; recording/source checks excluded",
+    "counts": {
+      "controller_decisions": 300,
+      "physics_interval_attempts": 300,
+      "physics_intervals_returned": 300,
+      "completed_boundary_records": 300
+    },
+    "future_engine_calls": {
+      "mj_step": 0,
+      "mj_step1": 0,
+      "mj_step2": 0,
+      "mj_forward": 0,
+      "mj_inverse": 0
+    }
+  },
+  "timings": {
+    "plan": 2.249104212736711,
+    "geometry": 0.059604505775496364,
+    "plan_calls": 300,
+    "geometry_calls": 300,
+    "plan_first_call_s": 0.020159499952569604,
+    "geometry_first_call_s": 0.00024145888164639473,
+    "plan_repeat_wall_s": 2.2289447127841413,
+    "geometry_repeat_wall_s": 0.05936304689384997,
+    "plan_repeat_calls": 299,
+    "geometry_repeat_calls": 299,
+    "initialization_wall_s": 5.01778958295472,
+    "initialization_scope": "worker entry through imports, source/capacity checks, model loading and physical reset/common snapshot check; process startup excluded",
+    "warmup_performed": false,
+    "dedicated_warmup_calls": 0,
+    "first_call_scope": "first actual task call; included in total, never relabeled as warmup"
+  },
+  "record_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-offset-03/SK-47/manifest.json",
+  "record_manifest_sha256": "78b15afd18df3cd01c3cc1ca5c790efd96f5248cd97e91c1fa4f383e20a874ad",
+  "comparison": null,
+  "review_sha256": "c64a9c8e974f05edff02e021ca3c14e67f7c4c7aaf90f0ae6b11e73d5301654b",
+  "recording_status": "COMPLETE_RECORDED",
+  "component_review_sha256": "a7930cb10ca9f022bd516b42abc2bca7ad36a3669f27d083d315003e505174ae",
+  "cell_bytes": 20137054,
+  "process_peak_rss_bytes": 1523089408,
+  "P5_task_success": false,
+  "learning_updates": 0,
+  "recording_guard_phase_after_return": "CLOSED",
+  "recording_guard_phase_history": [
+    {
+      "phase": "CONTROL",
+      "timestamp_utc": "2026-10-17T12:20:06.442692+00:00"
+    },
+    {
+      "phase": "SEALING",
+      "timestamp_utc": "2026-10-17T12:20:22.732210+00:00"
+    },
+    {
+      "phase": "CLOSED",
+      "timestamp_utc": "2026-10-17T12:20:50.744236+00:00"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "status": "ACCEPT_COMPLETED_RECORDING",
+  "phase": "E2",
+  "cell": {
+    "cell_id": "p5-final-translation-02/S1-11",
+    "controller_id": "S1-11",
+    "episode_id": "p5-final-translation-02",
+    "episode_index": 2,
+    "family_id": "p5-final-translation-02",
+    "stratum": "translation"
+  },
+  "row": {
+    "cell_id": "p5-final-translation-02/S1-11",
+    "controller_id": "S1-11",
+    "episode_id": "p5-final-translation-02",
+    "episode_index": 2,
+    "family_id": "p5-final-translation-02",
+    "stratum": "translation",
+    "execution_status": "completed",
+    "termination": "ready",
+    "success": true,
+    "elapsed_s": 5.999999999999205,
+    "final_position_error_m": 0.004778140981666718,
+    "final_yaw_error_rad": 0.011404096467510616,
+    "final_linear_speed_m_s": 3.391290871415157e-11,
+    "final_angular_speed_rad_s": 3.4852702556416146e-20,
+    "final_observation_available": true,
+    "metric_state_origin": "terminal_observation",
+    "metric_state_time_s": 5.999999999999205,
+    "unavailable_reason": null,
+    "recontact_count": 0,
+    "contact_events": {
+      "entry_times_s": [
+        0.44700000000000034,
+        1.6599999999998727,
+        1.7064999999998676,
+        3.059000000000189,
+        3.0885000000001988,
+        3.1050000000002043,
+        3.1240000000002106,
+        3.137500000000215,
+        5.955499999999419
+      ],
+      "exit_times_s": [
+        1.6589999999998728,
+        1.7059999999998676,
+        3.0575000000001884,
+        3.0880000000001986,
+        3.104500000000204,
+        3.1235000000002104,
+        3.136500000000215,
+        5.941999999999426,
+        5.962999999999415
+      ],
+      "raw_crossing_count": 18,
+      "qualified_recontacts": [],
+      "deduplicated_raw_sample_count": 12001,
+      "unknown_force_sample_count": 0,
+      "inactive_min_s": 0.04,
+      "resumed_active_min_s": 0.01,
+      "duration_rule": "contiguous run last observed time minus first observed time",
+      "scope": "all raw intervals, including excluded terminal intervals; threshold events, not controller decisions"
+    },
+    "planning_wall_s": 0.3234294143039733,
+    "execution_wall_s": 8.915478958981112,
+    "planning_time_scope": "sum of unchanged G proposal and learned plan calls; recording/source checks excluded",
+    "counts": {
+      "controller_decisions": 60,
+      "physics_interval_attempts": 60,
+      "physics_intervals_returned": 60,
+      "completed_boundary_records": 60
+    },
+    "future_engine_calls": {
+      "mj_step": 0,
+      "mj_step1": 0,
+      "mj_step2": 0,
+      "mj_forward": 0,
+      "mj_inverse": 0
+    }
+  },
+  "timings": {
+    "plan": 0.31024491554126143,
+    "geometry": 0.013184498762711883,
+    "plan_calls": 56,
+    "geometry_calls": 60,
+    "plan_first_call_s": 0.00674854195676744,
+    "geometry_first_call_s": 0.00021470803767442703,
+    "plan_repeat_wall_s": 0.303496373584494,
+    "geometry_repeat_wall_s": 0.012969790725037456,
+    "plan_repeat_calls": 55,
+    "geometry_repeat_calls": 59,
+    "initialization_wall_s": 2.50071541685611,
+    "initialization_scope": "worker entry through imports, source/capacity checks, model loading and physical reset/common snapshot check; process startup excluded",
+    "warmup_performed": false,
+    "dedicated_warmup_calls": 0,
+    "first_call_scope": "first actual task call; included in total, never relabeled as warmup"
+  },
+  "record_manifest": "${LOCAL_PROJECT_ROOT}/runs/p5-final-20261017-02/E2/p5-final-translation-02/S1-11/manifest.json",
+  "record_manifest_sha256": "475b294b84df0d160c0797fe48f3942b353da8f4a42b6f12c58942927fd2b2c8",
+  "comparison": null,
+  "review_sha256": "83ccd729ceccee745b07298451517fe8dd92b18211de5d678230d9f3bfc73847",
+  "recording_status": "COMPLETE_RECORDED",
+  "component_review_sha256": "acbf3fbf3effc7d7a4efd6e62456ee94f99fb628e8842f3b3cb4e85c0556709a",
+  "cell_bytes": 7032973,
+  "process_peak_rss_bytes": 774160384,
+  "P5_task_success": true,
+  "learning_updates": 0,
+  "recording_guard_phase_after_return": "CLOSED",
+  "recording_guard_phase_history": [
+    {
+      "phase": "CONTROL",
+      "timestamp_utc": "2026-10-17T10:43:09.144044+00:00"
+    },
+    {
+      "phase": "SEALING",
+      "timestamp_utc": "2026-10-17T10:43:12.564357+00:00"
+    },
+    {
+      "phase": "CLOSED",
+      "timestamp_utc": "2026-10-17T10:43:18.006686+00:00"
+    }
+  ]
+}

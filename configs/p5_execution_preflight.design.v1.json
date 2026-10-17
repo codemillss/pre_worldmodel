@@ -1,0 +1,119 @@
+{
+  "schema": "p5-execution-preflight-design-v1",
+  "created_at_utc": "2026-10-15T13:35:25.458141+00:00",
+  "status": "DEVELOPMENT_PREFLIGHT_DESIGN_NOT_FINAL_TEST",
+  "question": "Does the final executor preserve frozen planning/task semantics and fresh controller reproduction, including invalid/holding/terminal/missing-evidence branches?",
+  "run_scope": "development_preflight",
+  "final_test_generated": false,
+  "final_test_opened": false,
+  "P5_01": "HOLD",
+  "frozen_candidate": "configs/p5_freeze_candidate.v1.json",
+  "controller_ids": [
+    "G",
+    "R",
+    "S1-11",
+    "S1-23",
+    "S1-47",
+    "SK-11",
+    "SK-23",
+    "SK-47"
+  ],
+  "planning": {
+    "source": "configs/p3_planning.v1.json",
+    "candidate_count": 128,
+    "horizon": 5,
+    "candidate_seed_base": 4711,
+    "candidate_stream_id": 0,
+    "final_seed_6811_used": false,
+    "cost": "legacy",
+    "task_hold_s": 0.3
+  },
+  "actual_cases": [
+    {
+      "id": "start",
+      "source_folder": "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00",
+      "source_tick": 0,
+      "controllers": "all8",
+      "new_intervals_per_attempt": 2,
+      "fresh_attempts_per_controller": 2
+    },
+    {
+      "id": "contact",
+      "source_folder": "runs/p3-05-20261010-01/planning_trials/N128-H5/R/smoke-00",
+      "source_tick": 24,
+      "controllers": [
+        "G",
+        "R",
+        "SK-11"
+      ],
+      "new_intervals_per_attempt": 2,
+      "fresh_attempts_per_controller": 2
+    },
+    {
+      "id": "holding",
+      "source_folder": "runs/p3-05-20261010-01/full_resource/MLP-11",
+      "source_tick": 99,
+      "archived_fixed_prefix": "runs/p4-04-stop-20261013-01/candidate-011/repeat-0/raw_execution",
+      "reconstruction_intervals": 5,
+      "controllers": [
+        "SK-11"
+      ],
+      "new_intervals_per_attempt": 6,
+      "fresh_attempts_per_controller": 2,
+      "reason": "Known post-hoc near-goal branch tests actual low-speed continuous hold and ready stop; not learned-policy success."
+    },
+    {
+      "id": "timeout",
+      "source_folder": "runs/p3-05-20261010-01/full_resource/MLP-11",
+      "source_tick": 299,
+      "controllers": [
+        "SK-11"
+      ],
+      "new_intervals_per_attempt": 2,
+      "fresh_attempts_per_controller": 2,
+      "reason": "Preserve original task clock; verify actual30s termination, no subsequent action."
+    }
+  ],
+  "fault_injection_cases": [
+    "mixed_nonfinite_prediction",
+    "all_nonfinite_prediction",
+    "forbidden_future_engine",
+    "predictor_exception",
+    "witness_boundary_state_mismatch",
+    "witness_missing_boundary",
+    "witness_missing_raw_or_wrong_hash",
+    "missing_duplicate_unexpected_result",
+    "required_E1_tick29_missing_no_substitution",
+    "physical_error_priority_over_ready"
+  ],
+  "fault_scope": "Synthetic/fault-injection results are separate from actual unmodified-controller cases and make no claim of natural failure frequency.",
+  "budget": {
+    "maximum_new_action_intervals": 100,
+    "includes_fixed_prefix_reconstruction": true,
+    "maximum_new_storage_bytes_including_sources_reports_PDF_QA": 134217728,
+    "minimum_free_reserve_bytes": 2147483648,
+    "maximum_run_wall_time_s": 1200,
+    "guard": "Before each actual action and cell; preserve all attempted prefixes and stop on violation. Setup/reset settling is counted separately in engine-call ledger."
+  },
+  "success_gates": [
+    "all8 frozen controllers loaded and invoked or holding bypass explicitly recorded",
+    "future physics calls blocked during every model plan",
+    "invalid candidates retained/+inf, all-invalid unexecuted0interval",
+    "actual raw hold under0.3 remainsnotready and subsequent validboundary ready; no postterminal action",
+    "actual timeout at original30s and no postterminal action",
+    "new controller decisions plus actual physics rerun match witnesses/state/task/commands within unchanged profile",
+    "missing/corrupted evidence produces INCOMPLETE or FAIL, never PASS or denominator deletion",
+    "all748 scientific inputs and97 frozen-candidate sources unchanged",
+    "resource measurements and allattempts/raw prefixes retained"
+  ],
+  "not_claimed": [
+    "P5-01 DONE or final manifest frozen",
+    "independent final performance",
+    "model/task improvement",
+    "all conditions or hardware transfer",
+    "every raw substep reproduced by compact witness alone"
+  ],
+  "resource_before": {
+    "free_bytes": 6717440000
+  }
+}

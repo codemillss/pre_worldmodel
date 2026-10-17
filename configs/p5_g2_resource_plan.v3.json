@@ -1,0 +1,193 @@
+{
+  "schema": "p5-g2-resource-plan-v3",
+  "as_of_client_date": "2026-10-16",
+  "measured_at_utc": "2026-10-15T16:53:05.994725+00:00",
+  "status": "MEASURED_COLUMNAR_AND_NATIVE_INTEGRATION_RESOURCE_REVIEW",
+  "counts": {
+    "raw_records": 680,
+    "raw_intervals": 34080,
+    "witness_records": 200,
+    "witness_intervals": 60000,
+    "witness_decisions": 60200,
+    "plan_archives": 91,
+    "plan_records": 27391,
+    "full_traces": 364,
+    "G_captures": 75
+  },
+  "units_bytes": {
+    "raw_fixed": 7443,
+    "raw_interval": 101478,
+    "witness_fixed": 42596,
+    "witness_interval": 1627,
+    "witness_decision": 2308,
+    "plan_index_fixed": 265,
+    "plan_index_record": 13697,
+    "full_trace_npz": 117503,
+    "full_trace_identity": 0,
+    "snapshot_envelope": 49730
+  },
+  "fixed_allowances_bytes": {
+    "E1_prediction_analysis": 268435456,
+    "P5_boundary_analysis": 201326592,
+    "source_and_model_bundle": 33554432,
+    "future_report_archive_QA": 67108864,
+    "working_disk_scratch": 33554432,
+    "mismatch_prefix_and_diagnostics": 268435456,
+    "hard_free_reserve": 2147483648
+  },
+  "estimate": {
+    "measured_components_before_multiplier": {
+      "raw": 3463431480,
+      "witness": 245080800,
+      "plan_index": 375198642,
+      "full_traces_and_inputs": 60872812,
+      "G_captured_inputs": 3729750
+    },
+    "multiplier": "3/2",
+    "parts_bytes": {
+      "raw": 5195147220,
+      "witness": 367621200,
+      "plan_index": 562797963,
+      "full_traces_and_inputs": 91309218,
+      "G_captured_inputs": 5594625,
+      "E1_prediction_analysis": 268435456,
+      "P5_boundary_analysis": 201326592,
+      "source_and_model_bundle": 33554432,
+      "future_report_archive_QA": 67108864,
+      "working_disk_scratch": 33554432,
+      "mismatch_prefix_and_diagnostics": 268435456,
+      "hard_free_reserve": 2147483648
+    },
+    "required_bytes_including_reserve": 9242369106
+  },
+  "capacity": {
+    "status": "FIT_ESTIMATE_ONLY",
+    "free_bytes": 9707520000,
+    "required_bytes": 9242369106,
+    "headroom_bytes": 465150894,
+    "batch_authorized": false
+  },
+  "old_remaining_estimate_bytes": 11828384856,
+  "scope_counts_explanation": {
+    "E2": "12 families*8 controllers*300 actions=28,800; learned84 cells",
+    "E1": "12 snapshots*16 candidates*3 physical repeats=576 records*5=2,880 actions; shared by7 models, not7 copies",
+    "P5": "up to96 actual fresh controller reruns plus1 same-range new family*8 controllers; no already-completed learning/P4 allowance charged again",
+    "fresh": "normal verified fresh witness references original raw/index; mismatch required extra raw/index/trace charged to256MiB allowance then STOP",
+    "decisions": "301 slots/cell includes one conservative unexecuted terminal decision beyond300 actions; no claim that all are physically executable",
+    "full_trace": "91 learned originals/new cells*at most4 predeclared-or-allinvalid full arrays+input snapshots; union removes duplicates"
+  },
+  "unit_evidence_limits": {
+    "raw": "19 preserved regimes plus empty prefixes roundtripped in typed columnar XZ6; max fixed7443B and max average incremental101478B/interval. Not a proven worst-case bound.",
+    "witness": "All26 G1 witnesses plus actual300-interval original/fresh; maximum fixed42596B, perinterval1627B, perdecision2308B. Additive independent gzip members.",
+    "plan_index": "Original40 plan arrays/22archives and actual300-plan R original/fresh; perindex typed arrays directly equal; keep larger pre-existing13697B/record unit.",
+    "full_trace": "Native fulltrace NPZ max117503B and fullinput JSON max47713B; envelope adds2017B input-only NPZ. Learned input NPZ intentionally counted again, conservatively. G uses envelope only.",
+    "multiplier": "1.5 empirical planning allowance, not confidence or worst-case guarantee; observed component totals beyond allowance stop with original prefix preserved.",
+    "working_disk": "Final writer writes directly to exclusive destination, no whole raw disk staging copy;32MiB scratch retained. Combined native process RSS1.40GiB measured separately.",
+    "analysis_allowances": "E1/fixed-G K1/5/10 arrays/reasons/source metadata256MiB; P5 cell manifests/review receipts/progress/bootstrap192MiB. These are conservative operational allowances, not observed final output sizes."
+  },
+  "source_model_bundle_current_bytes": 9575866,
+  "time": {
+    "historical_remaining_action_work": 62880,
+    "historical_factor_1_5_action_extrapolation_s": 15592.99640793804,
+    "old_raw_write_time_included_in_historical": true,
+    "new_XZ_write_supplement": "Use measured native300 write seconds/300*34,080*1.5 as conservative extra on top of historical4.33h, which already includes old writing; not a guaranteed finish time. Codec reads, setup, E1 labels/bootstrap/reports/debug/retries and other apps remain uncertain.",
+    "concurrency": "one worker/cell at a time; no parallel final physics or training",
+    "native300_codec_write_wall_s": 73.54449891601689,
+    "native300_codec_read_wall_s": 3.312455500010401,
+    "extra_codec_write_read_factor1_5_extrapolation_s": 13096.425032491052,
+    "native_original_and_fresh_wall_s": 136.30081062507816,
+    "new_codec_measurement_scope": "New typed columnar codec actual native300; old73.54s JSON-XZ measurement above retained as conservative historical supplement, not mislabeled as new codec speed."
+  },
+  "RAM": {
+    "physical_GiB": 16,
+    "historical_controller_process_peak_range_GiB": [
+      1.24,
+      3.09
+    ],
+    "new_raw_short_codec_peak_MiB": 114.984375,
+    "native300_codec_only_peak_MiB": 1623.375,
+    "combined_final_driver_and_native300_codec_peak": 1503821824,
+    "gate": "Native combined integration passed; one worker per cell, per-action 6GiB RSS checkpoint, no parallel final physics/training",
+    "combined_peak_scope": "Measured sequential R development original and independent actual rerun; all final regimes/devices remain unmeasured"
+  },
+  "money": {
+    "new_service_equipment_spending_KRW": 0,
+    "ceiling_KRW_exclusive": 100000
+  },
+  "remaining_gates": [
+    "Freeze complete outcomes-blind final manifest and immutable source bundle before final outcomes",
+    "Validate final orchestration, E1/shared futures/statistics/prediction/replay wiring before its production freeze",
+    "Recheck live remaining budget per stage/cell; output growth or capacity loss stops with preserved prefix"
+  ],
+  "new_model_calls": {
+    "reference": {
+      "calls": 1500,
+      "rows": 187021
+    },
+    "fresh": {
+      "calls": 1500,
+      "rows": 187021
+    }
+  },
+  "new_training_updates": 0,
+  "new_physics_calls": 600,
+  "actual_final_test_manifest_generated": false,
+  "P5_01": "HOLD",
+  "overall_done": "23/28",
+  "source_sha256": {
+    "configs/p5_g2_resource_plan.v1.json": "b331c0e1dc8239f4bfbf3134604dac3c7f67041a868ec28de835ca12d8eb450a",
+    "configs/p5_recording_policy.v1.json": "dfa64a3a8b1b8d349e6eec07b398c012b6fe041530f98cf92fd9e6796b812192",
+    "reports/p5_storage_feasibility.native_codec.json": "94926d34c77343f41d8575693e9c952e377cf565bf26fcbb20e705faa971d546",
+    "reports/p5_driver_native_preflight_review.json": "227f957d23e20daeaba767a7b3823aa97fabbcc091447ca61375342a69f29e87",
+    "configs/p5_driver_native_preflight.design.v1.json": "fe0694d37784ad223865efaac7c9c88c54437f2ee69d2cea952f9365046cf91f",
+    "src/push_align/final_recording_columns.py": "b571654413638ceff8bba1827086c5494e03a07e7decb625112165a8ca302410",
+    "src/push_align/final_driver.py": "090c55eaa88c32c038821d4e5f21d4e01f9d0bb04a3d0a81e9d02e782bcd65dc",
+    "src/push_align/resource_budget.py": "0986aa1d64a2187989a36c66aca01ef3007ad8961439186b26ffe81741e46592",
+    "tests/test_p5_final_recording_columns.py": "ba95ceaaf77fe3e86e5fac654c4407d0c0593e950ca3561525aea68c1e3dcafa",
+    "tests/test_p5_final_driver.py": "840fe7d392d811fc11e5b09a4b7cf559f64ded18ce95587bfa08a0f61925dcfd",
+    "scripts/p5_driver_native_preflight.py": "1d0db41eccfa7623ea8fd37486aa97b9a83f3a3acb0fe461e58a8068e114ec96",
+    "tools/p5_reestimate_after_native.py": "ed195f5ed82cf558ed6c837762264e35bfff2c44b5e8459da83bb1f1bdd30168",
+    "configs/p5_g2_resource_plan.v2.json": "7112265a1ddb6b9f453a77733c0f3a2e03885d55cb8bd85e422bba98179cee02",
+    "tools/p5_resource_finalize.py": "b7798d57d46027003f9cbed8049a5f3d24f4c7e59927c6384509829d5ccf5f89"
+  },
+  "supersedes_without_modifying": "configs/p5_g2_resource_plan.v1.json and v2.json; capacity HOLD history retained",
+  "integration": {
+    "status": "PASS",
+    "checks": {
+      "both_attempts_completed_recording": true,
+      "actual_independent_controller_and_physics": true,
+      "600_action_cap": true,
+      "output_limit": true,
+      "free_reserve": true,
+      "source_bindings_unchanged": true,
+      "future_physics_zero": true,
+      "same_terminal": true,
+      "boundary_PASS_REPRODUCTION": true,
+      "raw_PASS_EXACT": true,
+      "all_index_PASS_EXACT": true,
+      "combined_peak_within_checkpoint": true,
+      "no_final_families_or_training": true
+    },
+    "report": "reports/p5_driver_native_preflight_review.json",
+    "actual_development_action_intervals": 600,
+    "combined_peak_rss_bytes": 1503821824,
+    "scope": "One fixed R development condition and its independent actual rerun; not final task performance or all-device bound"
+  },
+  "recording_policy_delta": {
+    "raw_codec": "push_align.final_recording_columns",
+    "all_original_and_StepResult_values_retained": true,
+    "serialization": "typed structural columns plus numeric vectors, lossless XZ6; same raw array SHA and full typed JSON roundtrip19 regimes",
+    "full_input_metadata_max_bytes": 47713,
+    "input_only_npz_max_bytes": 2017,
+    "all_other_fields": "v1 policy retains index/witness/fulltrace slots and source/validity/failure evidence unchanged"
+  },
+  "no_sample_model_task_criterion_change": true,
+  "same_multiplier": "1.5; empirical allowance, not worst-case proof",
+  "G2_capacity_hold_resolution": "A new format with broader measured evidence and an actual driver roundtrip reprices all unchanged work. The old insufficient-capacity measurement is retained; it is not erased by one free-space rebound.",
+  "new_physics_count_unit": "actual action intervals, not engine API calls; setup engine calls recorded in native report",
+  "allowance_revision_reason": {
+    "E1_prediction_analysis": "Includes all retained K1/5/10 truth/prediction/delta/mask/reason arrays at max3600 start opportunities and7 models, plus E1 84 choices/576 shared futures. Old102.4MiB was not a measured bound; increase before outcomes rather than assume compression.",
+    "P5_boundary_analysis": "Includes up to200 native cell manifests (measured maximum319022B/cell), independent raw/task review receipts, row receipts, progress and paired bootstrap. Increase before outcomes; no sample/field removal."
+  },
+  "new_model_calls_scope": "See native report adapter call counters; action intervals and engine calls are different denominators."
+}
