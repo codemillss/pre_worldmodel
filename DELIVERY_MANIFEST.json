@@ -1,9 +1,9 @@
 {
   "schema": "public-delivery-file-inventory-v1",
-  "as_of_kst": "2026-10-18",
+  "as_of_kst": "2026-10-19",
   "repository": "https://github.com/codemillss/pre_worldmodel.git",
   "branch": "main",
-  "scope": "All explicitly staged release files before this inventory; self excluded to avoid recursive hash",
+  "scope": "All tracked publication files, including the IEEEtran research manuscript; self excluded to avoid a recursive hash",
   "original_core_evidence_SHA_verified": 20,
   "private_local_path_and_high_confidence_secret_patterns_found": 0,
   "files": [
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5387,
-      "sha256": "961def818b126a1645c033e67f269f0faca2d70e77c958be421ea16664d32b6b"
+      "bytes": 5744,
+      "sha256": "d81d70e829f25e25211228b6dfd0e005dbd84c9fdff68efeae62d1adabac6369"
     },
     {
       "path": "artifacts/audits/p5_application_completion.v1.json",
@@ -2358,6 +2358,11 @@
       "sha256": "ce52c19ccc0540a00755607788c0f0ee200630a11a8c628f617c85e217c7d3f2"
     },
     {
+      "path": "artifacts/validation/paper_review.json",
+      "bytes": 3667,
+      "sha256": "743146714b2a6cfcbb498c8afc2f16e30205bc42f454d73cee1e2cdbb491d4b2"
+    },
+    {
       "path": "artifacts/validation/public_validation.json",
       "bytes": 1617,
       "sha256": "59380fc80c7ec6ccf5175fedbe2044a8e6c4b3b36f92e24ecdb3bd13ebda3c2e"
@@ -2699,8 +2704,8 @@
     },
     {
       "path": "docs/documentation.ko.md",
-      "bytes": 3263,
-      "sha256": "9cd488d3131551583a1ac16a60d1208b94ea21fe5e004b7fc74ed73d1b730f55"
+      "bytes": 3790,
+      "sha256": "0f1de3a5693165f416d2ffe6966f0f23386f7b9692ac8a6cb30ac6f47d0ce919"
     },
     {
       "path": "docs/technical_report.ko.md",
@@ -2718,6 +2723,56 @@
       "sha256": "46a30589837b2b053d1353d93b83f67ccac8ff1911c9cc3ccdb8347dcf35c52b"
     },
     {
+      "path": "paper/README.md",
+      "bytes": 2460,
+      "sha256": "00efd51e3b447a4e78004b8e1716e8d4e1cf87890bb5e636266bedfd477f5daf"
+    },
+    {
+      "path": "paper/figures/figures.manifest.json",
+      "bytes": 3603,
+      "sha256": "3f80cdd3ccacbfa65ce180c8f9312f2c37ecfc77434c3ea0818fb14fb0ccd1b4"
+    },
+    {
+      "path": "paper/figures/fixed_prediction.pdf",
+      "bytes": 22874,
+      "sha256": "f748f85aaa84079ddd581572e8d58188f06f8016b63bfb74ca2ba15a456a0ee8"
+    },
+    {
+      "path": "paper/figures/fixed_prediction.png",
+      "bytes": 77774,
+      "sha256": "6685ff4cbb2bf8c75482370b50c4ed0c20e493682864a505b53c8c1e6acb6fa1"
+    },
+    {
+      "path": "paper/figures/fixed_prediction.values.json",
+      "bytes": 15588,
+      "sha256": "90d6943ed975096a3cf52243224db1f27ab4878d2ca5d0fa4b8456037c86f599"
+    },
+    {
+      "path": "paper/figures/generate_figures.py",
+      "bytes": 13500,
+      "sha256": "989325cf60504ea91a37b466229f02267b44957fa0bd81b7399c51cf3e984a75"
+    },
+    {
+      "path": "paper/figures/method_system.pdf",
+      "bytes": 41415,
+      "sha256": "4f5b38e4efbe4d3b4467b91dd5c64d462fc03f33444a3d4884147f71f948dc44"
+    },
+    {
+      "path": "paper/figures/method_system.png",
+      "bytes": 127145,
+      "sha256": "6628ad921ae649c1fa0421560525883c4f76feef92d6beaf1fe0dc600b24d765"
+    },
+    {
+      "path": "paper/main.tex",
+      "bytes": 27913,
+      "sha256": "fdd822bb4b642ca382088b33df281c77d6d330d5dd88f116fc8e8b62110e8b9f"
+    },
+    {
+      "path": "paper/references.bib",
+      "bytes": 2428,
+      "sha256": "0807e609aa84de7613271403c9362687178d7ff2fb66a0ee6b5168e9a86c05b9"
+    },
+    {
       "path": "pyproject.toml",
       "bytes": 255,
       "sha256": "fcc732bf8c476a0f7273bd7ead7627f27b9f5482ef3ff942c8e154db5f327866"
@@ -2731,6 +2786,16 @@
       "path": "reports/Business_Report.ko.pdf",
       "bytes": 106815,
       "sha256": "03c0a8010145ca7b822f8137e4b3db79caa6037f9ec210dfbfa60c4b129e218a"
+    },
+    {
+      "path": "reports/Research_Paper.ko.manifest.json",
+      "bytes": 1888,
+      "sha256": "466a27721285bb28b31dcc37b20cd2df2cbdae95d43a7ae670591b6c48806bab"
+    },
+    {
+      "path": "reports/Research_Paper.ko.pdf",
+      "bytes": 287122,
+      "sha256": "5d22d95928cf07dbbe7195a97b17eb232d562f56f28552f5664dfca22bc54c87"
     },
     {
       "path": "reports/Technical_Report.ko.manifest.json",
@@ -4283,6 +4348,6 @@
       "sha256": "c1df1301e029821d68e09627506056d56b39164085fa3c527b04b92802a614ee"
     }
   ],
-  "total_files_excluding_self": 855,
-  "total_bytes_excluding_self": 51443756
+  "total_files_excluding_self": 868,
+  "total_bytes_excluding_self": 52072017
 }

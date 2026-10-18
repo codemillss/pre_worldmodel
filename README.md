@@ -11,11 +11,13 @@ MuJoCo에서 어긋난 직사각형 부품을 옆에서 밀어 다음 공정의 
 | 목적 | GitHub에서 읽는 원본 | 내려받는 PDF |
 |---|---|---|
 | 문제 가치·목표 달성·실무 의사결정 | [사업 관점 보고서](docs/business_report.ko.md) | [실무 요약 PDF](reports/Business_Report.ko.pdf) |
-| 설계·학습·실험·실패 원인·한계 | [논문 형식 기술 보고서](docs/technical_report.ko.md) | [기술 보고서 PDF](reports/Technical_Report.ko.pdf) |
+| 학술 논문: 정식화·방법·실험·결과·논의 | [LaTeX 원고와 생성 방법](paper/README.md) | [2단 학술 논문 PDF](reports/Research_Paper.ko.pdf) |
 | 포함 자료·출처·재현 명령 | [근거·재현 색인](artifacts/index.md) | 핵심 근거는 두 PDF 본문·부록에도 수록 |
 | 파일 형식과 갱신 방법 | [문서 운영 안내](docs/documentation.ko.md) | PDF와 MD의 역할·링크 동작 설명 |
 
 GitHub에서는 Markdown을 바로 읽을 수 있습니다. PDF의 목차·근거 링크는 다운로드 후 사용하세요. [GitHub 공식 문서](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files)에 따르면 PDF 미리보기에서는 내부 링크가 무시됩니다.
+
+학술 논문은 IEEEtran conference 클래스의 2단 LaTeX 조판으로 작성했습니다. 수식·그림·표·참고문헌에 번호를 부여하고 본문에서 상호 참조합니다. 기존 [10쪽 기술 보고서](docs/technical_report.ko.md)와 [그 PDF](reports/Technical_Report.ko.pdf)는 프로젝트 설명용 보조 문서로 보존합니다.
 
 ## 최종 결과
 

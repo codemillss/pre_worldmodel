@@ -1,0 +1,39 @@
+{
+  "schema": "research-paper-build-v1",
+  "as_of": "2026-10-19",
+  "source": "paper/main.tex",
+  "bibliography": "paper/references.bib",
+  "output": "reports/Research_Paper.ko.pdf",
+  "sha256": "5d22d95928cf07dbbe7195a97b17eb232d562f56f28552f5664dfca22bc54c87",
+  "bytes": 287122,
+  "pages": 5,
+  "class": "IEEEtran 1.8b",
+  "options": [
+    "conference",
+    "a4paper"
+  ],
+  "font_size_pt": 10,
+  "columns": 2,
+  "engine": "Tectonic 0.17.0 (XeTeX + BibTeX + xdvipdfmx)",
+  "content_counts": {
+    "numbered_sections": 8,
+    "equations": 11,
+    "figures": 2,
+    "tables": 5,
+    "bibliography_entries": 7
+  },
+  "input_sha256": {
+    "paper/main.tex": "fdd822bb4b642ca382088b33df281c77d6d330d5dd88f116fc8e8b62110e8b9f",
+    "paper/references.bib": "0807e609aa84de7613271403c9362687178d7ff2fb66a0ee6b5168e9a86c05b9",
+    "paper/figures/method_system.pdf": "4f5b38e4efbe4d3b4467b91dd5c64d462fc03f33444a3d4884147f71f948dc44",
+    "paper/figures/fixed_prediction.pdf": "f748f85aaa84079ddd581572e8d58188f06f8016b63bfb74ca2ba15a456a0ee8",
+    "paper/figures/figures.manifest.json": "3f80cdd3ccacbfa65ce180c8f9312f2c37ecfc77434c3ea0818fb14fb0ccd1b4",
+    "paper/figures/fixed_prediction.values.json": "90d6943ed975096a3cf52243224db1f27ab4878d2ca5d0fa4b8456037c86f599",
+    "paper/figures/generate_figures.py": "989325cf60504ea91a37b466229f02267b44957fa0bd81b7399c51cf3e984a75",
+    "artifacts/results/E2/summary.json": "103f08e2a85a1cfa7eb1ac8db64c0fd8d641266520e46d083142cf218ee83a66",
+    "artifacts/results/E1/summary.json": "0f41783dfeaa99b188005aab9bf8d21adf1011de56ffca627304c800a6ab851b",
+    "artifacts/results/fixed_prediction/summary.json": "0b649daa867029138722000ffd45ae972e49f75b0b7f3be59f61620d2e7a4e6e",
+    "artifacts/provenance/frozen_manifest.json": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f"
+  },
+  "no_new_training_or_scientific_physics": true
+}

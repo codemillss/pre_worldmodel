@@ -1,0 +1,318 @@
+{
+  "source": "artifacts/results/fixed_prediction/summary.json",
+  "source_sha256": "0b649daa867029138722000ffd45ae972e49f75b0b7f3be59f61620d2e7a4e6e",
+  "metric": "object_xy_error_m",
+  "unit_plotted": "mm",
+  "aggregation": "Unweighted mean of 12 per-family mean endpoint errors",
+  "family_denominator": 12,
+  "seeds": {
+    "23": {
+      "S1": [
+        {
+          "horizon": 1,
+          "seconds": 0.1,
+          "family_first_mean_m": 2.042864856295417e-05,
+          "family_first_mean_mm": 0.02042864856295417,
+          "truth_eligible_windows": 2656,
+          "valid_prediction_windows": 2656,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 1.7853339696141923e-05,
+            "p5-final-offset-01": 2.0740464125154363e-05,
+            "p5-final-offset-02": 1.9069841191219003e-05,
+            "p5-final-offset-03": 1.8876092728501984e-05,
+            "p5-final-rotation-00": 2.62474053903535e-05,
+            "p5-final-rotation-01": 1.9249774605320734e-05,
+            "p5-final-rotation-02": 1.9815032259189856e-05,
+            "p5-final-rotation-03": 1.7463844899678275e-05,
+            "p5-final-translation-00": 2.2860698486332258e-05,
+            "p5-final-translation-01": 2.2515035324556225e-05,
+            "p5-final-translation-02": 1.877897583837933e-05,
+            "p5-final-translation-03": 2.1673278210622618e-05
+          },
+          "source_field": "horizons.1.models.S1-23.family_first_means_conditional_on_available_families.object_xy_error_m"
+        },
+        {
+          "horizon": 5,
+          "seconds": 0.5,
+          "family_first_mean_m": 9.060476783065049e-05,
+          "family_first_mean_mm": 0.0906047678306505,
+          "truth_eligible_windows": 2608,
+          "valid_prediction_windows": 2608,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 7.199219655872973e-05,
+            "p5-final-offset-01": 9.686980085440093e-05,
+            "p5-final-offset-02": 8.823453626861613e-05,
+            "p5-final-offset-03": 7.96401071797882e-05,
+            "p5-final-rotation-00": 0.00010189448152323094,
+            "p5-final-rotation-01": 7.592315515031386e-05,
+            "p5-final-rotation-02": 8.469436431337742e-05,
+            "p5-final-rotation-03": 7.390583187293052e-05,
+            "p5-final-translation-00": 0.00011819521036573883,
+            "p5-final-translation-01": 0.00010086648056996439,
+            "p5-final-translation-02": 9.540798871715736e-05,
+            "p5-final-translation-03": 9.96330605935575e-05
+          },
+          "source_field": "horizons.5.models.S1-23.family_first_means_conditional_on_available_families.object_xy_error_m"
+        },
+        {
+          "horizon": 10,
+          "seconds": 1.0,
+          "family_first_mean_m": 0.00016690677683903576,
+          "family_first_mean_mm": 0.16690677683903576,
+          "truth_eligible_windows": 2548,
+          "valid_prediction_windows": 2548,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 0.00013382423320679106,
+            "p5-final-offset-01": 0.00020249470748517873,
+            "p5-final-offset-02": 0.00016330835020472354,
+            "p5-final-offset-03": 0.0001382275405959204,
+            "p5-final-rotation-00": 0.000181305382127632,
+            "p5-final-rotation-01": 0.00015034110604144723,
+            "p5-final-rotation-02": 0.00015465228183446313,
+            "p5-final-rotation-03": 0.0001313072730919884,
+            "p5-final-translation-00": 0.0002193910642716558,
+            "p5-final-translation-01": 0.00017751305795067992,
+            "p5-final-translation-02": 0.00017701261282098305,
+            "p5-final-translation-03": 0.00017350371243696563
+          },
+          "source_field": "horizons.10.models.S1-23.family_first_means_conditional_on_available_families.object_xy_error_m"
+        }
+      ],
+      "SK": [
+        {
+          "horizon": 1,
+          "seconds": 0.1,
+          "family_first_mean_m": 1.752866247334423e-05,
+          "family_first_mean_mm": 0.01752866247334423,
+          "truth_eligible_windows": 2656,
+          "valid_prediction_windows": 2656,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 1.5630837129943623e-05,
+            "p5-final-offset-01": 1.763289664760025e-05,
+            "p5-final-offset-02": 1.4813316847150039e-05,
+            "p5-final-offset-03": 1.6444519069449817e-05,
+            "p5-final-rotation-00": 2.3348010126350222e-05,
+            "p5-final-rotation-01": 1.6757341544074566e-05,
+            "p5-final-rotation-02": 1.7044446621292468e-05,
+            "p5-final-rotation-03": 1.4873117458724067e-05,
+            "p5-final-translation-00": 1.8797437556221317e-05,
+            "p5-final-translation-01": 2.0442946776405202e-05,
+            "p5-final-translation-02": 1.4837724399018283e-05,
+            "p5-final-translation-03": 1.9721355503900863e-05
+          },
+          "source_field": "horizons.1.models.SK-23.family_first_means_conditional_on_available_families.object_xy_error_m"
+        },
+        {
+          "horizon": 5,
+          "seconds": 0.5,
+          "family_first_mean_m": 5.864705091131523e-05,
+          "family_first_mean_mm": 0.05864705091131523,
+          "truth_eligible_windows": 2608,
+          "valid_prediction_windows": 2608,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 4.8762501708855625e-05,
+            "p5-final-offset-01": 6.035111361012472e-05,
+            "p5-final-offset-02": 5.0919239716568344e-05,
+            "p5-final-offset-03": 5.868884579220855e-05,
+            "p5-final-rotation-00": 7.29772031355004e-05,
+            "p5-final-rotation-01": 4.5939648016473396e-05,
+            "p5-final-rotation-02": 5.8855424017607265e-05,
+            "p5-final-rotation-03": 4.847696090031832e-05,
+            "p5-final-translation-00": 7.704255905730408e-05,
+            "p5-final-translation-01": 6.374948682828973e-05,
+            "p5-final-translation-02": 5.471055511239467e-05,
+            "p5-final-translation-03": 6.329107304013778e-05
+          },
+          "source_field": "horizons.5.models.SK-23.family_first_means_conditional_on_available_families.object_xy_error_m"
+        },
+        {
+          "horizon": 10,
+          "seconds": 1.0,
+          "family_first_mean_m": 9.569184332977133e-05,
+          "family_first_mean_mm": 0.09569184332977133,
+          "truth_eligible_windows": 2548,
+          "valid_prediction_windows": 2548,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 8.227248661540517e-05,
+            "p5-final-offset-01": 0.0001138371143568974,
+            "p5-final-offset-02": 7.796512595773939e-05,
+            "p5-final-offset-03": 9.695708201235601e-05,
+            "p5-final-rotation-00": 0.00011504343156763741,
+            "p5-final-rotation-01": 8.39313521758694e-05,
+            "p5-final-rotation-02": 9.940224257643514e-05,
+            "p5-final-rotation-03": 7.729815731841585e-05,
+            "p5-final-translation-00": 0.00012684523026183393,
+            "p5-final-translation-01": 9.312258261724204e-05,
+            "p5-final-translation-02": 8.70875286246694e-05,
+            "p5-final-translation-03": 9.45397858727549e-05
+          },
+          "source_field": "horizons.10.models.SK-23.family_first_means_conditional_on_available_families.object_xy_error_m"
+        }
+      ]
+    },
+    "47": {
+      "S1": [
+        {
+          "horizon": 1,
+          "seconds": 0.1,
+          "family_first_mean_m": 1.9318442973503653e-05,
+          "family_first_mean_mm": 0.019318442973503654,
+          "truth_eligible_windows": 2656,
+          "valid_prediction_windows": 2656,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 1.7693700511573544e-05,
+            "p5-final-offset-01": 1.8913834588029877e-05,
+            "p5-final-offset-02": 2.0415311838308753e-05,
+            "p5-final-offset-03": 1.6238179338873585e-05,
+            "p5-final-rotation-00": 2.375497364810951e-05,
+            "p5-final-rotation-01": 1.8223817667448596e-05,
+            "p5-final-rotation-02": 1.628357002161192e-05,
+            "p5-final-rotation-03": 1.5272365909319468e-05,
+            "p5-final-translation-00": 2.087640144118573e-05,
+            "p5-final-translation-01": 2.2917179295965855e-05,
+            "p5-final-translation-02": 1.7954669942674366e-05,
+            "p5-final-translation-03": 2.3277311478942584e-05
+          },
+          "source_field": "horizons.1.models.S1-47.family_first_means_conditional_on_available_families.object_xy_error_m"
+        },
+        {
+          "horizon": 5,
+          "seconds": 0.5,
+          "family_first_mean_m": 8.423539034475277e-05,
+          "family_first_mean_mm": 0.08423539034475278,
+          "truth_eligible_windows": 2608,
+          "valid_prediction_windows": 2608,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 6.304973916576684e-05,
+            "p5-final-offset-01": 8.041869424421492e-05,
+            "p5-final-offset-02": 9.587772897644109e-05,
+            "p5-final-offset-03": 8.260572652683338e-05,
+            "p5-final-rotation-00": 0.00010820928248398654,
+            "p5-final-rotation-01": 6.787807868321817e-05,
+            "p5-final-rotation-02": 8.034897354861828e-05,
+            "p5-final-rotation-03": 6.260409063619145e-05,
+            "p5-final-translation-00": 8.687893464327946e-05,
+            "p5-final-translation-01": 0.00010303919079569972,
+            "p5-final-translation-02": 7.564947925150488e-05,
+            "p5-final-translation-03": 0.00010426476518127848
+          },
+          "source_field": "horizons.5.models.S1-47.family_first_means_conditional_on_available_families.object_xy_error_m"
+        },
+        {
+          "horizon": 10,
+          "seconds": 1.0,
+          "family_first_mean_m": 0.0001475312099861768,
+          "family_first_mean_mm": 0.1475312099861768,
+          "truth_eligible_windows": 2548,
+          "valid_prediction_windows": 2548,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 0.00010338114720976622,
+            "p5-final-offset-01": 0.0001554058339505123,
+            "p5-final-offset-02": 0.00018043435984955647,
+            "p5-final-offset-03": 0.0001513410122471199,
+            "p5-final-rotation-00": 0.0001914357992609353,
+            "p5-final-rotation-01": 0.00011893313763065731,
+            "p5-final-rotation-02": 0.0001435277137040255,
+            "p5-final-rotation-03": 0.00010901209335040276,
+            "p5-final-translation-00": 0.00013454465075603007,
+            "p5-final-translation-01": 0.0001794797349550334,
+            "p5-final-translation-02": 0.00012334592149274189,
+            "p5-final-translation-03": 0.0001795331154273405
+          },
+          "source_field": "horizons.10.models.S1-47.family_first_means_conditional_on_available_families.object_xy_error_m"
+        }
+      ],
+      "SK": [
+        {
+          "horizon": 1,
+          "seconds": 0.1,
+          "family_first_mean_m": 1.8939799478388994e-05,
+          "family_first_mean_mm": 0.018939799478388995,
+          "truth_eligible_windows": 2656,
+          "valid_prediction_windows": 2656,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 1.714809891809462e-05,
+            "p5-final-offset-01": 1.8281222384818317e-05,
+            "p5-final-offset-02": 1.912580106355163e-05,
+            "p5-final-offset-03": 1.5024965988547987e-05,
+            "p5-final-rotation-00": 2.422079951477789e-05,
+            "p5-final-rotation-01": 1.777794057837772e-05,
+            "p5-final-rotation-02": 1.464094525152088e-05,
+            "p5-final-rotation-03": 1.4530519625502711e-05,
+            "p5-final-translation-00": 2.2108259379414898e-05,
+            "p5-final-translation-01": 2.3098123480098174e-05,
+            "p5-final-translation-02": 1.7439276198505927e-05,
+            "p5-final-translation-03": 2.3881641357457195e-05
+          },
+          "source_field": "horizons.1.models.SK-47.family_first_means_conditional_on_available_families.object_xy_error_m"
+        },
+        {
+          "horizon": 5,
+          "seconds": 0.5,
+          "family_first_mean_m": 6.899429664003857e-05,
+          "family_first_mean_mm": 0.06899429664003856,
+          "truth_eligible_windows": 2608,
+          "valid_prediction_windows": 2608,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 4.898485966140179e-05,
+            "p5-final-offset-01": 5.962176968354399e-05,
+            "p5-final-offset-02": 7.460215340517337e-05,
+            "p5-final-offset-03": 6.650905256629326e-05,
+            "p5-final-rotation-00": 0.00010226121349155832,
+            "p5-final-rotation-01": 5.2557960623627416e-05,
+            "p5-final-rotation-02": 6.253882286848263e-05,
+            "p5-final-rotation-03": 4.534180394209462e-05,
+            "p5-final-translation-00": 8.043434065796394e-05,
+            "p5-final-translation-01": 8.680134032907496e-05,
+            "p5-final-translation-02": 5.795694191824877e-05,
+            "p5-final-translation-03": 9.032130053299963e-05
+          },
+          "source_field": "horizons.5.models.SK-47.family_first_means_conditional_on_available_families.object_xy_error_m"
+        },
+        {
+          "horizon": 10,
+          "seconds": 1.0,
+          "family_first_mean_m": 0.00010833473200770958,
+          "family_first_mean_mm": 0.10833473200770959,
+          "truth_eligible_windows": 2548,
+          "valid_prediction_windows": 2548,
+          "invalid_prediction_windows": 0,
+          "family_means_m": {
+            "p5-final-offset-00": 7.28639396025515e-05,
+            "p5-final-offset-01": 9.538784508276387e-05,
+            "p5-final-offset-02": 0.00011837583533282805,
+            "p5-final-offset-03": 0.00011716373361373519,
+            "p5-final-rotation-00": 0.00018203639404619826,
+            "p5-final-rotation-01": 7.688087917151853e-05,
+            "p5-final-rotation-02": 0.00010477072789819115,
+            "p5-final-rotation-03": 6.701585807778563e-05,
+            "p5-final-translation-00": 0.00011929968188742939,
+            "p5-final-translation-01": 0.00013506989354976703,
+            "p5-final-translation-02": 7.068073168138239e-05,
+            "p5-final-translation-03": 0.00014047126414836413
+          },
+          "source_field": "horizons.10.models.SK-47.family_first_means_conditional_on_available_families.object_xy_error_m"
+        }
+      ]
+    }
+  },
+  "horizons": [
+    1,
+    5,
+    10
+  ],
+  "limitations": "Overlapping windows are not independent samples; descriptive valid-only errors retain truth/model invalid counts. Different models may have different valid windows: paired effects require common-window/family eligibility and invalid rates. Zero eligible windows do not prove model quality. All predictions are offline and never fed to online control. Raw/source provenance and actual E2 completion are caller-owned.",
+  "selection": "Seeds 23 and 47 have all eligible windows valid for both S1 and SK at all plotted horizons; seed 11 is excluded from this common-valid illustrative plot because its validity masks differ.",
+  "confidence_intervals": "Not computed for this descriptive figure; windows overlap and are not independent samples."
+}

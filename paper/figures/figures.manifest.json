@@ -1,0 +1,77 @@
+{
+  "schema": "paper-figures-v1",
+  "method_system": {
+    "pdf": {
+      "file": "method_system.pdf",
+      "sha256": "4f5b38e4efbe4d3b4467b91dd5c64d462fc03f33444a3d4884147f71f948dc44",
+      "bytes": 41415
+    },
+    "png": {
+      "file": "method_system.png",
+      "sha256": "6628ad921ae649c1fa0421560525883c4f76feef92d6beaf1fe0dc600b24d765",
+      "bytes": 127145
+    },
+    "caption": "Task and controller schematic (not to scale). A rectangular part is pushed toward a target pose. At each 0.1 s control interval, the current 10-D state and candidate commands form the 11-D model input; a learned state-delta model recursively evaluates 128 five-step action sequences. When the current pose is outside tolerance, a fixed cost and validity checks select the first command. When the actual position and orientation are within tolerance, planning is bypassed and a common, nonlearned supervisor applies zero command; low actual speed and continuous 0.3 s qualification are checked at physics substeps. Future simulator states are not queried by planning.",
+    "source_fields": [
+      "src/push_align/representation.py:STATE_FIELDS,FEATURE_FIELDS,DELTA_FIELDS",
+      "src/push_align/planning.py:rollout,score,plan",
+      "src/push_align/final_execution.py:holding=pose_in_goal; zero override before env.step",
+      "src/push_align/task.py:handoff_metrics,pose_in_goal"
+    ],
+    "nature": "Explanatory schematic, not empirical scene image or measured trajectory"
+  },
+  "fixed_prediction": {
+    "pdf": {
+      "file": "fixed_prediction.pdf",
+      "sha256": "f748f85aaa84079ddd581572e8d58188f06f8016b63bfb74ca2ba15a456a0ee8",
+      "bytes": 22874
+    },
+    "png": {
+      "file": "fixed_prediction.png",
+      "sha256": "6685ff4cbb2bf8c75482370b50c4ed0c20e493682864a505b53c8c1e6acb6fa1",
+      "bytes": 77774
+    },
+    "values": {
+      "file": "fixed_prediction.values.json",
+      "sha256": "90d6943ed975096a3cf52243224db1f27ab4878d2ca5d0fa4b8456037c86f599",
+      "bytes": 15588
+    },
+    "source": "artifacts/results/fixed_prediction/summary.json",
+    "source_sha256": "0b649daa867029138722000ffd45ae972e49f75b0b7f3be59f61620d2e7a4e6e",
+    "caption": "Offline fixed-action position prediction on the 12 geometric-controller traces. Each point is the mean of 12 equally weighted family means, not the pooled-window mean. At K=1,5,10, respectively, all 2,656, 2,608, and 2,548 truth-eligible windows are valid for both methods in each plotted seed. Seed 11 is omitted because validity masks differ. Overlapping windows are not independent; these descriptive prediction errors do not establish closed-loop handoff improvement."
+  },
+  "visual_review": {
+    "status": "PASS_DIRECT_PNG_AND_INDEPENDENT_PDF_RENDER_VIEW",
+    "reviewer": "paper_figures agent",
+    "checks": [
+      "Both generated PNGs individually viewed",
+      "Both one-page PDFs independently rasterized with pdftoppm at 150 dpi and viewed",
+      "No glyph substitution, clipping, overlap, or invisible arrow labels",
+      "Shared y scale, distinct line/marker/color styles, 12-family means and all-window-valid assertions retained"
+    ],
+    "pdfs": {
+      "method_system": {
+        "pages": 1,
+        "media_box_pt": [
+          0.0,
+          0.0,
+          515.52,
+          212.4
+        ]
+      },
+      "fixed_prediction": {
+        "pages": 1,
+        "media_box_pt": [
+          0.0,
+          0.0,
+          515.52,
+          167.04
+        ]
+      }
+    }
+  },
+  "generator": {
+    "file": "generate_figures.py",
+    "sha256": "989325cf60504ea91a37b466229f02267b44957fa0bd81b7399c51cf3e984a75"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "research-paper-review-v1",
+  "as_of": "2026-10-19",
+  "status": "PASS_CONTENT_BUILD_AND_ALLPAGE_VISUAL_REVIEW",
+  "pdf": "reports/Research_Paper.ko.pdf",
+  "pdf_sha256": "5d22d95928cf07dbbe7195a97b17eb232d562f56f28552f5664dfca22bc54c87",
+  "template": "Real IEEEtran conference class, Korean via kotex, A4 10pt two-column; not a declared venue submission",
+  "technical_review": "Independent methods/results review matched stored code, configurations and numerical results; E1 subset, signed yaw criterion, validation score and E1/E2 bootstrap unit clarified",
+  "desktop_latex_compile": "success",
+  "terminal_latex_and_bibtex_compile": "success",
+  "overfull_boxes": 0,
+  "missing_characters": 0,
+  "unresolved_citations_or_references": 0,
+  "nonblocking_warnings": [
+    "IEEE class initial TU/ptm font shape fallback; explicitly selected TeX Gyre for Latin body",
+    "Unavailable Korean italic/smallcaps variants use normal shapes",
+    "Four underfull reference paragraphs; directly inspected and source text remains legible"
+  ],
+  "visual_review": {
+    "dpi": 130,
+    "pages": [
+      {
+        "page": 1,
+        "png_sha256": "baf0bf54ebc4e14de25baf4aa52d8d70aa53c47a7543619d544712a7c39d6e05",
+        "reviewer": "root",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      },
+      {
+        "page": 2,
+        "png_sha256": "0448581ea03dea82d7567647a3d073c0df070abe4eb2f2ad26e60add7dcbf9ba",
+        "reviewer": "root",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      },
+      {
+        "page": 3,
+        "png_sha256": "e124bfca929fee0c859737b68a24562cea20e91e4afe43642ee30464091edfbd",
+        "reviewer": "root",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      },
+      {
+        "page": 4,
+        "png_sha256": "b19585abaaed7643c60d2d3f42350d06d90bd4eaf62c0b2dd1028396504a1bd1",
+        "reviewer": "independent results reviewer",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      },
+      {
+        "page": 5,
+        "png_sha256": "07fe139ac5f0073c6da9e998e55b314b1bfe6151ecdb79d5e377374ec17f0d44",
+        "reviewer": "independent results reviewer",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      }
+    ]
+  },
+  "no_scientific_result_replacement": true,
+  "source_sha256": {
+    "paper/main.tex": "fdd822bb4b642ca382088b33df281c77d6d330d5dd88f116fc8e8b62110e8b9f",
+    "paper/references.bib": "0807e609aa84de7613271403c9362687178d7ff2fb66a0ee6b5168e9a86c05b9",
+    "paper/figures/method_system.pdf": "4f5b38e4efbe4d3b4467b91dd5c64d462fc03f33444a3d4884147f71f948dc44",
+    "paper/figures/fixed_prediction.pdf": "f748f85aaa84079ddd581572e8d58188f06f8016b63bfb74ca2ba15a456a0ee8",
+    "paper/figures/figures.manifest.json": "3f80cdd3ccacbfa65ce180c8f9312f2c37ecfc77434c3ea0818fb14fb0ccd1b4",
+    "paper/figures/fixed_prediction.values.json": "90d6943ed975096a3cf52243224db1f27ab4878d2ca5d0fa4b8456037c86f599",
+    "paper/figures/generate_figures.py": "989325cf60504ea91a37b466229f02267b44957fa0bd81b7399c51cf3e984a75",
+    "artifacts/results/E2/summary.json": "103f08e2a85a1cfa7eb1ac8db64c0fd8d641266520e46d083142cf218ee83a66",
+    "artifacts/results/E1/summary.json": "0f41783dfeaa99b188005aab9bf8d21adf1011de56ffca627304c800a6ab851b",
+    "artifacts/results/fixed_prediction/summary.json": "0b649daa867029138722000ffd45ae972e49f75b0b7f3be59f61620d2e7a4e6e",
+    "artifacts/provenance/frozen_manifest.json": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f"
+  },
+  "base_experimental_publication_commit": "2e5600e137b2b5fc98acfb3c273ba910edc23698",
+  "scientific_scope": "Existing limited-scope results rewritten in research form; no new experiment or causal claim; no new blind holdout"
+}
