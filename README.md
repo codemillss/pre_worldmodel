@@ -19,6 +19,8 @@ GitHub에서는 Markdown을 바로 읽을 수 있습니다. PDF의 목차·근�
 
 학술 논문은 IEEEtran conference 클래스의 2단 LaTeX 조판으로 작성했습니다. 수식·그림·표·참고문헌에 번호를 부여하고 본문에서 상호 참조합니다. 기존 [10쪽 기술 보고서](docs/technical_report.ko.md)와 [그 PDF](reports/Technical_Report.ko.pdf)는 프로젝트 설명용 보조 문서로 보존합니다.
 
+2026-10-21 [논문 내용 재검토](paper/content_review.ko.md)에서 코드·수식·저장 결과를 다시 대조하고, 기준선·선정 절차·평가 범위 설명을 보완했습니다. 수정 원고는 6쪽이며 학습 모델과 실험 결과는 변경하지 않았습니다.
+
 ## 최종 결과
 
 | 방법 | 구성 | 인계 성공 |

@@ -1,0 +1,166 @@
+{
+  "schema": "research-paper-content-review-v2",
+  "as_of": "2026-10-21",
+  "status": "PASS_DECLARED_CONTENT_AND_RENDER_CHECKS_WITH_RESEARCH_LIMITATIONS",
+  "review_base_commit": "f6fd8a8985f41db970880eb9e692ddcf8723a0eb",
+  "base_experimental_publication_commit": "2e5600e137b2b5fc98acfb3c273ba910edc23698",
+  "pdf": "reports/Research_Paper.ko.pdf",
+  "pdf_sha256": "7d8734f330c82ea24846d2269a1d3b2d4ebac677f4815937823ac3665a97054a",
+  "source_sha256": {
+    "paper/main.tex": "ff92ba8caaf9406c37ba5f6ee8c1a0092f98c9b2b715b2b7feac6c6d6bd01e5b",
+    "paper/references.bib": "4d4245d599221217c2c866c1c42a0ba53223765f33a436e6fd8af81579b5e746",
+    "paper/figures/method_system.pdf": "4f5b38e4efbe4d3b4467b91dd5c64d462fc03f33444a3d4884147f71f948dc44",
+    "paper/figures/fixed_prediction.pdf": "f748f85aaa84079ddd581572e8d58188f06f8016b63bfb74ca2ba15a456a0ee8",
+    "paper/figures/figures.manifest.json": "3f80cdd3ccacbfa65ce180c8f9312f2c37ecfc77434c3ea0818fb14fb0ccd1b4",
+    "paper/figures/fixed_prediction.values.json": "90d6943ed975096a3cf52243224db1f27ab4878d2ca5d0fa4b8456037c86f599",
+    "paper/figures/generate_figures.py": "989325cf60504ea91a37b466229f02267b44957fa0bd81b7399c51cf3e984a75",
+    "artifacts/results/E2/summary.json": "103f08e2a85a1cfa7eb1ac8db64c0fd8d641266520e46d083142cf218ee83a66",
+    "artifacts/results/E1/summary.json": "0f41783dfeaa99b188005aab9bf8d21adf1011de56ffca627304c800a6ab851b",
+    "artifacts/results/fixed_prediction/summary.json": "0b649daa867029138722000ffd45ae972e49f75b0b7f3be59f61620d2e7a4e6e",
+    "artifacts/provenance/frozen_manifest.json": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f"
+  },
+  "audit_code_and_config_sha256": {
+    "src/push_align/representation.py": "a66765f7b1f0024928f564494ce094aabeaefebefd59b65ad52c13b9a58e98ac",
+    "src/push_align/dynamics.py": "0b28edde9c70c296c7d28aa6f55278d8e66db13ebe56bd6659d1410f948d6921",
+    "src/push_align/normalization.py": "3471c4af1d6c0678839cc7ae9660945f27d523b38bc0e187119f3b8f20272eea",
+    "src/push_align/sequence_training.py": "af400f4c978529e621dd0f0d98dcad484532fece5b51f1cf36554b71ca66135f",
+    "src/push_align/prediction.py": "79a3b7028b6f3515271e6590a4351d74865682a4ea7a0292ceb5cc1fbded0dd4",
+    "src/push_align/planning.py": "1d13f0004ee9795ce1d08386a49c60b0540a536b817d2b1cecd02b9ef40f93bb",
+    "src/push_align/task.py": "126be1839024d338b2e32f83f2480401a0c79635ddfb1ea51d62a20051623e14",
+    "src/push_align/final_execution.py": "ae848cc0523874143926d5b58de44938c20921beda2ac13913e8a490000b787e",
+    "src/push_align/geometry_control.py": "b2e159d75efa319f3f7100e94e112a30bed45a814dd6b7e476b55dd3149a4dab",
+    "src/push_align/geometry_control_smooth.py": "3a717583867f5371c63e2df082a3c749f739e5011feeb65f7040ddb9a190a7ff",
+    "src/push_align/ridge.py": "3cbf781a73a9ff2ffec705818bf8330931f3e638f1be5b484a3fe906c4276135",
+    "src/push_align/final_manifest.py": "853f791afda715b0bb572342088d556058faecfd37c6f0567115321bd73297dc",
+    "src/push_align/candidate_diagnostics.py": "b9c684312a4b4105ee481ea6b4c17ff31c8a776aa97a1905726922f6d1aa342e",
+    "src/push_align/final_e1_statistics.py": "2a1d3062cc555dd15311b8a2c4842189d79ab650ee8d06a58bcb0f9668aec5c1",
+    "src/push_align/final_statistics_v2.py": "3dba82679804045e262948e5016160c99a75d149a9b70796261d6b38c7476aeb",
+    "configs/p3_ridge.v1.toml": "227830c2501441cbf65405bed04c1a60504b75fdc530a070c1a824b8b54bf607",
+    "configs/p3_planning_trials.v1.json": "ddf175ab82ed79006f6e0d73957165da215d6e53a2ed622a468d97fc69cece89",
+    "configs/p3_planning.v1.json": "3fda5e0a2ea077ab391b2d750547973658219b847f0998163e6c1f595af3c1f8"
+  },
+  "review_notes": "paper/content_review.ko.md",
+  "review_notes_sha256": "3da99737961cab1636b2c69b8408a14aa32cc98bc6d8a5d8a280a3c13099fa7a",
+  "numeric_verifier": "scripts/verify_paper_results.py",
+  "numeric_verifier_sha256": "12c6214201bfa1c28292f878f6ca4d7869b9d051c486ee73bb94ae60f3cc50ea",
+  "numeric_receipt": "artifacts/validation/paper_results_review.v2.json",
+  "numeric_receipt_sha256": "8b12d7c5ee7125599af6e88e8bee453586e63b7fb304bdb4aca6390f0e0a4de3",
+  "scientific_evidence_copy_inventory_verified_files": 822,
+  "findings_resolved": [
+    {
+      "id": "research_question_alignment",
+      "resolution": "Explicit RQ1-RQ3 tied to fixed prediction, E1 cost regret and E2 handoff; main controlled contrast S1-SK"
+    },
+    {
+      "id": "baseline_reproducibility",
+      "resolution": "Added exact G basis/offset equation/gains/phase behavior and R fitting/alpha selection"
+    },
+    {
+      "id": "selection_validity",
+      "resolution": "Separated numerical selection validity from final workspace/penetration validity and 2pi transition yaw from pi-symmetric task yaw"
+    },
+    {
+      "id": "cost_success_distinction",
+      "resolution": "Disclosed absence of explicit hold duration and future supervisor switching in surrogate cost; no causal attribution"
+    },
+    {
+      "id": "E1_directional_coverage",
+      "resolution": "Disclosed positive-yaw/positive-offset selection and limited G-state/N16 population"
+    },
+    {
+      "id": "E1_repeat_semantics",
+      "resolution": "Disclosed epsilon-expanded cost ranges and exact deterministic repeat arrays rather than physical noise variance"
+    },
+    {
+      "id": "component_specific_prediction",
+      "resolution": "Added verified seed47 K5 yaw/angular-speed worsening alongside XY improvement"
+    },
+    {
+      "id": "inference_scope",
+      "resolution": "Conditioned family bootstrap on observed seeds and removed causal-transfer interpretation of 35/36 selection agreement"
+    }
+  ],
+  "arithmetic": {
+    "prediction_table_values_checked": 21,
+    "fixed_prediction_figure_points_checked": 12,
+    "E2_summary_exact": true,
+    "E2_bootstrap_arrays_exact": 163,
+    "E1_diagnostics_regenerated": 84,
+    "E1_summary_exact": true,
+    "E1_bootstrap_arrays_exact": 379,
+    "actual_repeat_states_actions_cost_valid_arrays_checked": true
+  },
+  "compile": {
+    "terminal_tectonic_and_bibtex": "success",
+    "desktop_editor_compiler": "success",
+    "overfull_boxes": 0,
+    "missing_characters": 0,
+    "unresolved_citations_or_references": 0,
+    "numbered_sections": 8,
+    "equations": 12,
+    "tables": 5,
+    "figures": 2,
+    "references": 7,
+    "nonblocking_warnings": [
+      "IEEE class initial TU/ptm font fallbacks before explicitly selected TeX Gyre fonts",
+      "Unavailable Korean italic/smallcaps variants use normal shapes",
+      "Four underfull long-reference lines; visually inspected as legible"
+    ]
+  },
+  "visual_review": {
+    "dpi": 130,
+    "pages": [
+      {
+        "page": 1,
+        "png_sha256": "e38e0efdc77044a1e1f2fdd218b9c318f243bf065ccb2e7cb3576c0989201b45",
+        "reviewer": "root",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      },
+      {
+        "page": 2,
+        "png_sha256": "3da7cd97527aec8cb92b1889f41e8606ffc995e0a8fda928111587193e1fda2e",
+        "reviewer": "root",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      },
+      {
+        "page": 3,
+        "png_sha256": "5c1e36979774367b06ef4877fc3a17105b935141024f34bf055b163c665c4e76",
+        "reviewer": "root",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      },
+      {
+        "page": 4,
+        "png_sha256": "83f13a7e6dee3c2890f2252730ee45f9db6f14b009751080eb6ea0df194e3097",
+        "reviewer": "separate internal results reviewer",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      },
+      {
+        "page": 5,
+        "png_sha256": "e9103d6eb9a0aa289636452acd55e6e7b2e4ea15f68aa6c47e3e3eba1c9a1bb2",
+        "reviewer": "separate internal results reviewer",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      },
+      {
+        "page": 6,
+        "png_sha256": "58f1e472df21f97c54b0f1b7a1138b3de6a487c07131e8000846227961467d64",
+        "reviewer": "separate internal results reviewer",
+        "status": "PASS_NO_CLIPPING_OR_OVERLAP"
+      }
+    ]
+  },
+  "preservation": {
+    "original_data_models_configs_results_changed": false,
+    "new_training_updates": 0,
+    "new_model_calls": 0,
+    "new_physics_calls": 0,
+    "previous_review_retained": "artifacts/validation/paper_review.json"
+  },
+  "remaining_research_limits": [
+    "No causal decomposition of final failure among model, cost and exploration",
+    "E1 positive-direction G-state subset is not a representative mediation sample for E2",
+    "Fixed-action aggregate verification does not re-infer omitted per-window predictions",
+    "No new blind holdout, real-robot or business-effect experiment",
+    "No proof of general model/control superiority or equivalence"
+  ],
+  "interpretation": "Pass applies to reported source/result consistency and inspected rendering, not all scientific questions, external peer review or venue acceptance."
+}

@@ -32,4 +32,19 @@ XeLaTeX와 BibTeX를 사용할 수 있는 TeX Live 환경 또는 Tectonic에서 
 
 그림 생성기는 이미 저장된 결과로부터 그림을 생성합니다. Matplotlib·NumPy가 필요하며 새 학습이나 물리 실험을 실행하지 않습니다. 개념도와 측정 결과를 구분하고 예측 그림은 공통 유효 창에서 비교 가능한 seed 23·47만 사용합니다.
 
-실험 데이터·모델·학습·계획 설정은 변경하지 않았습니다. 결과와 검증 가능한 범위는 [실험 근거 색인](../artifacts/index.md), 논문 빌드·수치·페이지 검토는 [논문 검토 기록](../artifacts/validation/paper_review.json)에 기록합니다.
+실험 데이터·모델·학습·계획 설정은 변경하지 않았습니다. 결과와 검증 가능한 범위는 [실험 근거 색인](../artifacts/index.md)에 기록합니다.
+
+## 내용 재검토
+
+2026-10-21에 수식·코드·표·그림 및 문제–방법–실험–결론의 연결을 다시 검토했습니다. 기준선과 선정 절차, 비용과 유지 성공의 차이, E1의 방향 제한 및 위치 예측 개선의 범위를 보완했습니다. 현재 PDF는 6쪽이며 수치와 원시 실험 결과를 교체하지 않았습니다.
+
+- [발견 사항·수정 및 남은 연구 한계](content_review.ko.md)
+- [현재 내용·빌드·전체 페이지 검토 기록](../artifacts/validation/paper_content_review.v2.json)
+- [수치 재계산 기록](../artifacts/validation/paper_results_review.v2.json)
+- [이전 버전의 형식·빌드 검토 기록](../artifacts/validation/paper_review.json)
+
+저장된 E1/E2 통계, 예측 표 및 그림의 family 평균을 확인하는 공개 검산은 다음과 같습니다. NumPy가 필요하며 모델 호출·물리 실행·재학습은 하지 않습니다.
+
+    python -B scripts/verify_paper_results.py
+
+위 명령은 저장소 루트에서 실행합니다. 포함하지 않은 원시 자료 전체나 고정 예측 창의 재추론을 검증하는 명령은 아닙니다.

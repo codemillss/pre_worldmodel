@@ -1,0 +1,424 @@
+{
+  "schema": "paper-content-independent-results-audit-v2",
+  "status": "PASS_SELECTED_SAVED_RESULTS_AND_PAPER_NUMBERS",
+  "verifier": "scripts/verify_paper_results.py",
+  "verifier_sha256": "12c6214201bfa1c28292f878f6ca4d7869b9d051c486ee73bb94ae60f3cc50ea",
+  "paper_source_sha256": "ff92ba8caaf9406c37ba5f6ee8c1a0092f98c9b2b715b2b7feac6c6d6bd01e5b",
+  "new_physics_calls": 0,
+  "new_model_calls": 0,
+  "new_training_updates": 0,
+  "E2": {
+    "rows": 96,
+    "families": 12,
+    "summary_exact": true,
+    "bootstrap_arrays_exact": 163,
+    "table_and_strata_rows_match": {
+      "G": {
+        "episodes": 12,
+        "successes": 8,
+        "position_mm": 5.786973531436978,
+        "yaw_deg": 1.0441885971303615,
+        "time_s": 22.133333333324902,
+        "strata": {
+          "translation": [
+            4,
+            4
+          ],
+          "rotation": [
+            1,
+            4
+          ],
+          "offset": [
+            3,
+            4
+          ]
+        }
+      },
+      "R": {
+        "episodes": 12,
+        "successes": 0,
+        "position_mm": 17.101973459008974,
+        "yaw_deg": 8.073533847984526,
+        "time_s": 29.999999999974637,
+        "strata": {
+          "translation": [
+            0,
+            4
+          ],
+          "rotation": [
+            0,
+            4
+          ],
+          "offset": [
+            0,
+            4
+          ]
+        }
+      },
+      "S1": {
+        "episodes": 36,
+        "successes": 13,
+        "position_mm": 9.682864785731846,
+        "yaw_deg": 3.0326955670587843,
+        "time_s": 20.972222222206742,
+        "strata": {
+          "translation": [
+            7,
+            12
+          ],
+          "rotation": [
+            6,
+            12
+          ],
+          "offset": [
+            0,
+            12
+          ]
+        }
+      },
+      "SK": {
+        "episodes": 36,
+        "successes": 12,
+        "position_mm": 11.492076265545611,
+        "yaw_deg": 2.7280780199231947,
+        "time_s": 21.93888888887175,
+        "strata": {
+          "translation": [
+            6,
+            12
+          ],
+          "rotation": [
+            6,
+            12
+          ],
+          "offset": [
+            0,
+            12
+          ]
+        }
+      }
+    },
+    "paired_rows_match": [
+      {
+        "left": "R",
+        "right": "G",
+        "difference_pp": -66.66666666666666,
+        "ci95_pp": [
+          -83.33333333333334,
+          -50.0
+        ],
+        "eligible_families": 12
+      },
+      {
+        "left": "S1",
+        "right": "G",
+        "difference_pp": -30.555555555555557,
+        "ci95_pp": [
+          -63.88888888888889,
+          2.777777777777775
+        ],
+        "eligible_families": 12
+      },
+      {
+        "left": "SK",
+        "right": "G",
+        "difference_pp": -33.33333333333333,
+        "ci95_pp": [
+          -66.66666666666666,
+          0.0
+        ],
+        "eligible_families": 12
+      },
+      {
+        "left": "S1",
+        "right": "R",
+        "difference_pp": 36.11111111111111,
+        "ci95_pp": [
+          16.666666666666664,
+          58.333333333333336
+        ],
+        "eligible_families": 12
+      },
+      {
+        "left": "SK",
+        "right": "R",
+        "difference_pp": 33.33333333333333,
+        "ci95_pp": [
+          8.333333333333332,
+          58.333333333333336
+        ],
+        "eligible_families": 12
+      },
+      {
+        "left": "SK",
+        "right": "S1",
+        "difference_pp": -2.7777777777777777,
+        "ci95_pp": [
+          -8.333333333333332,
+          0.0
+        ],
+        "eligible_families": 12
+      }
+    ],
+    "terminations": {
+      "timeout": 59,
+      "planner_invalid": 3,
+      "ready": 33,
+      "controller_infeasible": 1
+    },
+    "failures": 63,
+    "failure_endpoint_misses": {
+      "position": 62,
+      "yaw": 38,
+      "linear_speed": 0,
+      "angular_speed": 2
+    }
+  },
+  "E1": {
+    "diagnostics_regenerated": 84,
+    "snapshots": 12,
+    "families": 6,
+    "summary_exact": true,
+    "bootstrap_arrays_exact": 379,
+    "means_match_paper": {
+      "R": 10.486563030887632,
+      "S1": 6.612160856166368,
+      "SK": 6.618703112170288
+    },
+    "physical_repeat_count": 576,
+    "actual_valid_repeats": 576,
+    "actual_futures_repeated_state_action_cost_and_valid_arrays_exact": true,
+    "maximum_repeated_state_difference": 0.0,
+    "maximum_repeated_action_difference": 0.0,
+    "maximum_repeated_cost_difference": 0.0,
+    "maximum_repeated_cost_range": 0.0,
+    "prediction_count": 1344,
+    "predicted_invalid_candidate_count": 13,
+    "predicted_invalid_candidate_count_by_model": {
+      "R": 10,
+      "S1-11": 2,
+      "S1-23": 0,
+      "S1-47": 0,
+      "SK-11": 1,
+      "SK-23": 0,
+      "SK-47": 0
+    },
+    "S1_SK_same_selected_index": "35/36",
+    "undefined_loss_sets": 0
+  },
+  "fixed_prediction": {
+    "table_rows_all_horizons_match": {
+      "R": {
+        "position_mm_by_K1_K5_K10": [
+          0.0965051682040544,
+          0.8694506842149493,
+          1.6056486352071093
+        ],
+        "masks": [
+          {
+            "horizon": 1,
+            "truth_eligible": 2656,
+            "valid": 2609,
+            "invalid": 47
+          },
+          {
+            "horizon": 5,
+            "truth_eligible": 2608,
+            "valid": 2250,
+            "invalid": 358
+          },
+          {
+            "horizon": 10,
+            "truth_eligible": 2548,
+            "valid": 1921,
+            "invalid": 627
+          }
+        ]
+      },
+      "S1-11": {
+        "position_mm_by_K1_K5_K10": [
+          0.02063067988153966,
+          0.08710625677716285,
+          0.15621518222258202
+        ],
+        "masks": [
+          {
+            "horizon": 1,
+            "truth_eligible": 2656,
+            "valid": 2656,
+            "invalid": 0
+          },
+          {
+            "horizon": 5,
+            "truth_eligible": 2608,
+            "valid": 2606,
+            "invalid": 2
+          },
+          {
+            "horizon": 10,
+            "truth_eligible": 2548,
+            "valid": 2546,
+            "invalid": 2
+          }
+        ]
+      },
+      "SK-11": {
+        "position_mm_by_K1_K5_K10": [
+          0.02258178825502918,
+          0.08805364267968349,
+          0.1514290416140996
+        ],
+        "masks": [
+          {
+            "horizon": 1,
+            "truth_eligible": 2656,
+            "valid": 2656,
+            "invalid": 0
+          },
+          {
+            "horizon": 5,
+            "truth_eligible": 2608,
+            "valid": 2608,
+            "invalid": 0
+          },
+          {
+            "horizon": 10,
+            "truth_eligible": 2548,
+            "valid": 2548,
+            "invalid": 0
+          }
+        ]
+      },
+      "S1-23": {
+        "position_mm_by_K1_K5_K10": [
+          0.02042864856295417,
+          0.0906047678306505,
+          0.16690677683903576
+        ],
+        "masks": [
+          {
+            "horizon": 1,
+            "truth_eligible": 2656,
+            "valid": 2656,
+            "invalid": 0
+          },
+          {
+            "horizon": 5,
+            "truth_eligible": 2608,
+            "valid": 2608,
+            "invalid": 0
+          },
+          {
+            "horizon": 10,
+            "truth_eligible": 2548,
+            "valid": 2548,
+            "invalid": 0
+          }
+        ]
+      },
+      "SK-23": {
+        "position_mm_by_K1_K5_K10": [
+          0.01752866247334423,
+          0.05864705091131523,
+          0.09569184332977133
+        ],
+        "masks": [
+          {
+            "horizon": 1,
+            "truth_eligible": 2656,
+            "valid": 2656,
+            "invalid": 0
+          },
+          {
+            "horizon": 5,
+            "truth_eligible": 2608,
+            "valid": 2608,
+            "invalid": 0
+          },
+          {
+            "horizon": 10,
+            "truth_eligible": 2548,
+            "valid": 2548,
+            "invalid": 0
+          }
+        ]
+      },
+      "S1-47": {
+        "position_mm_by_K1_K5_K10": [
+          0.019318442973503654,
+          0.08423539034475278,
+          0.1475312099861768
+        ],
+        "masks": [
+          {
+            "horizon": 1,
+            "truth_eligible": 2656,
+            "valid": 2656,
+            "invalid": 0
+          },
+          {
+            "horizon": 5,
+            "truth_eligible": 2608,
+            "valid": 2608,
+            "invalid": 0
+          },
+          {
+            "horizon": 10,
+            "truth_eligible": 2548,
+            "valid": 2548,
+            "invalid": 0
+          }
+        ]
+      },
+      "SK-47": {
+        "position_mm_by_K1_K5_K10": [
+          0.018939799478388995,
+          0.06899429664003856,
+          0.10833473200770959
+        ],
+        "masks": [
+          {
+            "horizon": 1,
+            "truth_eligible": 2656,
+            "valid": 2656,
+            "invalid": 0
+          },
+          {
+            "horizon": 5,
+            "truth_eligible": 2608,
+            "valid": 2608,
+            "invalid": 0
+          },
+          {
+            "horizon": 10,
+            "truth_eligible": 2548,
+            "valid": 2548,
+            "invalid": 0
+          }
+        ]
+      }
+    },
+    "all_12_figure_points_match_per_family_and_summary": true,
+    "figure_source_sha256_matches": true,
+    "seed47_K5_state_component_counterexample": {
+      "S1-47": {
+        "position_mm": 0.08423539034475278,
+        "yaw_deg_2pi": 0.013067445150384393,
+        "angular_velocity_rad_s": 0.000980678183662481
+      },
+      "SK-47": {
+        "position_mm": 0.06899429664003856,
+        "yaw_deg_2pi": 0.013515835951612666,
+        "angular_velocity_rad_s": 0.0010304313062078532
+      }
+    },
+    "scope": "Published aggregate family means verified; omitted per-window prediction arrays and source raw were not re-inferred."
+  },
+  "scope": "Publication audit of selected saved arrays, summary arithmetic and numeric manuscript statements. This is not new scientific execution, an independent physical replication, or an audit of omitted raw data.",
+  "statistical_scope": "Family bootstrap conditions on the observed training seeds and empirical design strata; it does not cover the full training-seed population or industrial occurrence distribution.",
+  "E1_comparator": {
+    "code": "src/push_align/candidate_diagnostics.py",
+    "epsilon": "1e-6 + 1e-5 * max(abs(actual_repeat_costs))",
+    "meaning": "Expanded observed ranges, not confidence intervals; exact repeats test deterministic reproducibility."
+  }
+}

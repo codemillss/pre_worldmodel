@@ -1,9 +1,9 @@
 {
   "schema": "public-delivery-file-inventory-v1",
-  "as_of_kst": "2026-10-19",
+  "as_of_kst": "2026-10-21",
   "repository": "https://github.com/codemillss/pre_worldmodel.git",
   "branch": "main",
-  "scope": "All tracked publication files, including the IEEEtran research manuscript; self excluded to avoid a recursive hash",
+  "scope": "All tracked publication files including substantively reviewed IEEEtran manuscript and saved-result verifier; self excluded to avoid a recursive hash",
   "original_core_evidence_SHA_verified": 20,
   "private_local_path_and_high_confidence_secret_patterns_found": 0,
   "files": [
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5744,
-      "sha256": "d81d70e829f25e25211228b6dfd0e005dbd84c9fdff68efeae62d1adabac6369"
+      "bytes": 6032,
+      "sha256": "d0c2b66697602df16750461c898945b3f94530b1bb6bd2afcdd3483a0ab85cd2"
     },
     {
       "path": "artifacts/audits/p5_application_completion.v1.json",
@@ -2358,6 +2358,16 @@
       "sha256": "ce52c19ccc0540a00755607788c0f0ee200630a11a8c628f617c85e217c7d3f2"
     },
     {
+      "path": "artifacts/validation/paper_content_review.v2.json",
+      "bytes": 8768,
+      "sha256": "794505e9952dd63198ba03cd1abd42b75ac37bc5e541dd73fde852595b5eebd3"
+    },
+    {
+      "path": "artifacts/validation/paper_results_review.v2.json",
+      "bytes": 10517,
+      "sha256": "8b12d7c5ee7125599af6e88e8bee453586e63b7fb304bdb4aca6390f0e0a4de3"
+    },
+    {
       "path": "artifacts/validation/paper_review.json",
       "bytes": 3667,
       "sha256": "743146714b2a6cfcbb498c8afc2f16e30205bc42f454d73cee1e2cdbb491d4b2"
@@ -2724,8 +2734,13 @@
     },
     {
       "path": "paper/README.md",
-      "bytes": 2460,
-      "sha256": "00efd51e3b447a4e78004b8e1716e8d4e1cf87890bb5e636266bedfd477f5daf"
+      "bytes": 3507,
+      "sha256": "37924fefa7001e3162f320f2594832a334e6d12929bcbc05cd355ad27db884c7"
+    },
+    {
+      "path": "paper/content_review.ko.md",
+      "bytes": 8039,
+      "sha256": "3da99737961cab1636b2c69b8408a14aa32cc98bc6d8a5d8a280a3c13099fa7a"
     },
     {
       "path": "paper/figures/figures.manifest.json",
@@ -2764,13 +2779,13 @@
     },
     {
       "path": "paper/main.tex",
-      "bytes": 27913,
-      "sha256": "fdd822bb4b642ca382088b33df281c77d6d330d5dd88f116fc8e8b62110e8b9f"
+      "bytes": 34279,
+      "sha256": "ff92ba8caaf9406c37ba5f6ee8c1a0092f98c9b2b715b2b7feac6c6d6bd01e5b"
     },
     {
       "path": "paper/references.bib",
       "bytes": 2428,
-      "sha256": "0807e609aa84de7613271403c9362687178d7ff2fb66a0ee6b5168e9a86c05b9"
+      "sha256": "4d4245d599221217c2c866c1c42a0ba53223765f33a436e6fd8af81579b5e746"
     },
     {
       "path": "pyproject.toml",
@@ -2789,13 +2804,13 @@
     },
     {
       "path": "reports/Research_Paper.ko.manifest.json",
-      "bytes": 1888,
-      "sha256": "466a27721285bb28b31dcc37b20cd2df2cbdae95d43a7ae670591b6c48806bab"
+      "bytes": 2004,
+      "sha256": "ea1c50c82806a8b45ee038c30298c5b4bacb6d911c4112a80e9e5de95acd3995"
     },
     {
       "path": "reports/Research_Paper.ko.pdf",
-      "bytes": 287122,
-      "sha256": "5d22d95928cf07dbbe7195a97b17eb232d562f56f28552f5664dfca22bc54c87"
+      "bytes": 302040,
+      "sha256": "7d8734f330c82ea24846d2269a1d3b2d4ebac677f4815937823ac3665a97054a"
     },
     {
       "path": "reports/Technical_Report.ko.manifest.json",
@@ -3081,6 +3096,11 @@
       "path": "scripts/smoke_public.py",
       "bytes": 2950,
       "sha256": "69d6dd0fd1f3cf9f8ff5a163db33a978f7852672a4ec387da0e2babf55f96d20"
+    },
+    {
+      "path": "scripts/verify_paper_results.py",
+      "bytes": 16954,
+      "sha256": "12c6214201bfa1c28292f878f6ca4d7869b9d051c486ee73bb94ae60f3cc50ea"
     },
     {
       "path": "scripts/verify_public_results.py",
@@ -4348,6 +4368,7 @@
       "sha256": "c1df1301e029821d68e09627506056d56b39164085fa3c527b04b92802a614ee"
     }
   ],
-  "total_files_excluding_self": 868,
-  "total_bytes_excluding_self": 52072017
+  "total_files_excluding_self": 872,
+  "total_bytes_excluding_self": 52139030,
+  "current_paper_content_review": "artifacts/validation/paper_content_review.v2.json"
 }
