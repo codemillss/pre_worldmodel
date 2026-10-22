@@ -3,7 +3,7 @@
   "as_of_kst": "2026-10-22",
   "repository": "https://github.com/codemillss/pre_worldmodel.git",
   "branch": "main",
-  "scope": "All tracked publication files including WHY/WHAT/HOW/SO-WHAT README, standalone figure/table definitions, rebuilt paper/reports, source-bound validation and separate unexecuted near-goal diagnostic design; self excluded",
+  "scope": "All tracked publication files, preserved frozen results/paper/PDFs, separately executed D1/D2 follow-up code and selected174-file diagnostic evidence. Full raw remains in original local run; self excluded.",
   "original_core_evidence_SHA_verified": 20,
   "private_local_path_and_high_confidence_secret_patterns_found": 0,
   "files": [
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 16495,
-      "sha256": "64dc9d573cd630391abdee39aeb4e04759e5664c0ae43adf871da3e34330202b"
+      "bytes": 17851,
+      "sha256": "b2c26e5261ce5fc85dd972d82121ca2cd3812553f583ed0ea8b2be1f4830ada8"
     },
     {
       "path": "artifacts/audits/p5_application_completion.v1.json",
@@ -98,9 +98,884 @@
       "sha256": "a0eb3dae06411c21e6c94e9337e7a5ef880d2c5d413b68a3eca118c59fafe4b5"
     },
     {
+      "path": "artifacts/followup/20261022-d1-d2/entry.json",
+      "bytes": 38304,
+      "sha256": "32aadf0dcaa5807ae7c229ca93dfbd89b68b372bdf8983f75ae7652e4d2472a3"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/manifest.json",
+      "bytes": 79818,
+      "sha256": "7d8f6772cd33fe06e59221774db845c434f8c652d56262d704900a1845fe1338"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/prefix-F-O0.jsonl",
+      "bytes": 57802,
+      "sha256": "3d805c6da70cbcc85763b2cbeeaadbe11543c11a09755d043b70014f9c3dd60b"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/prefix-N-T.jsonl",
+      "bytes": 17696,
+      "sha256": "7a1fd939b1bac7f95d014d499543733f47123a210fed7c26e69071682c080f23"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/raw_inventory.json",
+      "bytes": 125935,
+      "sha256": "cf16797e7778e1b2a5dd5b0fdcc970442f36acf36f17ce9106ed9ec3b07441a8"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/resource_projection.json",
+      "bytes": 492,
+      "sha256": "ec78218024129377ee877523e295bcbec4ee9e1fbc141ffc3d7bc91675717c09"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/restoration-F-O0.json",
+      "bytes": 37858,
+      "sha256": "65e7af32169fa078fc25a04b6a148083b6747accb4aaf6746fb9f46541179804"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/restoration-N-T.json",
+      "bytes": 34673,
+      "sha256": "2f7a47880e17a2d3efc0a11ee33d65892b7d509fc63eba8efefef9c4364b1f64"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-000-A.npz",
+      "bytes": 2092,
+      "sha256": "782a7c02681625ccf379d564e776ad68772f5d12423f908f88f431df4a277e71"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-000-A.summary.json",
+      "bytes": 941,
+      "sha256": "fd34ca3dbc72d4aca17dab4add306567032488efcbe440fb97ab6e73163923d3"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-000-B.npz",
+      "bytes": 2277,
+      "sha256": "f3a100f6fcce402e9bebc5a001f3a5fce956645254ec2967a5f64f4853a34e27"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-000-B.summary.json",
+      "bytes": 548,
+      "sha256": "d7c4eed4cda3775351cedf3f2eb6366de47be1029c37ba15d93673eceee35acd"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-001-A.npz",
+      "bytes": 2242,
+      "sha256": "b3d286fa6cbc017f4ef3aa868796a26696e5b4700f30fd88f9bff60132bd1158"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-001-A.summary.json",
+      "bytes": 961,
+      "sha256": "89b053210a0a452d2ac8a2a58c46f7f059ad43f4cc20ae49fbfd9b591eaae710"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-001-B.npz",
+      "bytes": 2460,
+      "sha256": "d7d49930746952f05566f1d96bab058418904a208d3019806fd5d6c61bdaf23a"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-001-B.summary.json",
+      "bytes": 546,
+      "sha256": "a5160761b1274c74a6194a2fc019cdb233c3df76712d8003e05f0d6b5c70b319"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-002-A.npz",
+      "bytes": 2092,
+      "sha256": "782a7c02681625ccf379d564e776ad68772f5d12423f908f88f431df4a277e71"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-002-A.summary.json",
+      "bytes": 940,
+      "sha256": "7fbc24e8cadd132044d42fc6ed2abb33ab24d7bbbd9904611d786e50731c0169"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-002-B.npz",
+      "bytes": 2277,
+      "sha256": "f3a100f6fcce402e9bebc5a001f3a5fce956645254ec2967a5f64f4853a34e27"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-002-B.summary.json",
+      "bytes": 548,
+      "sha256": "cacfd6a55921da8cb7bc012b15b0cc1df845932e40c379db81116fbdd1f4c593"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-003-A.npz",
+      "bytes": 2092,
+      "sha256": "782a7c02681625ccf379d564e776ad68772f5d12423f908f88f431df4a277e71"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-003-A.summary.json",
+      "bytes": 941,
+      "sha256": "b95700c535916d46c6228afcf621c56a8592715a0b8aa83c7603a56bb0ece452"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-003-B.npz",
+      "bytes": 2277,
+      "sha256": "f3a100f6fcce402e9bebc5a001f3a5fce956645254ec2967a5f64f4853a34e27"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-003-B.summary.json",
+      "bytes": 548,
+      "sha256": "3c4b0d9f593613a2c10180fde3cb6128cf21952ed9c7924586df06e4ad70e3ea"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-004-A.npz",
+      "bytes": 2092,
+      "sha256": "782a7c02681625ccf379d564e776ad68772f5d12423f908f88f431df4a277e71"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-004-A.summary.json",
+      "bytes": 940,
+      "sha256": "84988d7ce2377a0e38065e92c73401fe819d205841e1ff6860de9d3d590b1b7c"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-004-B.npz",
+      "bytes": 2277,
+      "sha256": "f3a100f6fcce402e9bebc5a001f3a5fce956645254ec2967a5f64f4853a34e27"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-004-B.summary.json",
+      "bytes": 547,
+      "sha256": "3bb2493a0f5d333ab466dc01253f942ccdfc9d6181ca19540b947ef16a77fffa"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-005-A.npz",
+      "bytes": 2092,
+      "sha256": "782a7c02681625ccf379d564e776ad68772f5d12423f908f88f431df4a277e71"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-005-A.summary.json",
+      "bytes": 941,
+      "sha256": "2216a2d50605848cb2fd602445eb2b64e8934e4f49eeda23f7a795c431169543"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-005-B.npz",
+      "bytes": 2277,
+      "sha256": "f3a100f6fcce402e9bebc5a001f3a5fce956645254ec2967a5f64f4853a34e27"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-005-B.summary.json",
+      "bytes": 547,
+      "sha256": "fdeb1ebc9d877567d9abe37b073b61912d0533ca731e142ba41f0fec94a1f42a"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-006-A.npz",
+      "bytes": 2092,
+      "sha256": "782a7c02681625ccf379d564e776ad68772f5d12423f908f88f431df4a277e71"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-006-A.summary.json",
+      "bytes": 941,
+      "sha256": "1fce95ddc66a39bdb60dee127b2103aea0a1a759263aeef88d2578ebcf32fdb2"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-006-B.npz",
+      "bytes": 2277,
+      "sha256": "f3a100f6fcce402e9bebc5a001f3a5fce956645254ec2967a5f64f4853a34e27"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-006-B.summary.json",
+      "bytes": 548,
+      "sha256": "5d1cd03d6fc601c3166f77f4b8de1b323c371db53610ef86db27793778b99ca3"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-007-A.npz",
+      "bytes": 2092,
+      "sha256": "782a7c02681625ccf379d564e776ad68772f5d12423f908f88f431df4a277e71"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-007-A.summary.json",
+      "bytes": 941,
+      "sha256": "a0784b9f5d520b27aa810b374f8a38c4aa02e2c062208e7f0855456406168074"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-007-B.npz",
+      "bytes": 2277,
+      "sha256": "f3a100f6fcce402e9bebc5a001f3a5fce956645254ec2967a5f64f4853a34e27"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-007-B.summary.json",
+      "bytes": 548,
+      "sha256": "a401e3c05a3fa3a3d7d3f4e68ea1109744e9e9b2ceb30aa386236eb12679a4a4"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-008-A.npz",
+      "bytes": 2246,
+      "sha256": "48d677a59f78d1b08bea3868b649a7a683286136cf615d06956ca816cb1b4929"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-008-A.summary.json",
+      "bytes": 961,
+      "sha256": "99460c81f4e3099a1825eec57c50640dcf2f66519fb266ceade5e8b42ddd37ba"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-008-B.npz",
+      "bytes": 2463,
+      "sha256": "0d74cbfa75ba6c33d906c3846687b4178f920b460a664c7480c6430720813c34"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-008-B.summary.json",
+      "bytes": 548,
+      "sha256": "ed6629e4500e559079ea33eb1b4c9bbf093106ef337950b5adf236f67fb49d01"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-009-A.npz",
+      "bytes": 2279,
+      "sha256": "089de0eda717bf3ca9bf5510152b5f8e0ef667a2144a0d8c7274b4a1d536f0e6"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-009-A.summary.json",
+      "bytes": 953,
+      "sha256": "90365092292255cce20989470bdc8eb6c5af8a1aa051fa5ff9746bc3bbc2c2da"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-009-B.npz",
+      "bytes": 2525,
+      "sha256": "d6c255313e5a0fd8c5b866e6d3ec0c3b372ffb10cc295b949f600353bff2d108"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-009-B.summary.json",
+      "bytes": 548,
+      "sha256": "6bdd1f3f053194a3f5d05ade2f01693cf3fd2eb4031cad9a53c110465415bb58"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-010-A.npz",
+      "bytes": 2216,
+      "sha256": "ad680ab4df7db560b286016813fa3569468520c2900384471a46a9c6450648e5"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-010-A.summary.json",
+      "bytes": 958,
+      "sha256": "fa932d068d8c380125d4ba7a6ad88452341b550a0e69cdc2f0908e59df59315b"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-010-B.npz",
+      "bytes": 2436,
+      "sha256": "fee7a73781ee3f346c6286e8e63bf6d878b8a227e83313fc6ce074e33b05c3b0"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-010-B.summary.json",
+      "bytes": 548,
+      "sha256": "d895cf4a2437a15489a4f12939d78f8361c43d1a86bbaceabbca4f5fb7f7b9b7"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-011-A.npz",
+      "bytes": 2222,
+      "sha256": "c3441c189a8858a817129ad0ce396ed21eb4dd2675f65c337bf94b49a0e7d834"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-011-A.summary.json",
+      "bytes": 960,
+      "sha256": "5eb3a8d5d32ef802d0efa6f8fa74d865812680e1f95a7290b11fe3914ad911d0"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-011-B.npz",
+      "bytes": 2440,
+      "sha256": "5f79c588c313569928774a155ae6e4fb55ef39b49b1d0f3f2fc84ae5c6a898b8"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-011-B.summary.json",
+      "bytes": 548,
+      "sha256": "94343513847e9307114ca2998bb468baa099c70e6031804b14ae746c9a0facd9"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-012-A.npz",
+      "bytes": 2224,
+      "sha256": "9e0714c1c37c270a091f26d8cbc2298184fe3c76aa156e32f4365d579486ec3f"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-012-A.summary.json",
+      "bytes": 958,
+      "sha256": "074d0c3d5b03e0fdc7c0c372b7377cee32df2ec15a9ddc1c90dff6d46f947bfe"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-012-B.npz",
+      "bytes": 2441,
+      "sha256": "07a69888adda681622fd5509468468faf3a95d07b80f6b483ad923d44d4f0c8b"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-012-B.summary.json",
+      "bytes": 549,
+      "sha256": "b9b9823c240f05a5fe2310cd317d9c3124d508cec3059218f0f1b6e6a8a0771c"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-013-A.npz",
+      "bytes": 2280,
+      "sha256": "403e085d1110d7a0c9a30e4cc8556f12563488eee487b2d80194efc1b89ed9f4"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-013-A.summary.json",
+      "bytes": 960,
+      "sha256": "f491539c03e5fdf7028869e41945e5041fd3dc45ee2ec76d763ef967b37a42d0"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-013-B.npz",
+      "bytes": 2521,
+      "sha256": "860e8edbe859a79097549e062d9ad21d8bc5cd6340ed30ba9d86894aee68069b"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-013-B.summary.json",
+      "bytes": 548,
+      "sha256": "b28dbef5c6c2a98c73775b71bbc3962d4859ae66190172730d5a99065e970590"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-014-A.npz",
+      "bytes": 2217,
+      "sha256": "48b1d2a99608ed505c6af88477e81a98421e7aab1b9c72c3e3d55f4fafbfa11b"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-014-A.summary.json",
+      "bytes": 961,
+      "sha256": "4b966186e3db64c085d23b4023b8d7597ffb5d486511e0b13aa23b85198f6c20"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-014-B.npz",
+      "bytes": 2436,
+      "sha256": "6bda02e0e1ba57c5d3092c7cb3bad19143b20897c567b1a7c050c02a00a2e286"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-014-B.summary.json",
+      "bytes": 549,
+      "sha256": "4fe1ae30f287d2a279b672700ac2e3228eed1458276b7f339ad904e9d8474908"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-015-A.npz",
+      "bytes": 2223,
+      "sha256": "a0edfd6bb3cd61a45a1072b047fb252c4cd3a871492d087e0a3fc3e90a87a089"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-015-A.summary.json",
+      "bytes": 960,
+      "sha256": "4e3eb996a52239662977942512f67ca3df744f1aadd15694db864a1f5591bc54"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-015-B.npz",
+      "bytes": 2443,
+      "sha256": "c06766c47f9c58d6e1eff45399810c8079dca0f8f7840083732a2139df75d72d"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-015-B.summary.json",
+      "bytes": 549,
+      "sha256": "4dcb180bc24fc041d72ed5cccf9171320c708c2a932b7407cfeedf657115b26c"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/bank.npz",
+      "bytes": 1127,
+      "sha256": "8e2ccac2ca67f621d0a08233a6c8750beab8b29150b6834abcd5438ae123f1a1"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/input_parameters.json",
+      "bytes": 22983,
+      "sha256": "4db676512e11759ea3948accb6596565a17a8453b09b17d548f380b3ad3cd147"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/prediction-R.npz",
+      "bytes": 9809,
+      "sha256": "fd8709f2a1157cb33898f4971e0f946745d5f9a4b9c5adc5bb32765557f28689"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/prediction-S1-11.npz",
+      "bytes": 8152,
+      "sha256": "47aa0219cca757aa71c6025ad3be35c7e43422dcd70baaf256da655dec98ef2e"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/prediction-S1-23.npz",
+      "bytes": 5609,
+      "sha256": "f9a28240ca4d9e64c6d224dd70174e0e6b605ce88931af6e0bb6b4ada296d981"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/prediction-S1-47.npz",
+      "bytes": 6917,
+      "sha256": "10122f2dfdfe51bc69283f284f209e31ea702abb84b93b1320567c713598d9cc"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/prediction-SK-11.npz",
+      "bytes": 8010,
+      "sha256": "3c8ad77530e45e71c0ed45d3ecf2cec6ea8f313d782e5e6659cbf03800759c2c"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/prediction-SK-23.npz",
+      "bytes": 5433,
+      "sha256": "511089a222f251bf3c4398c9c5c2de7112dcd29ff92fcbfa3d64a7b717dadb03"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/prediction-SK-47.npz",
+      "bytes": 5443,
+      "sha256": "07e965d96d7adb43ed260838176537091a9cf5fa1a3bcad0fc08585684a72613"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/predictions.json",
+      "bytes": 1236,
+      "sha256": "93983502a68bfce4c2e75df67805d1c758ab4a7a46ab17e26e261b51baab5d64"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/snapshot.npz",
+      "bytes": 1570,
+      "sha256": "524b748d6eab1d07a04f2a509eeb516f902c18c2e7bae9fd9917799d058d49e4"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/source.json",
+      "bytes": 363,
+      "sha256": "96ce268a98695f319ac1bad88c127ae04cad32e1d090fa45ec3c6b8503335838"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/teacher-R.npz",
+      "bytes": 16002,
+      "sha256": "e866b3f940e46606e4b1a6f6e642b9f384cc873244be342eb16b824ee38325c5"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/teacher-S1-11.npz",
+      "bytes": 15884,
+      "sha256": "5cd26341efa6c17c27dc9c3ab214071dff9282f558379a3fdf9cde9212cb3013"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/teacher-S1-23.npz",
+      "bytes": 16017,
+      "sha256": "39f214015ea6163b56de55776ed1b1642d686bde8e816cb17d61e8391598c4f7"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/teacher-S1-47.npz",
+      "bytes": 16034,
+      "sha256": "d690a0ccd0907b5bcc5b3bbd273e81633ff306d0afa6b07a9e7e0879c0ce6ed8"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/teacher-SK-11.npz",
+      "bytes": 15902,
+      "sha256": "9507060fa4b64568bfdea1a15f79893fa4e5c555354985868f1b1a8bb144a625"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/teacher-SK-23.npz",
+      "bytes": 16018,
+      "sha256": "78a270c3f8e391ccd1425441f706042235f3ca2b8a0e1ec6d3abc6df254150d9"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/F-O0/teacher-SK-47.npz",
+      "bytes": 16015,
+      "sha256": "020ada3536109bf90ff52aa7d55b9324e71a28c5e040025be582f7b18161940a"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-000-A.npz",
+      "bytes": 2071,
+      "sha256": "164bcbdad7239078b577ee00214f92295cd08105deec261e875f6616bcb7a39d"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-000-A.summary.json",
+      "bytes": 939,
+      "sha256": "c916abda2be5eb622da89b07a9411d2de8fe701c377b1f910becdfc04ac58eda"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-000-B.npz",
+      "bytes": 2251,
+      "sha256": "7fd50a6ad21d78c91b748d3196d204007359dd8222cee81c3503ef91c79c04d7"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-000-B.summary.json",
+      "bytes": 547,
+      "sha256": "d5b9b958df1d4f94c4ed497c3d58592380dc8d07797a23fbb8b716193b46d996"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-001-A.npz",
+      "bytes": 2202,
+      "sha256": "1e209ef8033303accc5351991f7864608b8f6c294854cca5c9432002fd006a24"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-001-A.summary.json",
+      "bytes": 956,
+      "sha256": "b1cd281e3bf187fc6fad2ed56a85774852e8de8aa81a9bda8db048c87951508a"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-001-B.npz",
+      "bytes": 2415,
+      "sha256": "202f9eac7a9deadbfb37e96cd89d85df317b1e02f60750f276232344481749a3"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-001-B.summary.json",
+      "bytes": 546,
+      "sha256": "500c40bb9e80fa7806231897dcf4a4c91dc7c57bcd740cbf3bca187fb707da20"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-002-A.npz",
+      "bytes": 2122,
+      "sha256": "afe6cc40199eadda36bace83fbb44437a432bc1a7e409863d2b40f5cf151e53c"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-002-A.summary.json",
+      "bytes": 955,
+      "sha256": "ba966b824e0348e70b736fd64eee0283f306d985569b69a74fd18df83cdeb9a5"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-002-B.npz",
+      "bytes": 2336,
+      "sha256": "c021e6e37f0d78465a12dc6a7ba4cc4369e6b0e08993a39fe221f9f4c3158934"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-002-B.summary.json",
+      "bytes": 547,
+      "sha256": "7e0fddb289baa494875dd37067e52dddd011f011041b808fee36cedba3ec76e2"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-003-A.npz",
+      "bytes": 2156,
+      "sha256": "17f9c9a9c805a3bb6401346f62023aca75d2ef9e763196cfd1226b8447a31c3a"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-003-A.summary.json",
+      "bytes": 954,
+      "sha256": "b9f6911924a1c67ee1f6322688dc9297658a61a54cd7eff122352b346df10ed1"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-003-B.npz",
+      "bytes": 2334,
+      "sha256": "9cadbfc2f16b4862682583a221b41ec25b3ff0eed888c4a337e4b5d0c3bd57de"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-003-B.summary.json",
+      "bytes": 547,
+      "sha256": "ce5b7e9949bcdcd7f9ad7a25667ef110e67eeabe204f8a3022dbbbd98b9f0f9c"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-004-A.npz",
+      "bytes": 2155,
+      "sha256": "b742b010c8025414cfcc44de209b93e203ed820a9bd325d129723f5769d995fb"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-004-A.summary.json",
+      "bytes": 957,
+      "sha256": "02767c1c1a8d5bd76a354b66723183d7498df3392c0b04f54f8537c5359b42e7"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-004-B.npz",
+      "bytes": 2372,
+      "sha256": "79dc7579fe3820c273e230eacd0b750e911d769bde6638833f33935dd711abd1"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-004-B.summary.json",
+      "bytes": 547,
+      "sha256": "9a0ccfba741306d7faf7db72f10be7182b4e52f68a3cf3e71e733ddbcd419104"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-005-A.npz",
+      "bytes": 2121,
+      "sha256": "83b9b0c38be6f44627154e23b48ad0641785c7cafebd2ac15c002e015ed95565"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-005-A.summary.json",
+      "bytes": 957,
+      "sha256": "40def36aaa2ea0f0246e25efff8f879edf5ab87d022b137ce6466df3e2d3c1ee"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-005-B.npz",
+      "bytes": 2334,
+      "sha256": "9d888c6ca44377dad97ed536f245c04a54f6428699e666585108bcb77e6c545a"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-005-B.summary.json",
+      "bytes": 547,
+      "sha256": "60725f0f7d6de9a80bad7efab06fcecabf4e295911428ceefc7a408dd8fe8c16"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-006-A.npz",
+      "bytes": 2200,
+      "sha256": "898f953cea70f3523dd6ff7b570245ce4c802d293b210bc83b1a87b0ace75c31"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-006-A.summary.json",
+      "bytes": 957,
+      "sha256": "5f77c489c0dbaea52872ea86d17a6d336a999ffc23257343ddea2941de2ff48d"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-006-B.npz",
+      "bytes": 2413,
+      "sha256": "57d28cefa5177be508392a6d882882ff73607f937ffbf40204140b903aed0a7b"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-006-B.summary.json",
+      "bytes": 547,
+      "sha256": "ee8cc8fe55593ee0f0b73cf46fcc4adf3645bbb36aa7551eba0ee4ab2ba42d57"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-007-A.npz",
+      "bytes": 2201,
+      "sha256": "25fb3d92700d2e1a73a6d664cff620ecf2a2f569d320e8282dfd356d162e03f0"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-007-A.summary.json",
+      "bytes": 955,
+      "sha256": "d3a827d1decfa48004215724a22a4bbffdcd1ab52765d8730c3f8c40f1c196a6"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-007-B.npz",
+      "bytes": 2414,
+      "sha256": "b9941c819199a4b86c614a1617421692c80d2cc72f845aa6b664628bfd09dabb"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-007-B.summary.json",
+      "bytes": 546,
+      "sha256": "018bb69ed77c32872d5d81b6e86849cbc81426d5a4cc4fe4464bb5abc609727d"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-008-A.npz",
+      "bytes": 2265,
+      "sha256": "2183e0cc2beea691528c04e07d42aafc2c962ac37fdb50117dbe76f6342ae914"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-008-A.summary.json",
+      "bytes": 958,
+      "sha256": "4853a297e348a730fa5bf0797b8d1dfe5fcf8f18528d97ad03b58162f975c217"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-008-B.npz",
+      "bytes": 2507,
+      "sha256": "fb824f3bfccc2c8d8a1edaa6d763499de740054f2ed1de57d82fc2a7c1d32219"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-008-B.summary.json",
+      "bytes": 546,
+      "sha256": "4fe3d6a027712956493fcc08f29767066158ff41ad2894503dedc72130c449b8"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-009-A.npz",
+      "bytes": 2304,
+      "sha256": "50ea48859e807102384d9b388a03d373587b6b362caf2a41f7b6ce6ca19e9583"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-009-A.summary.json",
+      "bytes": 952,
+      "sha256": "85802702dcd2f87aba1d31c2c372443510641d972f1de8ed9a89cb8a1629f0fa"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-009-B.npz",
+      "bytes": 2352,
+      "sha256": "39e62a67a62e2a7248e40f1850b7e349fe497529884c1783afcc09dc20005ccb"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-009-B.summary.json",
+      "bytes": 530,
+      "sha256": "c123bbcf0b05bb0ccd2240bea8bdbd38df41bff8776bf1b1377b147aa0707d4d"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-010-A.npz",
+      "bytes": 2199,
+      "sha256": "59fdd6f92dab48c2c7435286e9a366fc42b48b40a42ecc298c7350e33dd644fc"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-010-A.summary.json",
+      "bytes": 957,
+      "sha256": "7fbfb2c85df56526644e0b416b60f0f7cb9996f203b41acca714e8c97fdcfef5"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-010-B.npz",
+      "bytes": 2411,
+      "sha256": "bcc30a5cc6e1d551f30cfaa2d3e6e6cc025c3f8928d6db1abab181743955e0d8"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-010-B.summary.json",
+      "bytes": 548,
+      "sha256": "a3ea7d6596759cebff85b96cbb446a539c9a2c2c94ae571c71583dafe93d614d"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-011-A.npz",
+      "bytes": 2273,
+      "sha256": "6b25d97ea905bf0f86b2d6a537ed2c7365b845d47ce2cb2c552b24f38d95b84b"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-011-A.summary.json",
+      "bytes": 957,
+      "sha256": "66e702620fbfd56e26c6f2b77f1d5ac48372ef0ec4e1287b970670fe1e987c2f"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-011-B.npz",
+      "bytes": 2535,
+      "sha256": "dce8b2cd49d6dfb88a2768521a6975b9c42dbd9cd8e7f909bde36659320eb915"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-011-B.summary.json",
+      "bytes": 547,
+      "sha256": "d8a02e20d51d7b30f68b3a6b7a2a31fe5c7ffda52111caf1eeb030213d776afb"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-012-A.npz",
+      "bytes": 2203,
+      "sha256": "d909c530a428c4ca59be9ed5a836d5b6c54736e7104c07a6d5e7045133df67df"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-012-A.summary.json",
+      "bytes": 958,
+      "sha256": "dccb3f7172a2546326540f6b2ca21e3881e331e1b9d385fa059193d8867fc471"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-012-B.npz",
+      "bytes": 2417,
+      "sha256": "6afd1c616d430240816441a2b328ec0bebd335e2435a6b1babd24c193c9837f5"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-012-B.summary.json",
+      "bytes": 547,
+      "sha256": "2ba7a920c2ea7239fef06fb9d53369068961acf2e8b1fbfd1c6d9e79c9e2c1c7"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-013-A.npz",
+      "bytes": 2265,
+      "sha256": "76e8df85813a0a3dc6ce8d5438c4c430d23045b9405a3eeef448bd8d4888674b"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-013-A.summary.json",
+      "bytes": 960,
+      "sha256": "3cfe2d8cae4b5ffd87e422f5754ae95651411d1837aa248a0c50d6cb542693dd"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-013-B.npz",
+      "bytes": 2506,
+      "sha256": "54750f29e7a44d3290aa056519268e32df28bd8443932f55e1c77edac5bf4c4f"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-013-B.summary.json",
+      "bytes": 548,
+      "sha256": "c35c5d8c0feadcb669c18706fc404f725db6895e60ca311fbf3011060e25adb6"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-014-A.npz",
+      "bytes": 2271,
+      "sha256": "6ebf55a44465c1ba5fe6ada8fdf92a22e2994900df03b459651280dadcf5c168"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-014-A.summary.json",
+      "bytes": 960,
+      "sha256": "980006f3b275e270b921dbef0d4277a864a49a7e7ff97ec263468ddeaf40c425"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-014-B.npz",
+      "bytes": 2528,
+      "sha256": "447c7af1a643fd4d5e7eb989a0ec3fe75b775756138f3cd72fd54ed77587bece"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-014-B.summary.json",
+      "bytes": 547,
+      "sha256": "714e3b4248f6bc0f75daa9085fd4901d0a18cf7465b9b0bdadd1b87d98964e83"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-015-A.npz",
+      "bytes": 2202,
+      "sha256": "26a5b8a8486fceddd437e1d7733df5d9fec611cee59d9215bfe7a7cc32cfb322"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-015-A.summary.json",
+      "bytes": 957,
+      "sha256": "7c6639d99bc3b9688d7450663ba94f719439725cb493e7a2de76244ae852fb55"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-015-B.npz",
+      "bytes": 2412,
+      "sha256": "cb4f875a2af4ca7f3b8ea83e35979a745c9862214c39237968adec888b3d431f"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-015-B.summary.json",
+      "bytes": 548,
+      "sha256": "0bf2c2ca23bd67599d728706e84bff1dc89d66f482874cffd55afcf243f4c073"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/bank.npz",
+      "bytes": 1191,
+      "sha256": "11156e2e86929bb2bca1b9c947e785412742d3452f6976a8a8e4247696ee70db"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/input_parameters.json",
+      "bytes": 22986,
+      "sha256": "737a9763149180cf22cb6aca5d1f2a654de5a8a4c81198c8551e9eed53f0159f"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/prediction-R.npz",
+      "bytes": 17119,
+      "sha256": "ddb5cd5ffba65db63ed2153326874075d74317f6b3fb5dccbc32bba201f468f4"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/prediction-S1-11.npz",
+      "bytes": 16865,
+      "sha256": "25900b9d33584306914aa3f162cc967fe39a4a50b5af863b987042c98658e3ea"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/prediction-S1-23.npz",
+      "bytes": 17146,
+      "sha256": "9312370eda0d54cefa3cdefc183f3696309efada8628160db8374d2a29dc6afd"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/prediction-S1-47.npz",
+      "bytes": 17130,
+      "sha256": "2602f8bcc7ea785d10542fd4843dc5a680934decaf18cbf516d873f16be5e181"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/prediction-SK-11.npz",
+      "bytes": 17139,
+      "sha256": "3267d841fb2302d05ba98829268889c2c0d9c1bb3bf4dc956dddc6d84de78f49"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/prediction-SK-23.npz",
+      "bytes": 16707,
+      "sha256": "4fcdfdc6eb4a87a73d124cd542a42dbc798b8f322ef2b15ace7c9fcb26e953b9"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/prediction-SK-47.npz",
+      "bytes": 17130,
+      "sha256": "fe0c90b50d45227b473a358dbf82319614b729a4a43eef3c723bf2bd1758f075"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/predictions.json",
+      "bytes": 1186,
+      "sha256": "7aef8ff60cfd53eadc742f4c924f5e15be9f69995803fe04dce7487062e975e4"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/snapshot.npz",
+      "bytes": 1565,
+      "sha256": "7122c1aad0d48628df1372e56488509710cf783853a4edf295f2f3bb27830f61"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/source.json",
+      "bytes": 361,
+      "sha256": "300c2066156a2ef921e84fa1eb809b5061b9fcd8d3934ff9f98e9fbc442e51a4"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/teacher-R.npz",
+      "bytes": 19562,
+      "sha256": "b507746ff954d138db863d2443a6e669af1347f2c1c346889fe21770052d657e"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/teacher-S1-11.npz",
+      "bytes": 19630,
+      "sha256": "2235eb196e448148526ade4bee6248b7690ee200290234f82f3c9133b705f2da"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/teacher-S1-23.npz",
+      "bytes": 19679,
+      "sha256": "70f3445cf7b1b754376519f0ba7370a61e7a0a57945620cc3fbfabcc438fcb13"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/teacher-S1-47.npz",
+      "bytes": 19663,
+      "sha256": "91efff76dfa70339c7ada7fb13ad0289f6fb845596215a706e0cb62a585774cf"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/teacher-SK-11.npz",
+      "bytes": 19657,
+      "sha256": "d9642fd32605f5effe00134667d33524db1e9f89640a7798f7a1fea5e16fe3d6"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/teacher-SK-23.npz",
+      "bytes": 19679,
+      "sha256": "f18c1505bbd38bbdab57d9d275979f145b3e73dabf2f89bc964fca17430a5824"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/states/N-T/teacher-SK-47.npz",
+      "bytes": 19696,
+      "sha256": "70d46a6b5f4f97b4c169d7a230203cb9e63b4143a82053966361a7605a6130fc"
+    },
+    {
+      "path": "artifacts/followup/20261022-d1-d2/summary.json",
+      "bytes": 167087,
+      "sha256": "73b4d4d2242f97f6b706fbde77a9eb6da465e5c8450d680c3d7313d047e8d0e3"
+    },
+    {
       "path": "artifacts/index.md",
-      "bytes": 8162,
-      "sha256": "c26830e4af6445f4602166a19fd128a8a01b087a83be34ad78c7b6549c6c6693"
+      "bytes": 9008,
+      "sha256": "3f6e5c12d040f575f3c0cca239c74c410ced9b26096b1e10c67b6fc788256c46"
     },
     {
       "path": "artifacts/learning/manifest.json",
@@ -2368,14 +3243,34 @@
       "sha256": "ce45275796bbbe0066e94e55022f7bda3d562c4660b0a7eeb9acd5c01280ba69"
     },
     {
+      "path": "artifacts/validation/followup_delivery_review.v1.json",
+      "bytes": 29928,
+      "sha256": "c801e09d4f88fbdd2cc0e26a2fbeb688d603fa179fe4721c687a2ec3ce037d81"
+    },
+    {
       "path": "artifacts/validation/followup_design_review.v1.json",
       "bytes": 3774,
       "sha256": "2041617b4464f07c54904264ac19b7329710d8b3afa7f17274fcc0c60e8a394f"
     },
     {
+      "path": "artifacts/validation/followup_execution_review.v1.json",
+      "bytes": 5664,
+      "sha256": "c5dcb0b9f465892e0cd0353c34d2a0505f09a90e8b8a44b56e854a7bd0ce1df1"
+    },
+    {
+      "path": "artifacts/validation/followup_public_results.v1.json",
+      "bytes": 6877,
+      "sha256": "92ef0a4e313146c3e621bbc567b4465080b32a8833713a79cb5032f4dc657b5e"
+    },
+    {
       "path": "artifacts/validation/followup_state_selection.v1.json",
       "bytes": 42001,
       "sha256": "d6e99267b6e5566d33520edf3313ac049dc52ba8c6d85797c1762a2ad26cf1e7"
+    },
+    {
+      "path": "artifacts/validation/followup_unit_tests.v1.json",
+      "bytes": 730,
+      "sha256": "f5aab068a56b36fa11488567d301878d6841ef2b9213a972200f3ee27ce4ef59"
     },
     {
       "path": "artifacts/validation/paper_content_review.v2.json",
@@ -2406,6 +3301,16 @@
       "path": "artifacts/validation/public_validation.json",
       "bytes": 1617,
       "sha256": "59380fc80c7ec6ccf5175fedbe2044a8e6c4b3b36f92e24ecdb3bd13ebda3c2e"
+    },
+    {
+      "path": "assets/figures/followup_pilot.manifest.json",
+      "bytes": 2389,
+      "sha256": "fcee44a5530192d0a512230a19ce67d2a1b0c086bd57019728d4eec9958dedd2"
+    },
+    {
+      "path": "assets/figures/followup_pilot.png",
+      "bytes": 363738,
+      "sha256": "f84e6e7862c2fcb7a7dfb90a6da56a24142b11d3620f8751966fbc50150f7a47"
     },
     {
       "path": "assets/figures/handoff_success.manifest.json",
@@ -2764,8 +3669,13 @@
     },
     {
       "path": "docs/documentation.ko.md",
-      "bytes": 4826,
-      "sha256": "6f6b1b730caeffa4c8e6ae7c30a0033c46991a4faba0f7667f7b529f4e70ae5a"
+      "bytes": 5329,
+      "sha256": "b0a572c25bbfd9729a06a98704e949904818473eff92b8dfae294caf69484b04"
+    },
+    {
+      "path": "docs/followup_restore_and_pilot.ko.md",
+      "bytes": 11653,
+      "sha256": "f52bef755a5075dfa936980e93314370bf7bdcb98f459cc6853580799d080f2c"
     },
     {
       "path": "docs/near_goal_diagnostic_design.ko.md",
@@ -2891,6 +3801,16 @@
       "path": "requirements-reproduction.txt",
       "bytes": 473,
       "sha256": "2c158140b83e2379afbe45aad00cc75b011f1aa31d7aebce4617c7136314e5af"
+    },
+    {
+      "path": "scripts/followup_pilot.py",
+      "bytes": 17051,
+      "sha256": "5172b940929d840a6b95a1342545c7fe762a73f62cd047604071eea51c40bcdc"
+    },
+    {
+      "path": "scripts/followup_restore.py",
+      "bytes": 13708,
+      "sha256": "7526e0dc8c5699b967a5b2b0591ef516cc1ec9eb59b6584b9a9ed25d9a9dfc7d"
     },
     {
       "path": "scripts/p1_adopt_environment.py",
@@ -3158,6 +4078,11 @@
       "sha256": "69d6dd0fd1f3cf9f8ff5a163db33a978f7852672a4ec387da0e2babf55f96d20"
     },
     {
+      "path": "scripts/verify_followup_pilot.py",
+      "bytes": 6819,
+      "sha256": "6e84df24b5a61f235d0b7a79acfb454f9738ba136745f6709e7797c8f3f95bd9"
+    },
+    {
       "path": "scripts/verify_paper_results.py",
       "bytes": 24731,
       "sha256": "8ae825faa792e241d6765636f1f832a494dcd2d3462789e3f068765234d039da"
@@ -3353,6 +4278,11 @@
       "sha256": "eae9320dd5b00d45ad6928ab0a37548dedaf22ee4079667c9a5a1bb4e13da956"
     },
     {
+      "path": "src/push_align/followup_probe.py",
+      "bytes": 14398,
+      "sha256": "98d66ae351fdaf9b36b3312bbe7f6b07be2f11a3654685b0d467f85c787bfeec"
+    },
+    {
       "path": "src/push_align/fork_checkpoint.py",
       "bytes": 15827,
       "sha256": "3309ebc749e24ca85a7de126bbde197ba7907260cc8f0061da6c885d3ea8e5f3"
@@ -3476,6 +4406,11 @@
       "path": "tests/test_contact_geometry_contract.py",
       "bytes": 5214,
       "sha256": "a2dca67eb6324608e4c91ae31c016dca7906af0da58bee939e23fb83bedb537d"
+    },
+    {
+      "path": "tests/test_followup_probe.py",
+      "bytes": 11273,
+      "sha256": "6e3e56a53eb6361acc3d6d999ab45d66b07c3a4d6b962cafca1dd3a521acbbd4"
     },
     {
       "path": "tests/test_handoff_cost.py",
@@ -4048,6 +4983,11 @@
       "sha256": "ee4ee47b017b29446c22e18f572aa73a6fa44f2585efe2bd69fed55cc139aa99"
     },
     {
+      "path": "tools/build_followup_pilot_figure.py",
+      "bytes": 13221,
+      "sha256": "8bdd60c9aad68cf4ebff36e2731237e7e843fd32c0db14354d8952e0789fbe6b"
+    },
+    {
       "path": "tools/build_p5_g2_resource_review.py",
       "bytes": 9173,
       "sha256": "2f7732788d958ef157f89aee59ed1fa44cbdfa5a6ccb54ebc8fa77887252010a"
@@ -4428,15 +5368,21 @@
       "sha256": "05308c5d3808da0c2b054d0a7d90255873505ca4a995bccee3e0743bee7567b6"
     },
     {
+      "path": "tools/publish_followup_pilot.py",
+      "bytes": 5318,
+      "sha256": "8921133f322bcc89de2c9e6808724eb8d5b8a668566238c202472c1cffe3b55b"
+    },
+    {
       "path": "tools/summarize_p4_data_main.py",
       "bytes": 18400,
       "sha256": "c1df1301e029821d68e09627506056d56b39164085fa3c527b04b92802a614ee"
     }
   ],
-  "total_files_excluding_self": 885,
-  "total_bytes_excluding_self": 52817104,
+  "total_files_excluding_self": 1074,
+  "total_bytes_excluding_self": 54549508,
   "current_paper_content_review": "artifacts/validation/document_review.v4.json",
-  "current_document_review": "artifacts/validation/document_review.v4.json",
-  "verification_scope_note": "Original-core count20 retained from initial publication; current822 selected public-copy hashes and saved-array arithmetic verified. New near-goal design remains unexecuted; omitted original raw is not revalidated by this inventory.",
-  "current_followup_design_review": "artifacts/validation/followup_design_review.v1.json"
+  "current_document_review": "artifacts/validation/followup_delivery_review.v1.json",
+  "verification_scope_note": "Initial corecount20 retained historically. Current822originalpublic-copyhashes and originalpaperarrayarithmetic verified unchanged; new174selectedfollowupdatafilesverified. Independentlocalrawaudit covers D1/D2 only. D3/D4 notrun due resource gate; no fullraw upload.",
+  "current_followup_design_review": "artifacts/validation/followup_design_review.v1.json",
+  "current_followup_execution_review": "artifacts/validation/followup_execution_review.v1.json"
 }

@@ -1,0 +1,268 @@
+{
+  "schema": "selected-followup-pilot-verification-v1",
+  "status": "PASS_SELECTED_FILES_AND_PILOT_ARITHMETIC",
+  "verifier_sha256": "6e84df24b5a61f235d0b7a79acfb454f9738ba136745f6709e7797c8f3f95bd9",
+  "dataset_manifest_sha256": "7d8f6772cd33fe06e59221774db845c434f8c652d56262d704900a1845fe1338",
+  "verified_selected_files": 174,
+  "physical_trajectories_reported": 192,
+  "actual_intervals_reported": 1242,
+  "statistics": {
+    "N-T": {
+      "actual": {
+        "A": {
+          "candidate_id_count": 16,
+          "unique_action_sequences": 16,
+          "stable_physical_valid": 16,
+          "ready_prefix_candidates": [],
+          "ready_eligible_candidates": []
+        },
+        "B": {
+          "candidate_id_count": 16,
+          "unique_action_sequences": 16,
+          "stable_physical_valid": 16,
+          "ready_prefix_candidates": [],
+          "ready_eligible_candidates": [
+            9
+          ]
+        }
+      },
+      "models": {
+        "R": {
+          "predicted_valid": 16,
+          "actual_A_valid_but_predicted_invalid_ids": [],
+          "selected_id_among_first16_only": 8
+        },
+        "S1-11": {
+          "predicted_valid": 15,
+          "actual_A_valid_but_predicted_invalid_ids": [
+            14
+          ],
+          "selected_id_among_first16_only": 9
+        },
+        "S1-23": {
+          "predicted_valid": 16,
+          "actual_A_valid_but_predicted_invalid_ids": [],
+          "selected_id_among_first16_only": 10
+        },
+        "S1-47": {
+          "predicted_valid": 16,
+          "actual_A_valid_but_predicted_invalid_ids": [],
+          "selected_id_among_first16_only": 13
+        },
+        "SK-11": {
+          "predicted_valid": 16,
+          "actual_A_valid_but_predicted_invalid_ids": [],
+          "selected_id_among_first16_only": 9
+        },
+        "SK-23": {
+          "predicted_valid": 15,
+          "actual_A_valid_but_predicted_invalid_ids": [
+            11
+          ],
+          "selected_id_among_first16_only": 10
+        },
+        "SK-47": {
+          "predicted_valid": 16,
+          "actual_A_valid_but_predicted_invalid_ids": [],
+          "selected_id_among_first16_only": 13
+        }
+      },
+      "cost_vs_ready_A": "NOT_IDENTIFIABLE_NO_READY_A",
+      "full128_search_coverage": "NOT_EVALUATED"
+    },
+    "F-O0": {
+      "actual": {
+        "A": {
+          "candidate_id_count": 16,
+          "unique_action_sequences": 10,
+          "stable_physical_valid": 16,
+          "ready_prefix_candidates": [],
+          "ready_eligible_candidates": []
+        },
+        "B": {
+          "candidate_id_count": 16,
+          "unique_action_sequences": 10,
+          "stable_physical_valid": 16,
+          "ready_prefix_candidates": [],
+          "ready_eligible_candidates": []
+        }
+      },
+      "models": {
+        "R": {
+          "predicted_valid": 4,
+          "actual_A_valid_but_predicted_invalid_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            12,
+            13
+          ],
+          "selected_id_among_first16_only": 14
+        },
+        "S1-11": {
+          "predicted_valid": 0,
+          "actual_A_valid_but_predicted_invalid_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected_id_among_first16_only": null
+        },
+        "S1-23": {
+          "predicted_valid": 0,
+          "actual_A_valid_but_predicted_invalid_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected_id_among_first16_only": null
+        },
+        "S1-47": {
+          "predicted_valid": 0,
+          "actual_A_valid_but_predicted_invalid_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected_id_among_first16_only": null
+        },
+        "SK-11": {
+          "predicted_valid": 0,
+          "actual_A_valid_but_predicted_invalid_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected_id_among_first16_only": null
+        },
+        "SK-23": {
+          "predicted_valid": 0,
+          "actual_A_valid_but_predicted_invalid_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected_id_among_first16_only": null
+        },
+        "SK-47": {
+          "predicted_valid": 0,
+          "actual_A_valid_but_predicted_invalid_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selected_id_among_first16_only": null
+        }
+      },
+      "cost_vs_ready_A": "NOT_IDENTIFIABLE_NO_READY_A",
+      "full128_search_coverage": "NOT_EVALUATED"
+    }
+  },
+  "resources": {
+    "base_D3_without_extension": {
+      "remaining_interval_upper_bound": 30643,
+      "projected_total_bytes": 4150200158,
+      "remaining_wall_seconds_upper_bound": 22116.32248453817,
+      "wall_seconds_including_D1_D2_already_spent": 22538.436289539306,
+      "storage_cap_fit": true,
+      "wall_cap_fit": false
+    },
+    "maximum_with_conditional_extensions": {
+      "remaining_interval_upper_bound": 60595,
+      "projected_total_bytes": 8145862853,
+      "remaining_wall_seconds_upper_bound": 43733.9216444405,
+      "wall_seconds_including_D1_D2_already_spent": 44156.03544944164,
+      "storage_cap_fit": false,
+      "wall_cap_fit": false
+    }
+  },
+  "new_physics_calls": 0,
+  "new_model_calls": 0,
+  "training_updates": 0,
+  "scope": "Selected hashes, recorded counts, first-repeat boundary arrays and forecast masks. Does not independently restore omitted original raw; separate execution audit covers local raw verification. Resource values are conservative projections, not measured full-run time."
+}

@@ -71,3 +71,9 @@ PYTHONPATH=src:scripts:tests .venv/bin/python -B -m unittest \
 2026-10-22의 [리뷰어 관점 평가](../docs/reviewer_assessment.ko.md)는 E1의 시간·목표 거리 범위와 E2의 짝별 성공 차이를 저장 배열에서 추가 검산했습니다. 이는 사후 기술 분석이며 새 학습·모델 추론·물리 실행이 아닙니다. 현재 문서·PDF 시각 검토는 [v4 검토 기록](validation/document_review.v4.json), 현재 원고 수치 검산은 [v4 수치 기록](validation/paper_results_review.v4.json)에 연결합니다. 이전 검토 기록은 당시 SHA의 이력입니다.
 
 [목표 근처·실패 직전 진단 설계 v1](../docs/near_goal_diagnostic_design.ko.md)은 별도 후속 개발 계획입니다. [6상태 선정 근거](validation/followup_state_selection.v1.json)는 기존 저장 자료·원본 witness만 읽은 기록이며 snapshot 복원·모델 추론·실제 미래 실행의 증거가 아닙니다. 원본 전체 raw가 공개되지 않았으므로 선정 출처의 local-original 경로는 공개본에서 직접 열리지 않을 수 있습니다.
+
+## 후속 개발: 복원·작은 사전 실행
+
+2026-10-22 D1/D2의 [실행 결과](../docs/followup_restore_and_pilot.ko.md)와 [선별 공개 자료](followup/20261022-d1-d2/manifest.json)를 추가했습니다. 전체 192개 raw는 로컬 원본에 보존하고, 공개본에는 복원 보고·일곱 모델 예측·첫 반복 경계/유지 배열과 raw 해시를 포함합니다. [독립 raw 검토](validation/followup_execution_review.v1.json)와 [공개 산식 검산](validation/followup_public_results.v1.json)의 범위를 구별합니다. D3 전체128후보 진단과 조건부 확장은 미실행입니다.
+
+v1 설계의 미실행 표시는 당시 기록이며 현재 진행 상태는 위 실행 결과가 기준입니다. 기존 학술 논문·보고서와 v4 검토는 원래 동결 비교의 문서 이력으로 유지합니다.

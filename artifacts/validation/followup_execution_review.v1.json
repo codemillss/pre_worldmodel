@@ -1,0 +1,124 @@
+{
+  "schema": "followup-execution-independent-review-v1",
+  "as_of_utc": "2026-10-22T05:11:48.003155+00:00",
+  "status": "PASS_SAVED_EVIDENCE_AND_PURE_NUMERIC_AUDIT",
+  "scope": "D1/D2 only; no new physics, model inference or training performed by reviewer",
+  "source_run": "runs/followup-near-goal-20261022-01",
+  "frozen_original_results_replaced": false,
+  "D1": {
+    "states": {
+      "F-O0": {
+        "status": "PASS_INDEPENDENT_SAVED_EVIDENCE_AUDIT",
+        "prefix_intervals": 254,
+        "raw_substeps": 50800,
+        "prefix_raw_digests_exact": 254,
+        "captures": {
+          "246": {
+            "candidate_hash": "91ab6fd1d936ccf067f8ab6f9edcf594778c815be6d8a429a2b273982bfcf011",
+            "saved_input_typed_sha256": "2214b1fa8705cf60d6696dc26206838581f6a70b2a965a9d4b1d0d8ac3302514",
+            "candidate_array_shape": [
+              128,
+              5,
+              2
+            ],
+            "witness_contexts_and_observation": "PASS_EXACT",
+            "direct_original_complete_input": "UNAVAILABLE_ORIGINAL_INTERNAL_STATE; new reconstructed full snapshot only"
+          },
+          "254": {
+            "candidate_hash": "d4c8d967aa261ef83832ab56d8798343466d83b10fea793812f8989f432281f2",
+            "saved_input_typed_sha256": "641253b9355db49cbf9af35d022056a592bbb8887c7f92ecb5741085ef20f66f",
+            "candidate_array_shape": [
+              128,
+              5,
+              2
+            ],
+            "witness_contexts_and_observation": "PASS_EXACT",
+            "direct_original_complete_input": "PASS_EXACT",
+            "original_input_typed_sha256": "641253b9355db49cbf9af35d022056a592bbb8887c7f92ecb5741085ef20f66f"
+          }
+        },
+        "source_bindings_rehashed": 263,
+        "restoration_receipt_sha256": "65e7af32169fa078fc25a04b6a148083b6747accb4aaf6746fb9f46541179804"
+      },
+      "N-T": {
+        "status": "PASS_INDEPENDENT_SAVED_EVIDENCE_AUDIT",
+        "prefix_intervals": 78,
+        "raw_substeps": 15600,
+        "prefix_raw_digests_exact": 78,
+        "captures": {
+          "78": {
+            "candidate_hash": "eee0b75a061c0bdbb2c64b806abc990640d8764d6e99a1580e9f9fb149a3f2db",
+            "saved_input_typed_sha256": "f1c8a69afed6306a5416e7614d3876ef4d6a30d00a0f9db78ed606ea52dbd7f3",
+            "candidate_array_shape": [
+              128,
+              5,
+              2
+            ],
+            "witness_contexts_and_observation": "PASS_EXACT",
+            "direct_original_complete_input": "UNAVAILABLE_ORIGINAL_INTERNAL_STATE; new reconstructed full snapshot only"
+          }
+        },
+        "source_bindings_rehashed": 263,
+        "restoration_receipt_sha256": "2f7a47880e17a2d3efc0a11ee33d65892b7d509fc63eba8efefef9c4364b1f64"
+      }
+    },
+    "union_original_bindings": 274,
+    "binding_sha256": "3fa8ba2fad17f7a189a3507df104c20a0634ebc0fd0eab23d073a61f47bac9d8"
+  },
+  "D2": {
+    "expected_and_present_trajectories": 192,
+    "unique_candidate_panel_groups": 64,
+    "three_repeat_complete_raw_exact_groups": 64,
+    "external_raw_receipts_authenticated": 192,
+    "raw_intervals": 1242,
+    "raw_substeps": 248400,
+    "raw_derived_supervisor_verdicts_recomputed": 192,
+    "original_nine_term_costs_recomputed_A": 96,
+    "forecast_tables_costs_masks_and_first16_selection_recomputed": 14,
+    "teacher_forced_actual_inputs_and_validity_masks_checked": 14,
+    "loaded_public_files_bound_to_frozen_original": 22,
+    "source_bindings_rehashed": 274,
+    "implementation_hashes_match_execution": true,
+    "prediction_prospectivity": "Audited frozen driver computes each state forecasts before its futures; no separate before-futures hash receipt was stored. No policy or forecast changes after outcomes.",
+    "counts_including_three_deterministic_repeats": {
+      "F-O0/A/physical_valid": 48,
+      "F-O0/A/ready_eligible": 0,
+      "F-O0/B/physical_valid": 48,
+      "F-O0/B/ready_eligible": 0,
+      "N-T/A/physical_valid": 48,
+      "N-T/A/ready_eligible": 0,
+      "N-T/B/physical_valid": 48,
+      "N-T/B/ready_eligible": 3
+    },
+    "resource_projection_arithmetic": "PASS",
+    "resource_projection": {
+      "safety_factor": 1.5,
+      "max_measured_trial_bytes_per_returned_interval": 88934.8,
+      "max_measured_trial_wall_seconds_per_returned_interval": 0.48116094996221365,
+      "conservative_remaining_intervals": 60595,
+      "incremental_projected_total_bytes": 8145862853,
+      "projected_remaining_wall_seconds": 43733.9216444405,
+      "free_bytes_now": 9912320000,
+      "current_run_bytes": 62356544,
+      "includes_no_future_execution_authorization": true,
+      "storage_cap_fit": false,
+      "wall_cap_fit": false
+    },
+    "full_bank_or_extension_executed": false
+  },
+  "limits": [
+    "Two posthoc states, first16 original candidates; not a representative sample or full128-bank diagnosis.",
+    "Three repeats validate deterministic restoration, not independent statistical sample size.",
+    "F-O0 tick254 has direct original internal-state comparison; N-T78 and offset246 lack original saved internal state.",
+    "No causal attribution for global online failure, no cost-optimum or finite-search conclusion from this pilot.",
+    "Resource projection is empirical maximum-per-interval times1.5, not a guaranteed worst-case bound."
+  ],
+  "receipt_sha256": {
+    "D2_summary": "73b4d4d2242f97f6b706fbde77a9eb6da465e5c8450d680c3d7313d047e8d0e3",
+    "D2_entry": "32aadf0dcaa5807ae7c229ca93dfbd89b68b372bdf8983f75ae7652e4d2472a3",
+    "D2_resource_projection": "ec78218024129377ee877523e295bcbec4ee9e1fbc141ffc3d7bc91675717c09"
+  },
+  "new_physics_calls": 0,
+  "new_model_calls": 0,
+  "training_updates": 0
+}

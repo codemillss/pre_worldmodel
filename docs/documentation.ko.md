@@ -39,3 +39,8 @@ python tools/export_publication_reports.py --font /path/to/Korean-capable.ttf
 보고서 PDF의 날짜는 원고 상단의 날짜에서 읽습니다. 생성 도구와 레이아웃 코드의 SHA도 manifest에 기록합니다. 이전 검토 기록은 해당 날짜·SHA의 이력이며 현재 문서에 자동 적용하지 않습니다. 2026-10-22의 내용 판단과 미해결 실험 항목은 [리뷰어 관점 평가](reviewer_assessment.ko.md)에 정리했습니다.
 
 2026-10-22 후속 갱신에서는 그림·표에 G/R/S1/SK의 방법 정의와 평가 분모를 추가했습니다. [목표 근처 보완 진단](near_goal_diagnostic_design.ko.md)은 Markdown 설계와 별도 JSON으로 등록하며 기존 동결 결과·논문 결과표와 합치지 않습니다. 설계와 실행 상태를 구별하고 첫 복원·후보 해시 검사를 통과하기 전에 새로운 미래 물리 결과를 기록하지 않습니다.
+
+
+## 후속 실험과 기존 논문의 경계
+
+D1/D2 복원·사전 실행은 [별도 개발 기록](followup_restore_and_pilot.ko.md)으로 관리합니다. 실행 전 v1 설계·검토·원래 동결 결과는 보존하고, 현재 README에서 실행 상태와 새 선별 자료를 연결합니다. 이번 작은 실험의 수치를 기존 E1/E2나 논문의 결과표에 합치지 않습니다. 원래 논문·PDF의 v4 검토와 후속 실행 검토는 서로 다른 SHA·범위의 이력입니다.

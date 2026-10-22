@@ -1,0 +1,13 @@
+{
+  "schema": "followup-unit-test-receipt-v1",
+  "as_of": "2026-10-22",
+  "status": "PASS_11_SCRIPTED_ENVIRONMENT_TESTS",
+  "command": "PYTHONPATH=src:tests python -B -m unittest test_followup_probe -v",
+  "test_count": 11,
+  "source_sha256": {
+    "tests/test_followup_probe.py": "6e3e56a53eb6361acc3d6d999ab45d66b07c3a4d6b962cafca1dd3a521acbbd4",
+    "src/push_align/followup_probe.py": "98d66ae351fdaf9b36b3312bbe7f6b07be2f11a3654685b0d467f85c787bfeec"
+  },
+  "new_scientific_futures": 0,
+  "scope": "Synthetic scripted StepResults test A/B supervision, original clock, nonlatch, continuous hold interruption, geometry priority, invalid prefixes and terminal-state handling; separate from actual source-candidate execution."
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "followup-pilot-figure-v1",
+  "generator": "tools/build_followup_pilot_figure.py",
+  "generator_sha256": "8bdd60c9aad68cf4ebff36e2731237e7e843fd32c0db14354d8952e0789fbe6b",
+  "sources": {
+    "artifacts/followup/20261022-d1-d2/states/F-O0/prediction-S1-23.npz": "f9a28240ca4d9e64c6d224dd70174e0e6b605ce88931af6e0bb6b4ada296d981",
+    "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-000-A.npz": "782a7c02681625ccf379d564e776ad68772f5d12423f908f88f431df4a277e71",
+    "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-009-A.npz": "50ea48859e807102384d9b388a03d373587b6b362caf2a41f7b6ce6ca19e9583",
+    "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-009-B.npz": "39e62a67a62e2a7248e40f1850b7e349fe497529884c1783afcc09dc20005ccb",
+    "artifacts/followup/20261022-d1-d2/states/F-O0/actual/candidate-000-A.summary.json": "fd34ca3dbc72d4aca17dab4add306567032488efcbe440fb97ab6e73163923d3",
+    "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-009-A.summary.json": "85802702dcd2f87aba1d31c2c372443510641d972f1de8ed9a89cb8a1629f0fa",
+    "artifacts/followup/20261022-d1-d2/states/N-T/actual/candidate-009-B.summary.json": "c123bbcf0b05bb0ccd2240bea8bdbd38df41bff8776bf1b1377b147aa0707d4d",
+    "artifacts/followup/20261022-d1-d2/summary.json": "73b4d4d2242f97f6b706fbde77a9eb6da465e5c8450d680c3d7313d047e8d0e3",
+    "artifacts/provenance/frozen_manifest.json": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f"
+  },
+  "figure": "assets/figures/followup_pilot.png",
+  "figure_sha256": "f84e6e7862c2fcb7a7dfb90a6da56a24142b11d3620f8751966fbc50150f7a47",
+  "selected_case_rule": "Prespecified F-O0 candidate0 S1-23 false rejection and N-T candidate9 A/B contrast; first repeat plotted; all3 repeats checked",
+  "F_prediction_first_invalid_boundary": 1,
+  "F_actual_A_valid": true,
+  "N_B_first_ready_relative_s": 0.6000000000000001,
+  "N_B_ready_prefix": false,
+  "prediction_suffix_fill": false,
+  "additional_physics_or_inference_calls": 0,
+  "visual_review": "PASS_DIRECT_VIEW_2026-10-22: all four panels, first-invalid truncation and cutoff, standalone S1/MLP/seed and A/B definitions, position/hold thresholds, 0.6s first-ready marker, no overlap or clipping",
+  "interpretation": "A compares same command/horizon. B contrast jointly changes supervisor and horizon; no population or full-policy claim."
+}

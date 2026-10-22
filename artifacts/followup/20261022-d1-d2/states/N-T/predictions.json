@@ -1,0 +1,44 @@
+{
+  "R": {
+    "valid": 16,
+    "selected_original_candidate_id": 8,
+    "reason": "selected",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "S1-11": {
+    "valid": 15,
+    "selected_original_candidate_id": 9,
+    "reason": "selected",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "S1-23": {
+    "valid": 16,
+    "selected_original_candidate_id": 10,
+    "reason": "selected",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "S1-47": {
+    "valid": 16,
+    "selected_original_candidate_id": 13,
+    "reason": "selected",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "SK-11": {
+    "valid": 16,
+    "selected_original_candidate_id": 9,
+    "reason": "selected",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "SK-23": {
+    "valid": 15,
+    "selected_original_candidate_id": 10,
+    "reason": "selected",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "SK-47": {
+    "valid": 16,
+    "selected_original_candidate_id": 13,
+    "reason": "selected",
+    "selection_scope": "first16 only; not original128-bank policy"
+  }
+}

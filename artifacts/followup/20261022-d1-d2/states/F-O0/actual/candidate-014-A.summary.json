@@ -1,0 +1,33 @@
+{
+  "state": "F-O0",
+  "candidate_id": 14,
+  "panel": "A",
+  "repeat": 0,
+  "physical_valid": true,
+  "horizon_completed": true,
+  "intervals": 5,
+  "termination": "horizon_completed",
+  "reasons": [],
+  "first_ready_interval": null,
+  "ready_prefix": false,
+  "ready": false,
+  "ready_eligible": false,
+  "cost": 30.382955953181646,
+  "cost_finite": true,
+  "cost_components": {
+    "stage_position": 1.1534154296319528,
+    "stage_yaw": 1.6085870717472028,
+    "stage_action": 0.0006578176408052272,
+    "stage_action_change": 0.00030246957764531817,
+    "stage_gap": 4.498996361551451e-05,
+    "terminal_position": 11.534077281209193,
+    "terminal_yaw": 16.085870893411233,
+    "terminal_speed": 2.250311807608541e-17,
+    "terminal_angular_speed": 1.4441217895757406e-33
+  },
+  "raw_round_trip": "PASS_EXACT",
+  "repeat_comparison": "FIRST_REPEAT",
+  "wall_seconds": 0.9176056669093668,
+  "bytes_before_summary": 235246,
+  "initial_snapshot_exact": true
+}

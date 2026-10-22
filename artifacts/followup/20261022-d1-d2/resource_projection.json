@@ -1,0 +1,13 @@
+{
+  "safety_factor": 1.5,
+  "max_measured_trial_bytes_per_returned_interval": 88934.8,
+  "max_measured_trial_wall_seconds_per_returned_interval": 0.48116094996221365,
+  "conservative_remaining_intervals": 60595,
+  "incremental_projected_total_bytes": 8145862853,
+  "projected_remaining_wall_seconds": 43733.9216444405,
+  "free_bytes_now": 9912320000,
+  "current_run_bytes": 62356544,
+  "includes_no_future_execution_authorization": true,
+  "storage_cap_fit": false,
+  "wall_cap_fit": false
+}

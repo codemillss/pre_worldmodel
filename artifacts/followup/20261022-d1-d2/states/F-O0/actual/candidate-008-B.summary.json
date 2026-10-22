@@ -1,0 +1,23 @@
+{
+  "state": "F-O0",
+  "candidate_id": 8,
+  "panel": "B",
+  "repeat": 0,
+  "physical_valid": true,
+  "horizon_completed": true,
+  "intervals": 8,
+  "termination": "horizon_completed",
+  "reasons": [],
+  "first_ready_interval": null,
+  "ready_prefix": false,
+  "ready": false,
+  "ready_eligible": false,
+  "cost": null,
+  "cost_finite": false,
+  "cost_components": {},
+  "raw_round_trip": "PASS_EXACT",
+  "repeat_comparison": "FIRST_REPEAT",
+  "wall_seconds": 1.7175690000876784,
+  "bytes_before_summary": 425593,
+  "initial_snapshot_exact": true
+}

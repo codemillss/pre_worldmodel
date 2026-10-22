@@ -1,0 +1,44 @@
+{
+  "R": {
+    "valid": 4,
+    "selected_original_candidate_id": 14,
+    "reason": "selected",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "S1-11": {
+    "valid": 0,
+    "selected_original_candidate_id": null,
+    "reason": "planner_invalid",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "S1-23": {
+    "valid": 0,
+    "selected_original_candidate_id": null,
+    "reason": "planner_invalid",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "S1-47": {
+    "valid": 0,
+    "selected_original_candidate_id": null,
+    "reason": "planner_invalid",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "SK-11": {
+    "valid": 0,
+    "selected_original_candidate_id": null,
+    "reason": "planner_invalid",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "SK-23": {
+    "valid": 0,
+    "selected_original_candidate_id": null,
+    "reason": "planner_invalid",
+    "selection_scope": "first16 only; not original128-bank policy"
+  },
+  "SK-47": {
+    "valid": 0,
+    "selected_original_candidate_id": null,
+    "reason": "planner_invalid",
+    "selection_scope": "first16 only; not original128-bank policy"
+  }
+}
