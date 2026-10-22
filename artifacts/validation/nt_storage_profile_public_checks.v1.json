@@ -1,0 +1,43 @@
+{
+  "schema": "nt-storage-profile-public-checks-v1",
+  "status": "PASS_PUBLIC_HASHES_TIMING_PARTITION_AND_RESOURCE_HOLD",
+  "created_at_utc": "2026-10-22T07:53:53.988186+00:00",
+  "package_manifest_sha256": "51745aabc6829d74531610e1167be9f210d8f31ba2592bd8cbb051bf2e77febb",
+  "verifier_sha256": "c626ce5b7dd1adb853f7d15b7b9a11aba5bb5ad968402600975fb059c0871e77",
+  "public_files_checked": 29,
+  "instrumented_bundles": 18,
+  "original_calibration_bundles": 3,
+  "recorded_exact_pairs_checked": 42,
+  "new_actual_trajectories": 0,
+  "training_updates": 0,
+  "forbidden_compute_counts": {
+    "mj_step": 0,
+    "mj_step1": 0,
+    "mj_step2": 0,
+    "mj_forward": 0,
+    "mj_inverse": 0,
+    "environment.__init__": 0,
+    "environment.reset": 0,
+    "environment.restore": 0,
+    "environment.step": 0,
+    "model.__call__": 0
+  },
+  "resource_status": "HOLD_RESOURCE",
+  "remaining": {
+    "trials": 698,
+    "intervals": 4540,
+    "source_comparisons": 26,
+    "complete_probe_groups": 232
+  },
+  "local_evidence_inventory_sha256": "ca5fa4434f76aa634bbf1bc1d311649eb720a10b767351b3f797300761df6244",
+  "additional_work_receipt_sha256": "1a61cdeb2281c6a85f27701499e72c6049560238409d5b8b1b616c4b9fb5e85d",
+  "new_physics_or_predictor_calls_by_verifier": 0,
+  "elapsed_seconds": 0.0370259580668062,
+  "limits": [
+    "Public package omits complete NPZ/gzip evidence. Hash inventory and recorded exact verdicts do not independently decode those local payloads.",
+    "No cold-cache or historical OS/thermal/disk cause can be inferred from warmed saved-case timing.",
+    "Free-space live reading is absent from the original resource record; public verification recomputes time and storage-growth formulas, not current live disk availability.",
+    "Additional-work receipt is authenticated public provenance; this verifier cannot independently reconstruct the human/task elapsed clock.",
+    "No remaining actual trajectory is executed or authorized by this verification."
+  ]
+}

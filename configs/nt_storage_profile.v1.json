@@ -1,0 +1,134 @@
+{
+  "schema": "nt-storage-profile-design-v1",
+  "purpose": "Split unchanged complete-Probe bundle by storage/authenticated reread/typed restore/exact comparisons; saved evidence only.",
+  "source_runs": [
+    "followup-nt-full-20261022-01",
+    "followup-nt-preflight-20261022-02"
+  ],
+  "cases": [
+    {
+      "id": "full-000-A",
+      "run": "followup-nt-full-20261022-01",
+      "trial_relative": "actual/N-T/candidate-000/A/repeat-0",
+      "summary_sha256": "527253b90fff64f2cbac585f9f198b5e330fa4589253a0b170c46f155f6b722e",
+      "receipt_sha256": "41026bee281cb94cf924cef8e5b4467d89ca34027e22b5f54bd854290495c477",
+      "whole_probe_typed_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204",
+      "intervals": 5,
+      "historical_bundle_ns": 2398919833
+    },
+    {
+      "id": "full-000-B",
+      "run": "followup-nt-full-20261022-01",
+      "trial_relative": "actual/N-T/candidate-000/B/repeat-0",
+      "summary_sha256": "90b7374042758e6d04cd66af085bbca4be95de3fb70f6932fd858f9dca0eeed7",
+      "receipt_sha256": "56b08e1667a5be7eabbcac7d34d0e776a8697e71abc2deaac24d5c1634cbd72c",
+      "whole_probe_typed_sha256": "e3369d645dcb67404fa0ce468fc9a05e9eeb52ea35013d4fd583f268bab7cc13",
+      "intervals": 8,
+      "historical_bundle_ns": 4186545166
+    },
+    {
+      "id": "full-009-B",
+      "run": "followup-nt-full-20261022-01",
+      "trial_relative": "actual/N-T/candidate-009/B/repeat-0",
+      "summary_sha256": "575aab38b6a702c0ef5752be7f577c30b5127f508899747c7d6108150a46f0c7",
+      "receipt_sha256": "0b4168b2fb1463e0d334faa19f1f66c393e1d0f33131cb9cdb53e7cd30040bb1",
+      "whole_probe_typed_sha256": "ee3985311a3fa88412df6c6ed456db481b66488612286a52e862872d1994aa37",
+      "intervals": 6,
+      "historical_bundle_ns": 3509543541
+    },
+    {
+      "id": "full-011-A",
+      "run": "followup-nt-full-20261022-01",
+      "trial_relative": "actual/N-T/candidate-011/A/repeat-0",
+      "summary_sha256": "13c9615a876b038ce314e3cf6332b341f32756efebcf643b892dd714d5bed246",
+      "receipt_sha256": "ec4fea90e503cb7a1e059e79105ef3c31b131d49509b417de652cda5a5d50daf",
+      "whole_probe_typed_sha256": "7cd811f18ae9615c4fde16a45dc6b7eb8cadbe00801002f15cebee368cef0cb4",
+      "intervals": 5,
+      "historical_bundle_ns": 3655440208
+    },
+    {
+      "id": "full-011-B",
+      "run": "followup-nt-full-20261022-01",
+      "trial_relative": "actual/N-T/candidate-011/B/repeat-0",
+      "summary_sha256": "39eae5742a0ecb76d8a1549f14ce20d6c41395c8ffd6c84c52cc1ba59e3a6945",
+      "receipt_sha256": "07c6872e6983819e9308cc26ff0b0bbc1087217358628b328edbf9500c3c6718",
+      "whole_probe_typed_sha256": "31253a7d134cb7409f02bd526644b334cf1edeecb817550712454b991af50f9a",
+      "intervals": 8,
+      "historical_bundle_ns": 6158992500
+    },
+    {
+      "id": "preflight-127-B",
+      "run": "followup-nt-preflight-20261022-02",
+      "trial_relative": "actual/N-T/candidate-127/B/repeat-0",
+      "summary_sha256": "01453518c24eb65628979cac4d2b63c24013305b95ac65c364cda5c92e252e6f",
+      "receipt_sha256": "1d61dc1cdab4dda0f55ebfa568beb75c81426970c9343f9156979e6c02c1200d",
+      "whole_probe_typed_sha256": "14fb59c2c436efc86acc501f5632795a649aeb8d01eb8f8fcbc873568c1e8a5a",
+      "intervals": 8,
+      "historical_bundle_ns": 4084182708
+    }
+  ],
+  "repeats": 3,
+  "case_order_by_round": [
+    [
+      "full-000-A",
+      "full-000-B",
+      "full-009-B",
+      "full-011-A",
+      "full-011-B",
+      "preflight-127-B"
+    ],
+    [
+      "preflight-127-B",
+      "full-011-B",
+      "full-011-A",
+      "full-009-B",
+      "full-000-B",
+      "full-000-A"
+    ],
+    [
+      "full-009-B",
+      "full-011-A",
+      "full-011-B",
+      "preflight-127-B",
+      "full-000-A",
+      "full-000-B"
+    ]
+  ],
+  "calibration_case_id": "full-011-B",
+  "calibration": "Three identical saved-Probe original untimed-function reference passes, before/after alternation; payload hashes must match instrumented copies.",
+  "preservation": "No source write, model load/inference/training, environment construction or physical stepping. All copied outputs retained in exclusive folders.",
+  "cache_policy": "Warm authenticated source, new writes fsynced; no cache flush or cold-disk guarantee.",
+  "process_cap_seconds": 300,
+  "sealing_reserve_seconds": 30,
+  "output_cap_bytes": 268435456,
+  "free_space_reserve_bytes": 2147483648,
+  "code_paths": [
+    "scripts/profile_nt_storage.py",
+    "scripts/followup_nt_executor.py",
+    "src/push_align/final_driver_v2.py",
+    "src/push_align/final_recording.py",
+    "src/push_align/followup_probe.py",
+    "src/push_align/final_recording_columns.py"
+  ],
+  "source_code_sha256": {
+    "scripts/profile_nt_storage.py": "839855e4c38e12cf09fbd50532ee337cfb86f00d3eb5bae2c7595fa89147c6b2",
+    "scripts/followup_nt_executor.py": "fa6ee11ebf44d693c21749281812afc0fa653e3b15e5377fa15ff73dd8f8d42c",
+    "src/push_align/final_driver_v2.py": "555a9fbbb6cce05c908154153d4e9182ec4c856b1f3f45bd697c4d13e4e017d1",
+    "src/push_align/final_recording.py": "72e365f942244710a9f2066adce9a2f6ea78d0fbc414c1ed429b9a10b61d62af",
+    "src/push_align/followup_probe.py": "98d66ae351fdaf9b36b3312bbe7f6b07be2f11a3654685b0d467f85c787bfeec",
+    "src/push_align/final_recording_columns.py": "b571654413638ceff8bba1827086c5494e03a07e7decb625112165a8ca302410"
+  },
+  "bindings": {
+    "source_run_summary_sha256": "8f45091686dc3b6a8c0b45b48d5036b303a0fa8c1b459c479dcb4e1ed1970df7",
+    "source_entry_sha256": "a06fe85be6f2b7a54947f9338d3433ab2f91bf8e91c462666c90d78e4d482889",
+    "executed_config_sha256": "6c610918926f076cc09e950512252187a071147cede367e473bc5a2e9920b58b",
+    "prior_delivery_review_sha256": "813a2b143e92d79589f40056d23d5a145f9f454a007fee35750f2348d8346571"
+  },
+  "prior_clock_source": "artifacts/validation/nt_full_delivery_review.v1.json time_accounting.conservative_total_including_publication_reserve_seconds",
+  "prior_conservative_seconds": 1736.5930288732052,
+  "setup_contract_tests_outer_seconds": 1.463106458,
+  "remaining_scientific_run_authorized_in_this_profile": false,
+  "interpretation": "Only narrow reproduction-workload attribution. Historical OS/thermal/cache cause not established. Global old maxima remain floors.",
+  "independent_contract_tests_outer_seconds": 1.053067542,
+  "independent_review": "Read-only semantic review of AST timer insertion, preserving untouched original functions, nesting and calibration; PASS before execution."
+}

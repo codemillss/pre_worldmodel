@@ -1,0 +1,9 @@
+{
+  "schema": "storage-profile-process-wall-v1",
+  "process_wall_seconds": 104.86803091713227,
+  "exit_code": 0,
+  "driver_sha256": "839855e4c38e12cf09fbd50532ee337cfb86f00d3eb5bae2c7595fa89147c6b2",
+  "config_sha256": "5aa6511e13fa23357baa8702eaa2f3044037c03aebfa088297aa0cd750b9fe62",
+  "completed_utc": "2026-10-22T07:43:02.291850+00:00",
+  "scope": "One exclusive saved-storage profile including import,source authentication,calibrations,all timers,source rehash,final summary. No automatic retry."
+}

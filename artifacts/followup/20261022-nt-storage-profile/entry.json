@@ -1,0 +1,56 @@
+{
+  "schema": "nt-storage-profile-entry-v1",
+  "config_sha256": "5aa6511e13fa23357baa8702eaa2f3044037c03aebfa088297aa0cd750b9fe62",
+  "source_code_sha256": {
+    "scripts/profile_nt_storage.py": "839855e4c38e12cf09fbd50532ee337cfb86f00d3eb5bae2c7595fa89147c6b2",
+    "scripts/followup_nt_executor.py": "fa6ee11ebf44d693c21749281812afc0fa653e3b15e5377fa15ff73dd8f8d42c",
+    "src/push_align/final_driver_v2.py": "555a9fbbb6cce05c908154153d4e9182ec4c856b1f3f45bd697c4d13e4e017d1",
+    "src/push_align/final_recording.py": "72e365f942244710a9f2066adce9a2f6ea78d0fbc414c1ed429b9a10b61d62af",
+    "src/push_align/followup_probe.py": "98d66ae351fdaf9b36b3312bbe7f6b07be2f11a3654685b0d467f85c787bfeec",
+    "src/push_align/final_recording_columns.py": "b571654413638ceff8bba1827086c5494e03a07e7decb625112165a8ca302410"
+  },
+  "started_at_utc": "2026-10-22T07:41:18.652451+00:00",
+  "bindings": {
+    "source_run_summary_sha256": "8f45091686dc3b6a8c0b45b48d5036b303a0fa8c1b459c479dcb4e1ed1970df7",
+    "source_entry_sha256": "a06fe85be6f2b7a54947f9338d3433ab2f91bf8e91c462666c90d78e4d482889",
+    "executed_config_sha256": "6c610918926f076cc09e950512252187a071147cede367e473bc5a2e9920b58b",
+    "prior_delivery_review_sha256": "813a2b143e92d79589f40056d23d5a145f9f454a007fee35750f2348d8346571"
+  },
+  "source_runs": {
+    "followup-nt-full-20261022-01": {
+      "file_count": 583,
+      "inventory_sha256": "8a3f0b3d4f3244063ed244587e43c5e21a85ad1740be41ba0152df7e04bf14bc"
+    },
+    "followup-nt-preflight-20261022-02": {
+      "file_count": 176,
+      "inventory_sha256": "bd575fea763c0bfd2e729e966565fd1f143fd85681704a68ac3b449a802e3ba1"
+    }
+  },
+  "case_order_by_round": [
+    [
+      "full-000-A",
+      "full-000-B",
+      "full-009-B",
+      "full-011-A",
+      "full-011-B",
+      "preflight-127-B"
+    ],
+    [
+      "preflight-127-B",
+      "full-011-B",
+      "full-011-A",
+      "full-009-B",
+      "full-000-B",
+      "full-000-A"
+    ],
+    [
+      "full-009-B",
+      "full-011-A",
+      "full-011-B",
+      "preflight-127-B",
+      "full-000-A",
+      "full-000-B"
+    ]
+  ],
+  "cache_policy": "Existing source data authenticated/read before timed copies; warm page cache, no cache flushing or cold-I/O claim."
+}

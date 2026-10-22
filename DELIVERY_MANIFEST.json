@@ -3,7 +3,7 @@
   "as_of_kst": "2026-10-22",
   "repository": "https://github.com/codemillss/pre_worldmodel.git",
   "branch": "main",
-  "scope": "Tracked publication files with preserved frozen science/paper/PDFs and separate full-bank entry stopped by live resource guard after70/768. Raw/full Probe payloads remain local; self excluded.",
+  "scope": "Tracked publication including frozen scientific results and separate full-run STOP_RESOURCE evidence plus lossless saved-storage profiling. Self excluded;21complete profile payloadcopies remain local.",
   "original_core_evidence_SHA_verified": 20,
   "private_local_path_and_high_confidence_secret_patterns_found": 0,
   "files": [
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19593,
-      "sha256": "8026d8280c0c7f5594f23b578cc06c5e15050accd59e4f2672df2e0f07d98623"
+      "bytes": 20284,
+      "sha256": "b4bae7e0b82838798486cbe8391cac82110abf6a134a25289f715c68ba05ce9a"
     },
     {
       "path": "artifacts/audits/p5_application_completion.v1.json",
@@ -3348,6 +3348,156 @@
       "sha256": "e8e2e490715f1f57e26113d4ba5ad2c01090eeab2eedec34a3628a451b3995a0"
     },
     {
+      "path": "artifacts/followup/20261022-nt-storage-profile/additional_work_receipt.json",
+      "bytes": 981,
+      "sha256": "1a61cdeb2281c6a85f27701499e72c6049560238409d5b8b1b616c4b9fb5e85d"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/attribution.json",
+      "bytes": 14531,
+      "sha256": "5bccfcc49009846ba798e735fa50a89f0ee7cfb1b108233636dcf5535e0b7272"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/calibration-0/measurement.json",
+      "bytes": 1125,
+      "sha256": "a6425ed69d68f70530b37e79bead6147c881eef54776ce8cda0a84a04010b803"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/calibration-1/measurement.json",
+      "bytes": 1124,
+      "sha256": "6327bd0b651ba456b9ef003dff012f4fa1a8899a171b94c20c74f84d339b06bc"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/calibration-2/measurement.json",
+      "bytes": 1125,
+      "sha256": "a91b0f97e82da791c409b90744467a5afb3a1b3beb2de313cafe2f8675aac617"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/entry.json",
+      "bytes": 2224,
+      "sha256": "960e09739867ddfea1bf0a27922538f1e3ecb6710364f6d620473b1440904144"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/executed_config.json",
+      "bytes": 6436,
+      "sha256": "5aa6511e13fa23357baa8702eaa2f3044037c03aebfa088297aa0cd750b9fe62"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/local_evidence_inventory.json",
+      "bytes": 20374,
+      "sha256": "ca5fa4434f76aa634bbf1bc1d311649eb720a10b767351b3f797300761df6244"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/manifest.json",
+      "bytes": 16767,
+      "sha256": "51745aabc6829d74531610e1167be9f210d8f31ba2592bd8cbb051bf2e77febb"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/process_wall_receipt.json",
+      "bytes": 505,
+      "sha256": "b1976718f99f04a7f73059a85102b97a7e9fb8f2c7381bedd1445e2cfd30b277"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/resource_reassessment.json",
+      "bytes": 24616,
+      "sha256": "6ad4d44424bef29c5e60139390b53f1c03cc06809fe08e56a4ece334a31ddee4"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-0/full-000-A/measurement.json",
+      "bytes": 8712,
+      "sha256": "33f9618fa06c2ca5ab46336fdddc3bec1fa8f25939db6ff79206179932ee0371"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-0/full-000-B/measurement.json",
+      "bytes": 8727,
+      "sha256": "bc06f53f42ce3c17dd6c33226c9a9db9a5a6bcbdf63f9105f57c383e04417e1b"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-0/full-009-B/measurement.json",
+      "bytes": 8720,
+      "sha256": "78ff0cd9bc9058ddc633d944ae1aca11ab8e97004ba8a79940d7ba37c125bc63"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-0/full-011-A/measurement.json",
+      "bytes": 8720,
+      "sha256": "7cdc3174f9a4526608479ee1a304e836b313dafdf397153d60824f9bbdd485ac"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-0/full-011-B/measurement.json",
+      "bytes": 8888,
+      "sha256": "30572983b8bd19e875deca5c134f5a0aa0acc8b291e5a8e022012b6962ab5feb"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-0/preflight-127-B/measurement.json",
+      "bytes": 8730,
+      "sha256": "bb3e24c1eda041f396345f987e026439b63955a62be24587a116c495d030a01f"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-1/full-000-A/measurement.json",
+      "bytes": 8713,
+      "sha256": "10acfb7add6d69e1b430ce44750906ebf0597da1583f3da0878132078e4c3e02"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-1/full-000-B/measurement.json",
+      "bytes": 8727,
+      "sha256": "34b7e811d3363c967572e4218b3574de6d672461ae80740802b2cd9eb2a92051"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-1/full-009-B/measurement.json",
+      "bytes": 8714,
+      "sha256": "6a77693f12f14c22ea07ca52b05db19606abfb9104be8cf78e1cb852a1ee1788"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-1/full-011-A/measurement.json",
+      "bytes": 8718,
+      "sha256": "1137f68ceefa9750eef6e12b96f1f2f90da0700e17252d72d8db704f951949fb"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-1/full-011-B/measurement.json",
+      "bytes": 8886,
+      "sha256": "64e459fc45b2243cc4a211840bd997f4ab920bd796f345590db09c81a666a6b0"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-1/preflight-127-B/measurement.json",
+      "bytes": 8732,
+      "sha256": "449b6421840d19531e80fbb1d57a297ac4864c79ff84a0175bf6e196260994bd"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-2/full-000-A/measurement.json",
+      "bytes": 8715,
+      "sha256": "3929dc5b805a5b1bb5c6eb187c75a275ad0a24da78bd8cb713f040d51a125711"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-2/full-000-B/measurement.json",
+      "bytes": 8730,
+      "sha256": "4ceed99c6a06e3fb1869e31610ed34dd0ab26e88dd5ea5e21eabe59d76c43a82"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-2/full-009-B/measurement.json",
+      "bytes": 8722,
+      "sha256": "e8ce3c3d96683a56c632e546dff6d6fdabbb07621f0ac2331567cf935f4f4bdb"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-2/full-011-A/measurement.json",
+      "bytes": 8722,
+      "sha256": "ec77a4a7ef6718248e1ee5f1c69dbff5fd981275226011c4e7926df3a95a50cd"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-2/full-011-B/measurement.json",
+      "bytes": 8888,
+      "sha256": "ae154d64084156561e668c0287a67eb8d6ffd58a5674579b12d364217ba731ac"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/round-2/preflight-127-B/measurement.json",
+      "bytes": 8732,
+      "sha256": "a301c467c5de9639656218d2c8579c849834681b98a6162807f177dea19c65ea"
+    },
+    {
+      "path": "artifacts/followup/20261022-nt-storage-profile/summary.json",
+      "bytes": 184623,
+      "sha256": "b4b40826d814bd02283636b70617d8deb1e9ead70dbb521fc5face7d4d22ee3e"
+    },
+    {
       "path": "artifacts/followup/20261022-resource-profile/compute/entry.json",
       "bytes": 148249,
       "sha256": "5d4e7befc72b187e65755f4e7e424e805bb1147dada63f0ddd95ed3686e5e052"
@@ -3384,8 +3534,8 @@
     },
     {
       "path": "artifacts/index.md",
-      "bytes": 11636,
-      "sha256": "6fbf39651942b6872918fde54e3d0953898c99b1314c013d7382bbf4a2299e13"
+      "bytes": 12664,
+      "sha256": "212533b5d6f463e8cebd29b09db96863db12a7b1b98dbb4d04d29c8b8763a5fa"
     },
     {
       "path": "artifacts/learning/manifest.json",
@@ -5763,6 +5913,41 @@
       "sha256": "ea5d7f04f1dadca7baa0e370a7915c25d7ca3d6f5251c70d0a061369c8568c1f"
     },
     {
+      "path": "artifacts/validation/nt_storage_profile_delivery.v1.json",
+      "bytes": 2217,
+      "sha256": "50dafea3c833f916403a60a399af33a302d5642a5c037e3efc2203f2323728e6"
+    },
+    {
+      "path": "artifacts/validation/nt_storage_profile_final_clock.v1.json",
+      "bytes": 574,
+      "sha256": "4d90e01793cc33f5d165e3700f435bc0137d0ef6fc73c7027afc156482bc6886"
+    },
+    {
+      "path": "artifacts/validation/nt_storage_profile_public_checker.v1.py",
+      "bytes": 15005,
+      "sha256": "c626ce5b7dd1adb853f7d15b7b9a11aba5bb5ad968402600975fb059c0871e77"
+    },
+    {
+      "path": "artifacts/validation/nt_storage_profile_public_checks.v1.json",
+      "bytes": 1976,
+      "sha256": "65400bfbb37d7080f7bd9021fe77432fc0123d4d0d8fdeadaed2ec2c757c812f"
+    },
+    {
+      "path": "artifacts/validation/nt_storage_profile_public_checks.v2.json",
+      "bytes": 2153,
+      "sha256": "978aa2b01ac11088a09d5e533b80504f86d5967f62ec0fe501750e9c94906727"
+    },
+    {
+      "path": "artifacts/validation/nt_storage_profile_resource_final.v1.json",
+      "bytes": 24623,
+      "sha256": "eacfbd370c4044f24c0956d13939961435a3896376017980418050afecaf1307"
+    },
+    {
+      "path": "artifacts/validation/nt_storage_profile_review.v1.json",
+      "bytes": 37957,
+      "sha256": "11812a4826e5626599005bbbab666fb698c540aa3352c975364dba325fcc9eee"
+    },
+    {
       "path": "artifacts/validation/paper_content_review.v2.json",
       "bytes": 8768,
       "sha256": "794505e9952dd63198ba03cd1abd42b75ac37bc5e541dd73fde852595b5eebd3"
@@ -5871,6 +6056,11 @@
       "path": "configs/followup_nt_preflight.v2.json",
       "bytes": 9274,
       "sha256": "b965423ba2e1b7e339ebc6a2409b685a9935a512ddfffbd6390ea6f6eb35bc80"
+    },
+    {
+      "path": "configs/nt_storage_profile.v1.json",
+      "bytes": 6436,
+      "sha256": "5aa6511e13fa23357baa8702eaa2f3044037c03aebfa088297aa0cd750b9fe62"
     },
     {
       "path": "configs/p2_closed_loop.v1.toml",
@@ -6194,13 +6384,18 @@
     },
     {
       "path": "docs/nt_fullbank_execution.ko.md",
-      "bytes": 12284,
-      "sha256": "0e08f4c7dba8889f49c4e46d207c09b30b12f296bc2101f7eb8382bf188c859b"
+      "bytes": 12641,
+      "sha256": "6288de34ebd4442527c4fb1f4cfb9b321794513a5c0085965c38fb0b47cced54"
     },
     {
       "path": "docs/nt_fullbank_preflight.ko.md",
       "bytes": 13002,
       "sha256": "98671ea7cc7e02e05b64d92b46fd85ac57c4d09390e1c2ebd717385f466a8daa"
+    },
+    {
+      "path": "docs/nt_storage_profile.ko.md",
+      "bytes": 12615,
+      "sha256": "d77bd7659532829c7599fabf3f389ad57dfe205270d456d8910bdb3225145ddb"
     },
     {
       "path": "docs/reviewer_assessment.ko.md",
@@ -6618,6 +6813,11 @@
       "sha256": "82e6a34875a2e3b48850804f96267ca14cd83726e1b941a95658bfabd70833f0"
     },
     {
+      "path": "scripts/profile_nt_storage.py",
+      "bytes": 19272,
+      "sha256": "839855e4c38e12cf09fbd50532ee337cfb86f00d3eb5bae2c7595fa89147c6b2"
+    },
+    {
       "path": "scripts/smoke_public.py",
       "bytes": 2950,
       "sha256": "69d6dd0fd1f3cf9f8ff5a163db33a978f7852672a4ec387da0e2babf55f96d20"
@@ -6641,6 +6841,11 @@
       "path": "scripts/verify_nt_preflight.py",
       "bytes": 9944,
       "sha256": "9e2d9cd55970d5962538193dbe459869a1bb392d4dcfcdbbf59de93e10ae8d5e"
+    },
+    {
+      "path": "scripts/verify_nt_storage_profile.py",
+      "bytes": 19269,
+      "sha256": "66ef4e0fe232202965f4019c460baeefefc09adc72522e24fc01ec358473e165"
     },
     {
       "path": "scripts/verify_paper_results.py",
@@ -6991,6 +7196,11 @@
       "path": "tests/test_handoff_cost.py",
       "bytes": 19105,
       "sha256": "4cd1c05733e02d5313222c8e099d365f2b97ea7890ccfe161cbb27da51b6486f"
+    },
+    {
+      "path": "tests/test_nt_storage_profile.py",
+      "bytes": 3272,
+      "sha256": "4e1bb829d2496e7d0f4d194c2017e4150fb1e36e7736c7ba6a04a58b3feef4b7"
     },
     {
       "path": "tests/test_p1_contracts.py",
@@ -7963,6 +8173,11 @@
       "sha256": "5780ffd0e62f14b2e9e27fb8071b48a3a772d353f1398cf21156595d0e967352"
     },
     {
+      "path": "tools/reassess_nt_remaining.py",
+      "bytes": 24596,
+      "sha256": "aaa44996853d34e485b3baa4abbc6ca5b8f9da397d62fb7be55f9c855da5bf8a"
+    },
+    {
       "path": "tools/refine_nt_resource_scope.py",
       "bytes": 15995,
       "sha256": "9eb176ebb70acf1aad99882986be840e662100126b27084b0e136cfe25463101"
@@ -7973,16 +8188,21 @@
       "sha256": "8ec212e7b06c5ab2fda5e4faa83f214dd9e5a7db6d07161c240a81f9df923727"
     },
     {
+      "path": "tools/summarize_nt_storage_profile.py",
+      "bytes": 6465,
+      "sha256": "afb2c5fd6b92d08869a9178c9bf722ddaa32a1a02a924393d7eff40a0e454216"
+    },
+    {
       "path": "tools/summarize_p4_data_main.py",
       "bytes": 18400,
       "sha256": "c1df1301e029821d68e09627506056d56b39164085fa3c527b04b92802a614ee"
     }
   ],
-  "total_files_excluding_self": 1594,
-  "total_bytes_excluding_self": 59570403,
+  "total_files_excluding_self": 1638,
+  "total_bytes_excluding_self": 60180836,
   "current_paper_content_review": "artifacts/validation/document_review.v4.json",
-  "current_document_review": "artifacts/validation/nt_full_delivery_review.v1.json",
-  "verification_scope_note": "1225 prior files unchanged; three navigation documents updated. Fresh full-bank entry passed;70/768 actual trajectories sealed before whole-remaining estimate7304.08s exceeded7200.698 unexecuted; teacher not run. Existing paper/PDF and frozen results preserved. Public351-file subset has saved-data and public verification.",
+  "current_document_review": "artifacts/validation/nt_storage_profile_delivery.v1.json",
+  "verification_scope_note": "1591 previous files unchanged;three navigation files updated. Saved profile18+3 retained all exactchecks and source file identity.29publicselectedfiles verified; old/frozen models,data,paper/PDF and70/768 partial result untouched. Final resource forecast158.46min,HOLD698; no new physics or modelcalls.",
   "current_followup_design_review": "artifacts/validation/followup_design_review.v1.json",
   "current_followup_execution_review": "artifacts/validation/followup_execution_review.v1.json",
   "current_followup_resource_review": "artifacts/validation/followup_profile_execution_review.v1.json",
@@ -7995,5 +8215,8 @@
   "current_NT_full_entry_design_review": "artifacts/validation/nt_full_entry_design_review.v1.json",
   "current_NT_full_execution_review": "artifacts/validation/nt_full_execution_review.v1.json",
   "current_NT_full_public_verification": "artifacts/validation/nt_full_public_checks.v1.json",
-  "current_NT_full_delivery_review": "artifacts/validation/nt_full_delivery_review.v1.json"
+  "current_NT_full_delivery_review": "artifacts/validation/nt_full_delivery_review.v1.json",
+  "current_NT_storage_profile_review": "artifacts/validation/nt_storage_profile_review.v1.json",
+  "current_NT_storage_profile_public_verification": "artifacts/validation/nt_storage_profile_public_checks.v2.json",
+  "current_NT_storage_resource_reassessment": "artifacts/validation/nt_storage_profile_resource_final.v1.json"
 }

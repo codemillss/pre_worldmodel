@@ -1,0 +1,415 @@
+{
+  "schema": "nt-storage-profile-public-subset-v1",
+  "source_run": "followup-nt-storage-profile-20261022-01",
+  "source_summary_sha256": "b4b40826d814bd02283636b70617d8deb1e9ead70dbb521fc5face7d4d22ee3e",
+  "source_process_wall_receipt_sha256": "b1976718f99f04a7f73059a85102b97a7e9fb8f2c7381bedd1445e2cfd30b277",
+  "files": [
+    {
+      "path": "additional_work_receipt.json",
+      "sha256": "1a61cdeb2281c6a85f27701499e72c6049560238409d5b8b1b616c4b9fb5e85d",
+      "bytes": 981
+    },
+    {
+      "path": "attribution.json",
+      "sha256": "5bccfcc49009846ba798e735fa50a89f0ee7cfb1b108233636dcf5535e0b7272",
+      "bytes": 14531
+    },
+    {
+      "path": "calibration-0/measurement.json",
+      "sha256": "a6425ed69d68f70530b37e79bead6147c881eef54776ce8cda0a84a04010b803",
+      "bytes": 1125
+    },
+    {
+      "path": "calibration-1/measurement.json",
+      "sha256": "6327bd0b651ba456b9ef003dff012f4fa1a8899a171b94c20c74f84d339b06bc",
+      "bytes": 1124
+    },
+    {
+      "path": "calibration-2/measurement.json",
+      "sha256": "a91b0f97e82da791c409b90744467a5afb3a1b3beb2de313cafe2f8675aac617",
+      "bytes": 1125
+    },
+    {
+      "path": "entry.json",
+      "sha256": "960e09739867ddfea1bf0a27922538f1e3ecb6710364f6d620473b1440904144",
+      "bytes": 2224
+    },
+    {
+      "path": "executed_config.json",
+      "sha256": "5aa6511e13fa23357baa8702eaa2f3044037c03aebfa088297aa0cd750b9fe62",
+      "bytes": 6436
+    },
+    {
+      "path": "local_evidence_inventory.json",
+      "sha256": "ca5fa4434f76aa634bbf1bc1d311649eb720a10b767351b3f797300761df6244",
+      "bytes": 20374
+    },
+    {
+      "path": "process_wall_receipt.json",
+      "sha256": "b1976718f99f04a7f73059a85102b97a7e9fb8f2c7381bedd1445e2cfd30b277",
+      "bytes": 505
+    },
+    {
+      "path": "resource_reassessment.json",
+      "sha256": "6ad4d44424bef29c5e60139390b53f1c03cc06809fe08e56a4ece334a31ddee4",
+      "bytes": 24616
+    },
+    {
+      "path": "round-0/full-000-A/measurement.json",
+      "sha256": "33f9618fa06c2ca5ab46336fdddc3bec1fa8f25939db6ff79206179932ee0371",
+      "bytes": 8712
+    },
+    {
+      "path": "round-0/full-000-B/measurement.json",
+      "sha256": "bc06f53f42ce3c17dd6c33226c9a9db9a5a6bcbdf63f9105f57c383e04417e1b",
+      "bytes": 8727
+    },
+    {
+      "path": "round-0/full-009-B/measurement.json",
+      "sha256": "78ff0cd9bc9058ddc633d944ae1aca11ab8e97004ba8a79940d7ba37c125bc63",
+      "bytes": 8720
+    },
+    {
+      "path": "round-0/full-011-A/measurement.json",
+      "sha256": "7cdc3174f9a4526608479ee1a304e836b313dafdf397153d60824f9bbdd485ac",
+      "bytes": 8720
+    },
+    {
+      "path": "round-0/full-011-B/measurement.json",
+      "sha256": "30572983b8bd19e875deca5c134f5a0aa0acc8b291e5a8e022012b6962ab5feb",
+      "bytes": 8888
+    },
+    {
+      "path": "round-0/preflight-127-B/measurement.json",
+      "sha256": "bb3e24c1eda041f396345f987e026439b63955a62be24587a116c495d030a01f",
+      "bytes": 8730
+    },
+    {
+      "path": "round-1/full-000-A/measurement.json",
+      "sha256": "10acfb7add6d69e1b430ce44750906ebf0597da1583f3da0878132078e4c3e02",
+      "bytes": 8713
+    },
+    {
+      "path": "round-1/full-000-B/measurement.json",
+      "sha256": "34b7e811d3363c967572e4218b3574de6d672461ae80740802b2cd9eb2a92051",
+      "bytes": 8727
+    },
+    {
+      "path": "round-1/full-009-B/measurement.json",
+      "sha256": "6a77693f12f14c22ea07ca52b05db19606abfb9104be8cf78e1cb852a1ee1788",
+      "bytes": 8714
+    },
+    {
+      "path": "round-1/full-011-A/measurement.json",
+      "sha256": "1137f68ceefa9750eef6e12b96f1f2f90da0700e17252d72d8db704f951949fb",
+      "bytes": 8718
+    },
+    {
+      "path": "round-1/full-011-B/measurement.json",
+      "sha256": "64e459fc45b2243cc4a211840bd997f4ab920bd796f345590db09c81a666a6b0",
+      "bytes": 8886
+    },
+    {
+      "path": "round-1/preflight-127-B/measurement.json",
+      "sha256": "449b6421840d19531e80fbb1d57a297ac4864c79ff84a0175bf6e196260994bd",
+      "bytes": 8732
+    },
+    {
+      "path": "round-2/full-000-A/measurement.json",
+      "sha256": "3929dc5b805a5b1bb5c6eb187c75a275ad0a24da78bd8cb713f040d51a125711",
+      "bytes": 8715
+    },
+    {
+      "path": "round-2/full-000-B/measurement.json",
+      "sha256": "4ceed99c6a06e3fb1869e31610ed34dd0ab26e88dd5ea5e21eabe59d76c43a82",
+      "bytes": 8730
+    },
+    {
+      "path": "round-2/full-009-B/measurement.json",
+      "sha256": "e8ce3c3d96683a56c632e546dff6d6fdabbb07621f0ac2331567cf935f4f4bdb",
+      "bytes": 8722
+    },
+    {
+      "path": "round-2/full-011-A/measurement.json",
+      "sha256": "ec77a4a7ef6718248e1ee5f1c69dbff5fd981275226011c4e7926df3a95a50cd",
+      "bytes": 8722
+    },
+    {
+      "path": "round-2/full-011-B/measurement.json",
+      "sha256": "ae154d64084156561e668c0287a67eb8d6ffd58a5674579b12d364217ba731ac",
+      "bytes": 8888
+    },
+    {
+      "path": "round-2/preflight-127-B/measurement.json",
+      "sha256": "a301c467c5de9639656218d2c8579c849834681b98a6162807f177dea19c65ea",
+      "bytes": 8732
+    },
+    {
+      "path": "summary.json",
+      "sha256": "b4b40826d814bd02283636b70617d8deb1e9ead70dbb521fc5face7d4d22ee3e",
+      "bytes": 184623
+    }
+  ],
+  "source_copy_records": [
+    {
+      "source_scope": "run",
+      "source_path": "entry.json",
+      "source_sha256": "960e09739867ddfea1bf0a27922538f1e3ecb6710364f6d620473b1440904144",
+      "public_path": "entry.json",
+      "public_sha256": "960e09739867ddfea1bf0a27922538f1e3ecb6710364f6d620473b1440904144",
+      "bytes": 2224,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "summary.json",
+      "source_sha256": "b4b40826d814bd02283636b70617d8deb1e9ead70dbb521fc5face7d4d22ee3e",
+      "public_path": "summary.json",
+      "public_sha256": "b4b40826d814bd02283636b70617d8deb1e9ead70dbb521fc5face7d4d22ee3e",
+      "bytes": 184623,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "process_wall_receipt.json",
+      "source_sha256": "b1976718f99f04a7f73059a85102b97a7e9fb8f2c7381bedd1445e2cfd30b277",
+      "public_path": "process_wall_receipt.json",
+      "public_sha256": "b1976718f99f04a7f73059a85102b97a7e9fb8f2c7381bedd1445e2cfd30b277",
+      "bytes": 505,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "attribution.json",
+      "source_sha256": "5bccfcc49009846ba798e735fa50a89f0ee7cfb1b108233636dcf5535e0b7272",
+      "public_path": "attribution.json",
+      "public_sha256": "5bccfcc49009846ba798e735fa50a89f0ee7cfb1b108233636dcf5535e0b7272",
+      "bytes": 14531,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "resource_reassessment.json",
+      "source_sha256": "6ad4d44424bef29c5e60139390b53f1c03cc06809fe08e56a4ece334a31ddee4",
+      "public_path": "resource_reassessment.json",
+      "public_sha256": "6ad4d44424bef29c5e60139390b53f1c03cc06809fe08e56a4ece334a31ddee4",
+      "bytes": 24616,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "additional_work_receipt.json",
+      "source_sha256": "1a61cdeb2281c6a85f27701499e72c6049560238409d5b8b1b616c4b9fb5e85d",
+      "public_path": "additional_work_receipt.json",
+      "public_sha256": "1a61cdeb2281c6a85f27701499e72c6049560238409d5b8b1b616c4b9fb5e85d",
+      "bytes": 981,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-0/full-000-A/measurement.json",
+      "source_sha256": "33f9618fa06c2ca5ab46336fdddc3bec1fa8f25939db6ff79206179932ee0371",
+      "public_path": "round-0/full-000-A/measurement.json",
+      "public_sha256": "33f9618fa06c2ca5ab46336fdddc3bec1fa8f25939db6ff79206179932ee0371",
+      "bytes": 8712,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-0/full-000-B/measurement.json",
+      "source_sha256": "bc06f53f42ce3c17dd6c33226c9a9db9a5a6bcbdf63f9105f57c383e04417e1b",
+      "public_path": "round-0/full-000-B/measurement.json",
+      "public_sha256": "bc06f53f42ce3c17dd6c33226c9a9db9a5a6bcbdf63f9105f57c383e04417e1b",
+      "bytes": 8727,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-0/full-009-B/measurement.json",
+      "source_sha256": "78ff0cd9bc9058ddc633d944ae1aca11ab8e97004ba8a79940d7ba37c125bc63",
+      "public_path": "round-0/full-009-B/measurement.json",
+      "public_sha256": "78ff0cd9bc9058ddc633d944ae1aca11ab8e97004ba8a79940d7ba37c125bc63",
+      "bytes": 8720,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-0/full-011-A/measurement.json",
+      "source_sha256": "7cdc3174f9a4526608479ee1a304e836b313dafdf397153d60824f9bbdd485ac",
+      "public_path": "round-0/full-011-A/measurement.json",
+      "public_sha256": "7cdc3174f9a4526608479ee1a304e836b313dafdf397153d60824f9bbdd485ac",
+      "bytes": 8720,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-0/full-011-B/measurement.json",
+      "source_sha256": "30572983b8bd19e875deca5c134f5a0aa0acc8b291e5a8e022012b6962ab5feb",
+      "public_path": "round-0/full-011-B/measurement.json",
+      "public_sha256": "30572983b8bd19e875deca5c134f5a0aa0acc8b291e5a8e022012b6962ab5feb",
+      "bytes": 8888,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-0/preflight-127-B/measurement.json",
+      "source_sha256": "bb3e24c1eda041f396345f987e026439b63955a62be24587a116c495d030a01f",
+      "public_path": "round-0/preflight-127-B/measurement.json",
+      "public_sha256": "bb3e24c1eda041f396345f987e026439b63955a62be24587a116c495d030a01f",
+      "bytes": 8730,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-1/full-000-A/measurement.json",
+      "source_sha256": "10acfb7add6d69e1b430ce44750906ebf0597da1583f3da0878132078e4c3e02",
+      "public_path": "round-1/full-000-A/measurement.json",
+      "public_sha256": "10acfb7add6d69e1b430ce44750906ebf0597da1583f3da0878132078e4c3e02",
+      "bytes": 8713,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-1/full-000-B/measurement.json",
+      "source_sha256": "34b7e811d3363c967572e4218b3574de6d672461ae80740802b2cd9eb2a92051",
+      "public_path": "round-1/full-000-B/measurement.json",
+      "public_sha256": "34b7e811d3363c967572e4218b3574de6d672461ae80740802b2cd9eb2a92051",
+      "bytes": 8727,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-1/full-009-B/measurement.json",
+      "source_sha256": "6a77693f12f14c22ea07ca52b05db19606abfb9104be8cf78e1cb852a1ee1788",
+      "public_path": "round-1/full-009-B/measurement.json",
+      "public_sha256": "6a77693f12f14c22ea07ca52b05db19606abfb9104be8cf78e1cb852a1ee1788",
+      "bytes": 8714,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-1/full-011-A/measurement.json",
+      "source_sha256": "1137f68ceefa9750eef6e12b96f1f2f90da0700e17252d72d8db704f951949fb",
+      "public_path": "round-1/full-011-A/measurement.json",
+      "public_sha256": "1137f68ceefa9750eef6e12b96f1f2f90da0700e17252d72d8db704f951949fb",
+      "bytes": 8718,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-1/full-011-B/measurement.json",
+      "source_sha256": "64e459fc45b2243cc4a211840bd997f4ab920bd796f345590db09c81a666a6b0",
+      "public_path": "round-1/full-011-B/measurement.json",
+      "public_sha256": "64e459fc45b2243cc4a211840bd997f4ab920bd796f345590db09c81a666a6b0",
+      "bytes": 8886,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-1/preflight-127-B/measurement.json",
+      "source_sha256": "449b6421840d19531e80fbb1d57a297ac4864c79ff84a0175bf6e196260994bd",
+      "public_path": "round-1/preflight-127-B/measurement.json",
+      "public_sha256": "449b6421840d19531e80fbb1d57a297ac4864c79ff84a0175bf6e196260994bd",
+      "bytes": 8732,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-2/full-000-A/measurement.json",
+      "source_sha256": "3929dc5b805a5b1bb5c6eb187c75a275ad0a24da78bd8cb713f040d51a125711",
+      "public_path": "round-2/full-000-A/measurement.json",
+      "public_sha256": "3929dc5b805a5b1bb5c6eb187c75a275ad0a24da78bd8cb713f040d51a125711",
+      "bytes": 8715,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-2/full-000-B/measurement.json",
+      "source_sha256": "4ceed99c6a06e3fb1869e31610ed34dd0ab26e88dd5ea5e21eabe59d76c43a82",
+      "public_path": "round-2/full-000-B/measurement.json",
+      "public_sha256": "4ceed99c6a06e3fb1869e31610ed34dd0ab26e88dd5ea5e21eabe59d76c43a82",
+      "bytes": 8730,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-2/full-009-B/measurement.json",
+      "source_sha256": "e8ce3c3d96683a56c632e546dff6d6fdabbb07621f0ac2331567cf935f4f4bdb",
+      "public_path": "round-2/full-009-B/measurement.json",
+      "public_sha256": "e8ce3c3d96683a56c632e546dff6d6fdabbb07621f0ac2331567cf935f4f4bdb",
+      "bytes": 8722,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-2/full-011-A/measurement.json",
+      "source_sha256": "ec77a4a7ef6718248e1ee5f1c69dbff5fd981275226011c4e7926df3a95a50cd",
+      "public_path": "round-2/full-011-A/measurement.json",
+      "public_sha256": "ec77a4a7ef6718248e1ee5f1c69dbff5fd981275226011c4e7926df3a95a50cd",
+      "bytes": 8722,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-2/full-011-B/measurement.json",
+      "source_sha256": "ae154d64084156561e668c0287a67eb8d6ffd58a5674579b12d364217ba731ac",
+      "public_path": "round-2/full-011-B/measurement.json",
+      "public_sha256": "ae154d64084156561e668c0287a67eb8d6ffd58a5674579b12d364217ba731ac",
+      "bytes": 8888,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "round-2/preflight-127-B/measurement.json",
+      "source_sha256": "a301c467c5de9639656218d2c8579c849834681b98a6162807f177dea19c65ea",
+      "public_path": "round-2/preflight-127-B/measurement.json",
+      "public_sha256": "a301c467c5de9639656218d2c8579c849834681b98a6162807f177dea19c65ea",
+      "bytes": 8732,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "calibration-0/measurement.json",
+      "source_sha256": "a6425ed69d68f70530b37e79bead6147c881eef54776ce8cda0a84a04010b803",
+      "public_path": "calibration-0/measurement.json",
+      "public_sha256": "a6425ed69d68f70530b37e79bead6147c881eef54776ce8cda0a84a04010b803",
+      "bytes": 1125,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "calibration-1/measurement.json",
+      "source_sha256": "6327bd0b651ba456b9ef003dff012f4fa1a8899a171b94c20c74f84d339b06bc",
+      "public_path": "calibration-1/measurement.json",
+      "public_sha256": "6327bd0b651ba456b9ef003dff012f4fa1a8899a171b94c20c74f84d339b06bc",
+      "bytes": 1124,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "run",
+      "source_path": "calibration-2/measurement.json",
+      "source_sha256": "a91b0f97e82da791c409b90744467a5afb3a1b3beb2de313cafe2f8675aac617",
+      "public_path": "calibration-2/measurement.json",
+      "public_sha256": "a91b0f97e82da791c409b90744467a5afb3a1b3beb2de313cafe2f8675aac617",
+      "bytes": 1125,
+      "transformation": "byte_identical"
+    },
+    {
+      "source_scope": "repository",
+      "source_path": "configs/nt_storage_profile.v1.json",
+      "source_sha256": "5aa6511e13fa23357baa8702eaa2f3044037c03aebfa088297aa0cd750b9fe62",
+      "public_path": "executed_config.json",
+      "public_sha256": "5aa6511e13fa23357baa8702eaa2f3044037c03aebfa088297aa0cd750b9fe62",
+      "bytes": 6436,
+      "transformation": "byte_identical"
+    }
+  ],
+  "file_count_excluding_self": 29,
+  "bytes_excluding_self": 415160,
+  "new_physics_calls": 0,
+  "new_model_calls": 0,
+  "new_actual_trajectories": 0,
+  "original_status": "STOP_RESOURCE",
+  "remaining_actual_trajectories": 698,
+  "scope": "Timings,exact verdicts,attribution,resource arithmetic and local hashes only;21 fullpayloadcopies remain local. No independent population or oldrunreplacement claim."
+}

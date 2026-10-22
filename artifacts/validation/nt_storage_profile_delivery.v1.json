@@ -1,0 +1,38 @@
+{
+  "schema": "nt-storage-profile-delivery-review-v1",
+  "status": "PASS_SAME_VERIFICATION_MEASUREMENT_AND_HONEST_HOLD",
+  "as_of_utc": "2026-10-22T07:58:02.578719+00:00",
+  "base_commit": "5d394107810ef59ce189807eb498a59ffbb36eb8",
+  "previous_inventory_sha256": "27603bcd701a044a5664eef6417a82cca7c5b4b362246d2bf6b23ea199ce7fe0",
+  "previous_files_unchanged": 1591,
+  "navigation_files_updated": [
+    "README.md",
+    "artifacts/index.md",
+    "docs/nt_fullbank_execution.ko.md"
+  ],
+  "private_path_or_secret_values_found_in_new_text_files": 0,
+  "changed_markdown_local_links": "PASS",
+  "profile_summary_sha256": "b4b40826d814bd02283636b70617d8deb1e9ead70dbb521fc5face7d4d22ee3e",
+  "profile_config_sha256": "5aa6511e13fa23357baa8702eaa2f3044037c03aebfa088297aa0cd750b9fe62",
+  "profile_driver_sha256": "839855e4c38e12cf09fbd50532ee337cfb86f00d3eb5bae2c7595fa89147c6b2",
+  "source_model_physics_validation_files": "UNCHANGED",
+  "independent_saved_review": "artifacts/validation/nt_storage_profile_review.v1.json",
+  "public_checks": "artifacts/validation/nt_storage_profile_public_checks.v2.json",
+  "final_resource": "artifacts/validation/nt_storage_profile_resource_final.v1.json",
+  "resource_decision": "HOLD_RESOURCE",
+  "projected_remaining_inclusive_minutes": 158.45894472357395,
+  "time_accounting": {
+    "conservative_spent_including_final120_publication_reserve_seconds": 3062.0942457569763,
+    "additional_since_final_clock_seconds_at_delivery": 68.1702299118042,
+    "within_reserved120_at_delivery": true,
+    "cap_seconds": 7200,
+    "within_cap_for_current_work": true,
+    "note": "Final120s current publication reserve is already included in final resource clock. No doubling of prior clock,profile104.868s,preparation,postwork or nestedtimers."
+  },
+  "evidence_limits": [
+    "18timed+3original saved-data bundles; no new actual candidates,models or training.",
+    "All exact checks retained; source payload file bytes match. Independent audit authenticates hashes/records,not full independent tree redecoding.",
+    "Remaining698 not executed; previous70/768 STOP_RESOURCE remains.",
+    "Earlier public resource snapshot154.27min retained; final158.46min includes laterpostwork."
+  ]
+}

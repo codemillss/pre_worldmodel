@@ -1,0 +1,548 @@
+{
+  "schema": "nt-storage-profile-local-inventory-v1",
+  "run_name": "followup-nt-storage-profile-20261022-01",
+  "files": [
+    {
+      "path": "additional_work_receipt.json",
+      "sha256": "1a61cdeb2281c6a85f27701499e72c6049560238409d5b8b1b616c4b9fb5e85d",
+      "bytes": 981,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "attribution.json",
+      "sha256": "5bccfcc49009846ba798e735fa50a89f0ee7cfb1b108233636dcf5535e0b7272",
+      "bytes": 14531,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "calibration-0/complete_probe/input.json.gz",
+      "sha256": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e",
+      "bytes": 902503,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "calibration-0/complete_probe/trace.npz",
+      "sha256": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+      "bytes": 132422,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "calibration-0/complete_probe_receipt.json",
+      "sha256": "4d5e8effc171304a819ba93b0cba4de5fe9de3551c4b32ea9e8de36bff08cc74",
+      "bytes": 1256,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "calibration-0/measurement.json",
+      "sha256": "a6425ed69d68f70530b37e79bead6147c881eef54776ce8cda0a84a04010b803",
+      "bytes": 1125,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "calibration-1/complete_probe/input.json.gz",
+      "sha256": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e",
+      "bytes": 902503,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "calibration-1/complete_probe/trace.npz",
+      "sha256": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+      "bytes": 132422,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "calibration-1/complete_probe_receipt.json",
+      "sha256": "ec4cd62d8574f672e35d35ad9160e613b200f3605b4eb1b8082b4b5a2c393b13",
+      "bytes": 1256,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "calibration-1/measurement.json",
+      "sha256": "6327bd0b651ba456b9ef003dff012f4fa1a8899a171b94c20c74f84d339b06bc",
+      "bytes": 1124,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "calibration-2/complete_probe/input.json.gz",
+      "sha256": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e",
+      "bytes": 902503,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "calibration-2/complete_probe/trace.npz",
+      "sha256": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+      "bytes": 132422,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "calibration-2/complete_probe_receipt.json",
+      "sha256": "cb41e1dff110da6dd58fa627074c392a8ebac1f1d146bbefb78d883f8c18653b",
+      "bytes": 1256,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "calibration-2/measurement.json",
+      "sha256": "a91b0f97e82da791c409b90744467a5afb3a1b3beb2de313cafe2f8675aac617",
+      "bytes": 1125,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "entry.json",
+      "sha256": "960e09739867ddfea1bf0a27922538f1e3ecb6710364f6d620473b1440904144",
+      "bytes": 2224,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "process_wall_receipt.json",
+      "sha256": "b1976718f99f04a7f73059a85102b97a7e9fb8f2c7381bedd1445e2cfd30b277",
+      "bytes": 505,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "resource_reassessment.json",
+      "sha256": "6ad4d44424bef29c5e60139390b53f1c03cc06809fe08e56a4ece334a31ddee4",
+      "bytes": 24616,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-0/full-000-A/complete_probe/input.json.gz",
+      "sha256": "5feb903405153fece7935663193d1dd62df1b3dd9f5a4404e85bd6f70f604f4e",
+      "bytes": 344112,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-000-A/complete_probe/trace.npz",
+      "sha256": "9de21dd7304463d0d7301f9830042438293b89d201e5657a6eeb3bb2cc0c638d",
+      "bytes": 68057,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-000-A/complete_probe_receipt.json",
+      "sha256": "7ae3e81361ace958821e3d653ce06f44c8ef17a34d5f3122ab7df301016cfaf5",
+      "bytes": 1275,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-000-A/measurement.json",
+      "sha256": "33f9618fa06c2ca5ab46336fdddc3bec1fa8f25939db6ff79206179932ee0371",
+      "bytes": 8712,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-0/full-000-B/complete_probe/input.json.gz",
+      "sha256": "a018ff5918436ef6acf0d73a93a8e535c435f69423b9fed192d454f5b2081040",
+      "bytes": 535448,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-000-B/complete_probe/trace.npz",
+      "sha256": "21535f799297fb23df26d9d64a9055dd40a0a3fbecbb88c434512720dd9c7fa8",
+      "bytes": 104389,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-000-B/complete_probe_receipt.json",
+      "sha256": "3e81e62f5cf1ef78b371b3dc1979ed638f932857e1bbcedd09dc2e59426723ae",
+      "bytes": 1276,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-000-B/measurement.json",
+      "sha256": "bc06f53f42ce3c17dd6c33226c9a9db9a5a6bcbdf63f9105f57c383e04417e1b",
+      "bytes": 8727,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-0/full-009-B/complete_probe/input.json.gz",
+      "sha256": "7a5bc7487168c0188724c8298a4f49c34978d5e9fe9c4f8d0f6590a1f7ce7749",
+      "bytes": 526378,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-009-B/complete_probe/trace.npz",
+      "sha256": "2ed2e19c65dda5ce34a21680ed0064883cb20a0d20984e867b56c09bd7c27529",
+      "bytes": 97217,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-009-B/complete_probe_receipt.json",
+      "sha256": "cf591af96d3b065de50b4c97bfa15160508b3bda60b9633e2a33ad6ff88e2c51",
+      "bytes": 1275,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-009-B/measurement.json",
+      "sha256": "78ff0cd9bc9058ddc633d944ae1aca11ab8e97004ba8a79940d7ba37c125bc63",
+      "bytes": 8720,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-0/full-011-A/complete_probe/input.json.gz",
+      "sha256": "5d2a7ae2553b8fcacc176fd50656ca8459582acabcf7c9514742ec523e6f3311",
+      "bytes": 594514,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-011-A/complete_probe/trace.npz",
+      "sha256": "7b399dcf8d7e0c3d6054cb11226654b1b3c2bc61a8180f964fddda9947b80345",
+      "bytes": 85358,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-011-A/complete_probe_receipt.json",
+      "sha256": "4d8d8b52a7783453be82827e5e4fda2b579046cb2c4a0ba625a022677296cd8d",
+      "bytes": 1275,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-011-A/measurement.json",
+      "sha256": "7cdc3174f9a4526608479ee1a304e836b313dafdf397153d60824f9bbdd485ac",
+      "bytes": 8720,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-0/full-011-B/complete_probe/input.json.gz",
+      "sha256": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e",
+      "bytes": 902503,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-011-B/complete_probe/trace.npz",
+      "sha256": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+      "bytes": 132422,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-011-B/complete_probe_receipt.json",
+      "sha256": "a9a4178124becbddeb3e234669c1badc5e381b104b542176435af679d13aaf8e",
+      "bytes": 1276,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/full-011-B/measurement.json",
+      "sha256": "30572983b8bd19e875deca5c134f5a0aa0acc8b291e5a8e022012b6962ab5feb",
+      "bytes": 8888,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-0/preflight-127-B/complete_probe/input.json.gz",
+      "sha256": "c6d5962d324fbe3d69eb2365a01f91d4e594bb43f3d2b10f3be8d4e8877030d1",
+      "bytes": 527325,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/preflight-127-B/complete_probe/trace.npz",
+      "sha256": "21b4cbddc4528a36beb889dcf1c155e3b0104e64cfcd78b2b2b21a3028a6efbc",
+      "bytes": 111299,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/preflight-127-B/complete_probe_receipt.json",
+      "sha256": "1a63ecf02f6835087d3bb3b5e4fbad6545075e4b9e9fbf7c1c427b04c0569552",
+      "bytes": 1296,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-0/preflight-127-B/measurement.json",
+      "sha256": "bb3e24c1eda041f396345f987e026439b63955a62be24587a116c495d030a01f",
+      "bytes": 8730,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-1/full-000-A/complete_probe/input.json.gz",
+      "sha256": "5feb903405153fece7935663193d1dd62df1b3dd9f5a4404e85bd6f70f604f4e",
+      "bytes": 344112,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-000-A/complete_probe/trace.npz",
+      "sha256": "9de21dd7304463d0d7301f9830042438293b89d201e5657a6eeb3bb2cc0c638d",
+      "bytes": 68057,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-000-A/complete_probe_receipt.json",
+      "sha256": "747023f15690fdd452df153afae894e7cdc68f899ab7014d0231a99981459ec9",
+      "bytes": 1275,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-000-A/measurement.json",
+      "sha256": "10acfb7add6d69e1b430ce44750906ebf0597da1583f3da0878132078e4c3e02",
+      "bytes": 8713,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-1/full-000-B/complete_probe/input.json.gz",
+      "sha256": "a018ff5918436ef6acf0d73a93a8e535c435f69423b9fed192d454f5b2081040",
+      "bytes": 535448,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-000-B/complete_probe/trace.npz",
+      "sha256": "21535f799297fb23df26d9d64a9055dd40a0a3fbecbb88c434512720dd9c7fa8",
+      "bytes": 104389,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-000-B/complete_probe_receipt.json",
+      "sha256": "34fe90d3e138afffed4418e249df08ac31c5ac8ce4749631463c68838bdc4b93",
+      "bytes": 1276,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-000-B/measurement.json",
+      "sha256": "34b7e811d3363c967572e4218b3574de6d672461ae80740802b2cd9eb2a92051",
+      "bytes": 8727,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-1/full-009-B/complete_probe/input.json.gz",
+      "sha256": "7a5bc7487168c0188724c8298a4f49c34978d5e9fe9c4f8d0f6590a1f7ce7749",
+      "bytes": 526378,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-009-B/complete_probe/trace.npz",
+      "sha256": "2ed2e19c65dda5ce34a21680ed0064883cb20a0d20984e867b56c09bd7c27529",
+      "bytes": 97217,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-009-B/complete_probe_receipt.json",
+      "sha256": "6b4607e1c3d0176723928168d21c38816b1c22b432c585fe4f4e976f32b2832f",
+      "bytes": 1275,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-009-B/measurement.json",
+      "sha256": "6a77693f12f14c22ea07ca52b05db19606abfb9104be8cf78e1cb852a1ee1788",
+      "bytes": 8714,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-1/full-011-A/complete_probe/input.json.gz",
+      "sha256": "5d2a7ae2553b8fcacc176fd50656ca8459582acabcf7c9514742ec523e6f3311",
+      "bytes": 594514,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-011-A/complete_probe/trace.npz",
+      "sha256": "7b399dcf8d7e0c3d6054cb11226654b1b3c2bc61a8180f964fddda9947b80345",
+      "bytes": 85358,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-011-A/complete_probe_receipt.json",
+      "sha256": "b4ce357eb3049bf0324a1c6bd25aa39cd173d7e6d913bb7f3c2e167df3a1bce7",
+      "bytes": 1275,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-011-A/measurement.json",
+      "sha256": "1137f68ceefa9750eef6e12b96f1f2f90da0700e17252d72d8db704f951949fb",
+      "bytes": 8718,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-1/full-011-B/complete_probe/input.json.gz",
+      "sha256": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e",
+      "bytes": 902503,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-011-B/complete_probe/trace.npz",
+      "sha256": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+      "bytes": 132422,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-011-B/complete_probe_receipt.json",
+      "sha256": "2ad876949d7b060dd8ca7f8c47cf66994899e192773dddb921b94531e829d3f7",
+      "bytes": 1276,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/full-011-B/measurement.json",
+      "sha256": "64e459fc45b2243cc4a211840bd997f4ab920bd796f345590db09c81a666a6b0",
+      "bytes": 8886,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-1/preflight-127-B/complete_probe/input.json.gz",
+      "sha256": "c6d5962d324fbe3d69eb2365a01f91d4e594bb43f3d2b10f3be8d4e8877030d1",
+      "bytes": 527325,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/preflight-127-B/complete_probe/trace.npz",
+      "sha256": "21b4cbddc4528a36beb889dcf1c155e3b0104e64cfcd78b2b2b21a3028a6efbc",
+      "bytes": 111299,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/preflight-127-B/complete_probe_receipt.json",
+      "sha256": "a052e0795195fa50b47cbfe4a363476af478ced09d4756db8c0bf814e9387efd",
+      "bytes": 1296,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-1/preflight-127-B/measurement.json",
+      "sha256": "449b6421840d19531e80fbb1d57a297ac4864c79ff84a0175bf6e196260994bd",
+      "bytes": 8732,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-2/full-000-A/complete_probe/input.json.gz",
+      "sha256": "5feb903405153fece7935663193d1dd62df1b3dd9f5a4404e85bd6f70f604f4e",
+      "bytes": 344112,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-000-A/complete_probe/trace.npz",
+      "sha256": "9de21dd7304463d0d7301f9830042438293b89d201e5657a6eeb3bb2cc0c638d",
+      "bytes": 68057,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-000-A/complete_probe_receipt.json",
+      "sha256": "feafe26b737f259db39412afc36ac7425e86110dd5382e0da909334c3d05ecf0",
+      "bytes": 1275,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-000-A/measurement.json",
+      "sha256": "3929dc5b805a5b1bb5c6eb187c75a275ad0a24da78bd8cb713f040d51a125711",
+      "bytes": 8715,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-2/full-000-B/complete_probe/input.json.gz",
+      "sha256": "a018ff5918436ef6acf0d73a93a8e535c435f69423b9fed192d454f5b2081040",
+      "bytes": 535448,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-000-B/complete_probe/trace.npz",
+      "sha256": "21535f799297fb23df26d9d64a9055dd40a0a3fbecbb88c434512720dd9c7fa8",
+      "bytes": 104389,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-000-B/complete_probe_receipt.json",
+      "sha256": "2c0ead4e40b6147dfe4ad5d414141c2a7cb9e2cdf0d8ecf45d2b810e1f0496d0",
+      "bytes": 1276,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-000-B/measurement.json",
+      "sha256": "4ceed99c6a06e3fb1869e31610ed34dd0ab26e88dd5ea5e21eabe59d76c43a82",
+      "bytes": 8730,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-2/full-009-B/complete_probe/input.json.gz",
+      "sha256": "7a5bc7487168c0188724c8298a4f49c34978d5e9fe9c4f8d0f6590a1f7ce7749",
+      "bytes": 526378,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-009-B/complete_probe/trace.npz",
+      "sha256": "2ed2e19c65dda5ce34a21680ed0064883cb20a0d20984e867b56c09bd7c27529",
+      "bytes": 97217,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-009-B/complete_probe_receipt.json",
+      "sha256": "88f5854f541cefb2ab361835d333268526f6f4f7f2f888ba1ba808345e7b6b58",
+      "bytes": 1275,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-009-B/measurement.json",
+      "sha256": "e8ce3c3d96683a56c632e546dff6d6fdabbb07621f0ac2331567cf935f4f4bdb",
+      "bytes": 8722,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-2/full-011-A/complete_probe/input.json.gz",
+      "sha256": "5d2a7ae2553b8fcacc176fd50656ca8459582acabcf7c9514742ec523e6f3311",
+      "bytes": 594514,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-011-A/complete_probe/trace.npz",
+      "sha256": "7b399dcf8d7e0c3d6054cb11226654b1b3c2bc61a8180f964fddda9947b80345",
+      "bytes": 85358,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-011-A/complete_probe_receipt.json",
+      "sha256": "ac657b88994deafe3c4b41f20bbeb242c1bbd194250d9a57b7ae9b5cc57ab690",
+      "bytes": 1275,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-011-A/measurement.json",
+      "sha256": "ec77a4a7ef6718248e1ee5f1c69dbff5fd981275226011c4e7926df3a95a50cd",
+      "bytes": 8722,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-2/full-011-B/complete_probe/input.json.gz",
+      "sha256": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e",
+      "bytes": 902503,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-011-B/complete_probe/trace.npz",
+      "sha256": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+      "bytes": 132422,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-011-B/complete_probe_receipt.json",
+      "sha256": "7c8b1dde9c3d7c6293cd7fbb0194342c71ba4abc4d28afc6bd7ab0296a09330b",
+      "bytes": 1276,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/full-011-B/measurement.json",
+      "sha256": "ae154d64084156561e668c0287a67eb8d6ffd58a5674579b12d364217ba731ac",
+      "bytes": 8888,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "round-2/preflight-127-B/complete_probe/input.json.gz",
+      "sha256": "c6d5962d324fbe3d69eb2365a01f91d4e594bb43f3d2b10f3be8d4e8877030d1",
+      "bytes": 527325,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/preflight-127-B/complete_probe/trace.npz",
+      "sha256": "21b4cbddc4528a36beb889dcf1c155e3b0104e64cfcd78b2b2b21a3028a6efbc",
+      "bytes": 111299,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/preflight-127-B/complete_probe_receipt.json",
+      "sha256": "9f11a5464bf75d9fb300fe46b3f876a34bd660ab6f34a3823b0ef88b3a9de6fe",
+      "bytes": 1296,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "round-2/preflight-127-B/measurement.json",
+      "sha256": "a301c467c5de9639656218d2c8579c849834681b98a6162807f177dea19c65ea",
+      "bytes": 8732,
+      "included_in_public_repository": true
+    },
+    {
+      "path": "summary.json",
+      "sha256": "b4b40826d814bd02283636b70617d8deb1e9ead70dbb521fc5face7d4d22ee3e",
+      "bytes": 184623,
+      "included_in_public_repository": true
+    }
+  ],
+  "local_complete_bundle_count": 21,
+  "note": "NPZ/gzip complete payloads remain local; this list includes them by hash. Published timing/receipts do not independently decode omitted payloads."
+}

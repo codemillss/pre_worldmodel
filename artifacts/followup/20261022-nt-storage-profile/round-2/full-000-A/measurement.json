@@ -1,0 +1,296 @@
+{
+  "total_ns": 2642851167,
+  "outer_bundle_ns": 2642857416,
+  "stages": {
+    "bundle/tree_build": {
+      "calls": 1,
+      "inclusive_ns": 19709,
+      "exclusive_ns": 19709,
+      "inclusive_cpu_ns": 19000,
+      "exclusive_cpu_ns": 19000
+    },
+    "bundle/write/typed_encode": {
+      "calls": 1,
+      "inclusive_ns": 327952667,
+      "exclusive_ns": 327952667,
+      "inclusive_cpu_ns": 327618000,
+      "exclusive_cpu_ns": 327618000
+    },
+    "bundle/write/self_compare/typed_hashes": {
+      "calls": 1,
+      "inclusive_ns": 277913208,
+      "exclusive_ns": 277913208,
+      "inclusive_cpu_ns": 277647000,
+      "exclusive_cpu_ns": 277647000
+    },
+    "bundle/write/self_compare/direct_recursive_equality": {
+      "calls": 1,
+      "inclusive_ns": 172746083,
+      "exclusive_ns": 172746083,
+      "inclusive_cpu_ns": 172536000,
+      "exclusive_cpu_ns": 172536000
+    },
+    "bundle/write/self_compare": {
+      "calls": 1,
+      "inclusive_ns": 450695417,
+      "exclusive_ns": 36126,
+      "inclusive_cpu_ns": 450217000,
+      "exclusive_cpu_ns": 34000
+    },
+    "bundle/write/npz_compress_write": {
+      "calls": 1,
+      "inclusive_ns": 3246209,
+      "exclusive_ns": 3246209,
+      "inclusive_cpu_ns": 3239000,
+      "exclusive_cpu_ns": 3239000
+    },
+    "bundle/write/npz_flush": {
+      "calls": 1,
+      "inclusive_ns": 3792,
+      "exclusive_ns": 3792,
+      "inclusive_cpu_ns": 4000,
+      "exclusive_cpu_ns": 4000
+    },
+    "bundle/write/npz_fsync": {
+      "calls": 1,
+      "inclusive_ns": 530167,
+      "exclusive_ns": 530167,
+      "inclusive_cpu_ns": 118000,
+      "exclusive_cpu_ns": 118000
+    },
+    "bundle/write/npz_sha": {
+      "calls": 1,
+      "inclusive_ns": 115583,
+      "exclusive_ns": 115583,
+      "inclusive_cpu_ns": 116000,
+      "exclusive_cpu_ns": 116000
+    },
+    "bundle/write/metadata_save/json_encode": {
+      "calls": 1,
+      "inclusive_ns": 66574958,
+      "exclusive_ns": 66574958,
+      "inclusive_cpu_ns": 66497000,
+      "exclusive_cpu_ns": 66497000
+    },
+    "bundle/write/metadata_save/gzip_write": {
+      "calls": 1,
+      "inclusive_ns": 40444250,
+      "exclusive_ns": 40444250,
+      "inclusive_cpu_ns": 40416000,
+      "exclusive_cpu_ns": 40416000
+    },
+    "bundle/write/metadata_save/flush": {
+      "calls": 1,
+      "inclusive_ns": 19667,
+      "exclusive_ns": 19667,
+      "inclusive_cpu_ns": 21000,
+      "exclusive_cpu_ns": 21000
+    },
+    "bundle/write/metadata_save/fsync": {
+      "calls": 1,
+      "inclusive_ns": 532917,
+      "exclusive_ns": 532917,
+      "inclusive_cpu_ns": 139000,
+      "exclusive_cpu_ns": 139000
+    },
+    "bundle/write/metadata_save/receipt_hash_stat": {
+      "calls": 1,
+      "inclusive_ns": 300542,
+      "exclusive_ns": 300542,
+      "inclusive_cpu_ns": 301000,
+      "exclusive_cpu_ns": 301000
+    },
+    "bundle/write/metadata_save": {
+      "calls": 1,
+      "inclusive_ns": 108182417,
+      "exclusive_ns": 310083,
+      "inclusive_cpu_ns": 107679000,
+      "exclusive_cpu_ns": 305000
+    },
+    "bundle/write/receipt_hash_stat": {
+      "calls": 1,
+      "inclusive_ns": 277417,
+      "exclusive_ns": 277417,
+      "inclusive_cpu_ns": 277000,
+      "exclusive_cpu_ns": 277000
+    },
+    "bundle/write": {
+      "calls": 1,
+      "inclusive_ns": 904238708,
+      "exclusive_ns": 13235039,
+      "inclusive_cpu_ns": 902498000,
+      "exclusive_cpu_ns": 13230000
+    },
+    "bundle/read/external_sha": {
+      "calls": 1,
+      "inclusive_ns": 495875,
+      "exclusive_ns": 495875,
+      "inclusive_cpu_ns": 497000,
+      "exclusive_cpu_ns": 497000
+    },
+    "bundle/read/metadata_read/metadata_sha": {
+      "calls": 1,
+      "inclusive_ns": 219583,
+      "exclusive_ns": 219583,
+      "inclusive_cpu_ns": 215000,
+      "exclusive_cpu_ns": 215000
+    },
+    "bundle/read/metadata_read/gzip_decompress_json_parse": {
+      "calls": 1,
+      "inclusive_ns": 101181917,
+      "exclusive_ns": 101181917,
+      "inclusive_cpu_ns": 101042000,
+      "exclusive_cpu_ns": 101042000
+    },
+    "bundle/read/metadata_read": {
+      "calls": 1,
+      "inclusive_ns": 101429292,
+      "exclusive_ns": 27792,
+      "inclusive_cpu_ns": 101284000,
+      "exclusive_cpu_ns": 27000
+    },
+    "bundle/read/internal_npz_sha": {
+      "calls": 1,
+      "inclusive_ns": 207708,
+      "exclusive_ns": 207708,
+      "inclusive_cpu_ns": 208000,
+      "exclusive_cpu_ns": 208000
+    },
+    "bundle/read/npz_decompress_copy": {
+      "calls": 1,
+      "inclusive_ns": 1938500,
+      "exclusive_ns": 1938500,
+      "inclusive_cpu_ns": 1939000,
+      "exclusive_cpu_ns": 1939000
+    },
+    "bundle/read/typed_tree_restore": {
+      "calls": 1,
+      "inclusive_ns": 112672084,
+      "exclusive_ns": 112672084,
+      "inclusive_cpu_ns": 112576000,
+      "exclusive_cpu_ns": 112576000
+    },
+    "bundle/read/self_compare/typed_hashes": {
+      "calls": 1,
+      "inclusive_ns": 280180625,
+      "exclusive_ns": 280180625,
+      "inclusive_cpu_ns": 279686000,
+      "exclusive_cpu_ns": 279686000
+    },
+    "bundle/read/self_compare/direct_recursive_equality": {
+      "calls": 1,
+      "inclusive_ns": 175060208,
+      "exclusive_ns": 175060208,
+      "inclusive_cpu_ns": 174902000,
+      "exclusive_cpu_ns": 174902000
+    },
+    "bundle/read/self_compare": {
+      "calls": 1,
+      "inclusive_ns": 455275292,
+      "exclusive_ns": 34459,
+      "inclusive_cpu_ns": 454619000,
+      "exclusive_cpu_ns": 31000
+    },
+    "bundle/read": {
+      "calls": 1,
+      "inclusive_ns": 672118000,
+      "exclusive_ns": 99249,
+      "inclusive_cpu_ns": 671220000,
+      "exclusive_cpu_ns": 97000
+    },
+    "bundle/tree_compare/typed_hashes": {
+      "calls": 1,
+      "inclusive_ns": 279927125,
+      "exclusive_ns": 279927125,
+      "inclusive_cpu_ns": 279660000,
+      "exclusive_cpu_ns": 279660000
+    },
+    "bundle/tree_compare/direct_recursive_equality": {
+      "calls": 1,
+      "inclusive_ns": 176438583,
+      "exclusive_ns": 176438583,
+      "inclusive_cpu_ns": 176258000,
+      "exclusive_cpu_ns": 176258000
+    },
+    "bundle/tree_compare": {
+      "calls": 1,
+      "inclusive_ns": 456397000,
+      "exclusive_ns": 31292,
+      "inclusive_cpu_ns": 455945000,
+      "exclusive_cpu_ns": 27000
+    },
+    "bundle/probe_restore": {
+      "calls": 1,
+      "inclusive_ns": 37542,
+      "exclusive_ns": 37542,
+      "inclusive_cpu_ns": 38000,
+      "exclusive_cpu_ns": 38000
+    },
+    "bundle/probe_compare/typed_hashes": {
+      "calls": 1,
+      "inclusive_ns": 374121375,
+      "exclusive_ns": 374121375,
+      "inclusive_cpu_ns": 350097000,
+      "exclusive_cpu_ns": 350097000
+    },
+    "bundle/probe_compare/direct_recursive_equality": {
+      "calls": 1,
+      "inclusive_ns": 234878833,
+      "exclusive_ns": 234878833,
+      "inclusive_cpu_ns": 234670000,
+      "exclusive_cpu_ns": 234670000
+    },
+    "bundle/probe_compare": {
+      "calls": 1,
+      "inclusive_ns": 609033792,
+      "exclusive_ns": 33584,
+      "inclusive_cpu_ns": 584798000,
+      "exclusive_cpu_ns": 31000
+    },
+    "bundle/receipt_write": {
+      "calls": 1,
+      "inclusive_ns": 933833,
+      "exclusive_ns": 933833,
+      "inclusive_cpu_ns": 508000,
+      "exclusive_cpu_ns": 508000
+    },
+    "bundle": {
+      "calls": 1,
+      "inclusive_ns": 2642851167,
+      "exclusive_ns": 72583,
+      "inclusive_cpu_ns": 2615098000,
+      "exclusive_cpu_ns": 72000
+    }
+  },
+  "tree_exact": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "5e3e17c81c5201d9c920b5e74ce3c0471f0a21677720469c77c338dd820f561c",
+    "right_sha256": "5e3e17c81c5201d9c920b5e74ce3c0471f0a21677720469c77c338dd820f561c"
+  },
+  "whole_probe_exact": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204",
+    "right_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204"
+  },
+  "payload_sha256": {
+    "trace.npz": "9de21dd7304463d0d7301f9830042438293b89d201e5657a6eeb3bb2cc0c638d",
+    "input.json.gz": "5feb903405153fece7935663193d1dd62df1b3dd9f5a4404e85bd6f70f604f4e"
+  },
+  "output_bytes": 413444,
+  "case_id": "full-000-A",
+  "repeat": 2,
+  "order_index": 4,
+  "shape": {
+    "step_results": 5,
+    "diagnostic_samples": 1005,
+    "diagnostic_contact_records": 4020,
+    "substep_samples": 1000,
+    "diagnostic_nodes": 149815,
+    "diagnostic_dicts": 6035,
+    "diagnostic_sequences": 28155,
+    "diagnostic_scalar_leaves": 115625
+  },
+  "process_wall_seconds": 99.90685029095039
+}

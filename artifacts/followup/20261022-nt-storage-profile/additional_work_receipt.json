@@ -1,0 +1,14 @@
+{
+  "schema": "nt-profile-additional-nonoverlap-work-v1",
+  "preparation_from_first_profile_source_creation_seconds": 268.44060730934143,
+  "post_profile_elapsed_through_budget_call_seconds": 580.7311034202576,
+  "final_publication_verification_reserve_seconds": 120.0,
+  "charged_additional_work_seconds": 969.171710729599,
+  "boundaries": {
+    "first_profile_source_birthtime_epoch": 1792654608.9839933,
+    "profile_process_receipt_mtime_epoch": 1792654982.2926316,
+    "profile_outer_process_seconds": 104.86803091713227
+  },
+  "definition": "Charge preparation interval, inclusive post-profile elapsed, and120s final publication reserve once. Unit tests/review/audit/aggregation subprocesses inside these intervals are subsets, not added. Old conservative delivery ledger and104.868s profile are separate. Human planning before the first profiling source artifact is outside the prior experiment-process clock convention.",
+  "current_setup_tests_inside_preparation": true
+}

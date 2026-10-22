@@ -1,0 +1,9 @@
+{
+  "schema": "nt-storage-profile-final-additional-clock-v1",
+  "preparation_seconds": 268.44060730934143,
+  "post_profile_through_final_reassessment_seconds": 832.1158332824707,
+  "final_delivery_commit_push_verification_reserve_seconds": 120.0,
+  "additional_work_seconds": 1220.5564405918121,
+  "replaces_in_final_calculation_only": "Earlier public resource_reassessment.json and additional_work_receipt.json remain unchanged; final clock replaces their current-task additional scope, never adds both.",
+  "same_profile_process_receipt_mtime_epoch": 1792654982.2926316
+}

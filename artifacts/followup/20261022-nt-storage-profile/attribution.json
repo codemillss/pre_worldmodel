@@ -1,0 +1,369 @@
+{
+  "schema": "nt-storage-profile-attribution-v1",
+  "status": "PASS_SAVED_TIMING_PARTITION",
+  "source_summary_sha256": "b4b40826d814bd02283636b70617d8deb1e9ead70dbb521fc5face7d4d22ee3e",
+  "source_process_wall_sha256": "b1976718f99f04a7f73059a85102b97a7e9fb8f2c7381bedd1445e2cfd30b277",
+  "summarizer_sha256": "afb2c5fd6b92d08869a9178c9bf722ddaa32a1a02a924393d7eff40a0e454216",
+  "timed_bundles": 18,
+  "original_reference_bundles": 3,
+  "cases": {
+    "full-000-A": {
+      "bundle_seconds": [
+        2.623859041,
+        2.580882584,
+        2.642851167
+      ],
+      "mean_seconds": 2.615864264,
+      "median_seconds": 2.623859041,
+      "min_seconds": 2.580882584,
+      "max_seconds": 2.642851167,
+      "mean_top_level_inclusive_seconds": {
+        "bundle/tree_build": 2.0736e-05,
+        "bundle/write": 0.9017513189999999,
+        "bundle/read": 0.6663546943333334,
+        "bundle/tree_compare": 0.45719637533333335,
+        "bundle/probe_restore": 4.5180666666666666e-05,
+        "bundle/probe_compare": 0.5892206529999999,
+        "bundle/receipt_write": 0.0012006803333333334
+      },
+      "mean_exclusive_category_seconds": {
+        "compression_stream_writes_flush_fsync": 0.046292597666666664,
+        "file_authentication_hashes_and_stats": 0.0016128606666666666,
+        "four_exact_comparisons": 1.950674459,
+        "json_serialization": 0.065172611,
+        "reread_decompress_parse_copy": 0.09947005533333333,
+        "tree_build_control_and_timer_overhead": 0.013373791,
+        "typed_restoration": 0.11287931999999999,
+        "typed_tree_encoding": 0.3263885693333333
+      },
+      "mean_exclusive_category_percent": {
+        "compression_stream_writes_flush_fsync": 1.7696865354886269,
+        "file_authentication_hashes_and_stats": 0.061656894391010596,
+        "four_exact_comparisons": 74.57093572650298,
+        "json_serialization": 2.4914370327588227,
+        "reread_decompress_parse_copy": 3.802569449120826,
+        "tree_build_control_and_timer_overhead": 0.5112570703324536,
+        "typed_restoration": 4.315182616830152,
+        "typed_tree_encoding": 12.477274674575137
+      },
+      "mean_cpu_seconds": 2.6036346666666668,
+      "shape": {
+        "step_results": 5,
+        "diagnostic_samples": 1005,
+        "diagnostic_contact_records": 4020,
+        "substep_samples": 1000,
+        "diagnostic_nodes": 149815,
+        "diagnostic_dicts": 6035,
+        "diagnostic_sequences": 28155,
+        "diagnostic_scalar_leaves": 115625
+      },
+      "output_bytes_by_repeat": [
+        413444,
+        413444,
+        413444
+      ]
+    },
+    "full-000-B": {
+      "bundle_seconds": [
+        4.374543583,
+        4.344805584,
+        4.373589375
+      ],
+      "mean_seconds": 4.364312847333333,
+      "median_seconds": 4.373589375,
+      "min_seconds": 4.344805584,
+      "max_seconds": 4.374543583,
+      "mean_top_level_inclusive_seconds": {
+        "bundle/tree_build": 2.3694e-05,
+        "bundle/write": 1.5935360140000001,
+        "bundle/read": 1.105637597,
+        "bundle/tree_compare": 0.7335359306666667,
+        "bundle/probe_restore": 4.0277333333333335e-05,
+        "bundle/probe_compare": 0.930551,
+        "bundle/receipt_write": 0.0009080416666666667
+      },
+      "mean_exclusive_category_seconds": {
+        "compression_stream_writes_flush_fsync": 0.073361445,
+        "file_authentication_hashes_and_stats": 0.002081736,
+        "four_exact_comparisons": 3.1275415693333333,
+        "json_serialization": 0.10406123633333333,
+        "reread_decompress_parse_copy": 0.17092741666666667,
+        "tree_build_control_and_timer_overhead": 0.022365555333333332,
+        "typed_restoration": 0.19950324966666666,
+        "typed_tree_encoding": 0.664470639
+      },
+      "mean_exclusive_category_percent": {
+        "compression_stream_writes_flush_fsync": 1.6809391894264647,
+        "file_authentication_hashes_and_stats": 0.04769905533403671,
+        "four_exact_comparisons": 71.66171809255866,
+        "json_serialization": 2.3843670234803733,
+        "reread_decompress_parse_copy": 3.9164794698690337,
+        "tree_build_control_and_timer_overhead": 0.5124645302868023,
+        "typed_restoration": 4.571240803430634,
+        "typed_tree_encoding": 15.225091835613997
+      },
+      "mean_cpu_seconds": 4.356948333333333,
+      "shape": {
+        "step_results": 8,
+        "diagnostic_samples": 1608,
+        "diagnostic_contact_records": 6432,
+        "substep_samples": 1600,
+        "diagnostic_nodes": 239704,
+        "diagnostic_dicts": 9656,
+        "diagnostic_sequences": 45048,
+        "diagnostic_scalar_leaves": 185000
+      },
+      "output_bytes_by_repeat": [
+        641113,
+        641113,
+        641113
+      ]
+    },
+    "full-009-B": {
+      "bundle_seconds": [
+        3.413419959,
+        3.350255167,
+        3.608199125
+      ],
+      "mean_seconds": 3.457291417,
+      "median_seconds": 3.413419959,
+      "min_seconds": 3.350255167,
+      "max_seconds": 3.608199125,
+      "mean_top_level_inclusive_seconds": {
+        "bundle/tree_build": 2.3361333333333333e-05,
+        "bundle/write": 1.2134689166666666,
+        "bundle/read": 0.8733568053333334,
+        "bundle/tree_compare": 0.609930389,
+        "bundle/probe_restore": 3.7778e-05,
+        "bundle/probe_compare": 0.7594970973333333,
+        "bundle/receipt_write": 0.000899014
+      },
+      "mean_exclusive_category_seconds": {
+        "compression_stream_writes_flush_fsync": 0.065128611,
+        "file_authentication_hashes_and_stats": 0.001978791666666667,
+        "four_exact_comparisons": 2.567426431,
+        "json_serialization": 0.08701715233333333,
+        "reread_decompress_parse_copy": 0.14903837533333333,
+        "tree_build_control_and_timer_overhead": 0.017817944,
+        "typed_restoration": 0.123883167,
+        "typed_tree_encoding": 0.4450009446666667
+      },
+      "mean_exclusive_category_percent": {
+        "compression_stream_writes_flush_fsync": 1.8838044915668155,
+        "file_authentication_hashes_and_stats": 0.057235315974136954,
+        "four_exact_comparisons": 74.26120975442204,
+        "json_serialization": 2.5169169108932343,
+        "reread_decompress_parse_copy": 4.310842140772114,
+        "tree_build_control_and_timer_overhead": 0.5153729278471176,
+        "typed_restoration": 3.583243413929431,
+        "typed_tree_encoding": 12.87137504459511
+      },
+      "mean_cpu_seconds": 3.443589333333333,
+      "shape": {
+        "step_results": 6,
+        "diagnostic_samples": 1206,
+        "diagnostic_contact_records": 5639,
+        "substep_samples": 1200,
+        "diagnostic_nodes": 195263,
+        "diagnostic_dicts": 8057,
+        "diagnostic_sequences": 36231,
+        "diagnostic_scalar_leaves": 150975
+      },
+      "output_bytes_by_repeat": [
+        624870,
+        624870,
+        624870
+      ]
+    },
+    "full-011-A": {
+      "bundle_seconds": [
+        3.990187125,
+        3.7768165,
+        4.045391583
+      ],
+      "mean_seconds": 3.9374650693333333,
+      "median_seconds": 3.990187125,
+      "min_seconds": 3.7768165,
+      "max_seconds": 4.045391583,
+      "mean_top_level_inclusive_seconds": {
+        "bundle/tree_build": 2.0125e-05,
+        "bundle/write": 1.321553125,
+        "bundle/read": 1.1015902223333334,
+        "bundle/tree_compare": 0.6673173056666667,
+        "bundle/probe_restore": 4.936133333333333e-05,
+        "bundle/probe_compare": 0.8459466663333334,
+        "bundle/receipt_write": 0.0009051246666666666
+      },
+      "mean_exclusive_category_seconds": {
+        "compression_stream_writes_flush_fsync": 0.06922138933333333,
+        "file_authentication_hashes_and_stats": 0.002080361,
+        "four_exact_comparisons": 2.8437458613333333,
+        "json_serialization": 0.09573186133333333,
+        "reread_decompress_parse_copy": 0.15284031933333334,
+        "tree_build_control_and_timer_overhead": 0.021170901666666665,
+        "typed_restoration": 0.28023169466666664,
+        "typed_tree_encoding": 0.47244268066666667
+      },
+      "mean_exclusive_category_percent": {
+        "compression_stream_writes_flush_fsync": 1.7580191345050702,
+        "file_authentication_hashes_and_stats": 0.05283503379376604,
+        "four_exact_comparisons": 72.22275782156508,
+        "json_serialization": 2.4313069360013917,
+        "reread_decompress_parse_copy": 3.8816933392938338,
+        "tree_build_control_and_timer_overhead": 0.5376784630181161,
+        "typed_restoration": 7.117058557528073,
+        "typed_tree_encoding": 11.99865071429466
+      },
+      "mean_cpu_seconds": 3.9282380000000003,
+      "shape": {
+        "step_results": 5,
+        "diagnostic_samples": 1005,
+        "diagnostic_contact_records": 7328,
+        "substep_samples": 1000,
+        "diagnostic_nodes": 212667,
+        "diagnostic_dicts": 9343,
+        "diagnostic_sequences": 38079,
+        "diagnostic_scalar_leaves": 165245
+      },
+      "output_bytes_by_repeat": [
+        681147,
+        681147,
+        681147
+      ]
+    },
+    "full-011-B": {
+      "bundle_seconds": [
+        6.240061791,
+        6.147961083,
+        6.125050083
+      ],
+      "mean_seconds": 6.171024319,
+      "median_seconds": 6.147961083,
+      "min_seconds": 6.125050083,
+      "max_seconds": 6.240061791,
+      "mean_top_level_inclusive_seconds": {
+        "bundle/tree_build": 2.2791666666666667e-05,
+        "bundle/write": 1.8270017496666666,
+        "bundle/read": 1.9806023196666667,
+        "bundle/tree_compare": 1.044182889,
+        "bundle/probe_restore": 4.2402666666666666e-05,
+        "bundle/probe_compare": 1.318340236,
+        "bundle/receipt_write": 0.0007555
+      },
+      "mean_exclusive_category_seconds": {
+        "compression_stream_writes_flush_fsync": 0.10582720799999999,
+        "file_authentication_hashes_and_stats": 0.0028407903333333333,
+        "four_exact_comparisons": 4.434786721666667,
+        "json_serialization": 0.14881220833333333,
+        "reread_decompress_parse_copy": 0.23923169433333333,
+        "tree_build_control_and_timer_overhead": 0.030488390666666667,
+        "typed_restoration": 0.7023504306666667,
+        "typed_tree_encoding": 0.506686875
+      },
+      "mean_exclusive_category_percent": {
+        "compression_stream_writes_flush_fsync": 1.7149050551327116,
+        "file_authentication_hashes_and_stats": 0.04603434027292372,
+        "four_exact_comparisons": 71.86467744118879,
+        "json_serialization": 2.411466891730675,
+        "reread_decompress_parse_copy": 3.876693429918297,
+        "tree_build_control_and_timer_overhead": 0.49405721142267733,
+        "typed_restoration": 11.381423801948019,
+        "typed_tree_encoding": 8.210741828385913
+      },
+      "mean_cpu_seconds": 6.153466666666667,
+      "shape": {
+        "step_results": 8,
+        "diagnostic_samples": 1608,
+        "diagnostic_contact_records": 11173,
+        "substep_samples": 1600,
+        "diagnostic_nodes": 329783,
+        "diagnostic_dicts": 14397,
+        "diagnostic_sequences": 59271,
+        "diagnostic_scalar_leaves": 256115
+      },
+      "output_bytes_by_repeat": [
+        1036201,
+        1036201,
+        1036201
+      ]
+    },
+    "preflight-127-B": {
+      "bundle_seconds": [
+        4.1805685,
+        4.477983875,
+        4.160263417
+      ],
+      "mean_seconds": 4.272938597333333,
+      "median_seconds": 4.1805685,
+      "min_seconds": 4.160263417,
+      "max_seconds": 4.477983875,
+      "mean_top_level_inclusive_seconds": {
+        "bundle/tree_build": 2.5069666666666668e-05,
+        "bundle/write": 1.376235236,
+        "bundle/read": 1.2274347776666668,
+        "bundle/tree_compare": 0.734210986,
+        "bundle/probe_restore": 4.420866666666667e-05,
+        "bundle/probe_compare": 0.9340186663333333,
+        "bundle/receipt_write": 0.0008917223333333333
+      },
+      "mean_exclusive_category_seconds": {
+        "compression_stream_writes_flush_fsync": 0.07193181933333333,
+        "file_authentication_hashes_and_stats": 0.0020747776666666666,
+        "four_exact_comparisons": 3.1409030413333334,
+        "json_serialization": 0.106130722,
+        "reread_decompress_parse_copy": 0.17358480566666667,
+        "tree_build_control_and_timer_overhead": 0.02280075033333333,
+        "typed_restoration": 0.320130792,
+        "typed_tree_encoding": 0.435381889
+      },
+      "mean_exclusive_category_percent": {
+        "compression_stream_writes_flush_fsync": 1.6834274046957924,
+        "file_authentication_hashes_and_stats": 0.048556224701227856,
+        "four_exact_comparisons": 73.5068611398609,
+        "json_serialization": 2.4837876693625867,
+        "reread_decompress_parse_copy": 4.062422188210192,
+        "tree_build_control_and_timer_overhead": 0.5336081905684974,
+        "typed_restoration": 7.492052242449449,
+        "typed_tree_encoding": 10.189284940151358
+      },
+      "mean_cpu_seconds": 4.257580333333333,
+      "shape": {
+        "step_results": 8,
+        "diagnostic_samples": 1608,
+        "diagnostic_contact_records": 6432,
+        "substep_samples": 1600,
+        "diagnostic_nodes": 239704,
+        "diagnostic_dicts": 9656,
+        "diagnostic_sequences": 45048,
+        "diagnostic_scalar_leaves": 185000
+      },
+      "output_bytes_by_repeat": [
+        639920,
+        639920,
+        639920
+      ]
+    }
+  },
+  "reference_original_seconds": [
+    6.429129625,
+    6.1398055,
+    6.117087292
+  ],
+  "timed_over_reference_ratios": [
+    0.970592001557287,
+    1.0013283129245707,
+    1.0013017291759778
+  ],
+  "maximum_observed_complete_bundle_seconds_including_original_reference": 6.429129625,
+  "maximum_complete_bundle_output_bytes": 1036201,
+  "outer_profile_process_seconds": 104.86803091713227,
+  "aggregation_seconds": 0.002470040926709771,
+  "limits": [
+    "Six fixed saved sources; warmed filesystem cache; three repetitions are timing checks, not independent task trials.",
+    "Top-level inclusive phases partition the bundle but overlap their own children. Only the separately partitioned exclusive categories are summed.",
+    "Four exact comparisons include both typed hashes and direct recursive equality. No hash-only or weakened validation was substituted.",
+    "Compression/stream writes include compute and buffered IO, not pure physical disk latency.",
+    "Paired calibration reports ordinary timing variability as well as instrumentation; it cannot isolate a precise instrumentation overhead.",
+    "Larger nested source data and measured processing burden narrow the workload cause, not historical OS/cache/thermal conditions or all unexecuted candidates."
+  ]
+}

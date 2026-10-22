@@ -1,0 +1,544 @@
+{
+  "schema": "nt-storage-profile-independent-saved-review-v1",
+  "status": "PASS_SAVED_PROFILE_PRESERVATION_AND_MEASUREMENT_CONTRACT",
+  "created_at_utc": "2026-10-22T07:45:09.988572+00:00",
+  "review_scope": "Read-only post-execution hashes, dimensions, measurement arithmetic and contract review; no new profiling, model, training or physics. Complete raw trees are not independently decoded by this saved audit.",
+  "profile_authentication": {
+    "profile_summary_sha256": "b4b40826d814bd02283636b70617d8deb1e9ead70dbb521fc5face7d4d22ee3e",
+    "profile_process_receipt_sha256": "b1976718f99f04a7f73059a85102b97a7e9fb8f2c7381bedd1445e2cfd30b277",
+    "profile_entry_sha256": "960e09739867ddfea1bf0a27922538f1e3ecb6710364f6d620473b1440904144",
+    "profile_config_sha256": "5aa6511e13fa23357baa8702eaa2f3044037c03aebfa088297aa0cd750b9fe62",
+    "profile_source_sha256": {
+      "scripts/profile_nt_storage.py": "839855e4c38e12cf09fbd50532ee337cfb86f00d3eb5bae2c7595fa89147c6b2",
+      "scripts/followup_nt_executor.py": "fa6ee11ebf44d693c21749281812afc0fa653e3b15e5377fa15ff73dd8f8d42c",
+      "src/push_align/final_driver_v2.py": "555a9fbbb6cce05c908154153d4e9182ec4c856b1f3f45bd697c4d13e4e017d1",
+      "src/push_align/final_recording.py": "72e365f942244710a9f2066adce9a2f6ea78d0fbc414c1ed429b9a10b61d62af",
+      "src/push_align/followup_probe.py": "98d66ae351fdaf9b36b3312bbe7f6b07be2f11a3654685b0d467f85c787bfeec",
+      "src/push_align/final_recording_columns.py": "b571654413638ceff8bba1827086c5494e03a07e7decb625112165a8ca302410"
+    },
+    "inclusive_bundle_max_seconds": 6.429129625,
+    "inclusive_bundle_max_bytes": 1036201,
+    "bundle_count": 21,
+    "instrumented_bundle_count": 18,
+    "original_calibration_bundle_count": 3
+  },
+  "inherited_frozen_bindings": {
+    "full_run_summary_sha256": "8f45091686dc3b6a8c0b45b48d5036b303a0fa8c1b459c479dcb4e1ed1970df7",
+    "full_run_entry_sha256": "a06fe85be6f2b7a54947f9338d3433ab2f91bf8e91c462666c90d78e4d482889",
+    "executed_config_sha256": "6c610918926f076cc09e950512252187a071147cede367e473bc5a2e9920b58b",
+    "executed_driver_sha256": "021faeff2e5a46cc3d0ece5b308ee729153b66c81f266efd23d54484079c645a",
+    "prior_delivery_sha256": "813a2b143e92d79589f40056d23d5a145f9f454a007fee35750f2348d8346571",
+    "frozen_code_sha256": {
+      "scripts/followup_nt_full.py": "021faeff2e5a46cc3d0ece5b308ee729153b66c81f266efd23d54484079c645a",
+      "src/push_align/followup_nt_live_budget.py": "c10b295b68832a2cbba14c510284a7631eebe5c3f824ca45d8e5480b997a3dda",
+      "scripts/followup_nt_executor.py": "fa6ee11ebf44d693c21749281812afc0fa653e3b15e5377fa15ff73dd8f8d42c",
+      "scripts/followup_pilot.py": "5172b940929d840a6b95a1342545c7fe762a73f62cd047604071eea51c40bcdc",
+      "scripts/followup_restore.py": "7526e0dc8c5699b967a5b2b0591ef516cc1ec9eb59b6584b9a9ed25d9a9dfc7d",
+      "src/push_align/followup_probe.py": "98d66ae351fdaf9b36b3312bbe7f6b07be2f11a3654685b0d467f85c787bfeec",
+      "src/push_align/final_driver_v2.py": "555a9fbbb6cce05c908154153d4e9182ec4c856b1f3f45bd697c4d13e4e017d1",
+      "src/push_align/final_recording_columns.py": "b571654413638ceff8bba1827086c5494e03a07e7decb625112165a8ca302410",
+      "src/push_align/planning.py": "1d13f0004ee9795ce1d08386a49c60b0540a536b817d2b1cecd02b9ef40f93bb",
+      "src/push_align/environment.py": "e2c9824bad0a076a6dd3ffb8b1cbfb332e1896d81774e038fc8c91c79a094bea"
+    },
+    "saved_row_file_sha256": {
+      "actual/N-T/candidate-000/A/repeat-0/summary.json": "527253b90fff64f2cbac585f9f198b5e330fa4589253a0b170c46f155f6b722e",
+      "actual/N-T/candidate-000/A/repeat-0/timing_final.json": "95c01bde16f53c9c1623065725db5a394b1c19fe1a1fddfafad98ddeb2456b5a",
+      "actual/N-T/candidate-000/A/repeat-1/summary.json": "d6c2b1181c0a6afe5d3fdf484a8df06f2d62c0d4651bbc36cebc730f55a55ac0",
+      "actual/N-T/candidate-000/A/repeat-1/timing_final.json": "cb20c8af63a708621c1633cadda036e268ee4a47880fdb875455e229edf445a6",
+      "actual/N-T/candidate-000/A/repeat-2/summary.json": "68dd74c3d3ad20c6ad32f190bf32e6abb22801f56aa83dbbae34c2568f4850ac",
+      "actual/N-T/candidate-000/A/repeat-2/timing_final.json": "e2f61e9f9b840afb15393d7c99f67bdd07bac83223e4244a0414a61476b0097f",
+      "actual/N-T/candidate-000/B/repeat-0/summary.json": "90b7374042758e6d04cd66af085bbca4be95de3fb70f6932fd858f9dca0eeed7",
+      "actual/N-T/candidate-000/B/repeat-0/timing_final.json": "d47e12bf3f8553c724559eda12e788f3001353695278a1190c003304c9eec1b9",
+      "actual/N-T/candidate-000/B/repeat-1/summary.json": "8ee0775a7129e310de4632565799349ec812139127e89b53a8a266543e4f58ed",
+      "actual/N-T/candidate-000/B/repeat-1/timing_final.json": "990d4c28b03db2a03f915754aaabcf9771ff752b772e52f6b50edb72bb8eee76",
+      "actual/N-T/candidate-000/B/repeat-2/summary.json": "7b91f6d03e23c1da3bda987d1c18557548bee4f9c2a0e038477c4654f5a2ecb3",
+      "actual/N-T/candidate-000/B/repeat-2/timing_final.json": "7df3a911f9abc4a133589e6fecdd99894047816171f0f3cc7c4f3610f795fa14",
+      "actual/N-T/candidate-001/A/repeat-0/summary.json": "56aad498f0aeae459b38ee963f11791529a5398e8616497d2bea23daed59fa03",
+      "actual/N-T/candidate-001/A/repeat-0/timing_final.json": "268fbb97973595cdbf52e2a72e7e46348d912996e0da419b3216dad1bbc3d811",
+      "actual/N-T/candidate-001/A/repeat-1/summary.json": "7209c3f53d89dc9f602b0c991a52613e425e047dc2d3f066d12725adaa6aa966",
+      "actual/N-T/candidate-001/A/repeat-1/timing_final.json": "6a4885eb7b28d6f5b691b559a1c1194c27fd8b59beb91659a2a4a27034aa9563",
+      "actual/N-T/candidate-001/A/repeat-2/summary.json": "789dee53afb2d0dca1becbeb9589055092433f10ee910903c57360cdde7ba5ad",
+      "actual/N-T/candidate-001/A/repeat-2/timing_final.json": "d79dca2db03a0cbcfaa5f839c1808dfa919b77972f739bfab7932e8b36ee03ad",
+      "actual/N-T/candidate-001/B/repeat-0/summary.json": "ace4fb0c2882eeb2da443d4c67b2bba9cad938e4c7023f71755a2a0f7b205c1e",
+      "actual/N-T/candidate-001/B/repeat-0/timing_final.json": "670f26626e5b10b1245c52f62d06943714e9136eaaaa83e985c2f36a77a74867",
+      "actual/N-T/candidate-001/B/repeat-1/summary.json": "3d86441bdaccbe37c5efdbb1b85616e686061f72e9ae527e9197532a37d80a67",
+      "actual/N-T/candidate-001/B/repeat-1/timing_final.json": "fcf2aeb1985b19401bb16f11fea5980bc0cf3eb872dc02329634769431bd0107",
+      "actual/N-T/candidate-001/B/repeat-2/summary.json": "8f9fa9d7744b02dd75a9ff6630b341a66428982062a93276709b819b2e7d8e4e",
+      "actual/N-T/candidate-001/B/repeat-2/timing_final.json": "fa6cf16a0175377971435c263dd7ae8d65428cd03a6ef1cc7da052605ad9d822",
+      "actual/N-T/candidate-002/A/repeat-0/summary.json": "8e26810cea6452c73de84ddd78b127f12eea264ecefa26197dfb6fdbcda6d238",
+      "actual/N-T/candidate-002/A/repeat-0/timing_final.json": "220ad285e34fcc06e1c42ed9d91ce31d0f7169f89351cd279c274a6aed8ea573",
+      "actual/N-T/candidate-002/A/repeat-1/summary.json": "2cf5fdf25b2215c549cdd129c713636b9d62671cf36b16e1650ca709d64aa763",
+      "actual/N-T/candidate-002/A/repeat-1/timing_final.json": "f3280b6b55cb6f0c6a80606ff5d46e9e7ac996d5764b58107d8c3ff72a4e5aa0",
+      "actual/N-T/candidate-002/A/repeat-2/summary.json": "f3f935b0cf1c7e7d1607747b1dc222ebe6d637f35cb348f2834e24230d08b9ad",
+      "actual/N-T/candidate-002/A/repeat-2/timing_final.json": "0b112f0a8af3b10ba1b437f9fc91c122ebc4808f937df1bcc93574226a58e0db",
+      "actual/N-T/candidate-002/B/repeat-0/summary.json": "12663531900c0a90b132039bab846d18fbab0bc8c15ac60f405e44462d67df78",
+      "actual/N-T/candidate-002/B/repeat-0/timing_final.json": "71e6ee938e3e2b44bbf17d531a758a766872b044cc4673fdcc604603ae25ae3e",
+      "actual/N-T/candidate-002/B/repeat-1/summary.json": "3018ab11b2f669c9b875e25b5eaf3bef95b13b814da939db2eb39815108b697b",
+      "actual/N-T/candidate-002/B/repeat-1/timing_final.json": "3d42284d0ff8c68917eb83b21091e1ba86fbe1310c81a76bd5cee8d7c68a4b86",
+      "actual/N-T/candidate-002/B/repeat-2/summary.json": "66367839f2b7d8962a3225b7059250edfcb5489a2cf2ce07c3a9e5a419a68f85",
+      "actual/N-T/candidate-002/B/repeat-2/timing_final.json": "17d36a6d1bdcc48e9ef7612123b922cd9e45e8fdb542ec026a41b493268e968e",
+      "actual/N-T/candidate-003/A/repeat-0/summary.json": "8bf776d4b0f2198233818f215d0187ece53403cbb830a7c33261887b0dc43f13",
+      "actual/N-T/candidate-003/A/repeat-0/timing_final.json": "cbbeef558afb31fc948de8d95fe8d18f1ba0c01dc21e452d0279ace8c8446758",
+      "actual/N-T/candidate-003/A/repeat-1/summary.json": "6a185de7600b3836c9b362fdcdd00a782ea4234a7e8a7531259436bad613b20e",
+      "actual/N-T/candidate-003/A/repeat-1/timing_final.json": "baf6888717bc699ffe1f88a8fab114fb5fba69cd8ea06cb202edb3ecb5b5eff2",
+      "actual/N-T/candidate-003/A/repeat-2/summary.json": "9d1200865bb82580fedf54bab73de7a7f14d947a0ba98ae78a26a08ad7f25daf",
+      "actual/N-T/candidate-003/A/repeat-2/timing_final.json": "3e5be5d4df2e720df0ffb859c642fa8d625b6bde8c01786f8f53c1bf69b1feb3",
+      "actual/N-T/candidate-003/B/repeat-0/summary.json": "349d2bfb6c8b52e4db607ce0f199f315e4ceb9153ca6b16015673ec3ad05ed6d",
+      "actual/N-T/candidate-003/B/repeat-0/timing_final.json": "e6473c2907e0f71021c4819b1bc14d515289334af2de7f16c9f709b975ddb281",
+      "actual/N-T/candidate-003/B/repeat-1/summary.json": "98f538c0b67be3ee81782fa1ee60563a7b05b2ae3ee69c8411462ea838f8b10e",
+      "actual/N-T/candidate-003/B/repeat-1/timing_final.json": "b93c1c6873591c2af445b70482a01edbfea7edadde49f95381ce5cffbf3b6da9",
+      "actual/N-T/candidate-003/B/repeat-2/summary.json": "9ec58df60dd39882f580dc8e58ed97f77bcfedca7af75eb72a4399e896d65ad1",
+      "actual/N-T/candidate-003/B/repeat-2/timing_final.json": "0cf32fd883b26799d9ff569a67cc8c22ca7ecb0c55853dbcb547583f752bf651",
+      "actual/N-T/candidate-004/A/repeat-0/summary.json": "e58cf085c19cc04ec9a92f452979061c0b7c55c2cfb8e97932b11161bd66d1c7",
+      "actual/N-T/candidate-004/A/repeat-0/timing_final.json": "e77df4e5a2fb8c227c3e0a14bdee5c2531074d56b2b907fe2b74cb4e89d9539a",
+      "actual/N-T/candidate-004/A/repeat-1/summary.json": "c076820f7bbdde68578f970221d151716d8166021f3549b70ad35dbd4c815a0d",
+      "actual/N-T/candidate-004/A/repeat-1/timing_final.json": "84d15efbced37f4965d2d69c3c2f6031cbb4788f7ebc112e715065b222e44e72",
+      "actual/N-T/candidate-004/A/repeat-2/summary.json": "c2e3a9cb8c091cc398b3a570b7fa40c46ce5174a3963eebff8355e5e763208fe",
+      "actual/N-T/candidate-004/A/repeat-2/timing_final.json": "8549dac6bbcf61e58c9483e26a863ad2e99f0c1c3239f9cc09ff3584aee28d8e",
+      "actual/N-T/candidate-004/B/repeat-0/summary.json": "299e55a8d52c9f36d98a6a8dd097a198cb2726181cd37a557d6460c9859a1ed9",
+      "actual/N-T/candidate-004/B/repeat-0/timing_final.json": "f3b03fe555e7427c19fc1c697d5262addb23bc8f7d5879a0d15eaca40c1d74be",
+      "actual/N-T/candidate-004/B/repeat-1/summary.json": "bd7a9d8ea763127eed3816d81709d2225f83b45ee01543874ad44bbe2d861298",
+      "actual/N-T/candidate-004/B/repeat-1/timing_final.json": "6a13a2e9723afec92bde437e383e3790d97278c753388a651af222e9ad9ba9eb",
+      "actual/N-T/candidate-004/B/repeat-2/summary.json": "fb99d6cdc867d23a8f0eadf308ce87c946e7e0bdc4ce24ae586473c011c729b9",
+      "actual/N-T/candidate-004/B/repeat-2/timing_final.json": "a86f2bddd551bc9c1c9318de0bf74f3e45d4032dd9a513be2c73b5bab3cad063",
+      "actual/N-T/candidate-005/A/repeat-0/summary.json": "e0885cb923816c7b2eca4bc5e5e49619326304dde62bf7f4447376a2a795fd0b",
+      "actual/N-T/candidate-005/A/repeat-0/timing_final.json": "a43a7cb417ce70f65c6f08b0df652c5c88ab6e6818a140065db525c3c3f6ce52",
+      "actual/N-T/candidate-005/A/repeat-1/summary.json": "5e1b3d6089c4f62e5ecf4125670c0cfde86b41c0fa4ca648e71dd460db1327b5",
+      "actual/N-T/candidate-005/A/repeat-1/timing_final.json": "ebc81d6d5f0dca070e9f6fdce1988ba84b246ffb0452b205338d07f26063e2c4",
+      "actual/N-T/candidate-005/A/repeat-2/summary.json": "0d2db1ae0c80e385bad4cb8d0f2faf4faaff68b73f2b4b7930651a4151c73f5e",
+      "actual/N-T/candidate-005/A/repeat-2/timing_final.json": "ccbf17f9a3a32e72805dea3455fdff031255fa5849f9bc71aaa7bead6e1f1b56",
+      "actual/N-T/candidate-005/B/repeat-0/summary.json": "8847d4b07c0a1ca9c808c549e7d727b091c5733aa3af287cb7880018ba5ecda1",
+      "actual/N-T/candidate-005/B/repeat-0/timing_final.json": "99b2d9d98df46b390293452e97638ae910b3e77c725844b5b28e4bee0aabede2",
+      "actual/N-T/candidate-005/B/repeat-1/summary.json": "484afa00c28f57c7697cbbec305e3c88bef473f3f0e398f58b4591b0471a0d57",
+      "actual/N-T/candidate-005/B/repeat-1/timing_final.json": "6280552ecfe9273b1873ca1680beb9082c767c3ef466270ffd700634e4804771",
+      "actual/N-T/candidate-005/B/repeat-2/summary.json": "03ff3a7fadd51eeddfbc41f25f56dd3769dacba89f120e6f76e49b0c5bc682d7",
+      "actual/N-T/candidate-005/B/repeat-2/timing_final.json": "dfaa47e8bf5a8c1fdee9dbd7ad5f58a44a7ec0232323126133e5e90fe83cdf05",
+      "actual/N-T/candidate-006/A/repeat-0/summary.json": "ad93cf7ca4798463a95c7d49f0494ed70c6a25246684cdc67ec74aa6fd5d58eb",
+      "actual/N-T/candidate-006/A/repeat-0/timing_final.json": "f4d8336bfca1c2c5ed04f847a27bed16a12db47e1b65b27d70e3c050ecfe4180",
+      "actual/N-T/candidate-006/A/repeat-1/summary.json": "466b723e8e8f3b9f71d8c15ffa75ae81d479964e3512d02315882eccca1098c5",
+      "actual/N-T/candidate-006/A/repeat-1/timing_final.json": "324067ce1bc270e6125ec7aa355d311efc73002eb52628dc18358e3387674fb6",
+      "actual/N-T/candidate-006/A/repeat-2/summary.json": "e4b5d114f3d924396d2f9c26db58224cd0e067bbcc5fbac2c46153bad4d02541",
+      "actual/N-T/candidate-006/A/repeat-2/timing_final.json": "df10269f6193dc46ac3086bbeef9548bfb0ca9b07ccd29a628aca8404b551393",
+      "actual/N-T/candidate-006/B/repeat-0/summary.json": "5f3bf5af7819232a94f97b6f3cf46233e9e98bff940c01c25c36c6703b70dcd9",
+      "actual/N-T/candidate-006/B/repeat-0/timing_final.json": "8d0429aa3f98c8855c704da65a7a2845087275e2726c98d853cfbe3f61b7df0d",
+      "actual/N-T/candidate-006/B/repeat-1/summary.json": "6e1f97613c9c68fd1971b61c75d7bc8bd8af60dd35c3f38b9d77d170e51d7b9d",
+      "actual/N-T/candidate-006/B/repeat-1/timing_final.json": "a6f7a4483ca6d0326b139016135bf9c14fd8ccbebce828afddd7304692b4d6ff",
+      "actual/N-T/candidate-006/B/repeat-2/summary.json": "52c915c0425278f6ac2e0eb99780fecbea0b695b850524c5ad8dd4f91e509ff0",
+      "actual/N-T/candidate-006/B/repeat-2/timing_final.json": "0a950c0a00d67e7610e3675aa541686b91ac92cca1d432ec52a80a17468e3e32",
+      "actual/N-T/candidate-007/A/repeat-0/summary.json": "90f2ec718137b9925ee3e670502217e40f22ff2cca11d77e66b0feafc64f01fd",
+      "actual/N-T/candidate-007/A/repeat-0/timing_final.json": "b9be58d42a0ee5d24d606ba1f4946c2f7e93815e4ed2697c51769e212772fa23",
+      "actual/N-T/candidate-007/A/repeat-1/summary.json": "d18b650090a3a02997cefa528d9379c2a8542ad7dd9adf25cbbbe153035257d0",
+      "actual/N-T/candidate-007/A/repeat-1/timing_final.json": "f21a273de4c0bd777e0d4b20065856b39d42b430e633b1821b2dcbea9d2b5e14",
+      "actual/N-T/candidate-007/A/repeat-2/summary.json": "1348f13ed7acff93ddf346865e8a78f9f0c01980121f94676c58de4589044766",
+      "actual/N-T/candidate-007/A/repeat-2/timing_final.json": "863b03e9f20a0df6705f4de0d503abe739d36c45e490435a9f19461c6b43f231",
+      "actual/N-T/candidate-007/B/repeat-0/summary.json": "8621b03aae7ac5d25c1eedbd9aa9ae5ca3b601695f3c0f664f9dd7445c3ab761",
+      "actual/N-T/candidate-007/B/repeat-0/timing_final.json": "cd082692b1bd8f6ac431cdff6189f97ee29b42fefb132f5d1884d15d7e742701",
+      "actual/N-T/candidate-007/B/repeat-1/summary.json": "7304a68348f5d97450ddc8f663ab1b53a61d9fe5e9622e20ac857008f2465ddd",
+      "actual/N-T/candidate-007/B/repeat-1/timing_final.json": "b8a3ed74a5f2534455b7b032902fa22903d0a3262932389de823a7ceed9898f6",
+      "actual/N-T/candidate-007/B/repeat-2/summary.json": "833f4f943a669d2280a6d9299114b5818cbf1ded1c430c652d9d300fd7ffd899",
+      "actual/N-T/candidate-007/B/repeat-2/timing_final.json": "49740e58a0c079bcd58058f37e53b7fb1a11aaf12f5bd392277ba48d13e3caf3",
+      "actual/N-T/candidate-008/A/repeat-0/summary.json": "92cae5624cc8ab57e869d3f965c01469223a7198d86255230dd7812422000e57",
+      "actual/N-T/candidate-008/A/repeat-0/timing_final.json": "35a5e1c893b4fc241206d58bf1f7c16bb2a3707d6577be9c0258f247b37bd342",
+      "actual/N-T/candidate-008/A/repeat-1/summary.json": "6d5912b2a1f8c5fbe26cf645299398840d505b4a9cd5eb67df1d34ac1a7c481c",
+      "actual/N-T/candidate-008/A/repeat-1/timing_final.json": "4073903891251801bb35b099ba5331153b6643f0bdc601414bb8ab8e15ca6451",
+      "actual/N-T/candidate-008/A/repeat-2/summary.json": "15eecd2badbb323a101ffdaad15ef339fee61d61c58785e2a10ace7f3be8bc5e",
+      "actual/N-T/candidate-008/A/repeat-2/timing_final.json": "1cd1a7281f7defb838da8c4a53c3c5db15a87524bd060f55a17a54198fb95896",
+      "actual/N-T/candidate-008/B/repeat-0/summary.json": "63206651e235a5b084cffc4344513f6303d34fcf6061703421b7f77ca5746bc0",
+      "actual/N-T/candidate-008/B/repeat-0/timing_final.json": "c46a83085a7fdbb5eb90ceab0470382d363ac8d56835b9eea74f30aa6f8442bf",
+      "actual/N-T/candidate-008/B/repeat-1/summary.json": "1057922e9bfcbb7fe95d59d6c549f1845208d3b527454a61e2cef3344db8827b",
+      "actual/N-T/candidate-008/B/repeat-1/timing_final.json": "4d37af51e039bac3e2fdf4e231a6598fb53c0d92934eb489d765c72504d5eb6a",
+      "actual/N-T/candidate-008/B/repeat-2/summary.json": "95293e6dc91f706136944b53136e91fb1d63ea442e913e2eca9474b4b647dfa7",
+      "actual/N-T/candidate-008/B/repeat-2/timing_final.json": "2a9a21d25a848b63bb70874120bf6b9b42669f42432396d940a96b5df1f8fc52",
+      "actual/N-T/candidate-009/A/repeat-0/summary.json": "de0f6b55cfb8b4581e7c13114b7d93da44c14819cdbfad7406323e8fe9b632d7",
+      "actual/N-T/candidate-009/A/repeat-0/timing_final.json": "ad976348854c2ca24f5e281dab8ca509d033d0d760187ac0c6ee79da7ce88a36",
+      "actual/N-T/candidate-009/A/repeat-1/summary.json": "3b83f26820c914643846b483544b48601bef40946dcb55e0f9f5fc5b2beefc00",
+      "actual/N-T/candidate-009/A/repeat-1/timing_final.json": "80c6bc94644e23283f13f679243b39f21665b483d67321518ed6c5fc8cce56bb",
+      "actual/N-T/candidate-009/A/repeat-2/summary.json": "f1266a2ad2cf8df5a025c2f9bf7b93ae2ef692fe697443a66206ebcd2bb72855",
+      "actual/N-T/candidate-009/A/repeat-2/timing_final.json": "b8dadfc58c97ea6ec8f3e0b872a6ffe011978959d50e74821ef842910880a4e8",
+      "actual/N-T/candidate-009/B/repeat-0/summary.json": "575aab38b6a702c0ef5752be7f577c30b5127f508899747c7d6108150a46f0c7",
+      "actual/N-T/candidate-009/B/repeat-0/timing_final.json": "fc5e37978efebe3efe22e05d0031aec71c0f98ef13baf0d31bf129059a765f90",
+      "actual/N-T/candidate-009/B/repeat-1/summary.json": "f8f235ac71dd37e26feffdf4df98ff0c3d6ce4334fac7d10bfbcfcf168347c00",
+      "actual/N-T/candidate-009/B/repeat-1/timing_final.json": "d66ba1e44a95d3611bf414a539c196efb91635c1fbd6fac6e283a1179af6bb6e",
+      "actual/N-T/candidate-009/B/repeat-2/summary.json": "118a609c85c95990fde00b51b10693eb80bb5fef5653a32463390cbae686b47e",
+      "actual/N-T/candidate-009/B/repeat-2/timing_final.json": "e76a1c7c48ac3522afbf64e23fd7c4849155b2a0e8299d87ce6dea32bdd72bef",
+      "actual/N-T/candidate-010/A/repeat-0/summary.json": "adcd4699f2d060a9c8475c6cc1dd8617ccc09d49e8918c12588efe05e956ea9e",
+      "actual/N-T/candidate-010/A/repeat-0/timing_final.json": "5d0583016291eed2cec92d17f54d8852d6ae35e7859452735665c1346af47c6c",
+      "actual/N-T/candidate-010/A/repeat-1/summary.json": "6ca967257e509aafddabc4f845d8d531731a8c6b43370db43968a5b544503361",
+      "actual/N-T/candidate-010/A/repeat-1/timing_final.json": "b95367d7b0bcc137231cc26b890cd5abc8a0670ea9d9d886be873d82998a99a0",
+      "actual/N-T/candidate-010/A/repeat-2/summary.json": "16229d2a8258c06ebdbe1dd7f6d1ec96e93f683da0e3fdd68464c5a195385adb",
+      "actual/N-T/candidate-010/A/repeat-2/timing_final.json": "dd95e291843e20459cb09a9a3d3c27d71b1de9c7ed7dd430965573d9a254c6b1",
+      "actual/N-T/candidate-010/B/repeat-0/summary.json": "716d7dcc68995d299cd330387cd5a7c2d232454fb3b7c6ac7fde58f947721838",
+      "actual/N-T/candidate-010/B/repeat-0/timing_final.json": "6d84f7535916bbcbd22b4b147f9e3c5f716078a527f3b8d5d8fc01a7bcd50537",
+      "actual/N-T/candidate-010/B/repeat-1/summary.json": "a14c97584a23ae3971d291c373a9deea17582787bf42c2d3c092f786da677472",
+      "actual/N-T/candidate-010/B/repeat-1/timing_final.json": "8e1ce6f06f07e803e61848b4acf543911692f711871ab254993e0e76407a7f7b",
+      "actual/N-T/candidate-010/B/repeat-2/summary.json": "7e5a07fee7aae58d16d2ce08e91dbeaecc099e38ca59ed532de5bbd07ba7934d",
+      "actual/N-T/candidate-010/B/repeat-2/timing_final.json": "a90cb7a799ab50666e77c66a084e78f4fcbdd42b1559fee7374ce6f5c62c7bf4",
+      "actual/N-T/candidate-011/A/repeat-0/summary.json": "13c9615a876b038ce314e3cf6332b341f32756efebcf643b892dd714d5bed246",
+      "actual/N-T/candidate-011/A/repeat-0/timing_final.json": "c3be19b39dc96692af1c0f4a9426a96ac9ab3ad9bf55243bc04ff8c49157fe63",
+      "actual/N-T/candidate-011/A/repeat-1/summary.json": "92c4008b718a6f7f2b9749fe2a02f83328b3ce414089be613da12700cc7fcbbf",
+      "actual/N-T/candidate-011/A/repeat-1/timing_final.json": "6aa35ca37d94e27f7749f98b5e4f75a386f30fafff00f42a62cde350a78592e5",
+      "actual/N-T/candidate-011/A/repeat-2/summary.json": "0e93270891f9536a865033cb3f56ba6d4eec582bd7ea9e5249684e2f531e8cd5",
+      "actual/N-T/candidate-011/A/repeat-2/timing_final.json": "7cfcdd65329b2aa7c59c06c47640108c7d7149f5b68f98cef0178fa4b4edd913",
+      "actual/N-T/candidate-011/B/repeat-0/summary.json": "39eae5742a0ecb76d8a1549f14ce20d6c41395c8ffd6c84c52cc1ba59e3a6945",
+      "actual/N-T/candidate-011/B/repeat-0/timing_final.json": "106c6166e4de445594396d7ebf94f1dca5b11ba320bce09c603c3840efef8020"
+    }
+  },
+  "source_run_inventory_checks": {
+    "followup-nt-full-20261022-01": {
+      "status": "PASS_SHA_INVENTORY",
+      "files": 583,
+      "inventory_sha256": "8a3f0b3d4f3244063ed244587e43c5e21a85ad1740be41ba0152df7e04bf14bc"
+    },
+    "followup-nt-preflight-20261022-02": {
+      "status": "PASS_SHA_INVENTORY",
+      "files": 176,
+      "inventory_sha256": "bd575fea763c0bfd2e729e966565fd1f143fd85681704a68ac3b449a802e3ba1"
+    }
+  },
+  "bundle_checks": [
+    {
+      "kind": "instrumented",
+      "case_id": "full-000-A",
+      "repeat": 0,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "33f9618fa06c2ca5ab46336fdddc3bec1fa8f25939db6ff79206179932ee0371",
+      "receipt_sha256": "7ae3e81361ace958821e3d653ce06f44c8ef17a34d5f3122ab7df301016cfaf5",
+      "payload_sha256": {
+        "trace.npz": "9de21dd7304463d0d7301f9830042438293b89d201e5657a6eeb3bb2cc0c638d",
+        "input.json.gz": "5feb903405153fece7935663193d1dd62df1b3dd9f5a4404e85bd6f70f604f4e"
+      },
+      "output_bytes": 413444,
+      "total_ns": 2623859041
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-000-B",
+      "repeat": 0,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "bc06f53f42ce3c17dd6c33226c9a9db9a5a6bcbdf63f9105f57c383e04417e1b",
+      "receipt_sha256": "3e81e62f5cf1ef78b371b3dc1979ed638f932857e1bbcedd09dc2e59426723ae",
+      "payload_sha256": {
+        "trace.npz": "21535f799297fb23df26d9d64a9055dd40a0a3fbecbb88c434512720dd9c7fa8",
+        "input.json.gz": "a018ff5918436ef6acf0d73a93a8e535c435f69423b9fed192d454f5b2081040"
+      },
+      "output_bytes": 641113,
+      "total_ns": 4374543583
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-009-B",
+      "repeat": 0,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "78ff0cd9bc9058ddc633d944ae1aca11ab8e97004ba8a79940d7ba37c125bc63",
+      "receipt_sha256": "cf591af96d3b065de50b4c97bfa15160508b3bda60b9633e2a33ad6ff88e2c51",
+      "payload_sha256": {
+        "trace.npz": "2ed2e19c65dda5ce34a21680ed0064883cb20a0d20984e867b56c09bd7c27529",
+        "input.json.gz": "7a5bc7487168c0188724c8298a4f49c34978d5e9fe9c4f8d0f6590a1f7ce7749"
+      },
+      "output_bytes": 624870,
+      "total_ns": 3413419959
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-011-A",
+      "repeat": 0,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "7cdc3174f9a4526608479ee1a304e836b313dafdf397153d60824f9bbdd485ac",
+      "receipt_sha256": "4d8d8b52a7783453be82827e5e4fda2b579046cb2c4a0ba625a022677296cd8d",
+      "payload_sha256": {
+        "trace.npz": "7b399dcf8d7e0c3d6054cb11226654b1b3c2bc61a8180f964fddda9947b80345",
+        "input.json.gz": "5d2a7ae2553b8fcacc176fd50656ca8459582acabcf7c9514742ec523e6f3311"
+      },
+      "output_bytes": 681147,
+      "total_ns": 3990187125
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-011-B",
+      "repeat": 0,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "30572983b8bd19e875deca5c134f5a0aa0acc8b291e5a8e022012b6962ab5feb",
+      "receipt_sha256": "a9a4178124becbddeb3e234669c1badc5e381b104b542176435af679d13aaf8e",
+      "payload_sha256": {
+        "trace.npz": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+        "input.json.gz": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e"
+      },
+      "output_bytes": 1036201,
+      "total_ns": 6240061791
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "preflight-127-B",
+      "repeat": 0,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "bb3e24c1eda041f396345f987e026439b63955a62be24587a116c495d030a01f",
+      "receipt_sha256": "1a63ecf02f6835087d3bb3b5e4fbad6545075e4b9e9fbf7c1c427b04c0569552",
+      "payload_sha256": {
+        "trace.npz": "21b4cbddc4528a36beb889dcf1c155e3b0104e64cfcd78b2b2b21a3028a6efbc",
+        "input.json.gz": "c6d5962d324fbe3d69eb2365a01f91d4e594bb43f3d2b10f3be8d4e8877030d1"
+      },
+      "output_bytes": 639920,
+      "total_ns": 4180568500
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "preflight-127-B",
+      "repeat": 1,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "449b6421840d19531e80fbb1d57a297ac4864c79ff84a0175bf6e196260994bd",
+      "receipt_sha256": "a052e0795195fa50b47cbfe4a363476af478ced09d4756db8c0bf814e9387efd",
+      "payload_sha256": {
+        "trace.npz": "21b4cbddc4528a36beb889dcf1c155e3b0104e64cfcd78b2b2b21a3028a6efbc",
+        "input.json.gz": "c6d5962d324fbe3d69eb2365a01f91d4e594bb43f3d2b10f3be8d4e8877030d1"
+      },
+      "output_bytes": 639920,
+      "total_ns": 4477983875
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-011-B",
+      "repeat": 1,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "64e459fc45b2243cc4a211840bd997f4ab920bd796f345590db09c81a666a6b0",
+      "receipt_sha256": "2ad876949d7b060dd8ca7f8c47cf66994899e192773dddb921b94531e829d3f7",
+      "payload_sha256": {
+        "trace.npz": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+        "input.json.gz": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e"
+      },
+      "output_bytes": 1036201,
+      "total_ns": 6147961083
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-011-A",
+      "repeat": 1,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "1137f68ceefa9750eef6e12b96f1f2f90da0700e17252d72d8db704f951949fb",
+      "receipt_sha256": "b4ce357eb3049bf0324a1c6bd25aa39cd173d7e6d913bb7f3c2e167df3a1bce7",
+      "payload_sha256": {
+        "trace.npz": "7b399dcf8d7e0c3d6054cb11226654b1b3c2bc61a8180f964fddda9947b80345",
+        "input.json.gz": "5d2a7ae2553b8fcacc176fd50656ca8459582acabcf7c9514742ec523e6f3311"
+      },
+      "output_bytes": 681147,
+      "total_ns": 3776816500
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-009-B",
+      "repeat": 1,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "6a77693f12f14c22ea07ca52b05db19606abfb9104be8cf78e1cb852a1ee1788",
+      "receipt_sha256": "6b4607e1c3d0176723928168d21c38816b1c22b432c585fe4f4e976f32b2832f",
+      "payload_sha256": {
+        "trace.npz": "2ed2e19c65dda5ce34a21680ed0064883cb20a0d20984e867b56c09bd7c27529",
+        "input.json.gz": "7a5bc7487168c0188724c8298a4f49c34978d5e9fe9c4f8d0f6590a1f7ce7749"
+      },
+      "output_bytes": 624870,
+      "total_ns": 3350255167
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-000-B",
+      "repeat": 1,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "34b7e811d3363c967572e4218b3574de6d672461ae80740802b2cd9eb2a92051",
+      "receipt_sha256": "34fe90d3e138afffed4418e249df08ac31c5ac8ce4749631463c68838bdc4b93",
+      "payload_sha256": {
+        "trace.npz": "21535f799297fb23df26d9d64a9055dd40a0a3fbecbb88c434512720dd9c7fa8",
+        "input.json.gz": "a018ff5918436ef6acf0d73a93a8e535c435f69423b9fed192d454f5b2081040"
+      },
+      "output_bytes": 641113,
+      "total_ns": 4344805584
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-000-A",
+      "repeat": 1,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "10acfb7add6d69e1b430ce44750906ebf0597da1583f3da0878132078e4c3e02",
+      "receipt_sha256": "747023f15690fdd452df153afae894e7cdc68f899ab7014d0231a99981459ec9",
+      "payload_sha256": {
+        "trace.npz": "9de21dd7304463d0d7301f9830042438293b89d201e5657a6eeb3bb2cc0c638d",
+        "input.json.gz": "5feb903405153fece7935663193d1dd62df1b3dd9f5a4404e85bd6f70f604f4e"
+      },
+      "output_bytes": 413444,
+      "total_ns": 2580882584
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-009-B",
+      "repeat": 2,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "e8ce3c3d96683a56c632e546dff6d6fdabbb07621f0ac2331567cf935f4f4bdb",
+      "receipt_sha256": "88f5854f541cefb2ab361835d333268526f6f4f7f2f888ba1ba808345e7b6b58",
+      "payload_sha256": {
+        "trace.npz": "2ed2e19c65dda5ce34a21680ed0064883cb20a0d20984e867b56c09bd7c27529",
+        "input.json.gz": "7a5bc7487168c0188724c8298a4f49c34978d5e9fe9c4f8d0f6590a1f7ce7749"
+      },
+      "output_bytes": 624870,
+      "total_ns": 3608199125
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-011-A",
+      "repeat": 2,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "ec77a4a7ef6718248e1ee5f1c69dbff5fd981275226011c4e7926df3a95a50cd",
+      "receipt_sha256": "ac657b88994deafe3c4b41f20bbeb242c1bbd194250d9a57b7ae9b5cc57ab690",
+      "payload_sha256": {
+        "trace.npz": "7b399dcf8d7e0c3d6054cb11226654b1b3c2bc61a8180f964fddda9947b80345",
+        "input.json.gz": "5d2a7ae2553b8fcacc176fd50656ca8459582acabcf7c9514742ec523e6f3311"
+      },
+      "output_bytes": 681147,
+      "total_ns": 4045391583
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-011-B",
+      "repeat": 2,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "ae154d64084156561e668c0287a67eb8d6ffd58a5674579b12d364217ba731ac",
+      "receipt_sha256": "7c8b1dde9c3d7c6293cd7fbb0194342c71ba4abc4d28afc6bd7ab0296a09330b",
+      "payload_sha256": {
+        "trace.npz": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+        "input.json.gz": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e"
+      },
+      "output_bytes": 1036201,
+      "total_ns": 6125050083
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "preflight-127-B",
+      "repeat": 2,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "a301c467c5de9639656218d2c8579c849834681b98a6162807f177dea19c65ea",
+      "receipt_sha256": "9f11a5464bf75d9fb300fe46b3f876a34bd660ab6f34a3823b0ef88b3a9de6fe",
+      "payload_sha256": {
+        "trace.npz": "21b4cbddc4528a36beb889dcf1c155e3b0104e64cfcd78b2b2b21a3028a6efbc",
+        "input.json.gz": "c6d5962d324fbe3d69eb2365a01f91d4e594bb43f3d2b10f3be8d4e8877030d1"
+      },
+      "output_bytes": 639920,
+      "total_ns": 4160263417
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-000-A",
+      "repeat": 2,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "3929dc5b805a5b1bb5c6eb187c75a275ad0a24da78bd8cb713f040d51a125711",
+      "receipt_sha256": "feafe26b737f259db39412afc36ac7425e86110dd5382e0da909334c3d05ecf0",
+      "payload_sha256": {
+        "trace.npz": "9de21dd7304463d0d7301f9830042438293b89d201e5657a6eeb3bb2cc0c638d",
+        "input.json.gz": "5feb903405153fece7935663193d1dd62df1b3dd9f5a4404e85bd6f70f604f4e"
+      },
+      "output_bytes": 413444,
+      "total_ns": 2642851167
+    },
+    {
+      "kind": "instrumented",
+      "case_id": "full-000-B",
+      "repeat": 2,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "4ceed99c6a06e3fb1869e31610ed34dd0ab26e88dd5ea5e21eabe59d76c43a82",
+      "receipt_sha256": "2c0ead4e40b6147dfe4ad5d414141c2a7cb9e2cdf0d8ecf45d2b810e1f0496d0",
+      "payload_sha256": {
+        "trace.npz": "21535f799297fb23df26d9d64a9055dd40a0a3fbecbb88c434512720dd9c7fa8",
+        "input.json.gz": "a018ff5918436ef6acf0d73a93a8e535c435f69423b9fed192d454f5b2081040"
+      },
+      "output_bytes": 641113,
+      "total_ns": 4373589375
+    },
+    {
+      "kind": "original_calibration",
+      "case_id": "full-011-B",
+      "repeat": 0,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "a6425ed69d68f70530b37e79bead6147c881eef54776ce8cda0a84a04010b803",
+      "receipt_sha256": "4d5e8effc171304a819ba93b0cba4de5fe9de3551c4b32ea9e8de36bff08cc74",
+      "payload_sha256": {
+        "trace.npz": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+        "input.json.gz": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e"
+      },
+      "output_bytes": 1036181,
+      "total_ns": 6429129625
+    },
+    {
+      "kind": "original_calibration",
+      "case_id": "full-011-B",
+      "repeat": 1,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "6327bd0b651ba456b9ef003dff012f4fa1a8899a171b94c20c74f84d339b06bc",
+      "receipt_sha256": "ec4cd62d8574f672e35d35ad9160e613b200f3605b4eb1b8082b4b5a2c393b13",
+      "payload_sha256": {
+        "trace.npz": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+        "input.json.gz": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e"
+      },
+      "output_bytes": 1036181,
+      "total_ns": 6139805500
+    },
+    {
+      "kind": "original_calibration",
+      "case_id": "full-011-B",
+      "repeat": 2,
+      "status": "PASS_PAYLOAD_SOURCE_BIT_IDENTICAL_AND_RECEIPTS",
+      "measurement_sha256": "a91b0f97e82da791c409b90744467a5afb3a1b3beb2de313cafe2f8675aac617",
+      "receipt_sha256": "cb41e1dff110da6dd58fa627074c392a8ebac1f1d146bbefb78d883f8c18653b",
+      "payload_sha256": {
+        "trace.npz": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+        "input.json.gz": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e"
+      },
+      "output_bytes": 1036181,
+      "total_ns": 6117087292
+    }
+  ],
+  "instrumented_bundle_count": 18,
+  "original_function_calibration_bundle_count": 3,
+  "copied_payloads_identical_to_original_source_cases": 21,
+  "independent_semantic_decode_scope": "No additional decode in this audit. The executed profile recorded full tree and whole-Probe exact comparisons on every copied bundle; this audit authenticates their saved evidence and independently verifies identical source NPZ/gzip payload bytes.",
+  "prior_pre_execution_review": {
+    "findings": "No blocking issue. Timing-only AST wrappers strip back to original AST; private namespaces preserve original function objects. Inclusive/exclusive sums valid; active import aliases handled in private namespaces.",
+    "independently_run_contract_tests": 3,
+    "test_file_sha256": "4e1bb829d2496e7d0f4d194c2017e4150fb1e36e7736c7ba6a04a58b3feef4b7",
+    "tests": [
+      "nested/repeated spans reject doubled exclusive charge",
+      "original/instrumented typed codec preserves signed zero, NaN, dtype and original function identity",
+      "corrupt metadata rejected before accepted read"
+    ],
+    "execution_scope": "Synthetic temporary data only before profiling; no current experiment data profiled by reviewer."
+  },
+  "pure_resource_checks": {
+    "status": "PASS",
+    "checks": 9,
+    "scope": "Pure synthetic arithmetic; no experiment, physics, model or profiling execution."
+  },
+  "remaining_work": {
+    "trials": 698,
+    "intervals": 4540,
+    "source_comparisons": 26,
+    "complete_probe_groups": 232
+  },
+  "max_bundle_policy": "Maximum across all 21 inclusive bundles, including original-function calibrations; frozen historical maxima remain floors. Nested stage durations are never added to outer process wall.",
+  "resource_assessment": "Not run here; root will charge its non-overlapping task elapsed time before final assessment.",
+  "review_tool_sha256": "aaa44996853d34e485b3baa4abbc6ca5b8f9da397d62fb7be55f9c855da5bf8a",
+  "forbidden_compute_counters": {
+    "mj_step": 0,
+    "mj_step1": 0,
+    "mj_step2": 0,
+    "mj_forward": 0,
+    "mj_inverse": 0,
+    "environment.__init__": 0,
+    "environment.reset": 0,
+    "environment.restore": 0,
+    "environment.step": 0,
+    "model.__call__": 0
+  },
+  "training_updates": 0,
+  "new_actual_trajectories": 0,
+  "limits": [
+    "Warm authenticated source cache and fsynced new writes; not a cold-disk or OS worst-case estimate.",
+    "Timing copies preserve algorithm bodies but instrumentation has measurable overhead; calibration is evidence about overhead, not permission to lower observed maxima.",
+    "Size/diagnostic complexity differences can explain reproduced workload variation; historical CPU scheduling, thermal state or disk-cache cause is unobserved.",
+    "The six saved cases include preflight candidate127, not a newly executed scientific candidate. No original STOP result is replaced; no remaining trajectory executed."
+  ],
+  "audit_internal_wall_seconds": 0.13647829205729067
+}

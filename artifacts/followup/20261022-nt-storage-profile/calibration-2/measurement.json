@@ -1,0 +1,25 @@
+{
+  "total_ns": 6117087292,
+  "outer_bundle_ns": 6117087292,
+  "stages": null,
+  "tree_exact": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "b301fc077e74ff79387ef57be3b143b1c1ae4c3b674f0613a093381922502a4b",
+    "right_sha256": "b301fc077e74ff79387ef57be3b143b1c1ae4c3b674f0613a093381922502a4b"
+  },
+  "whole_probe_exact": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "31253a7d134cb7409f02bd526644b334cf1edeecb817550712454b991af50f9a",
+    "right_sha256": "31253a7d134cb7409f02bd526644b334cf1edeecb817550712454b991af50f9a"
+  },
+  "payload_sha256": {
+    "trace.npz": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+    "input.json.gz": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e"
+  },
+  "output_bytes": 1036181,
+  "case_id": "full-011-B",
+  "repeat": 2,
+  "order": "before"
+}
