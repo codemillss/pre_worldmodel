@@ -5,13 +5,16 @@ model, perform inference, or execute physics. It checks the current manuscript's
 rounded numeric rows and figure values as well as E1/E2 arithmetic. It cannot
 attest omitted high-frequency raw data or replace physical reproduction.
 
-Requires NumPy. Run from any directory; relative --output paths use the repo root.
+Requires Python 3.11+ and NumPy. Run from any directory; relative --output paths
+use the repo root. The frozen simulator package and its __init__ are not changed.
 """
 from __future__ import annotations
 
 import argparse
 from collections import Counter
 import hashlib
+import importlib
+from importlib.util import module_from_spec, spec_from_loader
 import json
 import math
 from pathlib import Path
@@ -20,11 +23,18 @@ import sys
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
 
-from push_align.candidate_diagnostics import compare_candidates
-from push_align.final_e1_statistics import analyze_E1
-from push_align.final_statistics_v2 import analyze_E2
+# Load the unchanged, NumPy-only analysis modules in a private namespace.
+# Importing push_align itself executes its historical __init__, which imports
+# the MuJoCo environment even for saved-array arithmetic. This audit does not
+# need or replace that environment and must not alter the frozen package.
+_namespace = "_paper_numeric_audit"
+_spec = spec_from_loader(_namespace, loader=None, is_package=True)
+_spec.submodule_search_locations = [str(ROOT / "src" / "push_align")]
+sys.modules[_namespace] = module_from_spec(_spec)
+compare_candidates = importlib.import_module(_namespace + ".candidate_diagnostics").compare_candidates
+analyze_E1 = importlib.import_module(_namespace + ".final_e1_statistics").analyze_E1
+analyze_E2 = importlib.import_module(_namespace + ".final_statistics_v2").analyze_E2
 
 GROUPS = {
     "G": ("G",),
@@ -107,11 +117,57 @@ def check_e2(paper: str, manifest: dict) -> dict:
     }
     require(misses == {"position": 62, "yaw": 38, "linear_speed": 0, "angular_speed": 2},
             "Reported failure endpoint counts changed")
+
+    # Saved-data post hoc accounting, distinct from E1's selected-index agreement.
+    by_cell = {(row["family_id"], row["controller_id"]): row for row in rows}
+    paired_outcomes = Counter()
+    discordant = []
+    families = sorted({row["family_id"] for row in rows})
+    for family in families:
+        for seed in (11, 23, 47):
+            one = by_cell[(family, f"S1-{seed}")]
+            multi = by_cell[(family, f"SK-{seed}")]
+            outcome = ("both_success" if one["success"] and multi["success"] else
+                       "both_failure" if not one["success"] and not multi["success"] else
+                       "S1_only_success" if one["success"] else "SK_only_success")
+            paired_outcomes[outcome] += 1
+            if one["success"] != multi["success"]:
+                discordant.append({"family_id": family, "seed": seed,
+                    "S1_success": one["success"], "SK_success": multi["success"],
+                    "S1_termination": one["termination"], "SK_termination": multi["termination"]})
+    expected_outcomes = {"both_success": 12, "both_failure": 23,
+                         "S1_only_success": 1, "SK_only_success": 0}
+    paired_counts = {key: paired_outcomes[key] for key in expected_outcomes}
+    require(paired_counts == expected_outcomes and sum(paired_counts.values()) == 36,
+            "E2 paired binary outcomes changed")
+    require(discordant == [{"family_id": "p5-final-translation-03", "seed": 23,
+                           "S1_success": True, "SK_success": False,
+                           "S1_termination": "ready", "SK_termination": "timeout"}],
+            "E2 discordant family/seed, direction or termination changed")
+    require_text(paper, f"동시 성공{paired_counts['both_success']}, "
+                 f"동시 실패{paired_counts['both_failure']}, "
+                 f"S1만 성공{paired_counts['S1_only_success']}, "
+                 f"SK만 성공{paired_counts['SK_only_success']}")
+    require_text(paper, "병진 family03의 seed23(S1 ready, SK timeout)")
+    paired_difference_pp = ((paired_counts["SK_only_success"]
+                             - paired_counts["S1_only_success"]) / 36 * 100)
+    reported_difference_pp = next(item["difference_pp"] for item in paired
+                                  if item["left"] == "SK" and item["right"] == "S1")
+    require(math.isclose(paired_difference_pp, -100 / 36, rel_tol=0., abs_tol=1e-12)
+            and math.isclose(paired_difference_pp, reported_difference_pp,
+                             rel_tol=0., abs_tol=1e-12),
+            "E2 paired outcome direction differs from family-first success contrast")
     return {"rows": len(rows), "families": summary["family_count"],
             "summary_exact": True, "bootstrap_arrays_exact": array_count,
             "table_and_strata_rows_match": table, "paired_rows_match": paired,
             "terminations": dict(Counter(row["termination"] for row in rows)),
-            "failures": len(failures), "failure_endpoint_misses": misses}
+            "failures": len(failures), "failure_endpoint_misses": misses,
+            "paired_binary_outcomes_posthoc": {
+                "analysis_type": "Post hoc descriptive check of saved E2 outcomes; no new execution.",
+                "paired_seed_family_cells": 36, "independent_families": len(families),
+                **paired_counts, "discordant_cells": discordant,
+                "SK_minus_S1_success_difference_pp": paired_difference_pp,
+                "scope": "Binary outcome agreement, distinct from E1 candidate-choice agreement; 36 cells are not 36 independent initial conditions."}}
 
 
 def check_e1(paper: str, manifest: dict) -> dict:
@@ -120,6 +176,12 @@ def check_e1(paper: str, manifest: dict) -> dict:
     invalid = Counter()
     repeat_count = valid_repeat_count = 0
     maxima = {"states": 0., "applied_actions": 0., "total_cost": 0.}
+    coverage = []
+    task = manifest["physical_config"]["task"]
+    goal_xy = np.asarray(task["goal_xy_m"], dtype=np.float64)
+    position_tolerance_m = task["position_tolerance_m"]
+    require(goal_xy.shape == (2,) and np.array_equal(goal_xy, [.08, 0.])
+            and position_tolerance_m == .005, "Frozen E1 goal or position tolerance changed")
     snapshots = sorted((ROOT / "artifacts/results/E1/snapshots").glob("*/*/tick-*"))
     require(len(snapshots) == 12, "Expected exactly 12 E1 snapshots")
     for folder in snapshots:
@@ -129,6 +191,22 @@ def check_e1(paper: str, manifest: dict) -> dict:
             cost_ranges.extend(np.ptp(costs, axis=1).tolist())
             repeat_count += validity.size
             valid_repeat_count += int(validity.sum())
+            states = actual["states"]
+            require(states.shape == (16, 3, 6, 10) and np.all(np.isfinite(states)),
+                    "E1 actual saved state tensor shape or finiteness differs")
+            require(np.array_equal(states[:, :, 0],
+                                   np.broadcast_to(states[0, 0, 0], (16, 3, 10))),
+                    "E1 actual candidates do not share one initial state")
+            distance_mm = np.linalg.norm(states[..., :2] - goal_xy, axis=-1) * 1000
+            coverage.append({"snapshot_id": str(folder.relative_to(
+                                ROOT / "artifacts/results/E1/snapshots")),
+                             "start_position_error_mm": float(distance_mm[0, 0, 0]),
+                             "minimum_endpoint_position_error_mm": float(distance_mm[:, :, -1].min()),
+                             "minimum_saved_boundary_position_error_mm": float(distance_mm.min()),
+                             "near_goal_endpoint_count": int(np.count_nonzero(
+                                 distance_mm[:, :, -1] <= position_tolerance_m * 1000)),
+                             "near_goal_saved_boundary_count": int(np.count_nonzero(
+                                 distance_mm <= position_tolerance_m * 1000))})
             # Verify saved arrays directly; do not rely solely on exactness flags.
             for repeat in (1, 2):
                 for key in ("states", "applied_actions", "total_cost", "valid"):
@@ -177,6 +255,21 @@ def check_e1(paper: str, manifest: dict) -> dict:
                     for spec in manifest["E1"] for seed in (11, 23, 47))
     require(agreement == 35, "E1 S1/SK choice agreement changed")
     require_text(paper, "36쌍 중 35쌍")
+    start_min = min(item["start_position_error_mm"] for item in coverage)
+    start_max = max(item["start_position_error_mm"] for item in coverage)
+    endpoint_min = min(item["minimum_endpoint_position_error_mm"] for item in coverage)
+    boundary_min = min(item["minimum_saved_boundary_position_error_mm"] for item in coverage)
+    require(math.isclose(start_min, 56.06689845833026, rel_tol=0., abs_tol=1e-9)
+            and math.isclose(start_max, 93.61208328124664, rel_tol=0., abs_tol=1e-9)
+            and math.isclose(endpoint_min, 49.4621247538187, rel_tol=0., abs_tol=1e-9)
+            and math.isclose(boundary_min, endpoint_min, rel_tol=0., abs_tol=1e-9),
+            "E1 post hoc goal-distance coverage changed")
+    require(all(item["near_goal_endpoint_count"] == 0
+                and item["near_goal_saved_boundary_count"] == 0 for item in coverage)
+            and boundary_min > position_tolerance_m * 1000,
+            "E1 now includes saved states within the goal position tolerance")
+    require_text(paper, f"시작 위치오차 범위는 {start_min:.3f}--{start_max:.3f}\\,mm")
+    require_text(paper, f"전체 실제 후보 끝점의 최솟값은 {endpoint_min:.3f}\\,mm")
     return {"diagnostics_regenerated": len(rows), "snapshots": len(snapshots),
             "families": summary["independent_family_count"], "summary_exact": True,
             "bootstrap_arrays_exact": array_count, "means_match_paper": means,
@@ -190,7 +283,17 @@ def check_e1(paper: str, manifest: dict) -> dict:
             "predicted_invalid_candidate_count": sum(invalid.values()),
             "predicted_invalid_candidate_count_by_model": dict(invalid),
             "S1_SK_same_selected_index": f"{agreement}/36",
-            "undefined_loss_sets": sum(row["selection_loss"] is None for row in rows)}
+            "undefined_loss_sets": sum(row["selection_loss"] is None for row in rows),
+            "goal_distance_coverage_posthoc": {
+                "analysis_type": "Post hoc descriptive check of saved E1 actual futures; no new execution.",
+                "start_position_error_mm_range": [start_min, start_max],
+                "minimum_actual_endpoint_position_error_mm": endpoint_min,
+                "minimum_saved_boundary_position_error_mm": boundary_min,
+                "goal_position_tolerance_mm": position_tolerance_m * 1000,
+                "near_goal_endpoint_count": sum(item["near_goal_endpoint_count"] for item in coverage),
+                "near_goal_saved_boundary_count": sum(item["near_goal_saved_boundary_count"] for item in coverage),
+                "snapshots": coverage,
+                "scope": "Initial and 2.9-second G states and their H5 candidate futures do not sample terminal goal alignment at saved action boundaries. This does not inspect omitted physical substeps or infer causal failure contributions."}}
 
 
 def family_metric(record: dict, family_ids: list, metric: str) -> float:
@@ -265,18 +368,20 @@ def check_fixed_prediction(paper: str) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path,
-                        default=Path("tmp/paper-content-review/results_audit.v2.json"),
+                        default=Path("tmp/paper-review-v3/numerics.json"),
                         help="Receipt path; relative paths are resolved from the repository root")
     args = parser.parse_args()
     paper = (ROOT / "paper/main.tex").read_text(encoding="utf-8")
     manifest = read_json("artifacts/provenance/frozen_manifest.json")
     receipt = {
-        "schema": "paper-content-independent-results-audit-v2",
+        "schema": "paper-content-independent-results-audit-v3",
         "status": "PASS_SELECTED_SAVED_RESULTS_AND_PAPER_NUMBERS",
         "verifier": "scripts/verify_paper_results.py",
         "verifier_sha256": sha256("scripts/verify_paper_results.py"),
         "paper_source_sha256": sha256("paper/main.tex"),
         "new_physics_calls": 0, "new_model_calls": 0, "new_training_updates": 0,
+        "MuJoCo_imported": "mujoco" in sys.modules,
+        "PyTorch_imported": "torch" in sys.modules,
         "E2": check_e2(paper, manifest), "E1": check_e1(paper, manifest),
         "fixed_prediction": check_fixed_prediction(paper),
         "scope": "Publication audit of selected saved arrays, summary arithmetic and numeric manuscript statements. This is not new scientific execution, an independent physical replication, or an audit of omitted raw data.",

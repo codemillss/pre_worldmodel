@@ -1,9 +1,9 @@
 {
   "schema": "public-delivery-file-inventory-v1",
-  "as_of_kst": "2026-10-21",
+  "as_of_kst": "2026-10-22",
   "repository": "https://github.com/codemillss/pre_worldmodel.git",
   "branch": "main",
-  "scope": "All tracked publication files including substantively reviewed IEEEtran manuscript and saved-result verifier; self excluded to avoid a recursive hash",
+  "scope": "All tracked publication files including first-reader README, reviewer assessment, revised paper/reports and publication-only verification/rendering tools; self excluded",
   "original_core_evidence_SHA_verified": 20,
   "private_local_path_and_high_confidence_secret_patterns_found": 0,
   "files": [
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6032,
-      "sha256": "d0c2b66697602df16750461c898945b3f94530b1bb6bd2afcdd3483a0ab85cd2"
+      "bytes": 12715,
+      "sha256": "78fe604eff908364cc001d266981473877a7e6887892e5be374d4a4a940792e4"
     },
     {
       "path": "artifacts/audits/p5_application_completion.v1.json",
@@ -99,8 +99,8 @@
     },
     {
       "path": "artifacts/index.md",
-      "bytes": 6789,
-      "sha256": "b065cd124e1019f1c81d4d63449d5da49db1c17e70859ee00321b3283cfddb20"
+      "bytes": 7658,
+      "sha256": "39cdff443fb8527ad37e1672396472e439b019cfc0e11662ba7ee217d8e1858b"
     },
     {
       "path": "artifacts/learning/manifest.json",
@@ -2358,6 +2358,11 @@
       "sha256": "ce52c19ccc0540a00755607788c0f0ee200630a11a8c628f617c85e217c7d3f2"
     },
     {
+      "path": "artifacts/validation/document_review.v3.json",
+      "bytes": 19180,
+      "sha256": "14797c109ce59a59c0010eff3de7e8d7d3c8cc5eeaad513ba0f2505f3a20b378"
+    },
+    {
       "path": "artifacts/validation/paper_content_review.v2.json",
       "bytes": 8768,
       "sha256": "794505e9952dd63198ba03cd1abd42b75ac37bc5e541dd73fde852595b5eebd3"
@@ -2366,6 +2371,11 @@
       "path": "artifacts/validation/paper_results_review.v2.json",
       "bytes": 10517,
       "sha256": "8b12d7c5ee7125599af6e88e8bee453586e63b7fb304bdb4aca6390f0e0a4de3"
+    },
+    {
+      "path": "artifacts/validation/paper_results_review.v3.json",
+      "bytes": 16502,
+      "sha256": "dd26831ecebe5aaac110780ba6cbbe62dd8e6c613b4181dcbb72fa515a5f6b6a"
     },
     {
       "path": "artifacts/validation/paper_review.json",
@@ -2379,8 +2389,8 @@
     },
     {
       "path": "assets/figures/handoff_success.png",
-      "bytes": 62377,
-      "sha256": "d830f72ac58131c1c8d45cd7a0e332b6f896127b90d578bd35378c9b4f65c0ed"
+      "bytes": 64925,
+      "sha256": "d7d738ecf547ac0340b8b959d5dec27b6531cf911e75e064b63bb2c7cc390eeb"
     },
     {
       "path": "assets/media/clip_offset.gif",
@@ -2709,18 +2719,23 @@
     },
     {
       "path": "docs/business_report.ko.md",
-      "bytes": 10770,
-      "sha256": "29222b8bb3acdcb3ea3c5304522b639965ea14d954a5b4bb2919fc77d7955701"
+      "bytes": 12226,
+      "sha256": "a862a77fc689d3c1d899bee134629e077ff8ca4fcf24f8f2ae7d9e346249a128"
     },
     {
       "path": "docs/documentation.ko.md",
-      "bytes": 3790,
-      "sha256": "0f1de3a5693165f416d2ffe6966f0f23386f7b9692ac8a6cb30ac6f47d0ce919"
+      "bytes": 4368,
+      "sha256": "9a3b6c2738d4bf2c3c60d2a90e9a28b4f4f2794c51320423b0d8ff8072e3c13f"
+    },
+    {
+      "path": "docs/reviewer_assessment.ko.md",
+      "bytes": 11219,
+      "sha256": "e2aa790378901ac92811d9a13f8912801a5b6c57b32915e2a98b8c45cb40821a"
     },
     {
       "path": "docs/technical_report.ko.md",
-      "bytes": 23810,
-      "sha256": "84b4d63387ad04833a286767a1553bcf9a01449c577f99f39ce7baedb3940d6f"
+      "bytes": 28103,
+      "sha256": "536dccf9420eeb66b1497e9a87b35f2179d1a66b721be08f81d167f37ab12d99"
     },
     {
       "path": "examples/run_metadata.example.json",
@@ -2734,8 +2749,8 @@
     },
     {
       "path": "paper/README.md",
-      "bytes": 3507,
-      "sha256": "37924fefa7001e3162f320f2594832a334e6d12929bcbc05cd355ad27db884c7"
+      "bytes": 3716,
+      "sha256": "cb5c38247ad48afff27a343030632eb699b1bdd251f63a2814520468382f5357"
     },
     {
       "path": "paper/content_review.ko.md",
@@ -2779,13 +2794,13 @@
     },
     {
       "path": "paper/main.tex",
-      "bytes": 34279,
-      "sha256": "ff92ba8caaf9406c37ba5f6ee8c1a0092f98c9b2b715b2b7feac6c6d6bd01e5b"
+      "bytes": 36434,
+      "sha256": "2699abb8858904ecc2a882c6b9c804bffb71a72c703cf2ca9406f9b90306410a"
     },
     {
       "path": "paper/references.bib",
-      "bytes": 2428,
-      "sha256": "4d4245d599221217c2c866c1c42a0ba53223765f33a436e6fd8af81579b5e746"
+      "bytes": 2837,
+      "sha256": "12ffb702250a8a02cd1902b8a39a3e6d138023c76066fc9af45e1cb8e2b21be5"
     },
     {
       "path": "pyproject.toml",
@@ -2794,33 +2809,33 @@
     },
     {
       "path": "reports/Business_Report.ko.manifest.json",
-      "bytes": 729,
-      "sha256": "d60f3b6216fd9b26e31eb86b8f858dec9be153301c4b456c3586bc03977787fb"
+      "bytes": 968,
+      "sha256": "5f14055d331d4a3c85d6427a71558e6d1f328c7c2c425e37166ed54f76ae5081"
     },
     {
       "path": "reports/Business_Report.ko.pdf",
-      "bytes": 106815,
-      "sha256": "03c0a8010145ca7b822f8137e4b3db79caa6037f9ec210dfbfa60c4b129e218a"
+      "bytes": 109816,
+      "sha256": "fff8cac4368bbd7309711992cc984175bdbff05d583d5d2e71a00658616b6a2e"
     },
     {
       "path": "reports/Research_Paper.ko.manifest.json",
       "bytes": 2004,
-      "sha256": "ea1c50c82806a8b45ee038c30298c5b4bacb6d911c4112a80e9e5de95acd3995"
+      "sha256": "2c236ba0271b8b40d7bd7c49b44668933f18afa4e33dae6a48539d1aa6553cfe"
     },
     {
       "path": "reports/Research_Paper.ko.pdf",
-      "bytes": 302040,
-      "sha256": "7d8734f330c82ea24846d2269a1d3b2d4ebac677f4815937823ac3665a97054a"
+      "bytes": 306519,
+      "sha256": "6dc1b271baff71788be1d3fc2c4a6611b0879cf8e50a466011d682d009b0dc01"
     },
     {
       "path": "reports/Technical_Report.ko.manifest.json",
-      "bytes": 789,
-      "sha256": "eec0e12126f6fea99825500bc2a7a7ddfebfadb664417c1e79fa82b7dcdd58ad"
+      "bytes": 1136,
+      "sha256": "7c5b186b6af25a62f4b073e245c11a75277e560a7b048f4baa6cdfa8241d09a1"
     },
     {
       "path": "reports/Technical_Report.ko.pdf",
-      "bytes": 209099,
-      "sha256": "57ccc02f464d4bd9753165dc93f4a8f71634ef4c6c5a1817cfa4638b91d1ea02"
+      "bytes": 230894,
+      "sha256": "c34c1b9f50ab4c83d13aa1c63596061b3ba1368f1736bd2899ee7149077178ac"
     },
     {
       "path": "requirements-docs.txt",
@@ -3099,8 +3114,8 @@
     },
     {
       "path": "scripts/verify_paper_results.py",
-      "bytes": 16954,
-      "sha256": "12c6214201bfa1c28292f878f6ca4d7869b9d051c486ee73bb94ae60f3cc50ea"
+      "bytes": 24731,
+      "sha256": "8ae825faa792e241d6765636f1f832a494dcd2d3462789e3f068765234d039da"
     },
     {
       "path": "scripts/verify_public_results.py",
@@ -3994,8 +4009,8 @@
     },
     {
       "path": "tools/build_public_figures.py",
-      "bytes": 1686,
-      "sha256": "64c44465be9c226bd3b1d7e7780e4a7e1aecf4b2211c03336ab91e2222b70ede"
+      "bytes": 1738,
+      "sha256": "392e1898458312667182304abb58f6080c8036fe4ba698080279dcf9e288d868"
     },
     {
       "path": "tools/check_p4_adam_probe.py",
@@ -4114,8 +4129,8 @@
     },
     {
       "path": "tools/export_publication_reports.py",
-      "bytes": 10629,
-      "sha256": "0b97686088a90f2df03b0d267711a21a62c5f5129bdf4d97fd61b834e33a3ffc"
+      "bytes": 11151,
+      "sha256": "f67a3bd2336828d25767ee9f1256f8ca542ab5b654257eeba1d0f0723540a37c"
     },
     {
       "path": "tools/export_report_pdf.py",
@@ -4368,7 +4383,9 @@
       "sha256": "c1df1301e029821d68e09627506056d56b39164085fa3c527b04b92802a614ee"
     }
   ],
-  "total_files_excluding_self": 872,
-  "total_bytes_excluding_self": 52139030,
-  "current_paper_content_review": "artifacts/validation/paper_content_review.v2.json"
+  "total_files_excluding_self": 875,
+  "total_bytes_excluding_self": 52243343,
+  "current_paper_content_review": "artifacts/validation/document_review.v3.json",
+  "current_document_review": "artifacts/validation/document_review.v3.json",
+  "verification_scope_note": "Original-core verification field retained from initial publication. Current review verifies 822 selected public-copy hashes and saved-array arithmetic, not omitted original raw."
 }

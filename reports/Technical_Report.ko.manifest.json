@@ -1,29 +1,35 @@
 {
   "schema": "public-report-export-v1",
+  "as_of": "2026-10-22",
   "source": "docs/technical_report.ko.md",
   "output": "reports/Technical_Report.ko.pdf",
-  "sha256": "57ccc02f464d4bd9753165dc93f4a8f71634ef4c6c5a1817cfa4638b91d1ea02",
-  "pages": 10,
+  "sha256": "c34c1b9f50ab4c83d13aa1c63596061b3ba1368f1736bd2899ee7149077178ac",
+  "pages": 12,
   "input_sha256": {
-    "docs/technical_report.ko.md": "84b4d63387ad04833a286767a1553bcf9a01449c577f99f39ce7baedb3940d6f",
-    "artifacts/index.md": "b065cd124e1019f1c81d4d63449d5da49db1c17e70859ee00321b3283cfddb20",
-    "assets/figures/handoff_success.png": "d830f72ac58131c1c8d45cd7a0e332b6f896127b90d578bd35378c9b4f65c0ed"
+    "docs/technical_report.ko.md": "536dccf9420eeb66b1497e9a87b35f2179d1a66b721be08f81d167f37ab12d99",
+    "tools/export_publication_reports.py": "f67a3bd2336828d25767ee9f1256f8ca542ab5b654257eeba1d0f0723540a37c",
+    "tools/export_report_pdf.py": "26a54fc9e321b97def9bc9572ff1d06742f42194da69c9d1a68fa89891712146",
+    "paper/main.tex": "2699abb8858904ecc2a882c6b9c804bffb71a72c703cf2ca9406f9b90306410a",
+    "artifacts/index.md": "39cdff443fb8527ad37e1672396472e439b019cfc0e11662ba7ee217d8e1858b",
+    "assets/figures/handoff_success.png": "d7d738ecf547ac0340b8b959d5dec27b6531cf911e75e064b63bb2c7cc390eeb"
   },
   "links": {
-    "internal": 41,
-    "web": 5
+    "internal": 43,
+    "web": 8
   },
   "visual_review": "REQUIRED_SEPARATE_RECORD",
   "body_characters_per_page": [
-    784,
-    1376,
-    873,
-    1192,
-    1564,
-    580,
-    1445,
-    1539,
-    1581,
-    1408
+    775,
+    1574,
+    881,
+    1150,
+    1517,
+    1277,
+    515,
+    1555,
+    1484,
+    1734,
+    1432,
+    622
   ]
 }

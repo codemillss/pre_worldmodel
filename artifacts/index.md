@@ -7,7 +7,7 @@
 | 자료 | 내용 | 공개본에서 확인할 수 있는 범위 |
 |---|---|---|
 | [E2 원행](results/E2/rows.json), [요약](results/E2/summary.json), [bootstrap](results/E2/bootstrap.npz) | 12개 초기조건 가족 × 8개 제어기, 96회 | 종료 유형·성공 수·전체 통계와 163개 bootstrap 배열 재생성 |
-| [E1 요약](results/E1/summary.json), [snapshot 자료](results/E1/snapshots/) | 12개 상태, 16개 후보, 후보별 실제 반복 3회, 7개 모델 | 저장된 후보·예측·실제 미래 배열과 84개 모델 진단, 선택 결과 검산 |
+| [E1 요약](results/E1/summary.json), [snapshot 자료](results/E1/snapshots/) | 초기·2.9초의 12개 접근 상태, 16개 후보, 실제 반복 3회, 7개 모델 | 저장된 84개 진단과 379개 bootstrap 배열 재생성. 종단 정렬·유지 상태를 표집한 진단은 아님 |
 | [고정 경로 예측 요약](results/fixed_prediction/summary.json) | 같은 G 경로에서 K1·K5·K10 예측 | 분모·무효 예측·조건부 오차와 가족별 수치 읽기. 전체 window trace는 미포함 |
 | [실제 경계 궤적](results/trajectories/compact_visual_source.json) | E2 96회 실제 행동 경계 상태·종료·지표 | 궤적과 최종 상태 확인. 물리 substep 원시 기록을 대신하지 않음 |
 | [실패 목록](audits/p5_final_failure_inventory.v1.json) | 63개 실패의 종료·조건 미충족 분류 | 실패를 삭제하지 않은 전체 분포 확인 |
@@ -33,11 +33,14 @@ python3.14 -m venv .venv
 # 저장된 96행에서 E2 통계·bootstrap 전체 재생성, E1 저장 선택 검산
 .venv/bin/python -B scripts/verify_public_results.py --recompute
 
+# 논문 수치·그림, E1 379/E2 163 bootstrap 배열 및 사후 범위/짝분석 검산
+.venv/bin/python -B scripts/verify_paper_results.py
+
 # 최소 물리 1구간과 기존 모델 7개의 5단계 추론; 학습하지 않음
 .venv/bin/python -B scripts/smoke_public.py
 ```
 
-확인한 단위 검사는 다음의 **7개 모듈·149개**입니다. 전체 `unittest discover`는 이전 개발 실행을 fixture로 읽는 항목이 포함되어 공개 선별본만으로 통과를 약속하지 않습니다.
+최초 공개 과정에서 확인한 단위 검사는 다음의 **7개 모듈·149개**입니다. 전체 `unittest discover`는 이전 개발 실행을 fixture로 읽는 항목이 포함되어 공개 선별본만으로 통과를 약속하지 않습니다. 이후 문서 변경마다 이 검사를 모두 새로 실행했다는 뜻은 아닙니다.
 
 ```sh
 PYTHONPATH=src:scripts:tests .venv/bin/python -B -m unittest \
@@ -51,7 +54,7 @@ PYTHONPATH=src:scripts:tests .venv/bin/python -B -m unittest \
 - 개인 절대 경로가 있는 JSON·과거 진단 설정은 `${LOCAL_PROJECT_ROOT}`로 바꾼 **명시적 파생본**입니다. 내부의 원본 SHA는 원본 식별자이며, 변환된 파일이 그 SHA와 같다고 주장하지 않습니다. 공개본의 실제 SHA는 출처 목록의 `public_sha256`입니다.
 - 오래된 그림 생성기의 개인 Python 기본 경로는 현재 실행 중인 Python으로 바꿨습니다. 일부 과거 분석 코드의 `${LOCAL_TEMP}`는 사용자가 정할 로컬 임시 경로 표시입니다. 이 과거 운영 스크립트를 그대로 실행하는 것은 위 공개 검산 절차가 아닙니다.
 - E2 `rows.json`은 96개 원본 worker의 `row` 필드만 모았습니다. 값과 실패 유형을 바꾸지 않았고, 원본 worker SHA를 출처 목록에 연결했습니다.
-- 공개용 두 검사 스크립트와 이 안내는 최종 동결 이후의 전달 도구입니다. 동결 과학 소스의 일부였다고 표시하지 않습니다.
+- 공개용 검산·smoke 스크립트와 이 안내는 최종 동결 이후의 전달 도구입니다. 동결 과학 소스의 일부였다고 표시하지 않습니다.
 
 ## 포함하지 않은 자료
 
@@ -62,3 +65,7 @@ PYTHONPATH=src:scripts:tests .venv/bin/python -B -m unittest \
 ## 과거 개발 경과의 원고
 
 기술 보고서 §8의 수치와 진단 경과는 [P4 개발 원고 7개와 SHA 색인](development/index.md)에서 당시 기록으로 추적할 수 있습니다. 이 수치는 공개 준비 중 새로 검산한 측정값이 아닙니다. 과거 원고의 `HOLD`는 당시 판정이며, 진단 설정이나 모델이 최종 checkpoint로 승격됐다는 뜻이 아닙니다. 원문 내부의 상대 링크는 당시 원본 자료 식별자이고, 해당 자료 전체가 공개 저장소에 포함된 것은 아닙니다.
+
+## 최신 문서 검토
+
+2026-10-22의 [리뷰어 관점 평가](../docs/reviewer_assessment.ko.md)는 E1의 시간·목표 거리 범위와 E2의 짝별 성공 차이를 저장 배열에서 추가 검산했습니다. 이는 사후 기술 분석이며 새 학습·모델 추론·물리 실행이 아닙니다. 현재 검사와 PDF 시각 검토는 [v3 검토 기록](validation/document_review.v3.json), 수치 재계산은 [v3 수치 기록](validation/paper_results_review.v3.json)에 연결합니다. 이전 검토 기록은 당시 SHA의 이력입니다.

@@ -1,0 +1,415 @@
+{
+  "schema": "publication-document-review-v3",
+  "as_of": "2026-10-22",
+  "review_base_commit": "2fb3447eb8ab3d06db34feb415301c8fea0848f8",
+  "status": "DOCUMENTS_CORRECTED_BOUNDED_FINDINGS_SUPPORTED_MECHANISM_STILL_UNRESOLVED",
+  "judgment": "The fixed-budget, fixed-scope S1-SK observations are supported. Strong claims of terminal-failure mechanism, general method superiority, industrial effect or publication acceptance are not established.",
+  "reviewer_assessment": "docs/reviewer_assessment.ko.md",
+  "current_file_sha256": {
+    "README.md": "78fe604eff908364cc001d266981473877a7e6887892e5be374d4a4a940792e4",
+    "paper/README.md": "cb5c38247ad48afff27a343030632eb699b1bdd251f63a2814520468382f5357",
+    "paper/main.tex": "2699abb8858904ecc2a882c6b9c804bffb71a72c703cf2ca9406f9b90306410a",
+    "paper/references.bib": "12ffb702250a8a02cd1902b8a39a3e6d138023c76066fc9af45e1cb8e2b21be5",
+    "docs/business_report.ko.md": "a862a77fc689d3c1d899bee134629e077ff8ca4fcf24f8f2ae7d9e346249a128",
+    "docs/technical_report.ko.md": "536dccf9420eeb66b1497e9a87b35f2179d1a66b721be08f81d167f37ab12d99",
+    "docs/documentation.ko.md": "9a3b6c2738d4bf2c3c60d2a90e9a28b4f4f2794c51320423b0d8ff8072e3c13f",
+    "docs/reviewer_assessment.ko.md": "e2aa790378901ac92811d9a13f8912801a5b6c57b32915e2a98b8c45cb40821a",
+    "artifacts/index.md": "39cdff443fb8527ad37e1672396472e439b019cfc0e11662ba7ee217d8e1858b",
+    "scripts/verify_paper_results.py": "8ae825faa792e241d6765636f1f832a494dcd2d3462789e3f068765234d039da",
+    "tools/export_publication_reports.py": "f67a3bd2336828d25767ee9f1256f8ca542ab5b654257eeba1d0f0723540a37c",
+    "tools/build_public_figures.py": "392e1898458312667182304abb58f6080c8036fe4ba698080279dcf9e288d868",
+    "assets/figures/handoff_success.png": "d7d738ecf547ac0340b8b959d5dec27b6531cf911e75e064b63bb2c7cc390eeb"
+  },
+  "new_saved_data_posthoc_checks": {
+    "E1_goal_distance_coverage": {
+      "analysis_type": "Post hoc descriptive check of saved E1 actual futures; no new execution.",
+      "start_position_error_mm_range": [
+        56.06689845833026,
+        93.61208328124664
+      ],
+      "minimum_actual_endpoint_position_error_mm": 49.4621247538187,
+      "minimum_saved_boundary_position_error_mm": 49.4621247538187,
+      "goal_position_tolerance_mm": 5.0,
+      "near_goal_endpoint_count": 0,
+      "near_goal_saved_boundary_count": 0,
+      "snapshots": [
+        {
+          "snapshot_id": "p5-final-offset-00/G/tick-000",
+          "start_position_error_mm": 93.61208328124664,
+          "minimum_endpoint_position_error_mm": 89.85993924851239,
+          "minimum_saved_boundary_position_error_mm": 89.85993924851239,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-offset-00/G/tick-029",
+          "start_position_error_mm": 85.02938004330166,
+          "minimum_endpoint_position_error_mm": 78.40765418116068,
+          "minimum_saved_boundary_position_error_mm": 78.40765418116068,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-offset-01/G/tick-000",
+          "start_position_error_mm": 63.627363308204025,
+          "minimum_endpoint_position_error_mm": 60.895700590163166,
+          "minimum_saved_boundary_position_error_mm": 60.895700590163166,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-offset-01/G/tick-029",
+          "start_position_error_mm": 63.62736330824117,
+          "minimum_endpoint_position_error_mm": 60.04293446355558,
+          "minimum_saved_boundary_position_error_mm": 60.04293446355558,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-rotation-00/G/tick-000",
+          "start_position_error_mm": 69.37506784867284,
+          "minimum_endpoint_position_error_mm": 69.30719880867557,
+          "minimum_saved_boundary_position_error_mm": 69.30719880867557,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-rotation-00/G/tick-029",
+          "start_position_error_mm": 69.3750678484727,
+          "minimum_endpoint_position_error_mm": 65.13065505490135,
+          "minimum_saved_boundary_position_error_mm": 65.13065505490135,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-rotation-01/G/tick-000",
+          "start_position_error_mm": 93.31918278953772,
+          "minimum_endpoint_position_error_mm": 93.2465546436658,
+          "minimum_saved_boundary_position_error_mm": 93.2465546436658,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-rotation-01/G/tick-029",
+          "start_position_error_mm": 93.31918278949057,
+          "minimum_endpoint_position_error_mm": 91.6415975828858,
+          "minimum_saved_boundary_position_error_mm": 91.6415975828858,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-translation-00/G/tick-000",
+          "start_position_error_mm": 65.67587868099416,
+          "minimum_endpoint_position_error_mm": 62.58938976099376,
+          "minimum_saved_boundary_position_error_mm": 62.58938976099376,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-translation-00/G/tick-029",
+          "start_position_error_mm": 62.45258000710168,
+          "minimum_endpoint_position_error_mm": 55.797822737620685,
+          "minimum_saved_boundary_position_error_mm": 55.797822737620685,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-translation-01/G/tick-000",
+          "start_position_error_mm": 62.02089019998602,
+          "minimum_endpoint_position_error_mm": 58.04418866873699,
+          "minimum_saved_boundary_position_error_mm": 58.04418866873699,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        },
+        {
+          "snapshot_id": "p5-final-translation-01/G/tick-029",
+          "start_position_error_mm": 56.06689845833026,
+          "minimum_endpoint_position_error_mm": 49.4621247538187,
+          "minimum_saved_boundary_position_error_mm": 49.4621247538187,
+          "near_goal_endpoint_count": 0,
+          "near_goal_saved_boundary_count": 0
+        }
+      ],
+      "scope": "Initial and 2.9-second G states and their H5 candidate futures do not sample terminal goal alignment at saved action boundaries. This does not inspect omitted physical substeps or infer causal failure contributions."
+    },
+    "E2_paired_binary_outcomes": {
+      "analysis_type": "Post hoc descriptive check of saved E2 outcomes; no new execution.",
+      "paired_seed_family_cells": 36,
+      "independent_families": 12,
+      "both_success": 12,
+      "both_failure": 23,
+      "S1_only_success": 1,
+      "SK_only_success": 0,
+      "discordant_cells": [
+        {
+          "family_id": "p5-final-translation-03",
+          "seed": 23,
+          "S1_success": true,
+          "SK_success": false,
+          "S1_termination": "ready",
+          "SK_termination": "timeout"
+        }
+      ],
+      "SK_minus_S1_success_difference_pp": -2.7777777777777777,
+      "scope": "Binary outcome agreement, distinct from E1 candidate-choice agreement; 36 cells are not 36 independent initial conditions."
+    }
+  },
+  "numeric_verification": {
+    "receipt": "artifacts/validation/paper_results_review.v3.json",
+    "receipt_sha256": "dd26831ecebe5aaac110780ba6cbbe62dd8e6c613b4181dcbb72fa515a5f6b6a",
+    "E1_diagnostics_exact": 84,
+    "E1_bootstrap_arrays_exact": 379,
+    "E2_bootstrap_arrays_exact": 163,
+    "two_runtimes_receipts_exact": true,
+    "runtimes": [
+      {
+        "python": "3.14.7",
+        "numpy": "2.5.3"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5"
+      }
+    ],
+    "MuJoCo_and_PyTorch_not_imported": true,
+    "original_public_copy_hashes_verified": 822
+  },
+  "document_fixes": [
+    "README reorganized for problem, success criteria, model/control roles, comparisons, outcomes, bounded contribution and runnable checks",
+    "Aligned technical/business causal wording with paper; E1 approach-only coverage and E2 single discordant pair disclosed",
+    "Added multi-step prediction primary literature; bounded optimization and baseline interpretation",
+    "Fixed shared success chart category-label/footer overlap without changing data",
+    "Report footer date derived from source; generator/layout hashes added to report manifests",
+    "Public numeric verifier loads unchanged numeric modules in a private namespace to avoid simulator package initialization; frozen source remains unchanged"
+  ],
+  "outputs": {
+    "reports/Research_Paper.ko.pdf": {
+      "sha256": "6dc1b271baff71788be1d3fc2c4a6611b0879cf8e50a466011d682d009b0dc01",
+      "pages": 6,
+      "manifest": "reports/Research_Paper.ko.manifest.json",
+      "manifest_sha256": "2c236ba0271b8b40d7bd7c49b44668933f18afa4e33dae6a48539d1aa6553cfe",
+      "dpi": 120,
+      "visual_review": [
+        {
+          "page": 1,
+          "png_sha256": "7fb9b5a9ce11fd843e8e54aa930cd88a25e5324fa906ee32763bd302b95a82bc",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 2,
+          "png_sha256": "c0d6faee4133f9ce1fc13cbdb2d54a089bc8c51480a7036ad825f1b5ffcba3b1",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 3,
+          "png_sha256": "1900f2cf6874cb9bb2d9a150badc33bca42ba48afad33698bfcdb1ce51b24677",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 4,
+          "png_sha256": "bfb02b43dbf79e16603e8a471b56fa8d0e846d11bb412c389a425f757727c5d4",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 5,
+          "png_sha256": "6e58e92efddc7932bed17f90333ab805c6a0f40f4a8b66544f55d972906bf2cf",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 6,
+          "png_sha256": "ac6257ee3381279b00f01cb0f0d1c2e2bffc2fd339c1590770f7ba2e800fbbe5",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Final changed page directly viewed after correction",
+          "reviewer": "root"
+        }
+      ],
+      "internal_and_web_links": "LaTeX cross-references resolved at compile"
+    },
+    "reports/Business_Report.ko.pdf": {
+      "sha256": "fff8cac4368bbd7309711992cc984175bdbff05d583d5d2e71a00658616b6a2e",
+      "pages": 5,
+      "manifest": "reports/Business_Report.ko.manifest.json",
+      "manifest_sha256": "5f14055d331d4a3c85d6427a71558e6d1f328c7c2c425e37166ed54f76ae5081",
+      "dpi": 120,
+      "visual_review": [
+        {
+          "page": 1,
+          "png_sha256": "015ce9d1a260beb9977696a2d29439556835d6dcd1ae218773288f284395a129",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 2,
+          "png_sha256": "f1b130f38f5fa007f50436c1c7a4390b0671eade30be958d15949d420f25d715",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 3,
+          "png_sha256": "f34ecec483494d9d4b706ab23cb48b1faad8f8989e4a6cf5ce62a4c626684ee5",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 4,
+          "png_sha256": "49f787c218b529a57a6fec2925f663ef6445c3be1ae89c9befc5db5b1a5d02ca",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 5,
+          "png_sha256": "653507725bb00881969f53a217576f6e57124ef3cf6e079c29747cee2b288997",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        }
+      ],
+      "internal_and_web_links": {
+        "internal": 18,
+        "web": 4
+      }
+    },
+    "reports/Technical_Report.ko.pdf": {
+      "sha256": "c34c1b9f50ab4c83d13aa1c63596061b3ba1368f1736bd2899ee7149077178ac",
+      "pages": 12,
+      "manifest": "reports/Technical_Report.ko.manifest.json",
+      "manifest_sha256": "7c5b186b6af25a62f4b073e245c11a75277e560a7b048f4baa6cdfa8241d09a1",
+      "dpi": 120,
+      "visual_review": [
+        {
+          "page": 1,
+          "png_sha256": "6d546c489886f3b7a821f8d932c0841cda621df2f094558f3edeaf39c9f2bf85",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 2,
+          "png_sha256": "f38b0efb7ae01d309c47fcf3d7622c510b3455fde4575f49d1ebdbf7ba0eda6e",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 3,
+          "png_sha256": "59d49848126d366f618e1ff00d8e7078dbd1f03d40ebde0254a5abeefad9bab5",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 4,
+          "png_sha256": "fc184149d089649b708f1647bc9f2da9ae6c593d7db1ec50398b86b11d9fc04d",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 5,
+          "png_sha256": "112e621e8726ce1c46948ff7c2712321214534fec1007bf1f9e2619ec5c88c58",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Final changed page directly viewed after correction",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 6,
+          "png_sha256": "010116628bd95a40171c0257201a8cad28a24fe099ff61b5c6d87e28d927d833",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Final changed page directly viewed after correction",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 7,
+          "png_sha256": "ed9b828a59fe5346e1c90076556bc13f6df1617962e3d2e74816e459612f0e4a",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Final changed page directly viewed after correction",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 8,
+          "png_sha256": "01d37e5d4deeb4f979602d3255ee203b9188f8770ca4b3c96d6a0195a3fc510d",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 9,
+          "png_sha256": "7b560acd8660bba6549673c4a332d1b5e2c61d5d3aa6740c232413279a57aed0",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 10,
+          "png_sha256": "d12bcfdfbe03aed0f93664fabf9fe1b42c4e34aea05fbd3467c691571d650ab3",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 11,
+          "png_sha256": "57c9887fa25ac8c4a0990eba6fb8c7eb83c49c313aa83b5d65c9a9436f20e501",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        },
+        {
+          "page": 12,
+          "png_sha256": "bbadca98b3e75e71fa00dee7b44451db69f04373d62f21b63f3deee0137b93dc",
+          "status": "PASS_NO_CLIPPING_OR_OVERLAP",
+          "verification": "Fresh render pixel-identical to directly reviewed image",
+          "reviewer": "separate internal reviewer"
+        }
+      ],
+      "internal_and_web_links": {
+        "internal": 43,
+        "web": 8
+      }
+    }
+  },
+  "latex": {
+    "terminal_tectonic_and_bibtex": "success",
+    "desktop_compiler": "success",
+    "overfull_boxes": 0,
+    "missing_characters": 0,
+    "unresolved_cross_references": 0,
+    "numbered_sections": 8,
+    "equations": 12,
+    "figures": 2,
+    "tables": 5,
+    "references": 8,
+    "nonblocking_warnings": "Font-shape fallbacks and four underfull reference lines; final pages visually reviewed"
+  },
+  "preservation": {
+    "original_models_data_configurations_results_changed": false,
+    "new_training_updates": 0,
+    "new_model_calls": 0,
+    "new_physics_calls": 0,
+    "older_reviews_retained": [
+      "artifacts/validation/paper_review.json",
+      "artifacts/validation/paper_content_review.v2.json",
+      "artifacts/validation/paper_results_review.v2.json"
+    ]
+  },
+  "unresolved_experimental_requirements": [
+    "Near-goal or failure-state shared-candidate actual-future comparison",
+    "Optimization convergence and sensitivity or gradient-scale controls for a stronger temporal-objective claim",
+    "Model versus cost/search contribution separation, followed by fresh blind cases if developing improvements",
+    "Real-robot and downstream-task validation before field-effect claims"
+  ],
+  "review_scope": "Internal reviewer-style assessment, not external peer review, full omitted-raw audit or a guarantee of venue acceptance."
+}

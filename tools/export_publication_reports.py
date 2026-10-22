@@ -7,6 +7,7 @@ Set --font to a Korean-capable TTF on another operating system.
 """
 from __future__ import annotations
 import argparse
+from datetime import date
 import hashlib
 import html
 import json
@@ -39,7 +40,9 @@ class Renderer(layout.Renderer):
         self.source = source
         self.anchors = {}
         self.headings = []
-        self.input_hashes = {source.relative_to(ROOT).as_posix(): digest(source)}
+        self.input_hashes = {source.relative_to(ROOT).as_posix(): digest(source),
+                            'tools/export_publication_reports.py': digest(Path(__file__)),
+                            'tools/export_report_pdf.py': digest(Path(layout.__file__))}
         counts = {}
         for line in source.read_text().splitlines():
             m = re.match(r'^(#{2,3}) (.+)', line)
@@ -101,10 +104,10 @@ class Renderer(layout.Renderer):
         return flow
 
 class Document(BaseDocTemplate):
-    def __init__(self, output, title, kind):
+    def __init__(self, output, title, kind, as_of):
         super().__init__(str(output), pagesize=layout.A4, leftMargin=48, rightMargin=48,
                          topMargin=56, bottomMargin=49)
-        self.title, self.kind = title, kind
+        self.title, self.kind, self.as_of = title, kind, as_of
         self.addPageTemplates(PageTemplate('body', [Frame(48,49,layout.BODY_W,layout.PAGE_H-105,
             leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0)], onPage=self.chrome))
 
@@ -120,7 +123,7 @@ class Document(BaseDocTemplate):
         canvas.setFont('ReportKR',8)
         canvas.setFillColor(layout.MUTED)
         canvas.drawString(48,layout.PAGE_H-26,'PRE_WORLDMODEL | ' + self.kind)
-        canvas.drawString(48,25,'2026-10-18 | 제한된 시뮬레이션의 기술 검증')
+        canvas.drawString(48,25,self.as_of + ' | 제한된 시뮬레이션의 기술 검증')
         canvas.drawRightString(layout.PAGE_W-48,25,str(doc.page))
         if doc.page > 1:
             canvas.drawRightString(layout.PAGE_W-48,layout.PAGE_H-26,'목차로 이동')
@@ -139,6 +142,10 @@ class Document(BaseDocTemplate):
 
 def make(source, output, kind, subtitle):
     title = source.read_text().splitlines()[0][2:]
+    match = re.search(r'\b20\d{2}-\d{2}-\d{2}\b', '\n'.join(source.read_text().splitlines()[:8]))
+    if match is None:
+        raise ValueError('Source must declare its report date within the first eight lines')
+    as_of = date.fromisoformat(match.group()).isoformat()
     renderer = Renderer(source,output)
     # Make short reports easy to read; do not compress the font to meet a page target.
     layout.STYLES['body'].spaceAfter = 8
@@ -155,7 +162,7 @@ def make(source, output, kind, subtitle):
              Paragraph('핵심 근거는 본문에 수록했다. 세부 코드·수치는 공개 저장소로 연결한다. GitHub PDF 미리보기에서는 링크가 동작하지 않으므로 내려받아 사용한다.',layout.STYLES['small']),
              heading,toc,PageBreak()] + body
     output.parent.mkdir(parents=True,exist_ok=True)
-    Document(output,title,kind).multiBuild(story)
+    Document(output,title,kind,as_of).multiBuild(story)
     reader = PdfReader(output)
     texts = [page.extract_text() or '' for page in reader.pages]
     if any(c in '\n'.join(texts) for c in ('\ufffd','\u25a0')):
@@ -180,7 +187,7 @@ def make(source, output, kind, subtitle):
     for relative, value in renderer.input_hashes.items():
         if digest(ROOT/relative) != value:
             raise ValueError('Input changed during export: ' + relative)
-    record = {'schema':'public-report-export-v1','source':source.relative_to(ROOT).as_posix(),
+    record = {'schema':'public-report-export-v1','as_of':as_of,'source':source.relative_to(ROOT).as_posix(),
         'output':output.relative_to(ROOT).as_posix(),'sha256':digest(output),'pages':len(texts),
         'input_sha256':renderer.input_hashes,'links':links,
         'visual_review':'REQUIRED_SEPARATE_RECORD',
@@ -204,7 +211,7 @@ def main():
         make(ROOT/'docs/business_report.ko.md',ROOT/'reports/Business_Report.ko.pdf','실무 의사결정 요약',
              '목표 달성 · 도입 판단 · 확인된 사실과 남은 가설')
     if args.only in ('all','technical'):
-        make(ROOT/'docs/technical_report.ko.md',ROOT/'reports/Technical_Report.ko.pdf','논문 형식 기술 보고서',
+        make(ROOT/'docs/technical_report.ko.md',ROOT/'reports/Technical_Report.ko.pdf','설명용 기술 보고서',
              '문제 정의 · 학습/계획 설계 · 통제 비교 · 실패 분석 · 재현 범위')
 
 if __name__ == '__main__':

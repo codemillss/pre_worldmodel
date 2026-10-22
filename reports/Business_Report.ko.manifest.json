@@ -1,13 +1,16 @@
 {
   "schema": "public-report-export-v1",
+  "as_of": "2026-10-22",
   "source": "docs/business_report.ko.md",
   "output": "reports/Business_Report.ko.pdf",
-  "sha256": "03c0a8010145ca7b822f8137e4b3db79caa6037f9ec210dfbfa60c4b129e218a",
+  "sha256": "fff8cac4368bbd7309711992cc984175bdbff05d583d5d2e71a00658616b6a2e",
   "pages": 5,
   "input_sha256": {
-    "docs/business_report.ko.md": "29222b8bb3acdcb3ea3c5304522b639965ea14d954a5b4bb2919fc77d7955701",
-    "docs/technical_report.ko.md": "84b4d63387ad04833a286767a1553bcf9a01449c577f99f39ce7baedb3940d6f",
-    "artifacts/index.md": "b065cd124e1019f1c81d4d63449d5da49db1c17e70859ee00321b3283cfddb20"
+    "docs/business_report.ko.md": "a862a77fc689d3c1d899bee134629e077ff8ca4fcf24f8f2ae7d9e346249a128",
+    "tools/export_publication_reports.py": "f67a3bd2336828d25767ee9f1256f8ca542ab5b654257eeba1d0f0723540a37c",
+    "tools/export_report_pdf.py": "26a54fc9e321b97def9bc9572ff1d06742f42194da69c9d1a68fa89891712146",
+    "docs/technical_report.ko.md": "536dccf9420eeb66b1497e9a87b35f2179d1a66b721be08f81d167f37ab12d99",
+    "artifacts/index.md": "39cdff443fb8527ad37e1672396472e439b019cfc0e11662ba7ee217d8e1858b"
   },
   "links": {
     "internal": 18,
@@ -15,10 +18,10 @@
   },
   "visual_review": "REQUIRED_SEPARATE_RECORD",
   "body_characters_per_page": [
-    352,
-    1346,
-    1080,
-    1439,
-    943
+    346,
+    1495,
+    1062,
+    1467,
+    1425
   ]
 }

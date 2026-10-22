@@ -4,11 +4,15 @@
 
 2026-10-19부터 학술 논문의 원본은 [paper/main.tex](../paper/main.tex)와 [참고문헌](../paper/references.bib)입니다. IEEEtran conference 클래스의 2단 조판, 번호 수식·표·그림, 본문 인용 및 BibTeX를 사용합니다. [논문 생성 안내](../paper/README.md)를 따릅니다. 아래의 Markdown→PDF 절차는 기존 실무 보고서와 설명용 기술 보고서에 적용합니다. 논문 PDF는 이 Markdown 변환 도구로 만들지 않습니다.
 
-## 두 관점, 두 파일 형식
+## 세 문서의 독자와 원본
 
-사업 관점 보고서는 누가 어떤 작업을 하며, 현재 결과로 어떤 결정을 내릴 수 있는지 설명합니다. 논문 형식 기술 보고서는 문제·선행연구·입출력·학습·비교·결과·가설·한계를 설명합니다. 논문 형식이라는 이유로 새로운 연구 성과를 주장하지 않습니다.
+| 문서 | 독자와 역할 | 원본과 생성 |
+|---|---|---|
+| 학술 논문 | 정식화·방법·실험·결과·논의를 심사하는 독자 | paper/main.tex 및 references.bib → LaTeX PDF |
+| 설명용 기술 보고서 | 개발 경과·입출력·국소 진단·한계를 파악하는 독자 | docs/technical_report.ko.md → 보고서 PDF |
+| 사업 관점 보고서 | 문제 가치·목표 달성·도입 판단을 검토하는 독자 | docs/business_report.ko.md → 보고서 PDF |
 
-각 보고서의 Markdown을 원본으로 유지하고 같은 원고에서 PDF를 생성합니다. 두 파일 형식을 별도 집필하면 수치와 결론이 어긋날 수 있으므로 PDF 본문을 수작업으로 고치지 않습니다. 원고와 PDF의 출처 SHA는 각 PDF 옆 manifest에 기록합니다.
+두 보고서는 Markdown을, 학술 논문은 TeX를 원본으로 유지합니다. 각 PDF는 해당 원고에서 생성하며 본문을 수작업으로 고치지 않습니다. 원고와 PDF의 출처 SHA는 각 PDF 옆 manifest에 기록합니다. 같은 실험을 다루므로 수치와 해석 범위는 세 문서에서 맞춰 검토합니다.
 
 ## 첨부 문서가 없어도 읽히는 PDF
 
@@ -31,3 +35,5 @@ python tools/export_publication_reports.py --font /path/to/Korean-capable.ttf
 `/path/to/Korean-capable.ttf`는 실제 설치된 글꼴 파일로 바꿉니다. macOS 기본 Arial Unicode 또는 Linux NanumGothic이 발견되면 `--font`를 생략할 수 있습니다. 글꼴 파일 자체는 저장소에 배포하지 않습니다.
 
 생성 후 전체 페이지를 렌더링해 표·줄바꿈·한글·목차를 확인합니다. 텍스트 추출 검사는 화면 가독성의 대체 증거가 아닙니다. PDF만 고친 상태로 커밋하지 않고 원고·생성 도구·manifest·검사 기록을 함께 갱신합니다.
+
+보고서 PDF의 날짜는 원고 상단의 날짜에서 읽습니다. 생성 도구와 레이아웃 코드의 SHA도 manifest에 기록합니다. 이전 검토 기록은 해당 날짜·SHA의 이력이며 현재 문서에 자동 적용하지 않습니다. 2026-10-22의 내용 판단과 미해결 실험 항목은 [리뷰어 관점 평가](reviewer_assessment.ko.md)에 정리했습니다.

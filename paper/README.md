@@ -36,14 +36,15 @@ XeLaTeX와 BibTeX를 사용할 수 있는 TeX Live 환경 또는 Tectonic에서 
 
 ## 내용 재검토
 
-2026-10-21에 수식·코드·표·그림 및 문제–방법–실험–결론의 연결을 다시 검토했습니다. 기준선과 선정 절차, 비용과 유지 성공의 차이, E1의 방향 제한 및 위치 예측 개선의 범위를 보완했습니다. 현재 PDF는 6쪽이며 수치와 원시 실험 결과를 교체하지 않았습니다.
+2026-10-22에 로봇 조작·학습 동역학·실험 설계의 리뷰어 관점으로 다시 검토했습니다. E1이 초기·2.9초의 목표에서 먼 구간만 다룬다는 점, E2 성공 차이가 단 한 쌍에서 나왔다는 점, 수렴·기준선·원인 규명의 한계를 추가했습니다. 현재 PDF는 6쪽이며 원래 실험 결과를 교체하지 않았습니다. 추가 수치는 저장 배열의 사후 기술 분석입니다.
 
-- [발견 사항·수정 및 남은 연구 한계](content_review.ko.md)
-- [현재 내용·빌드·전체 페이지 검토 기록](../artifacts/validation/paper_content_review.v2.json)
-- [수치 재계산 기록](../artifacts/validation/paper_results_review.v2.json)
+- [현재 리뷰어 관점 평가와 보완 우선순위](../docs/reviewer_assessment.ko.md)
+- [현재 문서·빌드·전체 페이지 검토 기록](../artifacts/validation/document_review.v3.json)
+- [현재 수치 재계산 기록](../artifacts/validation/paper_results_review.v3.json)
+- [2026-10-21 내용 검토와 수정 기록](content_review.ko.md)
 - [이전 버전의 형식·빌드 검토 기록](../artifacts/validation/paper_review.json)
 
-저장된 E1/E2 통계, 예측 표 및 그림의 family 평균을 확인하는 공개 검산은 다음과 같습니다. NumPy가 필요하며 모델 호출·물리 실행·재학습은 하지 않습니다.
+저장된 E1/E2 통계, 예측 표 및 그림의 family 평균을 확인하는 공개 검산은 다음과 같습니다. Python 3.11 이상·NumPy가 필요하며 모델 호출·물리 실행·재학습은 하지 않습니다.
 
     python -B scripts/verify_paper_results.py
 
