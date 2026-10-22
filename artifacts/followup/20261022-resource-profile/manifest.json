@@ -1,0 +1,38 @@
+{
+  "schema": "followup-resource-profile-public-files-v1",
+  "scope": "Byte-identical measurement entry/summary copies, derived weighted budget, and raw hashes; no raw payloads.",
+  "file_count_excluding_manifest": 6,
+  "bytes_excluding_manifest": 396051,
+  "files": [
+    {
+      "path": "compute/entry.json",
+      "sha256": "5d4e7befc72b187e65755f4e7e424e805bb1147dada63f0ddd95ed3686e5e052",
+      "bytes": 148249
+    },
+    {
+      "path": "compute/summary.json",
+      "sha256": "459457265a20ab0b71878db4a51b7df5893dee6f4ae73885af91152e0807691d",
+      "bytes": 27538
+    },
+    {
+      "path": "io/entry.json",
+      "sha256": "13e71445e124da15496671f626abf1c6a76941503d16217e71bd45cd6adf3d2d",
+      "bytes": 3378
+    },
+    {
+      "path": "io/summary.json",
+      "sha256": "dd086fc96bcb9954988b912713141a1f2b3e500e2914ca3d8bf713b051c88457",
+      "bytes": 164934
+    },
+    {
+      "path": "local_raw_inventory.json",
+      "sha256": "13cf14a22861f5baab053478e274e73794a889e6592e438f2cef1cdb4f530689",
+      "bytes": 30108
+    },
+    {
+      "path": "resource_summary.json",
+      "sha256": "83f49fdb1bc604cf9810c3b6f9d833398a175623d7a9e4f93de095d5b27064c4",
+      "bytes": 21844
+    }
+  ]
+}

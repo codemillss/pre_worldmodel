@@ -44,3 +44,5 @@ python tools/export_publication_reports.py --font /path/to/Korean-capable.ttf
 ## 후속 실험과 기존 논문의 경계
 
 D1/D2 복원·사전 실행은 [별도 개발 기록](followup_restore_and_pilot.ko.md)으로 관리합니다. 실행 전 v1 설계·검토·원래 동결 결과는 보존하고, 현재 README에서 실행 상태와 새 선별 자료를 연결합니다. 이번 작은 실험의 수치를 기존 E1/E2나 논문의 결과표에 합치지 않습니다. 원래 논문·PDF의 v4 검토와 후속 실행 검토는 서로 다른 SHA·범위의 이력입니다.
+
+[저장·재현 시간 분리 측정](followup_resource_profile.ko.md)은 이후의 실행 비용 검토입니다. 새 측정 raw·기존 raw를 보존하고, 계산·기록 측정과 다음 범위의 자원 추정을 구별합니다. N-T 전체128후보를 사전 검사 대상으로 권고했으며 원래 D3 전체나 새 부분 진단의 실행 완료로 표시하지 않습니다.

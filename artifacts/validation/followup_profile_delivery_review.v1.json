@@ -1,0 +1,57 @@
+{
+  "schema": "followup-profile-delivery-review-v1",
+  "reviewed_at_utc": "2026-10-22T05:53:53.042817+00:00",
+  "status": "PROFILE_VERIFIED_NT_SCOPE_READY_FOR_DRIVER_PREFLIGHT_ONLY",
+  "base_commit": "80a2cb0791ca5c04b4a4732e2ffbb8f844c612d6",
+  "working_branch": "main",
+  "preserved_branch": "codex/frozen-main-before-followup-20261022",
+  "preserved_branch_commit": "6d6d1fde2793676708cdb32e1843f9162de01c85",
+  "current_payload_sha256": {
+    "README.md": "c2c1ae894386710b6e3fc9c5d50de80cae63d38784e9ad2a0c0b36934fc52ac9",
+    "artifacts/followup/20261022-resource-profile/compute/entry.json": "5d4e7befc72b187e65755f4e7e424e805bb1147dada63f0ddd95ed3686e5e052",
+    "artifacts/followup/20261022-resource-profile/compute/summary.json": "459457265a20ab0b71878db4a51b7df5893dee6f4ae73885af91152e0807691d",
+    "artifacts/followup/20261022-resource-profile/io/entry.json": "13e71445e124da15496671f626abf1c6a76941503d16217e71bd45cd6adf3d2d",
+    "artifacts/followup/20261022-resource-profile/io/summary.json": "dd086fc96bcb9954988b912713141a1f2b3e500e2914ca3d8bf713b051c88457",
+    "artifacts/followup/20261022-resource-profile/local_raw_inventory.json": "13cf14a22861f5baab053478e274e73794a889e6592e438f2cef1cdb4f530689",
+    "artifacts/followup/20261022-resource-profile/manifest.json": "0128075d797b5ed22d5be4f43906ab625c46a69e4bafe22dcb04d3f4296f37e6",
+    "artifacts/followup/20261022-resource-profile/resource_summary.json": "83f49fdb1bc604cf9810c3b6f9d833398a175623d7a9e4f93de095d5b27064c4",
+    "artifacts/index.md": "9e27685ee97a695cb96ae05cdd7361ed513572fafb500153a85a1d5869f68ad0",
+    "artifacts/validation/followup_profile_execution_review.v1.json": "1fe071039a0cf5257d5932cf8347d7f152d18b477c00243143358f514872a6da",
+    "artifacts/validation/followup_profile_public_results.v1.json": "34aea7d5d5813e12ecb1d24e42e800d7de6932a7fbfdfd396f0b92b4aa82e067",
+    "docs/documentation.ko.md": "1c20e898add078e1fe81ef032293d1837b6ce57c843eb36f02e69f32c7f3406d",
+    "docs/followup_resource_profile.ko.md": "c5fcd2a10e66e3e15cc88a29224a40bb8e2f605537202baed99a4fa2c62750dc",
+    "docs/followup_restore_and_pilot.ko.md": "4a5a396bac7103db68c870aa329b26dc6fdfa5bca4f334db847c9369af153927",
+    "scripts/profile_followup_compute.py": "995a6449adb4906081d9ad8b4e7b213d84d16e1a5ce2c4e4f15f5327c50437fb",
+    "scripts/profile_followup_io.py": "82e6a34875a2e3b48850804f96267ca14cd83726e1b941a95658bfabd70833f0",
+    "scripts/verify_followup_resource_profile.py": "1f20419ed06e8f378146fd058a6020061b8bb8547965b2a183d67a77306621d0",
+    "tools/build_followup_resource_profile.py": "4e547da7b2e8b983afe75e34868aacd5f082bd64c3c4c6e03b65864ee2737f13"
+  },
+  "unchanged_existing_inventory_files": 1070,
+  "all_previous_scientific_source_models_results_and_PDFs_unchanged": true,
+  "private_path_or_local_link_issues": [],
+  "execution_audit": {
+    "path": "artifacts/validation/followup_profile_execution_review.v1.json",
+    "sha256": "1fe071039a0cf5257d5932cf8347d7f152d18b477c00243143358f514872a6da"
+  },
+  "public_arithmetic_verification": {
+    "path": "artifacts/validation/followup_profile_public_results.v1.json",
+    "sha256": "34aea7d5d5813e12ecb1d24e42e800d7de6932a7fbfdfd396f0b92b4aa82e067"
+  },
+  "claims": {
+    "timed_compute_trials": 27,
+    "timed_IO_cases": 27,
+    "computed_intervals": 174,
+    "exact_comparison_percent": 74.67628960922181,
+    "recommended_scope": "N-T original128 IDs / seven models / A+B / three physical repeats / no D2 reuse / no extension",
+    "new_scientific_experiment": "NOT_RUN",
+    "original_six_state_D3": "NOT_RUN_RESOURCE_HOLD",
+    "cumulative_planning_minutes": 71.87915720462179,
+    "cumulative_planning_GiB": 0.6992219258099794
+  },
+  "review_scope": "Independent saved-raw audit plus root public arithmetic, original inventory hashes and document/link review. Original and profile full raw remain local; all scientific checks retained. Current producer runtime fullProbe comparisons and saved-raw audit have distinct scopes.",
+  "remaining_limitations": [
+    "Nine selected timing groups and warm filesystem measurements do not bound every future candidate.",
+    "120 seconds per state for fixed work is a planning allowance; next driver and resource preflight are still required.",
+    "Historical paper/PDFs unchanged; followup record is Markdown with public machine-readable evidence."
+  ]
+}

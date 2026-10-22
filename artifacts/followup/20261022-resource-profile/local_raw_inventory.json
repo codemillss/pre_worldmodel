@@ -1,0 +1,1035 @@
+{
+  "schema": "followup-profile-local-raw-inventory-v1",
+  "scope": "Hashes and byte counts only. Complete new raw pairs remain in the local measurement run and are not included in this public artifact.",
+  "pair_count": 54,
+  "file_count": 108,
+  "raw_bytes": 20624754,
+  "records": [
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "A",
+      "repeat": 0,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-012/A/repeat-0/raw.raw.columns.xz",
+          "sha256": "e078431cf7ef863b2797ce391923a0e31440a309dceec301d24ebe9e49c76302",
+          "bytes": 164976
+        },
+        {
+          "path": "compute/F-O0/candidate-012/A/repeat-0/raw.raw.npz",
+          "sha256": "c8af4236edfdce56aaeab22f2eed65c956f76b2cd581cffffb75fae6eea13dbc",
+          "bytes": 65591
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "A",
+      "repeat": 1,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-012/A/repeat-1/raw.raw.columns.xz",
+          "sha256": "e078431cf7ef863b2797ce391923a0e31440a309dceec301d24ebe9e49c76302",
+          "bytes": 164976
+        },
+        {
+          "path": "compute/F-O0/candidate-012/A/repeat-1/raw.raw.npz",
+          "sha256": "c8af4236edfdce56aaeab22f2eed65c956f76b2cd581cffffb75fae6eea13dbc",
+          "bytes": 65591
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "A",
+      "repeat": 2,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-012/A/repeat-2/raw.raw.columns.xz",
+          "sha256": "e078431cf7ef863b2797ce391923a0e31440a309dceec301d24ebe9e49c76302",
+          "bytes": 164976
+        },
+        {
+          "path": "compute/F-O0/candidate-012/A/repeat-2/raw.raw.npz",
+          "sha256": "c8af4236edfdce56aaeab22f2eed65c956f76b2cd581cffffb75fae6eea13dbc",
+          "bytes": 65591
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "B",
+      "repeat": 0,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-012/B/repeat-0/raw.raw.columns.xz",
+          "sha256": "7461a8aad4953e585b6b69d482695b426af7ca6a97454a9afb5242150388f8f8",
+          "bytes": 234400
+        },
+        {
+          "path": "compute/F-O0/candidate-012/B/repeat-0/raw.raw.npz",
+          "sha256": "d5b2d1513eaca3b2462139ad2fb4f11744b46d3328a3388cacd0effaed339f7b",
+          "bytes": 99358
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "B",
+      "repeat": 1,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-012/B/repeat-1/raw.raw.columns.xz",
+          "sha256": "7461a8aad4953e585b6b69d482695b426af7ca6a97454a9afb5242150388f8f8",
+          "bytes": 234400
+        },
+        {
+          "path": "compute/F-O0/candidate-012/B/repeat-1/raw.raw.npz",
+          "sha256": "d5b2d1513eaca3b2462139ad2fb4f11744b46d3328a3388cacd0effaed339f7b",
+          "bytes": 99358
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "B",
+      "repeat": 2,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-012/B/repeat-2/raw.raw.columns.xz",
+          "sha256": "7461a8aad4953e585b6b69d482695b426af7ca6a97454a9afb5242150388f8f8",
+          "bytes": 234400
+        },
+        {
+          "path": "compute/F-O0/candidate-012/B/repeat-2/raw.raw.npz",
+          "sha256": "d5b2d1513eaca3b2462139ad2fb4f11744b46d3328a3388cacd0effaed339f7b",
+          "bytes": 99358
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "A",
+      "repeat": 0,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-013/A/repeat-0/raw.raw.columns.xz",
+          "sha256": "04354e97f745e0f2d2c2914d496d1325ae93107f7850583201d7af70c9f0e8fc",
+          "bytes": 362228
+        },
+        {
+          "path": "compute/F-O0/candidate-013/A/repeat-0/raw.raw.npz",
+          "sha256": "a37546cd8940d1003af3b2f0bb49c8dcbdfc017fe9c28b622066f5b87ddd29ce",
+          "bytes": 78634
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "A",
+      "repeat": 1,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-013/A/repeat-1/raw.raw.columns.xz",
+          "sha256": "04354e97f745e0f2d2c2914d496d1325ae93107f7850583201d7af70c9f0e8fc",
+          "bytes": 362228
+        },
+        {
+          "path": "compute/F-O0/candidate-013/A/repeat-1/raw.raw.npz",
+          "sha256": "a37546cd8940d1003af3b2f0bb49c8dcbdfc017fe9c28b622066f5b87ddd29ce",
+          "bytes": 78634
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "A",
+      "repeat": 2,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-013/A/repeat-2/raw.raw.columns.xz",
+          "sha256": "04354e97f745e0f2d2c2914d496d1325ae93107f7850583201d7af70c9f0e8fc",
+          "bytes": 362228
+        },
+        {
+          "path": "compute/F-O0/candidate-013/A/repeat-2/raw.raw.npz",
+          "sha256": "a37546cd8940d1003af3b2f0bb49c8dcbdfc017fe9c28b622066f5b87ddd29ce",
+          "bytes": 78634
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "B",
+      "repeat": 0,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-013/B/repeat-0/raw.raw.columns.xz",
+          "sha256": "5f3d8a5e4fc1fc9e86310bb1bc52e714fe10bcebdadda6155085ad44ad2f5b51",
+          "bytes": 469412
+        },
+        {
+          "path": "compute/F-O0/candidate-013/B/repeat-0/raw.raw.npz",
+          "sha256": "b2ebab741a00ee8470cff7561f7ff345f1d9395c0b1b95d4857c99c9fc7e28c3",
+          "bytes": 115765
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "B",
+      "repeat": 1,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-013/B/repeat-1/raw.raw.columns.xz",
+          "sha256": "5f3d8a5e4fc1fc9e86310bb1bc52e714fe10bcebdadda6155085ad44ad2f5b51",
+          "bytes": 469412
+        },
+        {
+          "path": "compute/F-O0/candidate-013/B/repeat-1/raw.raw.npz",
+          "sha256": "b2ebab741a00ee8470cff7561f7ff345f1d9395c0b1b95d4857c99c9fc7e28c3",
+          "bytes": 115765
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "B",
+      "repeat": 2,
+      "files": [
+        {
+          "path": "compute/F-O0/candidate-013/B/repeat-2/raw.raw.columns.xz",
+          "sha256": "5f3d8a5e4fc1fc9e86310bb1bc52e714fe10bcebdadda6155085ad44ad2f5b51",
+          "bytes": 469412
+        },
+        {
+          "path": "compute/F-O0/candidate-013/B/repeat-2/raw.raw.npz",
+          "sha256": "b2ebab741a00ee8470cff7561f7ff345f1d9395c0b1b95d4857c99c9fc7e28c3",
+          "bytes": 115765
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 2,
+      "panel": "A",
+      "repeat": 0,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-002/A/repeat-0/raw.raw.columns.xz",
+          "sha256": "dfbecaec510af63050fd4f2d043eb3d4b325b3acd4aa726c1d842ccded912f5b",
+          "bytes": 126896
+        },
+        {
+          "path": "compute/N-T/candidate-002/A/repeat-0/raw.raw.npz",
+          "sha256": "356ee6ff42015e4bfd4ca4f75344a0ddb02674f16350bd70d387e91e7ed8fe53",
+          "bytes": 60293
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 2,
+      "panel": "A",
+      "repeat": 1,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-002/A/repeat-1/raw.raw.columns.xz",
+          "sha256": "dfbecaec510af63050fd4f2d043eb3d4b325b3acd4aa726c1d842ccded912f5b",
+          "bytes": 126896
+        },
+        {
+          "path": "compute/N-T/candidate-002/A/repeat-1/raw.raw.npz",
+          "sha256": "356ee6ff42015e4bfd4ca4f75344a0ddb02674f16350bd70d387e91e7ed8fe53",
+          "bytes": 60293
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 2,
+      "panel": "A",
+      "repeat": 2,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-002/A/repeat-2/raw.raw.columns.xz",
+          "sha256": "dfbecaec510af63050fd4f2d043eb3d4b325b3acd4aa726c1d842ccded912f5b",
+          "bytes": 126896
+        },
+        {
+          "path": "compute/N-T/candidate-002/A/repeat-2/raw.raw.npz",
+          "sha256": "356ee6ff42015e4bfd4ca4f75344a0ddb02674f16350bd70d387e91e7ed8fe53",
+          "bytes": 60293
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 5,
+      "panel": "B",
+      "repeat": 0,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-005/B/repeat-0/raw.raw.columns.xz",
+          "sha256": "450193da9dc5f82671dd43a9e855413e99357d811274a29094fe3a9ba2a2b5db",
+          "bytes": 188304
+        },
+        {
+          "path": "compute/N-T/candidate-005/B/repeat-0/raw.raw.npz",
+          "sha256": "4d59f748daf38b8bcf7c51de7f410123148ad39a52169480ee179fd4e3b72691",
+          "bytes": 93966
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 5,
+      "panel": "B",
+      "repeat": 1,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-005/B/repeat-1/raw.raw.columns.xz",
+          "sha256": "450193da9dc5f82671dd43a9e855413e99357d811274a29094fe3a9ba2a2b5db",
+          "bytes": 188304
+        },
+        {
+          "path": "compute/N-T/candidate-005/B/repeat-1/raw.raw.npz",
+          "sha256": "4d59f748daf38b8bcf7c51de7f410123148ad39a52169480ee179fd4e3b72691",
+          "bytes": 93966
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 5,
+      "panel": "B",
+      "repeat": 2,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-005/B/repeat-2/raw.raw.columns.xz",
+          "sha256": "450193da9dc5f82671dd43a9e855413e99357d811274a29094fe3a9ba2a2b5db",
+          "bytes": 188304
+        },
+        {
+          "path": "compute/N-T/candidate-005/B/repeat-2/raw.raw.npz",
+          "sha256": "4d59f748daf38b8bcf7c51de7f410123148ad39a52169480ee179fd4e3b72691",
+          "bytes": 93966
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "A",
+      "repeat": 0,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-009/A/repeat-0/raw.raw.columns.xz",
+          "sha256": "53084a597b5eb7c00a6dc9144c3aed6d093b84c132b31e9c249a5c2f2ffc354b",
+          "bytes": 338504
+        },
+        {
+          "path": "compute/N-T/candidate-009/A/repeat-0/raw.raw.npz",
+          "sha256": "013c55b05e10db1d65c4a3fb631bf5a555a3ed0528329e90862d737aa9d3b9e8",
+          "bytes": 79188
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "A",
+      "repeat": 1,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-009/A/repeat-1/raw.raw.columns.xz",
+          "sha256": "53084a597b5eb7c00a6dc9144c3aed6d093b84c132b31e9c249a5c2f2ffc354b",
+          "bytes": 338504
+        },
+        {
+          "path": "compute/N-T/candidate-009/A/repeat-1/raw.raw.npz",
+          "sha256": "013c55b05e10db1d65c4a3fb631bf5a555a3ed0528329e90862d737aa9d3b9e8",
+          "bytes": 79188
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "A",
+      "repeat": 2,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-009/A/repeat-2/raw.raw.columns.xz",
+          "sha256": "53084a597b5eb7c00a6dc9144c3aed6d093b84c132b31e9c249a5c2f2ffc354b",
+          "bytes": 338504
+        },
+        {
+          "path": "compute/N-T/candidate-009/A/repeat-2/raw.raw.npz",
+          "sha256": "013c55b05e10db1d65c4a3fb631bf5a555a3ed0528329e90862d737aa9d3b9e8",
+          "bytes": 79188
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "B",
+      "repeat": 0,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-009/B/repeat-0/raw.raw.columns.xz",
+          "sha256": "bcbb76377f8b4d574ac4dfc321ecb400a494f6a40bbba411931ad2347d78c42b",
+          "bytes": 265328
+        },
+        {
+          "path": "compute/N-T/candidate-009/B/repeat-0/raw.raw.npz",
+          "sha256": "c49905fd52e718e8c639bf82af7458305390dafbab94b8d7c23c628d6c000c87",
+          "bytes": 83244
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "B",
+      "repeat": 1,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-009/B/repeat-1/raw.raw.columns.xz",
+          "sha256": "bcbb76377f8b4d574ac4dfc321ecb400a494f6a40bbba411931ad2347d78c42b",
+          "bytes": 265328
+        },
+        {
+          "path": "compute/N-T/candidate-009/B/repeat-1/raw.raw.npz",
+          "sha256": "c49905fd52e718e8c639bf82af7458305390dafbab94b8d7c23c628d6c000c87",
+          "bytes": 83244
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "B",
+      "repeat": 2,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-009/B/repeat-2/raw.raw.columns.xz",
+          "sha256": "bcbb76377f8b4d574ac4dfc321ecb400a494f6a40bbba411931ad2347d78c42b",
+          "bytes": 265328
+        },
+        {
+          "path": "compute/N-T/candidate-009/B/repeat-2/raw.raw.npz",
+          "sha256": "c49905fd52e718e8c639bf82af7458305390dafbab94b8d7c23c628d6c000c87",
+          "bytes": 83244
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 14,
+      "panel": "B",
+      "repeat": 0,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-014/B/repeat-0/raw.raw.columns.xz",
+          "sha256": "3cbc3aed30c30298aabcf48f45778a863a21399311151ef830d981af55f85b23",
+          "bytes": 493432
+        },
+        {
+          "path": "compute/N-T/candidate-014/B/repeat-0/raw.raw.npz",
+          "sha256": "47b5d89956dd54fc9e24b69ea91c092a5dd1054f041884406a0e20ce3b4e1d1c",
+          "bytes": 117940
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 14,
+      "panel": "B",
+      "repeat": 1,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-014/B/repeat-1/raw.raw.columns.xz",
+          "sha256": "3cbc3aed30c30298aabcf48f45778a863a21399311151ef830d981af55f85b23",
+          "bytes": 493432
+        },
+        {
+          "path": "compute/N-T/candidate-014/B/repeat-1/raw.raw.npz",
+          "sha256": "47b5d89956dd54fc9e24b69ea91c092a5dd1054f041884406a0e20ce3b4e1d1c",
+          "bytes": 117940
+        }
+      ]
+    },
+    {
+      "measurement": "compute",
+      "state": "N-T",
+      "candidate_id": 14,
+      "panel": "B",
+      "repeat": 2,
+      "files": [
+        {
+          "path": "compute/N-T/candidate-014/B/repeat-2/raw.raw.columns.xz",
+          "sha256": "3cbc3aed30c30298aabcf48f45778a863a21399311151ef830d981af55f85b23",
+          "bytes": 493432
+        },
+        {
+          "path": "compute/N-T/candidate-014/B/repeat-2/raw.raw.npz",
+          "sha256": "47b5d89956dd54fc9e24b69ea91c092a5dd1054f041884406a0e20ce3b4e1d1c",
+          "bytes": 117940
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "A",
+      "pass": 0,
+      "files": [
+        {
+          "path": "io/pass-00/case-000/raw.raw.columns.xz",
+          "sha256": "e078431cf7ef863b2797ce391923a0e31440a309dceec301d24ebe9e49c76302",
+          "bytes": 164976
+        },
+        {
+          "path": "io/pass-00/case-000/raw.raw.npz",
+          "sha256": "c8af4236edfdce56aaeab22f2eed65c956f76b2cd581cffffb75fae6eea13dbc",
+          "bytes": 65591
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "A",
+      "pass": 0,
+      "files": [
+        {
+          "path": "io/pass-00/case-001/raw.raw.columns.xz",
+          "sha256": "04354e97f745e0f2d2c2914d496d1325ae93107f7850583201d7af70c9f0e8fc",
+          "bytes": 362228
+        },
+        {
+          "path": "io/pass-00/case-001/raw.raw.npz",
+          "sha256": "a37546cd8940d1003af3b2f0bb49c8dcbdfc017fe9c28b622066f5b87ddd29ce",
+          "bytes": 78634
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "B",
+      "pass": 0,
+      "files": [
+        {
+          "path": "io/pass-00/case-002/raw.raw.columns.xz",
+          "sha256": "7461a8aad4953e585b6b69d482695b426af7ca6a97454a9afb5242150388f8f8",
+          "bytes": 234400
+        },
+        {
+          "path": "io/pass-00/case-002/raw.raw.npz",
+          "sha256": "d5b2d1513eaca3b2462139ad2fb4f11744b46d3328a3388cacd0effaed339f7b",
+          "bytes": 99358
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "B",
+      "pass": 0,
+      "files": [
+        {
+          "path": "io/pass-00/case-003/raw.raw.columns.xz",
+          "sha256": "5f3d8a5e4fc1fc9e86310bb1bc52e714fe10bcebdadda6155085ad44ad2f5b51",
+          "bytes": 469412
+        },
+        {
+          "path": "io/pass-00/case-003/raw.raw.npz",
+          "sha256": "b2ebab741a00ee8470cff7561f7ff345f1d9395c0b1b95d4857c99c9fc7e28c3",
+          "bytes": 115765
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 2,
+      "panel": "A",
+      "pass": 0,
+      "files": [
+        {
+          "path": "io/pass-00/case-004/raw.raw.columns.xz",
+          "sha256": "dfbecaec510af63050fd4f2d043eb3d4b325b3acd4aa726c1d842ccded912f5b",
+          "bytes": 126896
+        },
+        {
+          "path": "io/pass-00/case-004/raw.raw.npz",
+          "sha256": "356ee6ff42015e4bfd4ca4f75344a0ddb02674f16350bd70d387e91e7ed8fe53",
+          "bytes": 60293
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "A",
+      "pass": 0,
+      "files": [
+        {
+          "path": "io/pass-00/case-005/raw.raw.columns.xz",
+          "sha256": "53084a597b5eb7c00a6dc9144c3aed6d093b84c132b31e9c249a5c2f2ffc354b",
+          "bytes": 338504
+        },
+        {
+          "path": "io/pass-00/case-005/raw.raw.npz",
+          "sha256": "013c55b05e10db1d65c4a3fb631bf5a555a3ed0528329e90862d737aa9d3b9e8",
+          "bytes": 79188
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 5,
+      "panel": "B",
+      "pass": 0,
+      "files": [
+        {
+          "path": "io/pass-00/case-006/raw.raw.columns.xz",
+          "sha256": "450193da9dc5f82671dd43a9e855413e99357d811274a29094fe3a9ba2a2b5db",
+          "bytes": 188304
+        },
+        {
+          "path": "io/pass-00/case-006/raw.raw.npz",
+          "sha256": "4d59f748daf38b8bcf7c51de7f410123148ad39a52169480ee179fd4e3b72691",
+          "bytes": 93966
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "B",
+      "pass": 0,
+      "files": [
+        {
+          "path": "io/pass-00/case-007/raw.raw.columns.xz",
+          "sha256": "bcbb76377f8b4d574ac4dfc321ecb400a494f6a40bbba411931ad2347d78c42b",
+          "bytes": 265328
+        },
+        {
+          "path": "io/pass-00/case-007/raw.raw.npz",
+          "sha256": "c49905fd52e718e8c639bf82af7458305390dafbab94b8d7c23c628d6c000c87",
+          "bytes": 83244
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 14,
+      "panel": "B",
+      "pass": 0,
+      "files": [
+        {
+          "path": "io/pass-00/case-008/raw.raw.columns.xz",
+          "sha256": "3cbc3aed30c30298aabcf48f45778a863a21399311151ef830d981af55f85b23",
+          "bytes": 493432
+        },
+        {
+          "path": "io/pass-00/case-008/raw.raw.npz",
+          "sha256": "47b5d89956dd54fc9e24b69ea91c092a5dd1054f041884406a0e20ce3b4e1d1c",
+          "bytes": 117940
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "A",
+      "pass": 1,
+      "files": [
+        {
+          "path": "io/pass-01/case-000/raw.raw.columns.xz",
+          "sha256": "e078431cf7ef863b2797ce391923a0e31440a309dceec301d24ebe9e49c76302",
+          "bytes": 164976
+        },
+        {
+          "path": "io/pass-01/case-000/raw.raw.npz",
+          "sha256": "c8af4236edfdce56aaeab22f2eed65c956f76b2cd581cffffb75fae6eea13dbc",
+          "bytes": 65591
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "A",
+      "pass": 1,
+      "files": [
+        {
+          "path": "io/pass-01/case-001/raw.raw.columns.xz",
+          "sha256": "04354e97f745e0f2d2c2914d496d1325ae93107f7850583201d7af70c9f0e8fc",
+          "bytes": 362228
+        },
+        {
+          "path": "io/pass-01/case-001/raw.raw.npz",
+          "sha256": "a37546cd8940d1003af3b2f0bb49c8dcbdfc017fe9c28b622066f5b87ddd29ce",
+          "bytes": 78634
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "B",
+      "pass": 1,
+      "files": [
+        {
+          "path": "io/pass-01/case-002/raw.raw.columns.xz",
+          "sha256": "7461a8aad4953e585b6b69d482695b426af7ca6a97454a9afb5242150388f8f8",
+          "bytes": 234400
+        },
+        {
+          "path": "io/pass-01/case-002/raw.raw.npz",
+          "sha256": "d5b2d1513eaca3b2462139ad2fb4f11744b46d3328a3388cacd0effaed339f7b",
+          "bytes": 99358
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "B",
+      "pass": 1,
+      "files": [
+        {
+          "path": "io/pass-01/case-003/raw.raw.columns.xz",
+          "sha256": "5f3d8a5e4fc1fc9e86310bb1bc52e714fe10bcebdadda6155085ad44ad2f5b51",
+          "bytes": 469412
+        },
+        {
+          "path": "io/pass-01/case-003/raw.raw.npz",
+          "sha256": "b2ebab741a00ee8470cff7561f7ff345f1d9395c0b1b95d4857c99c9fc7e28c3",
+          "bytes": 115765
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 2,
+      "panel": "A",
+      "pass": 1,
+      "files": [
+        {
+          "path": "io/pass-01/case-004/raw.raw.columns.xz",
+          "sha256": "dfbecaec510af63050fd4f2d043eb3d4b325b3acd4aa726c1d842ccded912f5b",
+          "bytes": 126896
+        },
+        {
+          "path": "io/pass-01/case-004/raw.raw.npz",
+          "sha256": "356ee6ff42015e4bfd4ca4f75344a0ddb02674f16350bd70d387e91e7ed8fe53",
+          "bytes": 60293
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "A",
+      "pass": 1,
+      "files": [
+        {
+          "path": "io/pass-01/case-005/raw.raw.columns.xz",
+          "sha256": "53084a597b5eb7c00a6dc9144c3aed6d093b84c132b31e9c249a5c2f2ffc354b",
+          "bytes": 338504
+        },
+        {
+          "path": "io/pass-01/case-005/raw.raw.npz",
+          "sha256": "013c55b05e10db1d65c4a3fb631bf5a555a3ed0528329e90862d737aa9d3b9e8",
+          "bytes": 79188
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 5,
+      "panel": "B",
+      "pass": 1,
+      "files": [
+        {
+          "path": "io/pass-01/case-006/raw.raw.columns.xz",
+          "sha256": "450193da9dc5f82671dd43a9e855413e99357d811274a29094fe3a9ba2a2b5db",
+          "bytes": 188304
+        },
+        {
+          "path": "io/pass-01/case-006/raw.raw.npz",
+          "sha256": "4d59f748daf38b8bcf7c51de7f410123148ad39a52169480ee179fd4e3b72691",
+          "bytes": 93966
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "B",
+      "pass": 1,
+      "files": [
+        {
+          "path": "io/pass-01/case-007/raw.raw.columns.xz",
+          "sha256": "bcbb76377f8b4d574ac4dfc321ecb400a494f6a40bbba411931ad2347d78c42b",
+          "bytes": 265328
+        },
+        {
+          "path": "io/pass-01/case-007/raw.raw.npz",
+          "sha256": "c49905fd52e718e8c639bf82af7458305390dafbab94b8d7c23c628d6c000c87",
+          "bytes": 83244
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 14,
+      "panel": "B",
+      "pass": 1,
+      "files": [
+        {
+          "path": "io/pass-01/case-008/raw.raw.columns.xz",
+          "sha256": "3cbc3aed30c30298aabcf48f45778a863a21399311151ef830d981af55f85b23",
+          "bytes": 493432
+        },
+        {
+          "path": "io/pass-01/case-008/raw.raw.npz",
+          "sha256": "47b5d89956dd54fc9e24b69ea91c092a5dd1054f041884406a0e20ce3b4e1d1c",
+          "bytes": 117940
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "A",
+      "pass": 2,
+      "files": [
+        {
+          "path": "io/pass-02/case-000/raw.raw.columns.xz",
+          "sha256": "e078431cf7ef863b2797ce391923a0e31440a309dceec301d24ebe9e49c76302",
+          "bytes": 164976
+        },
+        {
+          "path": "io/pass-02/case-000/raw.raw.npz",
+          "sha256": "c8af4236edfdce56aaeab22f2eed65c956f76b2cd581cffffb75fae6eea13dbc",
+          "bytes": 65591
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "A",
+      "pass": 2,
+      "files": [
+        {
+          "path": "io/pass-02/case-001/raw.raw.columns.xz",
+          "sha256": "04354e97f745e0f2d2c2914d496d1325ae93107f7850583201d7af70c9f0e8fc",
+          "bytes": 362228
+        },
+        {
+          "path": "io/pass-02/case-001/raw.raw.npz",
+          "sha256": "a37546cd8940d1003af3b2f0bb49c8dcbdfc017fe9c28b622066f5b87ddd29ce",
+          "bytes": 78634
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 12,
+      "panel": "B",
+      "pass": 2,
+      "files": [
+        {
+          "path": "io/pass-02/case-002/raw.raw.columns.xz",
+          "sha256": "7461a8aad4953e585b6b69d482695b426af7ca6a97454a9afb5242150388f8f8",
+          "bytes": 234400
+        },
+        {
+          "path": "io/pass-02/case-002/raw.raw.npz",
+          "sha256": "d5b2d1513eaca3b2462139ad2fb4f11744b46d3328a3388cacd0effaed339f7b",
+          "bytes": 99358
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "F-O0",
+      "candidate_id": 13,
+      "panel": "B",
+      "pass": 2,
+      "files": [
+        {
+          "path": "io/pass-02/case-003/raw.raw.columns.xz",
+          "sha256": "5f3d8a5e4fc1fc9e86310bb1bc52e714fe10bcebdadda6155085ad44ad2f5b51",
+          "bytes": 469412
+        },
+        {
+          "path": "io/pass-02/case-003/raw.raw.npz",
+          "sha256": "b2ebab741a00ee8470cff7561f7ff345f1d9395c0b1b95d4857c99c9fc7e28c3",
+          "bytes": 115765
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 2,
+      "panel": "A",
+      "pass": 2,
+      "files": [
+        {
+          "path": "io/pass-02/case-004/raw.raw.columns.xz",
+          "sha256": "dfbecaec510af63050fd4f2d043eb3d4b325b3acd4aa726c1d842ccded912f5b",
+          "bytes": 126896
+        },
+        {
+          "path": "io/pass-02/case-004/raw.raw.npz",
+          "sha256": "356ee6ff42015e4bfd4ca4f75344a0ddb02674f16350bd70d387e91e7ed8fe53",
+          "bytes": 60293
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "A",
+      "pass": 2,
+      "files": [
+        {
+          "path": "io/pass-02/case-005/raw.raw.columns.xz",
+          "sha256": "53084a597b5eb7c00a6dc9144c3aed6d093b84c132b31e9c249a5c2f2ffc354b",
+          "bytes": 338504
+        },
+        {
+          "path": "io/pass-02/case-005/raw.raw.npz",
+          "sha256": "013c55b05e10db1d65c4a3fb631bf5a555a3ed0528329e90862d737aa9d3b9e8",
+          "bytes": 79188
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 5,
+      "panel": "B",
+      "pass": 2,
+      "files": [
+        {
+          "path": "io/pass-02/case-006/raw.raw.columns.xz",
+          "sha256": "450193da9dc5f82671dd43a9e855413e99357d811274a29094fe3a9ba2a2b5db",
+          "bytes": 188304
+        },
+        {
+          "path": "io/pass-02/case-006/raw.raw.npz",
+          "sha256": "4d59f748daf38b8bcf7c51de7f410123148ad39a52169480ee179fd4e3b72691",
+          "bytes": 93966
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "B",
+      "pass": 2,
+      "files": [
+        {
+          "path": "io/pass-02/case-007/raw.raw.columns.xz",
+          "sha256": "bcbb76377f8b4d574ac4dfc321ecb400a494f6a40bbba411931ad2347d78c42b",
+          "bytes": 265328
+        },
+        {
+          "path": "io/pass-02/case-007/raw.raw.npz",
+          "sha256": "c49905fd52e718e8c639bf82af7458305390dafbab94b8d7c23c628d6c000c87",
+          "bytes": 83244
+        }
+      ]
+    },
+    {
+      "measurement": "io",
+      "state": "N-T",
+      "candidate_id": 14,
+      "panel": "B",
+      "pass": 2,
+      "files": [
+        {
+          "path": "io/pass-02/case-008/raw.raw.columns.xz",
+          "sha256": "3cbc3aed30c30298aabcf48f45778a863a21399311151ef830d981af55f85b23",
+          "bytes": 493432
+        },
+        {
+          "path": "io/pass-02/case-008/raw.raw.npz",
+          "sha256": "47b5d89956dd54fc9e24b69ea91c092a5dd1054f041884406a0e20ce3b4e1d1c",
+          "bytes": 117940
+        }
+      ]
+    }
+  ]
+}

@@ -76,4 +76,6 @@ PYTHONPATH=src:scripts:tests .venv/bin/python -B -m unittest \
 
 2026-10-22 D1/D2의 [실행 결과](../docs/followup_restore_and_pilot.ko.md)와 [선별 공개 자료](followup/20261022-d1-d2/manifest.json)를 추가했습니다. 전체 192개 raw는 로컬 원본에 보존하고, 공개본에는 복원 보고·일곱 모델 예측·첫 반복 경계/유지 배열과 raw 해시를 포함합니다. [독립 raw 검토](validation/followup_execution_review.v1.json)와 [공개 산식 검산](validation/followup_public_results.v1.json)의 범위를 구별합니다. D3 전체128후보 진단과 조건부 확장은 미실행입니다.
 
+이후 [저장·재현 비용 분리 측정](../docs/followup_resource_profile.ko.md)을 추가했습니다. 같은 9조합의 계산 3반복과 기록 3회 측정, [해시·요약](followup/20261022-resource-profile/manifest.json), [2시간 자원 계산서](followup/20261022-resource-profile/resource_summary.json), [독립 검토](validation/followup_profile_execution_review.v1.json)를 연결합니다. 원래 자료와 새 측정 raw는 로컬에 보존했고, N-T 전체128후보 부분 진단은 실행기 사전 검사 권고 상태입니다.
+
 v1 설계의 미실행 표시는 당시 기록이며 현재 진행 상태는 위 실행 결과가 기준입니다. 기존 학술 논문·보고서와 v4 검토는 원래 동결 비교의 문서 이력으로 유지합니다.

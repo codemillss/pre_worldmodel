@@ -3,7 +3,7 @@
   "as_of_kst": "2026-10-22",
   "repository": "https://github.com/codemillss/pre_worldmodel.git",
   "branch": "main",
-  "scope": "All tracked publication files, preserved frozen results/paper/PDFs, separately executed D1/D2 follow-up code and selected174-file diagnostic evidence. Full raw remains in original local run; self excluded.",
+  "scope": "All tracked publication files, byte-preserved frozen science/paper/PDFs, D1/D2 followup and separate resource-profile measurements. Full raw remains local; self excluded.",
   "original_core_evidence_SHA_verified": 20,
   "private_local_path_and_high_confidence_secret_patterns_found": 0,
   "files": [
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 17851,
-      "sha256": "b2c26e5261ce5fc85dd972d82121ca2cd3812553f583ed0ea8b2be1f4830ada8"
+      "bytes": 18624,
+      "sha256": "c2c1ae894386710b6e3fc9c5d50de80cae63d38784e9ad2a0c0b36934fc52ac9"
     },
     {
       "path": "artifacts/audits/p5_application_completion.v1.json",
@@ -973,9 +973,44 @@
       "sha256": "73b4d4d2242f97f6b706fbde77a9eb6da465e5c8450d680c3d7313d047e8d0e3"
     },
     {
+      "path": "artifacts/followup/20261022-resource-profile/compute/entry.json",
+      "bytes": 148249,
+      "sha256": "5d4e7befc72b187e65755f4e7e424e805bb1147dada63f0ddd95ed3686e5e052"
+    },
+    {
+      "path": "artifacts/followup/20261022-resource-profile/compute/summary.json",
+      "bytes": 27538,
+      "sha256": "459457265a20ab0b71878db4a51b7df5893dee6f4ae73885af91152e0807691d"
+    },
+    {
+      "path": "artifacts/followup/20261022-resource-profile/io/entry.json",
+      "bytes": 3378,
+      "sha256": "13e71445e124da15496671f626abf1c6a76941503d16217e71bd45cd6adf3d2d"
+    },
+    {
+      "path": "artifacts/followup/20261022-resource-profile/io/summary.json",
+      "bytes": 164934,
+      "sha256": "dd086fc96bcb9954988b912713141a1f2b3e500e2914ca3d8bf713b051c88457"
+    },
+    {
+      "path": "artifacts/followup/20261022-resource-profile/local_raw_inventory.json",
+      "bytes": 30108,
+      "sha256": "13cf14a22861f5baab053478e274e73794a889e6592e438f2cef1cdb4f530689"
+    },
+    {
+      "path": "artifacts/followup/20261022-resource-profile/manifest.json",
+      "bytes": 1202,
+      "sha256": "0128075d797b5ed22d5be4f43906ab625c46a69e4bafe22dcb04d3f4296f37e6"
+    },
+    {
+      "path": "artifacts/followup/20261022-resource-profile/resource_summary.json",
+      "bytes": 21844,
+      "sha256": "83f49fdb1bc604cf9810c3b6f9d833398a175623d7a9e4f93de095d5b27064c4"
+    },
+    {
       "path": "artifacts/index.md",
-      "bytes": 9008,
-      "sha256": "3f6e5c12d040f575f3c0cca239c74c410ced9b26096b1e10c67b6fc788256c46"
+      "bytes": 9562,
+      "sha256": "9e27685ee97a695cb96ae05cdd7361ed513572fafb500153a85a1d5869f68ad0"
     },
     {
       "path": "artifacts/learning/manifest.json",
@@ -3258,6 +3293,21 @@
       "sha256": "c5dcb0b9f465892e0cd0353c34d2a0505f09a90e8b8a44b56e854a7bd0ce1df1"
     },
     {
+      "path": "artifacts/validation/followup_profile_delivery_review.v1.json",
+      "bytes": 4349,
+      "sha256": "b19b30d6c72d001bbd1e4da52dc0f6807c9e0ce251a809f6fd5a045506661070"
+    },
+    {
+      "path": "artifacts/validation/followup_profile_execution_review.v1.json",
+      "bytes": 175631,
+      "sha256": "1fe071039a0cf5257d5932cf8347d7f152d18b477c00243143358f514872a6da"
+    },
+    {
+      "path": "artifacts/validation/followup_profile_public_results.v1.json",
+      "bytes": 1265,
+      "sha256": "34aea7d5d5813e12ecb1d24e42e800d7de6932a7fbfdfd396f0b92b4aa82e067"
+    },
+    {
       "path": "artifacts/validation/followup_public_results.v1.json",
       "bytes": 6877,
       "sha256": "92ef0a4e313146c3e621bbc567b4465080b32a8833713a79cb5032f4dc657b5e"
@@ -3669,13 +3719,18 @@
     },
     {
       "path": "docs/documentation.ko.md",
-      "bytes": 5329,
-      "sha256": "b0a572c25bbfd9729a06a98704e949904818473eff92b8dfae294caf69484b04"
+      "bytes": 5716,
+      "sha256": "1c20e898add078e1fe81ef032293d1837b6ce57c843eb36f02e69f32c7f3406d"
+    },
+    {
+      "path": "docs/followup_resource_profile.ko.md",
+      "bytes": 10198,
+      "sha256": "c5fcd2a10e66e3e15cc88a29224a40bb8e2f605537202baed99a4fa2c62750dc"
     },
     {
       "path": "docs/followup_restore_and_pilot.ko.md",
-      "bytes": 11653,
-      "sha256": "f52bef755a5075dfa936980e93314370bf7bdcb98f459cc6853580799d080f2c"
+      "bytes": 11898,
+      "sha256": "4a5a396bac7103db68c870aa329b26dc6fdfa5bca4f334db847c9369af153927"
     },
     {
       "path": "docs/near_goal_diagnostic_design.ko.md",
@@ -4073,6 +4128,16 @@
       "sha256": "292c2f94ba971d6452e9669b9cb5ed6c9251dd6a54324e1188d463de0e754760"
     },
     {
+      "path": "scripts/profile_followup_compute.py",
+      "bytes": 12424,
+      "sha256": "995a6449adb4906081d9ad8b4e7b213d84d16e1a5ce2c4e4f15f5327c50437fb"
+    },
+    {
+      "path": "scripts/profile_followup_io.py",
+      "bytes": 18078,
+      "sha256": "82e6a34875a2e3b48850804f96267ca14cd83726e1b941a95658bfabd70833f0"
+    },
+    {
       "path": "scripts/smoke_public.py",
       "bytes": 2950,
       "sha256": "69d6dd0fd1f3cf9f8ff5a163db33a978f7852672a4ec387da0e2babf55f96d20"
@@ -4081,6 +4146,11 @@
       "path": "scripts/verify_followup_pilot.py",
       "bytes": 6819,
       "sha256": "6e84df24b5a61f235d0b7a79acfb454f9738ba136745f6709e7797c8f3f95bd9"
+    },
+    {
+      "path": "scripts/verify_followup_resource_profile.py",
+      "bytes": 8256,
+      "sha256": "1f20419ed06e8f378146fd058a6020061b8bb8547965b2a183d67a77306621d0"
     },
     {
       "path": "scripts/verify_paper_results.py",
@@ -4988,6 +5058,11 @@
       "sha256": "8bdd60c9aad68cf4ebff36e2731237e7e843fd32c0db14354d8952e0789fbe6b"
     },
     {
+      "path": "tools/build_followup_resource_profile.py",
+      "bytes": 20726,
+      "sha256": "4e547da7b2e8b983afe75e34868aacd5f082bd64c3c4c6e03b65864ee2737f13"
+    },
+    {
       "path": "tools/build_p5_g2_resource_review.py",
       "bytes": 9173,
       "sha256": "2f7732788d958ef157f89aee59ed1fa44cbdfa5a6ccb54ebc8fa77887252010a"
@@ -5378,11 +5453,13 @@
       "sha256": "c1df1301e029821d68e09627506056d56b39164085fa3c527b04b92802a614ee"
     }
   ],
-  "total_files_excluding_self": 1074,
-  "total_bytes_excluding_self": 54549508,
+  "total_files_excluding_self": 1089,
+  "total_bytes_excluding_self": 55199647,
   "current_paper_content_review": "artifacts/validation/document_review.v4.json",
-  "current_document_review": "artifacts/validation/followup_delivery_review.v1.json",
-  "verification_scope_note": "Initial corecount20 retained historically. Current822originalpublic-copyhashes and originalpaperarrayarithmetic verified unchanged; new174selectedfollowupdatafilesverified. Independentlocalrawaudit covers D1/D2 only. D3/D4 notrun due resource gate; no fullraw upload.",
+  "current_document_review": "artifacts/validation/followup_profile_delivery_review.v1.json",
+  "verification_scope_note": "Verified 1,070 previous inventory files unchanged, excluding four approved navigation documents. Preserved 54 profiling raw pairs locally; verified 27 compute and 27 IO measurements plus the public budget. Original six-state D3 and proposed N-T full bank remain unexecuted. Paper/PDF content review remains the historical v4 review.",
   "current_followup_design_review": "artifacts/validation/followup_design_review.v1.json",
-  "current_followup_execution_review": "artifacts/validation/followup_execution_review.v1.json"
+  "current_followup_execution_review": "artifacts/validation/followup_execution_review.v1.json",
+  "current_followup_resource_review": "artifacts/validation/followup_profile_execution_review.v1.json",
+  "current_followup_resource_arithmetic": "artifacts/validation/followup_profile_public_results.v1.json"
 }

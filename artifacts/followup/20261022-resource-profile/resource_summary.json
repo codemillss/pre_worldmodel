@@ -1,0 +1,566 @@
+{
+  "schema": "followup-resource-profile-and-budget-v1",
+  "status": "READY_FOR_DRIVER_PREFLIGHT_ONLY",
+  "created_at_utc": "2026-10-22T05:49:49.323508+00:00",
+  "new_experiment_execution_status": "NOT_RUN",
+  "original_full_D3_status": "NOT_RUN_RESOURCE_HOLD",
+  "recommended_proposed_scope": "N-T_complete_base128",
+  "recommendation_scope": "A proposal for a separate complete-state diagnostic. The next driver needs a new scope/config, identity preflight and resource gate; this report does not authorize or execute it and does not mark original six-state D3 complete.",
+  "measurement_order": "compute then IO, sequential; no overlapping benchmarks",
+  "compute_pipeline_weighted": {
+    "trial_count": 27,
+    "returned_intervals": 174,
+    "pipeline_equivalent_ns": 54402600833,
+    "pipeline_equivalent_seconds": 54.402600833,
+    "additional_original_comparison_excluded_ns": 24276113625,
+    "method": "Sum phase nanoseconds across trials, then divide by their common total; not an average of per-trial percentages.",
+    "phases": {
+      "codec_write_and_read": {
+        "ns": 7703738536,
+        "seconds": 7.703738536,
+        "percent": 14.160607062975194
+      },
+      "diagnostic_npz": {
+        "ns": 22978250,
+        "seconds": 0.02297825,
+        "percent": 0.042237410800517565
+      },
+      "env_creation_restore_observe_snapshot": {
+        "ns": 1347748627,
+        "seconds": 1.347748627,
+        "percent": 2.4773606525489327
+      },
+      "env_step_including_contact_diagnostics": {
+        "ns": 3322396200,
+        "seconds": 3.3223962,
+        "percent": 6.107053981111639
+      },
+      "full_probe_repeat_exact": {
+        "ns": 16267435125,
+        "seconds": 16.267435125,
+        "percent": 29.90194379665091
+      },
+      "probe_task_geometry_cost_other": {
+        "ns": 1364110631,
+        "seconds": 1.364110631,
+        "percent": 2.5074364278785475
+      },
+      "raw_roundtrip_exact": {
+        "ns": 24358408628,
+        "seconds": 24.358408628,
+        "percent": 44.77434581257091
+      },
+      "receipt_and_check_other": {
+        "ns": 15784836,
+        "seconds": 0.015784836,
+        "percent": 0.02901485546335332
+      }
+    },
+    "grouped_percent": {
+      "exact_verification": 74.67628960922181,
+      "codec_write_and_read": 14.160607062975194,
+      "env_step_including_contact_diagnostics": 6.107053981111639,
+      "remaining_setup_task_diagnostic_and_receipts": 5.056049346691351
+    },
+    "scope": "The original-comparison benchmark extra is excluded; all original raw roundtrip and full FollowupProbe repeat exact checks remain. env_step is not engine-only time."
+  },
+  "compute_state_panel_weighted": {
+    "F-O0/A": {
+      "trial_count": 6,
+      "returned_intervals": 30,
+      "pipeline_equivalent_ns": 9922705125,
+      "pipeline_equivalent_seconds": 9.922705125,
+      "additional_original_comparison_excluded_ns": 4392887166,
+      "method": "Sum phase nanoseconds across trials, then divide by their common total; not an average of per-trial percentages.",
+      "phases": {
+        "codec_write_and_read": {
+          "ns": 1395302751,
+          "seconds": 1.395302751,
+          "percent": 14.06171737870725
+        },
+        "diagnostic_npz": {
+          "ns": 4928334,
+          "seconds": 0.004928334,
+          "percent": 0.04966724232873946
+        },
+        "env_creation_restore_observe_snapshot": {
+          "ns": 326540289,
+          "seconds": 0.326540289,
+          "percent": 3.290839391944543
+        },
+        "env_step_including_contact_diagnostics": {
+          "ns": 618386248,
+          "seconds": 0.618386248,
+          "percent": 6.232032900403255
+        },
+        "full_probe_repeat_exact": {
+          "ns": 2930099291,
+          "seconds": 2.930099291,
+          "percent": 29.52923879212827
+        },
+        "probe_task_geometry_cost_other": {
+          "ns": 243699963,
+          "seconds": 0.243699963,
+          "percent": 2.455983120832687
+        },
+        "raw_roundtrip_exact": {
+          "ns": 4401401502,
+          "seconds": 4.401401502,
+          "percent": 44.356870899154124
+        },
+        "receipt_and_check_other": {
+          "ns": 2346747,
+          "seconds": 0.002346747,
+          "percent": 0.023650274501128037
+        }
+      },
+      "grouped_percent": {
+        "exact_verification": 73.8861096912824,
+        "codec_write_and_read": 14.06171737870725,
+        "env_step_including_contact_diagnostics": 6.232032900403255,
+        "remaining_setup_task_diagnostic_and_receipts": 5.8201400296070975
+      },
+      "scope": "The original-comparison benchmark extra is excluded; all original raw roundtrip and full FollowupProbe repeat exact checks remain. env_step is not engine-only time."
+    },
+    "F-O0/B": {
+      "trial_count": 6,
+      "returned_intervals": 48,
+      "pipeline_equivalent_ns": 14539079751,
+      "pipeline_equivalent_seconds": 14.539079751,
+      "additional_original_comparison_excluded_ns": 6512341083,
+      "method": "Sum phase nanoseconds across trials, then divide by their common total; not an average of per-trial percentages.",
+      "phases": {
+        "codec_write_and_read": {
+          "ns": 2125396248,
+          "seconds": 2.125396248,
+          "percent": 14.618506015511848
+        },
+        "diagnostic_npz": {
+          "ns": 4968292,
+          "seconds": 0.004968292,
+          "percent": 0.034171983956950785
+        },
+        "env_creation_restore_observe_snapshot": {
+          "ns": 292128711,
+          "seconds": 0.292128711,
+          "percent": 2.0092654831190906
+        },
+        "env_step_including_contact_diagnostics": {
+          "ns": 848250083,
+          "seconds": 0.848250083,
+          "percent": 5.834276292085524
+        },
+        "full_probe_repeat_exact": {
+          "ns": 4361996083,
+          "seconds": 4.361996083,
+          "percent": 30.001871904581726
+        },
+        "probe_task_geometry_cost_other": {
+          "ns": 366620205,
+          "seconds": 0.366620205,
+          "percent": 2.521619052091545
+        },
+        "raw_roundtrip_exact": {
+          "ns": 6532249542,
+          "seconds": 6.532249542,
+          "percent": 44.928906463634405
+        },
+        "receipt_and_check_other": {
+          "ns": 7470587,
+          "seconds": 0.007470587,
+          "percent": 0.051382805018908934
+        }
+      },
+      "grouped_percent": {
+        "exact_verification": 74.93077836821614,
+        "codec_write_and_read": 14.618506015511848,
+        "env_step_including_contact_diagnostics": 5.834276292085524,
+        "remaining_setup_task_diagnostic_and_receipts": 4.616439324186495
+      },
+      "scope": "The original-comparison benchmark extra is excluded; all original raw roundtrip and full FollowupProbe repeat exact checks remain. env_step is not engine-only time."
+    },
+    "N-T/A": {
+      "trial_count": 6,
+      "returned_intervals": 30,
+      "pipeline_equivalent_ns": 9499338209,
+      "pipeline_equivalent_seconds": 9.499338209,
+      "additional_original_comparison_excluded_ns": 4228162958,
+      "method": "Sum phase nanoseconds across trials, then divide by their common total; not an average of per-trial percentages.",
+      "phases": {
+        "codec_write_and_read": {
+          "ns": 1295911582,
+          "seconds": 1.295911582,
+          "percent": 13.64212488794439
+        },
+        "diagnostic_npz": {
+          "ns": 5563791,
+          "seconds": 0.005563791,
+          "percent": 0.058570301189283615
+        },
+        "env_creation_restore_observe_snapshot": {
+          "ns": 292184712,
+          "seconds": 0.292184712,
+          "percent": 3.075842817378311
+        },
+        "env_step_including_contact_diagnostics": {
+          "ns": 597456623,
+          "seconds": 0.597456623,
+          "percent": 6.289455221564267
+        },
+        "full_probe_repeat_exact": {
+          "ns": 2832562918,
+          "seconds": 2.832562918,
+          "percent": 29.818528993065353
+        },
+        "probe_task_geometry_cost_other": {
+          "ns": 240835791,
+          "seconds": 0.240835791,
+          "percent": 2.5352902033935782
+        },
+        "raw_roundtrip_exact": {
+          "ns": 4232621165,
+          "seconds": 4.232621165,
+          "percent": 44.55701093987652
+        },
+        "receipt_and_check_other": {
+          "ns": 2201627,
+          "seconds": 0.002201627,
+          "percent": 0.023176635588299223
+        }
+      },
+      "grouped_percent": {
+        "exact_verification": 74.37553993294188,
+        "codec_write_and_read": 13.64212488794439,
+        "env_step_including_contact_diagnostics": 6.289455221564267,
+        "remaining_setup_task_diagnostic_and_receipts": 5.692879957549472
+      },
+      "scope": "The original-comparison benchmark extra is excluded; all original raw roundtrip and full FollowupProbe repeat exact checks remain. env_step is not engine-only time."
+    },
+    "N-T/B": {
+      "trial_count": 9,
+      "returned_intervals": 66,
+      "pipeline_equivalent_ns": 20441477748,
+      "pipeline_equivalent_seconds": 20.441477748,
+      "additional_original_comparison_excluded_ns": 9142722418,
+      "method": "Sum phase nanoseconds across trials, then divide by their common total; not an average of per-trial percentages.",
+      "phases": {
+        "codec_write_and_read": {
+          "ns": 2887127955,
+          "seconds": 2.887127955,
+          "percent": 14.123871036097071
+        },
+        "diagnostic_npz": {
+          "ns": 7517833,
+          "seconds": 0.007517833,
+          "percent": 0.03677734600540583
+        },
+        "env_creation_restore_observe_snapshot": {
+          "ns": 436894915,
+          "seconds": 0.436894915,
+          "percent": 2.137296140650819
+        },
+        "env_step_including_contact_diagnostics": {
+          "ns": 1258303246,
+          "seconds": 1.258303246,
+          "percent": 6.155637383520928
+        },
+        "full_probe_repeat_exact": {
+          "ns": 6142776833,
+          "seconds": 6.142776833,
+          "percent": 30.050551671104166
+        },
+        "probe_task_geometry_cost_other": {
+          "ns": 512954672,
+          "seconds": 0.512954672,
+          "percent": 2.5093815541304867
+        },
+        "raw_roundtrip_exact": {
+          "ns": 9192136419,
+          "seconds": 9.192136419,
+          "percent": 44.96806215440741
+        },
+        "receipt_and_check_other": {
+          "ns": 3765875,
+          "seconds": 0.003765875,
+          "percent": 0.01842271408371371
+        }
+      },
+      "grouped_percent": {
+        "exact_verification": 75.01861382551158,
+        "codec_write_and_read": 14.123871036097071,
+        "env_step_including_contact_diagnostics": 6.155637383520928,
+        "remaining_setup_task_diagnostic_and_receipts": 4.701877754870425
+      },
+      "scope": "The original-comparison benchmark extra is excluded; all original raw roundtrip and full FollowupProbe repeat exact checks remain. env_step is not engine-only time."
+    }
+  },
+  "io_microbenchmark_weighted": {
+    "measurement_count": 27,
+    "timed_stage_ns": 79961193291,
+    "stages": {
+      "diagnostic_npz": {
+        "ns": 21678791,
+        "seconds": 0.021678791,
+        "percent": 0.027111640169131954
+      },
+      "raw_roundtrip_exact": {
+        "ns": 24195743002,
+        "seconds": 24.195743002,
+        "percent": 30.259357078308312
+      },
+      "read_raw": {
+        "ns": 1330613542,
+        "seconds": 1.330613542,
+        "percent": 1.664074143012779
+      },
+      "two_saved_evidence_repeat_comparisons": {
+        "ns": 48284836587,
+        "seconds": 48.284836587,
+        "percent": 60.38533768659338
+      },
+      "write_raw": {
+        "ns": 6128321369,
+        "seconds": 6.128321369,
+        "percent": 7.664119451916397
+      }
+    },
+    "exclusive_subphases": {
+      "column_header_xz_write": {
+        "ns": 1214733169,
+        "seconds": 1.214733169,
+        "percent": 1.5191533780383488
+      },
+      "column_pack": {
+        "ns": 1181624332,
+        "seconds": 1.181624332,
+        "percent": 1.4777472463420542
+      },
+      "column_read_decompress_validate": {
+        "ns": 446872247,
+        "seconds": 0.446872247,
+        "percent": 0.5588614033981626
+      },
+      "column_unpack": {
+        "ns": 833683083,
+        "seconds": 0.833683083,
+        "percent": 1.042609606845168
+      },
+      "direct_exact_compare": {
+        "ns": 28912615077,
+        "seconds": 28.912615077,
+        "percent": 36.15830865827542
+      },
+      "file_hash": {
+        "ns": 28963714,
+        "seconds": 0.028963714,
+        "percent": 0.03622221331114127
+      },
+      "fsync": {
+        "ns": 17727084,
+        "seconds": 0.017727084,
+        "percent": 0.02216960911962186
+      },
+      "npz_compress_write": {
+        "ns": 114196869,
+        "seconds": 0.114196869,
+        "percent": 0.14281536367823738
+      },
+      "payload_construct": {
+        "ns": 3525944671,
+        "seconds": 3.525944671,
+        "percent": 4.409569849924765
+      },
+      "read_npz_validate_reconstruct": {
+        "ns": 35052997,
+        "seconds": 0.035052997,
+        "percent": 0.0438375111192161
+      },
+      "typed_digest": {
+        "ns": 43567392635,
+        "seconds": 43.567392635,
+        "percent": 54.4856709134476
+      },
+      "unattributed_call_overhead": {
+        "ns": 10067375,
+        "seconds": 0.010067375,
+        "percent": 0.012590326114021524
+      },
+      "write_bookkeeping": {
+        "ns": 72320038,
+        "seconds": 0.072320038,
+        "percent": 0.0904439203862406
+      }
+    },
+    "scope": "IO-only warm-filesystem microbenchmarks. Each measurement performs two saved-evidence repeat comparisons; this composition is not the full original trial pipeline or the full FollowupProbe comparator.",
+    "not_used_as_future_pipeline_rate": true
+  },
+  "budget": {
+    "wall_cap_seconds_cumulative": 7200,
+    "incremental_storage_cap_bytes": 5368709120,
+    "free_space_reserve_bytes": 2147483648,
+    "safety_factor": 1.5,
+    "already_spent_seconds_by_phase": {
+      "D1_N-T": 17.841683292062953,
+      "D1_F-O0": 43.39125508395955,
+      "D2": 360.8808666251134,
+      "compute_profile": 79.80532954214141,
+      "io_profile": 87.89710441697389
+    },
+    "already_spent_seconds": 589.8162389602512,
+    "existing_D1_D2_run_bytes": 62524123,
+    "profile_run_bytes": 21270595,
+    "free_bytes_at_projection": 10035200000,
+    "original_D2_max_seconds_per_interval_floor": 0.48116094996221365,
+    "new_compute_max_pipeline_seconds_per_interval": 0.46383059979999997,
+    "selected_trial_seconds_per_interval": 0.48116094996221365,
+    "original_D2_max_bytes_per_interval_floor": 88934.8,
+    "new_compute_max_full_trial_directory_bytes_per_interval": 89074.4,
+    "selected_bytes_per_interval": 89074.4,
+    "max_D1_restoration_seconds_per_interval": 0.22873952938542247,
+    "fixed_allowance_seconds_per_state": 120,
+    "fixed_allowance_status": "Explicit planning allowance for hashes/inference/teacher/report; not a measured upper bound or guarantee. Preflight must measure and stop if actual budget exceeds cap.",
+    "scenarios": [
+      {
+        "id": "N-T_complete_base128",
+        "states": [
+          "N-T"
+        ],
+        "model_count": 7,
+        "physical_repeats": 3,
+        "panels": [
+          "A",
+          "B"
+        ],
+        "candidate_ids_per_state": 128,
+        "physical_trajectories": 768,
+        "future_probe_interval_upper_bound": 4992,
+        "future_restore_interval_upper_bound": 0,
+        "free_prediction_transition_rows": 4480,
+        "teacher_forced_transition_rows_upper_bound": 4480,
+        "D2_rows_reused": false,
+        "extension_included": false,
+        "future_trial_seconds_upper_planning_estimate": 3602.9331933170556,
+        "future_restoration_seconds_upper_planning_estimate": 0.0,
+        "fixed_hash_inference_teacher_report_allowance_seconds": 120,
+        "future_total_seconds_upper_planning_estimate": 3722.9331933170556,
+        "cumulative_seconds_upper_planning_estimate": 4312.749432277307,
+        "future_incremental_bytes_upper_planning_estimate": 666989108,
+        "cumulative_incremental_bytes_upper_planning_estimate": 750783826,
+        "wall_cap_fit": true,
+        "storage_cap_fit": true,
+        "free_space_reserve_fit": true,
+        "execution_status": "NOT_RUN"
+      },
+      {
+        "id": "N-T_F-O0_complete_base128",
+        "states": [
+          "N-T",
+          "F-O0"
+        ],
+        "model_count": 7,
+        "physical_repeats": 3,
+        "panels": [
+          "A",
+          "B"
+        ],
+        "candidate_ids_per_state": 128,
+        "physical_trajectories": 1536,
+        "future_probe_interval_upper_bound": 9984,
+        "future_restore_interval_upper_bound": 0,
+        "free_prediction_transition_rows": 8960,
+        "teacher_forced_transition_rows_upper_bound": 8960,
+        "D2_rows_reused": false,
+        "extension_included": false,
+        "future_trial_seconds_upper_planning_estimate": 7205.866386634111,
+        "future_restoration_seconds_upper_planning_estimate": 0.0,
+        "fixed_hash_inference_teacher_report_allowance_seconds": 240,
+        "future_total_seconds_upper_planning_estimate": 7445.866386634111,
+        "cumulative_seconds_upper_planning_estimate": 8035.682625594362,
+        "future_incremental_bytes_upper_planning_estimate": 1333978215,
+        "cumulative_incremental_bytes_upper_planning_estimate": 1417772933,
+        "wall_cap_fit": false,
+        "storage_cap_fit": true,
+        "free_space_reserve_fit": true,
+        "execution_status": "NOT_RUN"
+      },
+      {
+        "id": "original_six_state_D3_base",
+        "states": [
+          "N-T",
+          "N-R",
+          "N-O",
+          "F-O0",
+          "F-O1",
+          "F-O2"
+        ],
+        "model_count": 7,
+        "physical_repeats": 3,
+        "panels": [
+          "A",
+          "B"
+        ],
+        "candidate_ids_per_state": 128,
+        "physical_trajectories": 4608,
+        "future_probe_interval_upper_bound": 29952,
+        "future_restore_interval_upper_bound": 685,
+        "free_prediction_transition_rows": 26880,
+        "teacher_forced_transition_rows_upper_bound": 26880,
+        "D2_rows_reused": false,
+        "extension_included": false,
+        "future_trial_seconds_upper_planning_estimate": 21617.599159902336,
+        "future_restoration_seconds_upper_planning_estimate": 235.0298664435216,
+        "fixed_hash_inference_teacher_report_allowance_seconds": 720,
+        "future_total_seconds_upper_planning_estimate": 22572.629026345858,
+        "cumulative_seconds_upper_planning_estimate": 23162.44526530611,
+        "future_incremental_bytes_upper_planning_estimate": 4093458590,
+        "cumulative_incremental_bytes_upper_planning_estimate": 4177253308,
+        "wall_cap_fit": false,
+        "storage_cap_fit": true,
+        "free_space_reserve_fit": true,
+        "execution_status": "NOT_RUN"
+      }
+    ]
+  },
+  "fidelity": {
+    "source_D2_preserved": true,
+    "new_compute_groups": 9,
+    "new_compute_trajectories": 27,
+    "new_compute_intervals": 174,
+    "new_compute_complete_result_repeats": 3,
+    "new_compute_original_raw_and_roundtrip": "PASS_EXACT",
+    "new_compute_full_FollowupProbe_repeat": "PASS_EXACT after first repeat",
+    "io_measurements": 27,
+    "io_new_raw_bytes_identical_to_source": true,
+    "codec_preset": 3,
+    "fsync_hash_schema_and_bit_exact_checks_preserved": true,
+    "full_new_raw_local_only": true,
+    "new_model_calls": 0,
+    "training_updates": 0
+  },
+  "source_bindings": {
+    "frozen_design_sha256": "a558bb7a61da067859668808245a3173c818edbda69cf3efb5458574f1d85fdb",
+    "D2_summary_sha256": "73b4d4d2242f97f6b706fbde77a9eb6da465e5c8450d680c3d7313d047e8d0e3",
+    "D1_restoration_sha256": {
+      "N-T": "2f7a47880e17a2d3efc0a11ee33d65892b7d509fc63eba8efefef9c4364b1f64",
+      "F-O0": "65e7af32169fa078fc25a04b6a148083b6747accb4aaf6746fb9f46541179804"
+    },
+    "measurement_files_sha256": {
+      "compute/entry.json": "5d4e7befc72b187e65755f4e7e424e805bb1147dada63f0ddd95ed3686e5e052",
+      "compute/summary.json": "459457265a20ab0b71878db4a51b7df5893dee6f4ae73885af91152e0807691d",
+      "io/entry.json": "13e71445e124da15496671f626abf1c6a76941503d16217e71bd45cd6adf3d2d",
+      "io/summary.json": "dd086fc96bcb9954988b912713141a1f2b3e500e2914ca3d8bf713b051c88457"
+    },
+    "builder_sha256": "4e547da7b2e8b983afe75e34868aacd5f082bd64c3c4c6e03b65864ee2737f13"
+  },
+  "limitations": [
+    "Measurements cover nine selected saved candidate groups, not all future states; the original D2 maximum floor and factor 1.5 are retained.",
+    "env_step includes per-substep environment/contact diagnostics, not pure engine compute. Other probe time includes task, geometry and cost.",
+    "Additional comparison with authenticated old raw is benchmark overhead; original roundtrip and full Probe repeat checks are not removed.",
+    "IO uses warm filesystem/cache state. CPU profiler overhead is excluded from timed stage composition; pstats cumulative time overlaps and must not be summed.",
+    "IO repeat comparison covers saved raw, diagnostic arrays and scientific summaries, not unsaved final integration state; original and fresh compute full Probe checks remain separate.",
+    "No algorithm, codec, cost, model, original criterion or frozen design was changed. No speedup or cold-cache/power-loss guarantee is claimed.",
+    "No D2 scientific-row reuse, extension, reduced repeat count or reduced model set is assumed. Physical futures are shared across all seven models.",
+    "Budgets are conservative planning estimates, not proved upper bounds. All accumulated D1/D2/measurement time is charged; no silent clock reset.",
+    "Raw hashes document omitted local files; public summaries alone do not independently replay those raw data or verify all underlying fidelity checks."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "followup-resource-profile-public-verification-v1",
+  "status": "PASS_PUBLIC_PARTITIONS_AND_RESOURCE_ARITHMETIC",
+  "verifier_sha256": "1f20419ed06e8f378146fd058a6020061b8bb8547965b2a183d67a77306621d0",
+  "manifest_sha256": "0128075d797b5ed22d5be4f43906ab625c46a69e4bafe22dcb04d3f4296f37e6",
+  "verified_public_files": 6,
+  "compute_trials": 27,
+  "compute_intervals": 174,
+  "io_phase_partitions": 135,
+  "exact_verification_percent": 74.67628960922181,
+  "scenarios": {
+    "N-T_complete_base128": {
+      "cumulative_minutes": 71.87915720462179,
+      "cumulative_GiB": 0.6992219258099794,
+      "wall_cap_fit": true
+    },
+    "N-T_F-O0_complete_base128": {
+      "cumulative_minutes": 133.92804375990605,
+      "cumulative_GiB": 1.3204039381816983,
+      "wall_cap_fit": false
+    },
+    "original_six_state_D3_base": {
+      "cumulative_minutes": 386.0407544217685,
+      "cumulative_GiB": 3.8903703056275845,
+      "wall_cap_fit": false
+    }
+  },
+  "new_physics_calls": 0,
+  "new_model_calls": 0,
+  "scope": "Authenticates selected public receipts and redoes timing/budget arithmetic. Raw files remain local; their hash inventory is not independent replay evidence. Fixed allowance is a planning value and does not certify the next driver."
+}

@@ -127,13 +127,15 @@ E1의 실제 미래 실행은 선택 이후의 오프라인 대조입니다. 온
 
 - **새 관찰:** 실패 직전 상태의 첫 16후보 ID는 실제 A에서 모두 물리 유효했지만 여섯 신경망은 전부 예측상 거절했습니다. 해당 명령들이 정렬 준비까지 성공했다는 뜻은 아닙니다.
 - **판정 구분:** 목표 근방 후보9는 B의 0.6초에서 준비됐고 같은 0.5초까지는 A/B 모두 미달했습니다. 정지 규칙만의 효과·비용 결함·기존 전체 정책의 개선으로 해석하지 않습니다.
-- **진입 보류:** 기본 D3의 보수적 남은 시간은 약 6.14시간으로 기존 2시간 상한을 넘습니다. 조건부 확장 포함 최대 범위는 저장량도 초과합니다. 기록·재현 검사는 통과했지만 본 진단은 실행하지 않았습니다.
+- **전체 D3 진입 보류:** 기본 D3의 보수적 남은 시간은 약 6.14시간으로 기존 2시간 상한을 넘습니다. 후속 [저장·재현 시간 분리 측정](docs/followup_resource_profile.ko.md)에서는 정확 비교 두 단계가 표본 처리 시간의 약 74.7%였습니다. 검증 수준과 원본 보존을 유지하면 다음 범위는 **N-T 한 상태의 전체128후보·A/B·각3반복·모델7개**를 사전 검사하는 것이 적절합니다. 두 상태와 전체6상태는 누적 2시간 예산을 넘으며, 새 본 진단은 아직 실행하지 않았습니다.
 
 ![실패 직전 후보의 예측·실제 미래와 목표 근방 후보의 정지·유지 비교](assets/figures/followup_pilot.png)
 
 *사후 선정한 두 실패 상태의 사례입니다. S1은 한 단계 학습 MLP(다층 신경망), 11·23은 학습 seed입니다. A는 같은 명령 0.5초, B는 현재 자세에 따른 영 명령과 추가 정지시간을 포함합니다. 그림은 첫 반복이며 세 실제 반복이 일치했습니다. F-O0의 16개 ID에는 중복이 있어 명령열은 10종입니다. 전체 128후보의 성능이나 단독 실패 원인을 입증하지 않습니다.*
 
 [실행 결과·가설·자원 판단](docs/followup_restore_and_pilot.ko.md) · [실행 전 설계 v1](docs/near_goal_diagnostic_design.ko.md) · [독립 raw 검토](artifacts/validation/followup_execution_review.v1.json) · [공개 수치 검산](artifacts/validation/followup_public_results.v1.json)
+
+[기록·재현 비용 분리와 다음 범위](docs/followup_resource_profile.ko.md) · [자원 산식](artifacts/followup/20261022-resource-profile/resource_summary.json) · [측정 자료 검토](artifacts/validation/followup_profile_execution_review.v1.json)
 
 기존 동결 비교·논문 결과는 유지했습니다. [실행 전 main 보존 브랜치](https://github.com/codemillss/pre_worldmodel/tree/codex/frozen-main-before-followup-20261022)를 남기고 현재 main에서 후속 개발을 계속합니다.
 
@@ -171,6 +173,7 @@ python -B scripts/verify_paper_results.py
 | 개발 경과·국소 진단·전체 설명 | [기술 보고서](docs/technical_report.ko.md) | [설명용 기술 보고서](reports/Technical_Report.ko.pdf) |
 | 리뷰 지적과 수정·미해결 사항 | [리뷰어 관점 검토](docs/reviewer_assessment.ko.md) | 원문에서 코드·결과 연결 |
 | 목표 근처·실패 직전 보완 실험 | [복원·사전 실행 결과](docs/followup_restore_and_pilot.ko.md), [실행 전 설계](docs/near_goal_diagnostic_design.ko.md) | D1/D2 완료, D3 미실행 |
+| 원본 보존·검증을 유지하는 실행 비용 측정 | [시간 분리와 범위 판단](docs/followup_resource_profile.ko.md) | 측정 완료, N-T 전체128 사전 검사 권고 |
 
 논문은 TeX→PDF, 두 보고서는 Markdown→PDF로 관리합니다. PDF의 링크·목차는 내려받아 사용하세요. [문서 운영·갱신 방법](docs/documentation.ko.md)에 원본과 검토 기록을 정리했습니다.
 

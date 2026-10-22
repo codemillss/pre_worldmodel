@@ -1,0 +1,101 @@
+{
+  "schema": "followup-existing-evidence-io-profile-v1",
+  "status": "INCOMPLETE",
+  "started_at_utc": "2026-10-22T05:45:32.394476+00:00",
+  "physics_calls": 0,
+  "model_calls": 0,
+  "training_updates": 0,
+  "source_writes": 0,
+  "automatic_retries": 0,
+  "cache_policy": "Authenticated source load before timing; repeated filesystem/cache state, no cold-cache claim.",
+  "phase_policy": "Nested wrappers measure exclusive perf_counter_ns; production codec, fsync, authentication and exact comparator unchanged.",
+  "repeat_scope": "Exact complete saved initial snapshot/StepResults, every saved diagnostic NPZ array, and all scientific summary fields; this does not recreate unsaved FollowupProbe final integration snapshots or replace original D2 full-result repeat checks.",
+  "limits": {
+    "wall_s": 1200,
+    "incremental_bytes": 536870912,
+    "free_reserve_bytes": 2147483648
+  },
+  "implementation_sha256": {
+    "scripts/profile_followup_io.py": "82e6a34875a2e3b48850804f96267ca14cd83726e1b941a95658bfabd70833f0",
+    "scripts/followup_pilot.py": "5172b940929d840a6b95a1342545c7fe762a73f62cd047604071eea51c40bcdc",
+    "src/push_align/final_recording_columns.py": "b571654413638ceff8bba1827086c5494e03a07e7decb625112165a8ca302410",
+    "src/push_align/final_recording.py": "72e365f942244710a9f2066adce9a2f6ea78d0fbc414c1ed429b9a10b61d62af",
+    "src/push_align/final_driver_v2.py": "555a9fbbb6cce05c908154153d4e9182ec4c856b1f3f45bd697c4d13e4e017d1",
+    "src/push_align/followup_probe.py": "98d66ae351fdaf9b36b3312bbe7f6b07be2f11a3654685b0d467f85c787bfeec"
+  },
+  "runtime": {
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "numpy": "2.5.3",
+    "platform": "darwin"
+  },
+  "selection": {
+    "policy": "state/panel min and max raw bytes, every ready case, then balanced deterministic candidate fill; all selected source repeat=0",
+    "cases": 9,
+    "passes": 3,
+    "source_rows": [
+      {
+        "state": "F-O0",
+        "panel": "A",
+        "candidate_id": 12,
+        "intervals": 5,
+        "profile_source_raw_bytes": 230567
+      },
+      {
+        "state": "F-O0",
+        "panel": "A",
+        "candidate_id": 13,
+        "intervals": 5,
+        "profile_source_raw_bytes": 440862
+      },
+      {
+        "state": "F-O0",
+        "panel": "B",
+        "candidate_id": 12,
+        "intervals": 8,
+        "profile_source_raw_bytes": 333758
+      },
+      {
+        "state": "F-O0",
+        "panel": "B",
+        "candidate_id": 13,
+        "intervals": 8,
+        "profile_source_raw_bytes": 585177
+      },
+      {
+        "state": "N-T",
+        "panel": "A",
+        "candidate_id": 2,
+        "intervals": 5,
+        "profile_source_raw_bytes": 187189
+      },
+      {
+        "state": "N-T",
+        "panel": "A",
+        "candidate_id": 9,
+        "intervals": 5,
+        "profile_source_raw_bytes": 417692
+      },
+      {
+        "state": "N-T",
+        "panel": "B",
+        "candidate_id": 5,
+        "intervals": 8,
+        "profile_source_raw_bytes": 282270
+      },
+      {
+        "state": "N-T",
+        "panel": "B",
+        "candidate_id": 9,
+        "intervals": 6,
+        "profile_source_raw_bytes": 348572
+      },
+      {
+        "state": "N-T",
+        "panel": "B",
+        "candidate_id": 14,
+        "intervals": 8,
+        "profile_source_raw_bytes": 611372
+      }
+    ]
+  }
+}
