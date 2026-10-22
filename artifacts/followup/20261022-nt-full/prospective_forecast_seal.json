@@ -1,0 +1,59 @@
+{
+  "schema": "followup-nt-full-prospective-forecast-seal-v1",
+  "before_any_new_actual_future": true,
+  "forecasts": {
+    "forecasts/prediction-R.npz": "9dc1e70edac52af2ec8e08ac08053353c24a483eb51fa1a9706f35fd9e6673e7",
+    "forecasts/prediction-S1-11.npz": "8889ef01711e2dd33cb312d2e22d0f1a4ddd86a3f1d9069c2a071c912a469632",
+    "forecasts/prediction-S1-23.npz": "958ae20e8c3c7a18a77fd49d5f13e91b21258ce42b5aa4eaa114a9f8497ab4f6",
+    "forecasts/prediction-S1-47.npz": "e958a57a8627187d3f7aa61cbde87ae78915031b53d430540be7e050a8eb448d",
+    "forecasts/prediction-SK-11.npz": "f198931d265dd2f197033c7f30b24422c765beed30bebfe6e5494088936a1018",
+    "forecasts/prediction-SK-23.npz": "1cf3360dce4f5ef631363b8c4466675f143b74a611f5d3e837d7f8e004b96821",
+    "forecasts/prediction-SK-47.npz": "dcebd480f142273d9a822eb2e49e90af6cb076d624c888bdc28af4f3d8247b7b",
+    "forecasts/predictions.json": "dedd87b9f1e0fa4697dc14908b22058ef967c841519a913f9abab92fa6731581"
+  },
+  "prediction_calls_before_actual": {
+    "R": {
+      "calls": 5,
+      "rows": 639
+    },
+    "S1-11": {
+      "calls": 5,
+      "rows": 625
+    },
+    "S1-23": {
+      "calls": 5,
+      "rows": 615
+    },
+    "S1-47": {
+      "calls": 5,
+      "rows": 628
+    },
+    "SK-11": {
+      "calls": 5,
+      "rows": 627
+    },
+    "SK-23": {
+      "calls": 5,
+      "rows": 608
+    },
+    "SK-47": {
+      "calls": 5,
+      "rows": 628
+    }
+  },
+  "future_engine_calls_during_prediction": {
+    "mj_step": 0,
+    "mj_step1": 0,
+    "mj_step2": 0,
+    "mj_forward": 0,
+    "mj_inverse": 0
+  },
+  "wall_seconds_before_any_actual": 2.2667902088724077,
+  "teacher_order": "Fresh A teacher inputs and seven one-step evaluations AFTER768 actual rows; no duplicate benchmark rows",
+  "stages_ns": {
+    "bindings_input_candidate_regeneration_ns": 511220166,
+    "strict_models_load_provenance_ns": 66430917,
+    "full128_forecasts_cost_selection_durable_exact_ns": 85402667
+  },
+  "timestamp_utc": "2026-10-22T06:59:23.961768+00:00"
+}

@@ -81,3 +81,10 @@ PYTHONPATH=src:scripts:tests .venv/bin/python -B -m unittest \
 그 뒤 [N-T 전체128 사전 검사](../docs/nt_fullbank_preflight.ko.md)를 완료했습니다. [118파일 선별 자료](followup/20261022-nt-preflight/manifest.json)는 전체128 예측·18건 사전 실행 영수증·기존80행/반복640행 평가 기록입니다. 전체 실제128후보 평가가 완료된 자료는 아닙니다. [적용 범위별 예산 v2](validation/nt_fullbank_resource_budget.v2.json)는 기존 일괄 계산을 보존하면서 원본 D2 대조96건·완전 결과256그룹을 분리했습니다. [독립 실행 검토](validation/followup_nt_preflight_execution_review.v2.json), [공개 검산](validation/nt_preflight_public_checks.v2.json), [초기24파일 가정 정정](validation/nt_preflight_binding_correction.v1.json)을 함께 확인할 수 있습니다. 첫 실패 실행과 당시 코드·검사는 `development/nt-preflight-attempt-01`에 보존했습니다.
 
 v1 설계의 미실행 표시는 당시 기록이며 현재 진행 상태는 위 실행 결과가 기준입니다. 기존 학술 논문·보고서와 v4 검토는 원래 동결 비교의 문서 이력으로 유지합니다.
+
+
+## N-T 전체 진입·자원 상한 실행
+
+[전체 실행 보고](../docs/nt_fullbank_execution.ko.md): 128후보×7모델의 예측 봉인과 진입 검사는 통과했지만, 새 실제 미래는 **70/768회**에서 `STOP_RESOURCE`로 중단됐습니다. 관측 최대 전체 결과 저장·복원 단가가 증가해 남은 검증·최종 정리를 포함한 예상이 121.73분이 됐기 때문입니다. 실제 누적 실행은 15.88분입니다. 698회는 미실행이며 전체 후보 순위나 인계 개선으로 해석하지 않습니다.
+
+[선별 공개 자료](followup/20261022-nt-full/manifest.json)에는 전체128 예측, 완료 행의 요약·기록, 첫 반복 경계 배열과 로컬 원시·전체 결과의 해시 목록을 제공합니다. [저장 자료 분석](followup/20261022-nt-full/analysis.json)은 부분집합임을 명시하며, [독립 사후 감사](validation/nt_full_execution_review.v1.json)는 전수 해시·판정과 제한된 독립 복원 표본의 범위를 구분합니다. 새 teacher-forced 평가는 전체 실제 실행 이후 단계여서 미실행입니다. 기존 논문·정식 결과와 raw는 보존했습니다.

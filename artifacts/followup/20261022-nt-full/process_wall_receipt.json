@@ -1,0 +1,7 @@
+{
+  "schema": "experiment-process-wall-receipt-v1",
+  "process_wall_seconds": 290.55625162483193,
+  "exit_code": 2,
+  "scope": "One full-bank subprocess including interpreter startup and final summary persistence; no automatic retry.",
+  "driver_sha256": "021faeff2e5a46cc3d0ece5b308ee729153b66c81f266efd23d54484079c645a"
+}

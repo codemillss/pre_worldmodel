@@ -1,0 +1,106 @@
+{
+  "schema": "followup-nt-full-saved-independent-audit-v1",
+  "status": "PASS_SAVED_EVIDENCE_AND_INDEPENDENT_RULE_CHECKS",
+  "source_run_status": "STOP_RESOURCE",
+  "full_execution_complete": false,
+  "scope": {
+    "planned_rows": 768,
+    "all_present_rows": 70,
+    "missing_rows": 698,
+    "all_present_raw_pair_hashes": 70,
+    "complete_probe_group_hashes": 24,
+    "whole_probe_repeat_receipts": 46,
+    "source_D2_receipts": 70,
+    "authenticated_run_files": 258,
+    "independently_decoded_raw_repeats": 12,
+    "independently_decoded_complete_groups": 4,
+    "prespecified_sample_candidate_ids": [
+      0,
+      9,
+      127
+    ],
+    "prediction_model_calls": 0,
+    "physics_calls": 0
+  },
+  "executor_cursor": {
+    "key": [
+      11,
+      "B",
+      0
+    ],
+    "already_present_in_sealed_rows": true,
+    "interpretation": "The cursor is metadata; its present sealed row is retained and is not a missing-result verdict."
+  },
+  "independent_samples": [
+    {
+      "candidate_id": 0,
+      "panel": "A",
+      "decoded_raw_repeats": 3,
+      "decoded_complete_probe_typed_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204"
+    },
+    {
+      "candidate_id": 0,
+      "panel": "B",
+      "decoded_raw_repeats": 3,
+      "decoded_complete_probe_typed_sha256": "e3369d645dcb67404fa0ce468fc9a05e9eeb52ea35013d4fd583f268bab7cc13"
+    },
+    {
+      "candidate_id": 9,
+      "panel": "A",
+      "decoded_raw_repeats": 3,
+      "decoded_complete_probe_typed_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c"
+    },
+    {
+      "candidate_id": 9,
+      "panel": "B",
+      "decoded_raw_repeats": 3,
+      "decoded_complete_probe_typed_sha256": "ee3985311a3fa88412df6c6ed456db481b66488612286a52e862872d1994aa37"
+    }
+  ],
+  "skipped_prespecified_samples": [
+    {
+      "candidate_id": 127,
+      "panel": "A",
+      "reason": "NOT_EXECUTED_OR_GROUP_INCOMPLETE"
+    },
+    {
+      "candidate_id": 127,
+      "panel": "B",
+      "reason": "NOT_EXECUTED_OR_GROUP_INCOMPLETE"
+    }
+  ],
+  "independent_cost_rules": {
+    "epsilon": 7.56969978968833e-05,
+    "possible_cost_optimum_ids": [
+      8
+    ],
+    "C_supported": false,
+    "scope": "Observed stable subset only; C remains unresolved because bank incomplete"
+  },
+  "resource_decisions_checked": 143,
+  "expected_resource_stop_stages": [
+    "after_sealed_trial:11:B:0",
+    "final_before_summary"
+  ],
+  "teacher_unique_rows": 0,
+  "fresh_teacher_status": "NOT_RUN_BECAUSE_768_ACTUAL_ROWS_INCOMPLETE",
+  "analysis_sha256": "a2d7bbb3e0365f998c09409ece935d3d61351aae9b495fca8aefb7b8ade1de4c",
+  "entry_sha256": "a06fe85be6f2b7a54947f9338d3433ab2f91bf8e91c462666c90d78e4d482889",
+  "summary_sha256": "8f45091686dc3b6a8c0b45b48d5036b303a0fa8c1b459c479dcb4e1ed1970df7",
+  "process_wall_receipt_sha256": "773395b401385a574790b3f25ad9b57faa22eb48cad92fd4af08f3ce2574c8ef",
+  "script_sha256": "33e5af7a93f16a52eacbc01145f505af2eab584ff01b7b7b417ce4d38036069f",
+  "time_accounting": {
+    "prior_seconds": 662.5052578353789,
+    "full_process_wall_seconds": 290.55625162483193,
+    "charged_postwork_before_audit_seconds": 0.2183668750803098,
+    "audit_wall_seconds_through_last_check": 15.81580162490718,
+    "cumulative_seconds_through_this_audit": 969.0956779601983,
+    "cap_seconds": 7200,
+    "final_publication_and_shutdown_not_yet_charged": true
+  },
+  "limits": [
+    "Every present raw/full-probe roundtrip was performed by the executor. Independent semantic decoding covers the declared available prespecified sample; every present raw/full file is authenticated.",
+    "This receipt establishes cumulative compliance through its measured audit only. Subsequent publication/report work and shutdown require an added measured ledger charge.",
+    "Resource stopping retains missing rows. No unexecuted candidate, fresh teacher completion, population/generalization/full-MPC or sole-cause claim is made."
+  ]
+}

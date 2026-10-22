@@ -1,0 +1,3535 @@
+{
+  "schema": "followup-nt-fullbank-saved-result-summary-v1",
+  "status": "PARTIAL_OR_UNSTABLE_NO_FULL_BANK_CLAIM",
+  "source_run_name": "followup-nt-full-20261022-01",
+  "source_run_status": "STOP_RESOURCE",
+  "bindings": {
+    "summarizer_sha256": "8ec212e7b06c5ab2fda5e4faa83f214dd9e5a7db6d07161c240a81f9df923727",
+    "design_sha256": "a558bb7a61da067859668808245a3173c818edbda69cf3efb5458574f1d85fdb",
+    "executed_full_config_sha256": "6c610918926f076cc09e950512252187a071147cede367e473bc5a2e9920b58b",
+    "entry_sha256": "a06fe85be6f2b7a54947f9338d3433ab2f91bf8e91c462666c90d78e4d482889",
+    "prospective_forecast_seal_sha256": "ef57af3d022c687fe8483820053691299fcb3a8eec46aa8b2bab56f9bf0b5af1",
+    "run_receipt_file": "summary.json",
+    "run_receipt_sha256": "8f45091686dc3b6a8c0b45b48d5036b303a0fa8c1b459c479dcb4e1ed1970df7",
+    "bank_file_sha256": "26c5feb832b670359aadd93be2b7009549ae3684d08fdd4551be244506cdca2d",
+    "candidate_bank_hash": "eee0b75a061c0bdbb2c64b806abc990640d8764d6e99a1580e9f9fb149a3f2db",
+    "full_input_typed_sha256": "f1c8a69afed6306a5416e7614d3876ef4d6a30d00a0f9db78ed606ea52dbd7f3",
+    "original_manifest_sha256": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f",
+    "model_and_normalizer_sha256": {
+      "artifacts/learning/normalizer/normalizer.json": "b672e13fc0c91ff3bdfbb4a761bfc9aac5595420286312f55667cdc3207991af",
+      "artifacts/learning/normalizer/statistics.npz": "10b27958ddf0e1563a38a3954499295fad9e63cc69714ef8b95d64ccbfd6ba8e",
+      "artifacts/models/R/weights.npz": "064a3e3a95d43ae0f225c46761080aeaf6c7d3b3e188fb64d7c3c160403940b7",
+      "artifacts/models/R/ridge.json": "d13fff6eeba5625133776a8229091e01d9af9be891ac4a5e084075ee5ad66599",
+      "artifacts/models/S1-11/checkpoint.json": "170cbc99d3f4cda178f4c20f168df6c62b064441021bdedbf7293b0410305356",
+      "artifacts/models/S1-11/training_state.pt": "1b45e498e559ebceb1eff44f40be711d78f85b097010839d79d889b4d7f9608d",
+      "artifacts/models/S1-11/weights.pt": "24b3e2973d2dfcca87624696d87046c3ac63ae95c514119699ac93ed1cf48fca",
+      "artifacts/models/S1-23/checkpoint.json": "081530226c08c6f5426ee7fc63adf04fd5943983c3552de6a45d8638629aa336",
+      "artifacts/models/S1-23/training_state.pt": "17d6407c79e1b7f1e28ce5064b0c83f5bbf411e03df7cfe1b385527a30ec4b18",
+      "artifacts/models/S1-23/weights.pt": "25e90fd605232c8732042d95747e3c4fe70266716553e9fefd1824edfa20b330",
+      "artifacts/models/S1-47/checkpoint.json": "bcebf2e3792f0bfc86958209ca0cb885d503eeb4237e3fc42fa88a96161e70aa",
+      "artifacts/models/S1-47/training_state.pt": "afe0e8cc3e44dfeee3a8f6b7156d87fa680d372d9b274f61ef49df826696e076",
+      "artifacts/models/S1-47/weights.pt": "b654abc205682dfac7a10d63ee3ff76d77e62b22a76d9330e012b845902918b1",
+      "artifacts/models/SK-11/checkpoint.json": "465fcfc60ead6b170ee27f67cf9d19aa2d1b403f74fa7e5b9801c6f8f0d31e49",
+      "artifacts/models/SK-11/training_state.pt": "46ad727d1306c1b24cf4f104082085895f784c9ac7c806d76f5a9b44ce91df0f",
+      "artifacts/models/SK-11/weights.pt": "23be9f97738fd1b464ab4d21623c3103d05589cd0803e7075e205af71f306913",
+      "artifacts/models/SK-23/checkpoint.json": "cd09e3c648769eca618940e0480f0b636187db525589002218555bda6aba8f01",
+      "artifacts/models/SK-23/training_state.pt": "e2f68479960bf4fef27bea65b870dce39f8f4de9428f29936b42b24b77c4244a",
+      "artifacts/models/SK-23/weights.pt": "e2e99fe3636a34a09756b91c99d935c45072a2bedbc995cdd8f2578a00c8f0f5",
+      "artifacts/models/SK-47/checkpoint.json": "89a71d22499d3dd450076c19cb5eb94884d64e15f044e6d2189afc1aa07d61e3",
+      "artifacts/models/SK-47/training_state.pt": "a94d0e1ae12025db6ef2904174580c0f0eb002df44bc580134e486c80d0d0e9d",
+      "artifacts/models/SK-47/weights.pt": "1ca90e0fd81a0723e3a57b9c9ef0546417cff1a96c888ec2018d3e258f815e44"
+    }
+  },
+  "dimensions": {
+    "state_count": 1,
+    "state": "N-T",
+    "models": [
+      "R",
+      "S1-11",
+      "S1-23",
+      "S1-47",
+      "SK-11",
+      "SK-23",
+      "SK-47"
+    ],
+    "candidate_ids": 128,
+    "unique_command_sequences": 128,
+    "planned_actual_trajectories": 768,
+    "recorded_complete_trajectories": 70,
+    "durable_trial_summary_count": 70,
+    "recorded_complete_intervals": 446,
+    "stable_groups": 23,
+    "all_rows_complete": false,
+    "all_groups_exact_3_repeats": false
+  },
+  "incomplete_trials": [],
+  "durable_uncommitted_rows": [],
+  "executor_active_cursor": {
+    "key": [
+      11,
+      "B",
+      0
+    ],
+    "also_present_in_committed_rows": true,
+    "scope": "Cursor alone is not a missing-result verdict; use committed keys and durable receipts."
+  },
+  "actual_candidate_results": {
+    "A": [
+      {
+        "candidate_id": 0,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204",
+        "cost_L": 6.721535542093283,
+        "cost_U": 6.721535542093283,
+        "cost_components": {
+          "stage_position": 0.540567978351404,
+          "stage_yaw": 0.07043299888760034,
+          "stage_action": 0.0,
+          "stage_action_change": 0.0004999999999999999,
+          "stage_gap": 2.4676119475267437e-05,
+          "terminal_position": 5.405679899857413,
+          "terminal_yaw": 0.7043299888773914,
+          "terminal_speed": 2.4337615507812502e-17,
+          "terminal_angular_speed": 9.645387485526534e-34
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-000/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "41026bee281cb94cf924cef8e5b4467d89ca34027e22b5f54bd854290495c477",
+          "files_sha256": {
+            "actual/N-T/candidate-000/A/repeat-0/complete_probe/trace.npz": "9de21dd7304463d0d7301f9830042438293b89d201e5657a6eeb3bb2cc0c638d",
+            "actual/N-T/candidate-000/A/repeat-0/complete_probe/input.json.gz": "5feb903405153fece7935663193d1dd62df1b3dd9f5a4404e85bd6f70f604f4e"
+          }
+        }
+      },
+      {
+        "candidate_id": 1,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "94cf6d4c267cafdfdb7edaf2ade68576128b5b1c42a6ab9c831ce45f032a8baa",
+        "cost_L": 6.723009642768076,
+        "cost_U": 6.723009642768076,
+        "cost_components": {
+          "stage_position": 0.540567978351404,
+          "stage_yaw": 0.07043299888760034,
+          "stage_action": 0.0016556723683777564,
+          "stage_action_change": 6.288508774816254e-05,
+          "stage_gap": 0.0002802193381427307,
+          "terminal_position": 5.405679899857413,
+          "terminal_yaw": 0.7043299888773914,
+          "terminal_speed": 2.4337615507812502e-17,
+          "terminal_angular_speed": 9.645387485526534e-34
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-001/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "640f84df044a3203847e605f2c337ea8425006aeb9316a3d19049d8eb023cfb5",
+          "files_sha256": {
+            "actual/N-T/candidate-001/A/repeat-0/complete_probe/trace.npz": "664c631d708422794255f3ade246c09026b6498509967ff935b48b2a44ffc980",
+            "actual/N-T/candidate-001/A/repeat-0/complete_probe/input.json.gz": "b1766799f275119ffcb69f5d95df4373e15e301e48125ac64d18a3a49a286aa9"
+          }
+        }
+      },
+      {
+        "candidate_id": 2,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "24c2251377a858eb08184428c7eb006e96ed126dc8c880e12059ea6e92971cb6",
+        "cost_L": 6.724964670809349,
+        "cost_U": 6.724964670809349,
+        "cost_components": {
+          "stage_position": 0.540567978351404,
+          "stage_yaw": 0.07043299888760034,
+          "stage_action": 0.002397640264643959,
+          "stage_action_change": 0.0006934572511897839,
+          "stage_gap": 0.0008627073197077969,
+          "terminal_position": 5.405679899857413,
+          "terminal_yaw": 0.7043299888773914,
+          "terminal_speed": 2.4337615507812502e-17,
+          "terminal_angular_speed": 9.645387485526534e-34
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-002/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "22a03464fab88240347d4b66fd31f542bc886b86caa1229fa2325fb5d7feedc6",
+          "files_sha256": {
+            "actual/N-T/candidate-002/A/repeat-0/complete_probe/trace.npz": "d1ad0db936041413dbffcd9aa8f5dc4fa3911fcb95ff5a0ceb1681251083c0a4",
+            "actual/N-T/candidate-002/A/repeat-0/complete_probe/input.json.gz": "2370f1fb18b9f05da7ce1e69960cf37d35a795f8576d4a3777345f7d903200ec"
+          }
+        }
+      },
+      {
+        "candidate_id": 3,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "49f85e9297710adfe795aaeace86cbc5a9bae35653c008be9c422f789046651b",
+        "cost_L": 6.723493930401408,
+        "cost_U": 6.723493930401408,
+        "cost_components": {
+          "stage_position": 0.540567978351404,
+          "stage_yaw": 0.07043299888760034,
+          "stage_action": 0.0009590561058575838,
+          "stage_action_change": 0.001172985304118576,
+          "stage_gap": 0.000351023017623591,
+          "terminal_position": 5.405679899857413,
+          "terminal_yaw": 0.7043299888773914,
+          "terminal_speed": 2.4337615507812502e-17,
+          "terminal_angular_speed": 9.645387485526534e-34
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-003/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "29d89ab91c07bf101a46ddb46fa7ae3243fd1a22b3987923861bbf8873264f49",
+          "files_sha256": {
+            "actual/N-T/candidate-003/A/repeat-0/complete_probe/trace.npz": "b84762bd60d7dffdae4a701d6803d37b8a2ec6bbda0caa64263e11d8af62db4c",
+            "actual/N-T/candidate-003/A/repeat-0/complete_probe/input.json.gz": "461322dab975da6928fde3d6a0b2e3ff952ec8ae9f0c8aa901fe0f6c858e3b50"
+          }
+        }
+      },
+      {
+        "candidate_id": 4,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "4933e9a6a4750eabd142d8b71443af3251e2e23766bb3e824fd9d754b3e8350e",
+        "cost_L": 6.723696091788856,
+        "cost_U": 6.723696091788856,
+        "cost_components": {
+          "stage_position": 0.540567978351404,
+          "stage_yaw": 0.07043299888760034,
+          "stage_action": 0.0014385841587863757,
+          "stage_action_change": 0.0009795280529287917,
+          "stage_gap": 0.00026711360333309835,
+          "terminal_position": 5.405679899857413,
+          "terminal_yaw": 0.7043299888773914,
+          "terminal_speed": 2.4337615507812502e-17,
+          "terminal_angular_speed": 9.645387485526534e-34
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-004/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "eb9ab395818aa055c602be6ab27d9b4682f2f59fc397c041e5ac15644e403a45",
+          "files_sha256": {
+            "actual/N-T/candidate-004/A/repeat-0/complete_probe/trace.npz": "12d6fe75aceac1b833d72e89814f91713f97d368cb5b60a48399ed9b9f522450",
+            "actual/N-T/candidate-004/A/repeat-0/complete_probe/input.json.gz": "93d55c6e5b4e3123cc4c12a3e3469efa9fe23337f1fa49d49a23a9a8cec0c89e"
+          }
+        }
+      },
+      {
+        "candidate_id": 5,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "707bcbdf74eed76e513aabd89e550104385ba111bcf4ab7b38b534844970fe6c",
+        "cost_L": 6.722376881996281,
+        "cost_U": 6.722376881996281,
+        "cost_components": {
+          "stage_position": 0.540567978351404,
+          "stage_yaw": 0.07043299888760034,
+          "stage_action": 0.0005994100661609898,
+          "stage_action_change": 0.00047684661236269403,
+          "stage_gap": 0.0002897593439490784,
+          "terminal_position": 5.405679899857413,
+          "terminal_yaw": 0.7043299888773914,
+          "terminal_speed": 2.4337615507812502e-17,
+          "terminal_angular_speed": 9.645387485526534e-34
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-005/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "d598a52635fbc3794fa58e9e7680c7065280f456fe54974988e0958ade6d4d49",
+          "files_sha256": {
+            "actual/N-T/candidate-005/A/repeat-0/complete_probe/trace.npz": "36117f10db1c781aaaa6d68703f1a4aa8f383e03bdda4caf8e4b64f98cbb1142",
+            "actual/N-T/candidate-005/A/repeat-0/complete_probe/input.json.gz": "8c1928d521a22a58af9945ed56c47f044f6f7c6ecffe53e287e7101ef2648edb"
+          }
+        }
+      },
+      {
+        "candidate_id": 6,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "12480c0374fd9115a4deef8001622980594fe28402bc7001b94ef11dd4eeb72f",
+        "cost_L": 6.7252240435811235,
+        "cost_U": 6.7252240435811235,
+        "cost_components": {
+          "stage_position": 0.540567978351404,
+          "stage_yaw": 0.07043299888760034,
+          "stage_action": 0.0024385841587863753,
+          "stage_action_change": 0.0010108514622304816,
+          "stage_gap": 0.0007637419862984192,
+          "terminal_position": 5.405679899857413,
+          "terminal_yaw": 0.7043299888773914,
+          "terminal_speed": 2.4337615507812502e-17,
+          "terminal_angular_speed": 9.645387485526534e-34
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-006/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "71229ef320edda09c8746ed4ed66d8095b125daad510b826b794ca5e47048105",
+          "files_sha256": {
+            "actual/N-T/candidate-006/A/repeat-0/complete_probe/trace.npz": "86a1d3055ac6a38d578b35f80bb43f3536d87ccc5a37b81bf884aed83b06f730",
+            "actual/N-T/candidate-006/A/repeat-0/complete_probe/input.json.gz": "6b63c7e487cbd7363ef3f9faceae5fe0c8f5aedd5e738201277c927d08663b22"
+          }
+        }
+      },
+      {
+        "candidate_id": 7,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "d0c7ac774d689649d97a49060213110c4a0f24610d2f186b76ca24ef84ce72eb",
+        "cost_L": 6.724554470738197,
+        "cost_U": 6.724554470738197,
+        "cost_components": {
+          "stage_position": 0.540567978351404,
+          "stage_yaw": 0.07043299888760034,
+          "stage_action": 0.002258567306728505,
+          "stage_action_change": 0.00042233013668546005,
+          "stage_gap": 0.0008627073209747409,
+          "terminal_position": 5.405679899857413,
+          "terminal_yaw": 0.7043299888773914,
+          "terminal_speed": 2.4337615507812502e-17,
+          "terminal_angular_speed": 9.645387485526534e-34
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-007/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "d9395cb3fae3ab7b00e28666f41947ab69e75b3bfd62e5cbc8d1ea5bad14efd6",
+          "files_sha256": {
+            "actual/N-T/candidate-007/A/repeat-0/complete_probe/trace.npz": "01bca0901d215a1c3e5628202c7b0b1ab8b6b07cdbe41192998ddeba092291e8",
+            "actual/N-T/candidate-007/A/repeat-0/complete_probe/input.json.gz": "5e2f46d3da332cd2fd74abc6db6d757f8d1846641da0b62cc780379d0407977a"
+          }
+        }
+      },
+      {
+        "candidate_id": 8,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "f572c51acf505b2edda79c8ad31b1d06e7cf4b0bb5b1da3ddd7b6ba259e70337",
+        "cost_L": 6.676132309422877,
+        "cost_U": 6.676132309422877,
+        "cost_components": {
+          "stage_position": 0.5332184520194254,
+          "stage_yaw": 0.07576301887913803,
+          "stage_action": 0.0010316340421626874,
+          "stage_action_change": 0.00045648510502719405,
+          "stage_gap": 1.3850314521124657e-06,
+          "terminal_position": 5.223060329543083,
+          "terminal_yaw": 0.8404774042557668,
+          "terminal_speed": 0.00018526462490529082,
+          "terminal_angular_speed": 0.0019383359219161433
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-008/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "292e1b012a0622bb182196880c86161b1452ac2316650970de000824ec020793",
+          "files_sha256": {
+            "actual/N-T/candidate-008/A/repeat-0/complete_probe/trace.npz": "f5693c27351d8ca47acca390297ebdd91650a7ae4335b4956ba473c99d6400b9",
+            "actual/N-T/candidate-008/A/repeat-0/complete_probe/input.json.gz": "dfe3bb457c8f2bce2947f1954d9f5fd52dae72a9e345617c36f4c83f06aa4047"
+          }
+        }
+      },
+      {
+        "candidate_id": 9,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c",
+        "cost_L": 7.46969978968833,
+        "cost_U": 7.46969978968833,
+        "cost_components": {
+          "stage_position": 0.4191092045004481,
+          "stage_yaw": 0.21675089143615658,
+          "stage_action": 0.0011618357633325633,
+          "stage_action_change": 0.0008710784707816698,
+          "stage_gap": 8.771400978064766e-12,
+          "terminal_position": 3.457461331420782,
+          "terminal_yaw": 3.319273502821678,
+          "terminal_speed": 0.0041125725401040284,
+          "terminal_angular_speed": 0.05095937272627718
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-009/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "f6839e5455c7978f39358d849ae4b55d8f5fbb07de1dcc4ab26c3e7b365bc647",
+          "files_sha256": {
+            "actual/N-T/candidate-009/A/repeat-0/complete_probe/trace.npz": "56545d4b80d7604d2c7cf2d1c3f1b815ca7b6302396ca53c27bd34837c22b64c",
+            "actual/N-T/candidate-009/A/repeat-0/complete_probe/input.json.gz": "c6351f4d59b84d1704e030033893c1876697ffc8b48e47deb9bf783ce3558aa6"
+          }
+        }
+      },
+      {
+        "candidate_id": 10,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "0a808cd779a295effe8d23128e08cd18a15c03616c2b9c3461f62b1ec392e025",
+        "cost_L": 6.72210058100711,
+        "cost_U": 6.72210058100711,
+        "cost_components": {
+          "stage_position": 0.540567978351404,
+          "stage_yaw": 0.07043299888760034,
+          "stage_action": 0.0006367971353986815,
+          "stage_action_change": 0.00045031988819424674,
+          "stage_gap": 2.598009708734387e-06,
+          "terminal_position": 5.405679899857413,
+          "terminal_yaw": 0.7043299888773914,
+          "terminal_speed": 2.4337615507812502e-17,
+          "terminal_angular_speed": 9.645387485526534e-34
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-010/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "a1e575d0c8698a5063e76636c3a8692e105f25cb4806ed3b37d070285bb6cc2c",
+          "files_sha256": {
+            "actual/N-T/candidate-010/A/repeat-0/complete_probe/trace.npz": "d07c29e383f153590b839226a47ec55dc93ac42a38ad0ddbd57a2b55038ba1e5",
+            "actual/N-T/candidate-010/A/repeat-0/complete_probe/input.json.gz": "c9d0603ea15a1ef1a5c7c7fda79924515947b74fd9e3f74c25367cf0f7ba91c5"
+          }
+        }
+      },
+      {
+        "candidate_id": 11,
+        "panel": "A",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": true,
+        "cost_finite": true,
+        "rankable_A": true,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 5,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "7cd811f18ae9615c4fde16a45dc6b7eb8cadbe00801002f15cebee368cef0cb4",
+        "cost_L": 6.746005277478548,
+        "cost_U": 6.746005277478548,
+        "cost_components": {
+          "stage_position": 0.5456336578873446,
+          "stage_yaw": 0.06616030395587603,
+          "stage_action": 0.0007211207371306742,
+          "stage_action_change": 0.0015195995245353632,
+          "stage_gap": 3.447742664682044e-07,
+          "terminal_position": 5.494158846915226,
+          "terminal_yaw": 0.6374604896365571,
+          "terminal_speed": 0.00028847915233573134,
+          "terminal_angular_speed": 6.243489527675077e-05
+        },
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-011/A/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "ec4fea90e503cb7a1e059e79105ef3c31b131d49509b417de652cda5a5d50daf",
+          "files_sha256": {
+            "actual/N-T/candidate-011/A/repeat-0/complete_probe/trace.npz": "7b399dcf8d7e0c3d6054cb11226654b1b3c2bc61a8180f964fddda9947b80345",
+            "actual/N-T/candidate-011/A/repeat-0/complete_probe/input.json.gz": "5d2a7ae2553b8fcacc176fd50656ca8459582acabcf7c9514742ec523e6f3311"
+          }
+        }
+      },
+      {
+        "candidate_id": 12,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 13,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 14,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 15,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 16,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 17,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 18,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 19,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 20,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 21,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 22,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 23,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 24,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 25,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 26,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 27,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 28,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 29,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 30,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 31,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 32,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 33,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 34,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 35,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 36,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 37,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 38,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 39,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 40,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 41,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 42,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 43,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 44,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 45,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 46,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 47,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 48,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 49,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 50,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 51,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 52,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 53,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 54,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 55,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 56,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 57,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 58,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 59,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 60,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 61,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 62,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 63,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 64,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 65,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 66,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 67,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 68,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 69,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 70,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 71,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 72,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 73,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 74,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 75,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 76,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 77,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 78,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 79,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 80,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 81,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 82,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 83,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 84,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 85,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 86,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 87,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 88,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 89,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 90,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 91,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 92,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 93,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 94,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 95,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 96,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 97,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 98,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 99,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 100,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 101,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 102,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 103,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 104,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 105,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 106,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 107,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 108,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 109,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 110,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 111,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 112,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 113,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 114,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 115,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 116,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 117,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 118,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 119,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 120,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 121,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 122,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 123,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 124,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 125,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 126,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 127,
+        "panel": "A",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      }
+    ],
+    "B": [
+      {
+        "candidate_id": 0,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 8,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "e3369d645dcb67404fa0ce468fc9a05e9eeb52ea35013d4fd583f268bab7cc13",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-000/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "56b08e1667a5be7eabbcac7d34d0e776a8697e71abc2deaac24d5c1634cbd72c",
+          "files_sha256": {
+            "actual/N-T/candidate-000/B/repeat-0/complete_probe/trace.npz": "21535f799297fb23df26d9d64a9055dd40a0a3fbecbb88c434512720dd9c7fa8",
+            "actual/N-T/candidate-000/B/repeat-0/complete_probe/input.json.gz": "a018ff5918436ef6acf0d73a93a8e535c435f69423b9fed192d454f5b2081040"
+          }
+        }
+      },
+      {
+        "candidate_id": 1,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 8,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "d4c2658f586e76b4b8f2f5eaf9ac387a80de03b1a9aacaae5448703d5984c2b5",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-001/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "3454062b27855ca0a57f374cff3cf2bd6b8788881d660d7f9a242737f3d652cb",
+          "files_sha256": {
+            "actual/N-T/candidate-001/B/repeat-0/complete_probe/trace.npz": "36be3cbda8069e6ba4fb33e69b3e97bc1e2161ff4c826c6f599a71adc8195e85",
+            "actual/N-T/candidate-001/B/repeat-0/complete_probe/input.json.gz": "7e7e253a12b4c1f4561340339642b7e8cdb283db310bff237e8d14aad20275ea"
+          }
+        }
+      },
+      {
+        "candidate_id": 2,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 8,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "ecb5e89924fc684857c088ba4cffc827d5eb45a1210d0f9ca43b103bfa206e69",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-002/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "f2c2092ce6febaff81ed7f73e37bc2984437659a76b58807c8f736fb90c76080",
+          "files_sha256": {
+            "actual/N-T/candidate-002/B/repeat-0/complete_probe/trace.npz": "91a768a1e732e7f4598b190d9593b034c28d9bac45065da228f8965a6aba6049",
+            "actual/N-T/candidate-002/B/repeat-0/complete_probe/input.json.gz": "19569bb4f4dc1a0f5e1b43949e12e82ca380e4844ef12dd5c709a12b381f410a"
+          }
+        }
+      },
+      {
+        "candidate_id": 3,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 8,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "e7f9bdb9d971e6d5a1ed3b40ced142058eb63bcc2c234ae29aa9d1b16728f4d2",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-003/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "dcaafffbc08e437bcda9f11be4a4d6fdadfbd6b2afd14db2894f87cf8ea11001",
+          "files_sha256": {
+            "actual/N-T/candidate-003/B/repeat-0/complete_probe/trace.npz": "ad908d2358e8459513198cb90fff79cf038b4893c56173579441687aabd3e086",
+            "actual/N-T/candidate-003/B/repeat-0/complete_probe/input.json.gz": "ce69e35fb66e7ec2e706aa1c3907674b7d06a1b46fb385c1ca209b4d80a6fa7b"
+          }
+        }
+      },
+      {
+        "candidate_id": 4,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 8,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "56d265b4f4ac04107b93fcdddb3fb685cb5addd9fcd497e707b804dec6f4288d",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-004/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "1c3f69aaa78bacf3283a965d7dd63038ec908305eca1bcadc62a947dd1abc4d6",
+          "files_sha256": {
+            "actual/N-T/candidate-004/B/repeat-0/complete_probe/trace.npz": "73132bfed1ae2aea1592387db075d7d3358b92e99e1cb63ad9a7c81215e8176c",
+            "actual/N-T/candidate-004/B/repeat-0/complete_probe/input.json.gz": "89e0af7e62b1617c12c6e06af6ab5a487cffe4dc12256302a4adf97cfcabb1cd"
+          }
+        }
+      },
+      {
+        "candidate_id": 5,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 8,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "51e0ba83a239edfec376a74a612be38954d0904f61f25ed8cb3179a81926bb29",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-005/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "1da84e49bcb37d6be1b47f2ecf94134cba5b423d4debb07d63823f6229b7b82c",
+          "files_sha256": {
+            "actual/N-T/candidate-005/B/repeat-0/complete_probe/trace.npz": "c615f09b54c414a66b5f4b39ffb31c982d5c704971ae270494cf1b569c84ed99",
+            "actual/N-T/candidate-005/B/repeat-0/complete_probe/input.json.gz": "7fc0157a2a0f03bbe5c6fb7c95792581468a2372ce554e58a7c1ea00513027c5"
+          }
+        }
+      },
+      {
+        "candidate_id": 6,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 8,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "52197d91ed083e46ad7a37261af83947e83b9f80ca73390802470a468e407b2e",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-006/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "23dcc91473a70d08e623bb701f492586a58d8f46c1212b78b585475b54f7c0dc",
+          "files_sha256": {
+            "actual/N-T/candidate-006/B/repeat-0/complete_probe/trace.npz": "1c334b1530a901581d0eb5d4176a08149fe718eb09d456fbe8b26890bb8a7f15",
+            "actual/N-T/candidate-006/B/repeat-0/complete_probe/input.json.gz": "5feb04471d0b98921bcb9200b8a5ddca700f688b88e5eef12a06ae0dadfce84c"
+          }
+        }
+      },
+      {
+        "candidate_id": 7,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 8,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "3b8ae374983208b68de249853a02550b08a6a105925cde46274e3ab148d2f827",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-007/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "9dfeb5de625a1ebc048d44bff2fa230d4f319be6aaeb6071b60ee65fafdc3d4f",
+          "files_sha256": {
+            "actual/N-T/candidate-007/B/repeat-0/complete_probe/trace.npz": "ff73d6cf1e25cd568a39bb559203ddb3a9333e5b31df634d6de79653460645cf",
+            "actual/N-T/candidate-007/B/repeat-0/complete_probe/input.json.gz": "9e4d6e0514521544687bfd94c8ad04c5403d519ba05c84414d7133556d4c6b65"
+          }
+        }
+      },
+      {
+        "candidate_id": 8,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 8,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "6a107460accead3a8435937ab04f8f2d63a5fa7eb2d979688b0451564d746240",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-008/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "cf016274ae2ff523ea22456b196962b1085f804f324d2f859e9bfbee9b8fb7d4",
+          "files_sha256": {
+            "actual/N-T/candidate-008/B/repeat-0/complete_probe/trace.npz": "1b8c5ca160359fdfa1d63144279a3f29d0615d0fa1c8837fb6191b199e64ded0",
+            "actual/N-T/candidate-008/B/repeat-0/complete_probe/input.json.gz": "a47609fc0b9a7d05e7c06990aa2b40828d2ba1204b8fec6f4b65c1374b331964"
+          }
+        }
+      },
+      {
+        "candidate_id": 9,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": false,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": true,
+        "ready_prefix": false,
+        "ready_eligible": true,
+        "first_ready_interval": 6,
+        "intervals": 6,
+        "termination": "ready",
+        "reasons": [],
+        "whole_probe_typed_sha256": "ee3985311a3fa88412df6c6ed456db481b66488612286a52e862872d1994aa37",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-009/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "0b4168b2fb1463e0d334faa19f1f66c393e1d0f33131cb9cdb53e7cd30040bb1",
+          "files_sha256": {
+            "actual/N-T/candidate-009/B/repeat-0/complete_probe/trace.npz": "2ed2e19c65dda5ce34a21680ed0064883cb20a0d20984e867b56c09bd7c27529",
+            "actual/N-T/candidate-009/B/repeat-0/complete_probe/input.json.gz": "7a5bc7487168c0188724c8298a4f49c34978d5e9fe9c4f8d0f6590a1f7ce7749"
+          }
+        }
+      },
+      {
+        "candidate_id": 10,
+        "panel": "B",
+        "present_repeats": [
+          0,
+          1,
+          2
+        ],
+        "status": "STABLE",
+        "stable": true,
+        "physical_valid": true,
+        "horizon_completed": true,
+        "H5_physical_valid": null,
+        "cost_finite": null,
+        "rankable_A": false,
+        "ready": false,
+        "ready_prefix": false,
+        "ready_eligible": false,
+        "first_ready_interval": null,
+        "intervals": 8,
+        "termination": "horizon_completed",
+        "reasons": [],
+        "whole_probe_typed_sha256": "11a5d378d26f1ec4a5b46d02f1bc8c71b0745c89554432ee3c2e12c2e0f3fba9",
+        "cost_L": null,
+        "cost_U": null,
+        "cost_components": null,
+        "first_repeat_complete_probe_reference": {
+          "receipt": "actual/N-T/candidate-010/B/repeat-0/complete_probe_receipt.json",
+          "receipt_sha256": "7c34af5096fd490bc6c9137caeb89045833220bba7ca47b2682c57e354a31133",
+          "files_sha256": {
+            "actual/N-T/candidate-010/B/repeat-0/complete_probe/trace.npz": "ab30e941cf215534e55428b82a5d91d869832f034b4091db40be999aeb92a668",
+            "actual/N-T/candidate-010/B/repeat-0/complete_probe/input.json.gz": "7afed143606463e08b53077950c2150d9a20394e9e9ff7259e834651f7e9010e"
+          }
+        }
+      },
+      {
+        "candidate_id": 11,
+        "panel": "B",
+        "present_repeats": [
+          0
+        ],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 12,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 13,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 14,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 15,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 16,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 17,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 18,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 19,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 20,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 21,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 22,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 23,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 24,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 25,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 26,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 27,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 28,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 29,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 30,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 31,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 32,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 33,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 34,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 35,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 36,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 37,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 38,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 39,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 40,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 41,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 42,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 43,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 44,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 45,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 46,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 47,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 48,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 49,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 50,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 51,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 52,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 53,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 54,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 55,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 56,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 57,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 58,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 59,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 60,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 61,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 62,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 63,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 64,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 65,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 66,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 67,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 68,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 69,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 70,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 71,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 72,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 73,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 74,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 75,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 76,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 77,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 78,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 79,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 80,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 81,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 82,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 83,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 84,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 85,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 86,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 87,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 88,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 89,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 90,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 91,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 92,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 93,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 94,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 95,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 96,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 97,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 98,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 99,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 100,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 101,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 102,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 103,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 104,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 105,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 106,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 107,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 108,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 109,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 110,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 111,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 112,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 113,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 114,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 115,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 116,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 117,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 118,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 119,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 120,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 121,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 122,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 123,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 124,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 125,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 126,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      },
+      {
+        "candidate_id": 127,
+        "panel": "B",
+        "present_repeats": [],
+        "status": "MISSING_OR_PARTIAL",
+        "stable": false
+      }
+    ]
+  },
+  "actual_counters": {
+    "A": {
+      "stable_group_count": 12,
+      "physical_valid_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ready_first_hit_ids": [],
+      "ready_prefix_first_hit_ids": [],
+      "ready_eligible_ids": [],
+      "missing_or_unstable_ids": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    "B": {
+      "stable_group_count": 11,
+      "physical_valid_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ready_first_hit_ids": [
+        9
+      ],
+      "ready_prefix_first_hit_ids": [],
+      "ready_eligible_ids": [
+        9
+      ],
+      "missing_or_unstable_ids": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ]
+    }
+  },
+  "cost_assessment_A_only": {
+    "status": "OBSERVED_SUBSET_RANKING_ONLY",
+    "epsilon": 7.56969978968833e-05,
+    "epsilon_max_abs_finite_cost": 7.46969978968833,
+    "rankable_candidate_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "best_upper_cost": 6.676132309422877,
+    "best_lower_cost": 6.676132309422877,
+    "possible_cost_optimum_ids": [
+      8
+    ],
+    "stable_ready_A_ids": [],
+    "C": {
+      "status": "UNRESOLVED_INCOMPLETE_OR_UNSTABLE_BANK"
+    }
+  },
+  "model_hypotheses": {
+    "R": {
+      "predicted_valid_count": 126,
+      "predicted_valid_finite_cost_count": 126,
+      "selected_original_candidate_id": 123,
+      "M1_false_invalid_actual_A_valid_ids": [],
+      "M1_status": "UNRESOLVED_INCOMPLETE_BANK",
+      "predicted_valid_actual_A_invalid_ids": [],
+      "invalid_failure_step_counts": {
+        "4": 1,
+        "5": 1
+      },
+      "selected_actual_A": {
+        "status": "MISSING_OR_PARTIAL",
+        "H5_physical_valid": null,
+        "ready_eligible": null,
+        "cost_L": null,
+        "cost_U": null
+      },
+      "M2": {
+        "status": "UNRESOLVED_SELECTED_ACTUAL_MISSING_OR_UNSTABLE",
+        "regret_interval": null
+      }
+    },
+    "S1-11": {
+      "predicted_valid_count": 121,
+      "predicted_valid_finite_cost_count": 121,
+      "selected_original_candidate_id": 60,
+      "M1_false_invalid_actual_A_valid_ids": [],
+      "M1_status": "UNRESOLVED_INCOMPLETE_BANK",
+      "predicted_valid_actual_A_invalid_ids": [],
+      "invalid_failure_step_counts": {
+        "2": 3,
+        "3": 3,
+        "5": 1
+      },
+      "selected_actual_A": {
+        "status": "MISSING_OR_PARTIAL",
+        "H5_physical_valid": null,
+        "ready_eligible": null,
+        "cost_L": null,
+        "cost_U": null
+      },
+      "M2": {
+        "status": "UNRESOLVED_SELECTED_ACTUAL_MISSING_OR_UNSTABLE",
+        "regret_interval": null
+      }
+    },
+    "S1-23": {
+      "predicted_valid_count": 119,
+      "predicted_valid_finite_cost_count": 119,
+      "selected_original_candidate_id": 37,
+      "M1_false_invalid_actual_A_valid_ids": [],
+      "M1_status": "UNRESOLVED_INCOMPLETE_BANK",
+      "predicted_valid_actual_A_invalid_ids": [],
+      "invalid_failure_step_counts": {
+        "2": 8,
+        "4": 1
+      },
+      "selected_actual_A": {
+        "status": "MISSING_OR_PARTIAL",
+        "H5_physical_valid": null,
+        "ready_eligible": null,
+        "cost_L": null,
+        "cost_U": null
+      },
+      "M2": {
+        "status": "UNRESOLVED_SELECTED_ACTUAL_MISSING_OR_UNSTABLE",
+        "regret_interval": null
+      }
+    },
+    "S1-47": {
+      "predicted_valid_count": 124,
+      "predicted_valid_finite_cost_count": 124,
+      "selected_original_candidate_id": 13,
+      "M1_false_invalid_actual_A_valid_ids": [],
+      "M1_status": "UNRESOLVED_INCOMPLETE_BANK",
+      "predicted_valid_actual_A_invalid_ids": [],
+      "invalid_failure_step_counts": {
+        "2": 4
+      },
+      "selected_actual_A": {
+        "status": "MISSING_OR_PARTIAL",
+        "H5_physical_valid": null,
+        "ready_eligible": null,
+        "cost_L": null,
+        "cost_U": null
+      },
+      "M2": {
+        "status": "UNRESOLVED_SELECTED_ACTUAL_MISSING_OR_UNSTABLE",
+        "regret_interval": null
+      }
+    },
+    "SK-11": {
+      "predicted_valid_count": 122,
+      "predicted_valid_finite_cost_count": 122,
+      "selected_original_candidate_id": 119,
+      "M1_false_invalid_actual_A_valid_ids": [],
+      "M1_status": "UNRESOLVED_INCOMPLETE_BANK",
+      "predicted_valid_actual_A_invalid_ids": [],
+      "invalid_failure_step_counts": {
+        "2": 3,
+        "3": 2,
+        "5": 1
+      },
+      "selected_actual_A": {
+        "status": "MISSING_OR_PARTIAL",
+        "H5_physical_valid": null,
+        "ready_eligible": null,
+        "cost_L": null,
+        "cost_U": null
+      },
+      "M2": {
+        "status": "UNRESOLVED_SELECTED_ACTUAL_MISSING_OR_UNSTABLE",
+        "regret_interval": null
+      }
+    },
+    "SK-23": {
+      "predicted_valid_count": 117,
+      "predicted_valid_finite_cost_count": 117,
+      "selected_original_candidate_id": 17,
+      "M1_false_invalid_actual_A_valid_ids": [
+        11
+      ],
+      "M1_status": "SUPPORTED_LOCAL",
+      "predicted_valid_actual_A_invalid_ids": [],
+      "invalid_failure_step_counts": {
+        "2": 10,
+        "3": 1
+      },
+      "selected_actual_A": {
+        "status": "MISSING_OR_PARTIAL",
+        "H5_physical_valid": null,
+        "ready_eligible": null,
+        "cost_L": null,
+        "cost_U": null
+      },
+      "M2": {
+        "status": "UNRESOLVED_SELECTED_ACTUAL_MISSING_OR_UNSTABLE",
+        "regret_interval": null
+      }
+    },
+    "SK-47": {
+      "predicted_valid_count": 124,
+      "predicted_valid_finite_cost_count": 124,
+      "selected_original_candidate_id": 119,
+      "M1_false_invalid_actual_A_valid_ids": [],
+      "M1_status": "UNRESOLVED_INCOMPLETE_BANK",
+      "predicted_valid_actual_A_invalid_ids": [],
+      "invalid_failure_step_counts": {
+        "2": 4
+      },
+      "selected_actual_A": {
+        "status": "MISSING_OR_PARTIAL",
+        "H5_physical_valid": null,
+        "ready_eligible": null,
+        "cost_L": null,
+        "cost_U": null
+      },
+      "M2": {
+        "status": "UNRESOLVED_SELECTED_ACTUAL_MISSING_OR_UNSTABLE",
+        "regret_interval": null
+      }
+    }
+  },
+  "I_A_B_comparison": {
+    "paired_stable_groups": 11,
+    "candidate_pairs": [
+      {
+        "candidate_id": 0,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": false,
+        "B_first_ready_interval": null,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [],
+        "B_ready_after_H5": false,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      },
+      {
+        "candidate_id": 1,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": false,
+        "B_first_ready_interval": null,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [],
+        "B_ready_after_H5": false,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      },
+      {
+        "candidate_id": 2,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": false,
+        "B_first_ready_interval": null,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [],
+        "B_ready_after_H5": false,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      },
+      {
+        "candidate_id": 3,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": false,
+        "B_first_ready_interval": null,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [],
+        "B_ready_after_H5": false,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      },
+      {
+        "candidate_id": 4,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": false,
+        "B_first_ready_interval": null,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [],
+        "B_ready_after_H5": false,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      },
+      {
+        "candidate_id": 5,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": false,
+        "B_first_ready_interval": null,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [],
+        "B_ready_after_H5": false,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      },
+      {
+        "candidate_id": 6,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": false,
+        "B_first_ready_interval": null,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [],
+        "B_ready_after_H5": false,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      },
+      {
+        "candidate_id": 7,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": false,
+        "B_first_ready_interval": null,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [],
+        "B_ready_after_H5": false,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      },
+      {
+        "candidate_id": 8,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": false,
+        "B_first_ready_interval": null,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [],
+        "B_ready_after_H5": false,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      },
+      {
+        "candidate_id": 9,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": true,
+        "B_first_ready_interval": 6,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [
+          3,
+          4,
+          5
+        ],
+        "B_ready_after_H5": true,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      },
+      {
+        "candidate_id": 10,
+        "A_H5_physical_valid": true,
+        "A_ready_first_hit_by_H5": false,
+        "A_ready_eligible": false,
+        "B_physical_valid": true,
+        "B_ready_prefix": false,
+        "B_ready_eligible": false,
+        "B_first_ready_interval": null,
+        "compared_common_command_intervals": 5,
+        "different_applied_command_intervals_1based": [],
+        "B_ready_after_H5": false,
+        "A_post_ready_invalid_B_absorbing_ready": false
+      }
+    ],
+    "B_full_ready_after_H5_ids": [
+      9
+    ],
+    "prefix_first_hit_difference_ids": [],
+    "interpretation": "B full vs A is a joint current-pose supervisor, horizon and termination-convention contrast. No B H8 cost or A-forecast-versus-B error is computed."
+  },
+  "S": {
+    "status": "UNRESOLVED_NO_EXTRA_BANK_EXECUTED",
+    "conditional_extension": "NOT_RUN",
+    "interpretation": "Even an empty complete base bank would not establish physical unreachability."
+  },
+  "source_preservation_reported_by_executor": {
+    "unchanged_source_run_files": null,
+    "unchanged_original_files": null,
+    "unchanged_model_normalizer_files": null,
+    "original_source_models_code_config_unchanged": true,
+    "future_engine_calls_during_prediction": {
+      "mj_step": 0,
+      "mj_step1": 0,
+      "mj_step2": 0,
+      "mj_forward": 0,
+      "mj_inverse": 0
+    },
+    "training_updates": 0,
+    "bound_original_file_count": 263,
+    "bound_source_run_file_count": 1204,
+    "bound_model_normalizer_file_count": 22
+  },
+  "fresh_teacher": {
+    "status": "NOT_AVAILABLE_NOT_768_COMPLETE",
+    "source_row_count": null,
+    "model_count": 0,
+    "partial_teacher_files": [],
+    "interpretation": "No fresh full-bank teacher result claimed; no prior repeated timing benchmark is substituted."
+  },
+  "local_evidence_sha256": {
+    "actual/N-T/candidate-000/A/repeat-0/summary.json": "527253b90fff64f2cbac585f9f198b5e330fa4589253a0b170c46f155f6b722e",
+    "actual/N-T/candidate-000/A/repeat-0/diagnostic.npz": "164bcbdad7239078b577ee00214f92295cd08105deec261e875f6616bcb7a39d",
+    "actual/N-T/candidate-000/A/repeat-0/complete_probe_receipt.json": "41026bee281cb94cf924cef8e5b4467d89ca34027e22b5f54bd854290495c477",
+    "actual/N-T/candidate-000/A/repeat-0/complete_probe/trace.npz": "9de21dd7304463d0d7301f9830042438293b89d201e5657a6eeb3bb2cc0c638d",
+    "actual/N-T/candidate-000/A/repeat-0/complete_probe/input.json.gz": "5feb903405153fece7935663193d1dd62df1b3dd9f5a4404e85bd6f70f604f4e",
+    "actual/N-T/candidate-000/A/repeat-1/summary.json": "d6c2b1181c0a6afe5d3fdf484a8df06f2d62c0d4651bbc36cebc730f55a55ac0",
+    "actual/N-T/candidate-000/A/repeat-1/diagnostic.npz": "164bcbdad7239078b577ee00214f92295cd08105deec261e875f6616bcb7a39d",
+    "actual/N-T/candidate-000/A/repeat-2/summary.json": "68dd74c3d3ad20c6ad32f190bf32e6abb22801f56aa83dbbae34c2568f4850ac",
+    "actual/N-T/candidate-000/A/repeat-2/diagnostic.npz": "164bcbdad7239078b577ee00214f92295cd08105deec261e875f6616bcb7a39d",
+    "actual/N-T/candidate-000/B/repeat-0/summary.json": "90b7374042758e6d04cd66af085bbca4be95de3fb70f6932fd858f9dca0eeed7",
+    "actual/N-T/candidate-000/B/repeat-0/diagnostic.npz": "7fd50a6ad21d78c91b748d3196d204007359dd8222cee81c3503ef91c79c04d7",
+    "actual/N-T/candidate-000/B/repeat-0/complete_probe_receipt.json": "56b08e1667a5be7eabbcac7d34d0e776a8697e71abc2deaac24d5c1634cbd72c",
+    "actual/N-T/candidate-000/B/repeat-0/complete_probe/trace.npz": "21535f799297fb23df26d9d64a9055dd40a0a3fbecbb88c434512720dd9c7fa8",
+    "actual/N-T/candidate-000/B/repeat-0/complete_probe/input.json.gz": "a018ff5918436ef6acf0d73a93a8e535c435f69423b9fed192d454f5b2081040",
+    "actual/N-T/candidate-000/B/repeat-1/summary.json": "8ee0775a7129e310de4632565799349ec812139127e89b53a8a266543e4f58ed",
+    "actual/N-T/candidate-000/B/repeat-1/diagnostic.npz": "7fd50a6ad21d78c91b748d3196d204007359dd8222cee81c3503ef91c79c04d7",
+    "actual/N-T/candidate-000/B/repeat-2/summary.json": "7b91f6d03e23c1da3bda987d1c18557548bee4f9c2a0e038477c4654f5a2ecb3",
+    "actual/N-T/candidate-000/B/repeat-2/diagnostic.npz": "7fd50a6ad21d78c91b748d3196d204007359dd8222cee81c3503ef91c79c04d7",
+    "actual/N-T/candidate-001/A/repeat-0/summary.json": "56aad498f0aeae459b38ee963f11791529a5398e8616497d2bea23daed59fa03",
+    "actual/N-T/candidate-001/A/repeat-0/diagnostic.npz": "1e209ef8033303accc5351991f7864608b8f6c294854cca5c9432002fd006a24",
+    "actual/N-T/candidate-001/A/repeat-0/complete_probe_receipt.json": "640f84df044a3203847e605f2c337ea8425006aeb9316a3d19049d8eb023cfb5",
+    "actual/N-T/candidate-001/A/repeat-0/complete_probe/trace.npz": "664c631d708422794255f3ade246c09026b6498509967ff935b48b2a44ffc980",
+    "actual/N-T/candidate-001/A/repeat-0/complete_probe/input.json.gz": "b1766799f275119ffcb69f5d95df4373e15e301e48125ac64d18a3a49a286aa9",
+    "actual/N-T/candidate-001/A/repeat-1/summary.json": "7209c3f53d89dc9f602b0c991a52613e425e047dc2d3f066d12725adaa6aa966",
+    "actual/N-T/candidate-001/A/repeat-1/diagnostic.npz": "1e209ef8033303accc5351991f7864608b8f6c294854cca5c9432002fd006a24",
+    "actual/N-T/candidate-001/A/repeat-2/summary.json": "789dee53afb2d0dca1becbeb9589055092433f10ee910903c57360cdde7ba5ad",
+    "actual/N-T/candidate-001/A/repeat-2/diagnostic.npz": "1e209ef8033303accc5351991f7864608b8f6c294854cca5c9432002fd006a24",
+    "actual/N-T/candidate-001/B/repeat-0/summary.json": "ace4fb0c2882eeb2da443d4c67b2bba9cad938e4c7023f71755a2a0f7b205c1e",
+    "actual/N-T/candidate-001/B/repeat-0/diagnostic.npz": "202f9eac7a9deadbfb37e96cd89d85df317b1e02f60750f276232344481749a3",
+    "actual/N-T/candidate-001/B/repeat-0/complete_probe_receipt.json": "3454062b27855ca0a57f374cff3cf2bd6b8788881d660d7f9a242737f3d652cb",
+    "actual/N-T/candidate-001/B/repeat-0/complete_probe/trace.npz": "36be3cbda8069e6ba4fb33e69b3e97bc1e2161ff4c826c6f599a71adc8195e85",
+    "actual/N-T/candidate-001/B/repeat-0/complete_probe/input.json.gz": "7e7e253a12b4c1f4561340339642b7e8cdb283db310bff237e8d14aad20275ea",
+    "actual/N-T/candidate-001/B/repeat-1/summary.json": "3d86441bdaccbe37c5efdbb1b85616e686061f72e9ae527e9197532a37d80a67",
+    "actual/N-T/candidate-001/B/repeat-1/diagnostic.npz": "202f9eac7a9deadbfb37e96cd89d85df317b1e02f60750f276232344481749a3",
+    "actual/N-T/candidate-001/B/repeat-2/summary.json": "8f9fa9d7744b02dd75a9ff6630b341a66428982062a93276709b819b2e7d8e4e",
+    "actual/N-T/candidate-001/B/repeat-2/diagnostic.npz": "202f9eac7a9deadbfb37e96cd89d85df317b1e02f60750f276232344481749a3",
+    "actual/N-T/candidate-002/A/repeat-0/summary.json": "8e26810cea6452c73de84ddd78b127f12eea264ecefa26197dfb6fdbcda6d238",
+    "actual/N-T/candidate-002/A/repeat-0/diagnostic.npz": "afe6cc40199eadda36bace83fbb44437a432bc1a7e409863d2b40f5cf151e53c",
+    "actual/N-T/candidate-002/A/repeat-0/complete_probe_receipt.json": "22a03464fab88240347d4b66fd31f542bc886b86caa1229fa2325fb5d7feedc6",
+    "actual/N-T/candidate-002/A/repeat-0/complete_probe/trace.npz": "d1ad0db936041413dbffcd9aa8f5dc4fa3911fcb95ff5a0ceb1681251083c0a4",
+    "actual/N-T/candidate-002/A/repeat-0/complete_probe/input.json.gz": "2370f1fb18b9f05da7ce1e69960cf37d35a795f8576d4a3777345f7d903200ec",
+    "actual/N-T/candidate-002/A/repeat-1/summary.json": "2cf5fdf25b2215c549cdd129c713636b9d62671cf36b16e1650ca709d64aa763",
+    "actual/N-T/candidate-002/A/repeat-1/diagnostic.npz": "afe6cc40199eadda36bace83fbb44437a432bc1a7e409863d2b40f5cf151e53c",
+    "actual/N-T/candidate-002/A/repeat-2/summary.json": "f3f935b0cf1c7e7d1607747b1dc222ebe6d637f35cb348f2834e24230d08b9ad",
+    "actual/N-T/candidate-002/A/repeat-2/diagnostic.npz": "afe6cc40199eadda36bace83fbb44437a432bc1a7e409863d2b40f5cf151e53c",
+    "actual/N-T/candidate-002/B/repeat-0/summary.json": "12663531900c0a90b132039bab846d18fbab0bc8c15ac60f405e44462d67df78",
+    "actual/N-T/candidate-002/B/repeat-0/diagnostic.npz": "c021e6e37f0d78465a12dc6a7ba4cc4369e6b0e08993a39fe221f9f4c3158934",
+    "actual/N-T/candidate-002/B/repeat-0/complete_probe_receipt.json": "f2c2092ce6febaff81ed7f73e37bc2984437659a76b58807c8f736fb90c76080",
+    "actual/N-T/candidate-002/B/repeat-0/complete_probe/trace.npz": "91a768a1e732e7f4598b190d9593b034c28d9bac45065da228f8965a6aba6049",
+    "actual/N-T/candidate-002/B/repeat-0/complete_probe/input.json.gz": "19569bb4f4dc1a0f5e1b43949e12e82ca380e4844ef12dd5c709a12b381f410a",
+    "actual/N-T/candidate-002/B/repeat-1/summary.json": "3018ab11b2f669c9b875e25b5eaf3bef95b13b814da939db2eb39815108b697b",
+    "actual/N-T/candidate-002/B/repeat-1/diagnostic.npz": "c021e6e37f0d78465a12dc6a7ba4cc4369e6b0e08993a39fe221f9f4c3158934",
+    "actual/N-T/candidate-002/B/repeat-2/summary.json": "66367839f2b7d8962a3225b7059250edfcb5489a2cf2ce07c3a9e5a419a68f85",
+    "actual/N-T/candidate-002/B/repeat-2/diagnostic.npz": "c021e6e37f0d78465a12dc6a7ba4cc4369e6b0e08993a39fe221f9f4c3158934",
+    "actual/N-T/candidate-003/A/repeat-0/summary.json": "8bf776d4b0f2198233818f215d0187ece53403cbb830a7c33261887b0dc43f13",
+    "actual/N-T/candidate-003/A/repeat-0/diagnostic.npz": "17f9c9a9c805a3bb6401346f62023aca75d2ef9e763196cfd1226b8447a31c3a",
+    "actual/N-T/candidate-003/A/repeat-0/complete_probe_receipt.json": "29d89ab91c07bf101a46ddb46fa7ae3243fd1a22b3987923861bbf8873264f49",
+    "actual/N-T/candidate-003/A/repeat-0/complete_probe/trace.npz": "b84762bd60d7dffdae4a701d6803d37b8a2ec6bbda0caa64263e11d8af62db4c",
+    "actual/N-T/candidate-003/A/repeat-0/complete_probe/input.json.gz": "461322dab975da6928fde3d6a0b2e3ff952ec8ae9f0c8aa901fe0f6c858e3b50",
+    "actual/N-T/candidate-003/A/repeat-1/summary.json": "6a185de7600b3836c9b362fdcdd00a782ea4234a7e8a7531259436bad613b20e",
+    "actual/N-T/candidate-003/A/repeat-1/diagnostic.npz": "17f9c9a9c805a3bb6401346f62023aca75d2ef9e763196cfd1226b8447a31c3a",
+    "actual/N-T/candidate-003/A/repeat-2/summary.json": "9d1200865bb82580fedf54bab73de7a7f14d947a0ba98ae78a26a08ad7f25daf",
+    "actual/N-T/candidate-003/A/repeat-2/diagnostic.npz": "17f9c9a9c805a3bb6401346f62023aca75d2ef9e763196cfd1226b8447a31c3a",
+    "actual/N-T/candidate-003/B/repeat-0/summary.json": "349d2bfb6c8b52e4db607ce0f199f315e4ceb9153ca6b16015673ec3ad05ed6d",
+    "actual/N-T/candidate-003/B/repeat-0/diagnostic.npz": "9cadbfc2f16b4862682583a221b41ec25b3ff0eed888c4a337e4b5d0c3bd57de",
+    "actual/N-T/candidate-003/B/repeat-0/complete_probe_receipt.json": "dcaafffbc08e437bcda9f11be4a4d6fdadfbd6b2afd14db2894f87cf8ea11001",
+    "actual/N-T/candidate-003/B/repeat-0/complete_probe/trace.npz": "ad908d2358e8459513198cb90fff79cf038b4893c56173579441687aabd3e086",
+    "actual/N-T/candidate-003/B/repeat-0/complete_probe/input.json.gz": "ce69e35fb66e7ec2e706aa1c3907674b7d06a1b46fb385c1ca209b4d80a6fa7b",
+    "actual/N-T/candidate-003/B/repeat-1/summary.json": "98f538c0b67be3ee81782fa1ee60563a7b05b2ae3ee69c8411462ea838f8b10e",
+    "actual/N-T/candidate-003/B/repeat-1/diagnostic.npz": "9cadbfc2f16b4862682583a221b41ec25b3ff0eed888c4a337e4b5d0c3bd57de",
+    "actual/N-T/candidate-003/B/repeat-2/summary.json": "9ec58df60dd39882f580dc8e58ed97f77bcfedca7af75eb72a4399e896d65ad1",
+    "actual/N-T/candidate-003/B/repeat-2/diagnostic.npz": "9cadbfc2f16b4862682583a221b41ec25b3ff0eed888c4a337e4b5d0c3bd57de",
+    "actual/N-T/candidate-004/A/repeat-0/summary.json": "e58cf085c19cc04ec9a92f452979061c0b7c55c2cfb8e97932b11161bd66d1c7",
+    "actual/N-T/candidate-004/A/repeat-0/diagnostic.npz": "b742b010c8025414cfcc44de209b93e203ed820a9bd325d129723f5769d995fb",
+    "actual/N-T/candidate-004/A/repeat-0/complete_probe_receipt.json": "eb9ab395818aa055c602be6ab27d9b4682f2f59fc397c041e5ac15644e403a45",
+    "actual/N-T/candidate-004/A/repeat-0/complete_probe/trace.npz": "12d6fe75aceac1b833d72e89814f91713f97d368cb5b60a48399ed9b9f522450",
+    "actual/N-T/candidate-004/A/repeat-0/complete_probe/input.json.gz": "93d55c6e5b4e3123cc4c12a3e3469efa9fe23337f1fa49d49a23a9a8cec0c89e",
+    "actual/N-T/candidate-004/A/repeat-1/summary.json": "c076820f7bbdde68578f970221d151716d8166021f3549b70ad35dbd4c815a0d",
+    "actual/N-T/candidate-004/A/repeat-1/diagnostic.npz": "b742b010c8025414cfcc44de209b93e203ed820a9bd325d129723f5769d995fb",
+    "actual/N-T/candidate-004/A/repeat-2/summary.json": "c2e3a9cb8c091cc398b3a570b7fa40c46ce5174a3963eebff8355e5e763208fe",
+    "actual/N-T/candidate-004/A/repeat-2/diagnostic.npz": "b742b010c8025414cfcc44de209b93e203ed820a9bd325d129723f5769d995fb",
+    "actual/N-T/candidate-004/B/repeat-0/summary.json": "299e55a8d52c9f36d98a6a8dd097a198cb2726181cd37a557d6460c9859a1ed9",
+    "actual/N-T/candidate-004/B/repeat-0/diagnostic.npz": "79dc7579fe3820c273e230eacd0b750e911d769bde6638833f33935dd711abd1",
+    "actual/N-T/candidate-004/B/repeat-0/complete_probe_receipt.json": "1c3f69aaa78bacf3283a965d7dd63038ec908305eca1bcadc62a947dd1abc4d6",
+    "actual/N-T/candidate-004/B/repeat-0/complete_probe/trace.npz": "73132bfed1ae2aea1592387db075d7d3358b92e99e1cb63ad9a7c81215e8176c",
+    "actual/N-T/candidate-004/B/repeat-0/complete_probe/input.json.gz": "89e0af7e62b1617c12c6e06af6ab5a487cffe4dc12256302a4adf97cfcabb1cd",
+    "actual/N-T/candidate-004/B/repeat-1/summary.json": "bd7a9d8ea763127eed3816d81709d2225f83b45ee01543874ad44bbe2d861298",
+    "actual/N-T/candidate-004/B/repeat-1/diagnostic.npz": "79dc7579fe3820c273e230eacd0b750e911d769bde6638833f33935dd711abd1",
+    "actual/N-T/candidate-004/B/repeat-2/summary.json": "fb99d6cdc867d23a8f0eadf308ce87c946e7e0bdc4ce24ae586473c011c729b9",
+    "actual/N-T/candidate-004/B/repeat-2/diagnostic.npz": "79dc7579fe3820c273e230eacd0b750e911d769bde6638833f33935dd711abd1",
+    "actual/N-T/candidate-005/A/repeat-0/summary.json": "e0885cb923816c7b2eca4bc5e5e49619326304dde62bf7f4447376a2a795fd0b",
+    "actual/N-T/candidate-005/A/repeat-0/diagnostic.npz": "83b9b0c38be6f44627154e23b48ad0641785c7cafebd2ac15c002e015ed95565",
+    "actual/N-T/candidate-005/A/repeat-0/complete_probe_receipt.json": "d598a52635fbc3794fa58e9e7680c7065280f456fe54974988e0958ade6d4d49",
+    "actual/N-T/candidate-005/A/repeat-0/complete_probe/trace.npz": "36117f10db1c781aaaa6d68703f1a4aa8f383e03bdda4caf8e4b64f98cbb1142",
+    "actual/N-T/candidate-005/A/repeat-0/complete_probe/input.json.gz": "8c1928d521a22a58af9945ed56c47f044f6f7c6ecffe53e287e7101ef2648edb",
+    "actual/N-T/candidate-005/A/repeat-1/summary.json": "5e1b3d6089c4f62e5ecf4125670c0cfde86b41c0fa4ca648e71dd460db1327b5",
+    "actual/N-T/candidate-005/A/repeat-1/diagnostic.npz": "83b9b0c38be6f44627154e23b48ad0641785c7cafebd2ac15c002e015ed95565",
+    "actual/N-T/candidate-005/A/repeat-2/summary.json": "0d2db1ae0c80e385bad4cb8d0f2faf4faaff68b73f2b4b7930651a4151c73f5e",
+    "actual/N-T/candidate-005/A/repeat-2/diagnostic.npz": "83b9b0c38be6f44627154e23b48ad0641785c7cafebd2ac15c002e015ed95565",
+    "actual/N-T/candidate-005/B/repeat-0/summary.json": "8847d4b07c0a1ca9c808c549e7d727b091c5733aa3af287cb7880018ba5ecda1",
+    "actual/N-T/candidate-005/B/repeat-0/diagnostic.npz": "9d888c6ca44377dad97ed536f245c04a54f6428699e666585108bcb77e6c545a",
+    "actual/N-T/candidate-005/B/repeat-0/complete_probe_receipt.json": "1da84e49bcb37d6be1b47f2ecf94134cba5b423d4debb07d63823f6229b7b82c",
+    "actual/N-T/candidate-005/B/repeat-0/complete_probe/trace.npz": "c615f09b54c414a66b5f4b39ffb31c982d5c704971ae270494cf1b569c84ed99",
+    "actual/N-T/candidate-005/B/repeat-0/complete_probe/input.json.gz": "7fc0157a2a0f03bbe5c6fb7c95792581468a2372ce554e58a7c1ea00513027c5",
+    "actual/N-T/candidate-005/B/repeat-1/summary.json": "484afa00c28f57c7697cbbec305e3c88bef473f3f0e398f58b4591b0471a0d57",
+    "actual/N-T/candidate-005/B/repeat-1/diagnostic.npz": "9d888c6ca44377dad97ed536f245c04a54f6428699e666585108bcb77e6c545a",
+    "actual/N-T/candidate-005/B/repeat-2/summary.json": "03ff3a7fadd51eeddfbc41f25f56dd3769dacba89f120e6f76e49b0c5bc682d7",
+    "actual/N-T/candidate-005/B/repeat-2/diagnostic.npz": "9d888c6ca44377dad97ed536f245c04a54f6428699e666585108bcb77e6c545a",
+    "actual/N-T/candidate-006/A/repeat-0/summary.json": "ad93cf7ca4798463a95c7d49f0494ed70c6a25246684cdc67ec74aa6fd5d58eb",
+    "actual/N-T/candidate-006/A/repeat-0/diagnostic.npz": "898f953cea70f3523dd6ff7b570245ce4c802d293b210bc83b1a87b0ace75c31",
+    "actual/N-T/candidate-006/A/repeat-0/complete_probe_receipt.json": "71229ef320edda09c8746ed4ed66d8095b125daad510b826b794ca5e47048105",
+    "actual/N-T/candidate-006/A/repeat-0/complete_probe/trace.npz": "86a1d3055ac6a38d578b35f80bb43f3536d87ccc5a37b81bf884aed83b06f730",
+    "actual/N-T/candidate-006/A/repeat-0/complete_probe/input.json.gz": "6b63c7e487cbd7363ef3f9faceae5fe0c8f5aedd5e738201277c927d08663b22",
+    "actual/N-T/candidate-006/A/repeat-1/summary.json": "466b723e8e8f3b9f71d8c15ffa75ae81d479964e3512d02315882eccca1098c5",
+    "actual/N-T/candidate-006/A/repeat-1/diagnostic.npz": "898f953cea70f3523dd6ff7b570245ce4c802d293b210bc83b1a87b0ace75c31",
+    "actual/N-T/candidate-006/A/repeat-2/summary.json": "e4b5d114f3d924396d2f9c26db58224cd0e067bbcc5fbac2c46153bad4d02541",
+    "actual/N-T/candidate-006/A/repeat-2/diagnostic.npz": "898f953cea70f3523dd6ff7b570245ce4c802d293b210bc83b1a87b0ace75c31",
+    "actual/N-T/candidate-006/B/repeat-0/summary.json": "5f3bf5af7819232a94f97b6f3cf46233e9e98bff940c01c25c36c6703b70dcd9",
+    "actual/N-T/candidate-006/B/repeat-0/diagnostic.npz": "57d28cefa5177be508392a6d882882ff73607f937ffbf40204140b903aed0a7b",
+    "actual/N-T/candidate-006/B/repeat-0/complete_probe_receipt.json": "23dcc91473a70d08e623bb701f492586a58d8f46c1212b78b585475b54f7c0dc",
+    "actual/N-T/candidate-006/B/repeat-0/complete_probe/trace.npz": "1c334b1530a901581d0eb5d4176a08149fe718eb09d456fbe8b26890bb8a7f15",
+    "actual/N-T/candidate-006/B/repeat-0/complete_probe/input.json.gz": "5feb04471d0b98921bcb9200b8a5ddca700f688b88e5eef12a06ae0dadfce84c",
+    "actual/N-T/candidate-006/B/repeat-1/summary.json": "6e1f97613c9c68fd1971b61c75d7bc8bd8af60dd35c3f38b9d77d170e51d7b9d",
+    "actual/N-T/candidate-006/B/repeat-1/diagnostic.npz": "57d28cefa5177be508392a6d882882ff73607f937ffbf40204140b903aed0a7b",
+    "actual/N-T/candidate-006/B/repeat-2/summary.json": "52c915c0425278f6ac2e0eb99780fecbea0b695b850524c5ad8dd4f91e509ff0",
+    "actual/N-T/candidate-006/B/repeat-2/diagnostic.npz": "57d28cefa5177be508392a6d882882ff73607f937ffbf40204140b903aed0a7b",
+    "actual/N-T/candidate-007/A/repeat-0/summary.json": "90f2ec718137b9925ee3e670502217e40f22ff2cca11d77e66b0feafc64f01fd",
+    "actual/N-T/candidate-007/A/repeat-0/diagnostic.npz": "25fb3d92700d2e1a73a6d664cff620ecf2a2f569d320e8282dfd356d162e03f0",
+    "actual/N-T/candidate-007/A/repeat-0/complete_probe_receipt.json": "d9395cb3fae3ab7b00e28666f41947ab69e75b3bfd62e5cbc8d1ea5bad14efd6",
+    "actual/N-T/candidate-007/A/repeat-0/complete_probe/trace.npz": "01bca0901d215a1c3e5628202c7b0b1ab8b6b07cdbe41192998ddeba092291e8",
+    "actual/N-T/candidate-007/A/repeat-0/complete_probe/input.json.gz": "5e2f46d3da332cd2fd74abc6db6d757f8d1846641da0b62cc780379d0407977a",
+    "actual/N-T/candidate-007/A/repeat-1/summary.json": "d18b650090a3a02997cefa528d9379c2a8542ad7dd9adf25cbbbe153035257d0",
+    "actual/N-T/candidate-007/A/repeat-1/diagnostic.npz": "25fb3d92700d2e1a73a6d664cff620ecf2a2f569d320e8282dfd356d162e03f0",
+    "actual/N-T/candidate-007/A/repeat-2/summary.json": "1348f13ed7acff93ddf346865e8a78f9f0c01980121f94676c58de4589044766",
+    "actual/N-T/candidate-007/A/repeat-2/diagnostic.npz": "25fb3d92700d2e1a73a6d664cff620ecf2a2f569d320e8282dfd356d162e03f0",
+    "actual/N-T/candidate-007/B/repeat-0/summary.json": "8621b03aae7ac5d25c1eedbd9aa9ae5ca3b601695f3c0f664f9dd7445c3ab761",
+    "actual/N-T/candidate-007/B/repeat-0/diagnostic.npz": "b9941c819199a4b86c614a1617421692c80d2cc72f845aa6b664628bfd09dabb",
+    "actual/N-T/candidate-007/B/repeat-0/complete_probe_receipt.json": "9dfeb5de625a1ebc048d44bff2fa230d4f319be6aaeb6071b60ee65fafdc3d4f",
+    "actual/N-T/candidate-007/B/repeat-0/complete_probe/trace.npz": "ff73d6cf1e25cd568a39bb559203ddb3a9333e5b31df634d6de79653460645cf",
+    "actual/N-T/candidate-007/B/repeat-0/complete_probe/input.json.gz": "9e4d6e0514521544687bfd94c8ad04c5403d519ba05c84414d7133556d4c6b65",
+    "actual/N-T/candidate-007/B/repeat-1/summary.json": "7304a68348f5d97450ddc8f663ab1b53a61d9fe5e9622e20ac857008f2465ddd",
+    "actual/N-T/candidate-007/B/repeat-1/diagnostic.npz": "b9941c819199a4b86c614a1617421692c80d2cc72f845aa6b664628bfd09dabb",
+    "actual/N-T/candidate-007/B/repeat-2/summary.json": "833f4f943a669d2280a6d9299114b5818cbf1ded1c430c652d9d300fd7ffd899",
+    "actual/N-T/candidate-007/B/repeat-2/diagnostic.npz": "b9941c819199a4b86c614a1617421692c80d2cc72f845aa6b664628bfd09dabb",
+    "actual/N-T/candidate-008/A/repeat-0/summary.json": "92cae5624cc8ab57e869d3f965c01469223a7198d86255230dd7812422000e57",
+    "actual/N-T/candidate-008/A/repeat-0/diagnostic.npz": "2183e0cc2beea691528c04e07d42aafc2c962ac37fdb50117dbe76f6342ae914",
+    "actual/N-T/candidate-008/A/repeat-0/complete_probe_receipt.json": "292e1b012a0622bb182196880c86161b1452ac2316650970de000824ec020793",
+    "actual/N-T/candidate-008/A/repeat-0/complete_probe/trace.npz": "f5693c27351d8ca47acca390297ebdd91650a7ae4335b4956ba473c99d6400b9",
+    "actual/N-T/candidate-008/A/repeat-0/complete_probe/input.json.gz": "dfe3bb457c8f2bce2947f1954d9f5fd52dae72a9e345617c36f4c83f06aa4047",
+    "actual/N-T/candidate-008/A/repeat-1/summary.json": "6d5912b2a1f8c5fbe26cf645299398840d505b4a9cd5eb67df1d34ac1a7c481c",
+    "actual/N-T/candidate-008/A/repeat-1/diagnostic.npz": "2183e0cc2beea691528c04e07d42aafc2c962ac37fdb50117dbe76f6342ae914",
+    "actual/N-T/candidate-008/A/repeat-2/summary.json": "15eecd2badbb323a101ffdaad15ef339fee61d61c58785e2a10ace7f3be8bc5e",
+    "actual/N-T/candidate-008/A/repeat-2/diagnostic.npz": "2183e0cc2beea691528c04e07d42aafc2c962ac37fdb50117dbe76f6342ae914",
+    "actual/N-T/candidate-008/B/repeat-0/summary.json": "63206651e235a5b084cffc4344513f6303d34fcf6061703421b7f77ca5746bc0",
+    "actual/N-T/candidate-008/B/repeat-0/diagnostic.npz": "fb824f3bfccc2c8d8a1edaa6d763499de740054f2ed1de57d82fc2a7c1d32219",
+    "actual/N-T/candidate-008/B/repeat-0/complete_probe_receipt.json": "cf016274ae2ff523ea22456b196962b1085f804f324d2f859e9bfbee9b8fb7d4",
+    "actual/N-T/candidate-008/B/repeat-0/complete_probe/trace.npz": "1b8c5ca160359fdfa1d63144279a3f29d0615d0fa1c8837fb6191b199e64ded0",
+    "actual/N-T/candidate-008/B/repeat-0/complete_probe/input.json.gz": "a47609fc0b9a7d05e7c06990aa2b40828d2ba1204b8fec6f4b65c1374b331964",
+    "actual/N-T/candidate-008/B/repeat-1/summary.json": "1057922e9bfcbb7fe95d59d6c549f1845208d3b527454a61e2cef3344db8827b",
+    "actual/N-T/candidate-008/B/repeat-1/diagnostic.npz": "fb824f3bfccc2c8d8a1edaa6d763499de740054f2ed1de57d82fc2a7c1d32219",
+    "actual/N-T/candidate-008/B/repeat-2/summary.json": "95293e6dc91f706136944b53136e91fb1d63ea442e913e2eca9474b4b647dfa7",
+    "actual/N-T/candidate-008/B/repeat-2/diagnostic.npz": "fb824f3bfccc2c8d8a1edaa6d763499de740054f2ed1de57d82fc2a7c1d32219",
+    "actual/N-T/candidate-009/A/repeat-0/summary.json": "de0f6b55cfb8b4581e7c13114b7d93da44c14819cdbfad7406323e8fe9b632d7",
+    "actual/N-T/candidate-009/A/repeat-0/diagnostic.npz": "50ea48859e807102384d9b388a03d373587b6b362caf2a41f7b6ce6ca19e9583",
+    "actual/N-T/candidate-009/A/repeat-0/complete_probe_receipt.json": "f6839e5455c7978f39358d849ae4b55d8f5fbb07de1dcc4ab26c3e7b365bc647",
+    "actual/N-T/candidate-009/A/repeat-0/complete_probe/trace.npz": "56545d4b80d7604d2c7cf2d1c3f1b815ca7b6302396ca53c27bd34837c22b64c",
+    "actual/N-T/candidate-009/A/repeat-0/complete_probe/input.json.gz": "c6351f4d59b84d1704e030033893c1876697ffc8b48e47deb9bf783ce3558aa6",
+    "actual/N-T/candidate-009/A/repeat-1/summary.json": "3b83f26820c914643846b483544b48601bef40946dcb55e0f9f5fc5b2beefc00",
+    "actual/N-T/candidate-009/A/repeat-1/diagnostic.npz": "50ea48859e807102384d9b388a03d373587b6b362caf2a41f7b6ce6ca19e9583",
+    "actual/N-T/candidate-009/A/repeat-2/summary.json": "f1266a2ad2cf8df5a025c2f9bf7b93ae2ef692fe697443a66206ebcd2bb72855",
+    "actual/N-T/candidate-009/A/repeat-2/diagnostic.npz": "50ea48859e807102384d9b388a03d373587b6b362caf2a41f7b6ce6ca19e9583",
+    "actual/N-T/candidate-009/B/repeat-0/summary.json": "575aab38b6a702c0ef5752be7f577c30b5127f508899747c7d6108150a46f0c7",
+    "actual/N-T/candidate-009/B/repeat-0/diagnostic.npz": "39e62a67a62e2a7248e40f1850b7e349fe497529884c1783afcc09dc20005ccb",
+    "actual/N-T/candidate-009/B/repeat-0/complete_probe_receipt.json": "0b4168b2fb1463e0d334faa19f1f66c393e1d0f33131cb9cdb53e7cd30040bb1",
+    "actual/N-T/candidate-009/B/repeat-0/complete_probe/trace.npz": "2ed2e19c65dda5ce34a21680ed0064883cb20a0d20984e867b56c09bd7c27529",
+    "actual/N-T/candidate-009/B/repeat-0/complete_probe/input.json.gz": "7a5bc7487168c0188724c8298a4f49c34978d5e9fe9c4f8d0f6590a1f7ce7749",
+    "actual/N-T/candidate-009/B/repeat-1/summary.json": "f8f235ac71dd37e26feffdf4df98ff0c3d6ce4334fac7d10bfbcfcf168347c00",
+    "actual/N-T/candidate-009/B/repeat-1/diagnostic.npz": "39e62a67a62e2a7248e40f1850b7e349fe497529884c1783afcc09dc20005ccb",
+    "actual/N-T/candidate-009/B/repeat-2/summary.json": "118a609c85c95990fde00b51b10693eb80bb5fef5653a32463390cbae686b47e",
+    "actual/N-T/candidate-009/B/repeat-2/diagnostic.npz": "39e62a67a62e2a7248e40f1850b7e349fe497529884c1783afcc09dc20005ccb",
+    "actual/N-T/candidate-010/A/repeat-0/summary.json": "adcd4699f2d060a9c8475c6cc1dd8617ccc09d49e8918c12588efe05e956ea9e",
+    "actual/N-T/candidate-010/A/repeat-0/diagnostic.npz": "59fdd6f92dab48c2c7435286e9a366fc42b48b40a42ecc298c7350e33dd644fc",
+    "actual/N-T/candidate-010/A/repeat-0/complete_probe_receipt.json": "a1e575d0c8698a5063e76636c3a8692e105f25cb4806ed3b37d070285bb6cc2c",
+    "actual/N-T/candidate-010/A/repeat-0/complete_probe/trace.npz": "d07c29e383f153590b839226a47ec55dc93ac42a38ad0ddbd57a2b55038ba1e5",
+    "actual/N-T/candidate-010/A/repeat-0/complete_probe/input.json.gz": "c9d0603ea15a1ef1a5c7c7fda79924515947b74fd9e3f74c25367cf0f7ba91c5",
+    "actual/N-T/candidate-010/A/repeat-1/summary.json": "6ca967257e509aafddabc4f845d8d531731a8c6b43370db43968a5b544503361",
+    "actual/N-T/candidate-010/A/repeat-1/diagnostic.npz": "59fdd6f92dab48c2c7435286e9a366fc42b48b40a42ecc298c7350e33dd644fc",
+    "actual/N-T/candidate-010/A/repeat-2/summary.json": "16229d2a8258c06ebdbe1dd7f6d1ec96e93f683da0e3fdd68464c5a195385adb",
+    "actual/N-T/candidate-010/A/repeat-2/diagnostic.npz": "59fdd6f92dab48c2c7435286e9a366fc42b48b40a42ecc298c7350e33dd644fc",
+    "actual/N-T/candidate-010/B/repeat-0/summary.json": "716d7dcc68995d299cd330387cd5a7c2d232454fb3b7c6ac7fde58f947721838",
+    "actual/N-T/candidate-010/B/repeat-0/diagnostic.npz": "bcc30a5cc6e1d551f30cfaa2d3e6e6cc025c3f8928d6db1abab181743955e0d8",
+    "actual/N-T/candidate-010/B/repeat-0/complete_probe_receipt.json": "7c34af5096fd490bc6c9137caeb89045833220bba7ca47b2682c57e354a31133",
+    "actual/N-T/candidate-010/B/repeat-0/complete_probe/trace.npz": "ab30e941cf215534e55428b82a5d91d869832f034b4091db40be999aeb92a668",
+    "actual/N-T/candidate-010/B/repeat-0/complete_probe/input.json.gz": "7afed143606463e08b53077950c2150d9a20394e9e9ff7259e834651f7e9010e",
+    "actual/N-T/candidate-010/B/repeat-1/summary.json": "a14c97584a23ae3971d291c373a9deea17582787bf42c2d3c092f786da677472",
+    "actual/N-T/candidate-010/B/repeat-1/diagnostic.npz": "bcc30a5cc6e1d551f30cfaa2d3e6e6cc025c3f8928d6db1abab181743955e0d8",
+    "actual/N-T/candidate-010/B/repeat-2/summary.json": "7e5a07fee7aae58d16d2ce08e91dbeaecc099e38ca59ed532de5bbd07ba7934d",
+    "actual/N-T/candidate-010/B/repeat-2/diagnostic.npz": "bcc30a5cc6e1d551f30cfaa2d3e6e6cc025c3f8928d6db1abab181743955e0d8",
+    "actual/N-T/candidate-011/A/repeat-0/summary.json": "13c9615a876b038ce314e3cf6332b341f32756efebcf643b892dd714d5bed246",
+    "actual/N-T/candidate-011/A/repeat-0/diagnostic.npz": "6b25d97ea905bf0f86b2d6a537ed2c7365b845d47ce2cb2c552b24f38d95b84b",
+    "actual/N-T/candidate-011/A/repeat-0/complete_probe_receipt.json": "ec4fea90e503cb7a1e059e79105ef3c31b131d49509b417de652cda5a5d50daf",
+    "actual/N-T/candidate-011/A/repeat-0/complete_probe/trace.npz": "7b399dcf8d7e0c3d6054cb11226654b1b3c2bc61a8180f964fddda9947b80345",
+    "actual/N-T/candidate-011/A/repeat-0/complete_probe/input.json.gz": "5d2a7ae2553b8fcacc176fd50656ca8459582acabcf7c9514742ec523e6f3311",
+    "actual/N-T/candidate-011/A/repeat-1/summary.json": "92c4008b718a6f7f2b9749fe2a02f83328b3ce414089be613da12700cc7fcbbf",
+    "actual/N-T/candidate-011/A/repeat-1/diagnostic.npz": "6b25d97ea905bf0f86b2d6a537ed2c7365b845d47ce2cb2c552b24f38d95b84b",
+    "actual/N-T/candidate-011/A/repeat-2/summary.json": "0e93270891f9536a865033cb3f56ba6d4eec582bd7ea9e5249684e2f531e8cd5",
+    "actual/N-T/candidate-011/A/repeat-2/diagnostic.npz": "6b25d97ea905bf0f86b2d6a537ed2c7365b845d47ce2cb2c552b24f38d95b84b",
+    "actual/N-T/candidate-011/B/repeat-0/summary.json": "39eae5742a0ecb76d8a1549f14ce20d6c41395c8ffd6c84c52cc1ba59e3a6945",
+    "actual/N-T/candidate-011/B/repeat-0/diagnostic.npz": "dce8b2cd49d6dfb88a2768521a6975b9c42dbd9cd8e7f909bde36659320eb915",
+    "actual/N-T/candidate-011/B/repeat-0/complete_probe_receipt.json": "07c6872e6983819e9308cc26ff0b0bbc1087217358628b328edbf9500c3c6718",
+    "actual/N-T/candidate-011/B/repeat-0/complete_probe/trace.npz": "d090a83d574b6a07437a803d4eec66c7d559794be8420e1ad5558ac35feee223",
+    "actual/N-T/candidate-011/B/repeat-0/complete_probe/input.json.gz": "d15349e3f756ea2b3f5df3e7483e95ef78015b573bb5713a1b213ce43999f20e"
+  },
+  "analysis_seconds": 0.12401962489821017,
+  "new_physics_calls": 0,
+  "new_model_calls": 0,
+  "limits": [
+    "One posthoc S1 source snapshot; deterministic repeats are exact reproduction checks, not independent successes or population evidence.",
+    "Full raw/full-probe equality verdicts are authenticated saved executor evidence; this NumPy-only tool does not decode or independently recompare complete raw dataclasses.",
+    "Possible optimum and regret use only physically valid H5 finite-cost candidates; invalid/missing candidates never receive zero cost or regret.",
+    "No original frozen result or denominator is replaced; no whole-policy handoff improvement or model-family superiority is established."
+  ]
+}

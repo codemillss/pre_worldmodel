@@ -1,0 +1,67 @@
+{
+  "state": "N-T",
+  "candidate_id": 5,
+  "candidate_hash": "2cf345f8369672ebaa72a5a679c6bcc6c1958dcfbe08c5f94a8b9a93c3c76855",
+  "panel": "B",
+  "repeat": 1,
+  "intervals": 8,
+  "physical_valid": true,
+  "ready": false,
+  "ready_prefix": false,
+  "ready_eligible": false,
+  "first_ready_interval": null,
+  "horizon_completed": true,
+  "termination": "horizon_completed",
+  "reasons": [],
+  "cost": null,
+  "cost_finite": false,
+  "cost_components": {},
+  "raw_roundtrip": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "72462cdfd992a928eca523b738bf55fa3ec4a306715a88ea2608d134cc751e74",
+    "right_sha256": "72462cdfd992a928eca523b738bf55fa3ec4a306715a88ea2608d134cc751e74"
+  },
+  "full_probe_repeat_exact": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "51e0ba83a239edfec376a74a612be38954d0904f61f25ed8cb3179a81926bb29",
+    "right_sha256": "51e0ba83a239edfec376a74a612be38954d0904f61f25ed8cb3179a81926bb29"
+  },
+  "full_probe_roundtrip": null,
+  "source_D2_raw_exact": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "72462cdfd992a928eca523b738bf55fa3ec4a306715a88ea2608d134cc751e74",
+    "right_sha256": "72462cdfd992a928eca523b738bf55fa3ec4a306715a88ea2608d134cc751e74"
+  },
+  "source_D2_scope": "All original IDs0..15, both panels, everyrepeat; IDs16..127 have no original-D2 future",
+  "diagnostic_receipt": {
+    "file": "diagnostic.npz",
+    "sha256": "9d888c6ca44377dad97ed536f245c04a54f6428699e666585108bcb77e6c545a",
+    "bytes": 2334,
+    "roundtrip": {
+      "status": "PASS_EXACT",
+      "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+      "left_sha256": "8c0d845609a6ffbe332224f65faa38036374d4e2205caa8776497c920bbc59f2",
+      "right_sha256": "8c0d845609a6ffbe332224f65faa38036374d4e2205caa8776497c920bbc59f2"
+    }
+  },
+  "timings_ns": {
+    "physical_probe_including_unchanged_validation_ns": 221842708,
+    "raw_write_fsync_ns": 225702333,
+    "raw_authenticated_read_ns": 35307000,
+    "raw_roundtrip_full_exact_ns": 922499584,
+    "full_probe_repeat_exact_ns": 926760875,
+    "source_D2_raw_read_and_exact_ns": 959051209,
+    "first_repeat_complete_probe_durable_roundtrip_ns": 1458,
+    "diagnostic_durable_roundtrip_ns": 1454083,
+    "whole_probe_typed_digest_ns": 276423250,
+    "trial_output_traversal_ns": 336459
+  },
+  "raw_bytes": 282270,
+  "trial_bytes_before_summary": 286258,
+  "first_repeat_complete_probe_bytes": 0,
+  "whole_probe_typed_sha256": "51e0ba83a239edfec376a74a612be38954d0904f61f25ed8cb3179a81926bb29",
+  "initial_snapshot_exact": true
+}

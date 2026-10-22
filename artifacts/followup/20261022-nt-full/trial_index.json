@@ -1,0 +1,4573 @@
+{
+  "schema": "followup-nt-full-public-trial-index-v1",
+  "planned_trajectories": 768,
+  "sealed_scientific_rows": 70,
+  "missing_keys": [
+    {
+      "candidate_id": 11,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 11,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 12,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 12,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 12,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 12,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 12,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 12,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 13,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 13,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 13,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 13,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 13,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 13,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 14,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 14,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 14,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 14,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 14,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 14,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 15,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 15,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 15,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 15,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 15,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 15,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 16,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 16,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 16,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 16,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 16,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 16,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 17,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 17,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 17,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 17,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 17,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 17,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 18,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 18,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 18,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 18,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 18,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 18,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 19,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 19,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 19,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 19,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 19,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 19,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 20,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 20,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 20,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 20,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 20,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 20,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 21,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 21,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 21,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 21,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 21,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 21,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 22,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 22,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 22,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 22,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 22,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 22,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 23,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 23,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 23,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 23,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 23,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 23,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 24,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 24,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 24,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 24,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 24,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 24,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 25,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 25,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 25,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 25,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 25,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 25,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 26,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 26,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 26,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 26,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 26,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 26,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 27,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 27,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 27,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 27,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 27,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 27,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 28,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 28,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 28,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 28,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 28,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 28,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 29,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 29,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 29,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 29,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 29,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 29,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 30,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 30,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 30,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 30,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 30,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 30,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 31,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 31,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 31,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 31,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 31,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 31,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 32,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 32,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 32,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 32,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 32,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 32,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 33,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 33,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 33,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 33,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 33,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 33,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 34,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 34,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 34,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 34,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 34,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 34,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 35,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 35,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 35,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 35,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 35,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 35,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 36,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 36,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 36,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 36,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 36,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 36,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 37,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 37,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 37,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 37,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 37,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 37,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 38,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 38,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 38,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 38,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 38,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 38,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 39,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 39,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 39,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 39,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 39,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 39,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 40,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 40,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 40,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 40,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 40,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 40,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 41,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 41,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 41,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 41,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 41,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 41,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 42,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 42,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 42,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 42,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 42,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 42,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 43,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 43,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 43,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 43,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 43,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 43,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 44,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 44,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 44,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 44,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 44,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 44,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 45,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 45,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 45,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 45,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 45,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 45,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 46,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 46,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 46,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 46,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 46,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 46,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 47,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 47,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 47,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 47,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 47,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 47,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 48,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 48,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 48,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 48,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 48,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 48,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 49,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 49,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 49,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 49,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 49,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 49,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 50,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 50,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 50,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 50,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 50,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 50,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 51,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 51,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 51,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 51,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 51,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 51,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 52,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 52,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 52,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 52,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 52,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 52,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 53,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 53,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 53,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 53,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 53,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 53,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 54,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 54,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 54,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 54,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 54,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 54,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 55,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 55,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 55,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 55,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 55,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 55,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 56,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 56,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 56,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 56,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 56,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 56,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 57,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 57,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 57,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 57,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 57,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 57,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 58,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 58,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 58,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 58,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 58,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 58,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 59,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 59,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 59,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 59,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 59,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 59,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 60,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 60,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 60,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 60,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 60,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 60,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 61,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 61,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 61,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 61,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 61,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 61,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 62,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 62,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 62,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 62,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 62,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 62,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 63,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 63,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 63,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 63,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 63,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 63,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 64,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 64,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 64,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 64,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 64,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 64,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 65,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 65,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 65,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 65,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 65,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 65,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 66,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 66,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 66,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 66,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 66,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 66,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 67,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 67,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 67,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 67,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 67,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 67,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 68,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 68,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 68,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 68,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 68,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 68,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 69,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 69,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 69,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 69,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 69,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 69,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 70,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 70,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 70,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 70,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 70,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 70,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 71,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 71,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 71,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 71,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 71,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 71,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 72,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 72,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 72,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 72,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 72,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 72,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 73,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 73,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 73,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 73,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 73,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 73,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 74,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 74,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 74,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 74,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 74,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 74,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 75,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 75,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 75,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 75,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 75,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 75,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 76,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 76,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 76,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 76,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 76,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 76,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 77,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 77,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 77,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 77,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 77,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 77,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 78,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 78,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 78,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 78,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 78,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 78,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 79,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 79,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 79,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 79,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 79,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 79,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 80,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 80,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 80,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 80,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 80,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 80,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 81,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 81,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 81,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 81,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 81,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 81,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 82,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 82,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 82,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 82,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 82,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 82,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 83,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 83,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 83,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 83,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 83,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 83,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 84,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 84,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 84,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 84,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 84,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 84,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 85,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 85,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 85,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 85,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 85,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 85,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 86,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 86,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 86,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 86,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 86,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 86,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 87,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 87,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 87,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 87,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 87,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 87,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 88,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 88,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 88,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 88,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 88,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 88,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 89,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 89,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 89,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 89,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 89,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 89,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 90,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 90,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 90,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 90,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 90,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 90,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 91,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 91,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 91,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 91,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 91,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 91,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 92,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 92,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 92,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 92,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 92,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 92,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 93,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 93,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 93,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 93,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 93,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 93,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 94,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 94,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 94,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 94,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 94,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 94,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 95,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 95,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 95,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 95,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 95,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 95,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 96,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 96,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 96,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 96,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 96,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 96,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 97,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 97,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 97,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 97,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 97,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 97,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 98,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 98,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 98,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 98,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 98,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 98,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 99,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 99,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 99,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 99,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 99,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 99,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 100,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 100,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 100,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 100,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 100,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 100,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 101,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 101,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 101,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 101,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 101,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 101,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 102,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 102,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 102,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 102,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 102,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 102,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 103,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 103,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 103,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 103,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 103,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 103,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 104,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 104,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 104,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 104,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 104,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 104,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 105,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 105,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 105,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 105,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 105,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 105,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 106,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 106,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 106,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 106,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 106,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 106,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 107,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 107,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 107,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 107,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 107,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 107,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 108,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 108,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 108,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 108,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 108,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 108,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 109,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 109,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 109,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 109,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 109,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 109,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 110,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 110,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 110,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 110,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 110,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 110,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 111,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 111,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 111,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 111,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 111,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 111,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 112,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 112,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 112,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 112,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 112,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 112,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 113,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 113,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 113,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 113,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 113,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 113,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 114,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 114,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 114,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 114,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 114,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 114,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 115,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 115,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 115,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 115,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 115,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 115,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 116,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 116,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 116,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 116,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 116,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 116,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 117,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 117,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 117,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 117,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 117,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 117,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 118,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 118,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 118,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 118,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 118,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 118,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 119,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 119,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 119,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 119,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 119,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 119,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 120,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 120,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 120,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 120,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 120,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 120,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 121,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 121,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 121,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 121,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 121,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 121,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 122,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 122,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 122,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 122,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 122,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 122,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 123,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 123,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 123,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 123,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 123,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 123,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 124,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 124,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 124,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 124,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 124,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 124,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 125,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 125,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 125,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 125,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 125,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 125,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 126,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 126,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 126,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 126,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 126,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 126,
+      "panel": "B",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 127,
+      "panel": "A",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 127,
+      "panel": "A",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 127,
+      "panel": "A",
+      "repeat": 2
+    },
+    {
+      "candidate_id": 127,
+      "panel": "B",
+      "repeat": 0
+    },
+    {
+      "candidate_id": 127,
+      "panel": "B",
+      "repeat": 1
+    },
+    {
+      "candidate_id": 127,
+      "panel": "B",
+      "repeat": 2
+    }
+  ],
+  "records": [
+    {
+      "candidate_id": 0,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 0,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 0,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 0,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 0,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 0,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 1,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 1,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 1,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 1,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 1,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 1,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 2,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 2,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 2,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 2,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 2,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 2,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 3,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 3,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 3,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 3,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 3,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 3,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 4,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 4,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 4,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 4,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 4,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 4,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 5,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 5,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 5,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 5,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 5,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 5,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 6,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 6,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 6,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 6,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 6,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 6,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 7,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 7,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 7,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 7,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 7,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 7,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 8,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 8,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 8,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 8,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 8,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 8,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 9,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 9,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 9,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 9,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 9,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 9,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 10,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 10,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 10,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 10,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 10,
+      "panel": "B",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 10,
+      "panel": "B",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 11,
+      "panel": "A",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 11,
+      "panel": "A",
+      "repeat": 1,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 11,
+      "panel": "A",
+      "repeat": 2,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": false,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    },
+    {
+      "candidate_id": 11,
+      "panel": "B",
+      "repeat": 0,
+      "sealed_scientific_row": true,
+      "public_receipts": [
+        "entry.json",
+        "summary.json",
+        "timing_final.json",
+        "raw_receipt.json",
+        "complete_probe_receipt.json"
+      ],
+      "first_repeat_diagnostic_included": true,
+      "raw_pair_included": false,
+      "complete_probe_included": false
+    }
+  ]
+}

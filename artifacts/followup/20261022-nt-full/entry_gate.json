@@ -1,0 +1,56 @@
+{
+  "status": "PASS_ENTRY_IDENTITIES_FORECAST_SEAL_FULL_RESOURCE",
+  "resource": {
+    "stage": "entry_complete_before_any_new_physics",
+    "decision": "PASS_RESOURCE",
+    "failures": [],
+    "remaining": {
+      "trials": 768,
+      "intervals": 4992,
+      "source_comparisons": 96,
+      "complete_probe_groups": 256
+    },
+    "observed_rates": {
+      "seconds_per_interval": 0.48116094996221365,
+      "bytes_per_interval": 89074.4,
+      "source_comparison_seconds": 1.155413333,
+      "complete_probe_seconds": 4.1144065,
+      "complete_probe_bytes": 706522.0,
+      "loop_seconds_per_trial": 0.005735933055555556
+    },
+    "process_seconds": 2.2673618749249727,
+    "cumulative_spent_seconds": 664.7726197103038,
+    "output_bytes": 1034076,
+    "free_bytes": 10199040000,
+    "future_seconds": {
+      "interval_baseline": 3602.9331933170556,
+      "source_D2_comparisons": 166.379519952,
+      "first_repeat_complete_probe": 1579.932096,
+      "trial_loop": 6.607794880000001,
+      "fixed_future": 12.124927558461845,
+      "report_reserve": 600
+    },
+    "future_bytes": {
+      "interval_baseline": 666989108,
+      "first_repeat_complete_probe": 271304448,
+      "fixed_future": 1988750
+    },
+    "projected_cumulative_seconds": 6632.750151417821,
+    "projected_cumulative_bytes": 1035350936,
+    "limits": {
+      "prior_seconds": 662.5052578353789,
+      "prior_bytes": 94034554,
+      "wall_cap_seconds": 7200.0,
+      "storage_cap_bytes": 5368709120,
+      "free_reserve_bytes": 2147483648,
+      "safety_factor": 1.5,
+      "fixed_future_seconds": 12.124927558461845,
+      "fixed_future_bytes": 1988750,
+      "report_reserve_seconds": 600,
+      "sealing_reserve_seconds": 60.0,
+      "sealing_reserve_bytes": 16777216
+    }
+  },
+  "prospective_seal_sha256": "ef57af3d022c687fe8483820053691299fcb3a8eec46aa8b2bab56f9bf0b5af1",
+  "elapsed_seconds": 2.2678792090155184
+}

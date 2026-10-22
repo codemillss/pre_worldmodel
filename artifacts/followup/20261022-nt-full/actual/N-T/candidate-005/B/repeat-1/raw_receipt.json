@@ -1,0 +1,18 @@
+{
+  "schema": "p5-lossless-raw-columnar-xz-v1",
+  "interval_count": 8,
+  "xz_preset": 3,
+  "columnar": {
+    "column_count": 232,
+    "header_bytes": 37644,
+    "uncompressed_array_bytes": 1484273
+  },
+  "files_sha256": {
+    "local_run/actual/N-T/candidate-005/B/repeat-1/raw.raw.npz": "4d59f748daf38b8bcf7c51de7f410123148ad39a52169480ee179fd4e3b72691",
+    "local_run/actual/N-T/candidate-005/B/repeat-1/raw.raw.columns.xz": "450193da9dc5f82671dd43a9e855413e99357d811274a29094fe3a9ba2a2b5db"
+  },
+  "bytes": {
+    "local_run/actual/N-T/candidate-005/B/repeat-1/raw.raw.npz": 93966,
+    "local_run/actual/N-T/candidate-005/B/repeat-1/raw.raw.columns.xz": 188304
+  }
+}

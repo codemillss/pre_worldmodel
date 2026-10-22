@@ -1,0 +1,6 @@
+{
+  "schema": "saved-analysis-process-wall-v1",
+  "process_wall_seconds": 0.21836687508039176,
+  "exit_code": 0,
+  "scope": "Saved NumPy/stdlib result analysis; no physics/model calls"
+}

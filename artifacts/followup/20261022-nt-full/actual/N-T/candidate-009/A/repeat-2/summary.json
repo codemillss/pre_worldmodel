@@ -1,0 +1,77 @@
+{
+  "state": "N-T",
+  "candidate_id": 9,
+  "candidate_hash": "5bf300a0f030386bbc5e0dbc5175df4c6fc37680749178b70abd1efa055e9947",
+  "panel": "A",
+  "repeat": 2,
+  "intervals": 5,
+  "physical_valid": true,
+  "ready": false,
+  "ready_prefix": false,
+  "ready_eligible": false,
+  "first_ready_interval": null,
+  "horizon_completed": true,
+  "termination": "horizon_completed",
+  "reasons": [],
+  "cost": 7.46969978968833,
+  "cost_finite": true,
+  "cost_components": {
+    "stage_position": 0.4191092045004481,
+    "stage_yaw": 0.21675089143615658,
+    "stage_action": 0.0011618357633325633,
+    "stage_action_change": 0.0008710784707816698,
+    "stage_gap": 8.771400978064766e-12,
+    "terminal_position": 3.457461331420782,
+    "terminal_yaw": 3.319273502821678,
+    "terminal_speed": 0.0041125725401040284,
+    "terminal_angular_speed": 0.05095937272627718
+  },
+  "raw_roundtrip": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "aa364e211109312cd5caf045595f7f5df2d0a1b278f121af97c37511c0ae8e45",
+    "right_sha256": "aa364e211109312cd5caf045595f7f5df2d0a1b278f121af97c37511c0ae8e45"
+  },
+  "full_probe_repeat_exact": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c",
+    "right_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c"
+  },
+  "full_probe_roundtrip": null,
+  "source_D2_raw_exact": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "aa364e211109312cd5caf045595f7f5df2d0a1b278f121af97c37511c0ae8e45",
+    "right_sha256": "aa364e211109312cd5caf045595f7f5df2d0a1b278f121af97c37511c0ae8e45"
+  },
+  "source_D2_scope": "All original IDs0..15, both panels, everyrepeat; IDs16..127 have no original-D2 future",
+  "diagnostic_receipt": {
+    "file": "diagnostic.npz",
+    "sha256": "50ea48859e807102384d9b388a03d373587b6b362caf2a41f7b6ce6ca19e9583",
+    "bytes": 2304,
+    "roundtrip": {
+      "status": "PASS_EXACT",
+      "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+      "left_sha256": "19a2b0786ced8029540dd1d1b951e7fffd5430c789c7beb96b38df7e7c3bd554",
+      "right_sha256": "19a2b0786ced8029540dd1d1b951e7fffd5430c789c7beb96b38df7e7c3bd554"
+    }
+  },
+  "timings_ns": {
+    "physical_probe_including_unchanged_validation_ns": 207582375,
+    "raw_write_fsync_ns": 206571750,
+    "raw_authenticated_read_ns": 37400959,
+    "raw_roundtrip_full_exact_ns": 828150875,
+    "full_probe_repeat_exact_ns": 831089125,
+    "source_D2_raw_read_and_exact_ns": 882280583,
+    "first_repeat_complete_probe_durable_roundtrip_ns": 250,
+    "diagnostic_durable_roundtrip_ns": 1925292,
+    "whole_probe_typed_digest_ns": 251767000,
+    "trial_output_traversal_ns": 282333
+  },
+  "raw_bytes": 417692,
+  "trial_bytes_before_summary": 421650,
+  "first_repeat_complete_probe_bytes": 0,
+  "whole_probe_typed_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c",
+  "initial_snapshot_exact": true
+}

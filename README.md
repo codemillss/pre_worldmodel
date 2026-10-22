@@ -121,14 +121,14 @@ E1의 실제 미래 실행은 선택 이후의 오프라인 대조입니다. 온
 - 형상·질량·마찰·접근 면을 고정했습니다. 센서 오차·지연·실물·후속 집기·사업 효과는 평가하지 않았습니다.
 - R은 선형 모델 기준선입니다. 분석적 밀기 모델·GP·불확실성 기반 계획 전체를 대표하지 않습니다.
 
-### 후속 진단 · 복원·사전 실행 완료, 본 진단은 자원 재검토
+### 후속 진단 · 전체 실행 진입 후 자원 상한으로 부분 중단
 
 **2026-10-22: D1/D2를 완료했습니다.** offset-00/S1-23/tick254의 전체 물리 상태·제어 문맥·128후보가 원래 기록과 정확히 일치했습니다. 목표 근방의 다른 상태도 복원해 두 상태의 첫 16후보를 A/B에서 각각 3회 실행했습니다(192궤적; 독립 초기조건 192개가 아님).
 
 - **새 관찰:** 실패 직전 상태의 첫 16후보 ID는 실제 A에서 모두 물리 유효했지만 여섯 신경망은 전부 예측상 거절했습니다. 해당 명령들이 정렬 준비까지 성공했다는 뜻은 아닙니다.
 - **판정 구분:** 목표 근방 후보9는 B의 0.6초에서 준비됐고 같은 0.5초까지는 A/B 모두 미달했습니다. 정지 규칙만의 효과·비용 결함·기존 전체 정책의 개선으로 해석하지 않습니다.
 - **전체 D3 진입 보류:** 원래 6상태 D3는 2시간 예산을 넘습니다. [저장·재현 시간 분리 측정](docs/followup_resource_profile.ko.md) 이후, 범위를 N-T 한 상태로 제한했습니다.
-- **N-T 사전 검사 통과:** [입력·128후보·7모델 결합과 18건 실제 실행](docs/nt_fullbank_preflight.ko.md)을 검증했습니다. 실제 실행 전 고정 비용 3.11초·사후 인증 0.38초였습니다. 7모델·A/B·각3반복·전체 원본/검증을 유지하는 다음 전체 실행은 **누적 약 102.51분·0.963GiB의 조건부 계획**입니다. 원본 대조 96건·완전 결과 보존 256그룹의 적용 수를 지켜야 하며, 전체 768궤적은 아직 미실행입니다.
+- **N-T 전체 실행은 70/768회에서 자원 중단:** [18건 사전 검사](docs/nt_fullbank_preflight.ko.md) 이후 [전체 진입점·실시간 상한 검사](docs/nt_fullbank_execution.ko.md)를 연결했습니다. 7모델×128후보 예측을 먼저 봉인하고 새 실제 미래를 실행했지만, 전체 결과 저장·복원 단가의 관측 최대값이 늘어 남은 검증·정리 포함 예상이 **121.73분**으로 2시간을 넘었습니다. 실제 누적 실행은 **15.88분**이며 70회 raw·24그룹 완전 결과와 검증을 보존하고 중단했습니다. **698회는 미실행, 전체 후보 순위·선택 손실은 미확인**입니다. 재학습·자동 재시도·기존 결과 교체는 없습니다.
 
 ![실패 직전 후보의 예측·실제 미래와 목표 근방 후보의 정지·유지 비교](assets/figures/followup_pilot.png)
 
@@ -138,7 +138,7 @@ E1의 실제 미래 실행은 선택 이후의 오프라인 대조입니다. 온
 
 [기록·재현 비용 분리와 다음 범위](docs/followup_resource_profile.ko.md) · [자원 산식](artifacts/followup/20261022-resource-profile/resource_summary.json) · [측정 자료 검토](artifacts/validation/followup_profile_execution_review.v1.json)
 
-[N-T 전체128 사전 검사](docs/nt_fullbank_preflight.ko.md) · [적용 범위별 예산 v2](artifacts/validation/nt_fullbank_resource_budget.v2.json) · [사전 실행 독립 검토](artifacts/validation/followup_nt_preflight_execution_review.v2.json)
+[N-T 전체128 사전 검사](docs/nt_fullbank_preflight.ko.md) · [전체 실행·자원 중단 보고](docs/nt_fullbank_execution.ko.md) · [선별 공개 자료](artifacts/followup/20261022-nt-full/manifest.json) · [실행 독립 감사](artifacts/validation/nt_full_execution_review.v1.json)
 
 기존 동결 비교·논문 결과는 유지했습니다. [실행 전 main 보존 브랜치](https://github.com/codemillss/pre_worldmodel/tree/codex/frozen-main-before-followup-20261022)를 남기고 현재 main에서 후속 개발을 계속합니다.
 
@@ -177,7 +177,8 @@ python -B scripts/verify_paper_results.py
 | 리뷰 지적과 수정·미해결 사항 | [리뷰어 관점 검토](docs/reviewer_assessment.ko.md) | 원문에서 코드·결과 연결 |
 | 목표 근처·실패 직전 보완 실험 | [복원·사전 실행 결과](docs/followup_restore_and_pilot.ko.md), [실행 전 설계](docs/near_goal_diagnostic_design.ko.md) | D1/D2 완료, D3 미실행 |
 | 원본 보존·검증을 유지하는 실행 비용 측정 | [시간 분리와 범위 판단](docs/followup_resource_profile.ko.md) | 측정 완료, N-T 사전 검사로 후속 검증 |
-| N-T 전체128 실행기 사전 검사 | [검사 결과·실측·예산](docs/nt_fullbank_preflight.ko.md) | 통과, 본 768궤적은 미실행 |
+| N-T 전체128 실행기 사전 검사 | [검사 결과·실측·예산](docs/nt_fullbank_preflight.ko.md) | 통과, 18건 별도 보존 |
+| N-T 전체 실행·실시간 자원 검사 | [부분 실행과 중단 근거](docs/nt_fullbank_execution.ko.md) | 70/768회 저장·검증 후 자원 중단; 698회 미실행 |
 
 논문은 TeX→PDF, 두 보고서는 Markdown→PDF로 관리합니다. PDF의 링크·목차는 내려받아 사용하세요. [문서 운영·갱신 방법](docs/documentation.ko.md)에 원본과 검토 기록을 정리했습니다.
 

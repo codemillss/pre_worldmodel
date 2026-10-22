@@ -1,0 +1,12 @@
+{
+  "schema": "followup-nt-full-portable-path-mapping-v1",
+  "scope": "Public JSON/JSONL are path-portable derived views, binary arrays are byte-identical; source SHA identities are retained in manifest copy records.",
+  "aliases": {
+    "local_run": "current saved full-bank run root",
+    "source_D1_D2_run": "preserved D1/D2 run root",
+    "repository_root": "public repository",
+    "project_root": "preserved original project"
+  },
+  "substitution_count": 191,
+  "private_original_path_strings_published": false
+}

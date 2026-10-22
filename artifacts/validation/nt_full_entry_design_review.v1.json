@@ -1,0 +1,66 @@
+{
+  "schema": "followup-nt-full-entry-design-review-v1",
+  "created_at_utc": "2026-10-22T06:58:17.118261+00:00",
+  "status": "PASS_DESIGN_AND_PURE_RESOURCE_TESTS_PENDING_LIVE_ENTRY_GATE",
+  "reviewer": "independent_readonly_guard_review",
+  "reviewed_sha256": {
+    "configs/followup_nt_full.v1.json": "6c610918926f076cc09e950512252187a071147cede367e473bc5a2e9920b58b",
+    "scripts/followup_nt_full.py": "021faeff2e5a46cc3d0ece5b308ee729153b66c81f266efd23d54484079c645a",
+    "src/push_align/followup_nt_live_budget.py": "c10b295b68832a2cbba14c510284a7631eebe5c3f824ca45d8e5480b997a3dda",
+    "tests/test_followup_nt_live_budget.py": "673cfd12b2c4e171b390f11e44b55371a913423b28b57a5eddec4b218a1b90b2",
+    "scripts/followup_nt_executor.py": "fa6ee11ebf44d693c21749281812afc0fa653e3b15e5377fa15ff73dd8f8d42c",
+    "src/push_align/followup_probe.py": "98d66ae351fdaf9b36b3312bbe7f6b07be2f11a3654685b0d467f85c787bfeec"
+  },
+  "scope": {
+    "new_physics_executed_by_reviewer": 0,
+    "model_calls_by_reviewer": 0,
+    "training_updates": 0,
+    "git_mutations": 0,
+    "original_data_mutations": 0,
+    "actual_full_execution_at_review": "NOT_RUN_BY_REVIEWER"
+  },
+  "verified": {
+    "scientific_identities": "Complete typed input, original 128 candidate shape/order/bytes, RNG keys, and frozen 22-file model/normalizer map retained; runtime entry authenticates before and after.",
+    "prospective_order": "All seven 128-candidate forecasts are durable/readback exact and sealed before first new physical future; fresh teacher evaluation occurs after all actuals and cannot alter sealed forecasts.",
+    "cartesian_scope": {
+      "states": 1,
+      "candidates": 128,
+      "models": 7,
+      "panels": [
+        "A",
+        "B"
+      ],
+      "repeats": 3,
+      "fresh_physical_trajectories": 768,
+      "maximum_intervals": 4992,
+      "all_raw_roundtrips": 768,
+      "whole_probe_repeat_checks": 512,
+      "complete_first_repeat_roundtrips": 256,
+      "source_D2_raw_exact_checks": 96,
+      "scientific_row_reuse": false
+    },
+    "resource": "Before/after each trial reserve ALL remaining physical baseline intervals, applicable original-D2 source comparisons, full-result persistence groups and fixed/final work. Per-component maxima cannot decrease. 1.5 safety, 7200s cumulative cap, 5GiB incremental cap and 2GiB free reserve remain unchanged.",
+    "cumulative_prior_seconds": 662.5052578353789,
+    "final_audit_report_reserve_seconds": 600,
+    "prefix_sealing_reserve_seconds": 60,
+    "initial_projection_seconds_before_new_process_elapsed": 6630.482789542896,
+    "prefix_preservation": "Returned StepResults append before cooperative action-boundary deadline/free-space checks. Error/interruption paths seal returned raw before repeat/source/full-result comparators. SIGINT/TERM enter preservation path; explicit missing rows retained, no retry.",
+    "scientific_invalid": "Scientific invalidity remains a result; no demand for ready to pass recording fidelity. A keeps nominal H5 cost and passive first-ready semantics; B is supervisor plus longer zero-tail contrast and has no H5 cost.",
+    "teacher_masks": "All fresh first-repeat A prefix transitions retained with component transition/observation/contact-geometry flags and effective physical-valid mask using same frozen _physical_reasons; no repeated-prefix benchmark labels."
+  },
+  "tests": {
+    "command": "PYTHONPATH=src ../../.venv/bin/python -B -m unittest discover -s tests -p test_followup_nt_live_budget.py -v",
+    "tests_run": 12,
+    "failures": 0,
+    "errors": 0,
+    "physics_or_predictors_executed": false
+  },
+  "nonblocking_limits": [
+    "This design review does not establish live entry success or actual execution completion; execution must authenticate these hashes and pass current free-space/whole-future checks.",
+    "Observed maxima plus safety are empirical forecasts, not universal runtime guarantees. An unreturned native call, hard kill, power loss or storage hardware failure is outside cooperative prefix assurance.",
+    "One selected restored state and finite bank cannot establish population handoff success, full MPC performance or sole cause of original failures.",
+    "A/B full-horizon differences combine command supervision, horizon and termination convention; no direct A prediction-error versus B actual error attribution.",
+    "The 600s final audit/report reserve is prospective remaining work, not measured elapsed; actual post-run audit time must also be charged before declaring cumulative cap compliance."
+  ],
+  "blocking_findings": []
+}

@@ -1,0 +1,13 @@
+{
+  "tick": 78,
+  "files_sha256": {
+    "local_run/actual/N-T/candidate-005/A/repeat-0/complete_probe/trace.npz": "36117f10db1c781aaaa6d68703f1a4aa8f383e03bdda4caf8e4b64f98cbb1142",
+    "local_run/actual/N-T/candidate-005/A/repeat-0/complete_probe/input.json.gz": "8c1928d521a22a58af9945ed56c47f044f6f7c6ecffe53e287e7101ef2648edb"
+  },
+  "bytes": {
+    "local_run/actual/N-T/candidate-005/A/repeat-0/complete_probe/trace.npz": 68409,
+    "local_run/actual/N-T/candidate-005/A/repeat-0/complete_probe/input.json.gz": 320503
+  },
+  "input_exact_sha256": "bd02c69d6cbf1ec978d0e596b24d44c07cad73ba45dec5c8083974ab01129748",
+  "full_model_arrays": false
+}

@@ -1,0 +1,17 @@
+{
+  "timings_ns": {
+    "physical_probe_including_unchanged_validation_ns": 219801708,
+    "raw_write_fsync_ns": 362920292,
+    "raw_authenticated_read_ns": 34802750,
+    "raw_roundtrip_full_exact_ns": 923767916,
+    "full_probe_repeat_exact_ns": 500,
+    "source_D2_raw_read_and_exact_ns": 958539708,
+    "first_repeat_complete_probe_durable_roundtrip_ns": 4163030458,
+    "diagnostic_durable_roundtrip_ns": 1335834,
+    "whole_probe_typed_digest_ns": 284356916,
+    "trial_output_traversal_ns": 477292,
+    "summary_write_fsync_ns": 808417,
+    "trial_total_through_summary_ns": 6953973750
+  },
+  "scope": "All measured work through summary; timing receipt follows measurement."
+}

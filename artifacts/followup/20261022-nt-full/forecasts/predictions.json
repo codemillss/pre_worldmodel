@@ -1,0 +1,149 @@
+{
+  "R": {
+    "prediction_cost_selection_ns": 11397000,
+    "durable_save_readback_exact_ns": 6379666,
+    "valid_count": 126,
+    "selected_original_candidate_id": 123,
+    "reason": "selected",
+    "receipt": {
+      "file": "prediction-R.npz",
+      "sha256": "9dc1e70edac52af2ec8e08ac08053353c24a483eb51fa1a9706f35fd9e6673e7",
+      "bytes": 116141,
+      "roundtrip": {
+        "status": "PASS_EXACT",
+        "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+        "left_sha256": "3efe753ae41975f2e388f79b44bca52f47cf0b95611cecb9c9eba3f3887c1080",
+        "right_sha256": "3efe753ae41975f2e388f79b44bca52f47cf0b95611cecb9c9eba3f3887c1080"
+      }
+    },
+    "candidate_count": 128,
+    "horizon": 5,
+    "selection_scope": "same original128 bank; no physical outcomes used"
+  },
+  "S1-11": {
+    "prediction_cost_selection_ns": 6628292,
+    "durable_save_readback_exact_ns": 6030500,
+    "valid_count": 121,
+    "selected_original_candidate_id": 60,
+    "reason": "selected",
+    "receipt": {
+      "file": "prediction-S1-11.npz",
+      "sha256": "8889ef01711e2dd33cb312d2e22d0f1a4ddd86a3f1d9069c2a071c912a469632",
+      "bytes": 113813,
+      "roundtrip": {
+        "status": "PASS_EXACT",
+        "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+        "left_sha256": "ea3a462d9ca65329e7e4bc5b15884d620880c6dee821dbc6a081bc26a38683dc",
+        "right_sha256": "ea3a462d9ca65329e7e4bc5b15884d620880c6dee821dbc6a081bc26a38683dc"
+      }
+    },
+    "candidate_count": 128,
+    "horizon": 5,
+    "selection_scope": "same original128 bank; no physical outcomes used"
+  },
+  "S1-23": {
+    "prediction_cost_selection_ns": 5132958,
+    "durable_save_readback_exact_ns": 5642917,
+    "valid_count": 119,
+    "selected_original_candidate_id": 37,
+    "reason": "selected",
+    "receipt": {
+      "file": "prediction-S1-23.npz",
+      "sha256": "958ae20e8c3c7a18a77fd49d5f13e91b21258ce42b5aa4eaa114a9f8497ab4f6",
+      "bytes": 112073,
+      "roundtrip": {
+        "status": "PASS_EXACT",
+        "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+        "left_sha256": "a70fc6332c4d40955f01cd4ef379a7cf93a3cbb2528c14a1a282ab3f7357ccff",
+        "right_sha256": "a70fc6332c4d40955f01cd4ef379a7cf93a3cbb2528c14a1a282ab3f7357ccff"
+      }
+    },
+    "candidate_count": 128,
+    "horizon": 5,
+    "selection_scope": "same original128 bank; no physical outcomes used"
+  },
+  "S1-47": {
+    "prediction_cost_selection_ns": 5346542,
+    "durable_save_readback_exact_ns": 5793500,
+    "valid_count": 124,
+    "selected_original_candidate_id": 13,
+    "reason": "selected",
+    "receipt": {
+      "file": "prediction-S1-47.npz",
+      "sha256": "e958a57a8627187d3f7aa61cbde87ae78915031b53d430540be7e050a8eb448d",
+      "bytes": 114351,
+      "roundtrip": {
+        "status": "PASS_EXACT",
+        "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+        "left_sha256": "05caf6074052c2e2b66857a4a6856e0549fa9f47e50779866d1d05688d855685",
+        "right_sha256": "05caf6074052c2e2b66857a4a6856e0549fa9f47e50779866d1d05688d855685"
+      }
+    },
+    "candidate_count": 128,
+    "horizon": 5,
+    "selection_scope": "same original128 bank; no physical outcomes used"
+  },
+  "SK-11": {
+    "prediction_cost_selection_ns": 5275375,
+    "durable_save_readback_exact_ns": 5650458,
+    "valid_count": 122,
+    "selected_original_candidate_id": 119,
+    "reason": "selected",
+    "receipt": {
+      "file": "prediction-SK-11.npz",
+      "sha256": "f198931d265dd2f197033c7f30b24422c765beed30bebfe6e5494088936a1018",
+      "bytes": 114148,
+      "roundtrip": {
+        "status": "PASS_EXACT",
+        "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+        "left_sha256": "136cd078c4f2ae959b9beca817f990e367b609220ac5f0332e518a5d06f4e795",
+        "right_sha256": "136cd078c4f2ae959b9beca817f990e367b609220ac5f0332e518a5d06f4e795"
+      }
+    },
+    "candidate_count": 128,
+    "horizon": 5,
+    "selection_scope": "same original128 bank; no physical outcomes used"
+  },
+  "SK-23": {
+    "prediction_cost_selection_ns": 5117125,
+    "durable_save_readback_exact_ns": 5498417,
+    "valid_count": 117,
+    "selected_original_candidate_id": 17,
+    "reason": "selected",
+    "receipt": {
+      "file": "prediction-SK-23.npz",
+      "sha256": "1cf3360dce4f5ef631363b8c4466675f143b74a611f5d3e837d7f8e004b96821",
+      "bytes": 110914,
+      "roundtrip": {
+        "status": "PASS_EXACT",
+        "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+        "left_sha256": "3915b7dfa6b2c2e7dbb3d1b29c4515bb704c538b8b4f15746ac353a2de3cb2ac",
+        "right_sha256": "3915b7dfa6b2c2e7dbb3d1b29c4515bb704c538b8b4f15746ac353a2de3cb2ac"
+      }
+    },
+    "candidate_count": 128,
+    "horizon": 5,
+    "selection_scope": "same original128 bank; no physical outcomes used"
+  },
+  "SK-47": {
+    "prediction_cost_selection_ns": 5116625,
+    "durable_save_readback_exact_ns": 5651583,
+    "valid_count": 124,
+    "selected_original_candidate_id": 119,
+    "reason": "selected",
+    "receipt": {
+      "file": "prediction-SK-47.npz",
+      "sha256": "dcebd480f142273d9a822eb2e49e90af6cb076d624c888bdc28af4f3d8247b7b",
+      "bytes": 114385,
+      "roundtrip": {
+        "status": "PASS_EXACT",
+        "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+        "left_sha256": "f0ec5cd5fb6aff167217983bbbd94e7c03b916accdf668aa190470048fdbd567",
+        "right_sha256": "f0ec5cd5fb6aff167217983bbbd94e7c03b916accdf668aa190470048fdbd567"
+      }
+    },
+    "candidate_count": 128,
+    "horizon": 5,
+    "selection_scope": "same original128 bank; no physical outcomes used"
+  }
+}

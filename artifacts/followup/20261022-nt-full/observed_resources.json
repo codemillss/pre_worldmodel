@@ -1,0 +1,99 @@
+{
+  "schema": "followup-nt-full-observed-resource-receipt-v1",
+  "cumulative_clock_definition": "sum of recorded experiment-process wall_seconds including D1/D2 and compute/IO profiling, not calendar or human planning elapsed",
+  "prior_charged_process_seconds": 662.5052578353789,
+  "full_process_seconds_including_shutdown": 290.55625162483193,
+  "full_process_wall_source_sha256": "773395b401385a574790b3f25ad9b57faa22eb48cad92fd4af08f3ce2574c8ef",
+  "analysis_reported_seconds": 0.12401962489821017,
+  "analysis_charged_process_seconds": 0.21836687508039176,
+  "publisher_seconds_before_final_metadata": 0.8082238750066608,
+  "known_cumulative_seconds_before_final_metadata": 954.0881002102979,
+  "wall_cap_seconds": 7200,
+  "remaining_seconds_before_other_postwork": 6245.911899789702,
+  "full_process_within_cap": true,
+  "observed_full_run_directory_bytes_before_publication": 35953612,
+  "publisher_future_calls": {
+    "physics": 0,
+    "models": 0
+  },
+  "scope": "Known measured processes only. Independent review and later finalization must be added by the final delivery ledger; this is not a claim that unmeasured postwork is free.",
+  "executor_final_resource_decision": {
+    "stage": "final_before_summary",
+    "decision": "STOP_RESOURCE",
+    "failures": [
+      "cumulative_wall_cap"
+    ],
+    "remaining": {
+      "trials": 698,
+      "intervals": 4540,
+      "source_comparisons": 26,
+      "complete_probe_groups": 232
+    },
+    "observed_rates": {
+      "seconds_per_interval": 0.51612885,
+      "bytes_per_interval": 89074.4,
+      "source_comparison_seconds": 1.35706625,
+      "complete_probe_seconds": 6.1589925,
+      "complete_probe_bytes": 1036225,
+      "loop_seconds_per_trial": 0.026950666999999998
+    },
+    "process_seconds": 290.14322549989447,
+    "cumulative_spent_seconds": 952.6484833352733,
+    "output_bytes": 35508643,
+    "free_bytes": 10158080000,
+    "future_seconds": {
+      "interval_baseline": 3514.8374685,
+      "source_D2_comparisons": 52.925583749999994,
+      "first_repeat_complete_probe": 2143.32939,
+      "trial_loop": 28.217348348999998,
+      "fixed_future": 12.124927558461845,
+      "report_reserve": 600
+    },
+    "future_bytes": {
+      "interval_baseline": 606596664,
+      "first_repeat_complete_probe": 360606300,
+      "fixed_future": 1988750
+    },
+    "projected_cumulative_seconds": 7304.083201492735,
+    "projected_cumulative_bytes": 1098734911,
+    "limits": {
+      "prior_seconds": 662.5052578353789,
+      "prior_bytes": 94034554,
+      "wall_cap_seconds": 7200.0,
+      "storage_cap_bytes": 5368709120,
+      "free_reserve_bytes": 2147483648,
+      "safety_factor": 1.5,
+      "fixed_future_seconds": 12.124927558461845,
+      "fixed_future_bytes": 1988750,
+      "report_reserve_seconds": 600,
+      "sealing_reserve_seconds": 60.0,
+      "sealing_reserve_bytes": 16777216
+    }
+  },
+  "fresh_source_sha_checks": {
+    "execution_code": {
+      "files": 10,
+      "fresh_sha_check": "PASS"
+    },
+    "loaded_model_normalizer": {
+      "files": 22,
+      "fresh_sha_check": "PASS"
+    },
+    "original": {
+      "files": 263,
+      "fresh_sha_check": "PASS"
+    },
+    "D1_D2_source": {
+      "files": 1204,
+      "fresh_sha_check": "PASS"
+    },
+    "reviewed_resource": {
+      "files": 3,
+      "fresh_sha_check": "PASS"
+    },
+    "preserved_prior_receipts": {
+      "files": 4,
+      "fresh_sha_check": "PASS"
+    }
+  }
+}

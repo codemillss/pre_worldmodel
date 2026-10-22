@@ -1,0 +1,8 @@
+{
+  "schema": "saved-audit-process-wall-receipt-v1",
+  "process_wall_seconds": 15.889445957960561,
+  "exit_code": 0,
+  "stdout": "{\"status\": \"PASS_SAVED_EVIDENCE_AND_INDEPENDENT_RULE_CHECKS\", \"scope\": {\"planned_rows\": 768, \"all_present_rows\": 70, \"missing_rows\": 698, \"all_present_raw_pair_hashes\": 70, \"complete_probe_group_hashes\": 24, \"whole_probe_repeat_receipts\": 46, \"source_D2_receipts\": 70, \"authenticated_run_files\": 258, \"independently_decoded_raw_repeats\": 12, \"independently_decoded_complete_groups\": 4, \"prespecified_sample_candidate_ids\": [0, 9, 127], \"prediction_model_calls\": 0, \"physics_calls\": 0}, \"teacher_unique_rows\": 0, \"time_accounting\": {\"prior_seconds\": 662.5052578353789, \"full_process_wall_seconds\": 290.55625162483193, \"charged_postwork_before_audit_seconds\": 0.2183668750803098, \"audit_wall_seconds_through_last_check\": 15.81580162490718, \"cumulative_seconds_through_this_audit\": 969.0956779601983, \"cap_seconds\": 7200, \"final_publication_and_shutdown_not_yet_charged\": true}}\n",
+  "stderr": "",
+  "scope": "Saved-only audit subprocess; model and physics calls zero; include this elapsed rather than its internal timer in cumulative ledger."
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "followup-nt-full-public-verification-v1",
+  "status": "PASS_PUBLIC_HASHES_DIMENSIONS_AND_PARTIAL_SCOPE",
+  "verifier_sha256": "22577112324ae610450a69bbaa03fcdd3fd45281e69908cb2b04f507ecc28701",
+  "manifest_sha256": "3cf75c2e671543fb06e8bec8e57e5330200f5a69cd74cf3da5f3b151699acb17",
+  "source_run_status": "STOP_RESOURCE",
+  "public_files": 351,
+  "public_bytes": 2216568,
+  "model_count": 7,
+  "model_normalizer_files": 22,
+  "forecast_candidates": 128,
+  "sealed_scientific_rows": 70,
+  "missing_scientific_rows": 698,
+  "recorded_intervals": 446,
+  "local_raw_pairs_reported": 70,
+  "local_complete_probes_reported": 24,
+  "actual_process_cumulative_seconds": 953.0615094602108,
+  "private_absolute_path_hits": 0,
+  "new_physics_calls": 0,
+  "new_model_calls": 0,
+  "verification_seconds": 0.12338079093024135,
+  "limits": "Public receipt/hash/dimension/arithmetic check only. Omitted full raw/complete-probe semantic reproduction audit is separate."
+}

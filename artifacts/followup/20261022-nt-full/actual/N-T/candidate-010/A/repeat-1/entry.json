@@ -1,0 +1,8 @@
+{
+  "candidate_id": 10,
+  "panel": "A",
+  "repeat": 1,
+  "candidate_hash": "4b4f3f6768e4727aa5808ac9da3ae9b96cd1cdf75eece724efed22927440df96",
+  "full_input_typed_sha256": "f1c8a69afed6306a5416e7614d3876ef4d6a30d00a0f9db78ed606ea52dbd7f3",
+  "prospective_seal_sha256": "ef57af3d022c687fe8483820053691299fcb3a8eec46aa8b2bab56f9bf0b5af1"
+}

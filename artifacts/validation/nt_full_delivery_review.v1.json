@@ -1,0 +1,64 @@
+{
+  "schema": "nt-full-partial-delivery-review-v1",
+  "status": "PASS_PRESERVATION_PUBLICATION_WITH_HONEST_RESOURCE_STOP",
+  "as_of_utc": "2026-10-22T07:15:15.758352+00:00",
+  "base_commit": "de29c3b95afa3f14f1a9274a9eac4f1f4ca93f4a",
+  "previous_delivery_manifest_sha256": "ff1009f4b6b4f3f1b6f89b21e836d743bf54ccfa05a3fb002331382d2f391414",
+  "previous_files": 1228,
+  "previous_files_unchanged": 1225,
+  "approved_updated_navigation_files": [
+    "README.md",
+    "artifacts/index.md",
+    "docs/nt_fullbank_preflight.ko.md"
+  ],
+  "scientific_run_status": "STOP_RESOURCE",
+  "completed_actual_trajectories": 70,
+  "unexecuted_trajectories": 698,
+  "executed_driver_sha256": "021faeff2e5a46cc3d0ece5b308ee729153b66c81f266efd23d54484079c645a",
+  "executed_config_sha256": "6c610918926f076cc09e950512252187a071147cede367e473bc5a2e9920b58b",
+  "private_paths_or_high_confidence_secret_values_found": 0,
+  "synthetic_portability_test_matches_reviewed": [
+    {
+      "file": "tools/publish_nt_full.py",
+      "line": 341,
+      "classification": "Synthetic portability self-test path; no real user or account"
+    },
+    {
+      "file": "tools/publish_nt_full.py",
+      "line": 342,
+      "classification": "Synthetic portability self-test path; no real user or account"
+    },
+    {
+      "file": "tools/publish_nt_full.py",
+      "line": 343,
+      "classification": "Synthetic portability self-test path; no real user or account"
+    },
+    {
+      "file": "tools/publish_nt_full.py",
+      "line": 348,
+      "classification": "Synthetic portability self-test path; no real user or account"
+    }
+  ],
+  "changed_markdown_local_links": "PASS",
+  "independent_saved_audit": "artifacts/validation/nt_full_execution_review.v1.json",
+  "public_verification": "artifacts/validation/nt_full_public_checks.v1.json",
+  "paper_and_frozen_result_files": "UNCHANGED_SHA",
+  "time_accounting": {
+    "prior_experiment_process_seconds": 662.5052578353789,
+    "new_experiment_outer_process_seconds": 290.55625162483193,
+    "experiment_cumulative_seconds": 953.0615094602108,
+    "postprocessing_wall_seconds_through_this_receipt": 663.5315194129944,
+    "postprocessing_measurement": "Elapsed filesystem UTC clock since outer process receipt mtime, including analysis, audit, publication, report preparation and waiting. Parallel subprocess timers are subsets and not added again.",
+    "cumulative_including_postprocessing_seconds": 1616.5930288732052,
+    "remaining_commit_push_verification_reserve_seconds": 120.0,
+    "conservative_total_including_publication_reserve_seconds": 1736.5930288732052,
+    "cap_seconds": 7200,
+    "within_cap": true
+  },
+  "limits": [
+    "Full768 actual experiment was not completed; status is STOP_RESOURCE.",
+    "600s report reserve is a prospective estimate; final postprocessing measured separately.",
+    "Raw/full-probe payloads remain local. Public evidence has the documented partial verification scope.",
+    "No automatic retry, denominator substitution or original replacement."
+  ]
+}
