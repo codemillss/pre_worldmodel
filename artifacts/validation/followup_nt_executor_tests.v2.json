@@ -1,0 +1,21 @@
+{
+  "schema": "followup-nt-executor-unit-checks-v2",
+  "status": "PASS",
+  "checks": 5,
+  "failures": 0,
+  "framework": "unittest",
+  "command": "python -B -m unittest discover -s tests -p test_followup_nt_executor.py -v",
+  "new_physics_calls": 0,
+  "new_model_calls": 0,
+  "code_sha256": "fa6ee11ebf44d693c21749281812afc0fa653e3b15e5377fa15ff73dd8f8d42c",
+  "test_sha256": "0ba04d1d42e7398326873bce8fd1fd92af98879c367343644739a4dd587f59b2",
+  "config_sha256": "b965423ba2e1b7e339ebc6a2409b685a9935a512ddfffbd6390ea6f6eb35bc80",
+  "checks_scope": [
+    "all completeProbe fields/dataclass types exact roundtrip",
+    "returned raw preserved when reader raises",
+    "signedzero/nonfinite numeric NPZ bits",
+    "reject model/repeat/candidate/priorclock reduction",
+    "exact originalD2 filemap rejects missing/added/altered SHA"
+  ],
+  "limitation": "These scripted checks are not the real128 preflight or a proof of futurefullbatch behavior."
+}

@@ -1,0 +1,447 @@
+{
+  "schema": "followup-nt-preflight-saved-evidence-execution-review-v2",
+  "status": "PASS_SAVED_EVIDENCE_AND_CONDITIONAL_SCOPED_RESOURCE_BUDGET",
+  "created_at_utc": "2026-10-22T06:34:38.591717+00:00",
+  "reviewer_scope": "Independent saved-evidence verification and arithmetic; no inference, physics, training, optimizer, git or source mutation. This receipt is the only file written.",
+  "reviewer_new_calls": {
+    "physics": 0,
+    "models": 0,
+    "training_updates": 0
+  },
+  "source_bindings": {
+    "entry_sha256": "3a046baea5419630eaed117ef117ce0a502825aa4892014e3fff3e156b1af458",
+    "summary_sha256": "b2cb271b0895359d6da6159fb234e3bf78bb2d71cb483c4fc0b2be63c5ea7ff5",
+    "config_sha256": "b965423ba2e1b7e339ebc6a2409b685a9935a512ddfffbd6390ea6f6eb35bc80",
+    "prospective_forecast_seal_sha256": "0e1de24540fc3a7dc4844b0fe4c16224c255c896178dc1ab38f644a85bfa14b9",
+    "process_wall_receipt_sha256": "4123be92c3b7e5b19ca7ddc8fedd8ff65cf14afff1ac4876822f93f132c0b52d",
+    "resource_projection_sha256": "2f2e29c562f3fa144a602a0d866993d5c3b8bd28d9911cc19c57c2e42c63d852",
+    "scoped_resource_budget_v2_sha256": "bdf200a8664ebf65fa59a918e0610f56d857f5ade9a256b99f3e5d81a1f67bed",
+    "resource_refinement_tool_sha256": "9eb176ebb70acf1aad99882986be840e662100126b27084b0e136cfe25463101"
+  },
+  "identity": {
+    "full_input_typed_sha256": "f1c8a69afed6306a5416e7614d3876ef4d6a30d00a0f9db78ed606ea52dbd7f3",
+    "bank_hash": "eee0b75a061c0bdbb2c64b806abc990640d8764d6e99a1580e9f9fb149a3f2db",
+    "shape": [
+      128,
+      5,
+      2
+    ],
+    "source_order_exact": true,
+    "unique_sequences": 128,
+    "models": [
+      "R",
+      "S1-11",
+      "S1-23",
+      "S1-47",
+      "SK-11",
+      "SK-23",
+      "SK-47"
+    ],
+    "complete_model_normalizer_map_files": 22,
+    "model_identity_scope": "Exact originalD2 configured path-to-SHA dictionary; count22 is observed, no hardcoded count substitute."
+  },
+  "prospective_prediction_gate": {
+    "seven_full128_forecasts_present": true,
+    "durable_array_receipts_sha_verified": true,
+    "predicted_nine_term_costs_selection_and_gap_recomputed": true,
+    "all_actual_entries_bind_same_prospective_seal": true,
+    "sealed_files_unchanged_after_actuals": true,
+    "all_prediction_engine_guards_zero": true,
+    "forecast_models": [
+      {
+        "model": "R",
+        "candidate_count": 128,
+        "valid_count": 126,
+        "selected_original_candidate_id": 123,
+        "nine_term_cost_recomputed": true,
+        "sha256": "9dc1e70edac52af2ec8e08ac08053353c24a483eb51fa1a9706f35fd9e6673e7"
+      },
+      {
+        "model": "S1-11",
+        "candidate_count": 128,
+        "valid_count": 121,
+        "selected_original_candidate_id": 60,
+        "nine_term_cost_recomputed": true,
+        "sha256": "8889ef01711e2dd33cb312d2e22d0f1a4ddd86a3f1d9069c2a071c912a469632"
+      },
+      {
+        "model": "S1-23",
+        "candidate_count": 128,
+        "valid_count": 119,
+        "selected_original_candidate_id": 37,
+        "nine_term_cost_recomputed": true,
+        "sha256": "958ae20e8c3c7a18a77fd49d5f13e91b21258ce42b5aa4eaa114a9f8497ab4f6"
+      },
+      {
+        "model": "S1-47",
+        "candidate_count": 128,
+        "valid_count": 124,
+        "selected_original_candidate_id": 13,
+        "nine_term_cost_recomputed": true,
+        "sha256": "e958a57a8627187d3f7aa61cbde87ae78915031b53d430540be7e050a8eb448d"
+      },
+      {
+        "model": "SK-11",
+        "candidate_count": 128,
+        "valid_count": 122,
+        "selected_original_candidate_id": 119,
+        "nine_term_cost_recomputed": true,
+        "sha256": "f198931d265dd2f197033c7f30b24422c765beed30bebfe6e5494088936a1018"
+      },
+      {
+        "model": "SK-23",
+        "candidate_count": 128,
+        "valid_count": 117,
+        "selected_original_candidate_id": 17,
+        "nine_term_cost_recomputed": true,
+        "sha256": "1cf3360dce4f5ef631363b8c4466675f143b74a611f5d3e837d7f8e004b96821"
+      },
+      {
+        "model": "SK-47",
+        "candidate_count": 128,
+        "valid_count": 124,
+        "selected_original_candidate_id": 119,
+        "nine_term_cost_recomputed": true,
+        "sha256": "dcebd480f142273d9a822eb2e49e90af6cb076d624c888bdc28af4f3d8247b7b"
+      }
+    ]
+  },
+  "actual_evidence": {
+    "trajectories": 18,
+    "intervals": 111,
+    "substeps": 22200,
+    "all18_full_raw_schema_hash_read": true,
+    "all_initial_snapshots_exact": true,
+    "source_D2_raw_comparisons": 12,
+    "complete_first_repeat_trees_rehydrated": 6,
+    "groups_with_three_equal_runtime_complete_result_digests": 6,
+    "independent_raw_repeat_equality": true,
+    "diagnostic_arrays_exact": 18,
+    "task_reconsumptions": 18,
+    "actual_nine_term_A_cost_recomputations": 9,
+    "B_cost_none": true,
+    "candidate9_B_intervals": [
+      6,
+      6,
+      6
+    ],
+    "interval_shortfall_reason": "Candidate9 B absorbs ready at interval6 in all3 repeats:117 maximum minus6=111; no missing or shortened trial.",
+    "trial_reports": [
+      {
+        "candidate_id": 0,
+        "panel": "A",
+        "repeat": 0,
+        "intervals": 5,
+        "substeps": 1000,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": true
+      },
+      {
+        "candidate_id": 0,
+        "panel": "A",
+        "repeat": 1,
+        "intervals": 5,
+        "substeps": 1000,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": true
+      },
+      {
+        "candidate_id": 0,
+        "panel": "A",
+        "repeat": 2,
+        "intervals": 5,
+        "substeps": 1000,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": true
+      },
+      {
+        "candidate_id": 0,
+        "panel": "B",
+        "repeat": 0,
+        "intervals": 8,
+        "substeps": 1600,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "e3369d645dcb67404fa0ce468fc9a05e9eeb52ea35013d4fd583f268bab7cc13",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": false
+      },
+      {
+        "candidate_id": 0,
+        "panel": "B",
+        "repeat": 1,
+        "intervals": 8,
+        "substeps": 1600,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "e3369d645dcb67404fa0ce468fc9a05e9eeb52ea35013d4fd583f268bab7cc13",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": false
+      },
+      {
+        "candidate_id": 0,
+        "panel": "B",
+        "repeat": 2,
+        "intervals": 8,
+        "substeps": 1600,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "e3369d645dcb67404fa0ce468fc9a05e9eeb52ea35013d4fd583f268bab7cc13",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": false
+      },
+      {
+        "candidate_id": 9,
+        "panel": "A",
+        "repeat": 0,
+        "intervals": 5,
+        "substeps": 1000,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": true
+      },
+      {
+        "candidate_id": 9,
+        "panel": "A",
+        "repeat": 1,
+        "intervals": 5,
+        "substeps": 1000,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": true
+      },
+      {
+        "candidate_id": 9,
+        "panel": "A",
+        "repeat": 2,
+        "intervals": 5,
+        "substeps": 1000,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": true
+      },
+      {
+        "candidate_id": 9,
+        "panel": "B",
+        "repeat": 0,
+        "intervals": 6,
+        "substeps": 1200,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "ee3985311a3fa88412df6c6ed456db481b66488612286a52e862872d1994aa37",
+        "first_ready_interval": 6,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": false
+      },
+      {
+        "candidate_id": 9,
+        "panel": "B",
+        "repeat": 1,
+        "intervals": 6,
+        "substeps": 1200,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "ee3985311a3fa88412df6c6ed456db481b66488612286a52e862872d1994aa37",
+        "first_ready_interval": 6,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": false
+      },
+      {
+        "candidate_id": 9,
+        "panel": "B",
+        "repeat": 2,
+        "intervals": 6,
+        "substeps": 1200,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "ee3985311a3fa88412df6c6ed456db481b66488612286a52e862872d1994aa37",
+        "first_ready_interval": 6,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": false
+      },
+      {
+        "candidate_id": 127,
+        "panel": "A",
+        "repeat": 0,
+        "intervals": 5,
+        "substeps": 1000,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "276bac7d2ce4282ba84db1303a78a2d938ffe6af4dc3e57fa2762c130027d47e",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": true
+      },
+      {
+        "candidate_id": 127,
+        "panel": "A",
+        "repeat": 1,
+        "intervals": 5,
+        "substeps": 1000,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "276bac7d2ce4282ba84db1303a78a2d938ffe6af4dc3e57fa2762c130027d47e",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": true
+      },
+      {
+        "candidate_id": 127,
+        "panel": "A",
+        "repeat": 2,
+        "intervals": 5,
+        "substeps": 1000,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "276bac7d2ce4282ba84db1303a78a2d938ffe6af4dc3e57fa2762c130027d47e",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": true
+      },
+      {
+        "candidate_id": 127,
+        "panel": "B",
+        "repeat": 0,
+        "intervals": 8,
+        "substeps": 1600,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "14fb59c2c436efc86acc501f5632795a649aeb8d01eb8f8fcbc873568c1e8a5a",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": false
+      },
+      {
+        "candidate_id": 127,
+        "panel": "B",
+        "repeat": 1,
+        "intervals": 8,
+        "substeps": 1600,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "14fb59c2c436efc86acc501f5632795a649aeb8d01eb8f8fcbc873568c1e8a5a",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": false
+      },
+      {
+        "candidate_id": 127,
+        "panel": "B",
+        "repeat": 2,
+        "intervals": 8,
+        "substeps": 1600,
+        "raw_roundtrip": "PASS_EXACT",
+        "whole_probe_typed_sha256": "14fb59c2c436efc86acc501f5632795a649aeb8d01eb8f8fcbc873568c1e8a5a",
+        "first_ready_interval": null,
+        "task_reconsumption": "PASS_EXACT",
+        "actual_A_cost_recomputed": false
+      }
+    ]
+  },
+  "teacher_evidence": {
+    "original80_input_rows_rebuilt_from_source_raw": true,
+    "benchmark_rows": 640,
+    "source_row_mapping": "arange640 modulo80, each original row8times",
+    "seven_source_and_benchmark_output_receipts_verified": true,
+    "independent_new_labels": 0,
+    "inference_reexecuted": false
+  },
+  "resource_arithmetic": {
+    "measured_summary_wall_seconds": 69.64143695915118,
+    "charged_external_process_wall_seconds": 70.11690679215826,
+    "prior_seconds_including_failed_attempt": 592.3883510432206,
+    "future_fresh_full768_interval_upper": 4992,
+    "complete_probe_first_repeat_groups": 256,
+    "future_seconds": {
+      "physical_raw_validation_baseline": 5066.5299984,
+      "complete_probe_first_repeat_persistence_and_exact": 1579.932096,
+      "trial_loop_entry_timing_receipt_overhead": 6.60779488,
+      "fixed_forecast_models_bindings_teacher_and_final_rehash": 12.124927558461843,
+      "unmeasured_report_and_shared_adapter_reserve": 120,
+      "total": 6785.194816838462
+    },
+    "projected_cumulative_wall_seconds": 7447.700074673841,
+    "projected_cumulative_bytes": 1034316860,
+    "wall_cap_fit": false,
+    "storage_cap_fit": true,
+    "status": "NOT_RUN_RESOURCE_HOLD",
+    "interpretation": "Current conservative estimate exceeds7200s; this is not proof all faithful implementations are physically unable to finish within2h. No full actual batch executed.",
+    "supersession_scope": "The preserved v1 blanket extrapolation remains NOT_RUN_RESOURCE_HOLD. Current feasibility is the following v2 scope-correct conditional estimate; no measured source data or runtime check was removed."
+  },
+  "preserved_failure": {
+    "attempt01_retained": true,
+    "v1_hardcoded24_metadata_assumption_corrected": true,
+    "actual_source_map_files": 22,
+    "failed_attempt_wall_charged_seconds": 2.5721120829693973,
+    "failed_attempt_bytes_in_prior": 81769,
+    "original_v1_review_and_executor_retained_as_historical": true
+  },
+  "limits": [
+    "No models or physics reexecuted by this reviewer. Model outputs were authenticated and their costs/selection recomputed from saved arrays, not regenerated through inference.",
+    "CompleteProbe first repeats are independently rehydrated from saved full field trees. For repeats1/2, full runtime result digests and verification receipts match; their available raw and diagnostic arrays were independently compared. Unsaved additional per-repeat internal snapshots are not independently reconstructed.",
+    "N-T tick78 snapshot is newly reconstructed D1 internal state; absent original tick78 full internal snapshot was not directly compared.",
+    "Only IDs0/9/127 have actual futures in this run;128 model forecasts do not establish128 actual behavior.",
+    "No S1/SK population superiority, global reachability, sole original-failure cause, or independent teacher sample claim.",
+    "SourceD2 comparison overhead is deliberately retained in the conservative baseline for all future intervals; a separate prospective adapter may price only applicable reference comparisons without dropping validation, subject to new explicit resource review."
+  ],
+  "full128_actual_execution": "NOT_RUN",
+  "conditional_extension": "NOT_RUN",
+  "finalized_at_utc": "2026-10-22T06:37:30.930904+00:00",
+  "current_scoped_resource_arithmetic": {
+    "status": "RESOURCE_FIT_CONDITIONAL_ON_SCOPED_FULL_ADAPTER",
+    "independent_recomputation": "Directly rederived from all18 saved timing_final rows; did not call refinement calculate helper.",
+    "selected_baseline_seconds_per_interval": 0.48116094996221365,
+    "max_reference_comparison_seconds_per_trial": 1.155413333,
+    "applicable_reference_candidate_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "applicable_reference_comparisons": 96,
+    "future_seconds": {
+      "physical_raw_validation_baseline_all4992_intervals": 3602.9331933170556,
+      "original_D2_reference_read_and_exact_all96_applicable_trials": 166.379519952,
+      "complete_probe_first_repeat_persistence_and_exact_all256_groups": 1579.932096,
+      "trial_loop_entry_timing_receipt_overhead": 6.60779488,
+      "fixed_forecast_models_bindings_teacher_and_final_rehash": 12.124927558461845,
+      "unmeasured_report_and_shared_adapter_reserve": 120,
+      "total": 5487.977531707517
+    },
+    "projected_cumulative_wall_seconds": 6150.482789542896,
+    "projected_cumulative_minutes": 102.50804649238161,
+    "headroom_seconds": 1049.5172104571038,
+    "projected_cumulative_bytes": 1034316860,
+    "wall_cap_fit": true,
+    "storage_cap_fit": true,
+    "free_space_reserve_fit": true,
+    "unchanged_core_checks": [
+      "All768 fresh physical actual trials with7shared-model forecasts/A/B/3repeats, no row reuse",
+      "All768 fresh raw fsync/hash/schema/fullbitexact roundtrips and fullProbe repeated group checks",
+      "All256 first-repeat completeProbe persistence/rehydration checks",
+      "All96 originalD2 reference raw comparisons where originalIDs0..15 references exist",
+      "All fixed forecast/load/authentication,8teacher sourceprep blocks,640rowbenchmark,1.5safety,oldratefloor,120sreserve"
+    ],
+    "required_next_step": "A separately reviewed full adapter must preserve this exact96-reference policy, all other checks, frozen identities and live remaining-work guards before any full actual batch. Resource estimate alone is not execution or scientific success.",
+    "full128_actual_execution": "NOT_RUN"
+  }
+}

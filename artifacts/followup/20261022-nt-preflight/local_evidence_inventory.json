@@ -1,0 +1,497 @@
+{
+  "schema": "followup-nt-preflight-local-evidence-inventory-v1",
+  "scope": "Hash and byte inventory only. All18 complete raw pairs, six first-repeat complete probes and fulltyped input remain local and are omitted from this public subset.",
+  "physical_trajectories": 18,
+  "raw_pair_count": 18,
+  "complete_probe_group_count": 6,
+  "records": [
+    {
+      "state": "N-T",
+      "candidate_id": 0,
+      "panel": "A",
+      "repeat": 0,
+      "whole_probe_typed_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-000/A/repeat-0/raw.raw.npz",
+          "sha256": "c289fe8e23074f04eff58c73b9066e96edcabdb401756fbec379c92190919ec4",
+          "bytes": 60361,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-000/A/repeat-0/raw.raw.columns.xz",
+          "sha256": "84c288c69405d7899d2ea5b32f23306d211e70921328551cc482a95dc3b5da72",
+          "bytes": 142684,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": [
+        {
+          "path": "actual/N-T/candidate-000/A/repeat-0/complete_probe/trace.npz",
+          "sha256": "9de21dd7304463d0d7301f9830042438293b89d201e5657a6eeb3bb2cc0c638d",
+          "bytes": 68057,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-000/A/repeat-0/complete_probe/input.json.gz",
+          "sha256": "5feb903405153fece7935663193d1dd62df1b3dd9f5a4404e85bd6f70f604f4e",
+          "bytes": 344112,
+          "included_in_public_repository": false
+        }
+      ]
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 0,
+      "panel": "A",
+      "repeat": 1,
+      "whole_probe_typed_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-000/A/repeat-1/raw.raw.npz",
+          "sha256": "c289fe8e23074f04eff58c73b9066e96edcabdb401756fbec379c92190919ec4",
+          "bytes": 60361,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-000/A/repeat-1/raw.raw.columns.xz",
+          "sha256": "84c288c69405d7899d2ea5b32f23306d211e70921328551cc482a95dc3b5da72",
+          "bytes": 142684,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 0,
+      "panel": "A",
+      "repeat": 2,
+      "whole_probe_typed_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-000/A/repeat-2/raw.raw.npz",
+          "sha256": "c289fe8e23074f04eff58c73b9066e96edcabdb401756fbec379c92190919ec4",
+          "bytes": 60361,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-000/A/repeat-2/raw.raw.columns.xz",
+          "sha256": "84c288c69405d7899d2ea5b32f23306d211e70921328551cc482a95dc3b5da72",
+          "bytes": 142684,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 0,
+      "panel": "B",
+      "repeat": 0,
+      "whole_probe_typed_sha256": "e3369d645dcb67404fa0ce468fc9a05e9eeb52ea35013d4fd583f268bab7cc13",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-000/B/repeat-0/raw.raw.npz",
+          "sha256": "d63c92d410655ee03230c54a7ddf0b5e047891df0c85dce757546ee1fac8fb82",
+          "bytes": 90973,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-000/B/repeat-0/raw.raw.columns.xz",
+          "sha256": "7f827451a7cdd3588705238c6259ce0c53415369ae288906ebb4ae2a390e7cba",
+          "bytes": 201188,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": [
+        {
+          "path": "actual/N-T/candidate-000/B/repeat-0/complete_probe/trace.npz",
+          "sha256": "21535f799297fb23df26d9d64a9055dd40a0a3fbecbb88c434512720dd9c7fa8",
+          "bytes": 104389,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-000/B/repeat-0/complete_probe/input.json.gz",
+          "sha256": "a018ff5918436ef6acf0d73a93a8e535c435f69423b9fed192d454f5b2081040",
+          "bytes": 535448,
+          "included_in_public_repository": false
+        }
+      ]
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 0,
+      "panel": "B",
+      "repeat": 1,
+      "whole_probe_typed_sha256": "e3369d645dcb67404fa0ce468fc9a05e9eeb52ea35013d4fd583f268bab7cc13",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-000/B/repeat-1/raw.raw.npz",
+          "sha256": "d63c92d410655ee03230c54a7ddf0b5e047891df0c85dce757546ee1fac8fb82",
+          "bytes": 90973,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-000/B/repeat-1/raw.raw.columns.xz",
+          "sha256": "7f827451a7cdd3588705238c6259ce0c53415369ae288906ebb4ae2a390e7cba",
+          "bytes": 201188,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 0,
+      "panel": "B",
+      "repeat": 2,
+      "whole_probe_typed_sha256": "e3369d645dcb67404fa0ce468fc9a05e9eeb52ea35013d4fd583f268bab7cc13",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-000/B/repeat-2/raw.raw.npz",
+          "sha256": "d63c92d410655ee03230c54a7ddf0b5e047891df0c85dce757546ee1fac8fb82",
+          "bytes": 90973,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-000/B/repeat-2/raw.raw.columns.xz",
+          "sha256": "7f827451a7cdd3588705238c6259ce0c53415369ae288906ebb4ae2a390e7cba",
+          "bytes": 201188,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "A",
+      "repeat": 0,
+      "whole_probe_typed_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-009/A/repeat-0/raw.raw.npz",
+          "sha256": "013c55b05e10db1d65c4a3fb631bf5a555a3ed0528329e90862d737aa9d3b9e8",
+          "bytes": 79188,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-009/A/repeat-0/raw.raw.columns.xz",
+          "sha256": "53084a597b5eb7c00a6dc9144c3aed6d093b84c132b31e9c249a5c2f2ffc354b",
+          "bytes": 338504,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": [
+        {
+          "path": "actual/N-T/candidate-009/A/repeat-0/complete_probe/trace.npz",
+          "sha256": "56545d4b80d7604d2c7cf2d1c3f1b815ca7b6302396ca53c27bd34837c22b64c",
+          "bytes": 89998,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-009/A/repeat-0/complete_probe/input.json.gz",
+          "sha256": "c6351f4d59b84d1704e030033893c1876697ffc8b48e47deb9bf783ce3558aa6",
+          "bytes": 615205,
+          "included_in_public_repository": false
+        }
+      ]
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "A",
+      "repeat": 1,
+      "whole_probe_typed_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-009/A/repeat-1/raw.raw.npz",
+          "sha256": "013c55b05e10db1d65c4a3fb631bf5a555a3ed0528329e90862d737aa9d3b9e8",
+          "bytes": 79188,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-009/A/repeat-1/raw.raw.columns.xz",
+          "sha256": "53084a597b5eb7c00a6dc9144c3aed6d093b84c132b31e9c249a5c2f2ffc354b",
+          "bytes": 338504,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "A",
+      "repeat": 2,
+      "whole_probe_typed_sha256": "8671a42b6d42a1e0c839b444dac4df84c0a0fcbedbb8c447bfbf9e92f253d35c",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-009/A/repeat-2/raw.raw.npz",
+          "sha256": "013c55b05e10db1d65c4a3fb631bf5a555a3ed0528329e90862d737aa9d3b9e8",
+          "bytes": 79188,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-009/A/repeat-2/raw.raw.columns.xz",
+          "sha256": "53084a597b5eb7c00a6dc9144c3aed6d093b84c132b31e9c249a5c2f2ffc354b",
+          "bytes": 338504,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "B",
+      "repeat": 0,
+      "whole_probe_typed_sha256": "ee3985311a3fa88412df6c6ed456db481b66488612286a52e862872d1994aa37",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-009/B/repeat-0/raw.raw.npz",
+          "sha256": "c49905fd52e718e8c639bf82af7458305390dafbab94b8d7c23c628d6c000c87",
+          "bytes": 83244,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-009/B/repeat-0/raw.raw.columns.xz",
+          "sha256": "bcbb76377f8b4d574ac4dfc321ecb400a494f6a40bbba411931ad2347d78c42b",
+          "bytes": 265328,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": [
+        {
+          "path": "actual/N-T/candidate-009/B/repeat-0/complete_probe/trace.npz",
+          "sha256": "2ed2e19c65dda5ce34a21680ed0064883cb20a0d20984e867b56c09bd7c27529",
+          "bytes": 97217,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-009/B/repeat-0/complete_probe/input.json.gz",
+          "sha256": "7a5bc7487168c0188724c8298a4f49c34978d5e9fe9c4f8d0f6590a1f7ce7749",
+          "bytes": 526378,
+          "included_in_public_repository": false
+        }
+      ]
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "B",
+      "repeat": 1,
+      "whole_probe_typed_sha256": "ee3985311a3fa88412df6c6ed456db481b66488612286a52e862872d1994aa37",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-009/B/repeat-1/raw.raw.npz",
+          "sha256": "c49905fd52e718e8c639bf82af7458305390dafbab94b8d7c23c628d6c000c87",
+          "bytes": 83244,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-009/B/repeat-1/raw.raw.columns.xz",
+          "sha256": "bcbb76377f8b4d574ac4dfc321ecb400a494f6a40bbba411931ad2347d78c42b",
+          "bytes": 265328,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 9,
+      "panel": "B",
+      "repeat": 2,
+      "whole_probe_typed_sha256": "ee3985311a3fa88412df6c6ed456db481b66488612286a52e862872d1994aa37",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-009/B/repeat-2/raw.raw.npz",
+          "sha256": "c49905fd52e718e8c639bf82af7458305390dafbab94b8d7c23c628d6c000c87",
+          "bytes": 83244,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-009/B/repeat-2/raw.raw.columns.xz",
+          "sha256": "bcbb76377f8b4d574ac4dfc321ecb400a494f6a40bbba411931ad2347d78c42b",
+          "bytes": 265328,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 127,
+      "panel": "A",
+      "repeat": 0,
+      "whole_probe_typed_sha256": "276bac7d2ce4282ba84db1303a78a2d938ffe6af4dc3e57fa2762c130027d47e",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-127/A/repeat-0/raw.raw.npz",
+          "sha256": "8a011a382d83359ed587343b62f4fc7a57dc5160b1c2addd0d77831462d5ded4",
+          "bytes": 64231,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-127/A/repeat-0/raw.raw.columns.xz",
+          "sha256": "a1801464caa84047e4b2f6009664b52c990d42a33ac46660e5d1a1bdf32904c2",
+          "bytes": 134580,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": [
+        {
+          "path": "actual/N-T/candidate-127/A/repeat-0/complete_probe/trace.npz",
+          "sha256": "6fddd9f21c05a5ff0dc630ea211040159a5d9efbec16222056043ea0d8bbf32b",
+          "bytes": 72133,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-127/A/repeat-0/complete_probe/input.json.gz",
+          "sha256": "a264d41cd28fdb5be1d8cafe3556e0f7195a22c1b2740d23c1a1ce4a75a684bb",
+          "bytes": 332962,
+          "included_in_public_repository": false
+        }
+      ]
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 127,
+      "panel": "A",
+      "repeat": 1,
+      "whole_probe_typed_sha256": "276bac7d2ce4282ba84db1303a78a2d938ffe6af4dc3e57fa2762c130027d47e",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-127/A/repeat-1/raw.raw.npz",
+          "sha256": "8a011a382d83359ed587343b62f4fc7a57dc5160b1c2addd0d77831462d5ded4",
+          "bytes": 64231,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-127/A/repeat-1/raw.raw.columns.xz",
+          "sha256": "a1801464caa84047e4b2f6009664b52c990d42a33ac46660e5d1a1bdf32904c2",
+          "bytes": 134580,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 127,
+      "panel": "A",
+      "repeat": 2,
+      "whole_probe_typed_sha256": "276bac7d2ce4282ba84db1303a78a2d938ffe6af4dc3e57fa2762c130027d47e",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-127/A/repeat-2/raw.raw.npz",
+          "sha256": "8a011a382d83359ed587343b62f4fc7a57dc5160b1c2addd0d77831462d5ded4",
+          "bytes": 64231,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-127/A/repeat-2/raw.raw.columns.xz",
+          "sha256": "a1801464caa84047e4b2f6009664b52c990d42a33ac46660e5d1a1bdf32904c2",
+          "bytes": 134580,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 127,
+      "panel": "B",
+      "repeat": 0,
+      "whole_probe_typed_sha256": "14fb59c2c436efc86acc501f5632795a649aeb8d01eb8f8fcbc873568c1e8a5a",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-127/B/repeat-0/raw.raw.npz",
+          "sha256": "2e50786052f6f1c50bd8080520a07feafe0995b9e01cd7becf8f231becc875e7",
+          "bytes": 97745,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-127/B/repeat-0/raw.raw.columns.xz",
+          "sha256": "bace5c9a7564b4fdba19b457304c531c6fce99b90d2db345bddb10ad3c9b5960",
+          "bytes": 194732,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": [
+        {
+          "path": "actual/N-T/candidate-127/B/repeat-0/complete_probe/trace.npz",
+          "sha256": "21b4cbddc4528a36beb889dcf1c155e3b0104e64cfcd78b2b2b21a3028a6efbc",
+          "bytes": 111299,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-127/B/repeat-0/complete_probe/input.json.gz",
+          "sha256": "c6d5962d324fbe3d69eb2365a01f91d4e594bb43f3d2b10f3be8d4e8877030d1",
+          "bytes": 527325,
+          "included_in_public_repository": false
+        }
+      ]
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 127,
+      "panel": "B",
+      "repeat": 1,
+      "whole_probe_typed_sha256": "14fb59c2c436efc86acc501f5632795a649aeb8d01eb8f8fcbc873568c1e8a5a",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-127/B/repeat-1/raw.raw.npz",
+          "sha256": "2e50786052f6f1c50bd8080520a07feafe0995b9e01cd7becf8f231becc875e7",
+          "bytes": 97745,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-127/B/repeat-1/raw.raw.columns.xz",
+          "sha256": "bace5c9a7564b4fdba19b457304c531c6fce99b90d2db345bddb10ad3c9b5960",
+          "bytes": 194732,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    },
+    {
+      "state": "N-T",
+      "candidate_id": 127,
+      "panel": "B",
+      "repeat": 2,
+      "whole_probe_typed_sha256": "14fb59c2c436efc86acc501f5632795a649aeb8d01eb8f8fcbc873568c1e8a5a",
+      "raw_files": [
+        {
+          "path": "actual/N-T/candidate-127/B/repeat-2/raw.raw.npz",
+          "sha256": "2e50786052f6f1c50bd8080520a07feafe0995b9e01cd7becf8f231becc875e7",
+          "bytes": 97745,
+          "included_in_public_repository": false
+        },
+        {
+          "path": "actual/N-T/candidate-127/B/repeat-2/raw.raw.columns.xz",
+          "sha256": "bace5c9a7564b4fdba19b457304c531c6fce99b90d2db345bddb10ad3c9b5960",
+          "bytes": 194732,
+          "included_in_public_repository": false
+        }
+      ],
+      "complete_probe_files": []
+    }
+  ],
+  "full_input_files": [
+    {
+      "path": "input/trace.npz",
+      "sha256": "a2b376004d7f47ebeb518e276c069edbc81b948e7a8506ad722f012e1510d3c0",
+      "bytes": 2016,
+      "included_in_public_repository": false
+    },
+    {
+      "path": "input/input.json.gz",
+      "sha256": "6d06b9a647f0e8086a9e66b365b920fb667107dfbe0502a52915c354b4a87443",
+      "bytes": 32878,
+      "included_in_public_repository": false
+    }
+  ]
+}

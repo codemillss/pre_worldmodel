@@ -1,0 +1,164 @@
+{
+  "schema": "followup-nt-preflight-design-and-code-review-v2",
+  "status": "PASS_PROSPECTIVE_PREFLIGHT_V2_DESIGN_AND_CODE_REVIEW",
+  "created_at_utc": "2026-10-22T06:27:57.634832+00:00",
+  "reviewer_role": "Independent read-only contract and scientific scope review after preserved attempt01 metadata failure; wrote this new receipt only.",
+  "execution_performed_by_reviewer": {
+    "physics_calls": 0,
+    "model_calls": 0,
+    "training_updates": 0,
+    "git_mutations": 0
+  },
+  "reviewed_files_sha256": {
+    "configs/followup_nt_preflight.v2.json": "b965423ba2e1b7e339ebc6a2409b685a9935a512ddfffbd6390ea6f6eb35bc80",
+    "scripts/followup_nt_executor.py": "fa6ee11ebf44d693c21749281812afc0fa653e3b15e5377fa15ff73dd8f8d42c",
+    "tests/test_followup_nt_executor.py": "0ba04d1d42e7398326873bce8fd1fd92af98879c367343644739a4dd587f59b2",
+    "scripts/followup_pilot.py": "5172b940929d840a6b95a1342545c7fe762a73f62cd047604071eea51c40bcdc",
+    "scripts/followup_restore.py": "7526e0dc8c5699b967a5b2b0591ef516cc1ec9eb59b6584b9a9ed25d9a9dfc7d",
+    "src/push_align/followup_probe.py": "98d66ae351fdaf9b36b3312bbe7f6b07be2f11a3654685b0d467f85c787bfeec",
+    "src/push_align/final_driver_v2.py": "555a9fbbb6cce05c908154153d4e9182ec4c856b1f3f45bd697c4d13e4e017d1",
+    "src/push_align/final_recording_columns.py": "b571654413638ceff8bba1827086c5494e03a07e7decb625112165a8ca302410",
+    "src/push_align/planning.py": "1d13f0004ee9795ce1d08386a49c60b0540a536b817d2b1cecd02b9ef40f93bb",
+    "src/push_align/environment.py": "e2c9824bad0a076a6dd3ffb8b1cbfb332e1896d81774e038fc8c91c79a094bea"
+  },
+  "preexisting_evidence_bindings_checked": {
+    "original_design_sha256": "a558bb7a61da067859668808245a3173c818edbda69cf3efb5458574f1d85fdb",
+    "original_manifest_sha256": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f",
+    "source_run_D1_D2_inventory_sha256": "7d8f6772cd33fe06e59221774db845c434f8c652d56262d704900a1845fe1338",
+    "resource_ledger_sha256": "83f49fdb1bc604cf9810c3b6f9d833398a175623d7a9e4f93de095d5b27064c4",
+    "source_D1_report_sha256": "2f7a47880e17a2d3efc0a11ee33d65892b7d509fc63eba8efefef9c4364b1f64",
+    "source_D2_entry_sha256": "32aadf0dcaa5807ae7c229ca93dfbd89b68b372bdf8983f75ae7652e4d2472a3",
+    "source_D2_summary_sha256": "73b4d4d2242f97f6b706fbde77a9eb6da465e5c8450d680c3d7313d047e8d0e3"
+  },
+  "source_identity": {
+    "state": "N-T",
+    "family": "p5-final-translation-03",
+    "controller": "S1-11",
+    "tick": 78,
+    "full_input_typed_sha256": "f1c8a69afed6306a5416e7614d3876ef4d6a30d00a0f9db78ed606ea52dbd7f3",
+    "bank_hash": "eee0b75a061c0bdbb2c64b806abc990640d8764d6e99a1580e9f9fb149a3f2db",
+    "bank_file_sha256": "056171fb04864ab22524bf70659405ca0d75914ed85fc51bf4686a861897e0a1",
+    "source_scope": "Newly reconstructed D1 internal snapshot with exact original raw/context/bank replay evidence; no unavailable original tick78 internal snapshot direct comparison is claimed."
+  },
+  "independent_saved_array_check": {
+    "bank_shape": [
+      128,
+      5,
+      2
+    ],
+    "dtype": "float64",
+    "candidate_source_count": 128,
+    "unique_command_sequences": 128,
+    "block_lengths": [
+      2,
+      3
+    ],
+    "sample_ids": [
+      0,
+      9,
+      127
+    ],
+    "sample_sources": [
+      "zero",
+      "random_global",
+      "random_local_warm"
+    ],
+    "all_seven_saved_D2_teacher_start_rows": 80,
+    "scope": "Read-only NumPy inspection of authenticated saved D1 bank and D2 teacher arrays; no model or physics execution."
+  },
+  "gates_reviewed": [
+    "Only preflight CLI exists; full768 actual batch cannot be invoked through this entrypoint.",
+    "Full typed input, bank bytes/source order and RNG keys authenticated/regenerated before actual futures.",
+    "Exact seven model identities and complete originalD2 path-to-SHA map checked against configured map, freshly loaded map and frozen original provenance.",
+    "All seven full128 forecasts durably saved/read exactly and prospectively sealed before any new actual future; sealed outputs rehashed at end.",
+    "Teacher source80 rows are authenticated original D2 A first repeats; repeated640-row sample is explicitly throughput benchmark only.",
+    "Predeclared candidate IDs0/9/127, A/B and3 repeats form18 physical preflight rows with no outcome-based replacement.",
+    "Returned new raw prefix is durably sealed before readers/comparators/status/full-result serialization can raise; no automatic retry or overwrite.",
+    "Unchanged complete raw fsync/hash/schema/typed bit-exact roundtrip and entire FollowupProbe repeat comparison retained.",
+    "First-repeat complete field tree is persisted through unchanged typed codec, reconstituted with StepResult and nested dataclass types, then compared to complete original FollowupProbe.",
+    "Actual substeps counted from StepResult arrays; no assumption that an invalid partial interval has200 substeps.",
+    "Original physics/task/planner/nine-term cost and previous actual command retained; B has no invented H5 cost.",
+    "Cumulative process wall592.3883510432206s including preserved failed attempt01, 2h cap, 5GiB cap, 2GiB free reserve, 1200s/256MiB preflight subcaps enforced before trials and at completion.",
+    "Source run, frozen original, loaded models, implementation, config, ledger and sealed model outputs reauthenticated after actual futures.",
+    "Recovery failure record SHA, zero physical scope and process wall checked before and after execution; immutable old source/config/test/review retained."
+  ],
+  "tests_inspected": {
+    "path": "tests/test_followup_nt_executor.py",
+    "count": 5,
+    "cases": [
+      "FullProbe complete typed field persistence and dataclass reconstitution",
+      "Injected raw reader error retains authenticated new raw and receipt",
+      "NPZ roundtrip retains signed zero and nonfinite array bits",
+      "Config rejects silent model/repeat/ID/prior-clock reduction",
+      "Exact originalD2 model path-to-SHA map accepts the complete22-file identity map and rejects missing paths, extra paths and changed digest at unchanged count"
+    ],
+    "independent_test_execution": false,
+    "reported_engine_test_status": "Root reports5 scripted persistence/contract tests PASS; reviewer inspected source and did not execute physics or models."
+  },
+  "resolved_review_findings": [
+    "Clarified mandatory first-repeat full-field persistence scope in config",
+    "Replaced assumed200-per-interval substep count with saved StepResult count",
+    "Added final reauthentication of prospective forecast and teacher files",
+    "Applied config expected input/bank/source/ledger identities and preflight subcaps",
+    "Included whole-probe digest and summary fsync in measured trial totals",
+    "Replaced false hardcoded24-file count with exact authoritative originalD2 path-to-SHA map comparison",
+    "Added regression checks for missing/extra/changed files rather than count-only acceptance",
+    "Preserved attempt01 and charged its2.5721120829693973s and81,769B in the cumulative resource ledger"
+  ],
+  "resource_repricing_conditions": [
+    "Count full new preflight elapsed in cumulative ledger and do not credit any old D2 or preflight actual rows toward future768.",
+    "Use fresh full4992 interval upper bound, worst old/new trial rate and safety factor1.5.",
+    "Full field persistence extra group cost/bytes must remain in pertrial maximum or separately scale to256 first-repeat state/candidate/panel groups.",
+    "For future teacher input preparation conservatively scale original16-group authentication stage by8 unless explicitly assembled directly from fresh current results.",
+    "Include both measured source80 and640 teacher passes, all forecast/load/authentication/post-rehash fixed costs, summary/aggregation/report reserve.",
+    "Measurements are conservative planning estimates, not mathematical runtime guarantees; a future full driver requires live remaining-work guards."
+  ],
+  "scientific_limits": [
+    "No full128 actual candidate conclusion from18 preflight trials",
+    "No independent population success rate or S1 versus SK superiority claim",
+    "Full128 inference batching may differ from old batch16 floating outputs despite fixed input/weight hashes; physical/raw exact checks are not relaxed",
+    "A and B full horizons differ; no A-forecast-versus-B-future model error or B H8 cost-as-H5 comparison",
+    "No new training, new bank, conditional extension or full closed-loop policy reproduction"
+  ],
+  "execution_status": "V2_NOT_EXECUTED_BY_THIS_REVIEW; runtime preflight must still pass identity/fidelity/resource gates. V1 stopped before forecasts and physics.",
+  "full128_actual_execution": "NOT_RUN",
+  "unresolved_blocking_findings": [],
+  "supersedes_prospective_review": {
+    "path": "artifacts/validation/followup_nt_preflight_design_review.v1.json",
+    "sha256": "29afacccb55b79d8948fae5d63816a8c8a738e62cb42192ccc44b38ac548f1c3",
+    "retained_unchanged": true,
+    "correction": "V1 review incorrectly accepted a24-file assumption without checking the authoritative originalD2 file map. Actual map is22 files. No model change or scientific parameter change occurred."
+  },
+  "preserved_failed_attempts": [
+    {
+      "run_id": "followup-nt-preflight-20261022-01",
+      "failure_record_sha256": "81e26be82e152fe29e7d898eeef122813d8699f9f34093f0dd12d0133df544cf",
+      "recorded_wall_seconds": 2.5721120829693973,
+      "actual_physics_intervals": 0,
+      "preserved_run_bytes": 81769
+    }
+  ],
+  "exact_model_map_verification": {
+    "authoritative_source": "originalD2 entry.model_and_normalizer_sha256",
+    "source_entry_sha256": "32aadf0dcaa5807ae7c229ca93dfbd89b68b372bdf8983f75ae7652e4d2472a3",
+    "file_count_observed_not_presumed": 22,
+    "composition": {
+      "normalizer": 2,
+      "R": 2,
+      "six_MLPs_times_three": 18
+    },
+    "configured_map_equals_original_map": true,
+    "all_public_sha_match": true,
+    "all_original_source_sha_match": true,
+    "all_frozen_manifest_and_provenance_sha_match": true,
+    "binding_policy": "Entire path-to-SHA dictionary equality; count is reported only, never used to substitute identities."
+  },
+  "reviewed_recovery_accounting": {
+    "base_wall_seconds": 589.8162389602512,
+    "failed_wall_seconds": 2.5721120829693973,
+    "cumulative_prior_wall_seconds": 592.3883510432206,
+    "base_prior_bytes": 83794718,
+    "preserved_failed_run_bytes": 81769,
+    "cumulative_existing_run_bytes_before_preflight": 83876487
+  }
+}

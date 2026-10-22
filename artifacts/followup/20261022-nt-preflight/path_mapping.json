@@ -1,0 +1,12 @@
+{
+  "schema": "followup-nt-preflight-public-path-mapping-v1",
+  "scope": "JSON source files are derived path-portable views, not byte-identical copies. Array files are exact copies. Original JSON SHA values remain in manifest copy records.",
+  "prefixes": {
+    "local_run": "new N-T preflight run root",
+    "source_D1_D2_run": "preserved D1/D2 source run root",
+    "repository_root": "public repository root",
+    "project_root": "original local project root"
+  },
+  "substitution_count": 51,
+  "private_original_paths_not_published": true
+}

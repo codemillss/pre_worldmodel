@@ -1,0 +1,66 @@
+{
+  "schema": "nt-preflight-binding-correction-v1",
+  "status": "CONFIRMED_DOCUMENTATION_AND_PREFLIGHT_COUNT_ERROR",
+  "incorrect_assumption": 24,
+  "actual_bound_file_count": 22,
+  "model_count": 7,
+  "authoritative_source": "artifacts/followup/20261022-d1-d2/entry.json",
+  "authoritative_source_sha256": "32aadf0dcaa5807ae7c229ca93dfbd89b68b372bdf8983f75ae7652e4d2472a3",
+  "actual_file_sha256": {
+    "artifacts/learning/normalizer/normalizer.json": "b672e13fc0c91ff3bdfbb4a761bfc9aac5595420286312f55667cdc3207991af",
+    "artifacts/learning/normalizer/statistics.npz": "10b27958ddf0e1563a38a3954499295fad9e63cc69714ef8b95d64ccbfd6ba8e",
+    "artifacts/models/R/weights.npz": "064a3e3a95d43ae0f225c46761080aeaf6c7d3b3e188fb64d7c3c160403940b7",
+    "artifacts/models/R/ridge.json": "d13fff6eeba5625133776a8229091e01d9af9be891ac4a5e084075ee5ad66599",
+    "artifacts/models/S1-11/checkpoint.json": "170cbc99d3f4cda178f4c20f168df6c62b064441021bdedbf7293b0410305356",
+    "artifacts/models/S1-11/training_state.pt": "1b45e498e559ebceb1eff44f40be711d78f85b097010839d79d889b4d7f9608d",
+    "artifacts/models/S1-11/weights.pt": "24b3e2973d2dfcca87624696d87046c3ac63ae95c514119699ac93ed1cf48fca",
+    "artifacts/models/S1-23/checkpoint.json": "081530226c08c6f5426ee7fc63adf04fd5943983c3552de6a45d8638629aa336",
+    "artifacts/models/S1-23/training_state.pt": "17d6407c79e1b7f1e28ce5064b0c83f5bbf411e03df7cfe1b385527a30ec4b18",
+    "artifacts/models/S1-23/weights.pt": "25e90fd605232c8732042d95747e3c4fe70266716553e9fefd1824edfa20b330",
+    "artifacts/models/S1-47/checkpoint.json": "bcebf2e3792f0bfc86958209ca0cb885d503eeb4237e3fc42fa88a96161e70aa",
+    "artifacts/models/S1-47/training_state.pt": "afe0e8cc3e44dfeee3a8f6b7156d87fa680d372d9b274f61ef49df826696e076",
+    "artifacts/models/S1-47/weights.pt": "b654abc205682dfac7a10d63ee3ff76d77e62b22a76d9330e012b845902918b1",
+    "artifacts/models/SK-11/checkpoint.json": "465fcfc60ead6b170ee27f67cf9d19aa2d1b403f74fa7e5b9801c6f8f0d31e49",
+    "artifacts/models/SK-11/training_state.pt": "46ad727d1306c1b24cf4f104082085895f784c9ac7c806d76f5a9b44ce91df0f",
+    "artifacts/models/SK-11/weights.pt": "23be9f97738fd1b464ab4d21623c3103d05589cd0803e7075e205af71f306913",
+    "artifacts/models/SK-23/checkpoint.json": "cd09e3c648769eca618940e0480f0b636187db525589002218555bda6aba8f01",
+    "artifacts/models/SK-23/training_state.pt": "e2f68479960bf4fef27bea65b870dce39f8f4de9428f29936b42b24b77c4244a",
+    "artifacts/models/SK-23/weights.pt": "e2e99fe3636a34a09756b91c99d935c45072a2bedbc995cdd8f2578a00c8f0f5",
+    "artifacts/models/SK-47/checkpoint.json": "89a71d22499d3dd450076c19cb5eb94884d64e15f044e6d2189afc1aa07d61e3",
+    "artifacts/models/SK-47/training_state.pt": "a94d0e1ae12025db6ef2904174580c0f0eb002df44bc580134e486c80d0d0e9d",
+    "artifacts/models/SK-47/weights.pt": "1ca90e0fd81a0723e3a57b9c9ef0546417cff1a96c888ec2018d3e258f815e44"
+  },
+  "correct_breakdown": {
+    "normalizer_files": 2,
+    "R_files": 2,
+    "six_MLP_files": 18
+  },
+  "superseded_claims": [
+    {
+      "path": "docs/followup_restore_and_pilot.ko.md",
+      "correction": "Current text corrected24to22"
+    },
+    {
+      "path": "artifacts/validation/followup_delivery_review.v1.json",
+      "field": "loaded_model_normalizer_copies_bound",
+      "historical_value": 24,
+      "correct_value": 22,
+      "policy": "historical receipt preserved"
+    },
+    {
+      "path": "artifacts/validation/followup_nt_preflight_design_review.v1.json",
+      "claim": "Exact seven models and24 model/normalizer file identities",
+      "policy": "historical failed prospective review preserved"
+    }
+  ],
+  "failed_attempt": {
+    "run_id": "followup-nt-preflight-20261022-01",
+    "source_failure_sha256": "81e26be82e152fe29e7d898eeef122813d8699f9f34093f0dd12d0133df544cf",
+    "portable_failure": "artifacts/development/nt-preflight-attempt-01/incomplete.portable.json",
+    "driver_sha256": "79fe46200cd3ec674d880f89d730fbca502144c6c462f4f5493a9726de9a9af4",
+    "wall_seconds": 2.5721120829693973,
+    "actual_physics_intervals_returned": 0,
+    "failure_stage": "strict model file count check before forecast and any actual candidate; source code and incomplete prefix retained"
+  },
+  "recovery": "New configv2 and result directory; compare complete configured+originalD2+freshly loaded SHA maps, no numerical tolerance relaxation and no scientificparameterchange."
+}

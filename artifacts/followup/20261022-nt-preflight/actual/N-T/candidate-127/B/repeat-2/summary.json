@@ -1,0 +1,63 @@
+{
+  "state": "N-T",
+  "candidate_id": 127,
+  "candidate_hash": "de2f45fe100c5b80814f1b07ce07cd8f6768ca775fd24a0f532ad8aedc630d26",
+  "panel": "B",
+  "repeat": 2,
+  "intervals": 8,
+  "physical_valid": true,
+  "ready": false,
+  "ready_prefix": false,
+  "ready_eligible": false,
+  "first_ready_interval": null,
+  "horizon_completed": true,
+  "termination": "horizon_completed",
+  "reasons": [],
+  "cost": null,
+  "cost_finite": false,
+  "cost_components": {},
+  "raw_roundtrip": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "7e8a9ab7c2def2242deb37d9ec7bd7b0628c2cd749a23fc1bcbb7c9bcb46fb96",
+    "right_sha256": "7e8a9ab7c2def2242deb37d9ec7bd7b0628c2cd749a23fc1bcbb7c9bcb46fb96"
+  },
+  "full_probe_repeat_exact": {
+    "status": "PASS_EXACT",
+    "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+    "left_sha256": "14fb59c2c436efc86acc501f5632795a649aeb8d01eb8f8fcbc873568c1e8a5a",
+    "right_sha256": "14fb59c2c436efc86acc501f5632795a649aeb8d01eb8f8fcbc873568c1e8a5a"
+  },
+  "full_probe_roundtrip": null,
+  "source_D2_raw_exact": null,
+  "source_D2_scope": "Available IDs0/9 only; 127 has no prior D2 actual",
+  "diagnostic_receipt": {
+    "file": "diagnostic.npz",
+    "sha256": "eaa44f2046eb0fd30dfcb43c5d57d5e4385c9c6dbfefb72ef8c3c81c324a5c94",
+    "bytes": 2414,
+    "roundtrip": {
+      "status": "PASS_EXACT",
+      "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+      "left_sha256": "1cbea4d3bbe8a308ea02adcb885ec9bf97be0b480b718bc8a5e28db27c67e835",
+      "right_sha256": "1cbea4d3bbe8a308ea02adcb885ec9bf97be0b480b718bc8a5e28db27c67e835"
+    }
+  },
+  "timings_ns": {
+    "physical_probe_including_unchanged_validation_ns": 219514792,
+    "raw_write_fsync_ns": 220735875,
+    "raw_authenticated_read_ns": 34757750,
+    "raw_roundtrip_full_exact_ns": 917215000,
+    "full_probe_repeat_exact_ns": 922512792,
+    "source_D2_raw_read_and_exact_ns": 291,
+    "first_repeat_complete_probe_durable_roundtrip_ns": 125,
+    "diagnostic_durable_roundtrip_ns": 2066708,
+    "whole_probe_typed_digest_ns": 277362708,
+    "trial_output_traversal_ns": 289292,
+    "trial_total_before_summary_ns": 2599078291
+  },
+  "raw_bytes": 292477,
+  "trial_bytes_before_summary": 296567,
+  "first_repeat_complete_probe_bytes": 0,
+  "whole_probe_typed_sha256": "14fb59c2c436efc86acc501f5632795a649aeb8d01eb8f8fcbc873568c1e8a5a",
+  "initial_snapshot_exact": true
+}

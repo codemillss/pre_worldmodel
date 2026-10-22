@@ -1,0 +1,11 @@
+{
+  "path": "process_wall_receipt.json",
+  "sha256": "4123be92c3b7e5b19ca7ddc8fedd8ff65cf14afff1ac4876822f93f132c0b52d",
+  "record": {
+    "schema": "experiment-process-wall-receipt-v1",
+    "process_wall_seconds": 70.11690679215826,
+    "exit_code": 0,
+    "scope": "One new versioned preflight subprocess, including interpreter startup and final summary persistence. No retry.",
+    "driver_sha256": "fa6ee11ebf44d693c21749281812afc0fa653e3b15e5377fa15ff73dd8f8d42c"
+  }
+}

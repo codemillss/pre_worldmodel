@@ -78,4 +78,6 @@ PYTHONPATH=src:scripts:tests .venv/bin/python -B -m unittest \
 
 이후 [저장·재현 비용 분리 측정](../docs/followup_resource_profile.ko.md)을 추가했습니다. 같은 9조합의 계산 3반복과 기록 3회 측정, [해시·요약](followup/20261022-resource-profile/manifest.json), [2시간 자원 계산서](followup/20261022-resource-profile/resource_summary.json), [독립 검토](validation/followup_profile_execution_review.v1.json)를 연결합니다. 원래 자료와 새 측정 raw는 로컬에 보존했고, N-T 전체128후보 부분 진단은 실행기 사전 검사 권고 상태입니다.
 
+그 뒤 [N-T 전체128 사전 검사](../docs/nt_fullbank_preflight.ko.md)를 완료했습니다. [118파일 선별 자료](followup/20261022-nt-preflight/manifest.json)는 전체128 예측·18건 사전 실행 영수증·기존80행/반복640행 평가 기록입니다. 전체 실제128후보 평가가 완료된 자료는 아닙니다. [적용 범위별 예산 v2](validation/nt_fullbank_resource_budget.v2.json)는 기존 일괄 계산을 보존하면서 원본 D2 대조96건·완전 결과256그룹을 분리했습니다. [독립 실행 검토](validation/followup_nt_preflight_execution_review.v2.json), [공개 검산](validation/nt_preflight_public_checks.v2.json), [초기24파일 가정 정정](validation/nt_preflight_binding_correction.v1.json)을 함께 확인할 수 있습니다. 첫 실패 실행과 당시 코드·검사는 `development/nt-preflight-attempt-01`에 보존했습니다.
+
 v1 설계의 미실행 표시는 당시 기록이며 현재 진행 상태는 위 실행 결과가 기준입니다. 기존 학술 논문·보고서와 v4 검토는 원래 동결 비교의 문서 이력으로 유지합니다.

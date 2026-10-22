@@ -1,0 +1,18 @@
+{
+  "schema": "followup-nt-executor-preflight-incomplete-v1",
+  "status": "STOP_INCOMPLETE_NO_AUTOMATIC_RETRY",
+  "rows": [],
+  "actual_physics_intervals_returned": 0,
+  "actual_physics_substeps_returned": 0,
+  "stages_ns": {
+    "bindings_input_candidate_regeneration_ns": 504187792
+  },
+  "error": {
+    "type": "RuntimeError",
+    "message": "Expected exactly 24 model/normalizer file bindings",
+    "traceback": "Traceback (most recent call last):\n  File \"repository_root/scripts/followup_nt_executor.py\", line 307, in main\n    require(len(model_bindings) == 24, \"Expected exactly 24 model/normalizer file bindings\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"repository_root/scripts/followup_nt_executor.py\", line 54, in require\n    raise RuntimeError(message)\nRuntimeError: Expected exactly 24 model/normalizer file bindings\n"
+  },
+  "wall_seconds": 2.5721120829693973,
+  "full_execution_started": false,
+  "training_updates": 0
+}

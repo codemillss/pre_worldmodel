@@ -1,0 +1,267 @@
+{
+  "source": {
+    "file": "source-original-D2.npz",
+    "sha256": "eee76d9d551014bbf412256c8b281b0c261d7156892630473f81a349269cb695",
+    "bytes": 7157,
+    "roundtrip": {
+      "status": "PASS_EXACT",
+      "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+      "left_sha256": "2a8b8bb2a2ba21dcc1e7caf45fbf3dfe76f4df84940842f6145d43c3eaa1cc17",
+      "right_sha256": "2a8b8bb2a2ba21dcc1e7caf45fbf3dfe76f4df84940842f6145d43c3eaa1cc17"
+    }
+  },
+  "benchmark_source": {
+    "file": "benchmark-repeated-prefix.npz",
+    "sha256": "232ec4e2c1af68dee7047af09bba09a074b31f7dbd6141ddcdb33595f9d81a7c",
+    "bytes": 8701,
+    "roundtrip": {
+      "status": "PASS_EXACT",
+      "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+      "left_sha256": "e4a14bf119238db3993bcebc69a88ac5d2f054765068a9972cc43df522470904",
+      "right_sha256": "e4a14bf119238db3993bcebc69a88ac5d2f054765068a9972cc43df522470904"
+    }
+  },
+  "source_rows": 80,
+  "benchmark_rows": 640,
+  "scope": "Original D2 labels only. Repeated-prefix 640-row throughput benchmark is not independent teacher evidence.",
+  "models": {
+    "R": {
+      "source": {
+        "rows": 80,
+        "rollout_ns": 1503042,
+        "durable_save_readback_exact_ns": 1286208,
+        "receipt": {
+          "file": "source-R.npz",
+          "sha256": "b46bf75c93638d35d9f75f113893f9dcaf6edaf0e31114c0151499834179e75a",
+          "bytes": 12400,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "64eb606e6a0330eeec67e3f72e76249530f34664f95a5fda3017d431db7f3469",
+            "right_sha256": "64eb606e6a0330eeec67e3f72e76249530f34664f95a5fda3017d431db7f3469"
+          }
+        }
+      },
+      "benchmark": {
+        "rows": 640,
+        "rollout_ns": 2116791,
+        "durable_save_readback_exact_ns": 2282458,
+        "receipt": {
+          "file": "benchmark-R.npz",
+          "sha256": "59e2aa8dd8207ab3eaf126766a689db575d62f66b1cea94c70bbd6fef2e7dd5c",
+          "bytes": 13379,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "9531fe1b6d42b0dc57b88424ece4caa6108488992c21dbf596bf402ad5e60a03",
+            "right_sha256": "9531fe1b6d42b0dc57b88424ece4caa6108488992c21dbf596bf402ad5e60a03"
+          }
+        }
+      }
+    },
+    "S1-11": {
+      "source": {
+        "rows": 80,
+        "rollout_ns": 1383042,
+        "durable_save_readback_exact_ns": 1450875,
+        "receipt": {
+          "file": "source-S1-11.npz",
+          "sha256": "42acce55a4015afd58fe916ae8eb8300aaf963805bccb7afd9c03da60651bb73",
+          "bytes": 12461,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "5cad95a86252007ac4acd140ea7fef7b56f7232287ccdf2120ecbc05e0fd0a3b",
+            "right_sha256": "5cad95a86252007ac4acd140ea7fef7b56f7232287ccdf2120ecbc05e0fd0a3b"
+          }
+        }
+      },
+      "benchmark": {
+        "rows": 640,
+        "rollout_ns": 2758959,
+        "durable_save_readback_exact_ns": 1912750,
+        "receipt": {
+          "file": "benchmark-S1-11.npz",
+          "sha256": "8fe30c528c213c7dd31228437cd7741d4a88e45d45f0050907d01a9cb11d5088",
+          "bytes": 13379,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "f8b86b3e5ccedd7a70885a418e651b252b25821ef1b2f913df0a3940332b2bf2",
+            "right_sha256": "f8b86b3e5ccedd7a70885a418e651b252b25821ef1b2f913df0a3940332b2bf2"
+          }
+        }
+      }
+    },
+    "S1-23": {
+      "source": {
+        "rows": 80,
+        "rollout_ns": 1469166,
+        "durable_save_readback_exact_ns": 1279000,
+        "receipt": {
+          "file": "source-S1-23.npz",
+          "sha256": "1d7af27f271e2073e73d8912174f852cfd73d24ef294c35b1e8d2d61dfdee181",
+          "bytes": 12510,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "6ca71c560129515f0c22fc01f4895b1a63467aec9c33c00695cf0f2501e40eb9",
+            "right_sha256": "6ca71c560129515f0c22fc01f4895b1a63467aec9c33c00695cf0f2501e40eb9"
+          }
+        }
+      },
+      "benchmark": {
+        "rows": 640,
+        "rollout_ns": 2439458,
+        "durable_save_readback_exact_ns": 1858708,
+        "receipt": {
+          "file": "benchmark-S1-23.npz",
+          "sha256": "4be7e575cce12d83d3cb894fcde8c098711d427158f36ec0d543799659a8f10c",
+          "bytes": 13428,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "f47450635cd438b0dd3aba0974c038a669f5e8a84708cdb06f76c0615f4cc6e2",
+            "right_sha256": "f47450635cd438b0dd3aba0974c038a669f5e8a84708cdb06f76c0615f4cc6e2"
+          }
+        }
+      }
+    },
+    "S1-47": {
+      "source": {
+        "rows": 80,
+        "rollout_ns": 1297083,
+        "durable_save_readback_exact_ns": 1439167,
+        "receipt": {
+          "file": "source-S1-47.npz",
+          "sha256": "f195852bf44a4d814564e50f8c0be594f04af064f5dce19a114bcbd75be25513",
+          "bytes": 12494,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "cf09c70133ce00217d8e2746850c8577bfe2807ecdfef03c9eeeec2d890f964b",
+            "right_sha256": "cf09c70133ce00217d8e2746850c8577bfe2807ecdfef03c9eeeec2d890f964b"
+          }
+        }
+      },
+      "benchmark": {
+        "rows": 640,
+        "rollout_ns": 2673541,
+        "durable_save_readback_exact_ns": 1852542,
+        "receipt": {
+          "file": "benchmark-S1-47.npz",
+          "sha256": "9a296bb4e93bac62c854279a374b1e5710f11119e26dac618004d5cb1a85bb65",
+          "bytes": 13411,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "588fb0650f7a6e5f858ac7d2572d7821641e2d743fdc3bc54279e6dde75c56d6",
+            "right_sha256": "588fb0650f7a6e5f858ac7d2572d7821641e2d743fdc3bc54279e6dde75c56d6"
+          }
+        }
+      }
+    },
+    "SK-11": {
+      "source": {
+        "rows": 80,
+        "rollout_ns": 1290167,
+        "durable_save_readback_exact_ns": 1444708,
+        "receipt": {
+          "file": "source-SK-11.npz",
+          "sha256": "6efdbf74cd5d1479b703a41466ddfbeefa90574e92c9abd4acc9b47eb03b9dcf",
+          "bytes": 12488,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "78bef2af79489b6e339cbf4ec84c08f4bb09498799539c90af148aa020499d62",
+            "right_sha256": "78bef2af79489b6e339cbf4ec84c08f4bb09498799539c90af148aa020499d62"
+          }
+        }
+      },
+      "benchmark": {
+        "rows": 640,
+        "rollout_ns": 2970708,
+        "durable_save_readback_exact_ns": 2081041,
+        "receipt": {
+          "file": "benchmark-SK-11.npz",
+          "sha256": "f8324cb8e851f6c9525ee02e0438c45cc708ae98d52d21c8a04542ff0e2a2581",
+          "bytes": 13406,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "242ccf600a9a55b476c625489d797a116ae9d790f2216f3e64214c60ffdd47c1",
+            "right_sha256": "242ccf600a9a55b476c625489d797a116ae9d790f2216f3e64214c60ffdd47c1"
+          }
+        }
+      }
+    },
+    "SK-23": {
+      "source": {
+        "rows": 80,
+        "rollout_ns": 1441375,
+        "durable_save_readback_exact_ns": 1526958,
+        "receipt": {
+          "file": "source-SK-23.npz",
+          "sha256": "820443756f4439c297443dab2f1f2537cf259ca24a184ca261d1eef2c171ddcc",
+          "bytes": 12510,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "d6062fc28aeca1d2ea41a0c0349dcdfc0e75f6571e15cfb8185ca4ed6880eadc",
+            "right_sha256": "d6062fc28aeca1d2ea41a0c0349dcdfc0e75f6571e15cfb8185ca4ed6880eadc"
+          }
+        }
+      },
+      "benchmark": {
+        "rows": 640,
+        "rollout_ns": 2546542,
+        "durable_save_readback_exact_ns": 1902959,
+        "receipt": {
+          "file": "benchmark-SK-23.npz",
+          "sha256": "c37c75f1d2f4dad7a06bdbb905813d11e0dc65d413e31f872ed5f6e8c7c718b6",
+          "bytes": 13430,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "873529326704d3f368e5e56ba4c332bcae553968d32795c5b3972e21f62c49d1",
+            "right_sha256": "873529326704d3f368e5e56ba4c332bcae553968d32795c5b3972e21f62c49d1"
+          }
+        }
+      }
+    },
+    "SK-47": {
+      "source": {
+        "rows": 80,
+        "rollout_ns": 1649625,
+        "durable_save_readback_exact_ns": 1392333,
+        "receipt": {
+          "file": "source-SK-47.npz",
+          "sha256": "31de445c7b65d4e59abf68097beac95c1d2c5f1fb9b5b0c43d749063c3484455",
+          "bytes": 12527,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "50be79811d3a0ab419eab105fd49e44cc6e1647ed3409c9e18bc76ffd3858bae",
+            "right_sha256": "50be79811d3a0ab419eab105fd49e44cc6e1647ed3409c9e18bc76ffd3858bae"
+          }
+        }
+      },
+      "benchmark": {
+        "rows": 640,
+        "rollout_ns": 2514750,
+        "durable_save_readback_exact_ns": 1906833,
+        "receipt": {
+          "file": "benchmark-SK-47.npz",
+          "sha256": "8a60cbdd761d0a59b11f62818e448bbce09cbdfe9090fb04c27674cba8873656",
+          "bytes": 13445,
+          "roundtrip": {
+            "status": "PASS_EXACT",
+            "comparison": "streamed typed hash plus direct recursive equality; dtype/shape/bytes, scalar bits, flags, schema and complete JSON diagnostics",
+            "left_sha256": "5cb628ba285f514223c4489d67ecf5da4f36d6d0ccb25e7588ea6f44b3845abb",
+            "right_sha256": "5cb628ba285f514223c4489d67ecf5da4f36d6d0ccb25e7588ea6f44b3845abb"
+          }
+        }
+      }
+    }
+  }
+}

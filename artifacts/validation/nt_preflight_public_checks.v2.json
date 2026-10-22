@@ -1,0 +1,22 @@
+{
+  "schema": "nt-preflight-public-checks-v2",
+  "status": "PASS_PUBLIC_HASHES_DIMENSIONS_AND_ARITHMETIC",
+  "verifier_sha256": "9e2d9cd55970d5962538193dbe459869a1bb392d4dcfcdbbf59de93e10ae8d5e",
+  "manifest_sha256": "02b8f8b035e75f704067e310c3dc55359940d1818cf5177de889d56e0a95b065",
+  "public_files": 118,
+  "forecast_candidates": 128,
+  "model_count": 7,
+  "model_normalizer_file_count": 22,
+  "actual_trials": 18,
+  "actual_intervals": 111,
+  "original_D2_exact_references_reported": 12,
+  "complete_probe_groups_reported": 6,
+  "teacher_source_rows": 80,
+  "teacher_timing_benchmark_rows": 640,
+  "scoped_resource_status": "RESOURCE_FIT_CONDITIONAL_ON_SCOPED_FULL_ADAPTER",
+  "scoped_cumulative_minutes": 102.50804649238162,
+  "scoped_resource_budget_sha256": "bdf200a8664ebf65fa59a918e0610f56d857f5ade9a256b99f3e5d81a1f67bed",
+  "new_physics_calls": 0,
+  "new_model_calls": 0,
+  "scope": "Public hashes and recorded exact verdicts/dimensions/selection/timing arithmetic only; local raw/fullProbe audit is separate. Original coarse budget remains preserved; refined applicability budget has its own bound receipt."
+}

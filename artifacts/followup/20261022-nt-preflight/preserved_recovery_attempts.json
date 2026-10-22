@@ -1,0 +1,32 @@
+{
+  "schema": "followup-nt-preserved-recovery-attempts-v1",
+  "records": [
+    {
+      "run_id": "followup-nt-preflight-20261022-01",
+      "failure_record_sha256": "81e26be82e152fe29e7d898eeef122813d8699f9f34093f0dd12d0133df544cf",
+      "failure": {
+        "schema": "followup-nt-executor-preflight-incomplete-v1",
+        "status": "STOP_INCOMPLETE_NO_AUTOMATIC_RETRY",
+        "rows": [],
+        "actual_physics_intervals_returned": 0,
+        "actual_physics_substeps_returned": 0,
+        "stages_ns": {
+          "bindings_input_candidate_regeneration_ns": 504187792
+        },
+        "error": {
+          "type": "RuntimeError",
+          "message": "Expected exactly 24 model/normalizer file bindings",
+          "traceback": "Traceback (most recent call last):\n  File \"repository_root/scripts/followup_nt_executor.py\", line 307, in main\n    require(len(model_bindings) == 24, \"Expected exactly 24 model/normalizer file bindings\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"repository_root/scripts/followup_nt_executor.py\", line 54, in require\n    raise RuntimeError(message)\nRuntimeError: Expected exactly 24 model/normalizer file bindings\n"
+        },
+        "wall_seconds": 2.5721120829693973,
+        "full_execution_started": false,
+        "training_updates": 0
+      },
+      "preserved_run_bytes": 81769,
+      "wall_seconds_already_charged_in_config_prior": 2.5721120829693973,
+      "time_charged_again": false,
+      "reason": "v1 hard-coded24 was inconsistent with original22-file SHA map; no scientificparameterchange"
+    }
+  ],
+  "scope": "Failed attempts preserved separately; their wall is already in config prior and charged only once. Their actual directory byte counts are verified and already included in config prior storage; no duplicate charge."
+}
