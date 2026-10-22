@@ -1,0 +1,48 @@
+{
+  "schema": "public-success-figure-v2",
+  "presentation_revision": "2026-10-22-standalone-method-definitions",
+  "source": "artifacts/results/E2/rows.json",
+  "source_sha256": "207493bc5d1b27cdf9cbaebf90e2de89cff7841e59d5c7eea84bc296aee699dd",
+  "generator": "tools/build_public_figures.py",
+  "generator_sha256": "ce2fa66ddaef3c4586be538d6b882ceb4fc85f30d36b0704000a5ef7d87b6b3f",
+  "figure": "assets/figures/handoff_success.png",
+  "figure_sha256": "2f039555d3eba0053b1f1106accdf09da83a06fe5e63a5a14d4b2d8a71ea1eb3",
+  "counts": {
+    "G": {
+      "successes": 8,
+      "executions": 12
+    },
+    "R": {
+      "successes": 0,
+      "executions": 12
+    },
+    "S1": {
+      "successes": 13,
+      "executions": 36
+    },
+    "SK": {
+      "successes": 12,
+      "executions": 36
+    }
+  },
+  "independent_initial_conditions": 12,
+  "neural_training_seeds": [
+    11,
+    23,
+    47
+  ],
+  "metric": "Observed handoff-ready execution proportion; failures retained",
+  "error_bars": "Not shown; descriptive proportions are not independent 36-family estimates",
+  "scientific_data_changed": false,
+  "additional_physics_intervals": 0,
+  "visual_review": {
+    "status": "PASS_DIRECT_CURRENT_PNG_VIEW",
+    "review_date_kst": "2026-10-22",
+    "reviewer": "figure_legibility_audit agent",
+    "checks": [
+      "Final current generated PNG individually viewed",
+      "Expanded multiline method labels and method key legible with no label collisions or clipping",
+      "Exact unchanged counts, 12 independent conditions, training-seed multiplicity, full success criteria, failure denominator, and absence of confidence intervals visible"
+    ]
+  }
+}

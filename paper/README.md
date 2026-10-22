@@ -36,11 +36,11 @@ XeLaTeX와 BibTeX를 사용할 수 있는 TeX Live 환경 또는 Tectonic에서 
 
 ## 내용 재검토
 
-2026-10-22에 로봇 조작·학습 동역학·실험 설계의 리뷰어 관점으로 다시 검토했습니다. E1이 초기·2.9초의 목표에서 먼 구간만 다룬다는 점, E2 성공 차이가 단 한 쌍에서 나왔다는 점, 수렴·기준선·원인 규명의 한계를 추가했습니다. 현재 PDF는 6쪽이며 원래 실험 결과를 교체하지 않았습니다. 추가 수치는 저장 배열의 사후 기술 분석입니다.
+2026-10-22에 로봇 조작·학습 동역학·실험 설계의 리뷰어 관점으로 다시 검토했습니다. E1이 초기·2.9초의 목표에서 먼 구간만 다룬다는 점, E2 성공 차이가 단 한 쌍에서 나왔다는 점, 수렴·기준선·원인 규명의 한계를 추가했습니다. 현재 PDF는 7쪽이며 원래 실험 결과를 교체하지 않았습니다. 추가 수치는 저장 배열의 사후 기술 분석입니다. 이번 갱신은 그림·표 각각에 방법 정의·단위·학습 seed·평가 분모를 보완했습니다. [후속 진단 설계](../docs/near_goal_diagnostic_design.ko.md)는 미실행 개발 계획이며 논문 결과표에 새 결과로 포함하지 않았습니다.
 
 - [현재 리뷰어 관점 평가와 보완 우선순위](../docs/reviewer_assessment.ko.md)
-- [현재 문서·빌드·전체 페이지 검토 기록](../artifacts/validation/document_review.v3.json)
-- [현재 수치 재계산 기록](../artifacts/validation/paper_results_review.v3.json)
+- [현재 문서·빌드·전체 페이지 검토 기록](../artifacts/validation/document_review.v4.json)
+- [현재 수치 재계산 기록](../artifacts/validation/paper_results_review.v4.json)
 - [2026-10-21 내용 검토와 수정 기록](content_review.ko.md)
 - [이전 버전의 형식·빌드 검토 기록](../artifacts/validation/paper_review.json)
 

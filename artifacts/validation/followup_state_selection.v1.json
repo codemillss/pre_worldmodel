@@ -1,0 +1,1065 @@
+{
+  "schema": "followup-state-selection-metadata-audit-v1",
+  "created_at_utc": "2026-10-22T03:27:09.384965+00:00",
+  "status": "PASS_SAVED_METADATA_AND_SOURCE_BINDINGS_ONLY",
+  "scope": "Post-hoc diagnostic state selection and provenance audit using saved observations and original witnesses. No new training, model inference, snapshot restoration, simulator stepping or candidate-future evaluation.",
+  "public_root": "repository root",
+  "local_original_root": "original project root, outside the public repository",
+  "original_run_relative_path": "runs/p5-final-20261017-02",
+  "original_frozen_manifest": {
+    "location": "local_original",
+    "path": "runs/p5-final-20261017-02/manifest.json",
+    "present": true,
+    "bytes": 1754987,
+    "sha256": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f",
+    "included_in_public_repository": true,
+    "original_path_in_public_repository": false,
+    "public_copy_path": "artifacts/provenance/frozen_manifest.json",
+    "public_copy_byte_identical": true
+  },
+  "public_compact": {
+    "location": "public_repository",
+    "path": "artifacts/results/trajectories/compact_visual_source.json",
+    "present": true,
+    "bytes": 9294977,
+    "sha256": "d14049a41f45edc97d9d53405469b5132323ef9384d4afe706ecba7bc1b2e0fc",
+    "included_in_public_repository": true
+  },
+  "near_goal_selection_rule": {
+    "population": "Saved E2 cells with success=false and controller_id beginning S1- or SK-. G and R excluded.",
+    "active_sample_phases": [
+      "running",
+      "holding"
+    ],
+    "maximum_position_error_m": 0.015,
+    "maximum_absolute_pi_symmetric_yaw_error_rad": 0.15707963267948966,
+    "maximum_elapsed_s": 29.2,
+    "elapsed_comparison_tolerance_s": 1e-09,
+    "score": "(position_error_m / 0.005)^2 + (absolute_pi_symmetric_yaw_error_rad / (3*pi/180))^2",
+    "selection": "One minimum-score saved action-boundary state per translation, rotation, offset stratum.",
+    "tie_break_ascending": [
+      "family_id",
+      "controller_id",
+      "tick"
+    ],
+    "eligible_saved_boundary_count": 6162,
+    "eligible_saved_boundaries_by_stratum": {
+      "translation": 2662,
+      "rotation": 1289,
+      "offset": 2211
+    },
+    "independently_regenerated_minima": {
+      "translation": {
+        "family_id": "p5-final-translation-03",
+        "controller_id": "S1-11",
+        "tick": 78,
+        "stratum": "translation",
+        "score": 1.2219966617552307
+      },
+      "rotation": {
+        "family_id": "p5-final-rotation-03",
+        "controller_id": "S1-47",
+        "tick": 183,
+        "stratum": "rotation",
+        "score": 3.7195327581984348
+      },
+      "offset": {
+        "family_id": "p5-final-offset-00",
+        "controller_id": "S1-23",
+        "tick": 246,
+        "stratum": "offset",
+        "score": 2.3655893501055667
+      }
+    },
+    "posthoc": true,
+    "these_are_task_neighborhood_thresholds_not_learned_model_error_thresholds": true
+  },
+  "pre_invalid_selection_rule": {
+    "population": "All three saved E2 learned planner_invalid terminal-unexecuted decision inputs.",
+    "replacement_or_omission": false,
+    "posthoc_observed_failure_selection": true
+  },
+  "selected_states": [
+    {
+      "diagnostic_state_id": "near_goal/p5-final-translation-03/S1-11/tick-078",
+      "selection_group": "near_goal",
+      "family_id": "p5-final-translation-03",
+      "controller_id": "S1-11",
+      "stratum": "translation",
+      "tick": 78,
+      "state10": [
+        0.07801300406312817,
+        0.004804176860859963,
+        0.019651767337380832,
+        -1.2914746065197545e-06,
+        -5.6095541625432125e-08,
+        4.80247821047595e-07,
+        0.028664900959543556,
+        -0.012663299057225826,
+        -0.01863065332859611,
+        -0.02351379907918787
+      ],
+      "sim_time_s": 8.141499999998459,
+      "elapsed_s": 7.799999999998459,
+      "original_task_initial_sim_time_s": 0.34150000000000025,
+      "metrics": {
+        "position_error_m": 0.005198871816420123,
+        "absolute_pi_symmetric_yaw_error_rad": 0.019651767337380832,
+        "linear_speed_m_s": 1.2926922948155935e-06,
+        "absolute_angular_speed_rad_s": 4.80247821047595e-07,
+        "position_normalized": 1.0397743632840246,
+        "yaw_normalized": 0.37532110946832165,
+        "selection_score_squared_normalized_pose_distance": 1.2219966617552307
+      },
+      "task_status_before_decision": {
+        "phase": "running",
+        "initial_sim_time": 0.34150000000000025,
+        "last_sim_time": 8.141499999998459,
+        "held_time_s": 0.0,
+        "previous_qualifies": false,
+        "terminal_reason": null,
+        "violations": []
+      },
+      "compact_sample_phase": "running",
+      "original_decision_source": "model",
+      "original_decision_executed": true,
+      "original_run_termination": "timeout",
+      "original_planner_context_before": {
+        "previous_applied_action": [
+          -0.01863065346031213,
+          -0.02351379917498998
+        ],
+        "optimal_actions": [
+          [
+            -0.01863065346031213,
+            -0.02351379917498998
+          ],
+          [
+            -0.01863065346031213,
+            -0.02351379917498998
+          ],
+          [
+            -0.013317155330294934,
+            -0.026882212965245202
+          ],
+          [
+            -0.013317155330294934,
+            -0.026882212965245202
+          ],
+          [
+            -0.013317155330294934,
+            -0.026882212965245202
+          ]
+        ],
+        "control_step": 78
+      },
+      "original_geometry_context_before": {
+        "mode": "RETRACT",
+        "locked_offset_m": 0.015,
+        "retreat_offset_m": -0.01428450421036234,
+        "phase_started_s": 6.0,
+        "last_elapsed_s": 7.7,
+        "reassessment_count": 4,
+        "saturation_count": 99
+      },
+      "source_bindings": {
+        "public_compact": {
+          "location": "public_repository",
+          "path": "artifacts/results/trajectories/compact_visual_source.json",
+          "present": true,
+          "bytes": 9294977,
+          "sha256": "d14049a41f45edc97d9d53405469b5132323ef9384d4afe706ecba7bc1b2e0fc",
+          "included_in_public_repository": true
+        },
+        "local_manifest": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-11/manifest.json",
+          "present": true,
+          "bytes": 291125,
+          "sha256": "908c594796f21decc66b8a5b62ce714e44758f7f85b1ddf7a32b1c32373a9956",
+          "included_in_public_repository": false
+        },
+        "local_witness": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-11/witness.json.gz",
+          "present": true,
+          "bytes": 1179661,
+          "sha256": "673512829251768bec01a7120bcbd52008a92bbbf5279e53b333d76d7e424055",
+          "included_in_public_repository": false
+        },
+        "local_raw": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-11/raw_execution.raw.npz",
+            "present": true,
+            "bytes": 4011661,
+            "sha256": "56de84aaa98c9ee1ea8544d910a8859f7b2425432e1cd7680bead34c8726b272",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-11/raw_execution.raw.columns.xz",
+            "present": true,
+            "bytes": 10335536,
+            "sha256": "1ba9204153ff69862e61283b21d6abb3b1eee43b04f95ccbbed2f52aaf2876b9",
+            "included_in_public_repository": false
+          }
+        ],
+        "matching_tick_full_trace": [],
+        "earlier_full_trace_anchor_for_reconstruction": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-11/plans/step-029/input.json.gz",
+            "present": true,
+            "bytes": 33435,
+            "sha256": "3d097dc63349802872a5ca47d57e19e616d0190eee23e997993f0b45fd7ba1d1",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-translation-03/S1-11/plans/step-029/trace.npz",
+            "present": true,
+            "bytes": 117491,
+            "sha256": "763069d445f2ddfc1432fb503d8fe1bc4fba5f94386ebb9194aefa9b44479435",
+            "included_in_public_repository": false
+          }
+        ]
+      },
+      "full_physical_snapshot_availability": "requires_original_action_prefix_reconstruction_from_verified_snapshot",
+      "diagnostic_snapshot_restoration_executed": false,
+      "diagnostic_snapshot_roundtrip_exact": null,
+      "derived_restored_snapshot_sha256": null,
+      "candidate_future_execution_count": 0
+    },
+    {
+      "diagnostic_state_id": "near_goal/p5-final-rotation-03/S1-47/tick-183",
+      "selection_group": "near_goal",
+      "family_id": "p5-final-rotation-03",
+      "controller_id": "S1-47",
+      "stratum": "rotation",
+      "tick": 183,
+      "state10": [
+        0.07898217207651936,
+        -0.009117931601488693,
+        -0.031092543131112205,
+        -2.0753208284856204e-07,
+        -1.7531265435696654e-07,
+        -1.1785960908923894e-08,
+        0.030763220480594183,
+        -0.0026830680708469774,
+        -0.0036630145678320765,
+        0.016309425175819754
+      ],
+      "sim_time_s": 18.641500000001905,
+      "elapsed_s": 18.300000000001905,
+      "original_task_initial_sim_time_s": 0.34150000000000025,
+      "metrics": {
+        "position_error_m": 0.009174565405033802,
+        "absolute_pi_symmetric_yaw_error_rad": 0.031092543131112205,
+        "linear_speed_m_s": 2.71669085817926e-07,
+        "absolute_angular_speed_rad_s": 1.1785960908923894e-08,
+        "position_normalized": 1.8349130810067604,
+        "yaw_normalized": 0.5938238319137357,
+        "selection_score_squared_normalized_pose_distance": 3.7195327581984348
+      },
+      "task_status_before_decision": {
+        "phase": "running",
+        "initial_sim_time": 0.34150000000000025,
+        "last_sim_time": 18.641500000001905,
+        "held_time_s": 0.0,
+        "previous_qualifies": false,
+        "terminal_reason": null,
+        "violations": []
+      },
+      "compact_sample_phase": "running",
+      "original_decision_source": "model",
+      "original_decision_executed": true,
+      "original_run_termination": "timeout",
+      "original_planner_context_before": {
+        "previous_applied_action": [
+          -0.003663014592209158,
+          0.016309425150549776
+        ],
+        "optimal_actions": [
+          [
+            -0.003663014592209158,
+            0.016309425150549776
+          ],
+          [
+            -0.003663014592209158,
+            0.016309425150549776
+          ],
+          [
+            -0.0007617185741955028,
+            0.019333326991132785
+          ],
+          [
+            -0.0007617185741955028,
+            0.019333326991132785
+          ],
+          [
+            -0.0007617185741955028,
+            0.019333326991132785
+          ]
+        ],
+        "control_step": 183
+      },
+      "original_geometry_context_before": {
+        "mode": "SLIDE",
+        "locked_offset_m": -0.015,
+        "retreat_offset_m": 0.004837145920363007,
+        "phase_started_s": 15.8,
+        "last_elapsed_s": 18.2,
+        "reassessment_count": 7,
+        "saturation_count": 311
+      },
+      "source_bindings": {
+        "public_compact": {
+          "location": "public_repository",
+          "path": "artifacts/results/trajectories/compact_visual_source.json",
+          "present": true,
+          "bytes": 9294977,
+          "sha256": "d14049a41f45edc97d9d53405469b5132323ef9384d4afe706ecba7bc1b2e0fc",
+          "included_in_public_repository": true
+        },
+        "local_manifest": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-47/manifest.json",
+          "present": true,
+          "bytes": 291020,
+          "sha256": "a7745694ec088c472f283aba760bf29ba0789e993a096b1bf80add79c269ccbe",
+          "included_in_public_repository": false
+        },
+        "local_witness": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-47/witness.json.gz",
+          "present": true,
+          "bytes": 1155578,
+          "sha256": "7d503f94eb66939835e494aecc8d9df3849607d904c0df366bf1fc7ce53a2782",
+          "included_in_public_repository": false
+        },
+        "local_raw": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-47/raw_execution.raw.npz",
+            "present": true,
+            "bytes": 4090208,
+            "sha256": "645d05a9cfece5d78e3b708d9cb3d1ae86ad7fe7dc48f43d362d5bf4ed80d3f2",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-47/raw_execution.raw.columns.xz",
+            "present": true,
+            "bytes": 10866976,
+            "sha256": "6dfbbcd23080a42e8d31f49cf1847304d515f9918245f615d195c34b1b9dab4b",
+            "included_in_public_repository": false
+          }
+        ],
+        "matching_tick_full_trace": [],
+        "earlier_full_trace_anchor_for_reconstruction": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-47/plans/step-029/input.json.gz",
+            "present": true,
+            "bytes": 33471,
+            "sha256": "8c1ffcbc9ce65f48c651d7256a5529ec8c3552dad33f8b059831cabdd6fa404c",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-rotation-03/S1-47/plans/step-029/trace.npz",
+            "present": true,
+            "bytes": 117723,
+            "sha256": "dee5a50c44f21bb15c109da3ee8c7c92413f51255b1470374827a3b3024cf806",
+            "included_in_public_repository": false
+          }
+        ]
+      },
+      "full_physical_snapshot_availability": "requires_original_action_prefix_reconstruction_from_verified_snapshot",
+      "diagnostic_snapshot_restoration_executed": false,
+      "diagnostic_snapshot_roundtrip_exact": null,
+      "derived_restored_snapshot_sha256": null,
+      "candidate_future_execution_count": 0
+    },
+    {
+      "diagnostic_state_id": "near_goal/p5-final-offset-00/S1-23/tick-246",
+      "selection_group": "near_goal",
+      "family_id": "p5-final-offset-00",
+      "controller_id": "S1-23",
+      "stratum": "offset",
+      "tick": 246,
+      "state10": [
+        0.07460779266591916,
+        -0.0037178317258102747,
+        0.042202920211084294,
+        0.0005365938848850285,
+        0.012539087885939033,
+        0.12405064489676136,
+        0.08672818941405516,
+        -0.04121441943372158,
+        0.004227328666146022,
+        0.013852738752543475
+      ],
+      "sim_time_s": 24.941499999987222,
+      "elapsed_s": 24.599999999987222,
+      "original_task_initial_sim_time_s": 0.34150000000000025,
+      "metrics": {
+        "position_error_m": 0.0065496696615292465,
+        "absolute_pi_symmetric_yaw_error_rad": 0.0422029202110843,
+        "linear_speed_m_s": 0.012550564051412152,
+        "absolute_angular_speed_rad_s": 0.12405064489676136,
+        "position_normalized": 1.3099339323058492,
+        "yaw_normalized": 0.8060164037408305,
+        "selection_score_squared_normalized_pose_distance": 2.3655893501055667
+      },
+      "task_status_before_decision": {
+        "phase": "running",
+        "initial_sim_time": 0.34150000000000025,
+        "last_sim_time": 24.941499999987222,
+        "held_time_s": 0.0,
+        "previous_qualifies": false,
+        "terminal_reason": null,
+        "violations": []
+      },
+      "compact_sample_phase": "running",
+      "original_decision_source": "model",
+      "original_decision_executed": true,
+      "original_run_termination": "planner_invalid",
+      "original_planner_context_before": {
+        "previous_applied_action": [
+          0.004996937321251882,
+          0.02958091643961492
+        ],
+        "optimal_actions": [
+          [
+            0.004996937321251882,
+            0.02958091643961492
+          ],
+          [
+            0.004996937321251882,
+            0.02958091643961492
+          ],
+          [
+            -0.008836613053641019,
+            0.028669047241584804
+          ],
+          [
+            -0.008836613053641019,
+            0.028669047241584804
+          ],
+          [
+            -0.008836613053641019,
+            0.028669047241584804
+          ]
+        ],
+        "control_step": 246
+      },
+      "original_geometry_context_before": {
+        "mode": "SLIDE",
+        "locked_offset_m": -0.015,
+        "retreat_offset_m": -0.05796905339254778,
+        "phase_started_s": 19.8,
+        "last_elapsed_s": 24.5,
+        "reassessment_count": 10,
+        "saturation_count": 428
+      },
+      "source_bindings": {
+        "public_compact": {
+          "location": "public_repository",
+          "path": "artifacts/results/trajectories/compact_visual_source.json",
+          "present": true,
+          "bytes": 9294977,
+          "sha256": "d14049a41f45edc97d9d53405469b5132323ef9384d4afe706ecba7bc1b2e0fc",
+          "included_in_public_repository": true
+        },
+        "local_manifest": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/manifest.json",
+          "present": true,
+          "bytes": 270088,
+          "sha256": "d8e2793ab3681d67808ca68f7b2b01562a7db18b0bc0ec60925c83df28d5dabe",
+          "included_in_public_repository": false
+        },
+        "local_witness": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/witness.json.gz",
+          "present": true,
+          "bytes": 998990,
+          "sha256": "54c2455fe540934321d7f4352ab0a43ac43d56463fb29b210dd2214c75477b83",
+          "included_in_public_repository": false
+        },
+        "local_raw": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/raw_execution.raw.npz",
+            "present": true,
+            "bytes": 3585142,
+            "sha256": "dce414c933f6253172fc4d90419ad5923a06043b0002d9bf4e61b0fa43ce0f66",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/raw_execution.raw.columns.xz",
+            "present": true,
+            "bytes": 11701644,
+            "sha256": "215e9e829112e206e81dd08ae4aaa029cdbf47c5b2c8b1942cfd232535556e28",
+            "included_in_public_repository": false
+          }
+        ],
+        "matching_tick_full_trace": [],
+        "earlier_full_trace_anchor_for_reconstruction": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/plans/step-029/input.json.gz",
+            "present": true,
+            "bytes": 33472,
+            "sha256": "71ce9470698c72ab096ffc1b2259928a17a657fe0303a1df5b2105a0d81c9687",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/plans/step-029/trace.npz",
+            "present": true,
+            "bytes": 117451,
+            "sha256": "e1277d1974d8584a894149d022cebad6de13f9548ff9a97b304a8eb65d10f2d2",
+            "included_in_public_repository": false
+          }
+        ]
+      },
+      "full_physical_snapshot_availability": "requires_original_action_prefix_reconstruction_from_verified_snapshot",
+      "diagnostic_snapshot_restoration_executed": false,
+      "diagnostic_snapshot_roundtrip_exact": null,
+      "derived_restored_snapshot_sha256": null,
+      "candidate_future_execution_count": 0
+    },
+    {
+      "diagnostic_state_id": "pre_invalid/p5-final-offset-00/S1-23/tick-254",
+      "selection_group": "pre_invalid",
+      "family_id": "p5-final-offset-00",
+      "controller_id": "S1-23",
+      "stratum": "offset",
+      "tick": 254,
+      "state10": [
+        0.07352817597883687,
+        0.003975142986205351,
+        0.09379883519145027,
+        0.0003815392226582861,
+        0.0009359309291561783,
+        0.012806987556037206,
+        0.0875009019975175,
+        -0.032879278414694305,
+        0.00648267142546281,
+        0.0020883805005795816
+      ],
+      "sim_time_s": 25.741499999985358,
+      "elapsed_s": 25.399999999985358,
+      "original_task_initial_sim_time_s": 0.34150000000000025,
+      "metrics": {
+        "position_error_m": 0.007595147656344916,
+        "absolute_pi_symmetric_yaw_error_rad": 0.09379883519145027,
+        "linear_speed_m_s": 0.0010107120670981606,
+        "absolute_angular_speed_rad_s": 0.012806987556037206,
+        "position_normalized": 1.5190295312689832,
+        "yaw_normalized": 1.7914257932377604,
+        "selection_score_squared_normalized_pose_distance": 5.516657089544806
+      },
+      "task_status_before_decision": {
+        "phase": "running",
+        "initial_sim_time": 0.34150000000000025,
+        "last_sim_time": 25.741499999985358,
+        "held_time_s": 0.0,
+        "previous_qualifies": false,
+        "terminal_reason": null,
+        "violations": []
+      },
+      "compact_sample_phase": "running",
+      "original_decision_source": "model",
+      "original_decision_executed": false,
+      "original_run_termination": "planner_invalid",
+      "original_planner_context_before": {
+        "previous_applied_action": [
+          0.010353580637032218,
+          0.012082701253516482
+        ],
+        "optimal_actions": [
+          [
+            0.010353580637032218,
+            0.012082701253516482
+          ],
+          [
+            0.010353580637032218,
+            0.012082701253516482
+          ],
+          [
+            0.01063756487119283,
+            0.000503650943442872
+          ],
+          [
+            0.01063756487119283,
+            0.000503650943442872
+          ],
+          [
+            0.01063756487119283,
+            0.000503650943442872
+          ]
+        ],
+        "control_step": 254
+      },
+      "original_geometry_context_before": {
+        "mode": "SLIDE",
+        "locked_offset_m": -0.015,
+        "retreat_offset_m": -0.05796905339254778,
+        "phase_started_s": 19.8,
+        "last_elapsed_s": 25.3,
+        "reassessment_count": 10,
+        "saturation_count": 433
+      },
+      "source_bindings": {
+        "public_compact": {
+          "location": "public_repository",
+          "path": "artifacts/results/trajectories/compact_visual_source.json",
+          "present": true,
+          "bytes": 9294977,
+          "sha256": "d14049a41f45edc97d9d53405469b5132323ef9384d4afe706ecba7bc1b2e0fc",
+          "included_in_public_repository": true
+        },
+        "local_manifest": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/manifest.json",
+          "present": true,
+          "bytes": 270088,
+          "sha256": "d8e2793ab3681d67808ca68f7b2b01562a7db18b0bc0ec60925c83df28d5dabe",
+          "included_in_public_repository": false
+        },
+        "local_witness": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/witness.json.gz",
+          "present": true,
+          "bytes": 998990,
+          "sha256": "54c2455fe540934321d7f4352ab0a43ac43d56463fb29b210dd2214c75477b83",
+          "included_in_public_repository": false
+        },
+        "local_raw": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/raw_execution.raw.npz",
+            "present": true,
+            "bytes": 3585142,
+            "sha256": "dce414c933f6253172fc4d90419ad5923a06043b0002d9bf4e61b0fa43ce0f66",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/raw_execution.raw.columns.xz",
+            "present": true,
+            "bytes": 11701644,
+            "sha256": "215e9e829112e206e81dd08ae4aaa029cdbf47c5b2c8b1942cfd232535556e28",
+            "included_in_public_repository": false
+          }
+        ],
+        "matching_tick_full_trace": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/plans/step-254/input.json.gz",
+            "present": true,
+            "bytes": 33428,
+            "sha256": "24d27c3b3d19381b4e30b9bfa86df0f1cf07c7884c2a222e4bdf6cdbb54c5f6e",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-00/S1-23/plans/step-254/trace.npz",
+            "present": true,
+            "bytes": 32400,
+            "sha256": "e2593b126e61c3bd060277a0d2b850d3b752196456b0789d5879c94c918028ad",
+            "included_in_public_repository": false
+          }
+        ],
+        "earlier_full_trace_anchor_for_reconstruction": []
+      },
+      "full_physical_snapshot_availability": "stored_full_input_at_selected_tick",
+      "diagnostic_snapshot_restoration_executed": false,
+      "diagnostic_snapshot_roundtrip_exact": null,
+      "derived_restored_snapshot_sha256": null,
+      "candidate_future_execution_count": 0
+    },
+    {
+      "diagnostic_state_id": "pre_invalid/p5-final-offset-01/S1-23/tick-259",
+      "selection_group": "pre_invalid",
+      "family_id": "p5-final-offset-01",
+      "controller_id": "S1-23",
+      "stratum": "offset",
+      "tick": 259,
+      "state10": [
+        0.07352905692391334,
+        -0.005723191445364021,
+        0.11705549276719918,
+        0.0023404905402464823,
+        0.005163908919317759,
+        0.1040491805163223,
+        0.09752371049007699,
+        -0.04116554373936567,
+        0.013866661848967236,
+        0.008484341765569635
+      ],
+      "sim_time_s": 26.241499999984192,
+      "elapsed_s": 25.899999999984193,
+      "original_task_initial_sim_time_s": 0.34150000000000025,
+      "metrics": {
+        "position_error_m": 0.008638751334205759,
+        "absolute_pi_symmetric_yaw_error_rad": 0.11705549276719918,
+        "linear_speed_m_s": 0.005669554770525881,
+        "absolute_angular_speed_rad_s": 0.1040491805163223,
+        "position_normalized": 1.7277502668411517,
+        "yaw_normalized": 2.235595234794882,
+        "selection_score_squared_normalized_pose_distance": 7.983007038407255
+      },
+      "task_status_before_decision": {
+        "phase": "running",
+        "initial_sim_time": 0.34150000000000025,
+        "last_sim_time": 26.241499999984192,
+        "held_time_s": 0.0,
+        "previous_qualifies": false,
+        "terminal_reason": null,
+        "violations": []
+      },
+      "compact_sample_phase": "running",
+      "original_decision_source": "model",
+      "original_decision_executed": false,
+      "original_run_termination": "planner_invalid",
+      "original_planner_context_before": {
+        "previous_applied_action": [
+          0.017418907023946065,
+          0.018535346912559685
+        ],
+        "optimal_actions": [
+          [
+            0.017418907023946065,
+            0.018535346912559685
+          ],
+          [
+            0.017418907023946065,
+            0.018535346912559685
+          ],
+          [
+            0.01155500348494202,
+            -0.013124046811824299
+          ],
+          [
+            0.01155500348494202,
+            -0.013124046811824299
+          ],
+          [
+            0.01155500348494202,
+            -0.013124046811824299
+          ]
+        ],
+        "control_step": 259
+      },
+      "original_geometry_context_before": {
+        "mode": "SLIDE",
+        "locked_offset_m": -0.015,
+        "retreat_offset_m": -0.057309101520485774,
+        "phase_started_s": 20.6,
+        "last_elapsed_s": 25.8,
+        "reassessment_count": 11,
+        "saturation_count": 464
+      },
+      "source_bindings": {
+        "public_compact": {
+          "location": "public_repository",
+          "path": "artifacts/results/trajectories/compact_visual_source.json",
+          "present": true,
+          "bytes": 9294977,
+          "sha256": "d14049a41f45edc97d9d53405469b5132323ef9384d4afe706ecba7bc1b2e0fc",
+          "included_in_public_repository": true
+        },
+        "local_manifest": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-23/manifest.json",
+          "present": true,
+          "bytes": 272357,
+          "sha256": "eadce836622c2eebe78ff7a582dd35fbec58dfdffcdb014c68e86f94d5e9d731",
+          "included_in_public_repository": false
+        },
+        "local_witness": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-23/witness.json.gz",
+          "present": true,
+          "bytes": 1018779,
+          "sha256": "a51e62c60faef18010b4a04b9367d78b660f6099a0fcb9fbe2fc6f085a7ef13b",
+          "included_in_public_repository": false
+        },
+        "local_raw": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-23/raw_execution.raw.npz",
+            "present": true,
+            "bytes": 3517012,
+            "sha256": "42aefc1516231794c992226efb8a43bf5a304d664ac3822c9d68b790d28ca161",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-23/raw_execution.raw.columns.xz",
+            "present": true,
+            "bytes": 9957916,
+            "sha256": "dacaa9b25d90bd657f183f24c6d9b1b70b2d6b951de247817472d19d268524c0",
+            "included_in_public_repository": false
+          }
+        ],
+        "matching_tick_full_trace": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-23/plans/step-259/input.json.gz",
+            "present": true,
+            "bytes": 33430,
+            "sha256": "11c8ba5003b0ae750696362667848267445c66b7155e357d3cd9f5a4f7c41046",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-01/S1-23/plans/step-259/trace.npz",
+            "present": true,
+            "bytes": 29534,
+            "sha256": "72d2e856cc6bd322fdc21797d595dbd5fe913d139f9757c5839e34cbd3c8fd46",
+            "included_in_public_repository": false
+          }
+        ],
+        "earlier_full_trace_anchor_for_reconstruction": []
+      },
+      "full_physical_snapshot_availability": "stored_full_input_at_selected_tick",
+      "diagnostic_snapshot_restoration_executed": false,
+      "diagnostic_snapshot_roundtrip_exact": null,
+      "derived_restored_snapshot_sha256": null,
+      "candidate_future_execution_count": 0
+    },
+    {
+      "diagnostic_state_id": "pre_invalid/p5-final-offset-02/S1-11/tick-243",
+      "selection_group": "pre_invalid",
+      "family_id": "p5-final-offset-02",
+      "controller_id": "S1-11",
+      "stratum": "offset",
+      "tick": 243,
+      "state10": [
+        0.07139168250542266,
+        -0.0004958809971645233,
+        -0.13813921623140546,
+        0.0024743569756349097,
+        -0.0057924436753871425,
+        -0.11402912743987065,
+        0.09278299666948553,
+        0.03489802964745905,
+        0.018961665058541095,
+        -0.009651177895294967
+      ],
+      "sim_time_s": 24.64149999998792,
+      "elapsed_s": 24.29999999998792,
+      "original_task_initial_sim_time_s": 0.34150000000000025,
+      "metrics": {
+        "position_error_m": 0.008622588245462913,
+        "absolute_pi_symmetric_yaw_error_rad": 0.13813921623140546,
+        "linear_speed_m_s": 0.006298797200688846,
+        "absolute_angular_speed_rad_s": 0.11402912743987065,
+        "position_normalized": 1.7245176490925824,
+        "yaw_normalized": 2.638264691768203,
+        "selection_score_squared_normalized_pose_distance": 9.934401705862578
+      },
+      "task_status_before_decision": {
+        "phase": "running",
+        "initial_sim_time": 0.34150000000000025,
+        "last_sim_time": 24.64149999998792,
+        "held_time_s": 0.0,
+        "previous_qualifies": false,
+        "terminal_reason": null,
+        "violations": []
+      },
+      "compact_sample_phase": "running",
+      "original_decision_source": "model",
+      "original_decision_executed": false,
+      "original_run_termination": "planner_invalid",
+      "original_planner_context_before": {
+        "previous_applied_action": [
+          0.022400601686317034,
+          -0.01995527609658585
+        ],
+        "optimal_actions": [
+          [
+            0.022400601686317034,
+            -0.01995527609658585
+          ],
+          [
+            0.022400601686317034,
+            -0.01995527609658585
+          ],
+          [
+            0.012952080739453682,
+            -0.027060000083493584
+          ],
+          [
+            0.012952080739453682,
+            -0.027060000083493584
+          ],
+          [
+            0.012952080739453682,
+            -0.027060000083493584
+          ]
+        ],
+        "control_step": 243
+      },
+      "original_geometry_context_before": {
+        "mode": "SLIDE",
+        "locked_offset_m": 0.015,
+        "retreat_offset_m": 0.11361110846766614,
+        "phase_started_s": 18.6,
+        "last_elapsed_s": 24.200000000000003,
+        "reassessment_count": 10,
+        "saturation_count": 412
+      },
+      "source_bindings": {
+        "public_compact": {
+          "location": "public_repository",
+          "path": "artifacts/results/trajectories/compact_visual_source.json",
+          "present": true,
+          "bytes": 9294977,
+          "sha256": "d14049a41f45edc97d9d53405469b5132323ef9384d4afe706ecba7bc1b2e0fc",
+          "included_in_public_repository": true
+        },
+        "local_manifest": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-11/manifest.json",
+          "present": true,
+          "bytes": 265092,
+          "sha256": "41136d0d2ba91cca1ca18c50bc78c1856e7a27c47833ee1a33ec33b89959d9c7",
+          "included_in_public_repository": false
+        },
+        "local_witness": {
+          "location": "local_original",
+          "path": "runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-11/witness.json.gz",
+          "present": true,
+          "bytes": 954835,
+          "sha256": "1454e84de060cc2234b33403f73f8ba7fb04a47a6479da94ab575b7db05a1e8c",
+          "included_in_public_repository": false
+        },
+        "local_raw": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-11/raw_execution.raw.npz",
+            "present": true,
+            "bytes": 3231664,
+            "sha256": "251316eca85b9ea0f854f2a5c3453866d272757ba02bb3db1861c5c44de9afc5",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-11/raw_execution.raw.columns.xz",
+            "present": true,
+            "bytes": 8520316,
+            "sha256": "5ac43f76bf62bffa5e40ef9207ea351be2f31ceb9a87723f65da024882a51eb8",
+            "included_in_public_repository": false
+          }
+        ],
+        "matching_tick_full_trace": [
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-11/plans/step-243/input.json.gz",
+            "present": true,
+            "bytes": 33412,
+            "sha256": "4c4c66004e28a9ca59e1e2f9dfbd24bfc8a8d7a3306df2ca1b0445635f8062a6",
+            "included_in_public_repository": false
+          },
+          {
+            "location": "local_original",
+            "path": "runs/p5-final-20261017-02/E2/p5-final-offset-02/S1-11/plans/step-243/trace.npz",
+            "present": true,
+            "bytes": 55261,
+            "sha256": "b3afccc3b514a9a04de30a433ac8b89ac8affb10c852db29ca116303588251d6",
+            "included_in_public_repository": false
+          }
+        ],
+        "earlier_full_trace_anchor_for_reconstruction": []
+      },
+      "full_physical_snapshot_availability": "stored_full_input_at_selected_tick",
+      "diagnostic_snapshot_restoration_executed": false,
+      "diagnostic_snapshot_roundtrip_exact": null,
+      "derived_restored_snapshot_sha256": null,
+      "candidate_future_execution_count": 0
+    }
+  ],
+  "population_accounting": {
+    "states": 6,
+    "unique_initial_condition_families": 5,
+    "unique_source_runs": 5,
+    "all_origins_S1": true,
+    "all_source_runs_failed": true,
+    "overlap": "Near-goal offset-00/S1-23 and pre-invalid offset-00/S1-23 are two states from the same trajectory.",
+    "interpretation": "Six states are five source trajectories/families; candidates, physical repeats and model seeds are not independent families. Post-hoc S1 failure selection cannot support unbiased S1-versus-SK superiority or failure prevalence."
+  },
+  "source_code_checks": [
+    {
+      "path": "src/push_align/environment.py",
+      "frozen_sha256": "e2c9824bad0a076a6dd3ffb8b1cbfb332e1896d81774e038fc8c91c79a094bea",
+      "local_original_sha256": "e2c9824bad0a076a6dd3ffb8b1cbfb332e1896d81774e038fc8c91c79a094bea",
+      "public_sha256": "e2c9824bad0a076a6dd3ffb8b1cbfb332e1896d81774e038fc8c91c79a094bea",
+      "both_match_frozen": true
+    },
+    {
+      "path": "src/push_align/final_execution.py",
+      "frozen_sha256": "ae848cc0523874143926d5b58de44938c20921beda2ac13913e8a490000b787e",
+      "local_original_sha256": "ae848cc0523874143926d5b58de44938c20921beda2ac13913e8a490000b787e",
+      "public_sha256": "ae848cc0523874143926d5b58de44938c20921beda2ac13913e8a490000b787e",
+      "both_match_frozen": true
+    },
+    {
+      "path": "src/push_align/final_driver_v2.py",
+      "frozen_sha256": "555a9fbbb6cce05c908154153d4e9182ec4c856b1f3f45bd697c4d13e4e017d1",
+      "local_original_sha256": "555a9fbbb6cce05c908154153d4e9182ec4c856b1f3f45bd697c4d13e4e017d1",
+      "public_sha256": "555a9fbbb6cce05c908154153d4e9182ec4c856b1f3f45bd697c4d13e4e017d1",
+      "both_match_frozen": true
+    },
+    {
+      "path": "src/push_align/candidate_replay.py",
+      "frozen_sha256": "31f493fb544b7ad5d19f3805078c71163504ac0b17faea1415b5d31f3072cdc9",
+      "local_original_sha256": "31f493fb544b7ad5d19f3805078c71163504ac0b17faea1415b5d31f3072cdc9",
+      "public_sha256": "31f493fb544b7ad5d19f3805078c71163504ac0b17faea1415b5d31f3072cdc9",
+      "both_match_frozen": true
+    },
+    {
+      "path": "src/push_align/planning.py",
+      "frozen_sha256": "1d13f0004ee9795ce1d08386a49c60b0540a536b817d2b1cecd02b9ef40f93bb",
+      "local_original_sha256": "1d13f0004ee9795ce1d08386a49c60b0540a536b817d2b1cecd02b9ef40f93bb",
+      "public_sha256": "1d13f0004ee9795ce1d08386a49c60b0540a536b817d2b1cecd02b9ef40f93bb",
+      "both_match_frozen": true
+    },
+    {
+      "path": "src/push_align/task.py",
+      "frozen_sha256": "126be1839024d338b2e32f83f2480401a0c79635ddfb1ea51d62a20051623e14",
+      "local_original_sha256": "126be1839024d338b2e32f83f2480401a0c79635ddfb1ea51d62a20051623e14",
+      "public_sha256": "126be1839024d338b2e32f83f2480401a0c79635ddfb1ea51d62a20051623e14",
+      "both_match_frozen": true
+    }
+  ],
+  "preservation": {
+    "audit_writes_original_run": false,
+    "audit_replaces_original_results": false,
+    "new_training_updates": 0,
+    "new_model_inference_calls": 0,
+    "new_physics_steps": 0,
+    "new_snapshot_restores": 0,
+    "original_frozen_results_remain_authoritative_for_E1_E2": true
+  },
+  "pending_before_candidate_future_execution": [
+    "Restore/reconstruct selected full integration snapshots and verify exact state/action-prefix evidence.",
+    "Serialize full diagnostic snapshot plus task/planner/geometry context and bind its hash.",
+    "Seal common candidate arrays, model predictions and evaluation protocol before observing new physical futures."
+  ],
+  "evaluation_semantics_review": {
+    "A": "Execute each fixed command sequence without supervisor intervention; passively compute readiness from actual substep samples using the original task-status history. Passive readiness is an analysis label, not an online task execution result.",
+    "B": "Apply the declared task supervisor and a separately specified 0.3-second zero-command tail. Preserve original 30-second censoring. This is a different execution protocol from A.",
+    "B_tail_warning": "A zero-command tail does not guarantee 0.3 seconds of valid holding; previous qualifying history, speed/yaw/position violations and sampled timestamps must be evaluated.",
+    "attribution_warning": "A-versus-B outcome differences conflate supervisor intervention and extra tail duration if both change together. Use A+same-tail, B_without_tail, or explicitly describe a combined execution-protocol effect rather than isolating cost/model/search causality.",
+    "cost_warning": "Score the original H=5 prefix with the frozen H=5 cost. Report readiness and extra-tail results separately; do not silently score 0.8 seconds with a 0.5-second cost contract.",
+    "window_warning": "All selected starts are <=29.2 seconds, allowing a 0.5-second candidate plus 0.3-second tail within the original 30-second maximum. Respect floating-point time tolerance and retain unavailable/censored outcomes."
+  }
+}

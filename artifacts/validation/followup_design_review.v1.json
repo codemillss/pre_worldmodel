@@ -1,0 +1,75 @@
+{
+  "schema": "followup-near-goal-design-critical-review-v1",
+  "as_of": "2026-10-22",
+  "status": "PASS_DESIGN_REVIEW_EXECUTION_NOT_RUN",
+  "scope": "Independent read-only methodological review and deterministic checks of saved-document/configuration values; no new physics, model inference, training, or snapshot restoration.",
+  "reviewed_files": [
+    {
+      "path": "docs/near_goal_diagnostic_design.ko.md",
+      "sha256": "660f9c52a7b509ee8ca45742759b4325a04f76546114d0e23eeab0011a64110b"
+    },
+    {
+      "path": "configs/followup_candidate_diagnostic.v1.json",
+      "sha256": "a558bb7a61da067859668808245a3173c818edbda69cf3efb5458574f1d85fdb"
+    },
+    {
+      "path": "artifacts/validation/followup_state_selection.v1.json",
+      "sha256": "d6e99267b6e5566d33520edf3313ac049dc52ba8c6d85797c1762a2ad26cf1e7"
+    }
+  ],
+  "checked_existing_implementation": [
+    "src/push_align/candidate_replay.py",
+    "src/push_align/candidate_diagnostics.py",
+    "src/push_align/final_execution.py",
+    "src/push_align/task.py",
+    "src/push_align/closed_loop.py",
+    "src/push_align/environment.py",
+    "src/push_align/candidates.py",
+    "src/push_align/planning.py"
+  ],
+  "checks": {
+    "source_selection_sha_matches_config": true,
+    "snapshot_count_six": true,
+    "family_count_five": true,
+    "model_count_seven": true,
+    "not_population_inference": true,
+    "not_bootstrap_ci": true,
+    "all_stages_after_design_not_run": true,
+    "A_fixed_commands_H5_separate_from_B": true,
+    "A_first_ready_H5_valid_eligibility_separate": true,
+    "terminal_TaskStatus_not_reconsumed": true,
+    "B_not_latched": true,
+    "prefix_absorbing_termination_difference_explicit": true,
+    "S_requires_complete_stable_base": true,
+    "epsilon_finite_valid_only": true,
+    "D3_A_interval_math": true,
+    "D3_B_interval_math": true,
+    "restore_prefix_math": true,
+    "separate_pilot_math": true,
+    "total_with_extension_restore_separate_pilot_math": true,
+    "teacher_forcing_additional_accounted": true,
+    "resource_caps_include_auxiliary_work": true
+  },
+  "resolved_review_findings": [
+    "Separate A first-hit, full-H5 physical validity and ready eligibility; account for post-ready invalidity versus B absorbing termination.",
+    "Specify nonlatched B zero supervisor and separate nonterminal hold tracker after official ready.",
+    "Do not infer missing base-bank capability from unstable or missing actual candidates.",
+    "Include restoration, pilot, teacher-forcing and extension in total resource gate; reuse only exact accepted artifacts.",
+    "Compute numerical epsilon only from finite actual-valid costs; no actual-valid candidates produces null and NO_VALID_ACTUAL."
+  ],
+  "remaining_limits": [
+    "Six posthoc states come from five initial families and all source trajectories are S1; no symmetric model-policy population or success-rate inference.",
+    "A is a fixed-command open-loop assay and B is a committed candidate plus supervisor/zero suffix, neither reproduces full MPC replanning.",
+    "Actual futures are diagnostic oracle labels and must not feed frozen online selection.",
+    "Model/cost/interface/search evidence is local and nonexclusive; it does not identify a sole cause of original E2 failure.",
+    "The real restoration, raw round-trip, memory/storage/time gate and physical repeat fidelity remain untested.",
+    "Exact arbitrary-tick internal state cannot be compared against an unavailable original full snapshot; provenance must state available comparison scope.",
+    "Finite-bank expansion cannot establish global reachability or unreachability."
+  ],
+  "execution": {
+    "new_physics_intervals": 0,
+    "new_model_inference_calls": 0,
+    "new_training_updates": 0,
+    "D1_D5_status": "NOT_RUN"
+  }
+}

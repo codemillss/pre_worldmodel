@@ -4,9 +4,9 @@
   "source": "paper/main.tex",
   "bibliography": "paper/references.bib",
   "output": "reports/Research_Paper.ko.pdf",
-  "sha256": "6dc1b271baff71788be1d3fc2c4a6611b0879cf8e50a466011d682d009b0dc01",
-  "bytes": 306519,
-  "pages": 6,
+  "sha256": "ff588aeeff2324139b5f6bf20a146a8dd4710a15007192da1625ee4b8e7d3a7c",
+  "bytes": 330343,
+  "pages": 7,
   "class": "IEEEtran 1.8b",
   "options": [
     "conference",
@@ -23,19 +23,26 @@
     "bibliography_entries": 8
   },
   "input_sha256": {
-    "paper/main.tex": "2699abb8858904ecc2a882c6b9c804bffb71a72c703cf2ca9406f9b90306410a",
+    "paper/main.tex": "0615152c9b3861d1223f5a8b72ef2fbc1038d20cb07b8a017d8738b76dba902f",
     "paper/references.bib": "12ffb702250a8a02cd1902b8a39a3e6d138023c76066fc9af45e1cb8e2b21be5",
-    "paper/figures/method_system.pdf": "4f5b38e4efbe4d3b4467b91dd5c64d462fc03f33444a3d4884147f71f948dc44",
-    "paper/figures/fixed_prediction.pdf": "f748f85aaa84079ddd581572e8d58188f06f8016b63bfb74ca2ba15a456a0ee8",
-    "paper/figures/figures.manifest.json": "3f80cdd3ccacbfa65ce180c8f9312f2c37ecfc77434c3ea0818fb14fb0ccd1b4",
+    "paper/figures/method_system.pdf": "cbddc9a4d5b0ec9286edf7b287f37add9e6c0f3f0fb08aa030a11f149896170a",
+    "paper/figures/fixed_prediction.pdf": "b3da299cc5c1d6ba6d7a8421047ce9ce2ebca176a6b57d75711a75ecc26a411b",
+    "paper/figures/figures.manifest.json": "923590049ad72f2904f29b9d775d3db541ea6f1f3c6029c408a731532899e094",
     "paper/figures/fixed_prediction.values.json": "90d6943ed975096a3cf52243224db1f27ab4878d2ca5d0fa4b8456037c86f599",
-    "paper/figures/generate_figures.py": "989325cf60504ea91a37b466229f02267b44957fa0bd81b7399c51cf3e984a75",
+    "paper/figures/generate_figures.py": "f432710d67918a05dea442e90fae62493aa1a65ea5472145e6b1b63f820f7c32",
     "artifacts/results/E2/summary.json": "103f08e2a85a1cfa7eb1ac8db64c0fd8d641266520e46d083142cf218ee83a66",
     "artifacts/results/E1/summary.json": "0f41783dfeaa99b188005aab9bf8d21adf1011de56ffca627304c800a6ab851b",
     "artifacts/results/fixed_prediction/summary.json": "0b649daa867029138722000ffd45ae972e49f75b0b7f3be59f61620d2e7a4e6e",
     "artifacts/provenance/frozen_manifest.json": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f"
   },
   "no_new_training_or_scientific_physics": true,
-  "revision": "reviewer-assessment-v3",
-  "current_content_review": "artifacts/validation/document_review.v3.json"
+  "revision": "standalone-figures-captions-and-followup-design-v4",
+  "current_content_review": "artifacts/validation/document_review.v4.json",
+  "compiler_diagnostics": {
+    "missing_glyphs": 0,
+    "overfull_boxes": 0,
+    "underfull_hbox_reference_lines": 4,
+    "underfull_vbox": 1,
+    "desktop_independent_compiler": "success"
+  }
 }

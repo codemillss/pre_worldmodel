@@ -68,4 +68,6 @@ PYTHONPATH=src:scripts:tests .venv/bin/python -B -m unittest \
 
 ## 최신 문서 검토
 
-2026-10-22의 [리뷰어 관점 평가](../docs/reviewer_assessment.ko.md)는 E1의 시간·목표 거리 범위와 E2의 짝별 성공 차이를 저장 배열에서 추가 검산했습니다. 이는 사후 기술 분석이며 새 학습·모델 추론·물리 실행이 아닙니다. 현재 검사와 PDF 시각 검토는 [v3 검토 기록](validation/document_review.v3.json), 수치 재계산은 [v3 수치 기록](validation/paper_results_review.v3.json)에 연결합니다. 이전 검토 기록은 당시 SHA의 이력입니다.
+2026-10-22의 [리뷰어 관점 평가](../docs/reviewer_assessment.ko.md)는 E1의 시간·목표 거리 범위와 E2의 짝별 성공 차이를 저장 배열에서 추가 검산했습니다. 이는 사후 기술 분석이며 새 학습·모델 추론·물리 실행이 아닙니다. 현재 문서·PDF 시각 검토는 [v4 검토 기록](validation/document_review.v4.json), 현재 원고 수치 검산은 [v4 수치 기록](validation/paper_results_review.v4.json)에 연결합니다. 이전 검토 기록은 당시 SHA의 이력입니다.
+
+[목표 근처·실패 직전 진단 설계 v1](../docs/near_goal_diagnostic_design.ko.md)은 별도 후속 개발 계획입니다. [6상태 선정 근거](validation/followup_state_selection.v1.json)는 기존 저장 자료·원본 witness만 읽은 기록이며 snapshot 복원·모델 추론·실제 미래 실행의 증거가 아닙니다. 원본 전체 raw가 공개되지 않았으므로 선정 출처의 local-original 경로는 공개본에서 직접 열리지 않을 수 있습니다.

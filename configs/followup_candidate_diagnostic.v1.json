@@ -1,0 +1,276 @@
+{
+  "schema": "postfreeze-candidate-diagnostic-design-v1",
+  "as_of": "2026-10-22",
+  "status": "DESIGN_ONLY_NOT_EXECUTED",
+  "document": "docs/near_goal_diagnostic_design.ko.md",
+  "source_audit": "artifacts/validation/followup_state_selection.v1.json",
+  "source_audit_sha256": "d6e99267b6e5566d33520edf3313ac049dc52ba8c6d85797c1762a2ad26cf1e7",
+  "question": "At selected near-goal/pre-invalid saved states, distinguish local prediction-validity/ranking, fixed-cost/readiness mismatch and finite candidate-bank coverage without replacing frozen results.",
+  "frozen_original_run": "runs/p5-final-20261017-02",
+  "original_manifest_sha256": "85107831a1f3ef5f4bd5495e98c38f8cd1616e51857df219542213145097850f",
+  "preserve": [
+    "original_results_and_denominators",
+    "model_weights",
+    "normalizer",
+    "physics",
+    "nine_term_cost",
+    "task_criteria",
+    "training_budget"
+  ],
+  "models": [
+    "R",
+    "S1-11",
+    "S1-23",
+    "S1-47",
+    "SK-11",
+    "SK-23",
+    "SK-47"
+  ],
+  "states": [
+    {
+      "id": "N-T",
+      "audit_state_id": "near_goal/p5-final-translation-03/S1-11/tick-078",
+      "family_id": "p5-final-translation-03",
+      "source_controller": "S1-11",
+      "tick": 78,
+      "restored_snapshot_sha256": null,
+      "candidate_bank_sha256": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "N-R",
+      "audit_state_id": "near_goal/p5-final-rotation-03/S1-47/tick-183",
+      "family_id": "p5-final-rotation-03",
+      "source_controller": "S1-47",
+      "tick": 183,
+      "restored_snapshot_sha256": null,
+      "candidate_bank_sha256": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "N-O",
+      "audit_state_id": "near_goal/p5-final-offset-00/S1-23/tick-246",
+      "family_id": "p5-final-offset-00",
+      "source_controller": "S1-23",
+      "tick": 246,
+      "restored_snapshot_sha256": null,
+      "candidate_bank_sha256": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "F-O0",
+      "audit_state_id": "pre_invalid/p5-final-offset-00/S1-23/tick-254",
+      "family_id": "p5-final-offset-00",
+      "source_controller": "S1-23",
+      "tick": 254,
+      "restored_snapshot_sha256": null,
+      "candidate_bank_sha256": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "F-O1",
+      "audit_state_id": "pre_invalid/p5-final-offset-01/S1-23/tick-259",
+      "family_id": "p5-final-offset-01",
+      "source_controller": "S1-23",
+      "tick": 259,
+      "restored_snapshot_sha256": null,
+      "candidate_bank_sha256": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "F-O2",
+      "audit_state_id": "pre_invalid/p5-final-offset-02/S1-11/tick-243",
+      "family_id": "p5-final-offset-02",
+      "source_controller": "S1-11",
+      "tick": 243,
+      "restored_snapshot_sha256": null,
+      "candidate_bank_sha256": null,
+      "execution_status": "NOT_RUN"
+    }
+  ],
+  "selection": {
+    "posthoc": true,
+    "independent_family_count": 5,
+    "snapshot_count": 6,
+    "source_trajectories": 5,
+    "all_sources_S1": true,
+    "population_inference": false,
+    "bootstrap_ci": false,
+    "near_goal_rule": "failed S1/SK active boundaries, elapsed<=29.2+1e-9 s, pos<=.015 m, abs pi-symmetric yaw<=9 deg; minimum squared normalized distance per stratum; ascending family_id/controller_id/tick tie-break",
+    "pre_invalid_rule": "all three learned terminal-unexecuted planner_invalid inputs; no replacement"
+  },
+  "restore": {
+    "first_state": "F-O0",
+    "require": [
+      "full_mjSTATE_INTEGRATION",
+      "solver_warmstart",
+      "environment_rng_and_auxiliary",
+      "original_TaskStatus_and_clock",
+      "previous_actual_command",
+      "planner_warm_sequence",
+      "geometry_context",
+      "candidate_identity_matches_original"
+    ],
+    "arbitrary_tick_method": "initial fullsnapshot + original applied-command prefix; verify all available saved raw/witness/plan_index, store newly reconstructed full state",
+    "missing_original_fullsnapshot_note": "Do not claim unavailable original internal state was directly compared. Use exact original replay comparisons where available; never relax tolerances after outcomes.",
+    "gate": "STOP_ON_MISMATCH_BEFORE_NEW_FUTURES"
+  },
+  "bank": {
+    "count": 128,
+    "horizon_steps": 5,
+    "action_dt_s": 0.1,
+    "block_lengths": [
+      2,
+      3
+    ],
+    "command_speed_norm_max_m_s": 0.03,
+    "base_stream_id": 0,
+    "rng": "original base_seed/episode_index/actual_control_tick/stream_id keyed PCG64",
+    "generate_once_shared_across_models_and_repeats": true,
+    "reserved_candidates": "unchanged original generator",
+    "identity_function": "existing array_hash dtype+shape+bytes"
+  },
+  "panel_A": {
+    "semantics": "fixed nominal 5 commands, no future replanning or supervisor command replacement",
+    "horizon_s": 0.5,
+    "physical_repeats": 3,
+    "cost": "original H5 nine-term cost with original previous actual command",
+    "passive_ready_monitor": true,
+    "ready_after_first_hit": "freeze first-hit verdict; continue physics to H5 for cost only; physical invalid still invalidates candidate",
+    "physical_invalid": "stop and retain prefix/reason",
+    "teacher_forced_one_step": true,
+    "ready_fields": [
+      "first_ready_A",
+      "H5_physical_valid",
+      "ready_A_eligible",
+      "nonterminal_diagnostic_hold_at_H5"
+    ],
+    "terminal_status_policy": "Never re-consume terminal TaskStatus; freeze official first hit and use separate nonterminal diagnostic hold tracker thereafter."
+  },
+  "panel_B": {
+    "semantics": "committed nominal candidate with actual-pose zero supervisor, then three zero-command intervals; no model replanning",
+    "nominal_steps": 5,
+    "zero_tail_steps": 3,
+    "max_horizon_s": 0.8,
+    "physical_repeats": 3,
+    "record_ready_at_prefix_s": 0.5,
+    "record_ready_at_full_s": 0.8,
+    "stop_on": [
+      "ready",
+      "physical_invalid",
+      "original_30s_deadline"
+    ],
+    "original_time_and_hold_history_preserved": true,
+    "separate_nominal_and_applied_commands": true,
+    "A_vs_B_full_is_joint_supervisor_and_horizon_contrast": true,
+    "no_A_prediction_vs_B_future_error_metric": true,
+    "no_08s_cost_as_original_H5_cost": true,
+    "zero_rule": "For k<5, zero iff current actual boundary pose is in tolerance; otherwise nominal[k]. Not latched. For k>=5 always zero.",
+    "A_vs_B_prefix": "Compare first-ready by .5s. A_POST_READY_INVALID/B_ABSORBING_READY is termination-convention difference, not supervisor-command effect. Compare command intervention locally only with this distinction."
+  },
+  "task": {
+    "position_tolerance_m": 0.005,
+    "yaw_tolerance_deg_pi_symmetric": 3,
+    "linear_speed_tolerance_m_s": 0.01,
+    "angular_speed_tolerance_rad_s": 0.05,
+    "continuous_hold_s": 0.3,
+    "original_elapsed_deadline_s": 30,
+    "physics_dt_s": 0.0005,
+    "verdict": "action boundary with continuous raw-substep hold"
+  },
+  "decision_rules": {
+    "repeat_requirement": "3/3 validity and ready agreement; otherwise UNSTABLE_REPLAY and inconclusive",
+    "epsilon": "1e-6 + 1e-5*max_abs_finite_cost across only 3/3 actual-valid candidates; no such candidate => epsilon and ranking null / NO_VALID_ACTUAL",
+    "cost_interval": "L_i=min repeats, U_i=max repeats for valid candidates",
+    "possible_cost_optimum_set": "L_i <= min_j(U_j)+epsilon",
+    "M1": "predicted invalid but 3/3 actual_A valid, with same nominal commands and horizon",
+    "M2": "model-selected actual_A invalid OR L_selected > U_alternative+epsilon; no-valid-prediction recorded separately, never regret=0",
+    "C": "stable ready_A exists; every possible-cost-optimum candidate is non-ready; some non-ready U+epsilon < min ready L",
+    "C_unresolved": "possible-optimum set mixes ready/non-ready or no ready_A or unstable actuals",
+    "I": "A/B transition or ready differences; full B includes changed horizon, cannot attribute to model or cost alone",
+    "S": "Base 128 complete and all stable non-ready or stable invalid, no UNSTABLE/MISSING; stable ready in one prespecified extra bank within same panel. A coverage additionally requires entire H5 physical validity.",
+    "nonexclusive": true,
+    "unresolved_allowed": true
+  },
+  "conditional_extension": {
+    "trigger": "no ready in base state/panel AND all 128 complete with stable classifications, zero UNSTABLE/MISSING; else hold extension and S unresolved",
+    "extra_count": 128,
+    "stream_id": 1,
+    "preserve_base_candidates": true,
+    "same_horizon_blocks_speed_and_generator": true,
+    "deduplication": "retain original IDs and record duplicates; no replacement",
+    "one_extension_only": true,
+    "same_7_models": true,
+    "both_empty": "UNRESOLVED not unreachable",
+    "resource_gate_before_execution": true
+  },
+  "stages": [
+    {
+      "id": "D0",
+      "status": "DESIGNED",
+      "scope": "design and saved metadata only"
+    },
+    {
+      "id": "D1",
+      "status": "NOT_RUN",
+      "scope": "F-O0 restore and original candidate identity check only"
+    },
+    {
+      "id": "D2",
+      "status": "NOT_RUN",
+      "scope": "N-T/F-O0 candidate indices0..15 A/B x3; resources and fidelity pilot, absence of ready is not failure"
+    },
+    {
+      "id": "D3",
+      "status": "NOT_RUN",
+      "scope": "6x128x3 A/B and shared 7-model predictions"
+    },
+    {
+      "id": "D4",
+      "status": "NOT_RUN",
+      "scope": "conditional one-bank extension"
+    },
+    {
+      "id": "D5",
+      "status": "NOT_RUN",
+      "scope": "case-level hypothesis report and separate next-intervention design"
+    }
+  ],
+  "resource_limits": {
+    "base_A_intervals": 11520,
+    "base_B_max_intervals": 18432,
+    "base_total_max_intervals": 29952,
+    "base_max_physics_substeps": 5990400,
+    "base_simulated_seconds": 2995.2,
+    "base_model_transition_rows": 26880,
+    "extension_total_max_intervals": 59904,
+    "incremental_storage_cap_bytes": 5368709120,
+    "free_space_reserve_bytes": 2147483648,
+    "wall_time_cap_s": 7200,
+    "pilot_projection_safety_factor": 1.5,
+    "gate": "measure pilot before D3 and D4; NOT_RUN_RESOURCE if over cap; no silent sample/model/repeat reduction",
+    "original_raw_not_duplicated": true,
+    "restore_prefix_intervals": 1017,
+    "pilot_max_additional_intervals_if_not_reused": 1248,
+    "all_planned_max_intervals_with_extension_restore_separate_pilot": 62169,
+    "teacher_forced_max_additional_transition_rows": 26880,
+    "pilot_reuse_rule": "Only exact driver/code/design/input/bank identity and accepted raw records may be reused as D3 rows; any repair requires new version and resource replan.",
+    "restoration_reuse_rule": "Capture offset00 tick246 and254 in the same original-command replay; no planned duplicate prefix replay.",
+    "total_caps_include": "restoration, pilot, primary, extension, inference, replay checks and all derived recording"
+  },
+  "failure_policy": {
+    "automatic_retry_count": 0,
+    "overwrite": false,
+    "infrastructure_or_restore_error": "stop, preserve completed prefix; fix under a new version/run",
+    "scientific_failure": "retain as result with denominator and reason"
+  },
+  "claims_not_supported": [
+    "population success rate",
+    "S1 versus SK superiority from selected snapshots",
+    "sole cause of original E2 failures",
+    "global reachability",
+    "real-world benefit",
+    "new algorithm",
+    "full MPC closed-loop reproduction from candidate-only panels"
+  ]
+}

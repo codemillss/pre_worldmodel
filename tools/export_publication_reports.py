@@ -85,6 +85,26 @@ class Renderer(layout.Renderer):
 
     def build_body(self):
         flow = self.markdown(self.source)
+        # A scientific table caption and its short table form one reading unit.
+        # Without this, a long standalone caption can be stranded on the prior
+        # page even though the table itself is already kept together.
+        grouped, index = [], 0
+        while index < len(flow):
+            item = flow[index]
+            if (isinstance(item, Paragraph)
+                    and re.match(r'^표\s*\d+\.', item.getPlainText())
+                    and index + 1 < len(flow)
+                    and isinstance(flow[index + 1], KeepTogether)):
+                unit = [item] + flow[index + 1]._content
+                if (grouped and isinstance(grouped[-1], Paragraph)
+                        and grouped[-1].style.name in ('h2', 'h3')):
+                    unit.insert(0, grouped.pop())
+                grouped.append(KeepTogether(unit))
+                index += 2
+            else:
+                grouped.append(item)
+                index += 1
+        flow = grouped
         headings = iter(self.headings)
         def mark(items):
             for item in items:

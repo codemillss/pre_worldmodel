@@ -1,17 +1,18 @@
 {
-  "schema": "paper-figures-v1",
+  "schema": "paper-figures-v2",
+  "presentation_revision": "2026-10-22-standalone-method-definitions",
   "method_system": {
     "pdf": {
       "file": "method_system.pdf",
-      "sha256": "4f5b38e4efbe4d3b4467b91dd5c64d462fc03f33444a3d4884147f71f948dc44",
-      "bytes": 41415
+      "sha256": "cbddc9a4d5b0ec9286edf7b287f37add9e6c0f3f0fb08aa030a11f149896170a",
+      "bytes": 44513
     },
     "png": {
       "file": "method_system.png",
-      "sha256": "6628ad921ae649c1fa0421560525883c4f76feef92d6beaf1fe0dc600b24d765",
-      "bytes": 127145
+      "sha256": "8e31c7dc75ea33e8b911f2a18c9714196a8e9710a0e67d4c91b11c6cb3e8c7a3",
+      "bytes": 157734
     },
-    "caption": "Task and controller schematic (not to scale). A rectangular part is pushed toward a target pose. At each 0.1 s control interval, the current 10-D state and candidate commands form the 11-D model input; a learned state-delta model recursively evaluates 128 five-step action sequences. When the current pose is outside tolerance, a fixed cost and validity checks select the first command. When the actual position and orientation are within tolerance, planning is bypassed and a common, nonlearned supervisor applies zero command; low actual speed and continuous 0.3 s qualification are checked at physics substeps. Future simulator states are not queried by planning.",
+    "caption": "Task and S1/SK controller schematic (not to scale). S1 is a one-step-trained multilayer perceptron (MLP); SK has the same architecture and one-step plus 0.1 times five-step free-rollout training loss. R replaces the MLP with feature-linear dynamics (selected regularization alpha=0); G is direct geometric feedback without candidate search. A rectangular part is pushed toward a target pose. At each 0.1 s control interval, the current 10-D state and candidate commands form the 11-D model input; a learned state-delta model recursively evaluates 128 five-step action sequences. When the current pose is outside tolerance, a fixed cost and validity checks select the first command. When the actual position and orientation are within tolerance, planning is bypassed and a common, nonlearned supervisor applies zero command; low actual speed and continuous 0.3 s qualification are checked at physics substeps. Future simulator states are not queried by planning.",
     "source_fields": [
       "src/push_align/representation.py:STATE_FIELDS,FEATURE_FIELDS,DELTA_FIELDS",
       "src/push_align/planning.py:rollout,score,plan",
@@ -23,13 +24,13 @@
   "fixed_prediction": {
     "pdf": {
       "file": "fixed_prediction.pdf",
-      "sha256": "f748f85aaa84079ddd581572e8d58188f06f8016b63bfb74ca2ba15a456a0ee8",
-      "bytes": 22874
+      "sha256": "b3da299cc5c1d6ba6d7a8421047ce9ce2ebca176a6b57d75711a75ecc26a411b",
+      "bytes": 34419
     },
     "png": {
       "file": "fixed_prediction.png",
-      "sha256": "6685ff4cbb2bf8c75482370b50c4ed0c20e493682864a505b53c8c1e6acb6fa1",
-      "bytes": 77774
+      "sha256": "c3ae571e2401ee191a507ab154dd4512980d8690a6fbad3d04b158c1fe388f17",
+      "bytes": 118856
     },
     "values": {
       "file": "fixed_prediction.values.json",
@@ -38,16 +39,19 @@
     },
     "source": "artifacts/results/fixed_prediction/summary.json",
     "source_sha256": "0b649daa867029138722000ffd45ae972e49f75b0b7f3be59f61620d2e7a4e6e",
-    "caption": "Offline fixed-action position prediction on the 12 geometric-controller traces. Each point is the mean of 12 equally weighted family means, not the pooled-window mean. At K=1,5,10, respectively, all 2,656, 2,608, and 2,548 truth-eligible windows are valid for both methods in each plotted seed. Seed 11 is omitted because validity masks differ. Overlapping windows are not independent; these descriptive prediction errors do not establish closed-loop handoff improvement."
+    "caption": "Offline fixed-action position prediction on the 12 geometric-feedback (G) controller traces. S1 is the one-step-trained MLP; SK is the same MLP trained with an additional 0.1 times five-step free-rollout loss. Seed identifies the training random-number-generator setting, not a new initial-condition family. K counts future 0.1 s prediction steps; training uses five-step windows and online planning has a five-step horizon. Each point is the mean of 12 equally weighted family means, not the pooled-window mean. At K=1,5,10, respectively, all 2,656, 2,608, and 2,548 truth-eligible windows are valid for both methods in each plotted seed. Seed 11 is omitted because validity masks differ. Connecting lines are visual guides and confidence intervals are not shown. Overlapping windows are not independent; these descriptive prediction errors do not establish closed-loop handoff improvement."
   },
   "visual_review": {
     "status": "PASS_DIRECT_PNG_AND_INDEPENDENT_PDF_RENDER_VIEW",
-    "reviewer": "paper_figures agent",
+    "review_date_kst": "2026-10-22",
+    "presentation_revision": "2026-10-22-standalone-method-definitions",
+    "reviewer": "figure_legibility_audit agent",
     "checks": [
-      "Both generated PNGs individually viewed",
-      "Both one-page PDFs independently rasterized with pdftoppm at 150 dpi and viewed",
-      "No glyph substitution, clipping, overlap, or invisible arrow labels",
-      "Shared y scale, distinct line/marker/color styles, 12-family means and all-window-valid assertions retained"
+      "Both current generated PNGs individually viewed after final wording changes",
+      "Both current one-page PDFs independently rasterized at 150 dpi with pdftoppm and individually viewed after final wording changes",
+      "Full method definitions, multilayer-perceptron expansion, training loss distinction, seed meaning, future-step units, initial-condition denominator, and descriptive-statistic scope are legible",
+      "No clipped labels, text collisions, missing glyphs, or overlapping arrows observed",
+      "No plotted numeric data changed; fixed_prediction.values.json byte-identical to the preceding published version"
     ],
     "pdfs": {
       "method_system": {
@@ -56,7 +60,7 @@
           0.0,
           0.0,
           515.52,
-          212.4
+          262.8
         ]
       },
       "fixed_prediction": {
@@ -65,13 +69,17 @@
           0.0,
           0.0,
           515.52,
-          167.04
+          250.56
         ]
       }
-    }
+    },
+    "fixed_prediction_values_byte_identical_to_preceding_version": true,
+    "fixed_prediction_values_sha256": "90d6943ed975096a3cf52243224db1f27ab4878d2ca5d0fa4b8456037c86f599"
   },
+  "scientific_data_changed": false,
+  "additional_physics_intervals": 0,
   "generator": {
     "file": "generate_figures.py",
-    "sha256": "989325cf60504ea91a37b466229f02267b44957fa0bd81b7399c51cf3e984a75"
+    "sha256": "f432710d67918a05dea442e90fae62493aa1a65ea5472145e6b1b63f820f7c32"
   }
 }

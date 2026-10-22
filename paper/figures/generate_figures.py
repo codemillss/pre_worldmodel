@@ -76,8 +76,8 @@ def box(ax, xy, width, height, title, detail, *, learned=False):
 
 
 def method_system(out: Path) -> dict:
-    fig = plt.figure(figsize=(7.16, 2.95))
-    task = fig.add_axes([.012, .06, .272, .84])
+    fig = plt.figure(figsize=(7.16, 3.65))
+    task = fig.add_axes([.012, .21, .272, .68])
     task.set_xlim(-.1, 2.2); task.set_ylim(-.2, 2.15)
     task.set_aspect("equal"); task.axis("off")
     fig.text(.012, .945, "(a) Planar alignment task", fontsize=9.2, fontweight="bold")
@@ -103,9 +103,9 @@ def method_system(out: Path) -> dict:
     task.text(1.76, .25, "$y$", fontsize=8)
     task.text(.02, -.20, "Schematic; not to scale", fontsize=7.5, color=GRAY)
 
-    ax = fig.add_axes([.321, .06, .670, .84])
+    ax = fig.add_axes([.321, .21, .670, .68])
     ax.set_xlim(-.15, 10.05); ax.set_ylim(-.35, 5.10); ax.axis("off")
-    fig.text(.321, .945, "(b) Model-based closed-loop controller", fontsize=9.2, fontweight="bold")
+    fig.text(.321, .945, "(b) S1 / SK learned-dynamics planning loop", fontsize=9.2, fontweight="bold")
     ytop, ybot, h = 3.00, .12, 1.33
     box(ax, (0, ytop), 2.45, h, "Observe", "Current 10-D state\nfrom simulator")
     box(ax, (3.18, ytop), 2.45, h, "Propose", "128 sequences\n5 steps; 2-D actions")
@@ -128,9 +128,21 @@ def method_system(out: Path) -> dict:
             color=GRAY, linespacing=1.25, va="center")
     ax.text(4.36, 4.45, "Geometric proposal + seeded sampling", fontsize=6.85,
             ha="center", color=GRAY)
+    fig.text(.015, .128,
+        "MLP: multilayer perceptron. S1: one-step loss; SK: one-step + 0.1 × 5-step free-rollout loss.",
+        fontsize=8.05, color=INK)
+    fig.text(.015, .078,
+        "R: feature-linear model (α = 0) replaces the MLP.  G: direct geometric feedback; no candidate search.",
+        fontsize=8.05, color=INK)
+    fig.text(.015, .030,
+        "128 candidates; 5 × 0.1 s prediction steps; execute only the first command. Supervisor and contact physics are not learned.",
+        fontsize=7.6, color=GRAY)
     result = save(fig, out, "method_system")
     result["caption"] = (
-        "Task and controller schematic (not to scale). A rectangular part is pushed toward a target pose. "
+        "Task and S1/SK controller schematic (not to scale). S1 is a one-step-trained multilayer perceptron (MLP); "
+        "SK has the same architecture and one-step plus 0.1 times five-step free-rollout training loss. "
+        "R replaces the MLP with feature-linear dynamics (selected regularization alpha=0); G is direct geometric feedback without candidate search. "
+        "A rectangular part is pushed toward a target pose. "
         "At each 0.1 s control interval, the current 10-D state and candidate commands form the 11-D model input; "
         "a learned state-delta model recursively evaluates 128 five-step action sequences. "
         "When the current pose is outside tolerance, a fixed cost and validity checks select the first command. "
@@ -160,7 +172,7 @@ def fixed_prediction(repo: Path, out: Path) -> dict:
              "limitations": data["limitations"],
              "selection": "Seeds 23 and 47 have all eligible windows valid for both S1 and SK at all plotted horizons; seed 11 is excluded from this common-valid illustrative plot because its validity masks differ.",
              "confidence_intervals": "Not computed for this descriptive figure; windows overlap and are not independent samples."}
-    fig, axes = plt.subplots(1, 2, figsize=(7.16, 2.32), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(7.16, 3.48), sharey=True)
     for ax, seed, label in zip(axes, (23, 47), ("a", "b")):
         exact["seeds"][str(seed)] = {}
         for method, color, marker, linestyle in (("S1", BLUE, "o", "-"), ("SK", RED, "^", "--")):
@@ -196,17 +208,30 @@ def fixed_prediction(repo: Path, out: Path) -> dict:
                              "family_means_m": dict(zip(data["family_ids"], means)),
                              "source_field": f"horizons.{horizon}.models.{model}.family_first_means_conditional_on_available_families.object_xy_error_m"})
             exact["seeds"][str(seed)][method] = rows
+            legend = ("S1: one-step multilayer perceptron (MLP)" if method == "S1" else
+                      "SK: same MLP, +0.1 × 5-step rollout loss")
             ax.plot((1, 5, 10), values, color=color, marker=marker, linestyle=linestyle,
-                    markersize=4.5, lw=1.45, label=method, zorder=3)
+                    markersize=4.5, lw=1.45, label=legend, zorder=3)
         ax.set_title(f"({label}) Training seed {seed}", loc="left", fontweight="bold", pad=6)
         ax.set_xticks([1, 5, 10]); ax.set_xlim(.5, 10.5)
         ax.set_ylim(0, .185); ax.set_yticks([0, .04, .08, .12, .16])
         ax.set_xlabel("Prediction horizon $K$ (0.1 s per step)")
         ax.grid(axis="y", color="#d7d7d7", lw=.55, zorder=0)
         ax.spines[["top", "right"]].set_visible(False)
-        ax.legend(loc="upper left", frameon=False, handlelength=2.4)
     axes[0].set_ylabel("Part-position endpoint error (mm)")
-    fig.subplots_adjust(left=.10, right=.985, top=.85, bottom=.23, wspace=.17)
+    fig.text(.10, .975, "Fixed-action prediction on geometric-feedback (G) trajectories",
+             fontsize=9, fontweight="bold", va="top")
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(.535, .932),
+               ncol=2, frameon=False, handlelength=2.4, columnspacing=1.5, fontsize=8)
+    fig.subplots_adjust(left=.10, right=.985, top=.745, bottom=.335, wspace=.17)
+    footnotes = [
+        "Each marker: mean of 12 equally weighted initial-condition means. Lines guide the eye; no confidence intervals.",
+        "K = future 0.1 s steps; all 2,656 / 2,608 / 2,548 eligible windows valid at K = 1 / 5 / 10 for both plotted seeds.",
+        "Seed: training randomness setting. Seed 11 omitted: validity masks differ. Overlapping windows are not independent.",
+    ]
+    for y, note in zip((.158, .108, .058), footnotes):
+        fig.text(.015, y, note, fontsize=7.75, color=GRAY)
     result = save(fig, out, "fixed_prediction")
     exact_path = out / "fixed_prediction.values.json"
     if exact_path.exists():
@@ -217,10 +242,14 @@ def fixed_prediction(repo: Path, out: Path) -> dict:
     result["source"] = exact["source"]
     result["source_sha256"] = exact["source_sha256"]
     result["caption"] = (
-        "Offline fixed-action position prediction on the 12 geometric-controller traces. "
+        "Offline fixed-action position prediction on the 12 geometric-feedback (G) controller traces. "
+        "S1 is the one-step-trained MLP; SK is the same MLP trained with an additional 0.1 times five-step free-rollout loss. "
+        "Seed identifies the training random-number-generator setting, not a new initial-condition family. "
+        "K counts future 0.1 s prediction steps; training uses five-step windows and online planning has a five-step horizon. "
         "Each point is the mean of 12 equally weighted family means, not the pooled-window mean. "
         "At K=1,5,10, respectively, all 2,656, 2,608, and 2,548 truth-eligible windows are valid "
         "for both methods in each plotted seed. Seed 11 is omitted because validity masks differ. "
+        "Connecting lines are visual guides and confidence intervals are not shown. "
         "Overlapping windows are not independent; these descriptive prediction errors do not establish closed-loop handoff improvement.")
     return result
 
@@ -233,9 +262,12 @@ def main() -> None:
     if not args.out.is_dir():
         raise FileNotFoundError("Parent must create paper/figures before generation")
     style()
-    report = {"schema": "paper-figures-v1", "method_system": method_system(args.out),
+    report = {"schema": "paper-figures-v2", "presentation_revision": "2026-10-22-standalone-method-definitions",
+              "method_system": method_system(args.out),
               "fixed_prediction": fixed_prediction(args.repo, args.out),
-              "visual_review": "PENDING_DIRECT_VIEW"}
+              "visual_review": "PENDING_DIRECT_VIEW_CURRENT_REVISION",
+              "scientific_data_changed": False, "additional_physics_intervals": 0,
+              "generator": {"file": "generate_figures.py", "sha256": digest(Path(__file__))}}
     target = args.out / "figures.manifest.json"
     if target.exists():
         raise FileExistsError(target)

@@ -89,10 +89,12 @@ Lambert 등은 한 단계 예측 학습과 하위 제어 성능 사이의 목적
 
 \begin{figure*}[t]
 \centering\includegraphics[width=\textwidth]{method_system.pdf}
-\caption{실험 과제와 제어 구조의 개념도. 학습 모델은 상태 증분을, 계획기는 예측 비용에 따른 후보 선택을 담당한다.
-접촉 물리와 속도 추종은 시뮬레이터·기존 서보가, 목표 자세 안의 영 명령과 유지 판정은 공통 감독기가 담당한다.
-S1/SK 경로를 그린 개념도이며 R은 MLP를 선형 모델로 대체하고 G는 후보 탐색을 사용하지 않는다.
-실험 사진이나 실제 예측 궤적을 그린 그림은 아니다.}\label{fig:system}
+\caption{단일 부품 밀기 과제와 S1/SK 제어 구조의 개념도.
+S1은 한 단계 오차로 학습한 다층 퍼셉트론(MLP), SK는 동일 MLP에 $0.1\times$5단계 자유 예측 손실을 추가한 방법이다.
+두 방법은 상태 증분을 재귀 예측하고, 공통 계획기가 128개 후보의 5단계 미래($0.1\,\mathrm s$/단계)를 평가해 첫 명령만 실행한다.
+R은 MLP를 특징 선형 모델(선정 정규화 $\alpha=0$)로 바꾸며, G는 학습 예측·후보 탐색 없는 기하 피드백이다.
+접촉 물리와 속도 추종은 시뮬레이터·기존 서보가, 실제 목표 자세 진입 시 영 명령과 정지·유지 판정은 공통 감독기가 담당한다.
+계획 중 실제 미래 물리는 조회하지 않는다. 실험 사진·측정 궤적이 아니며 도형은 축척을 따르지 않는다.}\label{fig:system}
 \end{figure*}
 
 \section{문제 정식화}\label{sec:problem}
@@ -226,7 +228,10 @@ MuJoCo~\cite{mujoco}에서 단일 부품과 원형 푸셔의 마찰 접촉을 �
 Apple Silicon CPU에서 Python 3.14.7, NumPy 2.5.3, PyTorch 2.14.0, MuJoCo 3.14.0을 사용하였다.
 
 \begin{table}[t]
-\caption{고정 실험 조건}\label{tab:settings}
+\caption{단일 부품의 MuJoCo 인계 정렬에 사용한 고정 조건.
+후보 수와 horizon은 모델 기반 계획의 후보 명령열 수와 미래 행동 단계 수이며, 한 단계는 $0.1\,\mathrm s$다.
+성공은 위치·방향·두 속도의 허용값을 모두 연속 $0.3\,\mathrm s$ 유지한 경우다.
+방향은 직사각형의 $180^\circ$ 대칭을 고려한다. 산업 공차가 아닌 본 실험의 판정 명세다.}\label{tab:settings}
 \centering\small
 \begin{tabular}{@{}ll@{}}
 \toprule 항목 & 값\\ \midrule
@@ -371,8 +376,12 @@ $2\pi$ yaw 오차는 $0.013067^\circ$에서 $0.013516^\circ$,
 이 관찰만으로 어느 성분이 인계 실패에 기여했는지는 알 수 없다.
 
 \begin{table}[t]
-\caption{고정 행동 위치 예측오차 (mm).
-Family 우선 조건부 평균; $^\dagger$는 유효 mask가 다른 모델.}\label{tab:prediction}
+\caption{기하 피드백(G) 경로의 고정 행동에서 실제 끝점에 대한 부품 위치 예측오차(mm; 작을수록 좋음).
+R은 특징 선형 모델($\alpha=0$), S1은 한 단계 학습 신경망(MLP), SK는 같은 MLP에 $0.1\times$5단계 자유 예측 손실을 추가한 방법이다.
+접미사 11·23·47은 학습 난수 seed다. K1·K5·K10은 각각 1·5·10개의 $0.1\,\mathrm s$ 미래 예측 단계다.
+각 초기조건의 유효 창 평균을 12개 독립 초기조건(family)에 동일 가중 평균했다.
+$^\dagger$는 예측 무효로 비교 창의 mask가 다른 모델이며 나머지는 모든 실제 적격 창에서 유효했다.
+겹치는 창은 독립 표본이 아니다.}\label{tab:prediction}
 \centering\small
 \begin{tabular}{@{}lrrr@{}}
 \toprule 모델 & K1 & K5 & K10\\ \midrule
@@ -392,10 +401,13 @@ S1-11 유효 창 & 2,656 & 2,606 & 2,546\\
 
 \begin{figure*}[t]
 \centering\includegraphics[width=\textwidth]{fixed_prediction.pdf}
-\caption{고정 G 행동에서 seed23·47의 길이별 위치오차.
-두 seed의 S1/SK는 모든 실제 적격 창에서 예측이 유효했다.
-각 점은 12개 family 평균을 동일 가중 평균한 기술 통계이며 독립 반복의 신뢰구간이 아니다.
-G 경로의 분포는 자체 정책이 폐루프에서 방문하는 상태 분포와 다르다.}\label{fig:prediction}
+\caption{기하 피드백(G)의 고정 행동에서 예측한 부품 위치와 실제 끝점의 거리.
+S1은 한 단계 학습 신경망(MLP), SK는 같은 MLP에 $0.1\times$5단계 자유 예측 손실을 추가한 방법이다.
+Seed23·47은 학습 난수 설정이며 새 초기조건이 아니다. $K$는 $0.1\,\mathrm s$짜리 미래 예측 단계 수다.
+각 점은 12개 독립 초기조건별 평균을 동일 가중 평균한 기술 통계다.
+$K=1,5,10$에서 각각 2,656·2,608·2,548개 실제 적격 창 모두 두 방법에서 유효했다.
+Seed11은 유효 mask가 달라 제외했다. 선은 점을 연결한 안내선이며 신뢰구간은 표시하지 않았다.
+겹치는 창은 독립 표본이 아니고 G 경로는 각 방법의 자체 폐루프 방문 분포와 다르다.}\label{fig:prediction}
 \end{figure*}
 
 \subsection{후보 선택}
@@ -408,7 +420,7 @@ S1--R과 SK--R 차이는 각각 $-3.874402$, $-3.867860$이고,
 사후 분석에서 동일 seed·상태 36쌍 중 35쌍은 같은 후보를 골랐다.
 유일한 차이는 병진 첫 family의 G tick29, seed47이었다.
 S1은 후보2·손실0, SK는 후보6·손실0.235521이었다.
-이는 G 경로 N16/H5에 한정되며 온라인 N128 정책 전체가 같다는 뜻은 아니다.
+G 경로 N16/H5 결과로 온라인 N128 정책 일치를 주장할 수 없다.
 
 \subsection{폐루프 인계}
 표~\ref{tab:handoff}는 성공과 실패 포함 끝점 평균, 표~\ref{tab:strata}는 층별 성공이다.
@@ -417,8 +429,12 @@ S1 seed별 성공은 4/12·5/12·4/12이고 SK는 모두 4/12였다.
 회전 층의 학습 계획기 비율은 G보다 높지만 층당 독립 조건은 4개뿐이다.
 
 \begin{table}[t]
-\caption{폐루프 인계 및 실패 포함 끝점 평균.
-S1/SK 독립 family는 12개이며 36회는 seed 조합 수다.}\label{tab:handoff}
+\caption{폐루프 인계 성공과 실패 포함 종료 순간 평균.
+G는 직접 기하 피드백, R은 특징 선형 예측($\alpha=0$), S1은 한 단계 학습 신경망(MLP), SK는 같은 MLP에 $0.1\times$5단계 자유 예측 손실을 추가한 방법이다.
+R·S1·SK는 공통 후보 계획기를 사용한다.
+독립 초기조건은 12개이며 S1/SK의 36회는 12조건$\times$학습 seed 3개(11·23·47)다.
+성공은 위치 $5\,\mathrm{mm}$·방향 $3^\circ$·선속도 $0.01\,\mathrm{m/s}$·각속도 $0.05\,\mathrm{rad/s}$ 이하를 연속 $0.3\,\mathrm s$ 유지한 경우다.
+시간 초과·제어 및 계획 실패도 분모와 끝점 평균에 포함한다.}\label{tab:handoff}
 \centering\small
 \begin{tabular}{@{}lrrrr@{}}
 \toprule 방법 & 성공/$N$ & 위치(mm) & 방향($^\circ$) & 종료(s)\\ \midrule
@@ -431,7 +447,12 @@ SK & 12/36 & 11.492 & 2.728 & 21.939\\
 \end{table}
 
 \begin{table}[t]
-\caption{층별 인계 성공}\label{tab:strata}
+\caption{초기조건 층별 인계 성공/전체 실행 수.
+G는 직접 기하 피드백, R은 특징 선형 예측($\alpha=0$), S1은 한 단계 학습 신경망(MLP), SK는 같은 MLP에 $0.1\times$5단계 자유 예측 손실을 추가한 방법이다.
+R·S1·SK는 공통 후보 계획기를 사용한다.
+병진·회전·접촉 오프셋 층마다 독립 초기조건은 4개다.
+신경망의 층별 12회는 4조건$\times$학습 seed 3개(11·23·47)이며 독립 조건 12개가 아니다.
+성공은 위치 $5\,\mathrm{mm}$·방향 $3^\circ$·선속도 $0.01\,\mathrm{m/s}$·각속도 $0.05\,\mathrm{rad/s}$ 이하를 연속 $0.3\,\mathrm s$ 유지한 경우이며 모든 실패를 분모에 남겼다.}\label{tab:strata}
 \centering\small
 \begin{tabular}{@{}lrrr@{}}
 \toprule 방법 & 병진 & 회전 & 오프셋\\ \midrule
@@ -453,8 +474,11 @@ Seed23의 SK K5 오차는 0.090605에서 0.058647\,mm로 낮았으나 성공은 
 Seed47은 0.084235에서 0.068994\,mm로 낮았지만 성공은 모두 4/12였다.
 
 \begin{table}[t]
-\caption{짝비교 성공 차이 (percentage points).
-12개 독립 family의 층화 bootstrap; 탐색적 비교.}\label{tab:paired}
+\caption{짝비교 인계 성공 비율 차이(percentage points; 앞 방법$-$뒤 방법).
+G는 기하 피드백, R은 특징 선형 예측($\alpha=0$), S1은 한 단계 학습 신경망(MLP), SK는 같은 MLP에 $0.1\times$5단계 자유 예측 손실을 추가한 방법이며 R·S1·SK는 공통 후보 계획기를 사용한다.
+각 초기조건 안에서 학습 seed 3개(11·23·47)를 먼저 평균한 뒤, 독립 초기조건 12개를 병진·회전·오프셋 층 안에서 2,000회 bootstrap한 95\% percentile 구간이다.
+학습 seed 모집단 전체의 불확실성은 포함하지 않으며 다중비교 미보정의 탐색적 비교다.
+0을 포함한 구간은 동등성 증거가 아니다.}\label{tab:paired}
 \centering\small
 \begin{tabular}{@{}lrr@{}}
 \toprule 비교 & 차이 & 95\% 구간\\ \midrule
@@ -529,6 +553,7 @@ SK는 일부 공통 행동 예측에서 위치오차를 줄였으나 후보 선�
 실물·OOD 일반화의 증거는 아니다.
 구현·반복 실행·분석·원고 정리에 Codex를 사용했으며 생성 산출물과 수치 검산·원본 보존을 구분하였다.
 
+\IEEEtriggeratref{2}
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 \end{document}

@@ -1,0 +1,694 @@
+{
+  "schema": "publication-document-review-v4",
+  "as_of": "2026-10-22",
+  "review_base_commit": "437e5535b8a55f35312477cde88381b468fe42c6",
+  "status": "PASS_DOCUMENT_PRESENTATION_AND_DESIGN_REVIEW_NO_NEW_SCIENTIFIC_EXECUTION",
+  "scope": "README presentation, standalone method definitions in figures/table captions, derived PDFs and a separately registered follow-up diagnostic design. Scientific results and preserved public evidence unchanged.",
+  "current_file_sha256": {
+    "README.md": "64dc9d573cd630391abdee39aeb4e04759e5664c0ae43adf871da3e34330202b",
+    "paper/README.md": "0c1fd675eaf1e645942965448c88be16cbe291f8afcd92b5d2494e7f22811895",
+    "paper/main.tex": "0615152c9b3861d1223f5a8b72ef2fbc1038d20cb07b8a017d8738b76dba902f",
+    "paper/references.bib": "12ffb702250a8a02cd1902b8a39a3e6d138023c76066fc9af45e1cb8e2b21be5",
+    "docs/technical_report.ko.md": "0a1a64e6fefe012e2f4b6d6efb63eab4ff9c274d86c6fb8c6aa07289d05ce566",
+    "docs/business_report.ko.md": "5c3aa089c249fd8ca20d05cd3c0650a829661d0a67eeafd1ee7a513f0ac781ad",
+    "docs/documentation.ko.md": "6f6b1b730caeffa4c8e6ae7c30a0033c46991a4faba0f7667f7b529f4e70ae5a",
+    "docs/reviewer_assessment.ko.md": "f0b9bae6725d7b11ccab518769500e4c70170f25faf16d906a6115a95d6356f6",
+    "docs/near_goal_diagnostic_design.ko.md": "660f9c52a7b509ee8ca45742759b4325a04f76546114d0e23eeab0011a64110b",
+    "configs/followup_candidate_diagnostic.v1.json": "a558bb7a61da067859668808245a3173c818edbda69cf3efb5458574f1d85fdb",
+    "artifacts/index.md": "c26830e4af6445f4602166a19fd128a8a01b087a83be34ad78c7b6549c6c6693",
+    "artifacts/validation/followup_state_selection.v1.json": "d6e99267b6e5566d33520edf3313ac049dc52ba8c6d85797c1762a2ad26cf1e7",
+    "artifacts/validation/followup_design_review.v1.json": "2041617b4464f07c54904264ac19b7329710d8b3afa7f17274fcc0c60e8a394f",
+    "artifacts/validation/paper_results_review.v4.json": "dff0ebf6d8c822e27368f5221888ef97620bfd9fc74a62b4851e4bb14e098348",
+    "tools/build_project_overview.py": "f00723c93c8f9b01f12f65991fa7fe2f055cd23fe196dd66cd91120270bfdd73",
+    "tools/build_public_figures.py": "ce2fa66ddaef3c4586be538d6b882ceb4fc85f30d36b0704000a5ef7d87b6b3f",
+    "tools/export_publication_reports.py": "d3296a6b30bf7304d5ea5241e8b9f36a454d78f6b70fbc5e1b903572c1baca08",
+    "paper/figures/generate_figures.py": "f432710d67918a05dea442e90fae62493aa1a65ea5472145e6b1b63f820f7c32",
+    "assets/figures/project_overview.svg": "f9a594825486eb3d89197ba2c330c510c1a68d414c2b2b1076054f5d113451a7",
+    "assets/figures/project_overview.png": "5b1c1161064922945eb90dace18c8bc6455820a0f2a72e3d977d6fa83212add4",
+    "assets/figures/handoff_success.png": "2f039555d3eba0053b1f1106accdf09da83a06fe5e63a5a14d4b2d8a71ea1eb3",
+    "assets/figures/handoff_success.manifest.json": "9ed75c436ae7ede04b22493df8ce14213441537e19bf20e66e34f79794451bc7",
+    "paper/figures/figures.manifest.json": "923590049ad72f2904f29b9d775d3db541ea6f1f3c6029c408a731532899e094"
+  },
+  "scientific_invariants": {
+    "tabular": {
+      "count": 5,
+      "all_bodies_byte_identical_to_base": true
+    },
+    "equation": {
+      "count": 7,
+      "all_bodies_byte_identical_to_base": true
+    },
+    "align": {
+      "count": 4,
+      "all_bodies_byte_identical_to_base": true
+    }
+  },
+  "fixed_prediction_figure_values_byte_identical": true,
+  "preserved_public_copy_hashes_verified": 822,
+  "saved_numeric_verification": {
+    "receipt": "artifacts/validation/paper_results_review.v4.json",
+    "sha256": "dff0ebf6d8c822e27368f5221888ef97620bfd9fc74a62b4851e4bb14e098348",
+    "E1_diagnostics": 84,
+    "E1_arrays": 379,
+    "E2_arrays": 163
+  },
+  "new_scientific_execution": {
+    "snapshot_restoration": 0,
+    "model_inference": 0,
+    "physics": 0,
+    "training_updates": 0
+  },
+  "followup_design": {
+    "status": "DESIGN_ONLY_NOT_EXECUTED",
+    "source_selection": "artifacts/validation/followup_state_selection.v1.json",
+    "critical_review": "artifacts/validation/followup_design_review.v1.json",
+    "six_states_five_families_all_posthoc_S1_sources": true,
+    "A_fixed_H5_not_conflated_with_B_supervisor_stop_tail": true,
+    "first_next_action": "F-O0 original whole-state and candidate-identity restoration gate only",
+    "M_C_I_S_nonexclusive_local_hypotheses": true,
+    "not_original_E2_cause_identification": true
+  },
+  "presentation_checks": {
+    "overview_banner_png_directly_viewed": true,
+    "standalone_success_plot_directly_viewed": true,
+    "paper_figures_pdf_and_png_directly_viewed": true,
+    "method_names_seed_units_denominators_explained": true,
+    "paper_tables_and_figures_ordered": true,
+    "caption_table_and_section_heading_orphans_repaired": true,
+    "paper_final_reference_columns_balanced": true,
+    "paper_latex_and_desktop_compilers_succeeded": true
+  },
+  "outputs": {
+    "reports/Research_Paper.ko.pdf": {
+      "sha256": "ff588aeeff2324139b5f6bf20a146a8dd4710a15007192da1625ee4b8e7d3a7c",
+      "pages": 7,
+      "manifest": "reports/Research_Paper.ko.manifest.json",
+      "manifest_sha256": "3cbdd0b1ba9f7b38692dab1790a8804749ddf1c9afb7b531eff154002becff3c",
+      "dpi": 120,
+      "visual_review": [
+        {
+          "page": 1,
+          "png_sha256": "7fb9b5a9ce11fd843e8e54aa930cd88a25e5324fa906ee32763bd302b95a82bc",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 2,
+          "png_sha256": "4c06697a8976ce283e4dffa29635708d34163b872e9e236a37cea5abe3d6d74d",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 3,
+          "png_sha256": "4f5705c8da2d38bdcd1ad7750b63e8f69957c91fd7ab815f5fd9cc8d933cea34",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 4,
+          "png_sha256": "2da5debd0963b77fed04408cd351bec6f6de8f8f08fb75f71ff7fbee15b1321f",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 5,
+          "png_sha256": "639d98cde129ac571ae20faaf29f5cf200dcf19476ca1418cd7803835132b72c",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 6,
+          "png_sha256": "1d8fcf32840be5e6789b71d79366553a51f00c54f665b50ef4e34b17e8341ef8",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 7,
+          "png_sha256": "e7b94df5c6147a54c00a3ebf54a8a3f33accd174eecc045c0144c7eb61f242fd",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        }
+      ],
+      "detailed_review": {
+        "schema": "paper-visual-review-v4",
+        "review_date_kst": "2026-10-22",
+        "reviewer": "figure_legibility_audit agent",
+        "status": "PASS_DIRECT_VISUAL_REVIEW",
+        "source_pdf": "reports/Research_Paper.ko.pdf",
+        "source_pdf_sha256": "ff588aeeff2324139b5f6bf20a146a8dd4710a15007192da1625ee4b8e7d3a7c",
+        "pages": 7,
+        "render_dpi": 120,
+        "render_existing_images_only": true,
+        "page_reviews": [
+          {
+            "page": 1,
+            "image": "tmp/presentation-v4/Research_Paper/page-1.png",
+            "sha256": "7fb9b5a9ce11fd843e8e54aa930cd88a25e5324fa906ee32763bd302b95a82bc",
+            "directly_viewed": true,
+            "finding": "Bilingual title, abstract, introduction, related work, and initial state equation read clearly; balanced two-column text.",
+            "review_basis": "PIXEL_IDENTICAL_TO_PREVIOUS_DIRECT_VIEW"
+          },
+          {
+            "page": 2,
+            "image": "tmp/presentation-v4/Research_Paper/page-2.png",
+            "sha256": "4c06697a8976ce283e4dffa29635708d34163b872e9e236a37cea5abe3d6d74d",
+            "directly_viewed": true,
+            "finding": "Full-width task/planning diagram and complete method key legible; figure caption visible in full; body equations and two columns clear.",
+            "review_basis": "PIXEL_IDENTICAL_TO_PREVIOUS_DIRECT_VIEW"
+          },
+          {
+            "page": 3,
+            "image": "tmp/presentation-v4/Research_Paper/page-3.png",
+            "sha256": "4f5705c8da2d38bdcd1ad7750b63e8f69957c91fd7ab815f5fd9cc8d933cea34",
+            "directly_viewed": true,
+            "finding": "Settings Table I and caption readable; cost equations and geometry equation clear without margin collision.",
+            "review_basis": "PIXEL_IDENTICAL_TO_PREVIOUS_DIRECT_VIEW"
+          },
+          {
+            "page": 4,
+            "image": "tmp/presentation-v4/Research_Paper/page-4.png",
+            "sha256": "2da5debd0963b77fed04408cd351bec6f6de8f8f08fb75f71ff7fbee15b1321f",
+            "directly_viewed": true,
+            "finding": "Methods, experimental/statistical definitions and result text legible; no visible overflow.",
+            "review_basis": "PIXEL_IDENTICAL_TO_PREVIOUS_DIRECT_VIEW"
+          },
+          {
+            "page": 5,
+            "image": "tmp/presentation-v4/Research_Paper/page-5.png",
+            "sha256": "639d98cde129ac571ae20faaf29f5cf200dcf19476ca1418cd7803835132b72c",
+            "directly_viewed": true,
+            "finding": "Expanded prediction legend and caption and Tables II/III readable; E1 paragraph ends entirely in the left column and no isolated continuation word remains beneath Table III.",
+            "review_basis": "DIRECT_VIEW_CURRENT_RENDER"
+          },
+          {
+            "page": 6,
+            "image": "tmp/presentation-v4/Research_Paper/page-6.png",
+            "sha256": "1d8fcf32840be5e6789b71d79366553a51f00c54f665b50ef4e34b17e8341ef8",
+            "directly_viewed": true,
+            "finding": "Tables IV/V and full captions remain readable and correctly numbered; body continuation, failure analysis, discussion and conclusion have no overlaps or clipping.",
+            "review_basis": "DIRECT_VIEW_CURRENT_RENDER"
+          },
+          {
+            "page": 7,
+            "image": "tmp/presentation-v4/Research_Paper/page-7.png",
+            "sha256": "e7b94df5c6147a54c00a3ebf54a8a3f33accd174eecc045c0144c7eb61f242fd",
+            "directly_viewed": true,
+            "finding": "Conclusion continuation, reproducibility statement and all eight references readable; references continue in the right column with acceptable final-page column balance.",
+            "review_basis": "DIRECT_VIEW_CURRENT_RENDER"
+          }
+        ],
+        "checks": {
+          "every_page_directly_viewed": true,
+          "figure_1_and_2_standalone_method_keys_readable": true,
+          "all_five_table_captions_and_numeric_rows_visible": true,
+          "table_number_order_I_II_III_IV_V": true,
+          "figure_number_order_1_2": true,
+          "no_visual_text_or_table_collisions": true,
+          "no_clipped_axes_legends_or_captions": true,
+          "no_missing_glyphs_observed": true,
+          "no_blank_pages": true,
+          "last_page_column_balanced": true,
+          "minor_single_word_column_continuation_present": false,
+          "newly_directly_viewed_pages": [
+            5,
+            6,
+            7
+          ],
+          "reused_pixel_identical_direct_reviews": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "layout_notes": [],
+        "compiler_observations": {
+          "log": "tmp/paper-build/main.log",
+          "log_sha256": "c20ff9e8ba71a63099a3fb5bc1ea287db036d6f5b6560a56d2fb041ed3f9eeb2",
+          "underfull_hbox_warnings": 4,
+          "underfull_vbox_warnings": 1,
+          "overfull_warnings": 0,
+          "missing_character_warnings": 0,
+          "font_shape_fallback_warnings_present": true,
+          "interpretation": "Reference paragraph spacing and any underfull box warnings are nonblocking. Direct review found no collisions, overflow, clipped text, blank pages, or missing glyphs; font-shape fallback warnings remain nonblocking."
+        },
+        "scientific_data_modified_by_review": false,
+        "new_physics_or_training_runs": 0,
+        "previous_review_pdf_sha256": "d92bb314a673141a9d25cf9f37c01bacd79523ccf10f5d08b5d258b7a3179203",
+        "review_method": "Directly viewed current changed pages 5, 6 and 7; reused earlier direct visual inspection only for current pages 1-4 with exactly matching PNG hashes.",
+        "resolved_layout_notes": [
+          {
+            "page": 5,
+            "finding": "Isolated single-word continuation below Table III eliminated by the shorter E1 scope sentence."
+          },
+          {
+            "page": 7,
+            "finding": "Final-page references continue in the right column and ending heights are acceptably balanced."
+          }
+        ]
+      }
+    },
+    "reports/Technical_Report.ko.pdf": {
+      "sha256": "ccbed4ad915db2991ad2944d8ded23175fa760e5ba59ab6b3c28bf0d4028fd90",
+      "pages": 13,
+      "manifest": "reports/Technical_Report.ko.manifest.json",
+      "manifest_sha256": "91a0c3da9f42f35a607fc92bd7309e690bb4f9269aa4e541986fb841d963816b",
+      "dpi": 120,
+      "visual_review": [
+        {
+          "page": 1,
+          "png_sha256": "dff58bf2427bea63ca352cfd676a326abb18f491c822e76f4140965251452748",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 2,
+          "png_sha256": "f38b0efb7ae01d309c47fcf3d7622c510b3455fde4575f49d1ebdbf7ba0eda6e",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 3,
+          "png_sha256": "59d49848126d366f618e1ff00d8e7078dbd1f03d40ebde0254a5abeefad9bab5",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 4,
+          "png_sha256": "a6386e28206876028f35f15d945fe1c45e19aa87d97cf6017f05f0d1ce675eff",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 5,
+          "png_sha256": "23bd7f27e1795fe79c48c60bdd72789563779e9c6214ff7f2e348ee01d7032a4",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 6,
+          "png_sha256": "88b05a1588d4e87f3534df3b519f0456b770afa8589bcdcf190b83e15a2f2036",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 7,
+          "png_sha256": "dbba44f0323b6aa657567518657bf824fb27c94527f453ef0f2798a56f0b13ce",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 8,
+          "png_sha256": "c26ce456e90d993605473db72ee633571d4f14610bab1ffe9bcfa6ad13f1e363",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 9,
+          "png_sha256": "f9e9b23cd77021aa200c3adc29396179f35247b9917c53a008243707e569f9a5",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 10,
+          "png_sha256": "5910cce67e08b8dbc209c8b56e0b3226e5f879fe4d50203cce88af475add6e9b",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 11,
+          "png_sha256": "f5a8f1088799d35109a584ad04fb9e92b0364e30d9a7b3dc501a149be452cb46",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 12,
+          "png_sha256": "387d7e8007c2f4fd781ac20ef94ee2465efd2d41f68194bfc89ad310cdbe6ce8",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 13,
+          "png_sha256": "e48077fc405e19a622f3014fc33d920a9f68cc40bdbe313d68cfad2521914e02",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        }
+      ],
+      "detailed_review": {
+        "schema": "technical-report-visual-review-v4",
+        "as_of": "2026-10-22",
+        "status": "PASS_ALL_13_PAGES_VISUALLY_REVIEWED",
+        "scope": "Direct visual inspection of all thirteen initial page PNGs and every changed page across two subsequent layout repairs; receipt hashes bind the final current PDF and each of its thirteen rendered images. No physical simulation, model inference, or training.",
+        "pdf": {
+          "path": "reports/Technical_Report.ko.pdf",
+          "sha256": "ccbed4ad915db2991ad2944d8ded23175fa760e5ba59ab6b3c28bf0d4028fd90",
+          "pages": 13
+        },
+        "checks": {
+          "page_count_matches": true,
+          "all_pages_individually_viewed": true,
+          "no_text_overlap_or_clipping_observed": true,
+          "no_missing_glyphs_observed": true,
+          "figure1_method_names_explained": true,
+          "figure1_denominators_and_success_conditions_present": true,
+          "tables_legible": true,
+          "caption_table_contiguity": true,
+          "no_orphan_section_heading": true
+        },
+        "findings": [],
+        "page_images": [
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-01.png",
+            "sha256": "dff58bf2427bea63ca352cfd676a326abb18f491c822e76f4140965251452748",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-02.png",
+            "sha256": "f38b0efb7ae01d309c47fcf3d7622c510b3455fde4575f49d1ebdbf7ba0eda6e",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-03.png",
+            "sha256": "59d49848126d366f618e1ff00d8e7078dbd1f03d40ebde0254a5abeefad9bab5",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-04.png",
+            "sha256": "a6386e28206876028f35f15d945fe1c45e19aa87d97cf6017f05f0d1ce675eff",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-05.png",
+            "sha256": "23bd7f27e1795fe79c48c60bdd72789563779e9c6214ff7f2e348ee01d7032a4",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-06.png",
+            "sha256": "88b05a1588d4e87f3534df3b519f0456b770afa8589bcdcf190b83e15a2f2036",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-07.png",
+            "sha256": "dbba44f0323b6aa657567518657bf824fb27c94527f453ef0f2798a56f0b13ce",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-08.png",
+            "sha256": "c26ce456e90d993605473db72ee633571d4f14610bab1ffe9bcfa6ad13f1e363",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-09.png",
+            "sha256": "f9e9b23cd77021aa200c3adc29396179f35247b9917c53a008243707e569f9a5",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-10.png",
+            "sha256": "5910cce67e08b8dbc209c8b56e0b3226e5f879fe4d50203cce88af475add6e9b",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-11.png",
+            "sha256": "f5a8f1088799d35109a584ad04fb9e92b0364e30d9a7b3dc501a149be452cb46",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-12.png",
+            "sha256": "387d7e8007c2f4fd781ac20ef94ee2465efd2d41f68194bfc89ad310cdbe6ce8",
+            "visual_status": "PASS_LEGIBLE"
+          },
+          {
+            "path": "tmp/presentation-v4/Technical_Report/page-13.png",
+            "sha256": "e48077fc405e19a622f3014fc33d920a9f68cc40bdbe313d68cfad2521914e02",
+            "visual_status": "PASS_LEGIBLE"
+          }
+        ],
+        "review_iterations": [
+          {
+            "pdf_sha256": "9ffb75d8ee24004f34fe0a9bfa01cfc44ea4e47d082c0a41b068a1cdca53fc8c",
+            "finding": "Table 2 caption page8/table page9 split; corrected in subsequent render."
+          },
+          {
+            "pdf_sha256": "b18842b4c845da87b1b44be401aa3fb99fdf9c84969236cb70528dc4f1199694",
+            "changed_pages_reinspected": [
+              1,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "finding": "New orphan section6 heading at page6 bottom."
+          },
+          {
+            "pdf_sha256": "ccbed4ad915db2991ad2944d8ded23175fa760e5ba59ab6b3c28bf0d4028fd90",
+            "changed_pages_reinspected": [
+              1,
+              6,
+              7
+            ],
+            "finding": "Section 6 heading now accompanies caption and Table 1 on page 7; Table 2 caption/table stay together on page 9. Earlier reviewed pages are unchanged. No remaining observed clipping, overlap, missing glyph or detached caption/heading."
+          }
+        ]
+      }
+    },
+    "reports/Business_Report.ko.pdf": {
+      "sha256": "04c56aef11ac87fe704e20fc7463998cbca676826784430be7964e43307e5d1d",
+      "pages": 5,
+      "manifest": "reports/Business_Report.ko.manifest.json",
+      "manifest_sha256": "9d891011d0f69ca59ee8a0b804144d77bf88114a5ae862b8a7815fc8d43c4799",
+      "dpi": 120,
+      "visual_review": [
+        {
+          "page": 1,
+          "png_sha256": "015ce9d1a260beb9977696a2d29439556835d6dcd1ae218773288f284395a129",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 2,
+          "png_sha256": "f1b130f38f5fa007f50436c1c7a4390b0671eade30be958d15949d420f25d715",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 3,
+          "png_sha256": "f34ecec483494d9d4b706ab23cb48b1faad8f8989e4a6cf5ce62a4c626684ee5",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 4,
+          "png_sha256": "49f787c218b529a57a6fec2925f663ef6445c3be1ae89c9befc5db5b1a5d02ca",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        },
+        {
+          "page": 5,
+          "png_sha256": "6d3606b6a5144b57ec04bb886676c9c749dea30b7e15f856505ddbbfd98fe388",
+          "status": "PASS_LEGIBILITY_AND_LAYOUT",
+          "review_scope": "Directly viewed current image or pixel-identical to an individually viewed image, as recorded in detailed review"
+        }
+      ],
+      "detailed_review": {
+        "schema": "business-pdf-visual-review-v4",
+        "reviewed_at_utc": "2026-10-22T03:38:25.191501+00:00",
+        "status": "PASS_ALL_5_PAGES_VISUALLY_INSPECTED",
+        "reviewer_role": "independent_layout_and_pdf_link_metadata_review",
+        "pdf": {
+          "path": "reports/Business_Report.ko.pdf",
+          "sha256": "04c56aef11ac87fe704e20fc7463998cbca676826784430be7964e43307e5d1d",
+          "bytes": 110826,
+          "page_count": 5,
+          "metadata": {
+            "/Author": "pre_worldmodel project",
+            "/CreationDate": "D:20261022124124+09'00'",
+            "/Creator": "(unspecified)",
+            "/Keywords": "",
+            "/ModDate": "D:20261022124124+09'00'",
+            "/Producer": "ReportLab PDF Library - (opensource)",
+            "/Subject": "Fixed-scope planar pushing: prediction, selection and handoff evaluation",
+            "/Title": "부품 인계 정렬: 학습 기반 계획의 적용 판단 보고서",
+            "/Trapped": "/False"
+          }
+        },
+        "render": {
+          "directory": "tmp/presentation-v4/Business_Report",
+          "dpi": 120,
+          "all_existing_page_images_opened_and_visually_inspected": true,
+          "render_command_executed_by_this_reviewer": false
+        },
+        "pages": [
+          {
+            "page": 1,
+            "image": "tmp/presentation-v4/Business_Report/page-1.png",
+            "image_sha256": "015ce9d1a260beb9977696a2d29439556835d6dcd1ae218773288f284395a129",
+            "image_size_px": [
+              993,
+              1404
+            ],
+            "visually_inspected": true,
+            "visual_status": "PASS",
+            "observations": "Title/subtitle and seven-entry linked table of contents fit with consistent margins; all section page numbers are legible.",
+            "out_of_page_glyphs": 0,
+            "lowest_body_glyph_bottom_pt": 439.09960900000004,
+            "footer_top_pt": 810.569609,
+            "body_footer_clearance_pt": 371.46999999999997,
+            "clipping": false,
+            "text_or_table_overlap": false,
+            "unreadable_glyphs": false,
+            "broken_table_rows": false,
+            "footer_collision": false
+          },
+          {
+            "page": 2,
+            "image": "tmp/presentation-v4/Business_Report/page-2.png",
+            "image_sha256": "f1b130f38f5fa007f50436c1c7a4390b0671eade30be958d15949d420f25d715",
+            "image_size_px": [
+              993,
+              1404
+            ],
+            "visually_inspected": true,
+            "visual_status": "PASS",
+            "observations": "Sections 1 and 2 are legible; G, R, S1, SK names and control/model responsibilities are explained in prose; no clipping or paragraph overlap.",
+            "out_of_page_glyphs": 0,
+            "lowest_body_glyph_bottom_pt": 681.3095699,
+            "footer_top_pt": 810.569609,
+            "body_footer_clearance_pt": 129.26003909999997,
+            "clipping": false,
+            "text_or_table_overlap": false,
+            "unreadable_glyphs": false,
+            "broken_table_rows": false,
+            "footer_collision": false
+          },
+          {
+            "page": 3,
+            "image": "tmp/presentation-v4/Business_Report/page-3.png",
+            "image_sha256": "f34ecec483494d9d4b706ab23cb48b1faad8f8989e4a6cf5ce62a4c626684ee5",
+            "image_size_px": [
+              993,
+              1404
+            ],
+            "visually_inspected": true,
+            "visual_status": "PASS",
+            "observations": "Both full-width tables fit; header shading and row rules are clear, multi-line cells remain inside their rows; sample-size and paired-result cautions remain readable. Last body line is above footer.",
+            "out_of_page_glyphs": 0,
+            "lowest_body_glyph_bottom_pt": 787.3096099,
+            "footer_top_pt": 810.569609,
+            "body_footer_clearance_pt": 23.25999909999996,
+            "clipping": false,
+            "text_or_table_overlap": false,
+            "unreadable_glyphs": false,
+            "broken_table_rows": false,
+            "footer_collision": false
+          },
+          {
+            "page": 4,
+            "image": "tmp/presentation-v4/Business_Report/page-4.png",
+            "image_sha256": "49f787c218b529a57a6fec2925f663ef6445c3be1ae89c9befc5db5b1a5d02ca",
+            "image_size_px": [
+              993,
+              1404
+            ],
+            "visually_inspected": true,
+            "visual_status": "PASS",
+            "observations": "Section 5 and the three-column observation/hypothesis/follow-up table fit without row splitting or overlap; nearby definitions and failure limitations are readable.",
+            "out_of_page_glyphs": 0,
+            "lowest_body_glyph_bottom_pt": 751.3096099,
+            "footer_top_pt": 810.569609,
+            "body_footer_clearance_pt": 59.25999909999996,
+            "clipping": false,
+            "text_or_table_overlap": false,
+            "unreadable_glyphs": false,
+            "broken_table_rows": false,
+            "footer_collision": false
+          },
+          {
+            "page": 5,
+            "image": "tmp/presentation-v4/Business_Report/page-5.png",
+            "image_sha256": "6d3606b6a5144b57ec04bb886676c9c749dea30b7e15f856505ddbbfd98fe388",
+            "image_size_px": [
+              993,
+              1404
+            ],
+            "visually_inspected": true,
+            "visual_status": "PASS",
+            "observations": "Section 6 includes the new blue supplemental-design link and explicitly says restoration/inference/future-physics execution has not run; sections 6 and 7 and final paragraph fit above footer.",
+            "out_of_page_glyphs": 0,
+            "lowest_body_glyph_bottom_pt": 717.3095699,
+            "footer_top_pt": 810.569609,
+            "body_footer_clearance_pt": 93.26003909999997,
+            "clipping": false,
+            "text_or_table_overlap": false,
+            "unreadable_glyphs": false,
+            "broken_table_rows": false,
+            "footer_collision": false
+          }
+        ],
+        "links": {
+          "annotation_count": 23,
+          "external_links": [
+            {
+              "page": 2,
+              "uri": "https://www.fortvillefeeders.com/dual-three-position-shuttle-for-small-lightweight-parts/",
+              "syntax_valid": true,
+              "live_network_checked": false
+            },
+            {
+              "page": 4,
+              "uri": "https://github.com/codemillss/pre_worldmodel/blob/main/docs/technical_report.ko.md",
+              "syntax_valid": true,
+              "live_network_checked": false
+            },
+            {
+              "page": 5,
+              "uri": "https://github.com/codemillss/pre_worldmodel/blob/main/docs/near_goal_diagnostic_design.ko.md",
+              "syntax_valid": true,
+              "live_network_checked": false
+            },
+            {
+              "page": 5,
+              "uri": "https://github.com/codemillss/pre_worldmodel/blob/main/docs/technical_report.ko.md",
+              "syntax_valid": true,
+              "live_network_checked": false
+            },
+            {
+              "page": 5,
+              "uri": "https://github.com/codemillss/pre_worldmodel/blob/main/artifacts/index.md",
+              "syntax_valid": true,
+              "live_network_checked": false
+            }
+          ],
+          "all_internal_destinations_resolve_to_pdf_pages": true,
+          "new_design_link_present": true,
+          "new_design_repository_relative_target": "docs/near_goal_diagnostic_design.ko.md",
+          "new_design_local_target_exists": true,
+          "external_link_live_network_checks_run": false
+        },
+        "content_checks": {
+          "new_supplemental_design_is_marked_pending_execution": true,
+          "six_states_five_initial_conditions_are_visible": true,
+          "frozen_results_retained_in_current_text": true,
+          "G_R_S1_SK_definitions_present": true
+        },
+        "issues": [],
+        "changes_by_this_reviewer": "None to manuscripts, PDF, models, data or experimental results. Wrote this visual-review receipt only.",
+        "final_regeneration_review": {
+          "previous_pdf_sha256": "03d72c3bcd90d6d9f5d19f300f819786c0039bafb968b5ae601fa38c78a26619",
+          "all_five_rerendered_page_hashes_match_individually_reviewed_images": true,
+          "reason": "Final generator change groups section headings with table captions; business page pixels unchanged."
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Visual/document checks are not scientific replication, peer-review acceptance, field validation or proof of individual competence.",
+    "Six diagnostic snapshots are selected from observed S1 failures; no population or symmetric model superiority inference.",
+    "D1-D5 actual restoration, prediction and future-physics checks remain unexecuted.",
+    "Source raw omitted from public repository still limits full rerun.",
+    "Four underfull reference lines and one underfull vertical box remain; visual review found no clipping, overlapping or unreadable labels."
+  ]
+}
