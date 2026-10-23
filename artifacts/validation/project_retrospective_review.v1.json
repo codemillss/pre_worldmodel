@@ -1,0 +1,145 @@
+{
+  "schema": "project-retrospective-documentation-review-v1",
+  "status": "PASS_DOCUMENT_SCOPE_LINKS_SAVED_FACTS_AND_PRESERVATION",
+  "as_of_kst_date": "2026-10-23",
+  "baseline_commit": "322ae350186f7bb688cb07aaff89fd7521491f95",
+  "scientific_evidence_as_of": "2026-10-22",
+  "document": {
+    "path": "docs/project_retrospective.ko.md",
+    "sha256": "ea36ecd0a455b96f01f190b50019656bdcd92882468bf493aa0cce65ed9c810a",
+    "bytes": 28854
+  },
+  "navigation_sha256": {
+    "README.md": "74d809597656458546be7f74b3b57250df51bd73afa47503de27c94d75fc644e",
+    "artifacts/index.md": "3188f2da6af554b5ee5013cd54bf09cfa0aa602e052ce9ae31f34513fad3d367"
+  },
+  "source_sha256": {
+    "docs/technical_report.ko.md": "0a1a64e6fefe012e2f4b6d6efb63eab4ff9c274d86c6fb8c6aa07289d05ce566",
+    "docs/business_report.ko.md": "5c3aa089c249fd8ca20d05cd3c0650a829661d0a67eeafd1ee7a513f0ac781ad",
+    "docs/reviewer_assessment.ko.md": "f0b9bae6725d7b11ccab518769500e4c70170f25faf16d906a6115a95d6356f6",
+    "artifacts/development/index.md": "18b4adfdc018edd4573c9f4d495dda1c26a2b18c4c089d2f0c2dab9ed6177136",
+    "docs/followup_restore_and_pilot.ko.md": "6b5b55b0c7b4bb28190ea5f3f0c9c3168a0dc86d56b39d9915353080adc68fb6",
+    "docs/nt_fullbank_execution.ko.md": "6288de34ebd4442527c4fb1f4cfb9b321794513a5c0085965c38fb0b47cced54",
+    "docs/nt_storage_profile.ko.md": "d77bd7659532829c7599fabf3f389ad57dfe205270d456d8910bdb3225145ddb",
+    "artifacts/results/E2/rows.json": "207493bc5d1b27cdf9cbaebf90e2de89cff7841e59d5c7eea84bc296aee699dd",
+    "artifacts/followup/20261022-nt-full/summary.json": "19f5602379811ad3505075da23623bc6c265243e07f3767c57622d19c43fbe28",
+    "artifacts/followup/20261022-nt-storage-profile/attribution.json": "5bccfcc49009846ba798e735fa50a89f0ee7cfb1b108233636dcf5535e0b7272",
+    "artifacts/validation/nt_storage_profile_resource_final.v1.json": "eacfbd370c4044f24c0956d13939961435a3896376017980418050afecaf1307",
+    "configs/p5_infrastructure_recovery.v1.json": "02259ed0d12aba363e2c952df0417279a91f75cbd694333480f49b7c4365cf6b"
+  },
+  "independent_content_review": {
+    "status": "PASS_WITH_WORDING_CLARIFICATION_APPLIED",
+    "role": "Independent read-only agent review of supplied draft against repository records; not external peer review.",
+    "clarification": "Narrowed section5 from broad learning-method superiority to multi-step learning handoff improvement.",
+    "scope_checks": [
+      "Learning objective distinct from superiority/customer/novelty claims",
+      "D11/R1/Adam/H10 diagnostic models not promoted to frozen final comparison",
+      "Seed repeats distinct from independent initial conditions; bootstrap limited",
+      "Missing original internal snapshot direct-comparison limit retained",
+      "70/768 completed and698 unexecuted;158.46minutes prospective,not actualtime",
+      "User/Codex roles and publicGit starts2026-10-18 distinguished"
+    ]
+  },
+  "link_checks": {
+    "relative_links_and_fragments": 139,
+    "unique_relative_targets": 111,
+    "git_commit_links": [
+      {
+        "short": "2e5600e137b2b5fc98acfb3c273ba910edc23698",
+        "full": "2e5600e137b2b5fc98acfb3c273ba910edc23698"
+      },
+      {
+        "short": "f6fd8a8",
+        "full": "f6fd8a8985f41db970880eb9e692ddcf8723a0eb"
+      },
+      {
+        "short": "2fb3447",
+        "full": "2fb3447eb8ab3d06db34feb415301c8fea0848f8"
+      },
+      {
+        "short": "437e553",
+        "full": "437e5535b8a55f35312477cde88381b468fe42c6"
+      },
+      {
+        "short": "6d6d1fd",
+        "full": "6d6d1fde2793676708cdb32e1843f9162de01c85"
+      },
+      {
+        "short": "80a2cb0",
+        "full": "80a2cb0791ca5c04b4a4732e2ffbb8f844c612d6"
+      },
+      {
+        "short": "a52fb98",
+        "full": "a52fb981e7e8a3e68c84ec7f525cd076bcb04ba0"
+      },
+      {
+        "short": "de29c3b",
+        "full": "de29c3b95afa3f14f1a9274a9eac4f1f4ca93f4a"
+      },
+      {
+        "short": "5d39410",
+        "full": "5d394107810ef59ce189807eb498a59ffbb36eb8"
+      },
+      {
+        "short": "322ae350186f7bb688cb07aaff89fd7521491f95",
+        "full": "322ae350186f7bb688cb07aaff89fd7521491f95"
+      }
+    ],
+    "all_relative_paths_and_fragments": "PASS",
+    "external_url_live_responses": "NOT_CHECKED"
+  },
+  "saved_result_checks": {
+    "e2_success_counts": {
+      "G": {
+        "success": 8,
+        "total": 12
+      },
+      "R": {
+        "success": 0,
+        "total": 12
+      },
+      "S1": {
+        "success": 13,
+        "total": 36
+      },
+      "SK": {
+        "success": 12,
+        "total": 36
+      }
+    },
+    "failure_count": 63,
+    "terminal_position_condition_failures": 62,
+    "nt_status": "STOP_RESOURCE",
+    "completed_actual_trajectories": 70,
+    "unexecuted_actual_trajectories": 698,
+    "slow_bundle_mean_seconds": 6.171024319,
+    "four_exact_comparison_mean_seconds": 4.434786721666667,
+    "latest_projected_cumulative_minutes": 158.45894472357395,
+    "resource_status": "HOLD_RESOURCE",
+    "scope": "Recomputed selected saved arithmetic only; no scientific run reproduced for this document."
+  },
+  "preservation": {
+    "previous_manifest_sha256": "6f949b87417c338901af316c4e3c8d040a758e67ef24ae18fbdcdf1a8fc6cf65",
+    "previous_file_count": 1638,
+    "unchanged_previous_file_count": 1636,
+    "allowed_navigation_changes": [
+      "README.md",
+      "artifacts/index.md"
+    ],
+    "old_files_removed": 0,
+    "existing_scientific_code_models_data_papers_pdfs_results": "UNCHANGED_SHA"
+  },
+  "publication_allowlist": [
+    "README.md",
+    "artifacts/index.md",
+    "docs/project_retrospective.ko.md",
+    "artifacts/validation/project_retrospective_review.v1.json",
+    "DELIVERY_MANIFEST.json"
+  ],
+  "new_model_or_physics_execution_for_this_task": "NOT_PERFORMED",
+  "limitations": [
+    "Initial selection dialogue is user-supplied narrative and not wholly public.",
+    "Early detailed local stage reports and all raw records are not published by this retrospective.",
+    "A documentation review does not prove generalization,causal failure attribution,field benefit or personal independent implementation skill."
+  ]
+}

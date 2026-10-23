@@ -8,7 +8,7 @@
 
 작업대의 어긋난 직사각형 부품을 XY 푸셔로 밀어 목표 위치·방향에 맞추는 MuJoCo 시뮬레이션입니다. 행동에 따른 상태 변화를 작은 신경망으로 학습하고, 그 예측으로 밀 방향과 속도를 선택합니다.
 
-[논문 PDF](reports/Research_Paper.ko.pdf) · [실무 의미](docs/business_report.ko.md) · [결과·재현 근거](artifacts/index.md) · [다음 진단 설계](docs/near_goal_diagnostic_design.ko.md)
+[전체 프로젝트 회고](docs/project_retrospective.ko.md) · [논문 PDF](reports/Research_Paper.ko.pdf) · [실무 의미](docs/business_report.ko.md) · [결과·재현 근거](artifacts/index.md) · [다음 진단 설계](docs/near_goal_diagnostic_design.ko.md)
 
 | 한눈에 보기 | 이번 프로젝트의 답 |
 |---|---|
@@ -23,6 +23,7 @@
 <summary><strong>읽는 순서</strong> — 문제부터 보기 / 결과부터 보기 / 코드와 근거 확인</summary>
 
 - 처음 읽는 경우: 아래 문제·성공 기준 → 학습/제어 구조 → 비교와 결과.
+- 문제 정의와 선택이 바뀐 이유부터 보기: [전체 회고 — 기획·개발·실패·현재 한계](docs/project_retrospective.ko.md).
 - 연구 관점: [학술 원고](paper/README.md) → [리뷰어 관점 평가](docs/reviewer_assessment.ko.md) → [보완 진단 설계](docs/near_goal_diagnostic_design.ko.md).
 - 재현 관점: [공개 범위와 검산](artifacts/index.md) → [입출력·학습·계획 코드](src/push_align/).
 
@@ -172,6 +173,7 @@ python -B scripts/verify_paper_results.py
 
 | 읽는 목적 | 원본 | PDF |
 |---|---|---|
+| 문제 정의·주요 선택·실패·현재 한계의 흐름 | [프로젝트 전체 회고](docs/project_retrospective.ko.md) | 실험 근거는2026-10-22까지, 회고 작성2026-10-23 |
 | 문제·방법·실험을 학술 형식으로 검토 | [LaTeX 논문](paper/README.md) | [학술 논문](reports/Research_Paper.ko.pdf) |
 | 적용 판단·목표 달성·실무 의미 | [사업 관점 보고서](docs/business_report.ko.md) | [실무 요약](reports/Business_Report.ko.pdf) |
 | 개발 경과·국소 진단·전체 설명 | [기술 보고서](docs/technical_report.ko.md) | [설명용 기술 보고서](reports/Technical_Report.ko.pdf) |
@@ -186,4 +188,4 @@ python -B scripts/verify_paper_results.py
 
 사용자는 문제 가치·학습 목표·평가 기준·진행 및 보류 판단을 논의하고 선택했습니다. Codex는 구현·학습·반복 실행·검산·시각화·문서 작성을 지원했습니다. 여기서 설명한 프로젝트 산출물과 사용자가 직접 한 판단을 구분합니다.
 
-2026-10-22 갱신: D1 복원과 D2 작은 사전 실행을 별도 개발 기록으로 추가했습니다. 모델·물리·비용·원래 동결 결과는 유지했고, D3는 자원 진입을 보류했습니다.
+2026-10-23 문서 갱신: 문제 정의부터 후속 진단까지 연결한 전체 회고를 추가했습니다. 실험 근거는2026-10-22까지이며, 정식 비교·논문·후속70/768회 부분 중단 결과는 보존했습니다.

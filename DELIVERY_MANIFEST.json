@@ -1,9 +1,9 @@
 {
   "schema": "public-delivery-file-inventory-v1",
-  "as_of_kst": "2026-10-22",
+  "as_of_kst": "2026-10-23",
   "repository": "https://github.com/codemillss/pre_worldmodel.git",
   "branch": "main",
-  "scope": "Tracked publication including frozen scientific results and separate full-run STOP_RESOURCE evidence plus lossless saved-storage profiling. Self excluded;21complete profile payloadcopies remain local.",
+  "scope": "Tracked publication files with preserved frozen scientific evidence and separately identified follow-up diagnostics; adds whole-project retrospective without new experiments. Self excluded.",
   "original_core_evidence_SHA_verified": 20,
   "private_local_path_and_high_confidence_secret_patterns_found": 0,
   "files": [
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 20284,
-      "sha256": "b4bae7e0b82838798486cbe8391cac82110abf6a134a25289f715c68ba05ce9a"
+      "bytes": 20716,
+      "sha256": "74d809597656458546be7f74b3b57250df51bd73afa47503de27c94d75fc644e"
     },
     {
       "path": "artifacts/audits/p5_application_completion.v1.json",
@@ -3534,8 +3534,8 @@
     },
     {
       "path": "artifacts/index.md",
-      "bytes": 12664,
-      "sha256": "212533b5d6f463e8cebd29b09db96863db12a7b1b98dbb4d04d29c8b8763a5fa"
+      "bytes": 13099,
+      "sha256": "3188f2da6af554b5ee5013cd54bf09cfa0aa602e052ce9ae31f34513fad3d367"
     },
     {
       "path": "artifacts/learning/manifest.json",
@@ -5973,6 +5973,11 @@
       "sha256": "743146714b2a6cfcbb498c8afc2f16e30205bc42f454d73cee1e2cdbb491d4b2"
     },
     {
+      "path": "artifacts/validation/project_retrospective_review.v1.json",
+      "bytes": 6099,
+      "sha256": "775ac2c902414d48366e160f9d5bd535bcfb57445016c663d4010555d921cde3"
+    },
+    {
       "path": "artifacts/validation/public_validation.json",
       "bytes": 1617,
       "sha256": "59380fc80c7ec6ccf5175fedbe2044a8e6c4b3b36f92e24ecdb3bd13ebda3c2e"
@@ -6396,6 +6401,11 @@
       "path": "docs/nt_storage_profile.ko.md",
       "bytes": 12615,
       "sha256": "d77bd7659532829c7599fabf3f389ad57dfe205270d456d8910bdb3225145ddb"
+    },
+    {
+      "path": "docs/project_retrospective.ko.md",
+      "bytes": 28854,
+      "sha256": "ea36ecd0a455b96f01f190b50019656bdcd92882468bf493aa0cce65ed9c810a"
     },
     {
       "path": "docs/reviewer_assessment.ko.md",
@@ -8198,11 +8208,11 @@
       "sha256": "c1df1301e029821d68e09627506056d56b39164085fa3c527b04b92802a614ee"
     }
   ],
-  "total_files_excluding_self": 1638,
-  "total_bytes_excluding_self": 60180836,
+  "total_files_excluding_self": 1640,
+  "total_bytes_excluding_self": 60216656,
   "current_paper_content_review": "artifacts/validation/document_review.v4.json",
-  "current_document_review": "artifacts/validation/nt_storage_profile_delivery.v1.json",
-  "verification_scope_note": "1591 previous files unchanged;three navigation files updated. Saved profile18+3 retained all exactchecks and source file identity.29publicselectedfiles verified; old/frozen models,data,paper/PDF and70/768 partial result untouched. Final resource forecast158.46min,HOLD698; no new physics or modelcalls.",
+  "current_document_review": "artifacts/validation/project_retrospective_review.v1.json",
+  "verification_scope_note": "Documentation-only retrospective.1636 previous files unchanged;README andartifactindex navigation updated.139 local links/fragments and10 commitlinks checked; selected E2,partialrun andresource facts recomputed fromsavedJSON. Independentcontentreview applied. Existingcode,models,data,papers,PDFs andexperimentalresults preserved. No new model orphysics execution.",
   "current_followup_design_review": "artifacts/validation/followup_design_review.v1.json",
   "current_followup_execution_review": "artifacts/validation/followup_execution_review.v1.json",
   "current_followup_resource_review": "artifacts/validation/followup_profile_execution_review.v1.json",
@@ -8218,5 +8228,7 @@
   "current_NT_full_delivery_review": "artifacts/validation/nt_full_delivery_review.v1.json",
   "current_NT_storage_profile_review": "artifacts/validation/nt_storage_profile_review.v1.json",
   "current_NT_storage_profile_public_verification": "artifacts/validation/nt_storage_profile_public_checks.v2.json",
-  "current_NT_storage_resource_reassessment": "artifacts/validation/nt_storage_profile_resource_final.v1.json"
+  "current_NT_storage_resource_reassessment": "artifacts/validation/nt_storage_profile_resource_final.v1.json",
+  "current_project_retrospective": "docs/project_retrospective.ko.md",
+  "current_project_retrospective_review": "artifacts/validation/project_retrospective_review.v1.json"
 }

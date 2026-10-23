@@ -68,6 +68,8 @@ PYTHONPATH=src:scripts:tests .venv/bin/python -B -m unittest \
 
 ## 최신 문서 검토
 
+2026-10-23 [프로젝트 전체 회고](../docs/project_retrospective.ko.md)를 추가했습니다. 문제 정의가 바뀐 이유, P0–P5의 선택·실패, 정식 비교와 이후 진단, 현재 한계를 연결합니다. 이는2026-10-22까지의 자료에 근거한 문서화이며 새 실험·성능 개선 결과가 아닙니다. 초기 기획 대화와 미공개 로컬 기록, 공개 Git 이력의 범위를 구분합니다.
+
 2026-10-22의 [리뷰어 관점 평가](../docs/reviewer_assessment.ko.md)는 E1의 시간·목표 거리 범위와 E2의 짝별 성공 차이를 저장 배열에서 추가 검산했습니다. 이는 사후 기술 분석이며 새 학습·모델 추론·물리 실행이 아닙니다. 현재 문서·PDF 시각 검토는 [v4 검토 기록](validation/document_review.v4.json), 현재 원고 수치 검산은 [v4 수치 기록](validation/paper_results_review.v4.json)에 연결합니다. 이전 검토 기록은 당시 SHA의 이력입니다.
 
 [목표 근처·실패 직전 진단 설계 v1](../docs/near_goal_diagnostic_design.ko.md)은 별도 후속 개발 계획입니다. [6상태 선정 근거](validation/followup_state_selection.v1.json)는 기존 저장 자료·원본 witness만 읽은 기록이며 snapshot 복원·모델 추론·실제 미래 실행의 증거가 아닙니다. 원본 전체 raw가 공개되지 않았으므로 선정 출처의 local-original 경로는 공개본에서 직접 열리지 않을 수 있습니다.
