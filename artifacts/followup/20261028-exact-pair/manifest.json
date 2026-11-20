@@ -1,0 +1,17 @@
+{
+  "schema": "exact-pair-prototype-public-manifest-v1",
+  "scope": "Timing, comparator receipts, source-preservation results and outer clock only. All 12 complete saved copies and 4 deliberately corrupted copies remain local. No new robot trajectories.",
+  "source_run": "runs/followup-exact-pair-20261028-01",
+  "files": {
+    "summary.json": {
+      "sha256": "53c0a20d3032af5d5c1fa4387fdef414cb90f7b87e7026e94385504a17c44464",
+      "bytes": 36905,
+      "source_relative_to_project": "runs/followup-exact-pair-20261028-01/summary.json"
+    },
+    "process_receipt.json": {
+      "sha256": "016d0a70c6e8d35e88df3148af9a503290b029779088e35e394ad0abc59a8af5",
+      "bytes": 843,
+      "source_relative_to_project": "runs/followup-exact-pair-20261028-01/process_receipt.json"
+    }
+  }
+}

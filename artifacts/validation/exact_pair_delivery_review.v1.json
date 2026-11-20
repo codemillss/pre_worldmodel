@@ -1,0 +1,29 @@
+{
+  "schema": "exact-pair-delivery-review-v1",
+  "status": "PASS_DECLARED_LOCAL_CHECKS",
+  "created_utc": "2026-10-27T22:31:00.308973+00:00",
+  "new_files_sha256": {
+    "artifacts/followup/20261028-exact-pair/manifest.json": "5c54bdcac0235e2a30d01d0b125aba1ced68614927c635d4b4af73334557a868",
+    "artifacts/followup/20261028-exact-pair/process_receipt.json": "016d0a70c6e8d35e88df3148af9a503290b029779088e35e394ad0abc59a8af5",
+    "artifacts/followup/20261028-exact-pair/summary.json": "53c0a20d3032af5d5c1fa4387fdef414cb90f7b87e7026e94385504a17c44464",
+    "artifacts/validation/exact_pair_contract_tests.v1.json": "09fa4f7b6ec6c93d3e663d92dc5783544e189abad7b933ce0bc479f3d20f5272",
+    "artifacts/validation/exact_pair_independent_review.v1.json": "397863d9372ea366b38695267b466d4f063a3ba967ff5f17ba646dc4f6a816ed",
+    "artifacts/validation/exact_pair_resource_review.v1.json": "88bc8b5bdecb57887abc49cd8e92209b3f5328c3604b537be109e87c0d273f9a",
+    "artifacts/validation/exact_pair_source_baseline.v1.json": "c70bdbe853079337900fafe82a56bd71f042c33d0510eb575bcb5931b952daed",
+    "configs/exact_pair_prototype.v1.json": "00608693802964cfd8180878775fb065ebc45bea4917244c0b977ba2e889554a",
+    "configs/exact_pair_prototype.v2.json": "2cfb1bd923a4847833aabe94f1af221f234c9067631557846ab3935b7f7974a7",
+    "docs/exact_pair_prototype.ko.md": "8979880ba4c6a11175b006ea4e9c2eeb6408429c59cbb1f92b187600d15a997d",
+    "scripts/profile_exact_pair.py": "f5c2cab2733c6779e8423dfc9cb919f406c9bd85336fcf07a7445b4a1520a741",
+    "src/push_align/exact_pair_prototype.py": "0682e0c3a89e57e65f56b8817ca921734fa079ea7e2c46f77f81a1b7dc30fd50",
+    "tests/test_exact_pair_prototype.py": "d0396c959c32e6767e41dc7a9a0c784bd466416c45214ed06ed8fb4aac012988",
+    "tools/reassess_exact_pair.py": "e0c57e42e43927f5d0cc1ede07299d54c12800e654ced0d536ee962470a02045"
+  },
+  "original_tracked_files_unchanged": 1641,
+  "report_links_verified": 15,
+  "public_summary_hashes_verified": 2,
+  "contract_tests": 0,
+  "benchmark_status": "COMPLETE_SAVED_EXACT_PAIR_PROTOTYPE",
+  "independent_review_present": true,
+  "full_scientific_run": "NOT_RESUMED_70_COMPLETE_698_NOT_EXECUTED",
+  "limitations": "Local handoff check; no Git commit/push, new executor calibration or model-performance claim."
+}

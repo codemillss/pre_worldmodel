@@ -1,0 +1,128 @@
+{
+  "time_accounting": {
+    "prior_delivery_conservative_seconds": 3062.0942457569763,
+    "current_profile_outer_process_seconds": 49.78678054083139,
+    "nonoverlapping_current_task_additional_work_seconds": 525.5919444591686,
+    "this_assessment_elapsed_seconds": 0.0,
+    "cumulative_spent_seconds": 3637.4729707569763,
+    "clock_policy": "Sum these four non-overlapping scopes once. Nested trial/stage/exclusive timers are explanatory subsets, never added."
+  },
+  "remaining": {
+    "trials": 698,
+    "intervals": 4540,
+    "source_comparisons": 26,
+    "complete_probe_groups": 232
+  },
+  "frozen_rate_scenario": {
+    "status": "HOLD_RESOURCE",
+    "failures": [
+      "cumulative_wall_cap"
+    ],
+    "unit_rates": {
+      "seconds_per_interval": 0.51612885,
+      "bytes_per_interval": 89074.4,
+      "source_comparison_seconds": 1.35706625,
+      "complete_probe_seconds": 6.429129625,
+      "complete_probe_bytes": 1036225,
+      "loop_seconds_per_trial": 0.026950666999999998
+    },
+    "future_seconds": {
+      "interval_baseline": 3514.8374685,
+      "source_D2_comparisons": 52.925583749999994,
+      "first_repeat_complete_probe": 2237.3371094999998,
+      "trial_loop": 28.217348348999998,
+      "fixed_future": 12.124927558461845,
+      "report_reserve": 600.0
+    },
+    "future_bytes": {
+      "interval_baseline": 606596664,
+      "first_repeat_complete_probe": 360606300,
+      "fixed_future": 1988750
+    },
+    "projected_cumulative_seconds": 10082.915408414437,
+    "projected_cumulative_minutes": 168.04859014024063,
+    "projected_cumulative_bytes": 1127036345,
+    "wall_margin_seconds": -2882.9154084144375,
+    "maximum_bundle_seconds_that_would_fit_if_other_costs_fixed": -1.8551100543518313,
+    "crossover_is_rate_target_not_permission_to_lower_observed_maximum": true
+  },
+  "profile_only_raise_scenario": {
+    "status": "HOLD_RESOURCE",
+    "failures": [
+      "cumulative_wall_cap"
+    ],
+    "unit_rates": {
+      "seconds_per_interval": 0.51612885,
+      "bytes_per_interval": 89074.4,
+      "source_comparison_seconds": 1.35706625,
+      "complete_probe_seconds": 6.429129625,
+      "complete_probe_bytes": 1036225,
+      "loop_seconds_per_trial": 0.026950666999999998
+    },
+    "future_seconds": {
+      "interval_baseline": 3514.8374685,
+      "source_D2_comparisons": 52.925583749999994,
+      "first_repeat_complete_probe": 2237.3371094999998,
+      "trial_loop": 28.217348348999998,
+      "fixed_future": 12.124927558461845,
+      "report_reserve": 600.0
+    },
+    "future_bytes": {
+      "interval_baseline": 606596664,
+      "first_repeat_complete_probe": 360606300,
+      "fixed_future": 1988750
+    },
+    "projected_cumulative_seconds": 10082.915408414437,
+    "projected_cumulative_minutes": 168.04859014024063,
+    "projected_cumulative_bytes": 1127036345,
+    "wall_margin_seconds": -2882.9154084144375,
+    "maximum_bundle_seconds_that_would_fit_if_other_costs_fixed": -1.8551100543518313,
+    "crossover_is_rate_target_not_permission_to_lower_observed_maximum": true
+  },
+  "limits": {
+    "wall_cap_seconds": 7200.0,
+    "safety_factor": 1.5,
+    "final_report_reserve_seconds": 600.0,
+    "sealing_reserve_seconds": 60.0,
+    "storage_cap_bytes": 5368709120,
+    "free_reserve_bytes": 2147483648,
+    "sealing_reserve_bytes": 16777216
+  },
+  "step_guard_envelope": {
+    "needed_seconds": 660.774193275,
+    "fits_now": true,
+    "scope": "Original separate returned-step sealing/report reserve; not added again to the whole-workflow forecast."
+  },
+  "authorization": "NONE: original STOP_RESOURCE unchanged; no continuation, retry or new physics authorized by this arithmetic.",
+  "schema": "exact-pair-resource-review-v1",
+  "assessed_utc": "2026-10-27T22:29:10.378725+00:00",
+  "preserved_local_experiment_bytes_at_assessment": 157844631,
+  "bindings": {
+    "profile_summary_sha256": "53c0a20d3032af5d5c1fa4387fdef414cb90f7b87e7026e94385504a17c44464",
+    "profile_outer_process_sha256": "016d0a70c6e8d35e88df3148af9a503290b029779088e35e394ad0abc59a8af5",
+    "config_sha256": "2cfb1bd923a4847833aabe94f1af221f234c9067631557846ab3935b7f7974a7",
+    "prior_ledger_sha256": "eacfbd370c4044f24c0956d13939961435a3896376017980418050afecaf1307",
+    "frozen_run_summary_sha256": "8f45091686dc3b6a8c0b45b48d5036b303a0fa8c1b459c479dcb4e1ed1970df7",
+    "assessment_tool_sha256": "e0c57e42e43927f5d0cc1ede07299d54c12800e654ced0d536ee962470a02045"
+  },
+  "task_clock": {
+    "start_utc": "2026-10-27T22:22:35+00:00",
+    "elapsed_task_seconds": 395.378725,
+    "pre_clock_allowance_seconds": 180,
+    "allowance_is_conservative_reserve_not_measured_runtime": true,
+    "outer_process_is_included_once": true
+  },
+  "prototype_executor_projection": {
+    "status": "NOT_CALIBRATED_NOT_RUN",
+    "reason": "Complete bundle and one StepResult comparison were timed. Full raw persistence, actual physics and production end-to-end execution have not been calibrated with this prototype."
+  },
+  "scientific_state": {
+    "completed": 70,
+    "not_executed": 698,
+    "new_actual_trajectories": 0,
+    "model_training_updates": 0,
+    "model_cost_candidates_success_contract_changed": false
+  },
+  "scope": "Forecast below remains the frozen implementation at prior maximum rates, not a speedup forecast for a new executor.",
+  "zero_complete_bundle_hypothetical_minutes": 130.7596383152406
+}

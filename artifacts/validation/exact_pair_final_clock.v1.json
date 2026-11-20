@@ -1,0 +1,15 @@
+{
+  "schema": "exact-pair-final-clock-v1",
+  "recorded_utc": "2026-10-27T22:31:00.310497+00:00",
+  "prior_cumulative_seconds": 3062.0942457569763,
+  "active_task_clock_start_utc": "2026-10-27T22:22:35+00:00",
+  "active_task_elapsed_seconds": 505.310497,
+  "pre_clock_conservative_allowance_seconds": 180,
+  "conservative_cumulative_seconds_at_record": 3747.4047427569762,
+  "final_handoff_reserve_seconds": 60,
+  "next_task_conservative_prior_seconds": 3807.4047427569762,
+  "overlap_policy": "Whole task elapsed includes tests, 49.7868s benchmark, independent audit, documentation and final checks; never add child timers again. 180s and 60s are explicitly conservative allowances, not measured execution.",
+  "resource_v1_sha256": "88bc8b5bdecb57887abc49cd8e92209b3f5328c3604b537be109e87c0d273f9a",
+  "delivery_review_sha256": "2d8d546c9aea3e97143ec16f7ab442753dfb795d3cfb504ed467ac5289f51286",
+  "scientific_state": "70/768 complete, 698 not executed. No time-limit reset and no scientific resumption."
+}

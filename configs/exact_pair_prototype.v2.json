@@ -1,0 +1,57 @@
+{
+  "schema": "exact-pair-prototype-design-v1",
+  "purpose": "Speed up unchanged typed SHA and direct equality checks, never robot task performance. Saved cases only.",
+  "task_clock_start_utc": "2026-10-27T22:22:35+00:00",
+  "pre_clock_allowance_seconds": 180,
+  "prior_cumulative_seconds": 3062.0942457569763,
+  "prior_ledger_path": "artifacts/validation/nt_storage_profile_resource_final.v1.json",
+  "prior_ledger_sha256": "eacfbd370c4044f24c0956d13939961435a3896376017980418050afecaf1307",
+  "cumulative_cap_seconds": 7200,
+  "final_review_reserve_seconds": 600,
+  "process_cap_seconds": 180,
+  "sealing_reserve_seconds": 30,
+  "output_cap_bytes": 67108864,
+  "free_space_reserve_bytes": 2147483648,
+  "repeats": 3,
+  "cases": [
+    {
+      "id": "full-000-A",
+      "run": "followup-nt-full-20261022-01",
+      "trial_relative": "actual/N-T/candidate-000/A/repeat-0",
+      "summary_sha256": "527253b90fff64f2cbac585f9f198b5e330fa4589253a0b170c46f155f6b722e",
+      "receipt_sha256": "41026bee281cb94cf924cef8e5b4467d89ca34027e22b5f54bd854290495c477",
+      "whole_probe_typed_sha256": "772343159c564e4358fb36131740e5562769c4efd59aafc50c6e93ccb1dd9204",
+      "intervals": 5,
+      "historical_bundle_ns": 2398919833
+    },
+    {
+      "id": "full-011-B",
+      "run": "followup-nt-full-20261022-01",
+      "trial_relative": "actual/N-T/candidate-011/B/repeat-0",
+      "summary_sha256": "39eae5742a0ecb76d8a1549f14ce20d6c41395c8ffd6c84c52cc1ba59e3a6945",
+      "receipt_sha256": "07c6872e6983819e9308cc26ff0b0bbc1087217358628b328edbf9500c3c6718",
+      "whole_probe_typed_sha256": "31253a7d134cb7409f02bd526644b334cf1edeecb817550712454b991af50f9a",
+      "intervals": 8,
+      "historical_bundle_ns": 6158992500
+    }
+  ],
+  "source_baseline_path": "artifacts/validation/exact_pair_source_baseline.v1.json",
+  "source_baseline_sha256": "c70bdbe853079337900fafe82a56bd71f042c33d0510eb575bcb5931b952daed",
+  "implementation_sha256": {
+    "scripts/profile_exact_pair.py": "f5c2cab2733c6779e8423dfc9cb919f406c9bd85336fcf07a7445b4a1520a741",
+    "src/push_align/exact_pair_prototype.py": "0682e0c3a89e57e65f56b8817ca921734fa079ea7e2c46f77f81a1b7dc30fd50",
+    "tests/test_exact_pair_prototype.py": "d0396c959c32e6767e41dc7a9a0c784bd466416c45214ed06ed8fb4aac012988"
+  },
+  "order": "Each saved case original/paired, paired/original, original/paired. Independent raw decodes. All timings kept.",
+  "contracts": [
+    "Four complete-Probe exact comparisons remain; no cached hashes or hash-only equality.",
+    "Both payload files must equal original source SHA; copied damaged payload must be rejected.",
+    "All original tracked files and two source runs remain byte-identical.",
+    "No model inference, physics, training, candidates, costs or task thresholds change."
+  ],
+  "decision": "A faster prototype does not lower historical maxima or authorize the remaining scientific run. Full interval-path calibration is still required.",
+  "pre_execution_revision": {
+    "superseded_config_sha256": "00608693802964cfd8180878775fb065ebc45bea4917244c0b977ba2e889554a",
+    "reason": "Before any timed benchmark, independent review added final code/config preservation and identical corruption rejection assertions."
+  }
+}
